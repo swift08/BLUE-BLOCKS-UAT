@@ -1,5 +1,7 @@
 // src/app/sitemap.js
-const SITE_URL = "https://blueblocks.in/";
+export const dynamic = "force-static";
+
+const SITE_URL = "https://blueblocks.in"; // no trailing slash
 
 export default function sitemap() {
   const routes = [
@@ -20,6 +22,7 @@ export default function sitemap() {
 
   return routes.map((path) => ({
     url: `${SITE_URL}${path}`,
+    // optional: remove lastModified if it still complains
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: path === "/" ? 1 : 0.7,
