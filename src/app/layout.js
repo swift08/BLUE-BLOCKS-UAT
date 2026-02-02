@@ -12,10 +12,25 @@ import JsonLd from "@/components/seo/JsonLd";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-const SITE_URL = "https://blueblocks.in/";
+const SITE_URL = "https://dev65.blueblocks.in";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
+
+  // ✅ GLOBAL NOINDEX / NOFOLLOW
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      "max-snippet": -1,
+      "max-image-preview": "none",
+      "max-video-preview": -1,
+    },
+  },
+
   title: {
     default: "Blue Blocks | Montessori + Innovation Ecosystem (Hyderabad)",
     template: "%s | Blue Blocks",

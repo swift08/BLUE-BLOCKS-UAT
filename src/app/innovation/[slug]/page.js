@@ -6,10 +6,10 @@ export const dynamicParams = false;
 
 /* ---------- helpers ---------- */
 const normalizeSlug = (v = "") =>
-  String(v)
-    .trim()
-    .replace(/^\/+/, "")
-    .replace(/\/+$/, "");
+  String(v).trim().replace(/^\/+/, "").replace(/\/+$/, "");
+
+const isValidPageNode = (node) =>
+  node && typeof node === "object" && Array.isArray(node.sections) && node.sections.length > 0;
 
 const getPage = (pages, slug) => {
   const s = normalizeSlug(slug);
@@ -19,20 +19,20 @@ const getPage = (pages, slug) => {
 /* ---------- static params ---------- */
 export async function generateStaticParams() {
   const pages = siteData?.pages?.innovationDetail ?? {};
-  return Object.keys(pages).map((k) => ({
-    slug: normalizeSlug(k),
-  }));
+
+  return Object.entries(pages)
+    .filter(([key, val]) => isValidPageNode(val)) // ✅ filters out breadcrumbs/schema
+    .map(([key]) => ({ slug: normalizeSlug(key) }));
 }
 
 /* ---------- page ---------- */
-export default async function InnovationDetailPage({ params }) {
-  // ✅ Next 14/15: params may be a Promise
-  const { slug } = await params;
+export default function InnovationDetailPage({ params }) {
+  const slug = normalizeSlug(params?.slug);
 
   const pages = siteData?.pages?.innovationDetail ?? {};
   const page = getPage(pages, slug);
 
-  if (!page?.sections) {
+  if (!isValidPageNode(page)) {
     notFound();
   }
 

@@ -18,7 +18,7 @@ export default function ResearchHero({
     <section className="relative bg-white overflow-hidden">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[url('/ui/dots.png')] bg-right-top bg-no-repeat opacity-30"
+        className="pointer-events-none absolute inset-0 bg-[url('/ui/dots.webp')] bg-right-top bg-no-repeat opacity-30"
       />
 
       <Container className="relative pt-28 sm:pt-50 pb-14 sm:pb-16">

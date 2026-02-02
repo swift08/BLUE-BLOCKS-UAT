@@ -32,7 +32,7 @@
         "href": "/contact-us"
       }
     ],
-    "url": "https://blueblocks.in",
+    "url": "https://dev65.blueblocks.in",
     "schema": {
       "organization": {
         "@context": "https://schema.org",
@@ -41,8 +41,8 @@
           "Preschool"
         ],
         "name": "Blue Blocks",
-        "url": "https://blueblocks.in",
-        "logo": "https://blueblocks.in/icon/logo.svg",
+        "url": "https://dev65.blueblocks.in",
+        "logo": "https://dev65.blueblocks.in/icon/logo.svg",
         "sameAs": [
           "https://www.instagram.com/blueblocksmontessorischool/",
           "https://www.facebook.com/blueblockspreschool",
@@ -112,16 +112,16 @@
             "hasMap": "https://www.google.com/maps?q=Tellapur%20Hyderabad&output=embed"
           }
         ],
-        "@id": "https://blueblocks.in#organization"
+        "@id": "https://dev65.blueblocks.in#organization"
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Blue Blocks",
-        "url": "https://blueblocks.in",
-        "@id": "https://blueblocks.in#website",
+        "url": "https://dev65.blueblocks.in",
+        "@id": "https://dev65.blueblocks.in#website",
         "publisher": {
-          "@id": "https://blueblocks.in#organization"
+          "@id": "https://dev65.blueblocks.in#organization"
         }
       }
     }
@@ -304,7 +304,7 @@
         "portalId": "244973317",
         "formId": "b9701056-562d-4f41-abbf-960dcd4a908f",
         "pageName": "Footer Newsletter",
-        "pageUri": "https://blueblocks.in/"
+        "pageUri": "https://dev65.blueblocks.in/"
       }
     },
     "quickLinks": [
@@ -769,7 +769,7 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         }
       ],
       "schema": [
@@ -777,10 +777,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Home",
-          "url": "https://blueblocks.in/",
+          "url": "https://dev65.blueblocks.in/",
           "description": "Authentic Montessori. The 0–16 Continuum. Education designed for the human spirit.",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -791,7 +791,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             }
           ]
         }
@@ -1420,11 +1420,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "About Us",
-          "url": "https://blueblocks.in/about-us/"
+          "url": "https://dev65.blueblocks.in/about-us/"
         }
       ],
       "schema": [
@@ -1432,10 +1432,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "About Us",
-          "url": "https://blueblocks.in/about-us/",
+          "url": "https://dev65.blueblocks.in/about-us/",
           "description": "Education is not the filling of a bucket, but the lighting of a fire. Since 2009, Blue Blocks has stood as a sanctuary of Authentic Montessori practice, offerin",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -1446,13 +1446,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "About Us",
-              "item": "https://blueblocks.in/about-us/"
+              "item": "https://dev65.blueblocks.in/about-us/"
             }
           ]
         }
@@ -1780,11 +1780,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Academics",
-          "url": "https://blueblocks.in/programs/"
+          "url": "https://dev65.blueblocks.in/programs/"
         }
       ],
       "schema": [
@@ -1792,10 +1792,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Academics",
-          "url": "https://blueblocks.in/programs/",
+          "url": "https://dev65.blueblocks.in/programs/",
           "description": "A Scientifically Mapped Journey from Infancy to Adolescence (0–16 Years)",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -1806,13 +1806,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Academics",
-              "item": "https://blueblocks.in/programs/"
+              "item": "https://dev65.blueblocks.in/programs/"
             }
           ]
         }
@@ -2725,15 +2725,15 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Programs",
-          "url": "https://blueblocks.in/programs/"
+          "url": "https://dev65.blueblocks.in/programs/"
         },
         {
           "name": "{{title}}",
-          "url": "https://blueblocks.in/programs/{slug}"
+          "url": "https://dev65.blueblocks.in/programs/{slug}"
         }
       ],
       "schema": [
@@ -2741,10 +2741,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Program Details",
-          "url": "https://blueblocks.in/programs/{slug}",
+          "url": "https://dev65.blueblocks.in/programs/{slug}",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -2755,19 +2755,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Programs",
-              "item": "https://blueblocks.in/programs/"
+              "item": "https://dev65.blueblocks.in/programs/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "{{title}}",
-              "item": "https://blueblocks.in/programs/{slug}"
+              "item": "https://dev65.blueblocks.in/programs/{slug}"
             }
           ]
         }
@@ -2882,11 +2882,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Admissions",
-          "url": "https://blueblocks.in/admissions/"
+          "url": "https://dev65.blueblocks.in/admissions/"
         }
       ],
       "schema": [
@@ -2894,10 +2894,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Admissions",
-          "url": "https://blueblocks.in/admissions/",
+          "url": "https://dev65.blueblocks.in/admissions/",
           "description": "At Blue Blocks, we do not admit a student; we admit a family. Education is not a transaction where you pay fees and we deliver a product. It is a 15-year collab",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -2908,13 +2908,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Admissions",
-              "item": "https://blueblocks.in/admissions/"
+              "item": "https://dev65.blueblocks.in/admissions/"
             }
           ]
         }
@@ -3063,11 +3063,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Contact",
-          "url": "https://blueblocks.in/contact-us/"
+          "url": "https://dev65.blueblocks.in/contact-us/"
         }
       ],
       "schema": [
@@ -3075,10 +3075,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Contact",
-          "url": "https://blueblocks.in/contact-us/",
+          "url": "https://dev65.blueblocks.in/contact-us/",
           "description": "At Blue Blocks, education is not a job — it’s a responsibility. We are a community of educators, mentors, and lifelong learners committed to honoring childhood ",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -3089,13 +3089,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Contact",
-              "item": "https://blueblocks.in/contact-us/"
+              "item": "https://dev65.blueblocks.in/contact-us/"
             }
           ]
         }
@@ -3198,11 +3198,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Careers",
-          "url": "https://blueblocks.in/careers/"
+          "url": "https://dev65.blueblocks.in/careers/"
         }
       ],
       "schema": [
@@ -3210,10 +3210,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Careers",
-          "url": "https://blueblocks.in/careers/",
+          "url": "https://dev65.blueblocks.in/careers/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -3224,13 +3224,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Careers",
-              "item": "https://blueblocks.in/careers/"
+              "item": "https://dev65.blueblocks.in/careers/"
             }
           ]
         }
@@ -3578,11 +3578,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Research Institute",
-          "url": "https://blueblocks.in/research-institute/"
+          "url": "https://dev65.blueblocks.in/research-institute/"
         }
       ],
       "schema": [
@@ -3590,10 +3590,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Research Institute",
-          "url": "https://blueblocks.in/research-institute/",
+          "url": "https://dev65.blueblocks.in/research-institute/",
           "description": "Advancing the Science of Innovation Development in Childhood and Adolescence",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -3604,13 +3604,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Research Institute",
-              "item": "https://blueblocks.in/research-institute/"
+              "item": "https://dev65.blueblocks.in/research-institute/"
             }
           ]
         }
@@ -3817,11 +3817,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "For Parents",
-          "url": "https://blueblocks.in/parents/"
+          "url": "https://dev65.blueblocks.in/parents/"
         }
       ],
       "schema": [
@@ -3829,10 +3829,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "For Parents",
-          "url": "https://blueblocks.in/parents/",
+          "url": "https://dev65.blueblocks.in/parents/",
           "description": "Explore recommended books that deepen your understanding of Montessori philosophy, child psychology, and developmental stages from early childhood...",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -3843,13 +3843,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "For Parents",
-              "item": "https://blueblocks.in/parents/"
+              "item": "https://dev65.blueblocks.in/parents/"
             }
           ]
         }
@@ -4134,11 +4134,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Innovation",
-          "url": "https://blueblocks.in/innovation/"
+          "url": "https://dev65.blueblocks.in/innovation/"
         }
       ],
       "schema": [
@@ -4146,10 +4146,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Innovation",
-          "url": "https://blueblocks.in/innovation/",
+          "url": "https://dev65.blueblocks.in/innovation/",
           "description": "Innovation is not a subject. It is a biological stage of development. We don't just teach technology; we nurture the 'First Principles' thinking that created it",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -4160,13 +4160,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Innovation",
-              "item": "https://blueblocks.in/innovation/"
+              "item": "https://dev65.blueblocks.in/innovation/"
             }
           ]
         }
@@ -5467,15 +5467,15 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Innovation",
-          "url": "https://blueblocks.in/innovation/"
+          "url": "https://dev65.blueblocks.in/innovation/"
         },
         {
           "name": "{{title}}",
-          "url": "https://blueblocks.in/innovation/{slug}"
+          "url": "https://dev65.blueblocks.in/innovation/{slug}"
         }
       ],
       "schema": [
@@ -5483,10 +5483,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Innovation Detail",
-          "url": "https://blueblocks.in/innovation/{slug}",
+          "url": "https://dev65.blueblocks.in/innovation/{slug}",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -5497,19 +5497,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Innovation",
-              "item": "https://blueblocks.in/innovation/"
+              "item": "https://dev65.blueblocks.in/innovation/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "{{title}}",
-              "item": "https://blueblocks.in/innovation/{slug}"
+              "item": "https://dev65.blueblocks.in/innovation/{slug}"
             }
           ]
         }
@@ -5714,11 +5714,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Montessori System",
-          "url": "https://blueblocks.in/montessori-system/"
+          "url": "https://dev65.blueblocks.in/montessori-system/"
         }
       ],
       "schema": [
@@ -5726,10 +5726,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Montessori System",
-          "url": "https://blueblocks.in/montessori-system/",
+          "url": "https://dev65.blueblocks.in/montessori-system/",
           "description": "Maria Montessori was a visionary who disabused the traditional methods of education for being too constrictive and non child friendly. In her lifelong work with",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -5740,13 +5740,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Montessori System",
-              "item": "https://blueblocks.in/montessori-system/"
+              "item": "https://dev65.blueblocks.in/montessori-system/"
             }
           ]
         }
@@ -5860,11 +5860,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Campus",
-          "url": "https://blueblocks.in/campus/"
+          "url": "https://dev65.blueblocks.in/campus/"
         }
       ],
       "schema": [
@@ -5872,10 +5872,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Campus",
-          "url": "https://blueblocks.in/campus/",
+          "url": "https://dev65.blueblocks.in/campus/",
           "description": "Blue Blocks campuses are designed as calm, spacious, and purpose-led learning environments where children feel safe to explore, move, and grow with independence",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -5886,13 +5886,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Campus",
-              "item": "https://blueblocks.in/campus/"
+              "item": "https://dev65.blueblocks.in/campus/"
             }
           ]
         }
@@ -6014,11 +6014,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Videos",
-          "url": "https://blueblocks.in/videos/"
+          "url": "https://dev65.blueblocks.in/videos/"
         }
       ],
       "schema": [
@@ -6026,10 +6026,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Videos",
-          "url": "https://blueblocks.in/videos/",
+          "url": "https://dev65.blueblocks.in/videos/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -6040,13 +6040,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Videos",
-              "item": "https://blueblocks.in/videos/"
+              "item": "https://dev65.blueblocks.in/videos/"
             }
           ]
         }
@@ -6297,11 +6297,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "FAQ",
-          "url": "https://blueblocks.in/faq/"
+          "url": "https://dev65.blueblocks.in/faq/"
         }
       ],
       "schema": [
@@ -6309,10 +6309,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "FAQ",
-          "url": "https://blueblocks.in/faq/",
+          "url": "https://dev65.blueblocks.in/faq/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -6323,13 +6323,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "FAQ",
-              "item": "https://blueblocks.in/faq/"
+              "item": "https://dev65.blueblocks.in/faq/"
             }
           ]
         }
@@ -6513,11 +6513,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Privacy Policy",
-          "url": "https://blueblocks.in/privacy-policy/"
+          "url": "https://dev65.blueblocks.in/privacy-policy/"
         }
       ],
       "schema": [
@@ -6525,10 +6525,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Privacy Policy",
-          "url": "https://blueblocks.in/privacy-policy/",
+          "url": "https://dev65.blueblocks.in/privacy-policy/",
           "description": "Blue Blocks (<b>“Blue Blocks”, “we”, “our”, “us”</b>) respects your privacy and is committed to protecting the personal information you share with us.",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -6539,13 +6539,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Privacy Policy",
-              "item": "https://blueblocks.in/privacy-policy/"
+              "item": "https://dev65.blueblocks.in/privacy-policy/"
             }
           ]
         }
@@ -6745,11 +6745,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://blueblocks.in/"
+          "url": "https://dev65.blueblocks.in/"
         },
         {
           "name": "Terms of Use",
-          "url": "https://blueblocks.in/terms/"
+          "url": "https://dev65.blueblocks.in/terms/"
         }
       ],
       "schema": [
@@ -6757,10 +6757,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Terms of Use",
-          "url": "https://blueblocks.in/terms/",
+          "url": "https://dev65.blueblocks.in/terms/",
           "description": "Welcome to the Blue Blocks website (<b>“Website”</b>). These Terms of Use (<b>“Terms”</b>) govern your access and use of this Website and its content.",
           "isPartOf": {
-            "@id": "https://blueblocks.in#website"
+            "@id": "https://dev65.blueblocks.in#website"
           }
         },
         {
@@ -6771,13 +6771,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/"
+              "item": "https://dev65.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Terms of Use",
-              "item": "https://blueblocks.in/terms/"
+              "item": "https://dev65.blueblocks.in/terms/"
             }
           ]
         }

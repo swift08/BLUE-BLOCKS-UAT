@@ -76,7 +76,7 @@ export default function Footer() {
 
   const gallery = useMemo(() => {
     if (Array.isArray(footer?.gallery) && footer.gallery.length) return footer.gallery;
-    return [{ src: "/footer-map-img.png", alt: "Campus" }];
+    return [{ src: "/footer-map-img.webp", alt: "Campus" }];
   }, [footer]);
 
   async function onNewsletterSubmit(e) {
