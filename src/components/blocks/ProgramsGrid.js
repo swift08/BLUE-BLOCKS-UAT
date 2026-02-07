@@ -23,13 +23,13 @@ export default function ProgramsGrid({
           ) : null}
 
           {title ? (
-            <h2 className="mt-5 text-[2rem] sm:text-[2.5rem] leading-[1.05] font-medium text-[#131313] tracking-[0.02em]">
+            <h2 className="mt-5 text-4xl sm:text-5xl font-semibold text-[#131313] main-title">
               {title}
             </h2>
           ) : null}
 
           {subtitle ? (
-            <p className="mt-3 text-[0.875rem] sm:text-[0.95rem] leading-relaxed text-[#7A7A7A]">
+            <p className="mt-3 leading-relaxed text-[#7A7A7A]">
               {subtitle}
             </p>
           ) : null}

@@ -5,7 +5,7 @@ export default function RecognizedBy({ title, items = [] }) {
   return (
     <section className="bg-[#ffffff]">
       <Container className="py-12">
-        <h2 className="text-center text-xl sm:text-2xl font-semibold tracking-wide">
+        <h2 className="text-center text-4xl sm:text-5xl font-semibold main-title">
           {title}
         </h2>
 

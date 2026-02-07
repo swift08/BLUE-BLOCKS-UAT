@@ -55,13 +55,13 @@ export default function MontessoriToMars({
             ) : null}
 
             {title ? (
-              <h2 className="mt-4 text-2xl sm:text-[4rem] leading-tight">
+              <h2 className="mt-4 text-4xl sm:text-5xl font-semibold main-title">
                 {title}
               </h2>
             ) : null}
 
             {text ? (
-              <p className="mt-3 text-[1.5rem] text-white/80 leading-relaxed">
+              <p className="mt-3 text-white/80 leading-relaxed">
                 {text}
               </p>
             ) : null}

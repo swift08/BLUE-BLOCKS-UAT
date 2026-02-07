@@ -68,8 +68,8 @@ export default function CardsGridSection({
   eyebrowBg = "#E7E8FF",
   eyebrowText = "#2C2F8F",
 
-  titleClassName = "text-center text-[2.25rem] sm:text-[3rem] leading-[1.08] font-medium text-[#131313]",
-  descriptionClassName = "mt-4 max-w-2xl text-[0.875rem] sm:text-[0.9375rem] leading-6 text-slate-500",
+  titleClassName = "text-center text-4xl sm:text-5xl font-semibold text-[#131313] main-title",
+  descriptionClassName = "mt-4 max-w-2xl leading-6 text-slate-500",
 
   // Grid behavior
   maxWidth = "max-w-6xl",
@@ -93,8 +93,8 @@ export default function CardsGridSection({
   iconWrapClassName = "h-10 w-10",
   imageWrapClassName = "h-45 w-full relative",
   titleSplit = true,
-  cardTitleClassName = "mt-5 text-[1.05rem] sm:text-[1.1rem] font-medium leading-[1.18] text-white whitespace-pre-line",
-  cardTextClassName = "mt-4 text-[0.8125rem] leading-6 text-white/75",
+  cardTitleClassName = "mt-5 font-medium leading-[1.18] text-white whitespace-pre-line",
+  cardTextClassName = "mt-4 leading-6 text-white/75",
 
   showNum = true,
   numClassName = "text-[3rem] sm:text-[3.2rem] font-semibold leading-none text-white/20",

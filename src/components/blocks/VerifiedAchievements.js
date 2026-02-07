@@ -15,7 +15,7 @@ export default function VerifiedAchievements({
           </h2>
 
           {description ? (
-            <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
+            <p className="mt-4 leading-relaxed text-slate-700">
               {description}
             </p>
           ) : null}
@@ -59,12 +59,12 @@ function AchievementCard({
 
       {/* Text */}
       <div className="mt-4">
-        <h3 className="text-sm sm:text-base font-semibold text-slate-900">
+        <h3 className="font-semibold text-slate-900">
           {title}
         </h3>
 
         {text ? (
-          <p className="mt-2 text-xs sm:text-sm leading-relaxed text-slate-700">
+          <p className="mt-2 leading-relaxed text-slate-700">
             {text}
           </p>
         ) : null}
@@ -74,7 +74,7 @@ function AchievementCard({
       <div className="mt-4 flex justify-end">
         <a
           href={href}
-          className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-semibold tracking-wide text-slate-900/80 hover:text-slate-900"
+          className="inline-flex items-center gap-2 font-semibold tracking-wide text-slate-900/80 hover:text-slate-900"
         >
           READ MORE <span aria-hidden="true">⌄</span>
         </a>

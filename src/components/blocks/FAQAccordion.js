@@ -17,7 +17,7 @@ export default function FAQAccordion({
   containerClassName = "py-14 sm:py-16",
 
   // typography controls (optional)
-  titleClassName = "text-2xl sm:text-4xl font-medium text-slate-900",
+  titleClassName = "text-4xl sm:text-5xl text-slate-900 main-title",
   subtitleClassName = "mt-3 text-xs sm:text-sm text-slate-700/70 max-w-2xl mx-auto",
 
   // accordion style controls (optional)

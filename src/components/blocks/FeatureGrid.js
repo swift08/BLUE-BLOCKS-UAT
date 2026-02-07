@@ -5,7 +5,7 @@ export default function FeatureGrid({ headline, subText, items = [] }) {
   return (
     <section className="bg-[#ffffff]">
       <Container className="py-14">
-        {headline ? (<h2 className="text-center text-3xl sm:text-4xl font-semibold whitespace-pre-line">{headline}</h2>) : null}
+        {headline ? (<h2 className="text-center text-4xl sm:text-5xl font-semibold whitespace-pre-line">{headline}</h2>) : null}
         {subText ? (<h3 className="text-center text-xl sm:text-2xl mt-4">{subText}</h3>) : null}
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-5">

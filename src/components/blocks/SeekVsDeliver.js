@@ -10,7 +10,7 @@ export default function SeekVsDeliver({
     <section className={bgClass}>
       <div className={`mx-auto w-full ${maxWidth} px-4 sm:px-6 py-12 sm:py-16`}>
         {/* Title */}
-        <h2 className="text-center text-3xl sm:text-5xl font-medium tracking-tight text-slate-900">
+        <h2 className="text-center text-4xl sm:text-5xl font-semibold text-slate-900 main-title">
           {title}
         </h2>
 

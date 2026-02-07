@@ -56,8 +56,8 @@ export default function ImageText({
   const finalTitleClass = titleClassName
     ? titleClassName
     : isCard
-      ? "text-3xl sm:text-4xl font-medium text-[#131313] whitespace-pre-line"
-      : "text-2xl sm:text-3xl font-semibold whitespace-pre-line";
+      ? "text-4xl sm:text-5xl font-medium text-[#131313] whitespace-pre-line"
+      : "text-4xl sm:text-5xl font-semibold whitespace-pre-line";
 
   const finalTextWrapClass = textClassName
     ? textClassName

@@ -69,13 +69,13 @@ export default function TabbedFaq({
         {/* Title */}
         <div className="text-center">
           {title ? (
-            <h2 className="text-2xl sm:text-4xl font-medium text-slate-900">
+            <h2 className="text-4xl sm:text-5xl font-semibold text-slate-900 main-title">
               {title}
             </h2>
           ) : null}
 
           {subtitle ? (
-            <p className="mt-3 text-xs sm:text-sm text-slate-700/80 max-w-2xl mx-auto">
+            <p className="mt-3 text-slate-700/80 max-w-2xl mx-auto">
               {subtitle}
             </p>
           ) : null}
@@ -89,7 +89,7 @@ export default function TabbedFaq({
                 key={t.label || i}
                 type="button"
                 onClick={() => onTabChange(i)}
-                className={`h-9 px-4 rounded-sm text-xs font-medium transition min-w-[220px] ${
+                className={`h-9 px-4 rounded-sm font-medium transition min-w-[220px] ${
                   i === active
                     ? `${tabActiveBg}` 
                     : "bg-white/60 text-slate-700 hover:bg-white"
@@ -131,7 +131,7 @@ export default function TabbedFaq({
               );
             })
           ) : (
-            <div className="text-sm text-slate-700/70 text-center py-10">
+            <div className="text-slate-700/70 text-center py-10">
               No FAQs available for this tab.
             </div>
           )}

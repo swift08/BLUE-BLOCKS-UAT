@@ -17,12 +17,12 @@ export default function BenchmarkBanner({
           className="rounded-xl px-6 sm:px-8 py-6 sm:py-7 text-white"
           style={{ backgroundColor: bg }}
         >
-          <h3 className="text-lg sm:text-xl font-medium tracking-wide">
+          <h3 className="text-xl font-medium tracking-wide">
             {title}
           </h3>
 
           {text ? (
-            <p className="mt-3 text-xs sm:text-sm leading-relaxed text-white/85 max-w-5xl">
+            <p className="mt-3 leading-relaxed text-white/85 max-w-5xl">
               {text}
             </p>
           ) : null}
@@ -31,7 +31,7 @@ export default function BenchmarkBanner({
             <div className="mt-4 flex justify-end">
               <a
                 href={cta.href}
-                className="inline-flex items-center gap-2 text-xs font-medium text-white/90 hover:text-white"
+                className="inline-flex items-center gap-2 font-medium text-white/90 hover:text-white"
               >
                 {cta.label || "Read More"}
                 <span aria-hidden="true">⌄</span>

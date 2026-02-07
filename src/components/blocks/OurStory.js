@@ -13,7 +13,7 @@ export default function OurStory({
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
           {/* Left Content */}
           <div>
-            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">
+            <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight main-title">
               {eyebrow}
             </h2>
 

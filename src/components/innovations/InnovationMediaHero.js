@@ -30,7 +30,7 @@ export default function InnovationMediaHero({
           <div className="absolute inset-0 flex items-center">
             <div className="w-full px-6 sm:px-10">
               <div className="max-w-xl">
-                <h2 className="text-white text-2xl sm:text-4xl font-semibold leading-tight">
+                <h2 className="text-white text-4xl sm:text-5xl font-semibold main-title">
                   {title}
                 </h2>
 
