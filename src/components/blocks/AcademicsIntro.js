@@ -42,7 +42,7 @@ export default function AcademicsIntro({
             ) : null}
 
             {title ? (
-              <h2 className="mt-5 text-[2.4rem] sm:text-[3.1rem] leading-[1.06] font-medium text-[#131313] whitespace-pre-line">
+              <h2 className="mt-5 text-4xl sm:text-5xl font-semibold text-[#131313] main-title">
                 {title}
               </h2>
             ) : null}

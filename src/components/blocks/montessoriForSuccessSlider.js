@@ -23,7 +23,7 @@ export default function MontessoriForSuccessSlider({
       <Container className="py-16 sm:py-20">
         {/* Title */}
         <div className="text-center">
-          <h2 className="text-[28px] sm:text-[44px] leading-[1.08] font-medium tracking-[0.08em] text-slate-900 whitespace-pre-line">
+          <h2 className="text-3xl sm:text-4xl font-semibold text-slate-900 main-title">
             {title}
           </h2>
         </div>

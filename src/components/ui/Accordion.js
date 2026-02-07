@@ -55,7 +55,7 @@ export default function Accordion({
               className={`w-full flex items-center justify-between gap-4 px-5 sm:px-7 py-4 text-left ${buttonClassName}`}
               aria-expanded={open}
             >
-              <span className="text-sm font-medium text-slate-900">{q}</span>
+              <span className="font-medium text-slate-900">{q}</span>
               <span className={`text-xl text-slate-500 ${iconClassName}`}>
                 {open ? "×" : "+"}
               </span>
@@ -72,7 +72,7 @@ export default function Accordion({
                   className="overflow-hidden"
                 >
                   <div
-                    className={`px-5 sm:px-7 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed ${contentClassName}`}
+                    className={`px-5 sm:px-7 pb-5 text-slate-600 leading-relaxed ${contentClassName}`}
                   >
                     {a}
                   </div>

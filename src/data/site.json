@@ -32,7 +32,7 @@
         "href": "/contact-us"
       }
     ],
-    "url": "https://dev65.blueblocks.in",
+    "url": "#",
     "schema": {
       "organization": {
         "@context": "https://schema.org",
@@ -41,8 +41,8 @@
           "Preschool"
         ],
         "name": "Blue Blocks",
-        "url": "https://dev65.blueblocks.in",
-        "logo": "https://dev65.blueblocks.in/icon/logo.svg",
+        "url": "#",
+        "logo": "#/icon/logo.svg",
         "sameAs": [
           "https://www.instagram.com/blueblocksmontessorischool/",
           "https://www.facebook.com/blueblockspreschool",
@@ -112,16 +112,16 @@
             "hasMap": "https://www.google.com/maps?q=Tellapur%20Hyderabad&output=embed"
           }
         ],
-        "@id": "https://dev65.blueblocks.in#organization"
+        "@id": "##organization"
       },
       "website": {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Blue Blocks",
-        "url": "https://dev65.blueblocks.in",
-        "@id": "https://dev65.blueblocks.in#website",
+        "url": "#",
+        "@id": "##website",
         "publisher": {
-          "@id": "https://dev65.blueblocks.in#organization"
+          "@id": "##organization"
         }
       }
     }
@@ -304,7 +304,7 @@
         "portalId": "244973317",
         "formId": "b9701056-562d-4f41-abbf-960dcd4a908f",
         "pageName": "Footer Newsletter",
-        "pageUri": "https://dev65.blueblocks.in/"
+        "pageUri": "#/"
       }
     },
     "quickLinks": [
@@ -425,7 +425,7 @@
               "While others race to finish a curriculum, we apply scientific rigor to the child’s education — not as a series of tests, but as a carefully guided construction of the human being.",
               "A child’s growth cannot be rushed, manufactured, or standardized. It must be understood. Through prepared environments, purposeful routines, and educators trained to observe before they intervene, we help children develop independence, emotional balance, and the confidence to learn deeply — not just for school, but for life."
             ],
-            "imageUrl": "/home/kids-being-part-sunday-school.webp"
+            "imageUrl": "/home-01/kids-being-part-sunday-school.webp"
           }
         },
         {
@@ -528,13 +528,13 @@
             "items": [
               {
                 "icon": "",
-                "image": "/home/awards-01-min.webp",
+                "image": "/home-01/awards-01-min.webp",
                 "title": "",
                 "text": "Blue Blocks founders Pavan Goyal and Munira Hussain receiving the award"
               },
               {
                 "icon": "",
-                "image": "/home/awards-02-min.webp",
+                "image": "/home-01/awards-02-min.webp",
                 "title": "",
                 "text": "Times School Certificate Awards earned by Blue Blocks for topping the list of the Best Schools."
               }
@@ -769,7 +769,7 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         }
       ],
       "schema": [
@@ -777,10 +777,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/",
+          "url": "#/",
           "description": "Authentic Montessori. The 0–16 Continuum. Education designed for the human spirit.",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -791,7 +791,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             }
           ]
         }
@@ -840,7 +840,7 @@
             "className": "inline",
             "image": "#",
             "eyebrow": "",
-            "title": "WHO WE ARE - More Than a School",
+            "title": "Who We Are - More Than a School",
             "description": "Blue Blocks is a 'Children's House' in the truest sense. We are a community of 847 students, families, and guides committed to a single truth: the child is their own teacher. We do not believe in forcing children into molds. We believe in the prepared environment—a space where a 3-year-old finds focus scrubbing a table, and a 14-year-old finds purpose building a satellite. We offer the complete 0-18 Continuum, ensuring your child’s transition from toddlerhood to university is seamless, coherent, and grounded in deep self-knowledge",
             "subdescription": "",
             "bullets": [
@@ -862,22 +862,22 @@
             ],
             "images": [
               {
-                "icon": "/innovation/slider-image-1.webp",
+                "icon": "/innovation-01/slider-image-1.webp",
                 "title": "",
                 "text": ""
               },
               {
-                "icon": "/innovation/slider-image-2.webp",
+                "icon": "/innovation-01/slider-image-2.webp",
                 "title": "",
                 "text": ""
               },
               {
-                "icon": "/innovation/slider-image-3.webp",
+                "icon": "/innovation-01/slider-image-3.webp",
                 "title": "",
                 "text": ""
               },
               {
-                "icon": "/innovation/slider-image-4.webp",
+                "icon": "/innovation-01/slider-image-4.webp",
                 "title": "",
                 "text": ""
               }
@@ -887,7 +887,7 @@
         {
           "type": "ourStory",
           "props": {
-            "eyebrow": "OUR HISTORY",
+            "eyebrow": "Our History",
             "title": "The 2009 Origin",
             "paragraphs": [
               "It started with a simple observation: Hyderabad needed an environment that trusted the child completely. In 2009, Pavan Goyal and Munira Hussain founded Blue Blocks with a small group of students and a rigid commitment to pure AMI (Association Montessori Internationale) standards.",
@@ -898,7 +898,7 @@
               {
                 "year": "2009",
                 "colorClass": "text-orange-300",
-                "text": "The Seed Founded in a rented bungalow with just <b>12 students</b> and a complete set of Nienhuis materials. The goal was simple: adherence to AMI standards without compromise."
+                "text": "The Seed Founded in a rented bungalow with just 12 students and a complete set of Nienhuis materials. The goal was simple: adherence to AMI standards without compromise."
               },
               {
                 "year": "2013",
@@ -962,7 +962,7 @@
           "props": {
             "bg": "#FFFFFF",
             "eyebrow": "",
-            "title": "WHO WE ARE",
+            "title": "Who We Are",
             "description": "Raising Conscious, Capable Citizens for 2050",
             "subdescription": "The world of 2050 will need more than intelligence. It will need clarity, compassion, and a deep moral compass. Most schools ask: 'How do we make children smarter?'",
             "subtitle": "We ask: 'How do we help children become fully human?'",
@@ -1005,6 +1005,9 @@
             "pill": "OUR FOUNDERS",
             "title": "The Custodians",
             "description": "We do not view teaching as instruction, but as a scientific discipline...",
+            "card": {
+              "maxWidth": "420px"
+            },
             "items": [
               {
                 "name": "Pavan Goyal",
@@ -1066,76 +1069,1358 @@
           }
         },
         {
-          "type": "councilCarousel",
+          "type": "foundersGuides",
           "props": {
             "bg": "bg-[#FFFFFF]",
-            "eyebrow": "OUR Teams",
+            "pill": "OUR Teams",
             "title": "The Teaching Team",
             "description": "In a traditional school, the teacher transmits information. At Blue Blocks, the Guide links the child to the environment.",
             "subdescription": "Our educators are masters of patience. They know that a child tying their own shoelaces is a victory for independence. Because our guides stay with the same children for three-year cycles, they know your child’s history, their temperament, and the precise moment they fell in love with reading. They are not just teachers; they are witnesses to your child's development.",
+            "card": { "maxWidth": "420px" },
+            "layout": {
+              "type": "carousel",
+              "gap": 24,
+              "cardWidth": 520,
+              "carousel": {
+                "loop": false,
+                "align": "start",
+                "sizingMode": "perView",
+                "perView": { "desktop": 3, "tablet": 2, "mobile": 1 },
+                "showDots": false,
+                "navPosition": "center"
+              }
+            },
             "items": [
               {
-                "name": "Ms Krishnaveni",
-                "role": "",
-                "position": "Program Director – Innovation",
-                "image": "/team/krishnaveni.webp",
-                "tag": "Program Director"
+                "name": "Badugu Suneetha Gnanavalli",
+                "roleLabel": "Innovation Lab Guide (Chemistry)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/suneetha.webp",
+                "imageAlt": "Badugu Suneetha Gnanavalli",
+                "tagline": "Moving from the textbook to the test tube.",
+                "bio": "M.Sc. Chemistry | 7 years | Experiential lab learning.",
+                "readMoreHref": "/team/suneetha",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Logic as a Foundation Suneetha holds a Post-Graduation in Chemistry. She arrived at Blue Blocks after years in traditional high school teaching with a specific inquiry: Why memorize a reaction when you can witness it? She transitioned to the Montessori method to embrace Experiential Learning. To her, the laboratory is not a classroom for instruction. It is a Prepared Environment, a space where chemicals and apparatus are accessible tools, inviting the child to discover the laws of nature firsthand."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "The Guide as Observer In her 3+ years at Blue Blocks, Suneetha has mastered the art of Scientific Observation. She defines her role not by the instruction she delivers, but by the connections she facilitates. She operates as a Guide, focusing on establishing the Dynamic Link between the student and the apparatus. Once this connection is made, she steps back. This physical withdrawal is intentional; it ensures that the Cycle of Activity belongs entirely to the child, allowing them to “absorb” chemical laws through their own effort rather than adult explanation."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Materializing the Abstract Montessori philosophy states that “the concrete must precede the abstract.” Suneetha specializes in applying this to the invisible world of atoms. She moves beyond 2D diagrams. Using Tactile Modeling (clay and structure kits), she helps students build physical representations of molecular bonds. Whether exploring “Ionic” or “Covalent” structures, she ensures the child’s hands are busy constructing the concept before their mind is asked to define it."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“The most powerful moment in the lab is not when I explain a law, but when a student sees it happen. When they weigh the reactants and products and realize the mass hasn't changed, they aren't just learning the Law of Conservation; they are experiencing the order of the universe.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:suneetha.gnanavalli@blueblocks.com" }
+                  ]
+                }
               },
+
               {
-                "name": "Ms Kiranmayee",
-                "role": "",
-                "position": "Senior Manager – Innovation & Growth",
-                "image": "/team/kiran.webp",
-                "tag": "Senior Manager"
+                "name": "Sravani Ponnala",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/sravani.webp",
+                "imageAlt": "Sravani Ponnala",
+                "tagline": "Cultivating the “Mathematical Mind” through order and precision.",
+                "bio": "B.Tech (IT) | AMI Certified (MTRT) | 4 years.",
+                "readMoreHref": "/team/sravani-ponnala",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Logic as a Foundation Sravani holds a B.Tech in Information Technology. In a Montessori context, systems logic aligns with the child’s “Mathematical Mind”—a drive for precision, exactness, and order. She transitioned from IT to apply structured thinking to the developing human intelligence."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "She is an AMI-certified Primary Guide, trained at MTRT Hyderabad under Ms. Teenaz Reporter. Over four years at Blue Blocks, she has evolved into an architect of the Primary environment—maintaining the Prepared Environment with exactness so the child can build themselves."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "The Concrete Before the Abstract Sravani specializes in Sensorial and Mathematical areas—precise presentations of materials such as the Pink Tower and the Decimal System—so the child holds concepts in the hand before naming them in the mind."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Education is not about teaching. It is about awakening the spirit. My daily work is to step back and allow the child's own curiosity to lead the way.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:sravani.ponnala@blueblocks.com" }
+                  ]
+                }
               },
+
               {
-                "name": "Ms Krithinavee",
-                "role": "",
-                "position": "Founder, Lead – Innovation & Partnerships",
-                "image": "/team/krithi.webp",
-                "tag": "Lead"
+                "name": "Sree Divya",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "",
+                "imageAlt": "Sree Divya",
+                "tagline": "Applying the laws of biology to human development.",
+                "bio": "B.Tech (Biotech) | AMI Certified (MTRT) | 12 years.",
+                "readMoreHref": "/team/sree-divya",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Biology of Learning Sree Divya views Montessori through a biological lens: just as organisms need precise conditions to thrive, the child needs a Prepared Environment for self-construction."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide trained at MTRT Hyderabad (2017) under Ms. Teenaz Reporter. With 12 years at Blue Blocks, including 8 years of direct practice, she protects concentration and follows Scientific Observation to know when to intervene."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Engineering the Mathematical Mind She specializes in Mathematical Abstraction using the Decimal System and Stamp Game—helping children manipulate quantities concretely so mathematics becomes logical, fearless, and joyful."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“The highest form of teaching is observation. My vocation is not to mold the child, but to witness their organic growth and remove the obstacles in their path.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:sree.divya@blueblocks.com" }
+                  ]
+                }
               },
+
               {
-                "name": "Ms Krishnaveni",
-                "role": "",
-                "position": "Program Director – Innovation",
-                "image": "/team/krishnaveni.webp",
-                "tag": "Program Director"
+                "name": "Narmada Gattu",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/narmada.webp",
+                "imageAlt": "Narmada Gattu",
+                "tagline": "Curating the environment with the precision of design.",
+                "bio": "Dip. Fashion Design | AMI Certified (MTRT) | 3 years.",
+                "readMoreHref": "/team/narmada-gattu",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Esthetic of Order With a design background, Narmada brings an eye for visual harmony—treating the arrangement of materials as psychological preparation that calls the Absorbent Mind into activity."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "She began with the AMI Assistant Certificate (2021), then completed the AMI Primary Diploma at MTRT Hyderabad (2024) under Ms. Teenaz Reporter. Over three years at Blue Blocks, she grew from observer to Primary Guide."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Formatting the Will She protects multi-step activity cycles so children construct confidence and will through independent completion—freedom within limits without adult interference."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Development happens when the child is trusted to take ownership. My role is to provide freedom within limits, allowing the child's inner discipline to emerge naturally.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:narmada.gattu@blueblocks.com" }
+                  ]
+                }
               },
+
               {
-                "name": "Ms Kiranmayee",
-                "role": "",
-                "position": "Senior Manager – Innovation & Growth",
-                "image": "/team/kiran.webp",
-                "tag": "Senior Manager"
+                "name": "Syeda Saleha Nishat",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/saleha.webp",
+                "imageAlt": "Syeda Saleha Nishat",
+                "tagline": "Balancing the equation between effort and independence.",
+                "bio": "B.Com | AMI Certified (MTRT) | 2 years.",
+                "readMoreHref": "/team/syeda-saleha-nishat",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Economy of Effort Saleha brings sequence and balance into the Prepared Environment—seeing child work as purposeful investment toward independence."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide trained at MTRT Hyderabad (2024) under Ms. Teenaz Reporter. Her focus is preserving the Work Cycle and protecting concentration from interruption."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Materializing the Abstract She specializes in moving from concrete to abstract using Fraction Skittles and mathematical apparatus—so concepts are built through the hand before symbols."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“A child's development cannot be rushed; it must be honored. My role is to maintain a calibrated environment where the child is free to follow their own internal timeline.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:saleha.nishat@blueblocks.com" }
+                  ]
+                }
               },
+
               {
-                "name": "Ms Krithinavee",
-                "role": "",
-                "position": "Founder, Lead – Innovation & Partnerships",
-                "image": "/team/krithi.webp",
-                "tag": "Lead"
+                "name": "Ramya Devi Yedla",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/ramya-y.webp",
+                "imageAlt": "Ramya Devi Yedla",
+                "tagline": "Designing the environment for the cognitive mind.",
+                "bio": "MCA | Graphic Design | AMI Certified (MTRT) | 12 years tenure.",
+                "readMoreHref": "/team/ramya-devi-yedla",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The “User Experience” of Learning Ramya treats the classroom like an intuitive interface—curating order and functional logic to call the Absorbent Mind into work."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "A 12+ year veteran at Blue Blocks, she became an AMI-certified Primary Guide at MTRT Hyderabad (2025) under Ms. Teenaz Reporter—deeply embedded in the school’s operational and educational DNA."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Pedagogical Aesthetics She uses beauty as the hook for concentration—ensuring presentations and materials are visually coherent and sensorially calibrated for attention."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“My training was not merely an education; it was a transformation. I approach the environment with full presence—heart, mind, and body—because I am preparing the child for life, not just for school.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:ramya.yedla@blueblocks.com" }
+                  ]
+                }
               },
+
               {
-                "name": "Ms Krishnaveni",
-                "role": "",
-                "position": "Program Director – Innovation",
-                "image": "/team/krishnaveni.webp",
-                "tag": "Program Director"
+                "name": "Afsha Ameet Jassani",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/afsha.webp",
+                "imageAlt": "Afsha Ameet Jassani",
+                "tagline": "Building the internal architecture of language.",
+                "bio": "British Council Cert | AMI Certified (MTRT) | 8 years.",
+                "readMoreHref": "/team/afsha-ameet-jassani",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Language Laboratory With certifications in Early Childhood English and Phonics, Afsha treats the Prepared Environment as a linguistics lab—where communication structure is absorbed, not “taught.”"
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide trained at MTRT Hyderabad (2023–24) under Ms. Teenaz Reporter. She brings 8 years of experience and uses observation to protect concentration and the work cycle."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "The Function of Words She specializes in Function of Words work—helping children experience syntax and logic of language, supported by rhythm through music and movement."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“The child absorbs everything—not just the lesson, but the silence and the movement between the words. My role is to curate an environment worthy of that absorption.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:afsha.jassani@blueblocks.com" }
+                  ]
+                }
               },
+
               {
-                "name": "Ms Kiranmayee",
-                "role": "",
-                "position": "Senior Manager – Innovation & Growth",
-                "image": "/team/kiran.webp",
-                "tag": "Senior Manager"
+                "name": "Konda Sai Nishkala",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/nishkala.webp",
+                "imageAlt": "Konda Sai Nishkala",
+                "tagline": "Structuring the child's world through precise taxonomy.",
+                "bio": "AMI Certified (MTRT) | 5 years | Classification & nomenclature.",
+                "readMoreHref": "/team/konda-sai-nishkala",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Antidote to Rote Learning Nishkala deliberately chose Montessori as an alternative to industrial schooling—ensuring each activity serves a distinct neurological purpose for meaningful cognition."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide trained at MTRT Hyderabad (2020) under Ms. Teenaz Reporter. With nearly five years and 2.7 years at Blue Blocks, she safeguards psychological safety and removes performance pressure."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Cognitive Taxonomy She specializes in classification through Classified Picture Cards—helping children build an organized mental library where words map to reality."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Every material has a purpose. My goal is to replace memorization pressure with the joy of discovery, keeping development quiet and internal.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:nishkala.konda@blueblocks.com" }
+                  ]
+                }
               },
+
               {
-                "name": "Ms Krithinavee",
-                "role": "",
-                "position": "Founder, Lead – Innovation & Partnerships",
-                "image": "/team/krithi.webp",
-                "tag": "Lead"
+                "name": "Kriti Khare",
+                "roleLabel": "Adolescent Math Mentor (12–18 Years)",
+                "roleColor": "#C59BEA",
+                "image": "/team/erd-kinder/kriti-khare.webp",
+                "imageAlt": "Kriti Khare",
+                "tagline": "Connection as the prerequisite for cognition.",
+                "bio": "NTT (BEA) | 15 years | Psychological safety in math.",
+                "readMoreHref": "/team/kriti-khare",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Project-Based Inquiry Kriti uses a project-based framework where students demonstrate understanding through research, creation, and presentation—turning passive listening into active construction."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "With 1.7 years at Blue Blocks, she is aligning her practice to Erdkinder—transitioning from instruction to Scientific Observation by stepping back and facilitating deeper inquiry."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Mathematical Therapy Kriti focuses on emotional safety first—de-stigmatizing errors and converting equations into collaborative puzzles to remove anxiety and build confidence."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Real cognition happens the moment a student feels safe. Once that connection is made, the defenses drop, and the child is free to master complex logic.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:kriti.khare@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Barsha Mishra",
+                "roleLabel": "Elementary Mentor",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/barsha-mishra.webp",
+                "imageAlt": "Barsha Mishra",
+                "tagline": "Bridging cultural heritage with the discipline of the environment.",
+                "bio": "NTT (BEA) | Hindi Specialist | 15+ years context.",
+                "readMoreHref": "/team/barsha-mishra",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Language as Identity Barsha views language as a bridge to cultural identity—using linguistic pedagogy to help children connect with vernacular roots while sustaining cognitive discipline."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "She is integrating traditional experience with Montessori “freedom within limits,” mastering environmental structures that allow self-regulation and protect concentration."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Narrative Immersion She uses oral storytelling (“Stories and Sutras”) to establish emotional calm and ethical grounding—building the foundation for academic growth."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“I believe in the power of ‘Stories and Sutras.’ My goal is to use narrative to guide the modern child toward wisdom, discipline, and inner growth.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:barsha.mishra@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Protiti Mookherjee",
+                "roleLabel": "Movement & Cultural Mentor",
+                "roleColor": "#C59BEA",
+                "image": "/team/erd-kinder/protiti-mookherjee.webp",
+                "imageAlt": "Protiti Mookherjee",
+                "tagline": "Cultivating cognitive focus through the discipline of movement.",
+                "bio": "MA (Lit/Dance) | UNESCO CID | 23 years.",
+                "readMoreHref": "/team/protiti-mookherjee",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Somatic Discipline Protiti treats dance as will-training and movement as essential to intelligence—bringing global standards of cultural preservation and embodied discipline to the environment."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "With 23 years of mentoring and 7 years at Blue Blocks, she channels dynamic energy into active concentration—using rhythm and cultural narrative as external structure for focus."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Rhythmic Cognition She guides how endurance and coordination built through classical movement translate into the intellectual stamina required for deep work."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“I am an adherent of Shiksha. My role is to establish a rhythm that shapes life, guiding the student toward their own authenticity.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:protiti.mookherjee@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "R. Shanmuga Priya",
+                "roleLabel": "AMI Elementary Guide (6–12 Years)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/r-shanmuga-priya.webp",
+                "imageAlt": "R. Shanmuga Priya",
+                "tagline": "Applying operational precision to the construction of the reasoning mind.",
+                "bio": "MBA | AMI Elementary Diploma | 12 years tenure.",
+                "readMoreHref": "/team/r-shanmuga-priya",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Management of Potential Priya brings operational excellence into the Elementary environment—supporting autonomy and self-construction with exacting standards."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "An AMI-certified Elementary Guide trained under Mr. Greg MacDonald. She began at Blue Blocks over 12 years ago (initially in Primary), then completed Montessori Core Principles and the Elementary Diploma to guide the reasoning mind."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Geometric Algebra She specializes in visualizing higher math through Hierarchical Material—helping children derive algebraic relationships (like (a+b+c)^3) as physical reality, not memorized rules."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“My duty is to extend ‘intelligent love,’ providing deep care and precise guidance so children build their own character.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:shanmuga.priya@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Sri Satya Sai Kiranmayi R",
+                "roleLabel": "Elementary Mentor (Sciences)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/sri-satya-sai-kiranmayi-r.webp",
+                "imageAlt": "Sri Satya Sai Kiranmayi R",
+                "tagline": "Moving from rote memorization to scientific deduction.",
+                "bio": "M.Sc. & M.Phil (Chemistry) | AMI Elem. Assistant | 11 years.",
+                "readMoreHref": "/team/sri-satya-sai-kiranmayi-r",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Laboratory of the Mind With an M.Sc. and M.Phil in Chemistry and lecturer experience, she moved from lecture halls to Montessori to replace passive receipt with innovation mentorship and scientific derivation."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "Trained at Medha Montessori under Ms. Madhavi, holding AMI Elementary Assistant and Montessori Core Principles (2024). She brings 11 years’ experience, with 6+ years at Blue Blocks, making rigorous science accessible without dilution."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Phenomenological Science She makes the invisible visible using apparatus (Magnetic Lines of Force, Electron Arrangement Boards) and narrative analogies to build concrete understanding of complex interactions."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“When I demonstrated the invisible magnetic lines and saw wonder in the children’s eyes, I knew I was no longer just lecturing; I was connecting them to the universe.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:kiranmayi.r@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Poulomi Bose",
+                "roleLabel": "AMI Adolescent Guide (12–18 Years)",
+                "roleColor": "#C59BEA",
+                "image": "/team/erd-kinder/poulomi.webp",
+                "imageAlt": "Poulomi Bose",
+                "tagline": "Fusing linguistic rigor with psychological insight.",
+                "bio": "Dip. Psychotherapy | AMI Adolescent | TESOL/TEFL.",
+                "readMoreHref": "/team/poulomi-bose",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Language as Identity Poulomi uses language as a tool for adolescent identity formation—helping students find their voice with rigorous expression and psychological insight."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Adolescent Guide (2025) under Ms Lesley Anne; also AMI Core Principles. With HANDLE therapy background, she designs an inclusive environment for neurodiverse profiles."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Therapeutic Linguistics She integrates project-based learning with drama, art, and advanced vocabulary to support expressive cognition and emotional regulation."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Education is a collaborative healing process… to develop the whole human being.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:poulomi.bose@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "J H Dasan Perumallapalli",
+                "roleLabel": "Montessori Sports Guide",
+                "roleColor": "#C59BEA",
+                "image": "/team/elementary/joseph.webp",
+                "imageAlt": "J H Dasan Perumallapalli",
+                "tagline": "Aligning physical discipline with the prepared environment.",
+                "bio": "M.P.Ed | PG Dip (Yoga) | Montessori Sports Certified.",
+                "readMoreHref": "/team/j-h-dasan-perumallapalli",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Kinesiology as a Science Joseph treats sport as structured developmental curriculum—coordination, endurance, mechanics—rather than unstructured “recess.”"
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "Trained in Montessori Sports Fundamentals at MTRT (2024) under Mr. Jip Bartels—aligning sports instruction with Planes of Development and integrating Grace & Courtesy into teamwork."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Developmental Kinesiology He specializes in structured movement (Football, Handball) building spatial awareness and strategy; Blue Blocks secured its first SFA Championship Trophy under his guidance."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“The trophy is secondary; the process is primary… true performance comes from self-control, not pressure.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:joseph.dasan@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Shibani Patel",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/shibani.webp",
+                "imageAlt": "Shibani Patel",
+                "tagline": "Structuring the micro-society through mathematical order.",
+                "bio": "B.Ed (Social Studies) | AMI Certified (MTRT) | 9 years.",
+                "readMoreHref": "/team/shibani-patel",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Micro-Society Shibani views the House of Children as a functioning micro-society—balancing individual liberty with community responsibility through independence built by work."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide trained at MTRT Hyderabad (2022) under Ms. Teenaz Reporter. With 9 years of experience (3 at Blue Blocks), she protects concentration via Scientific Observation."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "The Mathematical Mind She specializes in mathematical transition using Golden Beads—anchoring abstraction in concrete sensation before symbols."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“My role is to wait and observe… the moment a child claims their own education.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:shibani.patel@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Satya Sree Ansuri",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/satya.webp",
+                "imageAlt": "Satya Sree Ansuri",
+                "tagline": "Engineering the internal order of the mind.",
+                "bio": "D.Arch.E | AMI Certified (MTRT) | 12 years.",
+                "readMoreHref": "/team/satya-sree-ansuri",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Architectural Blueprint With D.Arch.E and corporate leadership experience, Satya applies an engineering mindset to the Prepared Environment—treating it as a precise blueprint for character construction."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide trained at MTRT Hyderabad (2017) under Ms. Teenaz Reporter. A veteran with 8 years at Blue Blocks, she protects sequence and the work cycle with meticulous execution."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Structural Cognition She specializes in visual discrimination using the Pink Tower—helping children physically order intelligence through dimension, precision, and control of error."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Independence is born in the moment of silence when a child steps back, surveys their completed work, and recognizes their own success.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:satya.ansuri@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Dr. Shobha Ediga",
+                "roleLabel": "Adolescent Guide (Science & Inquiry)",
+                "roleColor": "#C59BEA",
+                "image": "/team/erd-kinder/dr-shobha.webp",
+                "imageAlt": "Dr. Shobha Ediga",
+                "tagline": "Bringing doctoral-level rigor to the adolescent mind.",
+                "bio": "Ph.D. Plant Sciences | Gold Medalist (Biochem) | AMI 6–12 Orientation.",
+                "readMoreHref": "/team/dr-shobha-ediga",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Junior Research Fellowship A Ph.D. scientist and former Senior Research Fellow, Dr. Shobha treats the adolescent program as a junior research fellowship—where evidence and inquiry outrank textbooks."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "Holds AMI 6–12 Orientation (2024) trained at Medha Montessori under Ms. Kamini Kapur. She bridges abstract theory to real-world reasoning and university readiness."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Microscopic Investigation She scaffolds scientific inquiry—from microscopy to experiments (osmosis, enzyme activity)—teaching students to treat errors as data points."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“I guide students to think like scientists… designing fair tests, questioning results, and constructing understanding independently.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:shobha.ediga@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Shailaja Pagadala",
+                "roleLabel": "Elementary Guide (6–12 Years)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/shailaja.webp",
+                "imageAlt": "Shailaja Pagadala",
+                "tagline": "Rooting the study of language in the laws of nature.",
+                "bio": "B.Ed (Bio/Telugu) | AMI 6–12 Orientation | 4 years.",
+                "readMoreHref": "/team/shailaja-pagadala",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Nature as the Prepared Environment Shailaja integrates biological sciences with language structure—using outdoor botany as systems-thinking and showing how order governs both plants and meaning."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI 6–12 Orientation Guide trained at Medha Montessori (2024) under Ms. Kamini Kapur. Over four years at Blue Blocks, she practices quiet Scientific Observation, letting interest drive depth."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Naturalist Pedagogy She synthesizes botanical learning with Telugu literacy—connecting Varnamala to identity while grounding plant study in real physiology."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Nature itself is the only classroom they need.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:shailaja.pagadala@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Zabin Veerani",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/zabin.webp",
+                "imageAlt": "Zabin Veerani",
+                "tagline": "Constructing confidence through the discipline of observation.",
+                "bio": "Masters (Accounting) | AMI Primary | AMI 0–3 Assistant.",
+                "readMoreHref": "/team/zabin-veerani",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "From Metrics to Mentorship With corporate experience, Zabin shifted from external numbers to internal human potential—choosing Montessori as a scientific framework for confidence through meaningful engagement."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide (MTRT 2019–20 under Ms. Teenaz Reporter) and AMI 0–3 Assistants Certificate. With five years of practice (second year at Blue Blocks), she follows the child and fades into the background."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "The Art of Non-Intervention She specializes in psychological safety—treating errors as control-of-error data and building internal security by resisting unnecessary adult intervention."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“This work is about faith in the process… prepare the environment, then step back and trust the child’s rhythm.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:zabin.veerani@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Kiranmayee Gorthi",
+                "roleLabel": "AMI Toddler Guide (0–3 Years)",
+                "roleColor": "#7ACB88",
+                "image": "/team/toddler/kiranmayi.webp",
+                "imageAlt": "Kiranmayee Gorthi",
+                "tagline": "The prepared adult as the primary instrument of the environment.",
+                "bio": "AMI A to I (MIB) | MBA (HR) | 10 years.",
+                "readMoreHref": "/team/kiranmayee-gorthi",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Human Potential Management Kiranmayee moved from corporate HR and medical transcription to Infant Community observation—treating the environment as the child’s foundation for functional independence."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI Assistants to Infancy (0–3) trained at MIB (2020) under Ms. Julia Hilson. With long tenure at Blue Blocks, she guides early independence and supports diverse developmental needs through consistency."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "The Grace of the Adult She specializes in Practical Life (food prep) and the Prepared Adult—modeling actions with such precision that toddlers are compelled to imitate and master independence."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“The work transforms the adult too… I aim to be a calm, consistent anchor in their rapid development.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:kiranmayee.gorthi@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Gandepalli Sree Theja",
+                "roleLabel": "AMI Elementary Guide (6–12 Years)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/sri-teja.webp",
+                "imageAlt": "Gandepalli Sree Theja",
+                "tagline": "Replacing rote memorization with visual logic.",
+                "bio": "M.Tech (Medical Nanotech) | AMI (Medha) | Ex-TCS.",
+                "readMoreHref": "/team/gandepalli-sree-theja",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Geometry of Logic With an M.Tech and IT experience, Theja moved into Montessori after realizing abstraction must be visualized. She protects the “why” behind math, not rote formulas."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Elementary Guide trained at Medha Montessori (2025) under Ms. Madhavi Gaddam. She practices as a scientific observer—walking alongside the child and removing obstacles."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Mathematical Visualization She specializes in Decimal Abstraction with the Decimal Checker Board—helping children exchange hierarchies physically and experience calculation as discovery."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“My goal is to protect wonder—so the child constructs an intelligence that is deep, intuitive, and their own.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:sree.theja@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Badri Shruthi",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/badri-shruthi.webp",
+                "imageAlt": "Badri Shruthi",
+                "tagline": "Decoding the logic of early language and development.",
+                "bio": "B.Tech (IT) | PG Data Science | AMI Certified (MTRT).",
+                "readMoreHref": "/team/badri-shruthi",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "From Data to Development With an IBM software background, Shruthi moved from binary logic to the Absorbent Mind—rejecting rote memorization and treating the environment as a space for natural processing."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide trained at MTRT Hyderabad (2024–25) under Ms. Teenaz Reporter. She observes like an analyst—timing presentations and step-backs so learning stays sustainable."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Linguistic Synthesis She specializes in the Movable Alphabet—separating the struggle of handwriting from the flow of thought so children “write” before pencil control."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“My goal is to remove fear of error—so repetition becomes mastery and the child smiles quietly at their own success.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:shruthi.badri@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Ranjan Kumar",
+                "roleLabel": "Innovation and Drone Mentor (STEM)",
+                "roleColor": "#C59BEA",
+                "image": "/team/erd-kinder/ranjan.webp",
+                "imageAlt": "Ranjan Kumar",
+                "tagline": "Grounding abstract physics in concrete construction.",
+                "bio": "B.Tech (Aeronautical) | 3 years tenure | Prototyping mentor.",
+                "readMoreHref": "/team/ranjan-kumar",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Engineer's Mindset Ranjan transitioned from designing aircraft to designing learning experiences—treating problems as iterations and insisting children build concepts with their hands."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "With three years exclusively in the Blue Blocks ecosystem, he mentors inquiry—moving from “sage on stage” to facilitator of deconstruction and reconstruction."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Constructive Mechanics He specializes in prototyping and model making—teaching that collapsed models are data, building scientific mind and iteration habit."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“A ‘mistake’ is simply data for the next iteration… children build confidence through calm space to test ideas.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:ranjan.kumar@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Mridula Chunduri",
+                "roleLabel": "AMI Elementary Guide (6–12 Years)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/mridula-ch.webp",
+                "imageAlt": "Mridula Chunduri",
+                "tagline": "Igniting cosmic inquiry through the art of narrative.",
+                "bio": "AMI Diploma (MTRT) | PG Journalism | 8 years tenure.",
+                "readMoreHref": "/team/mridula-chunduri",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Journalist’s Inquiry Mridula brings the “who/what/where/when/why” toolkit into Cosmic Education—feeding the child’s Reasoning Mind with facts, context, and questions."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Elementary Guide trained at MTRT Hyderabad (2019) under Mr. Greg Mac Donald; also AMI Core Principles and Erdkinder Orientation. With long tenure, she adapts presentations to child interest."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Cosmic Narratives & Ethical Math She specializes in Great Lessons and uses math materials (Racks & Tubes) to teach “fair sharing,” turning academics into Peace Education."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“I do not teach from above; I work alongside… we build knowledge together, grounded in mutual respect.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:mridula.chunduri@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Sandhya Rao M",
+                "roleLabel": "AMI Elementary Guide (6–12 Years)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/sandhya-rao-m.webp",
+                "imageAlt": "Sandhya Rao M",
+                "tagline": "Fusing physiological systems with the laws of nature.",
+                "bio": "M.PT | Biomimicry Specialist | AMI (Medha) | 6 years tenure.",
+                "readMoreHref": "/team/sandhya-rao-m",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Living Systems Sandhya brings physiotherapy and biomimicry into the environment—seeing the child as an interconnected system and the classroom as an innovation hub for learning from nature."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Elementary Guide (2023) trained at Medha under Ms. Madhavi Gaddam; also AMI School Leadership. With six years at Blue Blocks, she mentors biophilia and systems thinking."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Biomimetic Pedagogy She connects human-body systems to cosmic interdependence—bridging biology to math and patterns in nature to bead cabinet geometry."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“I cultivate the child’s natural biophilia—guiding them to see interdependencies of life and innovate with nature as advisor.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:sandhya.rao@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Fizza Fallah",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/fizza.webp",
+                "imageAlt": "Fizza Fallah",
+                "tagline": "Demystifying abstraction through concrete experience.",
+                "bio": "BBA | AMI Certified (MTRT) | 5 years.",
+                "readMoreHref": "/team/fizza-fallah",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Concrete Revelation Fizza’s Montessori entry began with a personal shift—discovering math as physical reality through Fraction Insets and choosing to ensure children build concepts through the hand."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide trained at MTRT Hyderabad (2019) under Ms. Teenaz Reporter. With five years (third year at Blue Blocks), she works as a collaborator, connecting children (especially those with deviations) to purposeful work."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Total Reading She specializes in Object Box 1—bridging phonetic sounds to concrete reality so reading becomes meaning, not mechanical decoding."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“My role is to listen and partner… building trust so the child feels safe enough to reveal their true nature.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:fizza.fallah@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Siddiqua Rabiha",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/siddiqua-rabiha.webp",
+                "imageAlt": "Siddiqua Rabiha",
+                "tagline": "From physical nutrition to the nourishment of the mind.",
+                "bio": "B.Sc. (Nutrition) | AMI Certified (MTRT) | 2025 graduate.",
+                "readMoreHref": "/team/siddiqua-rabiha",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Diet of the Mind Siddiqua treats the prepared environment like a balanced diet—specific sensory inputs that nourish the Absorbent Mind for independent psychic growth."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI trained at MTRT (2025) under Ms. Teenaz Reporter and Ms. Dipa Sreekumar. She practices as an “Explorer,” adhering to Scientific Observation and sensitive periods."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Mathematical Logic She specializes in concrete arithmetic using the Addition Chart—guiding patterns so understanding is built, not memorized."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“I walk alongside the child… providing exact tools to construct their own intelligence.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:rabiha.siddiqua@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Afrin Syed",
+                "roleLabel": "AMI Primary Guide (3–6 Years)",
+                "roleColor": "#E08B64",
+                "image": "/team/self-interpretive/afrin-syed.webp",
+                "imageAlt": "Afrin Syed",
+                "tagline": "Cultivating community through the spiritual preparation of the adult.",
+                "bio": "AMI Primary (MTRT) | 1.8 years tenure | Preparation of the adult.",
+                "readMoreHref": "/team/afrin-syed",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "A Vocational Calling Afrin entered Montessori as vocation—treating the guide’s role as spiritual discipline rooted in preparation of the adult."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Primary Guide (2024) trained at MTRT Hyderabad under Ms. Teenaz Reporter. With full tenure in Blue Blocks (1.8 years), she supports emotional regulation with patience and rhythm."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Materialized Thought She specializes in the Movable Alphabet—witnessing the shift when language becomes self-expression through story construction."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“When the environment is right, compassion is a natural human instinct.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:afrin.syed@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Bharrgavi Bandreddi",
+                "roleLabel": "AMI Elementary Guide (6–12 Years)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/bhargavi.webp",
+                "imageAlt": "Bharrgavi Bandreddi",
+                "tagline": "Constructing the child’s understanding of civilization and structure.",
+                "bio": "B.Tech (Civil) | AMI Diploma (Supraja/Navadisha) | 5 years tenure.",
+                "readMoreHref": "/team/bharrgavi-bandreddi",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Civil Engineer Bharrgavi moved from building infrastructure to building the Elementary mind—using structural precision to ground the Cosmic Curriculum in laws of nature and patterns of human history."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Elementary Guide (2013) trained at Supraja Montessori Institute (Chennai), mentored by Carla Foster and Anne Dunn. With 5+ years at Blue Blocks, she sustains emotional balance and respect-driven freedom."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Cosmic Imagination & Mathematical Form She bridges cultural heritage (Calendar Stories) with mathematical rigor (Checker Board) to help children “see” number categories before calculating."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Words have power… my goal is to integrate art into every subject so children connect emotionally with the concepts they build.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:bharrgavi.bandreddi@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Chandini Priya Allu",
+                "roleLabel": "AMI Toddler Guide (0–3 Years)",
+                "roleColor": "#7ACB88",
+                "image": "/team/administration/chandini-priya.webp",
+                "imageAlt": "Chandini Priya Allu",
+                "tagline": "Constructing the self through the dignity of choice.",
+                "bio": "MBA (Finance) | AMI A to I (MIB) | 10 years tenure.",
+                "readMoreHref": "/team/chandini-priya-allu",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "From Finance to Functional Independence Chandini transitioned from investment banking systems to early childhood—discovering that proportioned toddler tools are instruments of dignity, not toys."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI Assistants to Infancy (0–3) trained at MIB (2022–2024) under Ms. Julia Hilson and Ms. Kavya Chandrasekar. Her Montessori paradigm shifted toward honoring the child’s autonomy and valid choices."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Care of the Environment She specializes in Practical Life sequences like Washing the Table—supporting focus, coordination, and internal pride through logical order."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“We must not guide children based on our social expectations… my work is to protect their right to decide.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:chandini.allu@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Anurag C J",
+                "roleLabel": "Art Mentor (Studio Arts)",
+                "roleColor": "#C59BEA",
+                "image": "/team/erd-kinder/anurag-c-j.webp",
+                "imageAlt": "Anurag C J",
+                "tagline": "Cultivating the aesthetic mind through tactile expression.",
+                "bio": "MFA (Painting) | BFA (Painting) | 2 years tenure.",
+                "readMoreHref": "/team/anurag-c-j",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Atelier Method Anurag treats the art studio as a serious atelier—building the aesthetic mind through heightened observation, structure, and studio rigor."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "With two years at Blue Blocks, he operates as a silent observer, offering guidance after watching material interaction. His proof-point: children writing clear, profound artist statements."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Sculptural Cognition He specializes in clay modeling—teaching volume, weight, and balance through tactile hand-brain work."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“When a child articulates the meaning behind their work better than an adult could, I know we have succeeded in building an aesthetic mind.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:anurag@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Anisha Kandukuri",
+                "roleLabel": "Administration & Communications (AMI Primary Diploma)",
+                "roleColor": "#7D7AEB",
+                "image": "/team/administration/anisha-kandukuri.webp",
+                "imageAlt": "Anisha Kandukuri",
+                "tagline": "Extending the prepared environment beyond the classroom walls.",
+                "bio": "AMI Primary Diploma (MIB) | Dip. E.C.C.Ed | 10 years tenure.",
+                "readMoreHref": "/team/anisha-kandukuri",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "Pedagogical Operations Anisha views administration through Montessori “why”—ensuring operations support development, not just logistics."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI Primary Guide trained at MIB under Ms. Anahita Gandhi and Ms. Sunitha Madnani; also AMI Assistants Certificate (2023). She bridges parents and academic team across the campus experience."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Operational Consistency She protects order through transition management—communication and transport executed with calm precision to support work cycle readiness."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Security is the foundation of learning… calmness, clarity, and safety must be maintained in every interaction.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:anisha.kandukuri@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Aishwarya Tejaswiraj",
+                "roleLabel": "AMI Elementary Guide (6–12 Years)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/aishwarya-tejaswiraj.webp",
+                "imageAlt": "Aishwarya Tejaswiraj",
+                "tagline": "Visualizing the abstract through the lens of narrative.",
+                "bio": "MBA (Media Mgmt) | AMI (MMTI) | Ex-Creative Producer.",
+                "readMoreHref": "/team/aishwarya-tejaswiraj",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Art of Production Aishwarya applies production storytelling to Cosmic Education—treating Great Lessons as immersive narratives that drive research and engagement."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI-certified Elementary Guide trained at Medha Montessori Training Institute (MMTI) (2025) under Ms. Madhavi Gaddam—moving from broadcasting information to facilitating discovery."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Mathematical Visualization She specializes in concrete algebra—using materials like Powers of Numbers to prove logical architecture (e.g., why n^0 = 1) through the hand."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Small, consistent actions create a vast ecosystem… I plant seeds of curiosity and partner with family to watch intelligence grow.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:aishwarya@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Telugu Someshwari Devi",
+                "roleLabel": "Montessori Mentor & Support",
+                "roleColor": "#7D7AEB",
+                "image": "/team/administration/telugu-someshwari-devi.webp",
+                "imageAlt": "Telugu Someshwari Devi",
+                "tagline": "Facilitating independence through psychological support.",
+                "bio": "AMI Core Principles (MTRT) | 1 year tenure | Student support.",
+                "readMoreHref": "/team/telugu-someshwari-devi",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Observation of Autonomy Someshwari was drawn to Montessori by witnessing child autonomy. She protects that liberty, keeping the environment a space of self-direction."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI Core Principles (2025) at MTRT with a panel of expert trainers. She supports daily across environments as facilitator-enthusiast, scaffolding emotional and logistical readiness."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Psychological Adaptation She grounds emotions in concrete order—using schedule reality to convert abstract sadness into a workable plan."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“I prepare the path and step back… excitement for a child’s breakthrough is contagious and fuels self-directed engagement.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:someshwari.devi@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Nidhi Vora",
+                "roleLabel": "Head of Admissions & Parent Partnership",
+                "roleColor": "#7D7AEB",
+                "image": "/team/administration/nidhi-vora.webp",
+                "imageAlt": "Nidhi Vora",
+                "tagline": "Transforming parental anxiety into trust through deep empathy.",
+                "bio": "AMI Primary Diploma (MTRT) | B.Com | 9 years tenure.",
+                "readMoreHref": "/team/nidhi-vora",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Creative Choreographer Nidhi’s Montessori entry was personal—driven by curiosity and love for a child. Her creative background evolved into deep empathy for early development."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "AMI Primary trained at MTRT (2005–2006) under Mrs. Laxmi Krishna Kumar. Her training was self-healing, shaping her mission to create environments where children never carry the scars of “dark schooling.”"
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Parent Partnership She specializes in adult education—supporting anxious parents as the bridge from home to environment, transforming fear into conviction through scientific explanation."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“When a parent walks away reassured, I know I have succeeded.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:nidhi.vora@blueblocks.com" }
+                  ]
+                }
+              },
+
+              {
+                "name": "Vanga Praveena Reddy",
+                "roleLabel": "AMI Elementary Guide (6–12 Years)",
+                "roleColor": "#57B3CE",
+                "image": "/team/elementary/vanga-praveena-reddy.webp",
+                "imageAlt": "Vanga Praveena Reddy",
+                "tagline": "Decoding the syntax of language through the logic of experience.",
+                "bio": "M.Sc. (Computer Science) | AMI (Medha) | 8+ years tenure.",
+                "readMoreHref": "/team/vanga-praveena-reddy",
+                "modal": {
+                  "title": "Profile",
+                  "content": [
+                    {
+                      "label": "Educational Origin",
+                      "text": "The Logic of Syntax Praveena applies software-logic precision to language—helping children understand functional architecture rather than memorizing vocabulary."
+                    },
+                    {
+                      "label": "Pedagogical Journey",
+                      "text": "A long-tenure Blue Blocks guide who formalized practice with AMI Elementary Diploma (6–12) at Medha under Ms. Kamini Kapur and Ms. Lynne Lawrence—shifting from instruction to Scientific Observation."
+                    },
+                    {
+                      "label": "Expertise",
+                      "text": "Linguistic Construction She specializes in vernacular acquisition using Akshar Peti (Hindi Movable Alphabet)—letting children build words physically before writing, turning fear into a manageable mechanical process."
+                    },
+                    {
+                      "label": "Guiding Philosophy",
+                      "text": "“Language is not acquired through memorization; it is constructed through experience… the child grows capacity for expression like a plant grows toward light.”"
+                    }
+                  ],
+                  "social": [
+                    { "label": "LinkedIn", "href": "" },
+                    { "label": "Email", "href": "mailto:praveena.reddy@blueblocks.com" }
+                  ]
+                }
               }
             ]
           }
@@ -1147,10 +2432,21 @@
             "image": "#",
             "eyebrow": "",
             "title": "THE SCIENCE BEHIND THE SUCCESS",
-            "description": "We don't guess. We observe.",
-            "subdescription": "Every child is unique, but their development follows universal laws. At Blue Blocks, we are not just a school; we are a Pedagogical Center of Excellence. Led by Pavan Goyal, our research team supports the classroom by documenting your child's milestones to ensure their environment is perfectly tailored to their needs—not the other way around.",
+            "description": "We Don’t Guess. We Observe.",
+            "subdescription": [
+              "At Blue Blocks, education is not driven by trends, assumptions, or standardized templates. It is grounded in observation, developmental neuroscience, authentic Montessori pedagogy, and longitudinal research. Every environment, material, and intervention is designed around how children naturally grow, think, and construct understanding.", 
+              "Our approach combines over a century of Montessori science with contemporary research in cognition, behavior, and innovation learning. The result is an ecosystem where development is intentional, measurable, and deeply human.",
+              "Beyond pedagogy, our approach is rooted in continuous observation and adaptation. Guides document developmental patterns, emerging interests, and learning readiness so the environment evolves with the child — not the other way around. This ensures learning remains natural, purposeful, and developmentally aligned.",
+              "We integrate classical Montessori foundations with modern innovation pathways. From early sensorial exploration to adolescent research, engineering, and innovation work, learners experience a coherent developmental journey that builds confidence, competence, and clarity.",
+              "At Blue Blocks, success is measured not just through academics, but through independence, resilience, creativity, and social awareness. The goal is simple: to nurture individuals who are not only knowledgeable, but capable, grounded, and prepared for an evolving world."
+            ],
             "descriptionClassName": "text-[#717171]",
             "images": [
+              {
+                "icon": "/about-us/slider-image-3.webp",
+                "title": "",
+                "text": ""
+              },
               {
                 "icon": "/about-us/slider-image-1.webp",
                 "title": "",
@@ -1158,11 +2454,6 @@
               },
               {
                 "icon": "/about-us/slider-image-2.webp",
-                "title": "",
-                "text": ""
-              },
-              {
-                "icon": "/about-us/slider-image-3.webp",
                 "title": "",
                 "text": ""
               },
@@ -1193,8 +2484,8 @@
             "cardRadius": "rounded-[18px]",
             "cardPadding": "px-6 py-7",
             "cardMinHeight": 220,
-            "cardTitleClassName": "mt-5 text-[1.05rem] sm:text-[1.1rem] font-medium leading-[1.18] text-[#414141]",
-            "cardTextClassName": "mt-4 text-[0.8125rem] leading-6 text-[#414141]",
+            "cardTitleClassName": "mt-5 font-medium leading-[1.18] text-[#414141]",
+            "cardTextClassName": "mt-4 leading-6 text-[#414141]",
             "iconSize": "60",
             "iconWrapClassName": "h-10 w-10",
             "items": [
@@ -1420,11 +2711,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "About Us",
-          "url": "https://dev65.blueblocks.in/about-us/"
+          "url": "#/about-us/"
         }
       ],
       "schema": [
@@ -1432,10 +2723,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "About Us",
-          "url": "https://dev65.blueblocks.in/about-us/",
+          "url": "#/about-us/",
           "description": "Education is not the filling of a bucket, but the lighting of a fire. Since 2009, Blue Blocks has stood as a sanctuary of Authentic Montessori practice, offerin",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -1446,13 +2737,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "About Us",
-              "item": "https://dev65.blueblocks.in/about-us/"
+              "item": "#/about-us/"
             }
           ]
         }
@@ -1485,11 +2776,11 @@
           "props": {
             "spacingTop": "pt-28",
             "image": {
-              "src": "/programs/hero.webp",
+              "src": "/programs-01/hero.webp",
               "alt": "Academics"
             },
             "eyebrow": "OUR PROGRAMS",
-            "title": "THE COGNITIVE\nCONTINUUM",
+            "title": "THE COGNITIVE CONTINUUM",
             "subtitle": [
               "A Scientifically Mapped Journey from Infancy to Adolescence (0–16 Years)",
               "A scientifically mapped journey from infancy to adolescence, designed to follow the natural laws of human development."
@@ -1780,11 +3071,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Academics",
-          "url": "https://dev65.blueblocks.in/programs/"
+          "url": "#/programs/"
         }
       ],
       "schema": [
@@ -1792,10 +3083,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Academics",
-          "url": "https://dev65.blueblocks.in/programs/",
+          "url": "#/programs/",
           "description": "A Scientifically Mapped Journey from Infancy to Adolescence (0–16 Years)",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -1806,13 +3097,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Academics",
-              "item": "https://dev65.blueblocks.in/programs/"
+              "item": "#/programs/"
             }
           ]
         }
@@ -2725,15 +4016,15 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Programs",
-          "url": "https://dev65.blueblocks.in/programs/"
+          "url": "#/programs/"
         },
         {
           "name": "{{title}}",
-          "url": "https://dev65.blueblocks.in/programs/{slug}"
+          "url": "#/programs/{slug}"
         }
       ],
       "schema": [
@@ -2741,10 +4032,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Program Details",
-          "url": "https://dev65.blueblocks.in/programs/{slug}",
+          "url": "#/programs/{slug}",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -2755,19 +4046,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Programs",
-              "item": "https://dev65.blueblocks.in/programs/"
+              "item": "#/programs/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "{{title}}",
-              "item": "https://dev65.blueblocks.in/programs/{slug}"
+              "item": "#/programs/{slug}"
             }
           ]
         }
@@ -2882,11 +4173,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Admissions",
-          "url": "https://dev65.blueblocks.in/admissions/"
+          "url": "#/admissions/"
         }
       ],
       "schema": [
@@ -2894,10 +4185,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Admissions",
-          "url": "https://dev65.blueblocks.in/admissions/",
+          "url": "#/admissions/",
           "description": "At Blue Blocks, we do not admit a student; we admit a family. Education is not a transaction where you pay fees and we deliver a product. It is a 15-year collab",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -2908,13 +4199,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Admissions",
-              "item": "https://dev65.blueblocks.in/admissions/"
+              "item": "#/admissions/"
             }
           ]
         }
@@ -3063,11 +4354,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Contact",
-          "url": "https://dev65.blueblocks.in/contact-us/"
+          "url": "#/contact-us/"
         }
       ],
       "schema": [
@@ -3075,10 +4366,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Contact",
-          "url": "https://dev65.blueblocks.in/contact-us/",
+          "url": "#/contact-us/",
           "description": "At Blue Blocks, education is not a job — it’s a responsibility. We are a community of educators, mentors, and lifelong learners committed to honoring childhood ",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -3089,13 +4380,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Contact",
-              "item": "https://dev65.blueblocks.in/contact-us/"
+              "item": "#/contact-us/"
             }
           ]
         }
@@ -3198,11 +4489,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Careers",
-          "url": "https://dev65.blueblocks.in/careers/"
+          "url": "#/careers/"
         }
       ],
       "schema": [
@@ -3210,10 +4501,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Careers",
-          "url": "https://dev65.blueblocks.in/careers/",
+          "url": "#/careers/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -3224,13 +4515,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Careers",
-              "item": "https://dev65.blueblocks.in/careers/"
+              "item": "#/careers/"
             }
           ]
         }
@@ -3578,11 +4869,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Research Institute",
-          "url": "https://dev65.blueblocks.in/research-institute/"
+          "url": "#/research-institute/"
         }
       ],
       "schema": [
@@ -3590,10 +4881,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Research Institute",
-          "url": "https://dev65.blueblocks.in/research-institute/",
+          "url": "#/research-institute/",
           "description": "Advancing the Science of Innovation Development in Childhood and Adolescence",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -3604,13 +4895,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Research Institute",
-              "item": "https://dev65.blueblocks.in/research-institute/"
+              "item": "#/research-institute/"
             }
           ]
         }
@@ -3817,11 +5108,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "For Parents",
-          "url": "https://dev65.blueblocks.in/parents/"
+          "url": "#/parents/"
         }
       ],
       "schema": [
@@ -3829,10 +5120,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "For Parents",
-          "url": "https://dev65.blueblocks.in/parents/",
+          "url": "#/parents/",
           "description": "Explore recommended books that deepen your understanding of Montessori philosophy, child psychology, and developmental stages from early childhood...",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -3843,13 +5134,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "For Parents",
-              "item": "https://dev65.blueblocks.in/parents/"
+              "item": "#/parents/"
             }
           ]
         }
@@ -3880,7 +5171,7 @@
         {
           "type": "innovationMediaHero",
           "props": {
-            "title": "The Cognitive Architecture of\nInnovation",
+            "title": "The Cognitive Architecture of Innovation",
             "subtitle": "Innovation is not a subject. It is a biological stage of development. We don't just teach technology; we nurture the 'First Principles' thinking that created it.",
             "bgImageUrl": "/innovation/innov_hero.webp",
             "primaryCta": {
@@ -4134,11 +5425,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Innovation",
-          "url": "https://dev65.blueblocks.in/innovation/"
+          "url": "#/innovation/"
         }
       ],
       "schema": [
@@ -4146,10 +5437,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Innovation",
-          "url": "https://dev65.blueblocks.in/innovation/",
+          "url": "#/innovation/",
           "description": "Innovation is not a subject. It is a biological stage of development. We don't just teach technology; we nurture the 'First Principles' thinking that created it",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -4160,13 +5451,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Innovation",
-              "item": "https://dev65.blueblocks.in/innovation/"
+              "item": "#/innovation/"
             }
           ]
         }
@@ -5467,15 +6758,15 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Innovation",
-          "url": "https://dev65.blueblocks.in/innovation/"
+          "url": "#/innovation/"
         },
         {
           "name": "{{title}}",
-          "url": "https://dev65.blueblocks.in/innovation/{slug}"
+          "url": "#/innovation/{slug}"
         }
       ],
       "schema": [
@@ -5483,10 +6774,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Innovation Detail",
-          "url": "https://dev65.blueblocks.in/innovation/{slug}",
+          "url": "#/innovation/{slug}",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -5497,19 +6788,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Innovation",
-              "item": "https://dev65.blueblocks.in/innovation/"
+              "item": "#/innovation/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "{{title}}",
-              "item": "https://dev65.blueblocks.in/innovation/{slug}"
+              "item": "#/innovation/{slug}"
             }
           ]
         }
@@ -5559,7 +6850,7 @@
               "Maria Montessori was a visionary who disabused the traditional methods of education for being too constrictive and non child friendly. In her lifelong work with children first as a pediatric doctor and then as researcher and educator Maria Montessori stumbled up on the secret to not just retaining children’s attention but to successfully divert it for productive work.",
               "Maria Montessori believed that education is an aid for life. Her education philosophy can be summed up in her own words- Never help a child with a task at which he feels he can succeed. She believed the happiness you see in a child is directly proportional to the education he received. She spread her schooling philosophy far and wide to ensure that the first six years of every child lay the best possible foundations for an enriching future."
             ],
-            "imageUrl": "/home/kids-being-part-sunday-school.webp"
+            "imageUrl": "/about-us/montessori-system/kids-being-part-sunday-school.webp"
           }
         },
         {
@@ -5714,11 +7005,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Montessori System",
-          "url": "https://dev65.blueblocks.in/montessori-system/"
+          "url": "#/montessori-system/"
         }
       ],
       "schema": [
@@ -5726,10 +7017,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Montessori System",
-          "url": "https://dev65.blueblocks.in/montessori-system/",
+          "url": "#/montessori-system/",
           "description": "Maria Montessori was a visionary who disabused the traditional methods of education for being too constrictive and non child friendly. In her lifelong work with",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -5740,13 +7031,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Montessori System",
-              "item": "https://dev65.blueblocks.in/montessori-system/"
+              "item": "#/montessori-system/"
             }
           ]
         }
@@ -5793,22 +7084,27 @@
             ],
             "images": [
               {
-                "icon": "/campus/campus4-min.webp",
+                "icon": "/campus-01/campus1-min.webp",
                 "title": "",
                 "text": ""
               },
               {
-                "icon": "/campus/campus1-min.webp",
+                "icon": "/campus-01/campus2-min.webp",
                 "title": "",
                 "text": ""
               },
               {
-                "icon": "/campus/campus2-min.webp",
+                "icon": "/campus-01/campus3-min.webp",
                 "title": "",
                 "text": ""
               },
               {
-                "icon": "/campus/campus3-min.webp",
+                "icon": "/campus-01/campus4-min.webp",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/campus-01/campus5-min.webp",
                 "title": "",
                 "text": ""
               }
@@ -5860,11 +7156,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Campus",
-          "url": "https://dev65.blueblocks.in/campus/"
+          "url": "#/campus/"
         }
       ],
       "schema": [
@@ -5872,10 +7168,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Campus",
-          "url": "https://dev65.blueblocks.in/campus/",
+          "url": "#/campus/",
           "description": "Blue Blocks campuses are designed as calm, spacious, and purpose-led learning environments where children feel safe to explore, move, and grow with independence",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -5886,13 +7182,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Campus",
-              "item": "https://dev65.blueblocks.in/campus/"
+              "item": "#/campus/"
             }
           ]
         }
@@ -6014,11 +7310,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Videos",
-          "url": "https://dev65.blueblocks.in/videos/"
+          "url": "#/videos/"
         }
       ],
       "schema": [
@@ -6026,10 +7322,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Videos",
-          "url": "https://dev65.blueblocks.in/videos/",
+          "url": "#/videos/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -6040,13 +7336,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Videos",
-              "item": "https://dev65.blueblocks.in/videos/"
+              "item": "#/videos/"
             }
           ]
         }
@@ -6297,11 +7593,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "FAQ",
-          "url": "https://dev65.blueblocks.in/faq/"
+          "url": "#/faq/"
         }
       ],
       "schema": [
@@ -6309,10 +7605,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "FAQ",
-          "url": "https://dev65.blueblocks.in/faq/",
+          "url": "#/faq/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -6323,13 +7619,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "FAQ",
-              "item": "https://dev65.blueblocks.in/faq/"
+              "item": "#/faq/"
             }
           ]
         }
@@ -6513,11 +7809,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Privacy Policy",
-          "url": "https://dev65.blueblocks.in/privacy-policy/"
+          "url": "#/privacy-policy/"
         }
       ],
       "schema": [
@@ -6525,10 +7821,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Privacy Policy",
-          "url": "https://dev65.blueblocks.in/privacy-policy/",
+          "url": "#/privacy-policy/",
           "description": "Blue Blocks (<b>“Blue Blocks”, “we”, “our”, “us”</b>) respects your privacy and is committed to protecting the personal information you share with us.",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -6539,13 +7835,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Privacy Policy",
-              "item": "https://dev65.blueblocks.in/privacy-policy/"
+              "item": "#/privacy-policy/"
             }
           ]
         }
@@ -6745,11 +8041,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "https://dev65.blueblocks.in/"
+          "url": "#/"
         },
         {
           "name": "Terms of Use",
-          "url": "https://dev65.blueblocks.in/terms/"
+          "url": "#/terms/"
         }
       ],
       "schema": [
@@ -6757,10 +8053,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Terms of Use",
-          "url": "https://dev65.blueblocks.in/terms/",
+          "url": "#/terms/",
           "description": "Welcome to the Blue Blocks website (<b>“Website”</b>). These Terms of Use (<b>“Terms”</b>) govern your access and use of this Website and its content.",
           "isPartOf": {
-            "@id": "https://dev65.blueblocks.in#website"
+            "@id": "##website"
           }
         },
         {
@@ -6771,13 +8067,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://dev65.blueblocks.in/"
+              "item": "#/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Terms of Use",
-              "item": "https://dev65.blueblocks.in/terms/"
+              "item": "#/terms/"
             }
           ]
         }

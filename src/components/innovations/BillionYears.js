@@ -18,7 +18,7 @@ export default function BillionYears({
         <div className="grid gap-8 lg:grid-cols-12 lg:items-start">
           <div className="lg:col-span-12">
             {title && (
-              <h2 className="text-3xl sm:text-4xl font-semibold text-[#131313]">
+              <h2 className="text-4xl sm:text-5xl font-semibold text-[#131313] main-title">
                 {title}
               </h2>
             )}

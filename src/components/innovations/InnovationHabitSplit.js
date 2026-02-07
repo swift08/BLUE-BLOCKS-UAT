@@ -13,7 +13,7 @@ export default function InnovationHabitSplit({
   description,
   descriptionClassName = "text-[#6B6B6B] leading-7",
   bg = "#FFFFFF",
-  subdescription,
+  subdescription = [],
   className,
 
   bullets = [],
@@ -82,7 +82,7 @@ export default function InnovationHabitSplit({
             ) : null}
 
             {title ? (
-              <h2 className="mt-2 text-2xl sm:text-[3rem] text-[#111118] leading-tight">
+              <h2 className="mt-2 text-4xl sm:text-5xl text-[#111118] font-semibold main-title">
                 {title}
               </h2>
             ) : null}
@@ -92,6 +92,19 @@ export default function InnovationHabitSplit({
                 {description}
               </p>
             ) : null}
+
+            {Array.isArray(subdescription) && subdescription.length ? (
+              <div className={descriptionClassName}>
+                {subdescription.map((p, idx) =>
+                  typeof p === "string" ? (
+                    <p
+                      key={idx}
+                      dangerouslySetInnerHTML={{ __html: p }}
+                    />
+                  ) : null
+                )}
+              </div>
+            ) : null}        
 
             {/* ✅ NEW: Details rows (only if provided) */}
             {hasDetails ? (

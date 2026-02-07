@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   reactCompiler: true,
   output: 'export',
   trailingSlash:true,
@@ -7,7 +8,7 @@ const nextConfig = {
   assetPrefix: "", // same as above
   images: {
     unoptimized: true,
-  },
+  }
 };
 
 export default nextConfig;

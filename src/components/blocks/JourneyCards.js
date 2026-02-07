@@ -12,7 +12,7 @@ export default function JourneyCards({ title, subText, cards = [] }) {
   return (
     <section className="bg-[#f5efe6]">
       <Container className="py-14">
-        {title ? (<h2 className="text-center text-2xl sm:text-3xl font-semibold tracking-wide">
+        {title ? (<h2 className="text-center text-4xl sm:text-5xl font-semibold tracking-wide">
           {title}
         </h2>) : null}
         {subText ? (<h3 className="text-center text-xl sm:text-2xl ">{subText}</h3>) : null}

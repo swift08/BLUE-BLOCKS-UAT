@@ -42,7 +42,7 @@ export default function Insights({
           ) : null}
 
           {title ? (
-            <h2 className="mt-2 text-2xl sm:text-4xl font-semibold text-slate-900">
+            <h2 className="mt-2 text-4xl sm:text-5xl font-semibold main-title">
               {title}
             </h2>
           ) : null}

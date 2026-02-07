@@ -1,6 +1,6 @@
 export const dynamic = "force-static";
 
-const SITE_URL = "https://dev65.blueblocks.in";
+const SITE_URL = "";
 
 export default function robots() {
   return {

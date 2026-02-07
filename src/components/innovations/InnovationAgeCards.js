@@ -24,7 +24,7 @@ export default function InnovationAgeCards({ eyebrow, title, cards = [], footnot
 
         {/* Title (supports newline) */}
         {title ? (
-          <h2 className="mt-6 text-center font-normal text-[#111827] text-[2rem] leading-[1.15] sm:text-[2.75rem] sm:leading-[1.12]">
+          <h2 className="mt-6 text-center text-[#111827] text-4xl sm:text-5xl font-semibold main-title">
             {renderMultiline(title)}
           </h2>
         ) : null}
@@ -53,7 +53,7 @@ export default function InnovationAgeCards({ eyebrow, title, cards = [], footnot
               ) : null}
 
               {flow ? (
-                <div className="mt-2 text-[#111827] text-[0.95rem] leading-6 sm:text-[1.0625rem]">
+                <div className="mt-2 text-[#111827] leading-6">
                   {flow}
                 </div>
               ) : null}
@@ -94,7 +94,7 @@ function AgeCard({ tone, tag, text, icon }) {
       </div>
 
       {/* Description */}
-      <div className="mt-3 text-[0.8125rem] leading-5 opacity-90">
+      <div className="mt-3 leading-5 opacity-90">
         {text}
       </div>
     </div>

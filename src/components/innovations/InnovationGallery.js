@@ -231,7 +231,7 @@ export default function InnovationGallery({
         ) : null}
 
         {title ? (
-          <h2 className="mt-4 text-center text-2xl sm:text-[4rem] font-medium text-slate-900 leading-tight">
+          <h2 className="mt-4 text-center text-4xl sm:text-5xl font-semibold text-slate-900 main-title">
             {title}
           </h2>
         ) : null}

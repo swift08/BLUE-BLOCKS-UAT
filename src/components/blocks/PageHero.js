@@ -25,7 +25,7 @@ export default function PageHero({ title, breadcrumb = [], bg }) {
       ) : null}
 
       <Container className="relative py-14 sm:py-16 text-center">
-        <h1 className="text-3xl sm:text-5xl font-medium text-slate-900">{title}</h1>
+        <h1 className="text-4xl sm:text-5xl font-semibold text-slate-900">{title}</h1>
         {breadcrumb?.length ? (
           <div className="mt-3 text-xs text-slate-700/70">
             {breadcrumb.map((b, i) => (

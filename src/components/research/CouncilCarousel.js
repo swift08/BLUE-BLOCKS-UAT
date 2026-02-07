@@ -11,7 +11,7 @@ export default function CouncilCarousel({
   eyebrowText = "#2C2F8F", 
   title, 
   description, 
-  descriptionClassName = "text-center mt-4 text-[0.875rem] sm:text-[0.9375rem] leading-6 text-slate-500",
+  descriptionClassName = "text-center mt-4 leading-6 text-slate-500",
   subdescription,
   items = [] 
 }) {
@@ -31,7 +31,7 @@ export default function CouncilCarousel({
           </div>
         ) : null}
 
-        {title ? (<h2 className="text-center text-[2.25rem] sm:text-[3rem] leading-[1.08] font-medium text-[#131313]">
+        {title ? (<h2 className="text-center text-4xl sm:text-5xl font-semibold text-[#131313] main-title">
           {title}
         </h2>) : null}
 
