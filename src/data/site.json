@@ -216,7 +216,7 @@
         },
         {
           "id": "secondary-school",
-          "title": "Secondary School – Class 7 to 10",
+          "title": "Secondary School – Class 7 to 12",
           "href": "/programs/secondary-school",
           "description": "Teen years guided through real-life projects, leadership, and Cambridge learning.",
           "image": "/programs/thumb-secondary.webp"
@@ -339,7 +339,7 @@
         "href": "/programs/primary-school-elementary"
       },
       {
-        "label": "Secondary School – Class 7 to 10",
+        "label": "Secondary School – Class 7 to 12",
         "href": "/programs/secondary-school"
       }
     ],
@@ -4126,7 +4126,7 @@
           {
             "type": "pageHero",
             "props": {
-              "title": "Programs",
+              "title": "The Adolescent Community",
               "breadcrumb": [
                 {
                   "label": "Programs",
@@ -4140,20 +4140,25 @@
                 "base": "#F3E3CF",
                 "leftArc": "/ui/arc-left.webp",
                 "rightArc": "/ui/arc-right.webp"
-              }
+              },
+              "breadcrumbTitle": "Programs",
+              "pageTitle": "The Adolescent Community"
             }
           },
           {
             "type": "programIntroSplit",
             "props": {
-              "eyebrow": "The Adolescent Community",
-              "title": "The Social Self",
-              "subTitle": "",
+              "eyebrow": "THE ADOLESCENT COMMUNITY",
+              "title": "The Adolescent Community",
+              "subTitle": "Adolescent Programme (Ages 12–18 | Grades 7–12)",
               "text": "",
+              "imageUrl": "",
+              "imageAlt": "",
+              "showVideoIcon": false,
               "metaRows": [
                 {
                   "label": "Sub-head",
-                  "value": "\"Help Me To Think With Society\"",
+                  "value": "The Social Self Awakens",
                   "bg": {
                     "label": "#F3D8CF",
                     "value": "#F3D8CF"
@@ -4161,7 +4166,7 @@
                 },
                 {
                   "label": "Age",
-                  "value": "12 Years – 16 Years",
+                  "value": "12 Years – 18 Years",
                   "bg": {
                     "label": "#DFE7DA",
                     "value": "#DFE7DA"
@@ -4190,37 +4195,114 @@
                   "src": "/programs/the-adolescent-community/small-thumb-2.webp",
                   "alt": "Montessori materials"
                 }
-              }
+              },
+              "bg": "#FFFFFF"
             }
           },
           {
-            "type": "CenteredTextBlock",
+            "type": "imageText",
             "props": {
-              "bg": "#EEF7FD",
-              "title": "The Psychological Phase",
-              "textParts": [
-                "Adolescence is a 'rebirth.' The student is leaving childhood and entering society. They require ",
-                {
-                  "bold": "Valorization"
-                },
-                "'. —the feeling that they are capable, strong, and their work has value to others. They need to understand economic mechanisms and social structures."
+              "title": "A Letter to You",
+              "text": [
+                "Your child is no longer the one who asked, “Why does the sun rise?” Something has shifted again. You’ve noticed it — the withdrawal, the intense friendships, the sudden opinions about justice and society, the fierce idealism, the occasional sense that they’ve become a stranger in your own home.",
+                "What you are witnessing is not rebellion. It is the awakening of conscience.",
+                "Dr. Montessori called the adolescent a “social newborn” — as vulnerable psychologically as the infant is physically. The child has ended. A new being is emerging, one who must find their place not in the family, but in society — and crucially, one who must develop their own inner moral compass.",
+                "In the Toddler Community, the inner command was “Help me to do it myself.” In the Children’s House: “Help me to think for myself.” In Elementary: “Help me to understand for myself.”",
+                "Now, at twelve, a new command emerges: “Help me to think with society.”",
+                "This is not merely social integration. It is the development of social consciousness — the capacity to feel with others, to recognise interdependence, to hold oneself accountable not just to personal standards but to the wellbeing of the whole.",
+                "The Adolescent Community is designed to nurture this awakening — not through lectures on ethics, but through lived experience that makes conscience necessary."
               ],
-              "maxWidth": "56rem"
+              "imageUrl": "",
+              "imageAlt": "",
+              "imageAlign": "right",
+              "variant": "card",
+              "bg": "#EAF4FF",
+              "contentCenter": true
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "The Second Rebirth",
+              "text": [
+                "Just as the six-year-old underwent a metamorphosis — losing baby teeth, developing new physical stamina, shifting from absorption to reasoning — the twelve-year-old undergoes another transformation equally profound.",
+                "Physical transformation: More physical growth occurs in adolescence than at any time since the first three years of life. Limbs lengthen. Weight redistributes. The body can feel unfamiliar from one week to the next.",
+                "Neural reorganization: The brain undergoes significant restructuring — including the growth of new white matter, dendrite growth, and “pruning” of unused connections. This is why adolescents can seem simultaneously brilliant and disorganised.",
+                "Moral awakening: Most significantly for character formation, the adolescent develops the capacity for principled moral reasoning. The Elementary child understood rules and fairness. The adolescent begins to construct a personal ethical code — asking not just “Is this fair?” but “What kind of person do I want to be? What kind of world do I want to help create?”",
+                "The “social newborn” requires a specifically prepared environment — just as the infant did. But where the infant needed physical protection, the adolescent needs moral protection: a place where their emerging conscience can develop through real choices with real consequences, guided by adults who model integrity."
+              ],
+              "imageUrl": "/programs/the-adolescent/second-rebirth.webp",
+              "imageAlt": "Adolescent development and community life",
+              "imageSide":"left",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]",
+              "variant": "default",
+              "bgClass": "#FFFFFF",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Valorization: The Core Need",
+              "text": [
+                "The primary psychological drive of the adolescent is Valorization — the internal realisation of one’s own value. This is not self-esteem given by adults through praise. It is something the adolescent must achieve through their own effort.",
+                "But Valorization is not merely about competence. At its deepest level, it is about moral worth. The adolescent needs to know not only “I can do things” but “I can do good things. My work contributes. My presence matters. I am capable of integrity.”",
+                "Valorization occurs when:",
+                "• Work is chosen freely and completed with care",
+                "• Obstacles are overcome through sustained effort",
+                "• The result genuinely contributes to others’ wellbeing",
+                "• The work is done with integrity — honesty, responsibility, care for quality",
+                "This is why traditional schooling often fails adolescents. Memorising content for tests does not produce Valorization. The adolescent knows, instinctively, that such work has no real value to anyone — and worse, that the system often rewards shortcuts over integrity. What they need is work that matters, done in a community that values how you work as much as what you produce."
+              ],
+              "imageUrl": "/programs/the-adolescent/valorization.webp",
+              "imageAlt": "Students building meaningful work and competence",
+              "variant": "default",
+              "bgClass" : "bg-[#F3E3CF]",
+              "align": "left",
+              "imageSide":"right",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "The Micro-Economy: Learning to Sustain",
+              "text": [
+                "At Blue Blocks, the Adolescent Community operates as a Micro-Economy — a real economic unit where students produce, exchange, and manage genuine resources. But this is not merely economic education. It is ecological and ethical education through economic participation.",
+                "These ventures teach more than business skills. They cultivate:",
+                "• Ecological consciousness: Understanding that all economic activity exists within natural systems, and that our choices have consequences beyond the balance sheet.",
+                "• Ethical responsibility: When you grow food others will eat, when you sell products others will use, you learn that quality and honesty are not optional — they are obligations.",
+                "• Interdependence: No one runs these operations alone. Students learn that their individual contribution matters to the whole, and that the whole sustains the individual."
+              ],
+              "imageUrl": "/programs/the-adolescent/micro-economy.webp",
+              "imageAlt": "Students operating real ventures and systems",
+              "imageSide":"left",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]",
+              "variant": "default",
+              "bgClass": "#FFFFFF",
+              "contentCenter": false
             }
           },
           {
             "type": "AreasofDevelopment",
             "props": {
               "bg": "#F3E3CF",
-              "title": "The Prepared Environment",
-              "description": "A space of order and beauty where materials are scientifically designed to isolate specific concepts.",
+              "title": "Micro-Economy Ventures",
+              "subtitle": "",
               "headerAlign": "center",
               "cols": {
                 "base": 1,
                 "sm": 2,
-                "lg": 2
+                "lg": 3
               },
-              "maxWidth": "max-w-5xl",
+              "maxWidth": "max-w-6xl",
               "gap": "gap-8",
               "cardBg": "#273C75",
               "cardRadius": "rounded-[18px]",
@@ -4253,40 +4335,19 @@
               },
               "items": [
                 {
-                  "title": "Occupation (Work)",
-                  "text": "Students run real ventures (e.g., farming, workshops, kitchens). They do not just study biology; they cultivate the soil. They do not just study chemistry; they manage water systems. This is learning through 'doing.'",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
+                  "icon": "",
+                  "title": "Hydroponics",
+                  "text": "Students operate a high-efficiency hydroponic cultivation system. They monitor nutrient concentrations, manage pH levels, track plant physiology, and harvest real crops. Beyond technical skills, they develop consciousness of sustainability — asking not only “Does it work?” but “Is it sustainable? Is it regenerative?”"
                 },
                 {
-                  "title": "Micro-Economy",
-                  "text": "The community functions as a small economy. Students create budgets, manage profits, market products, and transact with the outside world. This builds financial literacy and ethical responsibility.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
+                  "icon": "",
+                  "title": "Terra Eutopia",
+                  "text": "Our paper recycling unit transforms waste into value. The deeper lesson is circular thinking — in nature there is no “waste,” only resources in transition. Students develop a regenerative mindset that sees every material as part of a cycle, every “end” as a potential beginning."
                 },
                 {
-                  "title": "The History of Humanity",
-                  "text": "Adolescents are driven by justice. We study the history of human progress—not as dates to memorize, but as a struggle for survival and civilization—to help them understand where they fit in the story of humanity.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
-                },
-                {
-                  "title": "Residency / Community Life",
-                  "text": "Managing the needs of the community—cooking for the group, cleaning, and maintenance. This builds interdependence and the realization that their contribution matters to the group's survival.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
+                  "icon": "",
+                  "title": "Interdependence",
+                  "text": "No one runs these operations alone. Students practice collaboration, leadership, accountability, and the reality that community wellbeing depends on each person’s contribution — and sustains it in return."
                 }
               ]
             }
@@ -4294,49 +4355,209 @@
           {
             "type": "imageText",
             "props": {
-              "title": "Expert Guidance",
+              "title": "The Innovation Continuum: Technology in Service",
               "text": [
-                "The adult shifts from 'Teacher' to 'Mentor.' They are experts (scientists, artists, entrepreneurs) who walk alongside the adolescent. They model integrity, work ethic, and intellectual curiosity, treating the student as an emerging adult."
+                "In our Elementary program, we described how Elementary students designed drones and filed five patent applications in 2019. The Innovation Labs — Drone Lab, Space Lab, Biomimicry Hive — continue into the Adolescent Community, but with a crucial evolution in perspective.",
+                "The Elementary child asked, “What can we build?” The adolescent must ask, “What should we build? For whom? With what consequences?”",
+                "The Drone Lab: Adolescents use Python programming to solve real problems — crop monitoring for the hydroponics system, terrain mapping for agricultural planning. They also grapple with ethics: What distinguishes beneficial use from harmful? How do we balance capability with responsibility?",
+                "The Space Lab: The CubeSat project represents years of cumulative work. On January 11, 2026, students will watch their satellite launch aboard ISRO’s PSLV C62. The deeper lesson is cosmic responsibility: Space is a shared commons. What obligations do we have to keep it clean? What purposes justify launch resources? How does our work contribute to human knowledge?",
+                "The Biomimicry Hive: Nature has solved most design problems over billions of years. When students learn from organisms — how a leaf captures light, how a termite mound regulates temperature — they develop humility before nature and a belief that human innovation works best when it works with natural principles, not against them.",
+                "This is the Innovation Bridge, completed — not just in capability, but in consciousness. The child who stacked cubes now launches them, understanding that the power to create carries the responsibility to create wisely."
               ],
-              "imageUrl": "/programs/the-adolescent-community/expert-guidance.webp",
-              "variant": "card",
-              "cardBg": "#EEF7FD",
-              "cardRadius": "rounded-2xl",
-              "cardPadding": "p-8 sm:p-10",
-              "imageSide": "right",
-              "imageClassName": "rounded-2xl",
-              "imageFit": "cover",
-              "imageAspect": "aspect-[4/3]"
+              "imageUrl": "/programs/the-adolescent/innovation-continuum.webp",
+              "imageAlt": "Students in innovation labs working on real projects",              
+              "imageSide":"right",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]",
+              "variant": "default",
+              "bgClass": "#FFFFFF",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Grace, Courtesy, and Social Harmony",
+              "text": [
+                "From the earliest days in the Toddler Community, Blue Blocks children learn Grace and Courtesy — the conscious cultivation of respectful, harmonious behaviour. In the Adolescent Community, this foundation deepens into sophisticated social consciousness."
+              ],
+              "imageUrl": "",
+              "imageAlt": "",              
+              "imageSide":"left",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]",
+              "variant": "default",
+              "bgClass" : "bg-[#F3E3CF]",
+              "contentCenter": true
             }
           },
           {
             "type": "outcomesPills",
             "props": {
-              "bg": "#FFFFFF",
               "title": "Outcomes",
-              "titleAlign": "center",
-              "maxWidth": "",
-              "gap": "gap-4",
               "items": [
                 {
-                  "icon": "/icon/gear.png",
-                  "text": "Economic Capability: A practical understanding of value and money.",
+                  "icon": "/icon/brain.png",
+                  "text": "Language and Communication: Adolescents develop awareness of how their words affect others. They practice expressing disagreement without disrespect, giving feedback with care, and listening with genuine attention.",
                   "pillBg": "#F9E48F"
                 },
                 {
-                  "icon": "/icon/emotion.png",
-                  "text": "Emotional Resilience: Facing real consequences, not artificial punishments.",
+                  "icon": "/icon/brain.png",
+                  "text": "Inclusion and Sensitivity: Students learn to recognise when someone feels excluded and to respond with kindness. Differences become opportunities for growth rather than sources of division.",
                   "pillBg": "#F9A78F"
                 },
                 {
-                  "icon": "/icon/community-b.png",
-                  "text": "Social Grace: Navigating complex social hierarchies with empathy.",
+                  "icon": "/icon/brain.png",
+                  "text": "Conflict and Repair: Students learn restorative justice — to acknowledge harm, take responsibility, make amends, and restore relationship.",
                   "pillBg": "#95D6ED"
                 },
                 {
-                  "icon": "/icon/emotion.png",
-                  "text": "A Vision of the Future: A clear sense of purpose.",
+                  "icon": "/icon/brain.png",
+                  "text": "Acceptance and Belonging: Belonging is built through genuine contribution. When your work matters to the community, you know you belong because you can see the evidence.",
                   "pillBg": "#F9E48F"
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Laboratories of Character",
+              "text": [
+                "The co-curricular programme continues from Elementary, with one significant evolution: Dance becomes Theater. Each domain serves as a laboratory for developing specific dimensions of character.",
+                "Theater: By inhabiting different characters, adolescents develop empathy — the capacity to feel with others whose experiences differ from their own. Production requires collaboration; performance requires vulnerability. Theater teaches that authentic expression, not perfection, is the goal.",
+                "Sports and Karate: Physical disciplines teach self-mastery — regulating impulse, persisting through difficulty, and maintaining composure under pressure. Competition emphasises the social contract: rules exist so everyone can participate. Winning with grace and losing with dignity build moral resilience.",
+                "Arts: Creative expression develops authenticity — the courage to express one’s genuine vision, and the humility to receive feedback. Making art requires both conviction and openness."
+              ],
+              "imageUrl": "/programs/the-adolescent/labs-character.webp",
+              "imageAlt": "Co-curricular programs as character laboratories",              
+              "imageSide":"left",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]",
+              "variant": "default",
+              "bgClass": "bg-[#F3E3CF]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Academic Alignment: Cambridge/IGCSE",
+              "text": [
+                "Dr. Montessori recommended affiliating with recognised educational boards appropriate to one’s context. At Blue Blocks, we are affiliated with the Cambridge / IGCSE board.",
+                "By age twelve, the adolescent has become an accomplished abstract thinker. They no longer require the physical materials that characterised earlier planes. The focus shifts from using materials to learn concepts to using abstract intelligence to engage with real-world complexity.",
+                "This alignment ensures that while students are learning through doing — managing hydroponics, building satellites, running ventures — they are simultaneously mastering the rigorous syllabi required for international university entry.",
+                "We do not view academic preparation and character formation as opposites. Academic knowledge without ethical grounding produces capable people without conscience. We aim for both."
+              ],
+              "imageUrl": "/programs/the-adolescent/cambridge-igcse.webp",
+              "imageAlt": "Academic alignment and rigorous learning",              
+              "imageSide":"right",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]",
+              "variant": "default",
+              "bgClass": "bg-[#FFFFFF]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "The Mentor, Not the Teacher",
+              "text": [
+                "The role of the adult transforms in the Adolescent Community. The “Guide” of earlier planes becomes a Mentor and Expert — someone who walks alongside the adolescent rather than directing from above.",
+                "Our mentors are scientists, engineers, artists, and entrepreneurs who model adult integrity through their own work. They don’t merely teach skills — they embody values. Adolescents learn honesty by seeing mentors admit mistakes, persistence by watching them work through difficulty, and care by experiencing genuine attention to wellbeing.",
+                "Crucially, mentors treat adolescents as having greater value than they currently show — protecting dignity, trusting capacity for growth, and holding them accountable to their own best selves.",
+                "This is how conscience develops: not through moralising, but through relationship with adults worth emulating."
+              ],
+              "imageUrl": "/programs/the-adolescent/mentor.webp",
+              "imageAlt": "Mentors guiding adolescents through real work",              
+              "imageSide":"left",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]",
+              "variant": "default",
+              "bgClass": "bg-[#F3E3CF]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Your Child at Eighteen",
+              "text": [
+                "By the time your child completes the Adolescent Community, they will have developed:",
+                "• Deep conscience: An inner moral compass that guides action even when no one is watching — the fruit of years of real choices with real consequences in a community that values integrity.",
+                "• Ecological consciousness: Understanding interdependence with natural systems, commitment to sustainability and regeneration, and the habit of asking “What are the broader consequences of my choices?”",
+                "• Social consciousness: Sensitivity to others’ experiences, commitment to inclusion, skill in communication and conflict repair, and genuine care for community wellbeing.",
+                "• Economic capability: A practical understanding of value, money, and labour — from running real operations with real stakes.",
+                "• Emotional resilience: The ability to face setbacks, recover from failure, and maintain equilibrium under pressure — built through experience, not protected from it.",
+                "• Sense of purpose: A clear understanding of their gifts and how those gifts might serve the world — the beginning of their personal Cosmic Task.",
+                "• Academic readiness: Full preparation for international university entry through Cambridge/IGCSE credentials.",
+                "They are ready for the fourth plane — university and the world of work — not merely as capable individuals, but as conscious human beings prepared to contribute to a world that urgently needs people who can think clearly, act ethically, and hold the wellbeing of the whole in mind."
+              ],
+              "imageUrl": "/programs/the-adolescent/at-eighteen.webp",
+              "imageAlt": "Adolescent readiness and purpose",              
+              "imageSide":"right",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]",
+              "variant": "default",
+              "bgClass": "bg-[#FFFFFF]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "montessoriForSuccess",
+            "props": {
+              "bg": "#F3E3CF",
+              "title": "EXPERTS SPEAK",
+              "items": [
+                {
+                  "name": "Maria Montessori",
+                  "role": "Education and Peace",
+                  "quote": "“Establishing lasting peace is the work of education; all politics can do is keep us out of war.”"
+                }
+              ]
+            }
+          },
+          {
+            "type": "ctaBanner",
+            "props": {
+              "title": "For the developmental science behind these practices, see our Paper The Social Newborn.",
+              "buttonText": "Read The Paper",
+              "buttonHref": "/papers/the-social-newborn",
+              "imageUrl": "/programs/cta-building.webp",
+              "imageAlt": "Blue Blocks campus building"
+            }
+          },
+          {
+            "type": "faq",
+            "props": {
+              "bg": "#F3E3CF",
+              "defaultOpenIndex": 0,
+              "panelMaxWidth": "max-w-4xl",
+              "title": "Frequently Asked Questions",
+              "subtitle": "",
+              "items": [
+                {
+                  "q": "How do you teach values without being preachy?",
+                  "a": "We don’t “teach values” through lectures or moralising. We create an environment where values become necessary. When you grow food others will eat, honesty about quality isn’t optional. When you work in teams on complex projects, inclusion and communication aren’t nice-to-haves — they’re essential. When your choices have real consequences for the community, responsibility develops naturally. Values are caught through experience and relationship, not taught through instruction."
+                },
+                {
+                  "q": "How does the Micro-Economy work alongside academic requirements?",
+                  "a": "The Micro-Economy is the academic programme. Managing hydroponics requires chemistry and biology. Running Terra Eutopia requires mathematics and economics. Building satellites requires physics and engineering. We don’t separate “real work” from “academics” — we integrate them. The Cambridge/IGCSE curriculum provides the framework; the Micro-Economy provides the context that makes learning meaningful."
+                },
+                {
+                  "q": "What about students who join at age twelve without prior Montessori experience?",
+                  "a": "We welcome students at all entry points. The adolescent programme is designed around the developmental needs of this age — needs shared by all twelve-year-olds, regardless of prior schooling. Students new to Montessori often adapt quickly because the approach aligns with their natural drive for meaningful work and genuine contribution. We provide transition support and observe each student’s adjustment carefully."
+                },
+                {
+                  "q": "How do you handle the emotional volatility of adolescence?",
+                  "a": "By providing what the adolescent actually needs: real work, real contribution, real community. Much adolescent “volatility” stems from environments that offer only artificial challenges and artificial praise. When work genuinely matters, the energy that might otherwise turn inward has somewhere productive to go. We also maintain psychological safety: mentors who observe carefully, intervene when needed, and always protect dignity. And we teach repair — how to acknowledge harm, take responsibility, and restore relationship when things go wrong."
                 }
               ]
             }
@@ -7726,7 +7947,7 @@
                       },
                       {
                         "q": "Do you have branches?",
-                        "a": "Yes. Our Gachibowli campus has the Toddler and Primary environments while our Osman Nagar campus has Primary, Elementary (Grade 1 to 6) environments and High School (Grade 7 to 10) – Erdkinder Adolescent Program."
+                        "a": "Yes. Our Gachibowli campus has the Toddler and Primary environments while our Osman Nagar campus has Primary, Elementary (Grade 1 to 6) environments and High School (Grade 7 to 12) – Erdkinder Adolescent Program."
                       },
                       {
                         "q": "Do you provide transport?",
