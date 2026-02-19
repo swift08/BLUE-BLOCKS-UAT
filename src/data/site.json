@@ -3400,6 +3400,24 @@
             }
           },
           {
+            "type": "ctaBanner",
+            "props": {
+              "title": "Begin with a Gentle Visit.",
+              "text": "Come see the Toddler Community in action. We’ll walk you through the environment and explain how settlement works—at your child’s pace.",
+              "cta": {
+                "label": "Book a Campus Visit",
+                "href": "/contact-us"
+              },
+              "image": "/building-image-01.webp",
+              "imageAlt": "Campus building",
+              "imageWidth": "566",
+              "imageHeight": "506",
+              "customTopSpacing": "sm:pt-70",
+              "align": "left",
+              "theme": "dark"
+            }
+          },
+          {
             "type": "faq",
             "props": {
               "bg": "#F3E3CF",
@@ -3425,24 +3443,6 @@
                   "a": "Children choose from purposeful activities suited to their development: language immersion (learning precise names like \"Kingfisher\"), sensory exploration (Mystery Bags, sorting, matching), and practical life work (pouring water, washing tables, arranging flowers). Every activity has a beginning, middle, and end — teaching focus and the rhythm of completion."
                 }
               ]
-            }
-          },
-          {
-            "type": "ctaBanner",
-            "props": {
-              "title": "Begin with a Gentle Visit.",
-              "text": "Come see the Toddler Community in action. We’ll walk you through the environment and explain how settlement works—at your child’s pace.",
-              "cta": {
-                "label": "Book a Campus Visit",
-                "href": "/contact-us"
-              },
-              "image": "/building-image-01.webp",
-              "imageAlt": "Campus building",
-              "imageWidth": "566",
-              "imageHeight": "506",
-              "customTopSpacing": "sm:pt-70",
-              "align": "left",
-              "theme": "dark"
             }
           }
         ]
@@ -3676,13 +3676,8 @@
             "props": {
               "title": "Programs",
               "breadcrumb": [
-                {
-                  "label": "Programs",
-                  "href": "program"
-                },
-                {
-                  "label": "The Elementary"
-                }
+                { "label": "Programs", "href": "program" },
+                { "label": "The Elementary" }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -3694,83 +3689,81 @@
           {
             "type": "programIntroSplit",
             "props": {
-              "eyebrow": "The Elementary",
-              "title": "The Reasoning Mind",
-              "subTitle": "",
-              "text": "",
+              "eyebrow": "THE ELEMENTARY COMMUNITY",
+              "title": "The Elementary Community",
+              "subTitle": "Elementary Programme (Ages 6–12 | Grades 1–6)",
+              "badge": "THE ELEMENTARY",
               "metaRows": [
-                {
-                  "label": "Sub-head",
-                  "value": "\"Help Me To Think With You\"",
-                  "bg": {
-                    "label": "#F3D8CF",
-                    "value": "#F3D8CF"
-                  }
-                },
-                {
-                  "label": "Age",
-                  "value": "6 Years – 12 Years",
-                  "bg": {
+                { "label": "Sub-head", "value": "The Reasoning Mind Awakens", "bg": {"label": "#F3D8CF","value": "#F3D8CF"} },
+                { "label": "Age", "value": "6 Years – 12 Years", "bg": {
                     "label": "#DFE7DA",
                     "value": "#DFE7DA"
-                  }
-                },
-                {
-                  "label": "Theme",
-                  "value": "Intellectual Independence",
-                  "bg": {
+                  } },
+                { "label": "Theme", "value": "Intellectual Independence", "bg": {
                     "label": "#D9E7EA",
                     "value": "#D9E7EA"
-                  }
-                }
+                  } }
               ],
               "media": {
                 "main": {
-                  "src": "/programs/playgroup/main.webp",
+                  "src": "/programs/the-elementary/main.webp",
                   "alt": "The Psychological Phase",
                   "showPlay": true
                 },
                 "left": {
-                  "src": "/programs/playgroup/left.webp",
+                  "src": "/programs/the-elementary/small-thumb-1.webp",
                   "alt": "Play activity"
                 },
                 "right": {
-                  "src": "/programs/playgroup/right.webp",
+                  "src": "/programs/the-elementary/small-thumb-2.webp",
                   "alt": "Montessori materials"
                 }
-              }
+              },
+              "bg": "#EAF5FB"
             }
           },
           {
-            "type": "CenteredTextBlock",
+            "type": "imageText",
             "props": {
-              "bg": "#EEF7FD",
-              "title": "The Psychological Phase",
-              "textParts": [
-                " The child has entered the age of the 'Reasoning Mind' and ' ",
-                {
-                  "bold": "Social Imagination"
-                },
-                " .' They are no longer satisfied with 'what' is happening; they demand to know 'why' and 'how.' They are driven to understand the universe and their place within it."
+              "title": "A Letter to You",
+              "text": [
+                "Your child is no longer the one who absorbed the world through their senses. Something has shifted. You've seen it — the relentless \"why\" questions, the arguments about fairness, the sudden interest in rules and whether everyone is following them.",
+                "Building on the Toddler's triumph of functional independence — In the Toddler Community, the inner command was \"Help me to do it myself\" — functional independence through movement. In the Children's House, it became \"Help me to think for myself\" — conscious construction through purposeful work.",
+                "Now, at six, a new command emerges: \"Help me to understand for myself.\"",
+                "The Absorbent Mind has faded. In its place rises the Reasoning Mind — a mind that hungers for causes, relationships, and the reasons behind everything. Your child no longer wants to know what things are; they want to know why they exist.",
+                "The Elementary Community is designed to serve this new mind. Not with textbooks and tests, but with the universe itself."
               ],
-              "maxWidth": "56rem"
+              "imageUrl": "",
+              "align": "left",
+              "variant": "card",
+              "bg": "#F3E3CF",
+              "contentCenter" : true
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "The Metamorphosis",
+              "text": [
+                "On the first day of the Elementary year, something happens at our gate that catches new parents off guard. Children who spent three years in the Children's House — who once clung to their mother's hand at the threshold — now rush past their parents without a backward glance. They've spotted their friends. They're heading toward their classroom. They've already forgotten that anyone is watching.",
+                "For the parent, this can feel like a small heartbreak. For the child, it is a metamorphosis — the biological and psychological transformation that Dr. Montessori identified as the passage from the First Plane to the Second Plane of development.",
+                "The child who once needed to touch everything now needs to understand everything. The family home is no longer enough; the tribe of the classroom becomes their world. This isn't rejection of you — it's the emergence of something new. Your child is constructing their place in human society."
+              ],
+              "imageUrl": "/programs/the-elementary/metamorphosis.webp",
+              "align": "right"
             }
           },
           {
             "type": "AreasofDevelopment",
             "props": {
               "bg": "#F3E3CF",
-              "title": "The Prepared Environment",
-              "description": "The classroom is no longer enough; the library and the outside world become the environment.",
-              "headerAlign": "center",
-              "cols": {
-                "base": 1,
-                "sm": 2,
-                "lg": 3
-              },
+              "title": "The Physical Signs of Change",
+              "description": "Nature provides unmistakable signals that this transformation is underway. As your child approaches six, you will notice:",
+              "cols": { "base": 1, "sm": 2, "lg": 3 },
+              "cardBg": "#273C75",
+              "textColor": "#FFFFFF",
               "maxWidth": "max-w-6xl",
               "gap": "gap-8",
-              "cardBg": "#273C75",
               "cardRadius": "rounded-[18px]",
               "cardPadding": "px-6 py-7",
               "cardMinHeight": 260,
@@ -3801,31 +3794,19 @@
               },
               "items": [
                 {
-                  "title": "The Great Stories",
-                  "text": "Dramatic narratives about the Universe, Life, and Numbers that spark the imagination and provide a framework for all future learning.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
+                  "title": "The loss of baby teeth",
+                  "text": "The eruption of permanent molars and the falling out of deciduous teeth is not merely dental — it signals that the first plane of development has completed.",
+                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
                 },
                 {
-                  "title": "Going Out",
-                  "text": "Small groups of students plan and execute field trips entirely on their own to find answers, building real-world logistics skills and independence.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
+                  "title": "The leaner body",
+                  "text": "The rounded contours of early childhood disappear. The body becomes slimmer, stronger, capable of sustained physical effort.",
+                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
                 },
                 {
-                  "title": "Collaborative Work",
-                  "text": "Children work in groups, navigating social dynamics and learning to debate and agree.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
+                  "title": "The stamina",
+                  "text": "Where the younger child is tired easily, the Elementary child can work and play from morning until evening. They no longer need the same level of adult comfort and rest.",
+                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
                 }
               ]
             }
@@ -3833,49 +3814,307 @@
           {
             "type": "imageText",
             "props": {
-              "title": "Expert Guidance",
+              "title": "What This Means",
               "text": [
-                "They strike the imagination with the 'Great Lessons' to ignite curiosity. They are not the source of all knowledge but the facilitator who points the child toward research resources."
+                "These physical changes correspond to psychological ones. The child is ready for a different kind of work — and a different kind of world."
               ],
-              "imageUrl": "/programs/the-elementary/expert-guidance.webp",
-              "variant": "card",
-              "cardBg": "#EEF7FD",
-              "cardRadius": "rounded-2xl",
-              "cardPadding": "p-8 sm:p-10",
-              "imageSide": "right",
-              "imageClassName": "rounded-2xl",
-              "imageFit": "cover",
-              "imageAspect": "aspect-[4/3]"
+              "imageUrl": "",
+              "align": "left",
+              "bg": "#F3E3CF",
+              "contentCenter" : true
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "The Universe as Starting Point",
+              "text": [
+                "Most schools begin small and work outward — first the home, then the neighbourhood, then the city, and eventually, perhaps, the solar system. Dr. Montessori inverted this entirely. We begin with the universe.",
+                "This isn't philosophy for its own sake. It's a practical response to how the Reasoning Mind actually works. A child asking \"Why does the sun rise?\" isn't satisfied by \"It just does.\" They need context — the story of how our planet spins while orbiting a star, how that star is one of billions, how those billions formed from the same cosmic dust.",
+                "We call this approach Cosmic Education. Every fact exists within the context of everything else. When a child learns about photosynthesis, they understand it as part of the oxygen cycle, which connects to animal respiration, which in turn connects to food chains, which connect to human civilization. Nothing exists in isolation.",
+                "The curriculum launches through five Great Stories — vivid, dramatic narratives designed to ignite the imagination: the creation of the universe, the coming of life, the emergence of human beings, the story of writing, the story of numbers. These aren't simplified textbook summaries. They're designed to strike the imagination and create what Dr. Montessori called \"an impression made upon the mind, as an impression is made upon clay.\""
+              ],
+              "imageUrl": "/programs/the-elementary/expert.webp",
+              "align": "right",
+              "bgClass" : "bg-[#F3E3CF]"
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Imagination: The Great Power of This Age",
+              "text": [
+                "\"Touching\" for the younger child is what \"imagining\" is for the older one.",
+                "The first-plane child explored by handling objects directly. The second-plane child explores by constructing mental images of things they cannot see — atoms, historical events, distant galaxies, the inside of a volcano, the formation of mountains.",
+                "This is why we tell stories and use impressionistic charts — not to give literal facts, but to provide scaffolding for the imagination. A child who has truly imagined the first single-celled organisms replicating in ancient oceans carries that image with them. When they later study cell biology, they're not memorising disconnected facts — they're adding detail to a picture they already possess.",
+                "The imagination is not fantasy. It is the tool by which the Reasoning Mind grasps what lies beyond direct experience."
+              ],
+              "imageUrl": "/programs/the-elementary/imagination.webp",
+              "align": "left",
+              "imageSide":"right",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]"
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "The Heroic Claim to Independence",
+              "text": [
+                "You may notice your child becoming unexpectedly frank around this age. Blunt. Critical. Quick to point out inconsistencies. Some call this the \"Age of Rudeness.\"",
+                "We see it differently. This is a heroic claim to mental and moral independence. Your child is no longer content to accept rules because an adult says so. They are driven to identify good and bad through their own powers of judgment.",
+                "This period is marked by an intense sense of justice. Fairness becomes vital. Children are quick to notice unequal treatment — and quick to call it out.",
+                "When a six-year-old \"tattles,\" they aren't trying to get a peer in trouble. They're seeking confirmation of the moral standard. They're asking: \"Is that the right thing to do? Is that fair?\"",
+                "A direction given without explanation — without the \"how\" and \"why\" — feels like an affront to the Reasoning Mind. The Elementary child doesn't want blind obedience; they want understanding.",
+                "This is not defiance. This is development."
+              ],
+              "imageUrl": "/programs/the-elementary/independence.webp",
+              "align": "right",
+              "bgClass" : "bg-[#F3E3CF]"
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "The Tribe",
+              "text": [
+                "The second-plane child is a naturally gregarious being. Dr. Montessori called it instincto gregario — the group instinct. Unlike the younger child who worked alongside peers, the Elementary child must work with them.",
+                "At Blue Blocks, the classroom becomes a micro-society. Children form groups and clubs. They choose leaders, negotiate rules, and practice loyalty to their fellows. They experiment with how societies operate.",
+                "This social drive fuels what we call Great Work — extended projects that require collaboration. A mathematical investigation that stretches across the room. A research saga spanning weeks. A dramatic production involving the entire community. These are not assignments; they emerge from the children's own enthusiasm, directed by their own organisation.",
+                "The mixed-age structure serves this social development. In a community spanning six years, younger children observe what's possible; older children consolidate knowledge by teaching. Leadership isn't taught as a subject — it emerges naturally from a community that lives it."
+              ],
+              "imageUrl": "/programs/the-elementary/tribe.webp",
+              "align": "left",
+              "imageSide":"right",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]"
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Going Out: Learning Beyond Walls",
+              "text": [
+                "A distinctive feature of Montessori Elementary is the Going Out programme. This is not a field trip organised by adults. It is a research expedition planned and executed by children.",
+                "The Elementary classroom is intentionally incomplete. Our shelves do not contain every answer. This limitation is the force that drives children beyond family and school to seek knowledge in the wider community.",
+                "At Blue Blocks, our students execute a Going Out Map across Hyderabad:"
+              ],
+              "imageUrl": "/programs/the-elementary/going-out.webp",
+              "align": "right",
+              "bgClass" : "bg-[#F3E3CF]"
             }
           },
           {
             "type": "outcomesPills",
             "props": {
-              "bg": "#FFFFFF",
-              "title": "Outcomes",
-              "titleAlign": "center",
-              "maxWidth": "",
-              "gap": "gap-4",
+              "title": "Going Out Map",
               "items": [
                 {
-                  "icon": "/icon/heart-certificate.png",
-                  "text": "Moral Agency: Understanding justice and fairness",
+                  "icon": "/icon/brain.png",
+                  "text": "The flour mill — to research production and consumption as part of Economic Geography.",
                   "pillBg": "#F9E48F"
                 },
                 {
-                  "icon": "/icon/magnific.png",
-                  "text": "Research Skills: Independent inquiry.",
+                  "icon": "/icon/brain.png",
+                  "text": "Local bird walks and nature trails — to perform population studies and observe ecosystem interdependencies.",
                   "pillBg": "#F9A78F"
                 },
                 {
-                  "icon": "/icon/chat-b.png",
-                  "text": "Big Picture Thinking: Interconnectedness of subjects",
+                  "icon": "/icon/brain.png",
+                  "text": "Our own farm — to experience agrarian economics and participate in cultivation.",
                   "pillBg": "#95D6ED"
                 },
                 {
-                  "icon": "/icon/emotion.png",
-                  "text": "Social Collaboration: Working in teams.",
+                  "icon": "/icon/brain.png",
+                  "text": "The Deccan plateau itself — our Geology studies connect to the literal foundation of Hyderabad, examining local granite and basaltic formations rather than generic \"rocks.\"",
                   "pillBg": "#F9E48F"
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "How Children Lead It",
+              "text": [
+                "Children write letters, make phone calls, plan transportation, manage budgets. The learning extends far beyond subject matter. They discover that the world outside school contains resources and experts willing to help — and that asking questions is not a sign of ignorance but a tool for understanding."
+              ],
+              "imageUrl": "",
+              "bgClass" : "bg-[#F3E3CF]",
+              "align": "left",
+              "contentCenter":true
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "The Innovation Continuum",
+              "text": [
+                "We introduced the Innovation Bridge — the idea that the hands which manipulated Cylinder Blocks and Golden Beads are being prepared for future creative work. In the Elementary years, that bridge is crossed.",
+                "The Reasoning Mind doesn't stop at textbook boundaries. When a child asks \"How do birds fly?\", we don't just hand them a book about aerodynamics. At Blue Blocks, our Biomimicry Hive lets them investigate flight principles through design challenges — studying how organisms adapt and survive, then applying that logic to human engineering.",
+                "When they wonder about space, our Space Lab offers hands-on exploration — moving from physical models to digital logic, satisfying the drive for abstraction.",
+                "Our Drone Lab extends the Geography curriculum's \"Work of Air\" into practical application. Students program flight paths, analyse aerodynamics, and engage in genuine engineering challenges.",
+                "In 2019, children working in our Drone Lab designed innovative unmanned aircraft. Five of those designs were submitted for patent applications.",
+                "This is what happens when you take the Reasoning Mind seriously. These aren't enrichment programmes bolted onto a Montessori foundation. They are expressions of Cosmic Education — giving children access to the tools and spaces that match their hunger for understanding."
+              ],
+              "imageUrl": "/programs/the-elementary/innovation-continuum.webp",
+              "align": "left"
+            }
+          },
+          {
+            "type": "AreasofDevelopment",
+            "props": {
+              "bg": "#F3E3CF",
+              "title": "Laboratories of Character",
+              "description": "We do not view Karate, Sports, Dance, and Arts as \"extra-curricular\" activities. We view them as Laboratories of Character — the physical extension of the moral development happening in the classroom.",
+              "cols": { "base": 1, "sm": 2, "lg": 2 },
+              "cardBg": "#273C75",
+              "textColor": "#FFFFFF",
+              "maxWidth": "max-w-6xl",
+              "gap": "gap-8",
+              "cardRadius": "rounded-[18px]",
+              "cardPadding": "px-6 py-7",
+              "cardMinHeight": 260,
+              "equalHeight": true,
+              "tightTitleWhenNoIcon": true,
+              "cardDivider": {
+                "enabled": true,
+                "style": "dotted",
+                "color": "rgba(255,255,255,0.35)",
+                "marginTop": 18,
+                "marginBottom": 0
+              },
+              "items": [
+                {
+                  "title": "Sports and Karate",
+                  "text": "Sports and Karate cater to the child's physical stamina and psychological \"toughness.\" They serve as training grounds for self-discipline and the sense of justice. When our children participate in inter-school competitions, they aren't just playing a game — they're practising adherence to rules under pressure, learning to win with grace and lose with dignity.",
+                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
+                },
+                {
+                  "title": "Dance and Arts",
+                  "text": "Dance and Arts serve what Dr. Montessori called humanity's \"spiritual needs\" — the need for culture, beauty, and creative self-expression. Dance at Blue Blocks is the refinement of movement applied to artistic creation, helping the child find their unique voice within the community.",
+                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "After the Work Cycle",
+              "text": [
+                "These activities occur after the morning work cycle — extending the day's purposeful engagement into physical and creative domains."
+              ],
+              "imageUrl": "",
+              "align": "left",
+              "contentCenter":true
+            }
+          },
+          {
+            "type": "outcomesPills",
+            "props": {
+              "bg" : "#F3E3CF",
+              "title": "Your Child at Twelve",
+              "items": [
+                {
+                  "icon": "/icon/brain.png",
+                  "text": "Intellectual independence — the capacity to assess their own understanding, identify gaps, seek help when needed, and persevere through difficulty.",
+                  "pillBg": "#F9E48F"
+                },
+                {
+                  "icon": "/icon/brain.png",
+                  "text": "Moral independence — a personal framework for ethical reasoning, developed through years of navigating justice and fairness within a community.",
+                  "pillBg": "#F9A78F"
+                },
+                {
+                  "icon": "/icon/brain.png",
+                  "text": "Social capability — the ability to collaborate, lead, follow, negotiate, and function within groups working toward shared goals.",
+                  "pillBg": "#95D6ED"
+                },
+                {
+                  "icon": "/icon/brain.png",
+                  "text": "A cosmic perspective — knowledge organised around a vision of the whole, where every fact connects to every other fact.",
+                  "pillBg": "#F9E48F"
+                },
+                {
+                  "icon": "/icon/brain.png",
+                  "text": "Love of learning — not as something imposed by adults, but as a natural response to being human in a universe full of things worth understanding.",
+                  "pillBg": "#F9A78F"
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "What Comes Next",
+              "text": [
+                "They are ready for the next plane — adolescence — where the questions shift again, from \"How does the world work?\" to \"Who am I, and what is my place in it?\""
+              ],
+              "imageUrl": "",
+              "align": "left",
+              "contentCenter":true
+            }
+          },
+          
+          {
+            "type": "montessoriForSuccess",
+            "props": {
+              "bg": "#F3E3CF",
+              "title": "EXPERTS SPEAK",
+              "items": [
+                {
+                  "name": "A Montessori Principle",
+                  "role": "Maria Montessori, To Educate the Human Potential",
+                  "quote": "“Our aim is not merely to make the child understand, and still less to force him to memorize, but so to touch his imagination as to enthuse him to his innermost core.”"
+                }
+              ]
+            }
+          },
+          {
+            "type": "ctaBanner",
+            "props": {
+              "title": "For the developmental science behind these practices, see our Paper The Architecture of the Universe.",
+              "text": "",
+              "cta": {
+                "label": "Know More",
+                "href": "#"
+              },
+              "image": "/building-image-01.webp",
+              "imageAlt": "Campus building",
+              "imageWidth": "566",
+              "imageHeight": "506",
+              "customTopSpacing": "sm:pt-70",
+              "align": "left",
+              "theme": "dark"
+            }
+          },
+          {
+            "type": "faq",
+            "props": {
+              "bg": "#F3E3CF",
+              "defaultOpenIndex": 0,
+              "panelMaxWidth": "max-w-4xl",
+              "title": "Frequently Asked Questions",
+              "subtitle": "",
+              "items": [
+                {
+                  "q": "Will my child be ready for traditional school if they transfer?",
+                  "a": "Yes. Blue Blocks children consistently meet or exceed the academic requirements of all major boards in India. More importantly, they possess the concentration, self-direction, and love of learning that allows them to thrive in any environment. We use the public school curriculum as a reference tool — not to dictate our approach, but to ensure our students can demonstrate their capabilities in any assessment framework."
+                },
+                {
+                  "q": "How does discipline work without tests and grades?",
+                  "a": "Elementary children develop something more valuable than compliance: internal motivation. They learn to assess their own work, identify gaps, and persevere through difficulty — not because someone is watching, but because the work itself matters to them. Our Guide/Child conferences (held at least every two weeks) allow collaborative analysis of progress and planning of future work, using Learning Journals maintained by the children themselves."
+                },
+                {
+                  "q": "Isn't all that freedom chaotic?",
+                  "a": "Walk into a well-functioning Elementary environment and you'll see what looks like organised complexity: small groups working on different projects, children consulting reference materials, pairs debating ideas, individuals in deep concentration. It's not silent — the Reasoning Mind needs to talk through problems. But it's purposeful. The freedom exists within structure: consistent expectations, a prepared environment, a Guide who knows when to intervene and when to step back."
+                },
+                {
+                  "q": "What if my child struggles with the transition from Children's House?",
+                  "a": "The transition from Children's House to Elementary is itself a developmental passage. We honour it. Some children rush through the gate on day one; others need more time. We observe each child, provide the support they need, and trust the process. The same patience we brought to Gentle Settlement in the Toddler years — the understanding that there is no deadline for trust — continues here."
                 }
               ]
             }
