@@ -31,8 +31,8 @@ export default function Hero({
 
   const minH =
     height === "innovation"
-      ? "min-h-[34rem] sm:min-h-[40rem] lg:min-h-[50.0625rem]" // ~801px on lg (matches figma)
-      : "min-h-[32.5rem] md:min-h-[35rem]"; // your current feel
+      ? "min-h-[20rem] sm:min-h-[20rem] lg:min-h-[25rem]" // ~801px on lg (matches figma)
+      : "min-h-[20rem] md:min-h-[25rem]"; // your current feel
 
   const overlayClass = overlay === "dark" ? "before:bg-black/45" : "before:bg-black/55";
 
@@ -45,7 +45,7 @@ export default function Hero({
 
   const paddingTop =  topSpacing === "home"
     ? "pt-[8.75rem] sm:pt-[9.5rem]" // ≈ pt-35, header overlay safe
-    : "pt-24 sm:pt-28";
+    : "pt-44 sm:pt-48";
 
   return (
     <section

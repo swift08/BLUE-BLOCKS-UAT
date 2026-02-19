@@ -1,11 +1,16 @@
 import Image from "next/image";
 import Container from "@/components/layout/Container";
+import Link from "next/link";
 
 export default function HighStakes({
   title,
   subheading,
+  description,
   featureSections = [],
   droneImage,
+  linkName,
+  linkHref,
+  gridNumber = "lg:grid-cols-3"
 }) {
   return (
     <section className="bg-[#F5E9DA] py-12 sm:py-16">
@@ -24,6 +29,12 @@ export default function HighStakes({
                 {title}
               </h2>
             )}
+
+            {description && (
+              <p className="mt-4 text-regular leading-tight text-[#131313]">
+                {description}
+              </p>
+            )}
           </div>
 
           {/* Right Section: Drone Image */}
@@ -41,7 +52,7 @@ export default function HighStakes({
         </div>
 
         {/* Feature Sections */}
-        <div className="mt-12 grid gap-4 sm:grid-cols-1 lg:grid-cols-3">
+        <div className={`mt-12 grid gap-4 sm:grid-cols-1 ${gridNumber}`}>
           {featureSections.map((section, idx) => (
             <div
               key={idx}
@@ -66,6 +77,11 @@ export default function HighStakes({
                 <p className="mt-3 text-[1.25] text-[#414141] leading-relaxed">
                   {section.text}
                 </p>
+              )}
+              {section.linkName && (
+                <div className="Link-content mt-auto pt-3">
+                    <Link className="text-[1.25] text-[#333333] leading-relaxed" href={section.linkHref}>{section.linkName}</Link>
+                </div>
               )}
             </div>
           ))}

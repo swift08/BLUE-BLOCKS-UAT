@@ -90,7 +90,7 @@ export default function BillionYears({
           <div className="lg:col-span-6">
             <div className="mt-8 space-y-6">
               {bulletPoints.map((point, idx) => (
-                <div key={idx} className="flex sm:flex-col max-w-[70%] gap-4">
+                <div key={idx} className="flex sm:flex-col max-w-[100%] sm:max-w-[70%] gap-4">
                   <div className="flex-shrink-0 h-[54] w-[54] flex items-center justify-center text-[#2D9CDB]">
                     <Image
                       src={point.icon}

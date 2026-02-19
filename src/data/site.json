@@ -3361,15 +3361,12 @@
           {
             "type": "pageHero",
             "props": {
-              "title": "Programs",
+              "title": "The Toddler Community",
+              "subtitle": "A Sanctuary for Your Child's Becoming",
               "breadcrumb": [
-                {
-                  "label": "Programs",
-                  "href": "program"
-                },
-                {
-                  "label": "The Self-Interpretive"
-                }
+                { "label": "Home", "href": "/" },
+                { "label": "Programs", "href": "/programs" },
+                { "label": "Playgroup" }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -3379,201 +3376,249 @@
             }
           },
           {
-            "type": "programIntroSplit",
-            "props": {
-              "eyebrow": "The Self-Interpretive",
-              "title": "The Absorbent Mind (Conscious)",
-              "subTitle": "",
-              "text": "",
-              "metaRows": [
-                {
-                  "label": "Sub-head",
-                  "value": "\"Help Me To Think For Myself\"",
-                  "bg": {
-                    "label": "#F3D8CF",
-                    "value": "#F3D8CF"
-                  }
-                },
-                {
-                  "label": "Age",
-                  "value": "2.5 Years – 6 Years",
-                  "bg": {
-                    "label": "#DFE7DA",
-                    "value": "#DFE7DA"
-                  }
-                },
-                {
-                  "label": "Theme",
-                  "value": "Conscious Construction",
-                  "bg": {
-                    "label": "#D9E7EA",
-                    "value": "#D9E7EA"
-                  }
-                }
-              ],
-              "media": {
-                "main": {
-                  "src": "/programs/nursery/main.webp",
-                  "alt": "Playgroup classroom",
-                  "showPlay": true
-                },
-                "left": {
-                  "src": "/programs/nursery/small-thumb-1.webp",
-                  "alt": "Play activity"
-                },
-                "right": {
-                  "src": "/programs/nursery/small-thumb-2.webp",
-                  "alt": "Montessori materials"
-                }
-              }
-            }
-          },
-          {
             "type": "CenteredTextBlock",
+            "bg": "#EEF7FD",
+            "maxWidth" : "none",
             "props": {
-              "bg": "#EEF7FD",
-              "title": "The Psychological Phase",
+              "title": "A Letter to You",
               "textParts": [
-                "The child moves from 'unconscious absorption' to  ",
-                {
-                  "bold": "Conscious Construction."
-                },
-                ". The hands become the instruments of the brain. Through touching, moving, and organizing, the child literally constructs their intellect.They are driven by a desire for order, precision, and repetition."
+                "Before you read about our environment, our materials, or our methods, we want to speak to something else first — your heart.",
+                "We know what it means to hand over your child. We know the weight of that moment when you wonder: Will they see her the way I see her? Will they notice when she's tired, or overwhelmed, or just needs to be held?",
+                "We want you to know: your child will not be one of many here. She will be seen. She will be known. Her voice, her rhythms, her particular way of being in the world — we will learn them. And we will honor them.",
+                "When she cries for you — and she might, especially at first — she will not cry alone. A guide will be near. Not to distract her or rush her through it, but simply to be with her. To sit. To wait. To let her know that even in your absence, she is held.",
+                "This is not daycare. This is not \"school\" in the way you might remember it. This is a place where your child's work — to grow, to become herself, to learn that she is capable — is taken as seriously as any work in the world.",
+                "And you? You are not handing her off. You are extending your love into a space that will carry it while you are apart.",
+                "We know this is not easy. We don't take it lightly.",
+                "Between 12 and 30 months, your child is not simply growing; she is actively constructing the person she will become. She is driven by a powerful internal command: \"Help me to do it myself.\" At Blue Blocks, we provide a space designed to respect her sacred effort to become functional and independent."
               ],
-              "maxWidth": "56rem"
+              "imageUrl": "",
+              "align": "left"
             }
           },
-          {
-            "type": "AreasofDevelopment",
-            "props": {
-              "bg": "#F3E3CF",
-              "title": "The Prepared Environment",
-              "description": "A space of order and beauty where materials are scientifically designed to isolate specific concepts.",
-              "headerAlign": "center",
-              "cols": {
-                "base": 1,
-                "sm": 2,
-                "lg": 2
-              },
-              "maxWidth": "max-w-5xl",
-              "gap": "gap-8",
-              "cardBg": "#273C75",
-              "cardRadius": "rounded-[18px]",
-              "cardPadding": "px-6 py-7",
-              "cardMinHeight": 260,
-              "equalHeight": true,
-              "tightTitleWhenNoIcon": true,
-              "cardBehindTabs": {
-                "enabled": true,
-                "width": 28,
-                "offsetX": 10,
-                "offsetY": 0,
-                "radius": 18,
-                "insetTop": 0,
-                "insetBottom": 0,
-                "colors": [
-                  "#78D6F3",
-                  "#F5A48D",
-                  "#F9E27C"
-                ],
-                "borderColor": "#131313",
-                "borderWidth": 2
-              },
-              "cardDivider": {
-                "enabled": true,
-                "style": "dotted",
-                "color": "rgba(255,255,255,0.35)",
-                "marginTop": 18,
-                "marginBottom": 0
-              },
-              "items": [
-                {
-                  "title": "Practical Life",
-                  "text": "These are not chores; they are the foundation of focus. Washing, polishing, and sweeping build coordination, the will, and the ability to complete a cycle of activity.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
-                },
-                {
-                  "title": "Sensorial",
-                  "text": "Refining the senses to perceive differences in the world. Using scientifically designed materials, the child learns to classify dimension, color, shape, and texture.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
-                },
-                {
-                  "title": "Language",
-                  "text": "A rich explosion of vocabulary. Through the 'Sandpaper Letters' and 'Moveable Alphabet,' the child discovers that sounds have symbols, leading to an explosion into writing and reading.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
-                },
-                {
-                  "title": "Mathematics",
-                  "text": "Making the abstract physically graspable. The child handles the 'Golden Beads' to understand the decimal system concretely before ever seeing a number on a page.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
-                }
-              ]
-            }
-          },
+
           {
             "type": "imageText",
             "props": {
-              "title": "Expert Guidance",
+              "title": "Gentle Settlement: We Go at Her Pace",
               "text": [
-                "The guide does not lecture to the whole class. Instead, they give individual 'presentations,' offering a key to the world, and then leave the child to work freely. This protects the child's concentration from interruption."
+                "The first days are tender — for her and for you.",
+                "Unlike schools that expect you to leave quickly, we invite you to stay. Sit in the corner of the room. Watch her explore. Let her glance back and find you there. Come again the next day, and the next. Stay for as long as she needs — whether that's three days or three weeks.",
+                "There is no deadline for trust. We will not rush her, and we will not rush you.",
+                "When she begins to feel safe — when she looks at her guide and sees someone familiar, when she walks toward the shelf instead of toward the door — you'll know. And so will we. That is when we gently, gradually, begin the transition.",
+                "This is how trust is built: not by pushing through tears, but by honouring them."
               ],
-              "imageUrl": "/programs/nursery/expert-guidance.webp",
-              "variant": "card",
-              "cardBg": "#EEF7FD",
-              "cardRadius": "rounded-2xl",
-              "cardPadding": "p-8 sm:p-10",
-              "imageSide": "right",
-              "imageClassName": "rounded-2xl",
-              "imageFit": "cover",
-              "imageAspect": "aspect-[4/3]"
+              "imageUrl": "/programs/playgroup/gentle-settlement.webp",
+              "align": "left"
             }
           },
+
           {
-            "type": "outcomesPills",
+            "type": "imageText",
             "props": {
-              "bg": "#FFFFFF",
-              "title": "Outcomes",
-              "titleAlign": "center",
-              "maxWidth": "",
-              "gap": "gap-4",
+              "title": "\"I was the mother who couldn't imagine leaving my daughter. Because Blue Blocks let me stay until she felt safe, the day she finally waved goodbye with a smile wasn't a heartbreak — it was a shared triumph. Within three weeks, she was leading me to the gate, eager for her 'work'.\"",
+              "text": [
+                "— A Blue Blocks Parent"
+              ],
+              "imageUrl": "/programs/playgroup/parent-quote.webp",
+              "align": "center"
+            }
+          },
+
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Emotional Safety: She Will Be Held",
+              "text": [
+                "Toddlers feel everything intensely, but they don't yet have the words to tell us. Frustration, joy, fear, excitement — it all comes out in waves.",
+                "Our guides are trained to read what your child cannot yet say. A change in her breathing. A shift in her posture. The way she looks toward the door when she's missing you. We notice. And we respond — not with distraction or redirection, but with presence.",
+                "When she's overwhelmed, we stay close. When she's frustrated, we name what she might be feeling: \"You wanted that. It's hard to wait.\" When she needs comfort, we offer it — a lap to sit on, a soft voice, a hand to hold.",
+                "We do not expect toddlers to \"behave.\" We expect them to feel. Our job is to help them feel safe."
+              ],
+              "imageUrl": "/programs/playgroup/emotional-safety.webp",
+              "align": "left"
+            }
+          },
+
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Food as Love: The Lunchbox and Beyond",
+              "text": [
+                "We know what goes into that lunchbox: the thought, the love, the hope that she'll actually eat it.",
+                "That box is not just food to us — it's a piece of home. A bridge between you and her during the hours you're apart. When she opens it, she's opening something familiar in an unfamiliar place. We treat that moment with care.",
+                "She will learn to open it herself, to serve herself, to wipe her space when she's done. These small acts of independence are not chores — they are quiet triumphs. And when she manages the clasp for the first time, or pours water without spilling, we'll celebrate with her (and tell you about it).",
+                "Beyond the lunchbox, food is part of our work here. Small hands peel bananas, squeeze oranges, and slice soft-boiled eggs. Children set tables with real ceramic and glass — not because we want them to be careful, but because we trust that they can be. And that trust becomes their confidence."
+              ],
+              "imageUrl": "/programs/playgroup/food-as-love.webp",
+              "align": "left"
+            }
+          },
+
+          {
+            "type": "imageText",
+            "props": {
+              "title": "A Day of Purposeful Work",
+              "text": [
+                "You might wonder: What does she actually do all day?",
+                "She works. Not worksheets or structured lessons — but real, meaningful activity chosen by her, suited to her pace, designed for her stage of development."
+              ],
+              "imageUrl": "/programs/playgroup/day-of-work.webp",
+              "align": "left"
+            }
+          },
+
+          {
+            "type": "featureGrid",
+            "props": {
+              "headline": "What She Does Each Day",
+              "subText": "Not entertainment. Not instruction. Purposeful activity, chosen by her, repeated until mastery.",
               "items": [
                 {
-                  "icon": "/icon/brain.png",
-                  "text": "Extended Concentration: The ability to focus deeply.",
-                  "pillBg": "#F9E48F"
+                  "tag": "",
+                  "title": "She explores language:",
+                  "icon": "/icon/icon-language.svg",
+                  "text": "We speak to her with care. Not baby talk, but real words — precise, warm, clear. When we look at a bird together, we might say \"That's a Kingfisher\" — because children at this age are hungry for the real names of things. We sing songs, recite rhymes, and do fingerplay. Language surrounds her here like music."
                 },
                 {
-                  "icon": "/icon/heart-box.png",
-                  "text": "Love of Order: Internalizing structure",
-                  "pillBg": "#F9A78F"
+                  "tag": "",
+                  "title": "She uses her senses:",
+                  "icon": "/icon/icon-sensorial.svg",
+                  "text": "She might reach into a cloth bag and try to guess what's inside using only her fingers — a smooth stone, a wooden ring, a seashell. She sorts, matches, stacks. These aren't \"games\"; they're how her brain learns to categorise the world."
                 },
                 {
-                  "icon": "/icon/brain-b.png",
-                  "text": "Mathematical Mind: Concrete understanding of the decimal system.",
-                  "pillBg": "#95D6ED"
-                },
-                {
-                  "icon": "/icon/community-b.png",
-                  "text": "Social Cohesion: Grace and Courtesy.",
-                  "pillBg": "#F9E48F"
+                  "tag": "",
+                  "title": "She does real work:",
+                  "icon": "/icon/icon-practical-life.svg",
+                  "text": "Pouring water from a small pitcher. Buttoning a frame. Washing a table with a tiny sponge. Watering a plant. Arranging flowers. Toddlers love this kind of work — the kind adults do. It gives them dignity. And every activity has a beginning, middle, and end — teaching her the rhythm of focus and completion.\n\nEvery material in our environment is designed so she can see for herself whether she's succeeded. A puzzle fits or it doesn't. A pitcher fills or overflows. She doesn't need us to tell her she's done well — she knows. This is where real confidence begins."
                 }
               ]
+            }
+          },
+
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Toilet Learning: Respect for Her Body",
+              "text": [
+                "This journey belongs to her — not to a schedule, and not to us.",
+                "We follow her body's readiness. We watch for the signs that her nervous system is ready for control. We offer child-sized toilets where her feet rest flat on the ground, where she feels secure and capable.",
+                "There is no countdown. No sticker chart. No fanfare or fuss. Just a calm, matter-of-fact approach: this is a normal part of life, and when she's ready, she'll master it — just like everything else.",
+                "If there are accidents, they're simply part of the process. We respond with patience, and we move on."
+              ],
+              "imageUrl": "/programs/playgroup/toilet-learning.webp",
+              "align": "left"
+            }
+          },
+
+          {
+            "type": "featureGrid",
+            "props": {
+              "headline": "Language and Movement: How She Grows",
+              "subText": "We protect the conditions that allow expression and coordinated independence to emerge naturally.",
+              "items": [
+                {
+                  "tag": "",
+                  "title": "Words:",
+                  "icon": "/icon/icon-words.svg",
+                  "text": "Long before she speaks in sentences, she is absorbing everything. The tone of our voice. The rhythm of language. The names of things. We speak to her with care because we know she is listening deeply — even when she doesn't yet respond.\n\nWhen the words come — and they will — they often come in a rush. Children who have been immersed in rich, precise language don't just speak; they express. We trust the process, and we give her time."
+                },
+                {
+                  "tag": "",
+                  "title": "Movement:",
+                  "icon": "/icon/icon-movement.svg",
+                  "text": "She needs to move. To carry things. To climb. To lift something heavy and feel her own strength. We provide real materials — wood, glass, metal — because weight and texture matter. When she carries a tray across the room without spilling, she's not just building muscles. She's building her sense of self."
+                }
+              ]
+            }
+          },
+
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Your Family, Your Way",
+              "text": [
+                "Every family is different. We don't assume who drops off, who picks up, who packs the lunch, or who she cries for most.",
+                "What we know is this: she has people who love her, and those bonds are sacred. Our job is to extend that love, not replace it.",
+                "If both parents want to be part of the settling process, we welcome it. If a grandparent is her primary comfort, they are welcome too. We work with your family as it is, not as a template says it should be.",
+                "During this transition, partners often play a special role — a bridge between home and the wider world. But we follow your child's lead. She'll show us who she needs."
+              ],
+              "imageUrl": "/programs/playgroup/family-your-way.webp",
+              "align": "left"
+            }
+          },
+
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Where This Leads",
+              "text": [
+                "The independence she builds here is not just for now.",
+                "The focus she develops while pouring water will become the focus she uses to read. The hand that learns to button a coat will learn to hold a pencil. The confidence she gains by doing things herself will carry her into the Children's House — and beyond.",
+                "We track 46 developmental markers, not to judge her, but to understand her. We'll share what we see — not in jargon, but in plain language. You'll know where she is and where she's heading.",
+                "And one day, the child who clung to you at the door will walk in on her own, find her work, and greet you at the end of the day full of stories.",
+                "That's the journey. And we're honoured to walk it with you."
+              ],
+              "imageUrl": "/programs/playgroup/where-this-leads.webp",
+              "align": "left"
+            }
+          },
+
+          {
+            "type": "faq",
+            "props": {
+              "bg": "#F3E3CF",
+              "defaultOpenIndex": 0,
+              "panelMaxWidth": "max-w-4xl",
+              "title": "Frequently Asked Questions",
+              "subtitle": "",
+              "items": [
+                {
+                  "q": "How do you handle the transition to school at Blue Blocks?",
+                  "a": "We practice Gentle Settlement. Unlike schools that expect quick separations, we invite parents to stay inside the campus until the child feels safe — whether that's three days or three weeks. There is no deadline for trust. We do not rush children or push through tears."
+                },
+                {
+                  "q": "What is the Blue Blocks approach to toilet learning?",
+                  "a": "We follow the child's body, not a schedule. We watch for signs that the nervous system is ready for control, offer child-sized toilets where feet rest flat on the ground, and use cotton underwear for sensory feedback. There is no countdown, no sticker chart — just calm, patient support at the child's own pace."
+                },
+                {
+                  "q": "How is food managed in the Toddler Community?",
+                  "a": "We treat the family's packed lunchbox as a bridge between home and school. Children learn to open their lunchbox, serve themselves, and care for their space. Beyond the lunchbox, children participate in food preparation — peeling bananas, squeezing oranges, slicing soft-boiled eggs — building independence and confidence with real tools."
+                },
+                {
+                  "q": "What does my child actually do all day?",
+                  "a": "Children choose from purposeful activities suited to their development: language immersion (learning precise names like \"Kingfisher\"), sensory exploration (Mystery Bags, sorting, matching), and practical life work (pouring water, washing tables, arranging flowers). Every activity has a beginning, middle, and end — teaching focus and the rhythm of completion."
+                }
+              ]
+            }
+          },
+
+          {
+            "type": "imageText",
+            "props": {
+              "title": "",
+              "text": [
+                "To understand the developmental science behind these practices, see our Developmental Architecture Paper."
+              ],
+              "imageUrl": "/programs/playgroup/dev-architecture-note.webp",
+              "align": "center"
+            }
+          },
+
+          {
+            "type": "ctaBanner",
+            "props": {
+              "title": "Begin with a Gentle Visit.",
+              "text": "Come see the Toddler Community in action. We’ll walk you through the environment and explain how settlement works—at your child’s pace.",
+              "cta": {
+                "label": "Book a Campus Visit",
+                "href": "/contact-us"
+              },
+              "image": "/programs/playgroup/cta.webp",
+              "imageAlt": "Blue Blocks campus",
+              "imageWidth": "566",
+              "imageHeight": "506",
+              "align": "left",
+              "theme": "dark"
             }
           }
         ]
@@ -5171,8 +5216,8 @@
         {
           "type": "innovationMediaHero",
           "props": {
-            "title": "The Cognitive Architecture of Innovation",
-            "subtitle": "Innovation is not a subject. It is a biological stage of development. We don't just teach technology; we nurture the 'First Principles' thinking that created it.",
+            "title": "Innovation at Blue Blocks",
+            "subtitle": "Conscience, Consciousness, and the Discoveries of Tomorrow",
             "bgImageUrl": "/innovation/innov_hero.webp",
             "primaryCta": {
               "label": "Watch Our Story",
@@ -5189,31 +5234,48 @@
           }
         },
         {
+          "type": "imageText",
+          "props": {
+            "title": "Vision 2050",
+            "text": [
+              "The children entering our Toddler Community today will be twenty-seven years old in 2050. They will reach their professional and creative peak in a world shaped by artificial intelligence, automation, climate crisis, and forms of global connection that don't yet exist.",
+              "What does this world need from them? Not just capability. Not just innovation. It needs innovators who think from conscience, not just about ethics. It needs minds that default to care — for living beings, for non-living matter, for the Earth itself.",
+              "Dr. Montessori understood this seventy-five years ago. She saw the child not as a vessel to fill with knowledge, but as the architect of tomorrow's world — and she understood that the architect's conscience must be formed alongside their capability.",
+              "At Blue Blocks, innovation and conscience are not separate tracks. Every activity, every exercise, every thinking type we develop includes this dimension: Is this sustainable? Is this regenerative? Does this serve life?",
+              "Recently, a parent asked her thirteen-year-old: 'What would you like to do when you grow up? Which field would you like to take up?'",
+              "Her daughter's reply: 'I don't know which field I will get into, but one thing I know for sure is that I want to do something to take care of the Mother Earth.' This is not something she learned in a sustainability module. This is who she has become — across thirteen years of Montessori formation. She doesn't think about ethics. She thinks from ethics. Her conscience isn't a checklist. It's her orientation to the world."
+            ],
+            "imageUrl": "/home-01/kids-being-part-sunday-school.webp"
+          }
+        },
+        {
           "type": "innovationAgeCards",
           "props": {
             "eyebrow": "CHILDREN",
-            "title": "From Sensorial Explorer to\nPatent Holder",
+            "title": "The Formation of Conscience",
+            "desc":"Innovation without conscience is not innovation — it is extraction. The capacity for ethical action doesn't emerge from rules imposed at sixteen. It develops across eighteen years of Montessori formation.",
+            "cardWidth": "sm:w-[25.5rem]",
             "cards": [
               {
-                "tag": "0–6",
-                "text": "Sensorial and motor development as the foundation of invention.",
+                "tag": "First Plane (0-6): Sensitivity.",
+                "text": "Through Grace and Courtesy, the young child learns to consider others before acting. Through Care of the Environment, they develop respect for non-living things — the chair pushed in, the material returned to the shelf, the water not wasted. Through Care of Plants and Animals, they develop sensitivity to living beings. The normalised child — concentrated, peaceful, aware — develops deep consciousness: presence to the world around them.",
                 "tone": "navy",
                 "icon": "/icon/EV.svg"
               },
               {
-                "tag": "6–12",
-                "text": "Research loops: observation, hypothesis, validation, iteration.",
+                "tag": "Second Plane (6-12): Understanding.",
+                "text": "Cosmic Education extends sensitivity to cosmic scale. The child learns that all beings have a cosmic task — a contribution to the whole. Nothing exists for itself alone. The earthworm aerates soil. The bee pollinates flowers. Interdependence becomes not just fact but felt reality. The moral reasoning mind asks: What is humanity's task? What is mine?",
                 "tone": "mint",
                 "icon": "/icon/EV.svg"
               },
               {
-                "tag": "12–18",
-                "text": "Applied engineering, system thinking, and real-world creation.",
+                "tag": "Third Plane (12-18): Responsibility.",
+                "text": "The adolescent doesn't follow an ethical checklist — they carry an internalised moral sensibility formed across twelve years. When they design in the Innovation Lab, they don't ask 'Is this allowed?' They ask 'Does this serve life?' When they build in the Drone Lab, they don't just check safety regulations — they feel responsibility for every consequence of their creation.",
                 "tone": "coral",
                 "icon": "/icon/EV.svg"
               }
             ],
-            "footnote": "The ‘Research Loop’ Pedagogy — Experience → Experiment → Research → Application → Innovation"
+            "footnote": "This is why we speak of regenerative innovators — not innovators who merely minimise harm, but innovators who design in service of living and non-living systems. Not sustainability as constraint, but contribution as purpose."
           }
         },
         {
@@ -5246,23 +5308,23 @@
           "type": "innovationHabitSplit",
           "props": {
             "image": "#",
-            "eyebrow": "The Prepared Environment",
-            "title": "A Habit for ‘Permission-less’ Creation",
+            "eyebrow": "The Montessori Foundation",
+            "title": "Montessori pedagogy laid the foundation for innovation — and for the conscience that must guide it:",
             "bullets": [
               {
                 "icon": "/icon/certificate.svg",
-                "title": "The ‘Prepared Agency’",
-                "text": "Tools and materials live in the environment—ready to be used without asking."
+                "title": "Exploration and Experimentation:",
+                "text": "The child learns through direct encounter with the world — always with care for what they encounter."
               },
               {
                 "icon": "/icon/rounding.svg",
-                "title": "Systems Thinking—Everyday",
-                "text": "Children connect cause-effect, constraints, and trade-offs across projects."
+                "title": "Auto-education and Self-discovery:",
+                "text": "The child is the agent of their own development — and learns that agency carries responsibility."
               },
               {
                 "icon": "/icon/magnific-icon.svg",
-                "title": "The ‘Failure Club’",
-                "text": "A culture where iteration is celebrated, not punished."
+                "title": "The Hand as Instrument of Intelligence:",
+                "text": "Trained hands manipulating real materials build the mind — and develop respect for matter itself."
               }
             ],
             "images": [
@@ -5294,7 +5356,7 @@
           "props": {
             "image": "/innovation/innov_collage-4.webp",
             "eyebrow": "INNOVATION",
-            "title": "From Montessori\nto Mars",
+            "title": "From Montessori to Mars",
             "text": "Curiosity, observation, and engineering combine into real missions with external mentorship.",
             "cta": {
               "label": "Explore CubeSat Mission",
@@ -5306,77 +5368,58 @@
             ],
             "cards": [
               {
-                "title": "The CubeSat Mission",
-                "text": "Research-backed engineering in partnership with ISRO + partners.",
+                "title": "Deepening Montessori: Our Approach",
+                "text": ["We have developed what we call the Developmental Innovation Protocol (DIP) — an eighteen-year architecture that nurtures innovative capability and ethical sensibility together. They cannot be separated.",
+                "Every innovation activity includes the conscience dimension. Every exercise develops both capability and ethical sensitivity. Every thinking type we nurture includes the question: What is my responsibility here?",
+                "When capabilities integrate — when technical skill fuses with creative imagination fuses with ethical sensibility — something emerges. We call this Synaptic Fusion. It is not just innovative capability. It is innovative capability with conscience built in."],
                 "icon": "/icon/ISRO.svg"
               },
               {
-                "title": "Systems Thinking",
-                "text": "Designing for the most complex environment known to man, where ‘help’ is impossible.",
+                "title": "Innovation With Conscience at Every Stage",
+                "text": ["Ages 0-6: The child builds the foundations of conscience alongside capability. Care of environment, care of living things, sensitivity to others. Creative problem-solving emerges — always within the context of care. The scientist is born: the child who observes, experiments, and discovers — with respect for what they discover.",
+                "Ages 6-12: Imagination meets reasoning meets moral understanding. Through the Inventions Timeline, children learn that innovation has consequences — life before and after each invention. Five patent applications filed by students aged eight to twelve — each evaluated not just for novelty but for benefit. Does this serve? Does this heal? Does this regenerate?",
+                "Ages 12-18: Full integration — technical capability fused with social consciousness, economic thinking, and ethical reasoning. Students don't just build satellites; they discuss space debris, resource allocation, human solidarity. They don't just run micro-economies; they consider fair exchange, community benefit, ecological impact.","On January 11, 2026, a student-built CubeSat satellite will launch into orbit aboard ISRO's PSLV C62 rocket. The students who built it carry not just technical capability but cosmic responsibility — the understanding that space, like Earth, requires custodianship."],
                 "icon": "/icon/ISRO.svg"
               }
             ]
           }
         },
         {
-          "type": "billionYears",
-          "props": {
-            "eyebrow": "SPACE MISSION",
-            "title": "3.8 Billion Years Of R&D",
-            "subtitle": "Connecting 'Cosmic Education' (The Universe Story) to 'Orbital Mechanics' (CubeSat Payloads)",
-            "hexImages1": {
-              "src": "/innovation/hive-architecture.webp",
-              "alt": "The Hive Architecture"
-            },
-            "hexImages2": {
-              "src": "/innovation/curriculum-nature-mentor.webp",
-              "alt": "Nature as Mentor"
-            },
-            "hexImages3": {
-              "src": "/innovation/student-case-studies.webp",
-              "alt": "Student Case Studies"
-            },
-            "bulletPoints": [
-              {
-                "icon": "/icon/bulb.svg",
-                "title": "The 'Hive' Architecture",
-                "text": "A space designed to mimic nature (Hexagonal structures) to stimulate 'Naturalistic Thinking'."
-              },
-              {
-                "icon": "/icon/bulb.svg",
-                "title": "The Curriculum: Nature as Mentor",
-                "text": "Moving from 'Nature Walks' to 'Scientific Observation' (Sound Maps, Texture Hunts)."
-              },
-              {
-                "icon": "/icon/bulb.svg",
-                "title": "Student Case Studies",
-                "text": "The Seed Bank Project and 'Regenerative Design' prototypes (e.g., Gecko Tape, Kingfisher Bullet Train)."
-              }
-            ],
-            "footerText": "Why This Matters for Your Child: Because we measure what we do, we can personalize. We don't guess at your child's development — we track it with research-grade precision."
-          }
-        },
-        {
           "type": "highStakes",
           "props": {
-            "title": "High-Stakes Engineering & Resilience",
+            "title": "Our Prepared Environments",
             "subheading": "DRONE LAB",
+            "description":"Each innovation space is designed to develop both capability and conscience:",
             "droneImage": "/innovation/drone.webp",
+            "gridNumber":"lg:grid-cols-4",
             "featureSections": [
               {
                 "icon": "/icon/bulb.svg",
-                "title": "The 'Hive' Architecture",
-                "text": "A space designed to mimic nature (Hexagonal structures) to stimulate 'Naturalistic Thinking'."
+                "title": "The Innovation Lab:",
+                "text": "Where hands build minds — and develop respect for materials. Every tool is cared for. Every material is valued. Students learn that creation carries responsibility for what is created.",
+                "linkName":"→ Explore The Space Lab",
+                "linkHref":"#"
               },
               {
                 "icon": "/icon/bulb.svg",
-                "title": "The Curriculum: Nature as Mentor",
-                "text": "Moving from 'Nature Walks' to 'Scientific Observation' (Sound Maps, Texture Hunts)."
+                "title": "The Bio-Mimicry Hive:",
+                "text": "Where nature becomes mentor — and students become custodians. Learning from 3.8 billion years of biological wisdom, students develop regenerative thinking: design that serves life, not just human convenience.",
+                "linkName":"→ Explore The Space Lab",
+                "linkHref":"#"
               },
               {
                 "icon": "/icon/bulb.svg",
-                "title": "Student Case Studies",
-                "text": "The Seed Bank Project and 'Regenerative Design' prototypes (e.g., Gecko Tape, Kingfisher Bullet Train)."
+                "title": "The Drone Lab",
+                "text": "Where capability meets responsibility. Every flight begins with a Conscience Check — not as procedure but as expression of formed conscience. Privacy, safety, ecology, purpose: considered before every action.",
+                "linkName":"→ Explore The Space Lab",
+                "linkHref":"#"
+              },
+              {
+                "icon": "/icon/bulb.svg",
+                "title": "The Space Lab",
+                "text": "Where Cosmic Education reaches orbit — and cosmic responsibility becomes real. Students who build satellites understand that space is shared commons, that debris endangers all missions, that Earth seen from orbit has no borders.",
+                "linkName":"→ Explore The Space Lab",
+                "linkHref":"#"
               }
             ]
           }
@@ -6210,9 +6253,9 @@
               "image": "/innovation/hive-image-01.webp",
               "contentBg": "bg-[#EEF7FD]",
               "contentSpacing": "p-5 rounded-[28px]",
-              "title": "Biomimicry Hive Innovation – a way of life",
-              "subtitle": "By Blue Block’s Children",
-              "description": "At Blue Blocks, education has never been prescriptive; children are encouraged to understand and apply the learning by doing. The innovation lab is an arena for experiments and creativity. Biomimicry, while being a subject by itself is also a combination of physics, engineering, math, history and art. Biomimicry is technically not a new concept for the children of Blue Blocks who have already used these to create drones.",
+              "title": "The Biomimicry Hive",
+              "subtitle": "Learning From Life, Serving Life",
+              "description": "Nature has been solving engineering problems for 3.8 billion years. But the Biomimicry Hive is not just about extracting nature's solutions. It is about developing a relationship with nature — learning to see all living beings as teachers, as relatives, as fellow participants in the web of life.",
               "link": {},
               "points": []
             }

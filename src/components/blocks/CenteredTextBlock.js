@@ -5,7 +5,7 @@ export default function CenteredTextBlock({
   title,
   subtitle,
   text,
-  textParts,
+  textParts = [],
   maxWidth = "56rem"
 }) {
   return (
@@ -25,19 +25,17 @@ export default function CenteredTextBlock({
           ) : null}
 
           {Array.isArray(textParts) && textParts.length ? (
-            <p className="mt-4 text-[0.95rem] leading-7 text-slate-600">
-              {textParts.map((p, i) => {
-                if (typeof p === "string") return <span key={i}>{p}</span>;
-                if (p && typeof p === "object" && p.bold)
-                  return (
-                    <strong key={i} className="font-semibold text-[#131313]">
-                      {p.bold}
-                    </strong>
-                  );
-                return null;
-              })}
-            </p>
-          ) : text ? (
+              <div className="mt-4 space-y-3 text-slate-700 leading-relaxed">
+                {textParts.map((p, idx) =>
+                  typeof p === "string" ? (
+                    <p
+                      key={idx}
+                      dangerouslySetInnerHTML={{ __html: p }}
+                    />
+                  ) : null
+                )}
+              </div>
+            ) : text ? (
             <p className="mt-4 text-[0.95rem] leading-7 text-slate-600">
               {text}
             </p>

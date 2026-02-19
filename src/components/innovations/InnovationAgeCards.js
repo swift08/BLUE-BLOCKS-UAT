@@ -7,7 +7,7 @@ const TONES = {
   coral: "bg-[#D9815E] text-white",
 };
 
-export default function InnovationAgeCards({ eyebrow, title, cards = [], footnote }) {
+export default function InnovationAgeCards({ eyebrow, title, desc, cardWidth = "sm:w-[15.5rem]", cards = [], footnote }) {
   const { heading, flow } = splitFootnote(footnote);
 
   return (
@@ -29,6 +29,12 @@ export default function InnovationAgeCards({ eyebrow, title, cards = [], footnot
           </h2>
         ) : null}
 
+        {desc ? (
+          <p className="mt-6 text-center text-[#111827] text-regular">
+            {desc}
+          </p>
+        ) : null}
+
         {/* Cards row */}
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
           {cards.map((c, idx) => (
@@ -38,6 +44,7 @@ export default function InnovationAgeCards({ eyebrow, title, cards = [], footnot
               tag={c.tag}
               text={c.text}
               icon={c.icon}
+              cardWidth={cardWidth}
             />
           ))}
         </div>
@@ -67,12 +74,13 @@ export default function InnovationAgeCards({ eyebrow, title, cards = [], footnot
 
 /* -------------------- pieces -------------------- */
 
-function AgeCard({ tone, tag, text, icon }) {
+function AgeCard({ tone, tag, text, icon, cardWidth }) {
+  
   return (
     <div
       className={[
-        "relative w-full sm:w-[15.5rem] rounded-2xl px-6 py-6 sm:px-7 sm:py-7",
-        "shadow-[0_10px_30px_rgba(0,0,0,0.08)]",
+        `relative w-full ${cardWidth} rounded-2xl px-6 py-6 sm:px-7 sm:py-7`,
+        `shadow-[0_10px_30px_rgba(0,0,0,0.08)]`,
         TONES[tone] || "bg-slate-100 text-slate-900",
       ].join(" ")}
     >

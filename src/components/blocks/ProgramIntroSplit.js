@@ -5,7 +5,7 @@ export default function ProgramIntroSplit({
   eyebrow,
   title,
   subTitle,
-  text,
+  text = [],
   metaRows = [], // [{ label, value }]
   media = {}, // { main:{src,alt,showPlay}, left:{src,alt}, right:{src,alt} }
 }) {
@@ -96,11 +96,23 @@ export default function ProgramIntroSplit({
               </p>
             ) : null}
 
-            {text ? (
-              <p className="mt-5 max-w-[36rem] text-[0.9375rem] leading-7 text-slate-500">
-                {text}
-              </p>
-            ) : null}
+            {Array.isArray(text) && text.length ? (
+              <div>
+                {text.map((p, idx) =>
+                  typeof p === "string" ? (
+                    <p
+                      className="mt-2 text-regular text-slate-500 leading-relaxed"
+                      key={idx}
+                      dangerouslySetInnerHTML={{ __html: p }}
+                    />
+                  ) : null
+                )}
+              </div>
+            ) : typeof text === "string" ? (
+            <p
+              className="mt-2 text-regular text-slate-500 leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: text }}
+            />) : null}
 
             {/* NEW: meta rows (optional, bg from JSON) */}
             {Array.isArray(metaRows) && metaRows.length ? (

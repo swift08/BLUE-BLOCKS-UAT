@@ -96,12 +96,26 @@ export default function MontessoriToMars({
                     />
                   </div>
                 ) : null}
-                <div className="text-[2.75rem]">{c.title}</div>
-                {c.text ? (
-                  <p className="mt-2 text-[1.25rem] text-white/75 leading-relaxed">
-                    {c.text}
-                  </p>
-                ) : null}
+                <div className="text-3xl">{c.title}</div>
+
+                {Array.isArray(c?.text) && c?.text.length ? (
+                  <div>
+                    {c?.text.map((p, idx) =>
+                      typeof p === "string" ? (
+                        <p
+                          className="mt-2 text-regular text-white/75 leading-relaxed"
+                          key={idx}
+                          dangerouslySetInnerHTML={{ __html: p }}
+                        />
+                      ) : null
+                    )}
+                  </div>
+                ) : typeof c?.text === "string" ? (
+                <p
+                  className="mt-2 text-regular text-white/75 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: it.text }}
+                />) : null}
+
               </div>
             ))}
           </div>

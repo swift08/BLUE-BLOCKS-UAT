@@ -9,7 +9,10 @@ const normalizeSlug = (v = "") =>
   String(v).trim().replace(/^\/+/, "").replace(/\/+$/, "");
 
 const isValidPageNode = (node) =>
-  node && typeof node === "object" && Array.isArray(node.sections) && node.sections.length > 0;
+  node &&
+  typeof node === "object" &&
+  Array.isArray(node.sections) &&
+  node.sections.length > 0;
 
 const getPage = (pages, slug) => {
   const s = normalizeSlug(slug);
@@ -21,13 +24,14 @@ export async function generateStaticParams() {
   const pages = siteData?.pages?.innovationDetail ?? {};
 
   return Object.entries(pages)
-    .filter(([key, val]) => isValidPageNode(val)) // ✅ filters out breadcrumbs/schema
+    .filter(([, val]) => isValidPageNode(val))
     .map(([key]) => ({ slug: normalizeSlug(key) }));
 }
 
 /* ---------- page ---------- */
-export default function InnovationDetailPage({ params }) {
-  const slug = normalizeSlug(params?.slug);
+export default async function InnovationDetailPage({ params }) {
+  const resolvedParams = await params;
+  const slug = normalizeSlug(resolvedParams?.slug);
 
   const pages = siteData?.pages?.innovationDetail ?? {};
   const page = getPage(pages, slug);

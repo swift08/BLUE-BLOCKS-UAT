@@ -6,7 +6,7 @@ export default function PageHero({ title, breadcrumb = [], bg }) {
   return (
     <section className="relative overflow-hidden" style={{ backgroundColor: base }}>
       {/* fixed header space (manual) */}
-      <div className="pt-28 sm:pt-32" />
+      <div className="pt-32 sm:pt-36" />
 
       {/* arcs */}
       {bg?.leftArc ? (

@@ -9,27 +9,8 @@ import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import siteData from "@/data/site.json";
 import JsonLd from "@/components/seo/JsonLd";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-
-const SITE_URL = "https://dev65.blueblocks.in";
-
 export const metadata = {
-  metadataBase: new URL(SITE_URL),
-
-  // ✅ GLOBAL NOINDEX / NOFOLLOW
-  robots: {
-    index: false,
-    follow: false,
-    googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
-      "max-snippet": -1,
-      "max-image-preview": "none",
-      "max-video-preview": -1,
-    },
-  },
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
 
   title: {
     default: "Blue Blocks | Montessori + Innovation Ecosystem (Hyderabad)",
@@ -64,8 +45,8 @@ const orgSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   name: "Blue Blocks",
-  url: SITE_URL,
-  logo: `${SITE_URL}/icon/logo.svg`,
+  url: "",
+  logo: `/icon/logo.svg`,
   address: [
     {
       "@type": "PostalAddress",
@@ -87,7 +68,7 @@ const orgSchema = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`min-h-screen bg-white text-slate-900 ${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`min-h-screen bg-white text-slate-900`}>
         <JsonLd id="org-jsonld" data={orgSchema} />
 
         <HeaderShell />
