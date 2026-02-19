@@ -1,3 +1,4 @@
+// src/components/ui/modal/AppModal.js
 "use client";
 
 import * as Dialog from "@radix-ui/react-dialog";
@@ -29,7 +30,7 @@ export default function AppModal({
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40" />
 
         <Dialog.Content
-          className={`fixed left-1/2 top-1/2 z-50 w-[calc(100%-2rem)] ${maxWidthClass} -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl bg-white shadow-xl focus:outline-none`}
+          className={`fixed left-1/2 top-1/2 z-50 w-[calc(100%-2rem)] ${maxWidthClass} -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-2xl bg-white shadow-xl focus:outline-none my-3`}
         >
           {/* Header */}
           <div className="flex items-start justify-between gap-4 border-b px-5 py-4 sm:px-7">

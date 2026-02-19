@@ -113,7 +113,7 @@ function FounderCard({
           <img
             src={image}
             alt={imageAlt || name || "Profile photo"}
-            className="h-[280px] w-full object-contain sm:h-[320px]"
+            className="h-[280px] w-full object-cover sm:h-[320px]"
             style={{ backgroundColor: "#fff" }}
           />
         ) : (
@@ -209,7 +209,7 @@ function FounderDetailsModalTrigger({ person, modal }) {
               <img
                 src={person.image}
                 alt={person.imageAlt || person.name || ""}
-                className="h-[320px] w-full object-contain"
+                className="h-[320px] w-full object-cover"
                 style={{ backgroundColor: "#fff" }}
               />
             </div>
