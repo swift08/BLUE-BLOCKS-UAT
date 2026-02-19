@@ -20,9 +20,10 @@ export default function ImageText({
   imageAspect = "aspect-[16/10]",
   titleClassName = "",
   textClassName = "",
+  contentCenter = false
 }) {
   const hasImage = Boolean(imageUrl);
-
+  const contentClass = contentCenter ? "text-center" : ""
   const gridColsClass = hasImage ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1 md:grid-cols-1";
 
   const isCard = variant === "card";
@@ -71,6 +72,7 @@ export default function ImageText({
         <div
           className={[
             "grid",
+            contentClass,
             gridColsClass,
             "gap-8 items-center",
             wrapClass,

@@ -3115,6 +3115,343 @@
           {
             "type": "pageHero",
             "props": {
+              "title": "The Toddler Community",
+              "subtitle": "A Sanctuary for Your Child's Becoming",
+              "breadcrumb": [
+                { "label": "Home", "href": "/" },
+                { "label": "Programs", "href": "/programs" },
+                { "label": "Playgroup" }
+              ],
+              "bg": {
+                "base": "#F3E3CF",
+                "leftArc": "/ui/arc-left.webp",
+                "rightArc": "/ui/arc-right.webp"
+              }
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "A Letter to You",
+              "text": [
+                "Before you read about our environment, our materials, or our methods, we want to speak to something else first — your heart.",
+                "We know what it means to hand over your child. We know the weight of that moment when you wonder: Will they see her the way I see her? Will they notice when she's tired, or overwhelmed, or just needs to be held?",
+                "We want you to know: your child will not be one of many here. She will be seen. She will be known. Her voice, her rhythms, her particular way of being in the world — we will learn them. And we will honor them.",
+                "When she cries for you — and she might, especially at first — she will not cry alone. A guide will be near. Not to distract her or rush her through it, but simply to be with her. To sit. To wait. To let her know that even in your absence, she is held.",
+                "This is not daycare. This is not \"school\" in the way you might remember it. This is a place where your child's work — to grow, to become herself, to learn that she is capable — is taken as seriously as any work in the world.",
+                "And you? You are not handing her off. You are extending your love into a space that will carry it while you are apart.",
+                "We know this is not easy. We don't take it lightly.",
+                "Between 12 and 30 months, your child is not simply growing; she is actively constructing the person she will become. She is driven by a powerful internal command: \"Help me to do it myself.\" At Blue Blocks, we provide a space designed to respect her sacred effort to become functional and independent."
+              ],
+              "imageUrl": "",
+              "variant": "card",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter" : true
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Gentle Settlement: We Go at Her Pace",
+              "text": [
+                "The first days are tender — for her and for you.",
+                "Unlike schools that expect you to leave quickly, we invite you to stay. Sit in the corner of the room. Watch her explore. Let her glance back and find you there. Come again the next day, and the next. Stay for as long as she needs — whether that's three days or three weeks.",
+                "There is no deadline for trust. We will not rush her, and we will not rush you.",
+                "When she begins to feel safe — when she looks at her guide and sees someone familiar, when she walks toward the shelf instead of toward the door — you'll know. And so will we. That is when we gently, gradually, begin the transition.",
+                "This is how trust is built: not by pushing through tears, but by honouring them."
+              ],
+              "imageUrl": "/programs/playgroup/gentle-settlement.webp",
+              "align": "left"
+            }
+          },
+          {
+            "type": "montessoriForSuccess",
+            "props": {
+              "bg": "#F3E3CF",
+              "title": "EXPERTS SPEAK",
+              "items": [
+                {
+                  "name": "A Blue Blocks Parent",
+                  "role": "Parent",
+                  "quote": "\"I was the mother who couldn't imagine leaving my daughter. Because Blue Blocks let me stay until she felt safe, the day she finally waved goodbye with a smile wasn't a heartbreak — it was a shared triumph. Within three weeks, she was leading me to the gate, eager for her 'work'.\""
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass" : "bg-white",
+              "title": "Emotional Safety: She Will Be Held",
+              "text": [
+                "Toddlers feel everything intensely, but they don't yet have the words to tell us. Frustration, joy, fear, excitement — it all comes out in waves.",
+                "Our guides are trained to read what your child cannot yet say. A change in her breathing. A shift in her posture. The way she looks toward the door when she's missing you. We notice. And we respond — not with distraction or redirection, but with presence.",
+                "When she's overwhelmed, we stay close. When she's frustrated, we name what she might be feeling: \"You wanted that. It's hard to wait.\" When she needs comfort, we offer it — a lap to sit on, a soft voice, a hand to hold.",
+                "We do not expect toddlers to \"behave.\" We expect them to feel. Our job is to help them feel safe."
+              ],
+              "imageUrl": "/programs/playgroup/emotional-safety.webp",
+              "align": "left",
+              "imageSide":"right",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]"              
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass" : "bg-[#F3E3CF]",
+              "title": "Food as Love: The Lunchbox and Beyond",
+              "text": [
+                "We know what goes into that lunchbox: the thought, the love, the hope that she'll actually eat it.",
+                "That box is not just food to us — it's a piece of home. A bridge between you and her during the hours you're apart. When she opens it, she's opening something familiar in an unfamiliar place. We treat that moment with care.",
+                "She will learn to open it herself, to serve herself, to wipe her space when she's done. These small acts of independence are not chores — they are quiet triumphs. And when she manages the clasp for the first time, or pours water without spilling, we'll celebrate with her (and tell you about it).",
+                "Beyond the lunchbox, food is part of our work here. Small hands peel bananas, squeeze oranges, and slice soft-boiled eggs. Children set tables with real ceramic and glass — not because we want them to be careful, but because we trust that they can be. And that trust becomes their confidence."
+              ],
+              "imageUrl": "/programs/playgroup/food-as-love.webp",
+              "align": "left"
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "A Day of Purposeful Work",
+              "text": [
+                "You might wonder: What does she actually do all day?",
+                "She works. Not worksheets or structured lessons — but real, meaningful activity chosen by her, suited to her pace, designed for her stage of development."
+              ],
+              "imageUrl": "/programs/playgroup/day-of-work.webp",
+              "align": "left",
+              "imageSide":"right",
+              "imageClassName":"",
+              "imageFit":"contain",
+              "imageAspect":"aspect-[16/10]"
+            }
+          },
+          {
+            "type": "AreasofDevelopment",
+            "props": {
+              "bg": "#F3E3CF",
+              "title": "The Prepared Environment",
+              "description": "The classroom is no longer enough; the library and the outside world become the environment.",
+              "headerAlign": "center",
+              "cols": {
+                "base": 1,
+                "sm": 2,
+                "lg": 3
+              },
+              "maxWidth": "max-w-6xl",
+              "gap": "gap-8",
+              "cardBg": "#273C75",
+              "cardRadius": "rounded-[18px]",
+              "cardPadding": "px-6 py-7",
+              "cardMinHeight": 260,
+              "equalHeight": true,
+              "tightTitleWhenNoIcon": true,
+              "cardBehindTabs": {
+                "enabled": true,
+                "width": 28,
+                "offsetX": 10,
+                "offsetY": 0,
+                "radius": 18,
+                "insetTop": 0,
+                "insetBottom": 0,
+                "colors": [
+                  "#78D6F3",
+                  "#F5A48D",
+                  "#F9E27C"
+                ],
+                "borderColor": "#131313",
+                "borderWidth": 2
+              },
+              "cardDivider": {
+                "enabled": true,
+                "style": "dotted",
+                "color": "rgba(255,255,255,0.35)",
+                "marginTop": 18,
+                "marginBottom": 0
+              },
+              "headline": "What She Does Each Day",
+              "subText": "Not entertainment. Not instruction. Purposeful activity, chosen by her, repeated until mastery.",
+              "items": [
+                {
+                  "tag": "",
+                  "title": "She explores language:",
+                  "text": "We speak to her with care. Not baby talk, but real words — precise, warm, clear. When we look at a bird together, we might say \"That's a Kingfisher\" — because children at this age are hungry for the real names of things. We sing songs, recite rhymes, and do fingerplay. Language surrounds her here like music."
+                },
+                {
+                  "tag": "",
+                  "title": "She uses her senses:",
+                  "text": "She might reach into a cloth bag and try to guess what's inside using only her fingers — a smooth stone, a wooden ring, a seashell. She sorts, matches, stacks. These aren't \"games\"; they're how her brain learns to categorise the world."
+                },
+                {
+                  "tag": "",
+                  "title": "She does real work:",
+                  "text": "Pouring water from a small pitcher. Buttoning a frame. Washing a table with a tiny sponge. Watering a plant. Arranging flowers. Toddlers love this kind of work — the kind adults do. It gives them dignity. And every activity has a beginning, middle, and end — teaching her the rhythm of focus and completion.\n\nEvery material in our environment is designed so she can see for herself whether she's succeeded. A puzzle fits or it doesn't. A pitcher fills or overflows. She doesn't need us to tell her she's done well — she knows. This is where real confidence begins."
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Toilet Learning: Respect for Her Body",
+              "text": [
+                "This journey belongs to her — not to a schedule, and not to us.",
+                "We follow her body's readiness. We watch for the signs that her nervous system is ready for control. We offer child-sized toilets where her feet rest flat on the ground, where she feels secure and capable.",
+                "There is no countdown. No sticker chart. No fanfare or fuss. Just a calm, matter-of-fact approach: this is a normal part of life, and when she's ready, she'll master it — just like everything else.",
+                "If there are accidents, they're simply part of the process. We respond with patience, and we move on."
+              ],
+              "imageUrl": "/programs/playgroup/toilet-learning.webp",
+              "align": "left"
+            }
+          },
+          {
+            "type": "AreasofDevelopment",
+            "props": {
+              "bg": "#F3E3CF",
+              "title": "The Prepared Environment",
+              "description": "The classroom is no longer enough; the library and the outside world become the environment.",
+              "headerAlign": "center",
+              "cols": {
+                "base": 1,
+                "sm": 2,
+                "lg": 2
+              },
+              "maxWidth": "max-w-6xl",
+              "gap": "gap-8",
+              "cardBg": "#273C75",
+              "cardRadius": "rounded-[18px]",
+              "cardPadding": "px-6 py-7",
+              "cardMinHeight": 260,
+              "equalHeight": true,
+              "tightTitleWhenNoIcon": true,
+              "headline": "Language and Movement: How She Grows",
+              "subText": "We protect the conditions that allow expression and coordinated independence to emerge naturally.",
+              "items": [
+                {
+                  "tag": "",
+                  "title": "Words:",
+                  "icon": "/icon/brain.svg",
+                  "text": "Long before she speaks in sentences, she is absorbing everything. The tone of our voice. The rhythm of language. The names of things. We speak to her with care because we know she is listening deeply — even when she doesn't yet respond.\n\nWhen the words come — and they will — they often come in a rush. Children who have been immersed in rich, precise language don't just speak; they express. We trust the process, and we give her time."
+                },
+                {
+                  "tag": "",
+                  "title": "Movement:",
+                  "icon": "/icon/brain.svg",
+                  "text": "She needs to move. To carry things. To climb. To lift something heavy and feel her own strength. We provide real materials — wood, glass, metal — because weight and texture matter. When she carries a tray across the room without spilling, she's not just building muscles. She's building her sense of self."
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "title": "Your Family, Your Way",
+              "text": [
+                "Every family is different. We don't assume who drops off, who picks up, who packs the lunch, or who she cries for most.",
+                "What we know is this: she has people who love her, and those bonds are sacred. Our job is to extend that love, not replace it.",
+                "If both parents want to be part of the settling process, we welcome it. If a grandparent is her primary comfort, they are welcome too. We work with your family as it is, not as a template says it should be.",
+                "During this transition, partners often play a special role — a bridge between home and the wider world. But we follow your child's lead. She'll show us who she needs."
+              ],
+              "imageUrl": "/programs/playgroup/family-your-way.webp",
+              "align": "left"
+            }
+          },
+          {
+            "type": "CenteredTextBlock",
+            "props": {
+              "bg": "#EEF7FD",
+              "title": "Where This Leads",
+              "textParts": [
+                "The independence she builds here is not just for now.",
+                "The focus she develops while pouring water will become the focus she uses to read. The hand that learns to button a coat will learn to hold a pencil. The confidence she gains by doing things herself will carry her into the Children's House — and beyond.",
+                "We track 46 developmental markers, not to judge her, but to understand her. We'll share what we see — not in jargon, but in plain language. You'll know where she is and where she's heading.",
+                "And one day, the child who clung to you at the door will walk in on her own, find her work, and greet you at the end of the day full of stories.",
+                "That's the journey. And we're honoured to walk it with you."
+              ],
+              "imageUrl": "/programs/playgroup/where-this-leads.webp",
+              "align": "left",
+              "maxWidth":"none"
+            }
+          },        
+          {
+            "type": "researchMission",
+            "props": {
+              "id": "mission",
+              "eyebrow": "",
+              "title": "",
+              "bgClassName": "",
+              "alignCenter": "text-center",
+              "text": [],
+              "calloutBg": "bg-[#B7D976]",
+              "CalloutAlign": "text-left",
+              "calloutGroupClass": "mt-0 sm:mt-0",
+              "calloutTitle": "",
+              "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
+              "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
+              "callout": " To understand the developmental science behind these practices, see our Developmental Architecture Paper."
+            }
+          },
+          {
+            "type": "faq",
+            "props": {
+              "bg": "#F3E3CF",
+              "defaultOpenIndex": 0,
+              "panelMaxWidth": "max-w-4xl",
+              "title": "Frequently Asked Questions",
+              "subtitle": "",
+              "items": [
+                {
+                  "q": "How do you handle the transition to school at Blue Blocks?",
+                  "a": "We practice Gentle Settlement. Unlike schools that expect quick separations, we invite parents to stay inside the campus until the child feels safe — whether that's three days or three weeks. There is no deadline for trust. We do not rush children or push through tears."
+                },
+                {
+                  "q": "What is the Blue Blocks approach to toilet learning?",
+                  "a": "We follow the child's body, not a schedule. We watch for signs that the nervous system is ready for control, offer child-sized toilets where feet rest flat on the ground, and use cotton underwear for sensory feedback. There is no countdown, no sticker chart — just calm, patient support at the child's own pace."
+                },
+                {
+                  "q": "How is food managed in the Toddler Community?",
+                  "a": "We treat the family's packed lunchbox as a bridge between home and school. Children learn to open their lunchbox, serve themselves, and care for their space. Beyond the lunchbox, children participate in food preparation — peeling bananas, squeezing oranges, slicing soft-boiled eggs — building independence and confidence with real tools."
+                },
+                {
+                  "q": "What does my child actually do all day?",
+                  "a": "Children choose from purposeful activities suited to their development: language immersion (learning precise names like \"Kingfisher\"), sensory exploration (Mystery Bags, sorting, matching), and practical life work (pouring water, washing tables, arranging flowers). Every activity has a beginning, middle, and end — teaching focus and the rhythm of completion."
+                }
+              ]
+            }
+          },
+          {
+            "type": "ctaBanner",
+            "props": {
+              "title": "Begin with a Gentle Visit.",
+              "text": "Come see the Toddler Community in action. We’ll walk you through the environment and explain how settlement works—at your child’s pace.",
+              "cta": {
+                "label": "Book a Campus Visit",
+                "href": "/contact-us"
+              },
+              "image": "/building-image-01.webp",
+              "imageAlt": "Campus building",
+              "imageWidth": "566",
+              "imageHeight": "506",
+              "customTopSpacing": "sm:pt-70",
+              "align": "left",
+              "theme": "dark"
+            }
+          }
+        ]
+      },
+      "nursery-school": {
+        "sections": [
+          {
+            "type": "pageHero",
+            "props": {
               "title": "Programs",
               "breadcrumb": [
                 {
@@ -3122,7 +3459,7 @@
                   "href": "program"
                 },
                 {
-                  "label": "Playgroup"
+                  "label": "The Self-Interpretive"
                 }
               ],
               "bg": {
@@ -3135,14 +3472,14 @@
           {
             "type": "programIntroSplit",
             "props": {
-              "eyebrow": "THE TODDLER COMMUNITY",
-              "title": "The Absorbent Mind\n(Unconscious)",
+              "eyebrow": "The Self-Interpretive",
+              "title": "The Absorbent Mind (Conscious)",
               "subTitle": "",
               "text": "",
               "metaRows": [
                 {
                   "label": "Sub-head",
-                  "value": "Help Me To Do It Myself.",
+                  "value": "\"Help Me To Think For Myself\"",
                   "bg": {
                     "label": "#F3D8CF",
                     "value": "#F3D8CF"
@@ -3150,7 +3487,7 @@
                 },
                 {
                   "label": "Age",
-                  "value": "15 Months – 2.5 Years",
+                  "value": "2.5 Years – 6 Years",
                   "bg": {
                     "label": "#DFE7DA",
                     "value": "#DFE7DA"
@@ -3158,7 +3495,7 @@
                 },
                 {
                   "label": "Theme",
-                  "value": "Functional Independence",
+                  "value": "Conscious Construction",
                   "bg": {
                     "label": "#D9E7EA",
                     "value": "#D9E7EA"
@@ -3167,16 +3504,16 @@
               ],
               "media": {
                 "main": {
-                  "src": "/programs/playgroup/main.webp",
+                  "src": "/programs/nursery/main.webp",
                   "alt": "Playgroup classroom",
                   "showPlay": true
                 },
                 "left": {
-                  "src": "/programs/playgroup/left.webp",
+                  "src": "/programs/nursery/small-thumb-1.webp",
                   "alt": "Play activity"
                 },
                 "right": {
-                  "src": "/programs/playgroup/right.webp",
+                  "src": "/programs/nursery/small-thumb-2.webp",
                   "alt": "Montessori materials"
                 }
               }
@@ -3186,15 +3523,13 @@
             "type": "CenteredTextBlock",
             "props": {
               "bg": "#EEF7FD",
-              "title": "THE DEVELOPMENTAL STAGE",
-              "subtitle": "The Awakening of the Will",
+              "title": "The Psychological Phase",
               "textParts": [
-                "At this age, your child is driven by a fierce internal directive: ",
+                "The child moves from 'unconscious absorption' to  ",
                 {
-                  "bold": "I must do it."
+                  "bold": "Conscious Construction."
                 },
-                ". They are not being stubborn; they are asserting their existence.",
-                "In a traditional daycare, adults do everything for the child. Here, we slow down. We give them the time and the tools to master their own movements. We do not interrupt this sacred effort with unnecessary help, because we know that every time we do it for them, we steal a moment of their independence."
+                ". The hands become the instruments of the brain. Through touching, moving, and organizing, the child literally constructs their intellect.They are driven by a desire for order, precision, and repetition."
               ],
               "maxWidth": "56rem"
             }
@@ -3204,7 +3539,7 @@
             "props": {
               "bg": "#F3E3CF",
               "title": "The Prepared Environment",
-              "description": "This is not a classroom; it is a community. Everything—from the height of the chairs to the size of the spoons—is scaled strictly to the child’s size, telling them: 'This place belongs to you.'",
+              "description": "A space of order and beauty where materials are scientifically designed to isolate specific concepts.",
               "headerAlign": "center",
               "cols": {
                 "base": 1,
@@ -3244,12 +3579,8 @@
               },
               "items": [
                 {
-                  "title": "Movement with Purpose",
-                  "text": [
-                    "Toddlers have a biological imperative to move against resistance. We don't just have 'playtime'; we have 'Heavy Work.'",
-                    "The Activity: Carrying water jugs, climbing stairs, scrubbing tables.",
-                    "The Goal: This isn't just burning energy. It is coordinating the mind and the hand. A child carrying a heavy tray is a child learning focus."
-                  ],
+                  "title": "Practical Life",
+                  "text": "These are not chores; they are the foundation of focus. Washing, polishing, and sweeping build coordination, the will, and the ability to complete a cycle of activity.",
                   "tabColors": [
                     "#78D6F3",
                     "#F5A48D",
@@ -3257,13 +3588,8 @@
                   ]
                 },
                 {
-                  "title": "Language Immersion",
-                  "text": [
-                    "Maximum Effort",
-                    "Toddlers have a biological imperative to move against resistance. We don't just have 'playtime'; we have 'Heavy Work.'",
-                    "The Activity: Carrying water jugs, climbing stairs, scrubbing tables.",
-                    "The Goal: This isn't just burning energy. It is coordinating the mind and the hand. A child carrying a heavy tray is a child learning focus."
-                  ],
+                  "title": "Sensorial",
+                  "text": "Refining the senses to perceive differences in the world. Using scientifically designed materials, the child learns to classify dimension, color, shape, and texture.",
                   "tabColors": [
                     "#78D6F3",
                     "#F5A48D",
@@ -3271,14 +3597,8 @@
                   ]
                 },
                 {
-                  "title": "Care of Self",
-                  "text": [
-                    "Dignity in Routine",
-                    "Toilet learning, dressing, and grooming are not chores—they are the curriculum. We use collaborative toileting (no diapers) and clothing that is easy to manage, empowering the child to say, 'I can take care of myself.'",
-                    "Toilet learning, dressing, and grooming are not chores to be rushed; they are the core curriculum.",
-                    "Collaborative Toileting: We move away from diapers to 'learning pants' and child-sized toilets, working in partnership with the child.",
-                    "Self-Dressing: Using clothing with elastic waistbands and velcro, enabling the child to say, 'I put my shoes on.'"
-                  ],
+                  "title": "Language",
+                  "text": "A rich explosion of vocabulary. Through the 'Sandpaper Letters' and 'Moveable Alphabet,' the child discovers that sounds have symbols, leading to an explosion into writing and reading.",
                   "tabColors": [
                     "#78D6F3",
                     "#F5A48D",
@@ -3286,13 +3606,8 @@
                   ]
                 },
                 {
-                  "title": "Social Grace",
-                  "text": [
-                    "Community Rituals",
-                    "Mealtime is not a 'feeding schedule'; it is a social occasion.",
-                    "The Ritual: Children set their own table with real ceramic plates and glass tumblers.",
-                    "The Lesson: They learn to serve themselves, wait for their friends, and handle fragile objects with care. They learn that they are trusted."
-                  ],
+                  "title": "Mathematics",
+                  "text": "Making the abstract physically graspable. The child handles the 'Golden Beads' to understand the decimal system concretely before ever seeing a number on a page.",
                   "tabColors": [
                     "#78D6F3",
                     "#F5A48D",
@@ -3305,13 +3620,11 @@
           {
             "type": "imageText",
             "props": {
-              "title": "THE GUIDE",
-              "subtitle": "The Anchor",
+              "title": "Expert Guidance",
               "text": [
-                "Our AMI-trained guides are not 'entertainers.' They provide Psychological Safety—a calm, unhurried presence.",
-                "They do not hover. They link the child to an activity (like slicing a banana) and then fade into the background. This invisibility is intentional. It allows the child to feel that they achieved the result, not the teacher. The Guide is the safety net that allows the child to take risks."
+                "The guide does not lecture to the whole class. Instead, they give individual 'presentations,' offering a key to the world, and then leave the child to work freely. This protects the child's concentration from interruption."
               ],
-              "imageUrl": "/programs/playgroup/expert-guidance.webp",
+              "imageUrl": "/programs/nursery/expert-guidance.webp",
               "variant": "card",
               "cardBg": "#EEF7FD",
               "cardRadius": "rounded-2xl",
@@ -3326,304 +3639,32 @@
             "type": "outcomesPills",
             "props": {
               "bg": "#FFFFFF",
-              "title": "What You Will See",
+              "title": "Outcomes",
               "titleAlign": "center",
               "maxWidth": "",
               "gap": "gap-4",
               "items": [
                 {
-                  "icon": "/icon/gear.png",
-                  "text": "Functional Independence: The ability to eat, dress, and use the toilet with minimal assistance.",
+                  "icon": "/icon/brain.png",
+                  "text": "Extended Concentration: The ability to focus deeply.",
                   "pillBg": "#F9E48F"
                 },
                 {
-                  "icon": "/icon/movement.png",
-                  "text": "Coordinated Movement: A noticeable grace and balance in how they carry objects and navigate space.",
+                  "icon": "/icon/heart-box.png",
+                  "text": "Love of Order: Internalizing structure",
                   "pillBg": "#F9A78F"
                 },
                 {
-                  "icon": "/icon/chat.png",
-                  "text": "Verbal Expression: Using words, rather than screaming, to express needs.",
+                  "icon": "/icon/brain-b.png",
+                  "text": "Mathematical Mind: Concrete understanding of the decimal system.",
                   "pillBg": "#95D6ED"
                 },
                 {
-                  "icon": "/icon/emotion.png",
-                  "text": "Emotional Confidence: The deep satisfaction of a child who knows they are capable.",
+                  "icon": "/icon/community-b.png",
+                  "text": "Social Cohesion: Grace and Courtesy.",
                   "pillBg": "#F9E48F"
                 }
               ]
-            }
-          }
-        ]
-      },
-      "nursery-school": {
-        "sections": [
-          {
-            "type": "pageHero",
-            "props": {
-              "title": "The Toddler Community",
-              "subtitle": "A Sanctuary for Your Child's Becoming",
-              "breadcrumb": [
-                { "label": "Home", "href": "/" },
-                { "label": "Programs", "href": "/programs" },
-                { "label": "Playgroup" }
-              ],
-              "bg": {
-                "base": "#F3E3CF",
-                "leftArc": "/ui/arc-left.webp",
-                "rightArc": "/ui/arc-right.webp"
-              }
-            }
-          },
-          {
-            "type": "CenteredTextBlock",
-            "bg": "#EEF7FD",
-            "props": {
-              "title": "A Letter to You",
-              "textParts": [
-                "Before you read about our environment, our materials, or our methods, we want to speak to something else first — your heart.",
-                "We know what it means to hand over your child. We know the weight of that moment when you wonder: Will they see her the way I see her? Will they notice when she's tired, or overwhelmed, or just needs to be held?",
-                "We want you to know: your child will not be one of many here. She will be seen. She will be known. Her voice, her rhythms, her particular way of being in the world — we will learn them. And we will honor them.",
-                "When she cries for you — and she might, especially at first — she will not cry alone. A guide will be near. Not to distract her or rush her through it, but simply to be with her. To sit. To wait. To let her know that even in your absence, she is held.",
-                "This is not daycare. This is not \"school\" in the way you might remember it. This is a place where your child's work — to grow, to become herself, to learn that she is capable — is taken as seriously as any work in the world.",
-                "And you? You are not handing her off. You are extending your love into a space that will carry it while you are apart.",
-                "We know this is not easy. We don't take it lightly.",
-                "Between 12 and 30 months, your child is not simply growing; she is actively constructing the person she will become. She is driven by a powerful internal command: \"Help me to do it myself.\" At Blue Blocks, we provide a space designed to respect her sacred effort to become functional and independent."
-              ],
-              "imageUrl": "",
-              "align": "left",
-              "maxWidth" : "none"
-            }
-          },
-
-          {
-            "type": "imageText",
-            "props": {
-              "title": "Gentle Settlement: We Go at Her Pace",
-              "text": [
-                "The first days are tender — for her and for you.",
-                "Unlike schools that expect you to leave quickly, we invite you to stay. Sit in the corner of the room. Watch her explore. Let her glance back and find you there. Come again the next day, and the next. Stay for as long as she needs — whether that's three days or three weeks.",
-                "There is no deadline for trust. We will not rush her, and we will not rush you.",
-                "When she begins to feel safe — when she looks at her guide and sees someone familiar, when she walks toward the shelf instead of toward the door — you'll know. And so will we. That is when we gently, gradually, begin the transition.",
-                "This is how trust is built: not by pushing through tears, but by honouring them."
-              ],
-              "imageUrl": "/programs/playgroup/gentle-settlement.webp",
-              "align": "left"
-            }
-          },
-
-          
-          {
-            "type": "montessoriForSuccess",
-            "props": {
-              "bg": "#FFFFFF",
-              "title": "EXPERTS SPEAK",
-              "items": [
-                {
-                  "name": "A Blue Blocks Parent",
-                  "role": "Parent",
-                  "quote": "\"I was the mother who couldn't imagine leaving my daughter. Because Blue Blocks let me stay until she felt safe, the day she finally waved goodbye with a smile wasn't a heartbreak — it was a shared triumph. Within three weeks, she was leading me to the gate, eager for her 'work'.\""
-                }
-              ]
-            }
-          },
-
-
-          {
-            "type": "imageText",
-            "props": {
-              "title": "Emotional Safety: She Will Be Held",
-              "text": [
-                "Toddlers feel everything intensely, but they don't yet have the words to tell us. Frustration, joy, fear, excitement — it all comes out in waves.",
-                "Our guides are trained to read what your child cannot yet say. A change in her breathing. A shift in her posture. The way she looks toward the door when she's missing you. We notice. And we respond — not with distraction or redirection, but with presence.",
-                "When she's overwhelmed, we stay close. When she's frustrated, we name what she might be feeling: \"You wanted that. It's hard to wait.\" When she needs comfort, we offer it — a lap to sit on, a soft voice, a hand to hold.",
-                "We do not expect toddlers to \"behave.\" We expect them to feel. Our job is to help them feel safe."
-              ],
-              "imageUrl": "/programs/playgroup/emotional-safety.webp",
-              "align": "left"
-            }
-          },
-
-          {
-            "type": "imageText",
-            "props": {
-              "title": "Food as Love: The Lunchbox and Beyond",
-              "text": [
-                "We know what goes into that lunchbox: the thought, the love, the hope that she'll actually eat it.",
-                "That box is not just food to us — it's a piece of home. A bridge between you and her during the hours you're apart. When she opens it, she's opening something familiar in an unfamiliar place. We treat that moment with care.",
-                "She will learn to open it herself, to serve herself, to wipe her space when she's done. These small acts of independence are not chores — they are quiet triumphs. And when she manages the clasp for the first time, or pours water without spilling, we'll celebrate with her (and tell you about it).",
-                "Beyond the lunchbox, food is part of our work here. Small hands peel bananas, squeeze oranges, and slice soft-boiled eggs. Children set tables with real ceramic and glass — not because we want them to be careful, but because we trust that they can be. And that trust becomes their confidence."
-              ],
-              "imageUrl": "/programs/playgroup/food-as-love.webp",
-              "align": "left"
-            }
-          },
-
-          {
-            "type": "imageText",
-            "props": {
-              "title": "A Day of Purposeful Work",
-              "text": [
-                "You might wonder: What does she actually do all day?",
-                "She works. Not worksheets or structured lessons — but real, meaningful activity chosen by her, suited to her pace, designed for her stage of development."
-              ],
-              "imageUrl": "/programs/playgroup/day-of-work.webp",
-              "align": "left"
-            }
-          },
-
-          {
-            "type": "featureGrid",
-            "props": {
-              "headline": "What She Does Each Day",
-              "subText": "Not entertainment. Not instruction. Purposeful activity, chosen by her, repeated until mastery.",
-              "items": [
-                {
-                  "tag": "",
-                  "title": "She explores language:",
-                  "icon": "/icon/icon-language.svg",
-                  "text": "We speak to her with care. Not baby talk, but real words — precise, warm, clear. When we look at a bird together, we might say \"That's a Kingfisher\" — because children at this age are hungry for the real names of things. We sing songs, recite rhymes, and do fingerplay. Language surrounds her here like music."
-                },
-                {
-                  "tag": "",
-                  "title": "She uses her senses:",
-                  "icon": "/icon/icon-sensorial.svg",
-                  "text": "She might reach into a cloth bag and try to guess what's inside using only her fingers — a smooth stone, a wooden ring, a seashell. She sorts, matches, stacks. These aren't \"games\"; they're how her brain learns to categorise the world."
-                },
-                {
-                  "tag": "",
-                  "title": "She does real work:",
-                  "icon": "/icon/icon-practical-life.svg",
-                  "text": "Pouring water from a small pitcher. Buttoning a frame. Washing a table with a tiny sponge. Watering a plant. Arranging flowers. Toddlers love this kind of work — the kind adults do. It gives them dignity. And every activity has a beginning, middle, and end — teaching her the rhythm of focus and completion.\n\nEvery material in our environment is designed so she can see for herself whether she's succeeded. A puzzle fits or it doesn't. A pitcher fills or overflows. She doesn't need us to tell her she's done well — she knows. This is where real confidence begins."
-                }
-              ]
-            }
-          },
-
-          {
-            "type": "imageText",
-            "props": {
-              "title": "Toilet Learning: Respect for Her Body",
-              "text": [
-                "This journey belongs to her — not to a schedule, and not to us.",
-                "We follow her body's readiness. We watch for the signs that her nervous system is ready for control. We offer child-sized toilets where her feet rest flat on the ground, where she feels secure and capable.",
-                "There is no countdown. No sticker chart. No fanfare or fuss. Just a calm, matter-of-fact approach: this is a normal part of life, and when she's ready, she'll master it — just like everything else.",
-                "If there are accidents, they're simply part of the process. We respond with patience, and we move on."
-              ],
-              "imageUrl": "/programs/playgroup/toilet-learning.webp",
-              "align": "left"
-            }
-          },
-
-          {
-            "type": "featureGrid",
-            "props": {
-              "headline": "Language and Movement: How She Grows",
-              "subText": "We protect the conditions that allow expression and coordinated independence to emerge naturally.",
-              "items": [
-                {
-                  "tag": "",
-                  "title": "Words:",
-                  "icon": "/icon/icon-words.svg",
-                  "text": "Long before she speaks in sentences, she is absorbing everything. The tone of our voice. The rhythm of language. The names of things. We speak to her with care because we know she is listening deeply — even when she doesn't yet respond.\n\nWhen the words come — and they will — they often come in a rush. Children who have been immersed in rich, precise language don't just speak; they express. We trust the process, and we give her time."
-                },
-                {
-                  "tag": "",
-                  "title": "Movement:",
-                  "icon": "/icon/icon-movement.svg",
-                  "text": "She needs to move. To carry things. To climb. To lift something heavy and feel her own strength. We provide real materials — wood, glass, metal — because weight and texture matter. When she carries a tray across the room without spilling, she's not just building muscles. She's building her sense of self."
-                }
-              ]
-            }
-          },
-
-          {
-            "type": "imageText",
-            "props": {
-              "title": "Your Family, Your Way",
-              "text": [
-                "Every family is different. We don't assume who drops off, who picks up, who packs the lunch, or who she cries for most.",
-                "What we know is this: she has people who love her, and those bonds are sacred. Our job is to extend that love, not replace it.",
-                "If both parents want to be part of the settling process, we welcome it. If a grandparent is her primary comfort, they are welcome too. We work with your family as it is, not as a template says it should be.",
-                "During this transition, partners often play a special role — a bridge between home and the wider world. But we follow your child's lead. She'll show us who she needs."
-              ],
-              "imageUrl": "/programs/playgroup/family-your-way.webp",
-              "align": "left"
-            }
-          },
-
-          {
-            "type": "imageText",
-            "props": {
-              "title": "Where This Leads",
-              "text": [
-                "The independence she builds here is not just for now.",
-                "The focus she develops while pouring water will become the focus she uses to read. The hand that learns to button a coat will learn to hold a pencil. The confidence she gains by doing things herself will carry her into the Children's House — and beyond.",
-                "We track 46 developmental markers, not to judge her, but to understand her. We'll share what we see — not in jargon, but in plain language. You'll know where she is and where she's heading.",
-                "And one day, the child who clung to you at the door will walk in on her own, find her work, and greet you at the end of the day full of stories.",
-                "That's the journey. And we're honoured to walk it with you."
-              ],
-              "imageUrl": "/programs/playgroup/where-this-leads.webp",
-              "align": "left"
-            }
-          },
-
-          {
-            "type": "faq",
-            "props": {
-              "bg": "#F3E3CF",
-              "defaultOpenIndex": 0,
-              "panelMaxWidth": "max-w-4xl",
-              "title": "Frequently Asked Questions",
-              "subtitle": "",
-              "items": [
-                {
-                  "q": "How do you handle the transition to school at Blue Blocks?",
-                  "a": "We practice Gentle Settlement. Unlike schools that expect quick separations, we invite parents to stay inside the campus until the child feels safe — whether that's three days or three weeks. There is no deadline for trust. We do not rush children or push through tears."
-                },
-                {
-                  "q": "What is the Blue Blocks approach to toilet learning?",
-                  "a": "We follow the child's body, not a schedule. We watch for signs that the nervous system is ready for control, offer child-sized toilets where feet rest flat on the ground, and use cotton underwear for sensory feedback. There is no countdown, no sticker chart — just calm, patient support at the child's own pace."
-                },
-                {
-                  "q": "How is food managed in the Toddler Community?",
-                  "a": "We treat the family's packed lunchbox as a bridge between home and school. Children learn to open their lunchbox, serve themselves, and care for their space. Beyond the lunchbox, children participate in food preparation — peeling bananas, squeezing oranges, slicing soft-boiled eggs — building independence and confidence with real tools."
-                },
-                {
-                  "q": "What does my child actually do all day?",
-                  "a": "Children choose from purposeful activities suited to their development: language immersion (learning precise names like \"Kingfisher\"), sensory exploration (Mystery Bags, sorting, matching), and practical life work (pouring water, washing tables, arranging flowers). Every activity has a beginning, middle, and end — teaching focus and the rhythm of completion."
-                }
-              ]
-            }
-          },
-
-          {
-            "type": "imageText",
-            "props": {
-              "title": "",
-              "text": [
-                "To understand the developmental science behind these practices, see our Developmental Architecture Paper."
-              ],
-              "imageUrl": "/programs/playgroup/dev-architecture-note.webp",
-              "align": "center"
-            }
-          },
-
-          {
-            "type": "ctaBanner",
-            "props": {
-              "title": "Begin with a Gentle Visit.",
-              "text": "Come see the Toddler Community in action. We’ll walk you through the environment and explain how settlement works—at your child’s pace.",
-              "cta": {
-                "label": "Book a Campus Visit",
-                "href": "/contact-us"
-              },
-              "image": "/programs/playgroup/cta.webp",
-              "imageAlt": "Blue Blocks campus",
-              "imageWidth": "566",
-              "imageHeight": "506",
-              "align": "left",
-              "theme": "dark"
             }
           }
         ]
@@ -5568,7 +5609,7 @@
               },
               "decor": {
                 "enabled": true,
-                "image": "drone.webp",
+                "image": "/drone.webp",
                 "alt": "Drone",
                 "width": 930,
                 "height": 530,
