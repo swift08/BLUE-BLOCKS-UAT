@@ -3378,7 +3378,6 @@
           {
             "type": "CenteredTextBlock",
             "bg": "#EEF7FD",
-            "maxWidth" : "none",
             "props": {
               "title": "A Letter to You",
               "textParts": [
@@ -3392,7 +3391,8 @@
                 "Between 12 and 30 months, your child is not simply growing; she is actively constructing the person she will become. She is driven by a powerful internal command: \"Help me to do it myself.\" At Blue Blocks, we provide a space designed to respect her sacred effort to become functional and independent."
               ],
               "imageUrl": "",
-              "align": "left"
+              "align": "left",
+              "maxWidth" : "none"
             }
           },
 
@@ -3412,17 +3412,22 @@
             }
           },
 
+          
           {
-            "type": "imageText",
+            "type": "montessoriForSuccess",
             "props": {
-              "title": "\"I was the mother who couldn't imagine leaving my daughter. Because Blue Blocks let me stay until she felt safe, the day she finally waved goodbye with a smile wasn't a heartbreak — it was a shared triumph. Within three weeks, she was leading me to the gate, eager for her 'work'.\"",
-              "text": [
-                "— A Blue Blocks Parent"
-              ],
-              "imageUrl": "/programs/playgroup/parent-quote.webp",
-              "align": "center"
+              "bg": "#FFFFFF",
+              "title": "EXPERTS SPEAK",
+              "items": [
+                {
+                  "name": "A Blue Blocks Parent",
+                  "role": "Parent",
+                  "quote": "\"I was the mother who couldn't imagine leaving my daughter. Because Blue Blocks let me stay until she felt safe, the day she finally waved goodbye with a smile wasn't a heartbreak — it was a shared triumph. Within three weeks, she was leading me to the gate, eager for her 'work'.\""
+                }
+              ]
             }
           },
+
 
           {
             "type": "imageText",
