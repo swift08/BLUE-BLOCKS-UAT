@@ -6023,35 +6023,23 @@
               "leftArcs": {
                 "enabled": true,
                 "arcs": [
-                  {
-                    "color": "#95D6ED",
-                    "width": 220,
-                    "offsetX": -90
-                  },
-                  {
-                    "color": "#F9A78F",
-                    "width": 210,
-                    "offsetX": -45
-                  },
-                  {
-                    "color": "#F9E48F",
-                    "width": 200,
-                    "offsetX": 0
-                  }
+                  { "color": "#95D6ED", "width": 220, "offsetX": -90 },
+                  { "color": "#F9A78F", "width": 210, "offsetX": -45 },
+                  { "color": "#F9E48F", "width": 200, "offsetX": 0 }
                 ]
               },
               "founder": {
-                "image": "/team/pavan.webp",
-                "imageAlt": "Pavan Goyal",
-                "roleTag": "Founder, Lead – Innovation Program",
-                "name": "Pavan Goyal",
+                "image": "/innovation/drone/drone-hero.webp",
+                "imageAlt": "THE DRONE LAB",
+                "roleTag": "Capability With Conscience",
+                "name": "THE DRONE LAB",
                 "nameColor": "#2B66F6",
-                "bio": "AMI, Netherlands certified for 0–3, 3–6, 6–12. Currently pursuing 12–15 Erdkinder training."
+                "bio": "Where capability meets responsibility. Every flight begins with a Conscience Check — not as procedure but as expression of formed conscience. Privacy, safety, ecology, purpose: considered before every action."
               },
               "content": {
-                "eyebrow": "FOUNDER'S VISION",
-                "title": "The Spark That\nIgnited Young\nInnovators",
-                "text": "Less than a year ago, our founder Pavan Goyal stepped into a new role — leading the Innovation Programme. His goal was simple yet powerful: unlock the limitlessness of 6–12 year-olds and give them the knowledge to innovate fearlessly."
+                "eyebrow": "INNOVATION LAB",
+                "title": "The Drone Lab",
+                "text": "→ Explore The Drone Lab"
               }
             }
           },
@@ -6061,11 +6049,11 @@
               "bg": "#F3E3CF",
               "py": "py-16 sm:py-20",
               "left": {
-                "eyebrow": "THE RESULT",
+                "eyebrow": "HIGHLIGHT",
                 "eyebrowBg": "#E7E8FF",
                 "eyebrowText": "#2C2F8F",
-                "title": "Young Innovators.\nReal Impact.",
-                "text": "Nine months later, the results were extraordinary. Children aged 6–11 filed five drone patents — each designed to solve real-world problems."
+                "title": "Five patent applications.\nStudents aged eight to twelve.",
+                "text": "In 2019, Blue Blocks Elementary students filed five patent applications with the Indian Patent Office. But the story isn’t just the patents. It’s that these young innovators evaluated their own work not only for novelty but for benefit. Does this help? Does this serve? Is this good for the world?\n\nThis is what happens when capability and conscience develop together."
               },
               "decor": {
                 "enabled": true,
@@ -6093,11 +6081,177 @@
                   }
                 },
                 "below": {
-                  "title": "The Tribute",
+                  "title": "Capability + Conscience",
                   "titleColor": "#2B66F6",
-                  "text": "Our students dedicated these innovations to Dr Montessori on her 150th Birth Anniversary, honoring her belief in the potential of every child."
+                  "text": "Formed conscience shows up as a question asked before action — not after."
                 }
               }
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#ffffff]",
+              "SecBg": "",
+              "title": "The Inventions Timeline: Consequences Across History",
+              "text": [
+                "Before students build drones, they study the Inventions Timeline — thirty game-changing innovations and their consequences. Life before and after each invention. Not just what was gained, but what was lost. Not just benefits, but costs.",
+                "The automobile: freedom of movement — and carbon emissions. The smartphone: connection across distance — and attention fragmentation. Every innovation has consequences, intended and unintended.",
+                "Children learn: I am part of this timeline. What I create will have consequences. My conscience must be engaged before I build, not after."
+              ],
+              "imageUrl": "/innovation/drone/inventions-timeline.webp",
+              "variant": "default",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "featureGrid",
+            "props": {
+              "headline": "The Conscience Check: Not Procedure, But Disposition",
+              "subText": "Every flight at Blue Blocks begins with what we call a Conscience Check. But this is not a checklist to satisfy. It is an expression of conscience already formed — the natural question that arises when you have been raised to consider consequences.",
+              "items": [
+                {
+                  "tag": "",
+                  "title": "Privacy",
+                  "icon": "/icon/brain.png",
+                  "text": "Where will this drone fly? Could it capture images without consent? The same sensitivity to others learned through Grace and Courtesy at age two — now applied to technology."
+                },
+                {
+                  "tag": "",
+                  "title": "Safety",
+                  "icon": "/icon/brain.png",
+                  "text": "What could go wrong? What is the risk to people, property, and wildlife? Care for others extended to care for all beings."
+                },
+                {
+                  "tag": "",
+                  "title": "Ecology",
+                  "icon": "/icon/brain.png",
+                  "text": "What is the environmental impact? Noise disturbance? Energy use? Battery disposal? Care for environment extended to ecological conscience."
+                },
+                {
+                  "tag": "",
+                  "title": "Purpose",
+                  "icon": "/icon/brain.png",
+                  "text": "Why are we flying? Does the benefit justify the costs? Is this serving genuine need or manufactured desire?"
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#F3E3CF]",
+              "SecBg": "",
+              "title": "Control of Error: Consequences as Teachers",
+              "text": [
+                "Drones crash. This is control of error at work — the student sees for themselves what went wrong. But we extend this to ethical learning.",
+                "When a flight disturbs birds, the student sees the disturbance. When a design wastes material, the student feels the waste. When a purpose isn’t clear, the meaninglessness becomes apparent. Consequences teach — not through lectures, but through experience.",
+                "We measure time-to-restart: how quickly can a student recover from failure? But we also notice: how quickly do they ask “What did I not consider? What consequence did I not foresee?”"
+              ],
+              "imageUrl": "/innovation/drone/control-of-error.webp",
+              "variant": "default",
+              "cardBg": "#ffffff",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "left",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "featureGrid",
+            "props": {
+              "headline": "Technical Mastery — For What Purpose?",
+              "subText": "Students master aerodynamics, electronics, programming, calibration. But every technical skill is paired with a conscience question:",
+              "items": [
+                {
+                  "tag": "",
+                  "title": "Aerodynamics",
+                  "icon": "/icon/icon-capa.svg",
+                  "text": "Understanding lift and drag — and asking: Should this thing fly? Is flight necessary for this purpose?"
+                },
+                {
+                  "tag": "",
+                  "title": "Electronics",
+                  "icon": "/icon/icon-documented.svg",
+                  "text": "Wiring and soldering — and asking: Where do these components come from? What are the conditions of their manufacture? What happens when they’re discarded?"
+                },
+                {
+                  "tag": "",
+                  "title": "Programming",
+                  "icon": "/icon/icon-synaptic-fusion.svg",
+                  "text": "Coding flight paths — and asking: What should autonomous machines be permitted to do? What decisions should require human judgment?"
+                },
+                {
+                  "tag": "",
+                  "title": "Safety",
+                  "icon": "/icon/icon-AMI.svg",
+                  "text": "What could go wrong? What is the risk to people, property, wildlife? Care for others extended to care for all beings."
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#F3E3CF]",
+              "SecBg": "",
+              "title": "Real Applications — Real Responsibility",
+              "text": [
+                "Drone skills connect to genuine work — crop monitoring for Hydroponics, terrain mapping for agricultural projects. Every application carries responsibility:",
+                "Flying over crops: Are we disturbing beneficial insects? Is the flight necessary, or could we observe another way?",
+                "Documentation: Are we respecting privacy? Do we have permission to capture these images?",
+                "The patents: Each innovation evaluated not just for novelty but for benefit. The question “Will this help?” is as important as “Does this work?”"
+              ],
+              "imageUrl": "/innovation/drone/real-applications.webp",
+              "variant": "default",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "montessoriForSuccess",
+            "props": {
+              "bg": "#FFFFFF",
+              "title": "Valorization With Conscience",
+              "items": [
+                {
+                  "name": "DR. MARIA MONTESSORI",
+                  "role": "Citizen of the World",
+                  "quote": "Children should be made to realize all great achievements... are due to the work of men driven by a profound passion... to create new benefits not only for the people who lived in their times, but also for those of the future."
+                }
+              ]
+            }
+          },
+          {
+            "type": "CenteredTextBlock",
+            "props": {
+              "bg": "#EEF7FD",
+              "title": "Valorization With Conscience",
+              "subtitle": "",
+              "textParts": [
+                "The five patent applications are evidence of Valorization — the adolescent’s need to prove worth through genuine contribution. But this is Valorization with conscience. The students’ worth is proven not just by creating something novel, but by creating something good.",
+                "They have felt the “profound passion” Montessori described — and directed it toward “new benefits” for the future. For people and for the Earth.",
+                "The Drone Lab produces pilots with conscience — young people who can fly, and who ask before every flight: ",
+                { "bold": "Should I?" },
+                "\n\nBack to Biomimicry Hive  |  Explore The Space Lab →"
+              ],
+              "maxWidth": "56rem"
             }
           },
           {
@@ -6109,114 +6263,24 @@
               "text": "Media Mentions",
               "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
               "logos": [
-                {
-                  "src": "/icon/media/cision.png",
-                  "alt": "Cision",
-                  "width": "169",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/business-today.png",
-                  "alt": "Business Today",
-                  "width": "234",
-                  "height": "42"
-                },
-                {
-                  "src": "/icon/media/disha.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/ew.png",
-                  "alt": "Cision",
-                  "width": "83",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/one-news-page.png",
-                  "alt": "Business Today",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/web-india.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/upturn.png",
-                  "alt": "Cision",
-                  "width": "186",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/sanvad.png",
-                  "alt": "Business Today",
-                  "width": "155",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/socialNews.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/manglorean.png",
-                  "alt": "Cision",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/five.png",
-                  "alt": "Business Today",
-                  "width": "52",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/varindia.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/pti.png",
-                  "alt": "Cision",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/tmc.png",
-                  "alt": "Business Today",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/ground.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/newDelhi.png",
-                  "alt": "Cision",
-                  "width": "74",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/business-news.png",
-                  "alt": "Business Today",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/india-today.png",
-                  "alt": "Disha",
-                  "width": "141",
-                  "height": "76"
-                }
+                { "src": "/icon/media/cision.png", "alt": "Cision", "width": "169", "height": "76" },
+                { "src": "/icon/media/business-today.png", "alt": "Business Today", "width": "234", "height": "42" },
+                { "src": "/icon/media/disha.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/ew.png", "alt": "Cision", "width": "83", "height": "76" },
+                { "src": "/icon/media/one-news-page.png", "alt": "Business Today", "width": "234", "height": "76" },
+                { "src": "/icon/media/web-india.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/upturn.png", "alt": "Cision", "width": "186", "height": "76" },
+                { "src": "/icon/media/sanvad.png", "alt": "Business Today", "width": "155", "height": "76" },
+                { "src": "/icon/media/socialNews.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/manglorean.png", "alt": "Cision", "width": "234", "height": "76" },
+                { "src": "/icon/media/five.png", "alt": "Business Today", "width": "52", "height": "76" },
+                { "src": "/icon/media/varindia.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/pti.png", "alt": "Cision", "width": "234", "height": "76" },
+                { "src": "/icon/media/tmc.png", "alt": "Business Today", "width": "234", "height": "76" },
+                { "src": "/icon/media/ground.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/newDelhi.png", "alt": "Cision", "width": "74", "height": "76" },
+                { "src": "/icon/media/business-news.png", "alt": "Business News", "width": "234", "height": "76" },
+                { "src": "/icon/media/india-today.png", "alt": "India Today", "width": "141", "height": "76" }
               ]
             }
           },
@@ -6227,10 +6291,7 @@
               "title": "Meet Our Young Innovators",
               "subtitle": "A celebration of hands-on learning, discovery, and fearless innovation.",
               "maxWidth": "max-w-6xl",
-              "cols": {
-                "base": 1,
-                "md": 2
-              },
+              "cols": { "base": 1, "md": 2 },
               "gap": "gap-8",
               "cardRadius": "rounded-2xl",
               "cardPadding": "p-5",
@@ -6238,68 +6299,19 @@
               "imageRadius": "rounded-xl",
               "imageAspect": "aspect-[4/3]",
               "items": [
-                {
-                  "layout": "card",
-                  "image": "/innovation/drone/innovator-01.webp",
-                  "alt": "Team photo 1",
-                  "text": "“These three young men are Ayushman, Sanshray and Dhairya who came up with the idea of a rescue drone to save children who may have fallen into open bore wells. They have been reading/hearing about this unfortunate tragedy that seems to befall us more often than not and decided to not just empathise but aide in providing a solution.”"
-                },
-                {
-                  "layout": "card",
-                  "image": "/innovation/drone/innovator-02.webp",
-                  "alt": "Team photo 2",
-                  "text": "“Meet Nayonika, Uma, Aditi and Akira- the young girls team that created a drone to deliver essential services to the homes of people. An idea that took shape in the early days of the Covid pandemic, the girls were eager to help out people unable to step out for essentials.”"
-                },
-                {
-                  "layout": "card",
-                  "image": "/innovation/drone/innovator-03.webp",
-                  "alt": "Team photo 2",
-                  "text": "“The team of Shourya, Anshul, Nihal and Vivaswath came up with a drone design to aide in the detection of covid patients in public places- especially railway stations and bus stops. The drone will do everything from taking the temperature of the suspected case to alert doctors.”"
-                },
-                {
-                  "layout": "card",
-                  "image": "/innovation/drone/innovator-04.webp",
-                  "alt": "Team photo 2",
-                  "text": "“The team of Shourya, Anshul, Nihal and Vivaswath came up with a drone design to aide in the detection of covid patients in public places- especially railway stations and bus stops. The drone will do everything from taking the temperature of the suspected case to alert doctors.”"
-                },
-                {
-                  "layout": "split",
-                  "span": {
-                    "md": 2
-                  },
-                  "image": "/innovation/drone/innovator-05.webp",
-                  "alt": "Team photo 3",
-                  "text": "“This is the team of Aryan, Hasith and Akshat who took no time at all to come up with the idea of a security drone that will raise an alarm at burglaries, deter perpetrators with pepper spray and also douse fires apart from alerting the police.”"
-                },
+                { "layout": "card", "image": "/innovation/drone/innovator-01.webp", "alt": "Team photo 1", "text": "“These three young men are Ayushman, Sanshray and Dhairya who came up with the idea of a rescue drone to save children who may have fallen into open bore wells...”" },
+                { "layout": "card", "image": "/innovation/drone/innovator-02.webp", "alt": "Team photo 2", "text": "“Meet Nayonika, Uma, Aditi and Akira... a drone to deliver essential services...”" },
+                { "layout": "card", "image": "/innovation/drone/innovator-03.webp", "alt": "Team photo 3", "text": "“The team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...”" },
+                { "layout": "card", "image": "/innovation/drone/innovator-04.webp", "alt": "Team photo 4", "text": "“The team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...”" },
+                { "layout": "split", "span": { "md": 2 }, "image": "/innovation/drone/innovator-05.webp", "alt": "Team photo 5", "text": "“This is the team of Aryan, Hasith and Akshat... a security drone...”" },
                 {
                   "layout": "textOnly",
-                  "span": {
-                    "md": 2
-                  },
+                  "span": { "md": 2 },
                   "textParts": [
-                    "These children will grow into a world that you and me cannot even begin to imagine. It is high time school education equipped them to not just survive but to thrive in their future. We believe that children need to be ready and relevant as they grow and for that critical thinking skills need to be nurtured. Experiential learning is the way forward, where we develop innovative mindset that will make these children problem solvers as adults. By creating innovation zones we encourage children to think creatively and apply technology in their solutions,” - said Pavan Goyal, Founder and Chief Innovator, Blue Blocks",
-                    "“We are hoping to revolutionize the thinking and working of the school education system by our approach where outcomes are not realised in the distant future but right here and now. We hope the start we have made will encourage other young innovators and set up the roadmap for the country to follow,” Pavan added.",
-                    "The Drone Research and Innovation Centre is a first of its kind in the country where research oriented learning is encouraged through observation, exploration, 3d modelling, experimentation, innovating, prototyping, and building. All this come as a natural extension to the work children do in their classroom as part of the Montessori programme right from ages 3 and upwards."
+                    "These children will grow into a world that you and me cannot even begin to imagine...",
+                    "“We are hoping to revolutionize the thinking and working of the school education system...”",
+                    "The Drone Research and Innovation Centre is a first of its kind..."
                   ]
-                }
-              ]
-            }
-          },
-          {
-            "type": "montessoriForSuccess",
-            "props": {
-              "bg": "#FFFFFF",
-              "title": "EXPERTS SPEAK",
-              "items": [
-                {
-                  "name": "SANDIPIKA ROY",
-                  "role": "Aerospace Engineer",
-                  "quote": "A space like this helps children build the habit of thinking in systems — observing, connecting, and applying ideas rather than memorizing them."
-                },
-                {
-                  "name": "RESEARCH MENTOR",
-                  "role": "Innovation & Design",
-                  "quote": "Biomimicry is one of the most powerful bridges between curiosity and real-world problem solving — especially when children learn it early."
                 }
               ]
             }
@@ -6309,11 +6321,7 @@
             "props": {
               "eyebrow": "",
               "title": "Voices of Young Innovators",
-              "cols": {
-                "base": 1,
-                "sm": 2,
-                "lg": 2
-              },
+              "cols": { "base": 1, "sm": 2, "lg": 2 },
               "tileMinHeight": 410,
               "tileMaxHeight": 410,
               "showThumbnails": true,
@@ -6322,36 +6330,12 @@
               "videoControls": true,
               "videoLoop": false,
               "items": [
-                {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-01.webp"
-                },
-                {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-02.webp"
-                },
-                {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-03.webp"
-                },
-                {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-04.webp"
-                },
-                {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-05.webp"
-                },
-                {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-06.webp"
-                }
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-01.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-02.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-03.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-04.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-05.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-06.webp" }
               ]
             }
           },
@@ -6381,10 +6365,7 @@
             "props": {
               "title": "Experience Learning\nthe Blue Blocks Way.",
               "text": "Seats are filled on a first-come basis.",
-              "cta": {
-                "label": "Book Admission Workshop",
-                "href": "/contact"
-              },
+              "cta": { "label": "Book Admission Workshop", "href": "/contact" },
               "image": "/innovation/drone.webp",
               "imageAlt": "Campus building",
               "imageWidth": "566",
@@ -6737,14 +6718,8 @@
             "props": {
               "title": "Biomimicry Hive",
               "breadcrumb": [
-                {
-                  "label": "Innovation",
-                  "href": "/innovation"
-                },
-                {
-                  "label": "Biomimicry Hive",
-                  "href": "/innovation/biomimicry-hive"
-                }
+                { "label": "Innovation", "href": "/innovation" },
+                { "label": "Biomimicry Hive", "href": "/innovation/biomimicry-hive" }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -6754,32 +6729,185 @@
             }
           },
           {
-            "type": "researchHero",
+            "type": "imageText",
             "props": {
-              "image": "/innovation/hive-image-01.webp",
-              "contentBg": "bg-[#EEF7FD]",
-              "contentSpacing": "p-5 rounded-[28px]",
-              "title": "The Biomimicry Hive",
-              "subtitle": "Learning From Life, Serving Life",
-              "description": "Nature has been solving engineering problems for 3.8 billion years. But the Biomimicry Hive is not just about extracting nature's solutions. It is about developing a relationship with nature — learning to see all living beings as teachers, as relatives, as fellow participants in the web of life.",
-              "link": {},
-              "points": []
+              "bgClass": "bg-[#FFFFFF]",
+              "SecBg": "",
+              "title": "THE BIOMIMICRY HIVE",
+              "text": [
+                "Learning From Life, Serving Life",
+                "Where nature becomes mentor — and students become custodians. Learning from 3.8 billion years of biological wisdom, students develop regenerative thinking: design that serves life, not just human convenience.",
+                "→ Explore The Biomimicry Hive"
+              ],
+              "imageUrl": "/innovation/hive-image-01.webp",
+              "variant": "default",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
             }
           },
           {
-            "type": "researchMission",
+            "type": "imageText",
             "props": {
-              "id": "mission",
-              "eyebrow": "@ Blue Blocks",
-              "title": "Biomimicry: Nature is the Mother of Invention @ Blue Blocks",
-              "bgClassName": "",
-              "alignCenter": "text-center",
-              "text": [],
-              "calloutBg": "bg-[#B7D976]",
-              "CalloutAlign": "text-left",
-              "calloutTitle": "Nature",
-              "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
-              "callout": "For the children, this is an exciting and wondrous way to discover the world around them and create a relevant and sustainable relationship with nature. For Blue Blocks, it’s the joy of creating responsible and thinking future citizens. "
+              "bgClass": "bg-[#FFFFFF]",
+              "SecBg": "",
+              "title": "",
+              "text": [
+                "Nature has been solving engineering problems for 3.8 billion years. But the Biomimicry Hive is not just about extracting nature's solutions. It is about developing a relationship with nature — learning to see all living beings as teachers, as relatives, as fellow participants in the web of life."
+              ],
+              "imageUrl": "",
+              "variant": "card",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "contentCenter": true
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#FFFFFF]",
+              "SecBg": "",
+              "title": "From Using to Relating",
+              "text": [
+                "Traditional education treats nature as resource — something to use, to extract from, to control.",
+                "The Biomimicry Hive teaches a different orientation: nature as mentor. Not something to learn about, but something to learn from. Not something to take from, but something to receive from — with gratitude, with reciprocity, with care.",
+                "This shift begins with humility. Evolution has solved most problems we're trying to solve. Our task is not to conquer nature but to learn from it — and in learning, to serve it."
+              ],
+              "imageUrl": "/innovation/classroom-2.webp",
+              "variant": "default",
+              "cardBg": "#FFFFFF",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "left",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#EEF7FD]",
+              "SecBg": "bg-[#EEF7FD]",
+              "title": "Sensitivity to All Living Things",
+              "text": [
+                "In the first plane, Montessori children develop Care of Plants and Animals — sensitivity to living beings. In the Biomimicry Hive, this sensitivity becomes scientific discipline and ethical foundation.",
+                "Students don't just study organisms. They develop relationship with them. The gecko whose feet they study is not just a mechanism to reverse-engineer. It is a being with 200 million years of evolutionary wisdom. It has something to teach. The proper response is not just curiosity but respect.",
+                "Every investigation in the Hive begins with awareness: this organism is alive. It has its own purposes. We are guests in its world, students of its wisdom."
+              ],
+              "imageUrl": "/innovation/classroom-3.webp",
+              "variant": "default",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#FFFFFF]",
+              "SecBg": "",
+              "title": "Cosmic Task and Custodian Consciousness",
+              "text": [
+                "Montessori taught that every organism has a cosmic task — a contribution to the whole. The earthworm aerates soil. The bee pollinates flowers. Nothing exists for itself alone.",
+                "In the Biomimicry Hive, students ask: What is my cosmic task? What is humanity's cosmic task?",
+                "They develop custodian consciousness — the understanding that humans are not owners of the Earth but caretakers. Our innovations must serve the whole web of life, not just human convenience."
+              ],
+              "imageUrl": "/innovation/classroom-4.webp",
+              "variant": "default",
+              "cardBg": "#FFFFFF",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "left",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#EEF7FD]",
+              "SecBg": "bg-[#EEF7FD]",
+              "title": "Regenerative, Not Extractive",
+              "text": [
+                "Nature produces no waste — everything cycles. The Biomimicry Hive teaches students to think in cycles, not lines. Not \"take-make-dispose\" but \"take-make-return.\"",
+                "Students become regenerative engineers — designers who don't just minimise harm but actively contribute to ecological health.",
+                "The question is never just \"Is this sustainable?\" but \"Does this regenerate? Does this give back more than it takes?\"",
+                "This is conscience at ecological scale: awareness that every design choice affects living systems, and commitment to choices that serve life."
+              ],
+              "imageUrl": "/innovation/classroom-5.webp",
+              "variant": "default",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "outcomesPills",
+            "props": {
+              "title": "Student Investigations",
+              "items": [
+                {
+                  "icon": "/icon/brain.png",
+                  "pillBg": "#F9E48F",
+                  "text": "Gecko Adhesion: Students study gecko feet — but also ask: What is our obligation to geckos? How do we ensure our biomimicry benefits, not harms, their species?"
+                },
+                {
+                  "icon": "/icon/brain.png",
+                  "pillBg": "#95D6ED",
+                  "text": "Termite Ventilation: Students design passive cooling — but also study how termites cooperate, how colonies function as superorganisms. What can we learn about community?"
+                },
+                {
+                  "icon": "/icon/brain.png",
+                  "pillBg": "#F9A78F",
+                  "text": "Seed Dispersal: Students apply principles of passive flight — but also participate in the Seed Bank, preserving genetic diversity. Taking and giving back."
+                },
+                {
+                  "icon": "/icon/brain.png",
+                  "pillBg": "#F9E48F",
+                  "text": "The Seed Bank: A long-term project of preservation and reciprocity. Students don't just learn from seeds; they serve them, ensuring their continuation."
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#FFFFFF]",
+              "SecBg": "",
+              "title": "The Regenerative Heart",
+              "text": [
+                "Students who work in the Biomimicry Hive develop not just technical capability but a regenerative orientation to life. They carry this into all their work: the Innovation Lab, the Drone Lab, the Space Lab.",
+                "The question they bring everywhere: Does this serve life? Does this honour the Earth? Does this regenerate rather than extract?",
+                "This is Cosmic Education become conscience — understanding become care, knowledge become responsibility, learning become love."
+              ],
+              "imageUrl": "/innovation/classroom-6.webp",
+              "variant": "default",
+              "cardBg": "#FFFFFF",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "left",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
             }
           },
           {
@@ -6791,186 +6919,24 @@
               "text": "Media Mentions",
               "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
               "logos": [
-                {
-                  "src": "/icon/media/cision.png",
-                  "alt": "Cision",
-                  "width": "169",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/business-today.png",
-                  "alt": "Business Today",
-                  "width": "234",
-                  "height": "42"
-                },
-                {
-                  "src": "/icon/media/disha.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/ew.png",
-                  "alt": "Cision",
-                  "width": "83",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/one-news-page.png",
-                  "alt": "Business Today",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/web-india.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/upturn.png",
-                  "alt": "Cision",
-                  "width": "186",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/sanvad.png",
-                  "alt": "Business Today",
-                  "width": "155",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/socialNews.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/manglorean.png",
-                  "alt": "Cision",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/five.png",
-                  "alt": "Business Today",
-                  "width": "52",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/varindia.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/pti.png",
-                  "alt": "Cision",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/tmc.png",
-                  "alt": "Business Today",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/ground.png",
-                  "alt": "Disha",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/newDelhi.png",
-                  "alt": "Cision",
-                  "width": "74",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/business-news.png",
-                  "alt": "Business Today",
-                  "width": "234",
-                  "height": "76"
-                },
-                {
-                  "src": "/icon/media/india-today.png",
-                  "alt": "Disha",
-                  "width": "141",
-                  "height": "76"
-                }
-              ]
-            }
-          },
-          {
-            "type": "AreasofDevelopment",
-            "props": {
-              "bg": "#EEF7FD",
-              "eyebrow": "",
-              "title": "Our Young Innovators",
-              "description": "Prof Srikar, Department of Design at IIT Hyderabad worked along with the Blue Blocks team to design the space , inspiration being a beehive, which actually portrays biomimicry itself.' The space should ignite a sense of curiosity and a sense of discovery among children. Also aid them to observe nature more deeply to harness solutions for day to day problems. This lab will act as a spring board for children at a very young age, to tinker, experiment, build prototypes and learn from nature which will go a long way as they pursue their passion domains in the future' said Prof. Srikar.",
-              "subdescription": "",
-              "subtitle": "",
-              "headerAlign": "center",
-              "cols": {
-                "base": 1,
-                "sm": 2,
-                "lg": 2
-              },
-              "maxWidth": "place-content-center",
-              "gap": "gap-6",
-              "referenceColsDesktop": 4,
-              "desktopSpan": 3,
-              "cardBg": "",
-              "cardRadius": "",
-              "cardPadding": "",
-              "cardMinHeight": 220,
-              "overLap": false,
-              "iconSize": "814",
-              "iconWrapClassName": "h-[540] w-[840]",
-              "items": [
-                {
-                  "icon": "/innovation/our-young-innovators-1.webp"
-                },
-                {
-                  "icon": "/innovation/our-young-innovators-2.webp"
-                }
-              ]
-            }
-          },
-          {
-            "type": "researchMission",
-            "props": {
-              "id": "mission",
-              "bgClassName": "bg-[#EEF7FD]",
-              "alignCenter": "text-left",
-              "sectionTopPadd": "py-16 sm:py-20",
-              "calloutBg": "bg-[#FFFFFF]",
-              "CalloutAlign": "text-left",
-              "calloutTitle": "LEARNINGS",
-              "calloutGroupClass": "mt-0 sm:mt-0",
-              "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
-              "calloutClass": "text-left text-[0.95rem] sm:text-[1rem] leading-relaxed text-slate-700",
-              "CalloutWrapClass": "bg-[#B7D976] border-2 border-[#131313] px-7 py-8 sm:px-12 sm:py-10",
-              "callout": "This will encourage children to explore, study, research, and find answers to current and future problems using nature. Children will learn observation and journaling skills, understand the interdependencies and interconnections in the nature, find patterns, have sensorial awareness, empathy, curiosity, investigative ability, an enquiring, reasoning and critical thinking mind."
-            }
-          },
-          {
-            "type": "montessoriForSuccess",
-            "props": {
-              "bg": "#FFFFFF",
-              "title": "EXPERTS SPEAK",
-              "items": [
-                {
-                  "name": "SANDIPIKA ROY",
-                  "role": "Aerospace Engineer",
-                  "quote": "A space like this helps children build the habit of thinking in systems — observing, connecting, and applying ideas rather than memorizing them."
-                },
-                {
-                  "name": "RESEARCH MENTOR",
-                  "role": "Innovation & Design",
-                  "quote": "Biomimicry is one of the most powerful bridges between curiosity and real-world problem solving — especially when children learn it early."
-                }
+                { "src": "/icon/media/cision.png", "alt": "Cision", "width": "169", "height": "76" },
+                { "src": "/icon/media/business-today.png", "alt": "Business Today", "width": "234", "height": "42" },
+                { "src": "/icon/media/disha.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/ew.png", "alt": "EW", "width": "83", "height": "76" },
+                { "src": "/icon/media/one-news-page.png", "alt": "One News Page", "width": "234", "height": "76" },
+                { "src": "/icon/media/web-india.png", "alt": "Web India", "width": "234", "height": "76" },
+                { "src": "/icon/media/upturn.png", "alt": "Upturn", "width": "186", "height": "76" },
+                { "src": "/icon/media/sanvad.png", "alt": "Sanvad", "width": "155", "height": "76" },
+                { "src": "/icon/media/socialNews.png", "alt": "Social News", "width": "234", "height": "76" },
+                { "src": "/icon/media/manglorean.png", "alt": "Manglorean", "width": "234", "height": "76" },
+                { "src": "/icon/media/five.png", "alt": "Five", "width": "52", "height": "76" },
+                { "src": "/icon/media/varindia.png", "alt": "Varindia", "width": "234", "height": "76" },
+                { "src": "/icon/media/pti.png", "alt": "PTI", "width": "234", "height": "76" },
+                { "src": "/icon/media/tmc.png", "alt": "TMC", "width": "234", "height": "76" },
+                { "src": "/icon/media/ground.png", "alt": "Ground", "width": "234", "height": "76" },
+                { "src": "/icon/media/newDelhi.png", "alt": "New Delhi", "width": "74", "height": "76" },
+                { "src": "/icon/media/business-news.png", "alt": "Business News", "width": "234", "height": "76" },
+                { "src": "/icon/media/india-today.png", "alt": "India Today", "width": "141", "height": "76" }
               ]
             }
           },
@@ -7000,10 +6966,7 @@
             "props": {
               "title": "Experience Learning\nthe Blue Blocks Way.",
               "text": "Seats are filled on a first-come basis.",
-              "cta": {
-                "label": "Book Admission Workshop",
-                "href": "/contact"
-              },
+              "cta": { "label": "Book Admission Workshop", "href": "/contact" },
               "image": "/innovation/drone.webp",
               "imageAlt": "Campus building",
               "imageWidth": "566",
