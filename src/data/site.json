@@ -3378,7 +3378,8 @@
               ],
               "imageUrl": "/programs/playgroup/where-this-leads.webp",
               "align": "left",
-              "maxWidth":"none"
+              "maxWidth": "none",
+              "sectionBg": "bg-iceSoft"
             }
           },        
           {
@@ -3531,7 +3532,8 @@
                 },
                 ". The hands become the instruments of the brain. Through touching, moving, and organizing, the child literally constructs their intellect.They are driven by a desire for order, precision, and repetition."
               ],
-              "maxWidth": "56rem"
+              "maxWidth": "56rem",
+              "sectionBg": "bg-iceSoft"
             }
           },
           {
@@ -5740,8 +5742,24 @@
           }
         },
         {
+          "type": "CenteredTextBlock",
+          "props": {
+            "bg": "#FFFFFF",
+            "title": "A Social Duty Towards Tomorrow",
+            "subtitle": "",
+            "textParts": [
+              "“Clearly, we have a social duty towards this future man, this man who exists as a silhouette around the child, a duty towards this man of tomorrow. Perhaps a great future leader or a great genius is with us and his power will come from the power of the child he is today. This is the vision which we must have.”",
+              "— Dr. Maria Montessori, The 1946 London Lectures, p. 140"
+            ],
+            "maxWidth": "56rem",
+            "align": "center",
+            "sectionBg": "bg-white"
+          }
+        },
+        {
           "type": "imageText",
           "props": {
+            "bgClass": "bg-[#F8E5C7]",
             "title": "Vision 2050",
             "text": [
               "The children entering our Toddler Community today will be twenty-seven years old in 2050. They will reach their professional and creative peak in a world shaped by artificial intelligence, automation, climate crisis, and forms of global connection that don't yet exist.",
@@ -5757,6 +5775,7 @@
         {
           "type": "innovationAgeCards",
           "props": {
+            "sectionBg": "bg-white",
             "eyebrow": "CHILDREN",
             "title": "The Formation of Conscience",
             "desc":"Innovation without conscience is not innovation — it is extraction. The capacity for ethical action doesn't emerge from rules imposed at sixteen. It develops across eighteen years of Montessori formation.",
@@ -5831,6 +5850,26 @@
                 "icon": "/icon/magnific-icon.svg",
                 "title": "The Hand as Instrument of Intelligence:",
                 "text": "Trained hands manipulating real materials build the mind — and develop respect for matter itself."
+              },
+              {
+                "icon": "/icon/certificate.svg",
+                "title": "Control of Error:",
+                "text": "The child learns that consequences follow actions — the foundation of moral understanding."
+              },
+              {
+                "icon": "/icon/rounding.svg",
+                "title": "Care of Environment:",
+                "text": "Sensitivity to non-living things — the basis for sustainability thinking."
+              },
+              {
+                "icon": "/icon/magnific-icon.svg",
+                "title": "Care of Living Things:",
+                "text": "Sensitivity to plants and animals — the basis for regenerative thinking."
+              },
+              {
+                "icon": "/icon/certificate.svg",
+                "title": "Cosmic Education:",
+                "text": "Understanding of interdependence — the basis for thinking at planetary scale."
               }
             ],
             "images": [
@@ -5845,7 +5884,7 @@
                 "text": ""
               },
               {
-                "icon": "/innovation/slider-image-3.webp",
+                "icon": "/innovation-01/slider-image-3.webp",
                 "title": "",
                 "text": ""
               },
@@ -5875,16 +5914,21 @@
             "cards": [
               {
                 "title": "Deepening Montessori: Our Approach",
-                "text": ["We have developed what we call the Developmental Innovation Protocol (DIP) — an eighteen-year architecture that nurtures innovative capability and ethical sensibility together. They cannot be separated.",
+                "text": [
+                  "We have developed what we call the Developmental Innovation Protocol (DIP) — an eighteen-year architecture that nurtures innovative capability and ethical sensibility together. They cannot be separated.",
                 "Every innovation activity includes the conscience dimension. Every exercise develops both capability and ethical sensitivity. Every thinking type we nurture includes the question: What is my responsibility here?",
-                "When capabilities integrate — when technical skill fuses with creative imagination fuses with ethical sensibility — something emerges. We call this Synaptic Fusion. It is not just innovative capability. It is innovative capability with conscience built in."],
+                  "When capabilities integrate — when technical skill fuses with creative imagination fuses with ethical sensibility — something emerges. We call this Synaptic Fusion. It is not just innovative capability. It is innovative capability with conscience built in."
+                ],
                 "icon": "/icon/ISRO.svg"
               },
               {
                 "title": "Innovation With Conscience at Every Stage",
-                "text": ["Ages 0-6: The child builds the foundations of conscience alongside capability. Care of environment, care of living things, sensitivity to others. Creative problem-solving emerges — always within the context of care. The scientist is born: the child who observes, experiments, and discovers — with respect for what they discover.",
+                "text": [
+                  "Ages 0-6: The child builds the foundations of conscience alongside capability. Care of environment, care of living things, sensitivity to others. Creative problem-solving emerges — always within the context of care. The scientist is born: the child who observes, experiments, and discovers — with respect for what they discover.",
                 "Ages 6-12: Imagination meets reasoning meets moral understanding. Through the Inventions Timeline, children learn that innovation has consequences — life before and after each invention. Five patent applications filed by students aged eight to twelve — each evaluated not just for novelty but for benefit. Does this serve? Does this heal? Does this regenerate?",
-                "Ages 12-18: Full integration — technical capability fused with social consciousness, economic thinking, and ethical reasoning. Students don't just build satellites; they discuss space debris, resource allocation, human solidarity. They don't just run micro-economies; they consider fair exchange, community benefit, ecological impact.","On January 11, 2026, a student-built CubeSat satellite will launch into orbit aboard ISRO's PSLV C62 rocket. The students who built it carry not just technical capability but cosmic responsibility — the understanding that space, like Earth, requires custodianship."],
+                  "Ages 12-18: Full integration — technical capability fused with social consciousness, economic thinking, and ethical reasoning. Students don't just build satellites; they discuss space debris, resource allocation, human solidarity. They don't just run micro-economies; they consider fair exchange, community benefit, ecological impact.",
+                  "On January 11, 2026, a student-built CubeSat satellite will launch into orbit aboard ISRO's PSLV C62 rocket. The students who built it carry not just technical capability but cosmic responsibility — the understanding that space, like Earth, requires custodianship."
+                ],
                 "icon": "/icon/ISRO.svg"
               }
             ]
@@ -5931,6 +5975,25 @@
           }
         },
         {
+          "type": "CenteredTextBlock",
+          "props": {
+            "sectionBg": "bg-white",
+            "title": "The Innovation & Future Council",
+            "subtitle": "",
+            "textParts": [
+              "Our council members don’t just bring technical expertise. They model what it means to innovate with integrity — to hold ethical questions alongside technical ones, to consider consequences alongside capabilities.",
+              "<strong>Rahul Jindal</strong>, Director, Google",
+              "<strong>Sucheth Davaluri</strong>, Vice-Chairman &amp; CEO, Neuland Laboratories",
+              "<strong>Prof. AVR Srikar</strong>, Department of Design, IIT Hyderabad",
+              "<strong>Prof. Apoorv Gogar</strong>, Faculty, Indian School of Business",
+              "<strong>Manish Gupta</strong>, Director, SAP",
+              "<strong>Ronak Kumar</strong>, Founder, TakeMe2Space",
+              "When students present to council members, they are asked not just “Does it work?” but “Should it exist? Who does it serve? What are its full consequences?” This is valorization with conscience — the adolescent’s work taken seriously precisely because it is held to ethical standards."
+            ],
+            "maxWidth": "64rem"
+          }
+        },
+        {
           "type": "innovationGallery",
           "props": {
             "eyebrow": "CLASSROOM PROJECTS",
@@ -5951,6 +6014,35 @@
             ]
           }
         },
+        {
+        "type": "outcomesPills",
+        "props": {
+          "title": "The Outcome",
+          "maxWidth": "none",
+          "items": [
+            {
+              "icon": "/icon/brain.png",
+              "pillBg": "#F9E48F",
+              "text": "Driven by profound passion — not merely to create, but to create new benefits for their times and for the future. For humanity and for the Earth."
+            },
+            {
+              "icon": "/icon/brain.png",
+              "pillBg": "#95D6ED",
+              "text": "Graduates with evidence of capability — patents filed, satellites launched, real-world problems solved."
+            },
+            {
+              "icon": "/icon/brain.png",
+              "pillBg": "#F9A78F",
+              "text": "Guided by conscience as their compass. They do not ask 'Can I build this?' They ask 'Should I build this? Does it serve life? Does it honour the Earth?'"
+            },
+            {
+              "icon": "/icon/brain.png",
+              "pillBg": "#F9E48F",
+              "text": "Prepared for 2050 — not just because they can innovate, but because they will innovate with integrity and take responsibility for the Mother Earth."
+            }
+          ]
+        }
+      },
         {
           "type": "ctaBanner",
           "props": {
@@ -6251,7 +6343,8 @@
                 { "bold": "Should I?" },
                 "\n\nBack to Biomimicry Hive  |  Explore The Space Lab →"
               ],
-              "maxWidth": "56rem"
+              "maxWidth": "56rem",
+              "sectionBg": "bg-iceSoft"
             }
           },
           {
@@ -6460,7 +6553,7 @@
                   "text": ""
                 },
                 {
-                  "icon": "/innovation/slider-image-3.webp",
+                  "icon": "/innovation-01/slider-image-3.webp",
                   "title": "",
                   "text": ""
                 },

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import "yet-another-react-lightbox/styles.css";
+@import "yet-another-react-lightbox/plugins/thumbnails.css";
+
+@import "tailwindcss";
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =====================================================
+   DESIGN TOKENS (Single Source of Truth)
+===================================================== */
+
+:root {
+  /* Layout */
+  --bb-container: 1200px;
+  --bb-container-pad: 16px;
+  --bb-section-pad-y: clamp(48px, 6vw, 80px);
+
+  /* Typography (Poppins first) */
+  --bb-font: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+
+  --bb-text: #131313;
+  --bb-muted: #64748b;
+
+  --bb-title-size: clamp(32px, 4vw, 48px);
+  --bb-title-weight: 600;
+  --bb-title-line: 1.08;
+
+  --bb-subtitle-size: clamp(18px, 2.2vw, 28px);
+  --bb-subtitle-weight: 500;
+  --bb-subtitle-line: 1.25;
+
+  --bb-body-size: 15px;
+  --bb-body-line: 1.8;
+
+  /* Card */
+  --bb-radius: 18px;
+  --bb-card-pad: 32px;
+}
+
+/* =====================================================
+   BASE (global font + color baseline)
+   This does NOT force typography sizes, only font-family.
+===================================================== */
+
+html,
+body {
+  font-family: var(--bb-font);
+  color: var(--bb-text);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes bb-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bb-spin {
+  animation: bb-spin 1.2s linear infinite;
+}
+
+/* =====================================================
+   OPT-IN UI WRAPPER
+   Use .bb-ui around standardized sections/pages.
+===================================================== */
+
+.bb-ui {
+  font-family: var(--bb-font);
+  color: var(--bb-text);
+}
+
+/* Optional: reset default margins ONLY inside bb-ui
+   (prevents random spacing differences across browsers) */
+.bb-ui h1,
+.bb-ui h2,
+.bb-ui h3,
+.bb-ui p {
+  margin: 0;
+}
+
+/* =====================================================
+   SECTION SYSTEM
+===================================================== */
+
+.bb-section {
+  padding-top: var(--bb-section-pad-y);
+  padding-bottom: var(--bb-section-pad-y);
+}
+
+.bb-section__inner{
+  width: 100%;
+  &:not(:has(> div.mx-auto)) {
+    max-width: var(--bb-container);
+    margin: 0 auto;
+    padding-left: var(--bb-container-pad);
+    padding-right: var(--bb-container-pad);
+  }
+}
+
+.bb-section__head {
+  margin-bottom: 28px;
+}
+
+.bb-section__body {
+  display: grid;
+  gap: 16px;
+}
+
+/* =====================================================
+   TYPOGRAPHY SYSTEM (use these classes in components)
+===================================================== */
+
+.bb-section-title {
+  font-size: var(--bb-title-size);
+  font-weight: var(--bb-title-weight);
+  line-height: var(--bb-title-line);
+  color: var(--bb-text);
+}
+
+.bb-sub-title {
+  font-size: clamp(22px, 2.5vw, 32px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--bb-text);
+}
+
+.bb-subtitle {
+  font-size: var(--bb-subtitle-size);
+  font-weight: var(--bb-subtitle-weight);
+  line-height: var(--bb-subtitle-line);
+  margin-top: 10px; /* deliberate */
+  color: var(--bb-text);
+  opacity: 0.92;
+}
+
+.bb-text {
+  margin-top: 16px;
+}
+
+.bb-text p {
+  font-size: var(--bb-body-size);
+  line-height: var(--bb-body-line);
+  color: var(--bb-muted);
+}
+
+.bb-text p + p {
+  margin-top: 14px;
+}
+
+/* =====================================================
+   CARD SYSTEM
+===================================================== */
+
+.bb-card {
+  border-radius: var(--bb-radius);
+  padding: var(--bb-card-pad);
+}
+
+/* =====================================================
+   BACKGROUND TOKEN CLASSES
+===================================================== */
+
+.bg-white { background-color: #ffffff; }
+.bg-paper { background-color: #FBF7F1; }
+
+.bg-sand { background-color: #F3E3CF; }
+.bg-iceSoft { background-color: #EEF7FD; }
+.bg-ice { background-color: #EAF4FF; }
+.bg-sage { background-color: #E3EBDD; }
+
+/* =====================================================
+   OPTIONAL UTILITIES
+===================================================== */
+
+.bb-center { text-align: center; }
+.bb-muted { color: var(--bb-muted); }
+.bb-radius { border-radius: var(--bb-radius); }

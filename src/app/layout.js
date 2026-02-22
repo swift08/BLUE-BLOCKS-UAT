@@ -1,6 +1,4 @@
 // src/app/layout.js
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import HeaderShell from "@/components/layout/HeaderShell";
 import Footer from "@/components/layout/Footer";
 import NavigationLoader from "@/components/ui/NavigationLoader";
@@ -8,6 +6,14 @@ import HashScrollFix from "@/components/ui/HashScrollFix";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import siteData from "@/data/site.json";
 import JsonLd from "@/components/seo/JsonLd";
+import { Poppins } from "next/font/google";
+import "@/styles/global.scss";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300","400","500","600","700"],
+  display: "swap",
+});
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
@@ -68,7 +74,7 @@ const orgSchema = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`min-h-screen bg-white text-slate-900`}>
+      <body className={`min-h-screen bg-white text-slate-900 ${poppins.className}`}>
         <JsonLd id="org-jsonld" data={orgSchema} />
 
         <HeaderShell />

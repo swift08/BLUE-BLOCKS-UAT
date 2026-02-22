@@ -1,52 +1,53 @@
 import Container from "@/components/layout/Container";
 import Image from "next/image";
+import { resolveBg } from "@/lib/ui";
 
 export default function ImageText({
-  // existing
-  bgClass = "bg-white",
-  SecBg = "",
+  // ✅ standard new prop names (but we support old ones too)
+  sectionBg = "white",       // token ("sand") OR class ("bg-sand") OR hex ("#F3E3CF")
+  wrapBg = "",               // same formats as above (for inner wrapper)
+
+  // ✅ backward compatibility (old props)
+  bgClass = "",              // if someone still passes bgClass="bg-white"
+  SecBg = "",                // if someone still passes SecBg="bg-[#F3E3CF]"
+
   title,
   subtitle,
   text = [],
   imageUrl = "",
 
   variant = "default", // "default" | "card"
-  cardBg = "#EEF7FD",
+  cardBg = "#EEF7FD",  // kept for backward compatibility
   cardRadius = "rounded-2xl",
   cardPadding = "p-8 sm:p-10",
-  imageSide = "left", // "left" | "right"
+
+  imageSide = "left",
   imageClassName = "",
-  imageFit = "contain", // "contain" | "cover"
+  imageFit = "contain",
   imageAspect = "aspect-[16/10]",
+
   titleClassName = "",
+  subtitleClassName = "",
   textClassName = "",
-  contentCenter = false
+  contentCenter = false,
 }) {
   const hasImage = Boolean(imageUrl);
-  const contentClass = contentCenter ? "text-center" : ""
-  const gridColsClass = hasImage ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1 md:grid-cols-1";
-
   const isCard = variant === "card";
 
-  const wrapClass = isCard
-    ? `${cardRadius} ${cardPadding}`
-    : SecBg; // keep old behavior: SecBg stays on grid wrapper
+  // ✅ Background resolution (safe for old + new)
+  // precedence: old props override new ones to avoid breaking existing pages
+  const resolvedSection = resolveBg(bgClass || sectionBg);
+  const resolvedWrap = resolveBg(SecBg || wrapBg);
 
-  const wrapStyle = isCard ? { backgroundColor: cardBg } : undefined;
+  const gridColsClass = hasImage ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1";
+  const contentAlignClass = contentCenter ? "text-center" : "";
 
-  const imageOrderClass =
-    hasImage && imageSide === "right"
-      ? "md:order-2"
-      : "";
-
-  const contentOrderClass =
-    hasImage && imageSide === "right"
-      ? "md:order-1"
-      : "";
+  const imageOrderClass = hasImage && imageSide === "right" ? "md:order-2" : "";
+  const contentOrderClass = hasImage && imageSide === "right" ? "md:order-1" : "";
 
   const imgOuterClass = isCard
     ? `overflow-hidden ${imageClassName || "rounded-2xl"}`
-    : "rounded-2xl overflow-hidden bg-slate-100 border";
+    : `rounded-2xl overflow-hidden bg-slate-100 border ${imageClassName || ""}`;
 
   const imgInnerClass = isCard
     ? `${imageAspect} relative`
@@ -54,33 +55,39 @@ export default function ImageText({
 
   const imgFitClass = imageFit === "cover" ? "object-cover" : "object-contain";
 
-  const finalTitleClass = titleClassName
-    ? titleClassName
-    : isCard
-      ? "text-4xl sm:text-5xl font-medium text-[#131313] whitespace-pre-line"
-      : "text-4xl sm:text-5xl font-semibold whitespace-pre-line";
+  // ✅ Typography is now controlled by LESS via bb-* classes
+  const finalTitleClass = titleClassName || "bb-section-title whitespace-pre-line";
+  const finalSubtitleClass = subtitleClassName || "bb-subtitle whitespace-pre-line mt-3";
+  const finalTextWrapClass = textClassName || "bb-text mt-4 space-y-3";
 
-  const finalTextWrapClass = textClassName
-    ? textClassName
-    : isCard
-      ? "mt-4 space-y-3 text-slate-600 leading-relaxed text-[0.95rem]"
-      : `${title ? "mt-4" : "p-5"} space-y-3 text-slate-700 leading-relaxed`;
+  // ✅ inner wrapper classes
+  const innerClass = isCard
+    ? [cardRadius, cardPadding].join(" ")
+    : resolvedWrap.className; // token/class background on wrapper when default
+
+  // ✅ inner wrapper inline background when default
+  const innerStyle = isCard
+    ? { backgroundColor: cardBg } // old behavior preserved
+    : resolvedWrap.style;
 
   return (
-    <section className={bgClass}>
-      <Container className="py-12">
+    <section
+      className={["bb-ui", "bb-section", resolvedSection.className].filter(Boolean).join(" ")}
+      style={resolvedSection.style}
+    >
+      <Container className="bb-section__inner">
         <div
           className={[
             "grid",
-            contentClass,
             gridColsClass,
             "gap-8 items-center",
-            wrapClass,
-          ].join(" ")}
-          style={wrapStyle}
+            contentAlignClass,
+            innerClass,
+          ].filter(Boolean).join(" ")}
+          style={innerStyle}
         >
           {hasImage ? (
-            <div className={`${imgOuterClass} ${imageOrderClass}`}>
+            <div className={`${imgOuterClass} ${imageOrderClass}`.trim()}>
               <div className={imgInnerClass}>
                 {isCard ? (
                   <Image
@@ -105,16 +112,13 @@ export default function ImageText({
 
           <div className={contentOrderClass}>
             {title ? <h2 className={finalTitleClass}>{title}</h2> : null}
-            {subtitle ? <h3 className="text-[1.2rem] sm:text-3xl whitespace-pre-line mt-3">{subtitle}</h3> : null}
+            {subtitle ? <h3 className={finalSubtitleClass}>{subtitle}</h3> : null}
 
             {Array.isArray(text) && text.length ? (
               <div className={finalTextWrapClass}>
                 {text.map((p, idx) =>
                   typeof p === "string" ? (
-                    <p
-                      key={idx}
-                      dangerouslySetInnerHTML={{ __html: p }}
-                    />
+                    <p key={idx} dangerouslySetInnerHTML={{ __html: p }} />
                   ) : null
                 )}
               </div>
