@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
+import { resolveBg } from "@/lib/ui";
 
 export default function CtaBanner({
   title,
@@ -8,7 +9,9 @@ export default function CtaBanner({
   cta,
   image,
 
-  titlefont="text-2xl sm:text-3xl font-semibold",
+  // OLD prop kept (but normalized to global classes)
+  titlefont = "text-2xl sm:text-3xl font-semibold",
+
   align = "left", // "left" | "center"
   theme = "dark", // "dark" | "light"
   imageAlt,
@@ -16,23 +19,34 @@ export default function CtaBanner({
   imageWidth,
   imagePositionTopRight = "sm:-right-6 sm:-top-98",
   customTopSpacing,
-  imagePosition = "right", // future: "right" | "left"
+  imagePosition = "right",
+
+  // NEW
+  sectionBg = "bg-white",
 }) {
   const isCenter = align === "center";
   const isDark = theme === "dark";
 
+  const resolved = resolveBg(sectionBg);
+
+  const normalizedTitleClass = normalizeTitleFont(titlefont);
+
   return (
-    <section className={`bg-white sm:py-14 ${customTopSpacing} relative`}>
-      <Container paddingClassName="px-0 sm:px-4">
-        <div
-          className={[
-            "relative sm:rounded-3xl",
-            isDark ? "bg-[#1f3b82] text-white" : "bg-slate-100 text-slate-900",
-          ].join(" ")}
-        >
+    <section
+      className={[
+        "bb-ui",
+        "bb-section",
+        resolved.className,
+        customTopSpacing,
+        "relative",
+      ].filter(Boolean).join(" ")}
+      style={resolved.style}
+    >
+      <Container className="bb-section__inner" paddingClassName="px-0 sm:px-4">
+        <div className={["bb-cta", isDark ? "bb-cta--dark" : "bb-cta--light"].join(" ")}>
           <div
             className={[
-              "p-8 sm:p-10",
+              "bb-cta__inner",
               isCenter
                 ? "flex flex-col items-center text-center"
                 : "flex flex-col md:flex-row md:items-center md:justify-between gap-8",
@@ -40,32 +54,25 @@ export default function CtaBanner({
           >
             {/* TEXT */}
             <div className={isCenter ? "max-w-2xl" : "max-w-xl"}>
-              <h3 className={`${titlefont} whitespace-pre-line leading-tight`}>
-                {title}
-              </h3>
-
-              {text ? (
-                <p className={["mt-2 text-sm", isDark ? "text-white/80" : "text-slate-600"].join(" ")}>
-                  {text}
-                </p>
+              {title ? (
+                <h3 className={[normalizedTitleClass, "whitespace-pre-line"].join(" ")}>
+                  {title}
+                </h3>
               ) : null}
+
+              {text ? <p className="bb-cta__text mt-2">{text}</p> : null}
 
               {cta ? (
                 <Link
                   href={cta.href}
-                  className={[
-                    "mt-6 inline-flex items-center justify-center rounded-full px-5 py-2 text-sm font-medium transition-colors",
-                    isDark
-                      ? "bg-white text-[#1f3b82] hover:bg-white/90"
-                      : "bg-[#1f3b82] text-white hover:bg-[#18306a]",
-                  ].join(" ")}
+                  className={["bb-btn", isDark ? "bb-btn--inverse" : "bb-btn--primary", "mt-6"].join(" ")}
                 >
                   {cta.label} <span className="ml-2" aria-hidden>→</span>
                 </Link>
               ) : null}
             </div>
 
-            {/* IMAGE (optional) */}
+            {/* IMAGE */}
             {image && !isCenter ? (
               <div className="relative hidden md:block sm:w-[86px] md:w-[666px] h-auto">
                 <Image
@@ -78,9 +85,25 @@ export default function CtaBanner({
               </div>
             ) : null}
           </div>
-
         </div>
       </Container>
     </section>
   );
+}
+
+/**
+ * Converts legacy Tailwind titlefont strings into bb-ui title classes,
+ * so we don't ship inline font sizing all over the codebase.
+ */
+function normalizeTitleFont(value) {
+  if (!value) return "bb-cta-title";
+  if (String(value).startsWith("bb-")) return value;
+
+  const v = String(value);
+
+  // simple mapping for common legacy patterns
+  if (v.includes("text-3xl") || v.includes("sm:text-3xl")) return "bb-cta-title bb-cta-title--lg";
+  if (v.includes("text-2xl") || v.includes("sm:text-2xl")) return "bb-cta-title";
+
+  return "bb-cta-title";
 }

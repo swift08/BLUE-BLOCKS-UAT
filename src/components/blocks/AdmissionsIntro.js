@@ -1,5 +1,6 @@
 import Container from "@/components/layout/Container";
 import Image from "next/image";
+import { resolveBg } from "@/lib/ui";
 
 export default function AdmissionsIntro({
   eyebrow,
@@ -7,72 +8,77 @@ export default function AdmissionsIntro({
   text = [],
   sideHeadline,
   image,
-  bgShape
+  bgShape,
+
+  // NEW (preferred)
+  sectionBg = "bg-white",
 }) {
+  const resolved = resolveBg(sectionBg);
+
   return (
-    <section className="bg-white">
-      <Container className="py-12 sm:py-16">
+    <section
+      className={["bb-ui", "bb-section", resolved.className].filter(Boolean).join(" ")}
+      style={resolved.style}
+    >
+      <Container className="bb-section__inner">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-end">
           {/* Left text */}
           <div>
             {eyebrow ? (
-              <div className="inline-flex rounded-full bg-[#E7E8FF] px-4 py-1 text-[10px] font-semibold tracking-wider text-[#2C2F8F]">
-                {eyebrow}
+              <div
+                className="bb-pill"
+                // keep your original colors, but typography controlled globally
+                style={{
+                  "--bb-pill-bg": "#E7E8FF",
+                  "--bb-pill-border": "transparent",
+                  "--bb-pill-text": "#2C2F8F",
+                }}
+              >
+                <span className="bb-pill__text">{eyebrow}</span>
               </div>
             ) : null}
 
-            <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-medium text-slate-900 whitespace-pre-line">
-              {title}
-            </h2>
+            {title ? <h2 className="bb-section-title mt-4 whitespace-pre-line">{title}</h2> : null}
 
-            <div className="mt-5 space-y-4 text-sm sm:text-[15px] leading-6 text-slate-500">
-              {text.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
+            {Array.isArray(text) && text.length ? (
+              <div className="bb-text mt-5">
+                {text.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+            ) : null}
           </div>
 
           {/* Right visual */}
           <div className="relative">
-            {/* Background shape */}
             {bgShape ? (
               <div className="absolute hidden sm:flex sm:-right-6 sm:-top-6 w-[340px] h-[340px] sm:w-[420px] sm:h-[420px] pointer-events-none">
-                <Image
-                  src={bgShape}
-                  alt=""
-                  fill
-                  className="object-contain opacity-90"
-                  priority={false}
-                />
+                <Image src={bgShape} alt="" fill className="object-contain opacity-90" priority={false} />
               </div>
             ) : null}
 
-            {/* Headline */}
             {sideHeadline ? (
-              <div className="absolute right-6 -top-4 sm:top-0 text-right leading-[1.05]">
-                <div className="text-2xl sm:text-3xl font-semibold text-[#F4B942]">
-                  {sideHeadline.line1}
-                </div>
-                <div className="text-2xl sm:text-3xl font-semibold text-[#49A6D6]">
-                  {sideHeadline.line2}
-                </div>
-                <div className="text-2xl sm:text-3xl font-semibold text-slate-700">
-                  {sideHeadline.line3}
-                </div>
+              <div className="bb-sideheadline absolute right-6 -top-4 sm:top-0 text-right">
+                {sideHeadline.line1 ? (
+                  <div className="bb-sideheadline__line bb-sideheadline__line--gold">
+                    {sideHeadline.line1}
+                  </div>
+                ) : null}
+                {sideHeadline.line2 ? (
+                  <div className="bb-sideheadline__line bb-sideheadline__line--blue">
+                    {sideHeadline.line2}
+                  </div>
+                ) : null}
+                {sideHeadline.line3 ? (
+                  <div className="bb-sideheadline__line bb-sideheadline__line--slate">
+                    {sideHeadline.line3}
+                  </div>
+                ) : null}
               </div>
             ) : null}
 
-            {/* Building image */}
             <div className="relative mt-14 lg:mt-0 w-full h-[340px] sm:h-[420px] lg:h-[460px]">
-              {image ? (
-                <Image
-                  src={image}
-                  alt=""
-                  fill
-                  className="object-contain"
-                  priority={false}
-                />
-              ) : null}
+              {image ? <Image src={image} alt="" fill className="object-contain" priority={false} /> : null}
             </div>
           </div>
         </div>

@@ -24,7 +24,6 @@ export default function Accordion({
 
   const [openIndex, setOpenIndex] = useState(safeDefault);
 
-  // Reset open index when items list changes (useful for tabs)
   useEffect(() => {
     setOpenIndex(safeDefault);
   }, [safeDefault, items]);
@@ -55,7 +54,7 @@ export default function Accordion({
               className={`w-full flex items-center justify-between gap-4 px-5 sm:px-7 py-4 text-left ${buttonClassName}`}
               aria-expanded={open}
             >
-              <span className="font-medium text-slate-900">{q}</span>
+              <span className="bb-text font-semibold text-slate-900">{q}</span>
               <span className={`text-xl text-slate-500 ${iconClassName}`}>
                 {open ? "×" : "+"}
               </span>
@@ -71,9 +70,7 @@ export default function Accordion({
                   transition={{ duration: 0.25, ease: "easeOut" }}
                   className="overflow-hidden"
                 >
-                  <div
-                    className={`px-5 sm:px-7 pb-5 text-slate-600 leading-relaxed ${contentClassName}`}
-                  >
+                  <div className={`px-5 sm:px-7 pb-5 bb-text text-slate-600 ${contentClassName}`}>
                     {a}
                   </div>
                 </motion.div>

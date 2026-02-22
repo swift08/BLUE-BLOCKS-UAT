@@ -5,31 +5,7 @@ import { useMemo } from "react";
 import Container from "@/components/layout/Container";
 import CarouselTrack from "@/components/ui/carousel/CarouselTrack";
 import Link from "next/link";
-
-/**
- * Background resolver:
- * Accepts:
- * - "bg-sand" / "bg-white" / "bg-[#EEF7FD]" (class)
- * - "sand" / "iceSoft" (token -> bg-sand)
- * - "#FFFFFF" (hex -> inline style)
- */
-function resolveSectionBg(value) {
-  if (!value) return { className: "", style: undefined };
-
-  if (typeof value === "string" && value.includes("bg-")) {
-    return { className: value, style: undefined };
-  }
-
-  if (typeof value === "string" && value.trim().startsWith("#")) {
-    return { className: "", style: { backgroundColor: value.trim() } };
-  }
-
-  if (typeof value === "string") {
-    return { className: `bg-${value}`, style: undefined };
-  }
-
-  return { className: "", style: undefined };
-}
+import { resolveBg } from "@/lib/ui";
 
 export default function InnovationHabitSplit({
   image,
@@ -63,11 +39,10 @@ export default function InnovationHabitSplit({
   const hasDetails = Array.isArray(details) && details.length > 0;
 
   // Prefer standardized prop, fallback to old
-  const resolvedSection = resolveSectionBg(sectionBg || bg);
+  const resolvedSection = resolveBg(sectionBg || bg);
 
   // Typography defaults (centralized)
-  const finalDescriptionClassName =
-    descriptionClassName || "bb-text";
+  const finalDescriptionClassName = descriptionClassName || "bb-text";
 
   return (
     <section
@@ -76,14 +51,14 @@ export default function InnovationHabitSplit({
     >
       <div className="bb-section">
         <div className="bb-section__inner">
-          {/* Keep Container, but do not add extra vertical padding (bb-section handles it) */}
+          {/* Keep Container; do not add extra vertical padding (bb-section handles it) */}
           <Container className="py-0">
             <div className="grid gap-8 sm:gap-10 lg:grid-cols-12 lg:items-start">
               {/* Left Side: Carousel */}
               <div className="lg:col-span-6 relative">
                 <div
                   aria-hidden
-                  className="absolute top-0 left-0 -translate-x-[1%] translate-y-[1%] w-[100%] h-full rotate-[-0deg] rounded-[28px] bg-[#FFDBAE] border border-black/20"
+                  className="absolute top-0 left-0 -translate-x-[1%] translate-y-[1%] w-[100%] h-full rounded-[28px] bg-[#FFDBAE] border border-black/20"
                 />
 
                 <div className="relative">
@@ -100,12 +75,11 @@ export default function InnovationHabitSplit({
                       show: total > 1,
                       showOn: "both",
                       count: total,
-                      className:
-                        "mb-4 flex items-center justify-center gap-2 absolute w-full bottom-0",
-                      dotClassName: "h-2 w-2",
-                      activeClassName: "bg-[#FFFFFF]/100 w-[20]",
-                      inactiveClassName: "bg-[#FFFFFF]/30",
-                      focusRingClassName: "focus:ring-[#1f3b82]/30",
+                      className: "bb-carousel-dots absolute w-full bottom-3",
+                      dotClassName: "bb-carousel-dot",
+                      activeClassName: "bb-carousel-dot--active",
+                      inactiveClassName: "bb-carousel-dot--inactive",
+                      focusRingClassName: "bb-carousel-dot--focus",
                     }}
                     className="overflow-hidden"
                   >
@@ -120,17 +94,9 @@ export default function InnovationHabitSplit({
 
               {/* Right Side: Content */}
               <div className="lg:col-span-6">
-                {eyebrow ? (
-                  <div className="text-[10px] sm:text-xs font-semibold tracking-[0.18em] uppercase text-slate-500">
-                    {eyebrow}
-                  </div>
-                ) : null}
+                {eyebrow ? <div className="bb-eyebrow">{eyebrow}</div> : null}
 
-                {title ? (
-                  <h2 className="bb-section-title mt-2">
-                    {title}
-                  </h2>
-                ) : null}
+                {title ? <h2 className="bb-section-title mt-2">{title}</h2> : null}
 
                 {description ? (
                   <div className={finalDescriptionClassName}>
@@ -173,9 +139,9 @@ export default function InnovationHabitSplit({
 
                 {/* Bullets */}
                 {bullets?.length ? (
-                  <div className="mt-5 space-y-6">
+                  <div className="mt-6 space-y-6">
                     {bullets.map((b, idx) => (
-                      <div key={idx} className="flex gap-3 items-center">
+                      <div key={idx} className="flex gap-3 items-start">
                         {b.icon ? (
                           <span className="mt-1 inline-flex flex-shrink-0 items-center justify-center">
                             <Image
@@ -188,12 +154,10 @@ export default function InnovationHabitSplit({
                           </span>
                         ) : null}
 
-                        <div className={`${className || ""}`}>
-                          <div className="text-[1.2rem] text-[#1B1B1B]">
-                            {b.title}
-                          </div>
+                        <div className={className || ""}>
+                          {b.title ? <div className="bb-text font-semibold text-[#1B1B1B]">{b.title}</div> : null}
                           {b.text ? (
-                            <div className="mt-1 text-[1.2rem] text-[#1B1B1B]/50 leading-relaxed">
+                            <div className="bb-text mt-1 text-[#1B1B1B]/55 leading-relaxed">
                               {b.text}
                             </div>
                           ) : null}

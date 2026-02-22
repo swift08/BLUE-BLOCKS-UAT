@@ -1,5 +1,6 @@
 import Container from "@/components/layout/Container";
 import Accordion from "@/components/ui/Accordion";
+import { resolveBg } from "@/lib/ui";
 
 export default function FAQAccordion({
   // content
@@ -7,18 +8,16 @@ export default function FAQAccordion({
   subtitle,
   items = [],
 
-  // JSON-driven UI controls
-  bg = "#F3E3CF",
+  // ✅ background: keep old + add new
+  bg = "#F3E3CF", // legacy
+  sectionBg = "", // preferred
+
   defaultOpenIndex = 0,
   allowToggleAllClosed = true,
 
-  // layout controls
-  panelMaxWidth = "max-w-4xl",
-  containerClassName = "py-14 sm:py-16",
-
-  // typography controls (optional)
-  titleClassName = "text-4xl sm:text-5xl text-slate-900 main-title",
-  subtitleClassName = "mt-3 text-xs sm:text-sm text-slate-700/70 max-w-2xl mx-auto",
+  // layout controls (kept, but defaults now follow bb-section rhythm)
+  panelMaxWidth = "",
+  containerClassName = "",
 
   // accordion style controls (optional)
   rowGapClassName = "space-y-3",
@@ -26,31 +25,35 @@ export default function FAQAccordion({
   closedItemClassName = "bg-transparent",
   itemClassName = "",
   buttonClassName = "",
-  contentClassName = "",
-  iconClassName = "",
+  panelClassName = "",
 }) {
-  return (
-    <section style={{ backgroundColor: bg }}>
-      <Container className={containerClassName}>
-        <div className="text-center">
-          {title ? <h2 className={titleClassName}>{title}</h2> : null}
-          {subtitle ? <p className={subtitleClassName}>{subtitle}</p> : null}
-        </div>
+  const resolved = resolveBg(sectionBg || bg);
 
-        <div className={`mt-10 mx-auto w-full ${panelMaxWidth}`}>
-          <Accordion
-            items={items}
-            defaultOpenIndex={defaultOpenIndex}
-            allowToggleAllClosed={allowToggleAllClosed}
-            openItemClassName={openItemClassName}
-            closedItemClassName={closedItemClassName}
-            itemClassName={itemClassName}
-            buttonClassName={buttonClassName}
-            contentClassName={contentClassName}
-            iconClassName={iconClassName}
-          />
+  return (
+    <section className={["bb-ui", resolved.className].filter(Boolean).join(" ")} style={resolved.style}>
+      <div className="bb-section">
+        <div className="bb-section__inner">
+          <Container className={containerClassName}>
+            <div className="mx-auto text-center">
+              {title ? <h2 className="bb-section-title">{title}</h2> : null}
+              {subtitle ? <p className="bb-subtitle">{subtitle}</p> : null}
+            </div>
+
+            <div className={["mx-auto mt-8", panelMaxWidth, rowGapClassName].filter(Boolean).join(" ")}>
+              <Accordion
+                items={items}
+                defaultOpenIndex={defaultOpenIndex}
+                allowToggleAllClosed={allowToggleAllClosed}
+                openItemClassName={openItemClassName}
+                closedItemClassName={closedItemClassName}
+                itemClassName={itemClassName}
+                buttonClassName={buttonClassName}
+                panelClassName={panelClassName}
+              />
+            </div>
+          </Container>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

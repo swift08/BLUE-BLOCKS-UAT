@@ -1,25 +1,35 @@
+import Container from "@/components/layout/Container";
+import { resolveBg } from "@/lib/ui";
+
 export default function SeekVsDeliver({
   title = "If you seek... vs We deliver...",
   leftHeader = "If You Seek",
   rightHeader = "We Deliver",
   rows = [],
+
+  // OLD
   bgClass = "bg-white",
+
+  // NEW
+  sectionBg = "",
+
+  // keep prop (Container owns width)
   maxWidth = "max-w-4xl",
 }) {
+  const resolved = resolveBg(sectionBg || bgClass);
+
   return (
-    <section className={bgClass}>
-      <div className={`mx-auto w-full ${maxWidth} px-4 sm:px-6 py-12 sm:py-16`}>
+    <section className={["bb-ui", "bb-section", resolved.className].filter(Boolean).join(" ")} style={resolved.style}>
+      <Container className={["bb-section__inner", maxWidth].filter(Boolean).join(" ")}>
         {/* Title */}
-        <h2 className="text-center text-4xl sm:text-5xl font-semibold text-slate-900 main-title">
-          {title}
-        </h2>
+        <h2 className="bb-section-title text-center text-slate-900">{title}</h2>
 
         {/* Headers */}
         <div className="mt-10 grid grid-cols-2 sm:grid-cols-2 gap-4">
-          <div className="rounded-lg bg-[#1F3566] px-5 py-4 text-lg font-semibold text-white">
+          <div className="rounded-lg bg-[#1F3566] px-5 py-4 bb-text font-semibold text-white">
             {leftHeader}
           </div>
-          <div className="rounded-lg bg-[#1F3566] px-5 py-4 text-lg font-semibold text-white">
+          <div className="rounded-lg bg-[#1F3566] px-5 py-4 bb-text font-semibold text-white">
             {rightHeader}
           </div>
         </div>
@@ -43,7 +53,7 @@ export default function SeekVsDeliver({
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

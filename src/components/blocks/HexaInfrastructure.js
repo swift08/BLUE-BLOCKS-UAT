@@ -1,13 +1,18 @@
+import Container from "@/components/layout/Container";
+import { resolveBg } from "@/lib/ui";
+
 export default function HexaInfrastructure({
   title = "Infrastructure for Innovation (0–18): Designed for the Developing Mind.",
   text = "At Blue Blocks, we believe architecture is not just a container for learning; it is an active participant in it...",
   items = [],
   bgClass = "bg-white",
+  sectionBg = "",
   maxWidth = "max-w-6xl",
 }) {
+  const resolved = resolveBg(sectionBg || bgClass);
   return (
-    <section className={bgClass}>
-      <div className={`mx-auto w-full ${maxWidth} px-4 sm:px-6 py-12 sm:py-16`}>
+    <section className={["bb-ui", "bb-section", resolved.className].filter(Boolean).join(" ")} style={resolved.style}>
+      <Container className={["bb-section__inner", maxWidth].filter(Boolean).join(" ")}>
         {/* Heading */}
         <div className="w-full">
           <h2 className="text-2xl sm:text-4xl font-medium text-slate-900">
@@ -31,7 +36,7 @@ export default function HexaInfrastructure({
             <HexCard key={it?.href || it?.title || idx} {...it} />
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

@@ -1,14 +1,24 @@
 import Container from "@/components/layout/Container";
+import { resolveBg } from "@/lib/ui";
 
-export default function PageHero({ title, breadcrumb = [], bg }) {
-  const base = bg?.base || "#F3E3CF";
+export default function PageHero({
+  title,
+  breadcrumb = [],
+  bg, // legacy object { base, leftArc, rightArc }
+  sectionBg = "", // preferred
+}) {
+  // support both the new token system and the legacy bg.base
+  const resolved = resolveBg(sectionBg || bg?.base || "#F3E3CF");
 
   return (
-    <section className="relative overflow-hidden" style={{ backgroundColor: base }}>
+    <section
+      className={["bb-ui", "relative overflow-hidden", resolved.className].filter(Boolean).join(" ")}
+      style={resolved.style}
+    >
       {/* fixed header space (manual) */}
       <div className="pt-32 sm:pt-36" />
 
-      {/* arcs */}
+      {/* arcs (legacy) */}
       {bg?.leftArc ? (
         <img
           src={bg.leftArc}
@@ -24,28 +34,30 @@ export default function PageHero({ title, breadcrumb = [], bg }) {
         />
       ) : null}
 
-      <Container className="relative py-14 sm:py-16 text-center">
-        <h1 className="text-4xl sm:text-5xl font-semibold text-slate-900">{title}</h1>
-        {breadcrumb?.length ? (
-          <div className="mt-3 text-xs text-slate-700/70">
-            {breadcrumb.map((b, i) => (
-              <span key={`${b.label}-${i}`}>
-                {b.href ? (
-                  <a
-                    href={b.href}
-                    className="hover:text-slate-900 transition"
-                  >
-                    {b.label}
-                  </a>
-                ) : (
-                  <span className="text-slate-900">{b.label}</span>
-                )}
-                {i < breadcrumb.length - 1 ? "  ›  " : ""}
-              </span>
-            ))}
-          </div>
-        ) : null}
-      </Container>
+      <div className="bb-section">
+        <div className="bb-section__inner">
+          <Container className="relative text-center">
+            {title ? <h1 className="bb-section-title text-slate-900">{title}</h1> : null}
+
+            {breadcrumb?.length ? (
+              <div className="mt-3 bb-text text-slate-700/70">
+                {breadcrumb.map((b, i) => (
+                  <span key={`${b.label}-${i}`}>
+                    {b.href ? (
+                      <a href={b.href} className="hover:text-slate-900 transition">
+                        {b.label}
+                      </a>
+                    ) : (
+                      <span className="text-slate-900">{b.label}</span>
+                    )}
+                    {i < breadcrumb.length - 1 ? "  ›  " : ""}
+                  </span>
+                ))}
+              </div>
+            ) : null}
+          </Container>
+        </div>
+      </div>
     </section>
   );
 }

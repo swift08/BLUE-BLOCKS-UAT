@@ -2,6 +2,7 @@
 
 import Container from "@/components/layout/Container";
 import Link from "next/link";
+import { resolveBg } from "@/lib/ui";
 
 export default function Hero({
   title,
@@ -11,28 +12,26 @@ export default function Hero({
   secondaryCta,
   bgImageUrl,
 
-  /**
-   * ✅ NEW (optional) props for reuse across pages
-   * Keeps old behavior as default
-   */
+  // new standardized background support (optional)
+  sectionBg = "",
+
   align = "left", // "left" | "center"
   height = "default", // "default" | "innovation"
   overlay = "default", // "default" | "dark"
-  showArcs = false, // only for Innovation-like hero
+  showArcs = false,
   topSpacing = "default", // "default" | "home"
   className = "",
 }) {
+  const resolvedBg = resolveBg(sectionBg);
+
   const bgStyle = bgImageUrl
     ? { backgroundImage: `url(${bgImageUrl})` }
-    : {
-        backgroundImage:
-          "linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), radial-gradient(circle at 30% 30%, rgba(255,255,255,.12), transparent 55%)",
-      };
+    : undefined;
 
   const minH =
     height === "innovation"
-      ? "min-h-[20rem] sm:min-h-[20rem] lg:min-h-[25rem]" // ~801px on lg (matches figma)
-      : "min-h-[20rem] md:min-h-[25rem]"; // your current feel
+      ? "min-h-[20rem] sm:min-h-[20rem] lg:min-h-[25rem]"
+      : "min-h-[20rem] md:min-h-[25rem]";
 
   const overlayClass = overlay === "dark" ? "before:bg-black/45" : "before:bg-black/55";
 
@@ -43,25 +42,24 @@ export default function Hero({
 
   const wrapWidth = align === "center" ? "max-w-[60rem]" : "max-w-2xl";
 
-  const paddingTop =  topSpacing === "home"
-    ? "pt-[8.75rem] sm:pt-[9.5rem]" // ≈ pt-35, header overlay safe
-    : "pt-44 sm:pt-48";
+  const paddingTop =
+    topSpacing === "home" ? "pt-[8.75rem] sm:pt-[9.5rem]" : "pt-44 sm:pt-48";
 
   return (
     <section
-      style={bgStyle}
+      style={{ ...(resolvedBg.style || {}), ...(bgStyle || {}) }}
       className={[
+        "bb-ui",
         "relative bg-cover bg-center text-white",
+        resolvedBg.className,
         minH,
         "z-[1]",
-        // overlay (no layout shift)
         "before:content-[''] before:absolute before:inset-0 before:pointer-events-none",
         overlayClass,
         paddingTop,
         className,
-      ].join(" ")}
+      ].filter(Boolean).join(" ")}
     >
-      {/* Optional arcs for Innovation (pure tailwind, no extra assets) */}
       {showArcs ? (
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute right-0 bottom-0 h-[72%] w-[46%] rounded-tl-[999px] bg-sky-300/60" />
@@ -71,37 +69,25 @@ export default function Hero({
       ) : null}
 
       <Container
-        // keep container behavior; hero is full-bleed anyway
-        className={["relative", minH, "flex items-center", align === "center" ? "justify-center" : ""].join(
-          " "
-        )}
+        className={[
+          "relative",
+          minH,
+          "flex items-center",
+          align === "center" ? "justify-center" : "",
+        ].join(" ")}
       >
         <div className={[wrapWidth, "flex flex-col", contentAlign].join(" ")}>
-          <h1
-            className={[
-              // typography: keep your old sizes but allow centered large hero
-              align === "center"
-                ? "font-light tracking-tight text-[2.125rem] leading-[1.15] sm:text-[3rem] sm:leading-[1.1] lg:text-[4rem]"
-                : "text-4xl sm:text-5xl md:text-6xl font-semibold tracking-wide",
-            ].join(" ")}
-          >
+          <h1 className={align === "center" ? "bb-hero-title bb-hero-title--center" : "bb-hero-title"}>
             {renderMultiline(title)}
           </h1>
 
           {subtitle ? (
-            <p
-              className={[
-                "mt-4 text-white/85",
-                align === "center"
-                  ? "max-w-[46rem] text-[0.95rem] leading-6 sm:text-[1.0625rem] sm:leading-7"
-                  : "text-sm sm:text-base",
-              ].join(" ")}
-            >
+            <p className={align === "center" ? "bb-hero-subtitle bb-hero-subtitle--center" : "bb-hero-subtitle"}>
               {subtitle}
             </p>
           ) : null}
 
-          {note ? <p className="mt-1 text-xs sm:text-sm text-white/70">{note}</p> : null}
+          {note ? <p className="bb-hero-note">{note}</p> : null}
 
           <div
             className={[
@@ -110,26 +96,13 @@ export default function Hero({
             ].join(" ")}
           >
             {primaryCta ? (
-              <Link
-                href={primaryCta.href}
-                className={[
-                  "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm transition",
-                  // keep your existing style for primary
-                  "bg-white/10 border border-white/30 hover:bg-white/15",
-                ].join(" ")}
-              >
+              <Link href={primaryCta.href} className="bb-hero-cta bb-hero-cta--primary">
                 {primaryCta.label}
               </Link>
             ) : null}
 
             {secondaryCta ? (
-              <Link
-                href={secondaryCta.href}
-                className={[
-                  "inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-medium transition",
-                  "bg-blue-600 hover:bg-blue-700",
-                ].join(" ")}
-              >
+              <Link href={secondaryCta.href} className="bb-hero-cta bb-hero-cta--secondary">
                 {secondaryCta.label}
               </Link>
             ) : null}

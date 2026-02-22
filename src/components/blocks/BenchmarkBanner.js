@@ -1,3 +1,8 @@
+import Image from "next/image";
+import Link from "next/link";
+import Container from "@/components/layout/Container";
+import { resolveBg } from "@/lib/ui";
+
 export default function BenchmarkBanner({
   bg = "#233B77",
   title = "THE GLOBAL BENCHMARK FOR 2050",
@@ -7,22 +12,29 @@ export default function BenchmarkBanner({
   logos = [],
   logoAltFallback = "Partner logo",
 
+  // keep prop (Container owns width)
   maxWidth = "max-w-6xl",
+
+  // NEW
+  sectionBg = "",
+
+  // OLD behavior: section background was white
+  bgClass = "bg-white",
 }) {
+  const resolved = resolveBg(sectionBg || bgClass);
+
   return (
-    <section className="bg-white">
-      <div className={`mx-auto w-full ${maxWidth} px-4 sm:px-6 py-10 sm:py-14`}>
+    <section className={["bb-ui", "bb-section", resolved.className].filter(Boolean).join(" ")} style={resolved.style}>
+      <Container className={["bb-section__inner", maxWidth].filter(Boolean).join(" ")}>
         {/* Blue banner */}
         {text ? (<div
-          className="rounded-xl px-6 sm:px-8 py-6 sm:py-7 text-white"
+          className="rounded-xl px-6 sm:px-8 py-6 sm:py-7 text-white has-darkBg"
           style={{ backgroundColor: bg }}
         >
-          <h3 className="text-xl font-medium tracking-wide">
-            {title}
-          </h3>
+          <h3 className="bb-section-title text-center">{title}</h3>
 
           {text ? (
-            <p className="mt-3 leading-relaxed text-white/85 max-w-5xl">
+            <p className="mt-3 leading-relaxed text-white/85 text-center">
               {text}
             </p>
           ) : null}
@@ -60,7 +72,7 @@ export default function BenchmarkBanner({
             </div>
           </div>
         ) : null}
-      </div>
+      </Container>
     </section>
   );
 }

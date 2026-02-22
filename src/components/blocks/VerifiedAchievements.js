@@ -1,18 +1,28 @@
+import Container from "@/components/layout/Container";
+import { resolveBg } from "@/lib/ui";
+
 export default function VerifiedAchievements({
   title = "These are not aspirations. They are verified achievements",
   description = `At Blue Blocks, we do not measure success by report cards alone. We measure it by the real-world impact our students create before they even graduate. Our "Unscripted Learners" are not just preparing for the future; they are actively inventing it.`,
   items = [],
+
+  // OLD
   bgClass = "bg-[#F3E3CF]",
+
+  // NEW
+  sectionBg = "",
+
+  // keep prop (but Container owns width)
   maxWidth = "max-w-6xl",
 }) {
+  const resolved = resolveBg(sectionBg || bgClass);
+  
   return (
-    <section className={bgClass}>
-      <div className={`mx-auto w-full ${maxWidth} px-4 sm:px-6 py-12 sm:py-16`}>
+    <section className={["bb-ui", "bb-section", resolved.className].filter(Boolean).join(" ")} style={resolved.style}>
+      <Container className={["bb-section__inner", maxWidth].filter(Boolean).join(" ")}>
         {/* Header */}
         <div className="max-w-3xl">
-          <h2 className="text-3xl sm:text-5xl font-semibold tracking-tight text-slate-900">
-            {title}
-          </h2>
+          <h2 className="bb-section-title text-center text-slate-900">{title}</h2>
 
           {description ? (
             <p className="mt-4 leading-relaxed text-slate-700">
@@ -30,7 +40,7 @@ export default function VerifiedAchievements({
             />
           ))}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

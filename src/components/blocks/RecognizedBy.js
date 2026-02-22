@@ -1,22 +1,35 @@
 import Container from "@/components/layout/Container";
 import Image from "next/image";
+import { resolveBg } from "@/lib/ui";
 
-export default function RecognizedBy({ title, items = [] }) {
+export default function RecognizedBy({
+  title,
+  items = [],
+
+  // NEW (preferred)
+  sectionBg = "",
+
+  // OLD (kept)
+  bg = "#ffffff",
+}) {
+  const resolved = resolveBg(sectionBg || bg);
+
   return (
-    <section className="bg-[#ffffff]">
-      <Container className="py-12">
-        <h2 className="text-center text-4xl sm:text-5xl font-semibold main-title">
-          {title}
-        </h2>
+    <section
+      className={["bb-ui", "bb-section", resolved.className].filter(Boolean).join(" ")}
+      style={resolved.style}
+    >
+      <Container className="bb-section__inner">
+        {title ? <h2 className="bb-section-title text-center">{title}</h2> : null}
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-10 text-slate-700">
           {items.map((item) => (
-            <div key={item.title} className="text-sm font-semibold opacity-80">
-              <Image 
-                src={item.icon} 
-                alt={item.title} 
+            <div key={item.title} className="opacity-80">
+              <Image
+                src={item.icon}
+                alt={item.title}
                 width={item.width}
-                height={item.height} 
+                height={item.height}
                 className="object-contain"
               />
             </div>

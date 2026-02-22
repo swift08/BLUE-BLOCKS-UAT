@@ -728,7 +728,7 @@
           "props": {
             "bg": "#F3E3CF",
             "defaultOpenIndex": 0,
-            "panelMaxWidth": "max-w-4xl",
+            "panelMaxWidth": "none",
             "title": "COMMUNITY QUESTIONS",
             "subtitle": "Our guides are more than teachers — they are observers, facilitators, and partners in each child’s developmental journey.",
             "items": [
@@ -3423,7 +3423,7 @@
             "props": {
               "bg": "#F3E3CF",
               "defaultOpenIndex": 0,
-              "panelMaxWidth": "max-w-4xl",
+              "panelMaxWidth": "none",
               "title": "Frequently Asked Questions",
               "subtitle": "",
               "items": [
@@ -4098,7 +4098,7 @@
             "props": {
               "bg": "#F3E3CF",
               "defaultOpenIndex": 0,
-              "panelMaxWidth": "max-w-4xl",
+              "panelMaxWidth": "none",
               "title": "Frequently Asked Questions",
               "subtitle": "",
               "items": [
@@ -4541,7 +4541,7 @@
             "props": {
               "bg": "#F3E3CF",
               "defaultOpenIndex": 0,
-              "panelMaxWidth": "max-w-4xl",
+              "panelMaxWidth": "none",
               "title": "Frequently Asked Questions",
               "subtitle": "",
               "items": [

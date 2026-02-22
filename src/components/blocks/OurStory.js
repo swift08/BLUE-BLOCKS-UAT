@@ -1,53 +1,59 @@
+import Container from "@/components/layout/Container";
+import { resolveBg } from "@/lib/ui";
+
 export default function OurStory({
   eyebrow,
   title,
   paragraphs = [],
   cta = { label: "Explore", href: "/about" },
   timeline = [],
+
+  // legacy
   bgClass = "bg-white",
+
+  // NEW
+  sectionBg = "",
 }) {
+  const resolved = resolveBg(sectionBg || bgClass);
+
   return (
-    <section className={bgClass}>
-      <div className="mx-auto w-full max-w-[88rem] px-4 sm:px-6 py-14 sm:py-20">
-        {/* Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
-          {/* Left Content */}
-          <div>
-            <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight main-title">
-              {eyebrow}
-            </h2>
+    <section className={["bb-ui", "bb-section", resolved.className].filter(Boolean).join(" ")} style={resolved.style}>
+      <div className="bb-section__inner">
+        <Container>
+          {/* Header */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
+            {/* Left Content */}
+            <div>
+              {eyebrow ? <h2 className="bb-section-title">{eyebrow}</h2> : null}
+              {title ? <p className="bb-subtitle mt-3 text-[#414141]">{title}</p> : null}
 
-            <p className="mt-3 text-sm sm:text-base text-[#414141]">
-              {title}
-            </p>
+              {paragraphs?.length ? (
+                <div className="mt-6 space-y-4 bb-text text-slate-600 leading-relaxed">
+                  {paragraphs.map((p, i) => (
+                    <p key={`p-${i}`}>{p}</p>
+                  ))}
+                </div>
+              ) : null}
 
-            <div className="mt-6 space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
-              {paragraphs.map((p, i) => (
-                <p key={`p-${i}`}>{p}</p>
-              ))}
+              {cta?.href ? (
+                <a href={cta.href} className="mt-8 inline-flex items-center gap-2 bb-btn bb-btn--primary">
+                  {cta.label || "Explore"}
+                  <span aria-hidden="true">↗</span>
+                </a>
+              ) : null}
             </div>
 
-            {cta?.href ? (
-              <a
-                href={cta.href}
-                className="mt-8 inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700 transition"
-              >
-                {cta.label || "Explore"}
-                <span aria-hidden="true">↗</span>
-              </a>
-            ) : null}
-          </div>
+            {/* Right Timeline (Desktop) */}
+            <div className="hidden lg:block">
+              <DesktopTimeline timeline={timeline} />
+            </div>
 
-          {/* Right Timeline (Desktop) */}
-          <div className="hidden lg:block">
-            <DesktopTimeline timeline={timeline} />
+            {/* Mobile Timeline (Horizontal slider) */}
+            <div className="lg:hidden">
+              <MobileTimeline timeline={timeline} />
+            </div>
           </div>
-
-          {/* Mobile Timeline (Horizontal slider) */}
-          <div className="lg:hidden">
-            <MobileTimeline timeline={timeline} />
-          </div>
-        </div>
+        </Container>
       </div>
     </section>
   );
@@ -65,15 +71,14 @@ function DesktopTimeline({ timeline = [] }) {
         {timeline.map((item, idx) => (
           <div key={`t-${idx}`} className="relative pl-10">
             {/* Dot */}
-            <span className="absolute left-[3px] top-2 h-4 w-4 rounded-full border-4xl bordr-color-[#CFD5E6] bg-[#435B9D] ring-2 ring-slate-300" />
+            <span className="absolute left-[3px] top-2 h-4 w-4 rounded-full bg-[#435B9D] ring-2 ring-slate-300" />
 
             <div className="flex flex-col items-start gap-2">
+              {/* year is intentionally display-sized, keep as-is */}
               <div className={`text-5xl font-semibold leading-none ${item.colorClass || "text-slate-300"}`}>
                 {item.year}
               </div>
-              <p className="mt-2 text-sm text-slate-600 max-w-sm">
-                {item.text}
-              </p>
+              <p className="mt-2 bb-text text-slate-600 max-w-sm">{item.text}</p>
             </div>
           </div>
         ))}
@@ -87,10 +92,7 @@ function MobileTimeline({ timeline = [] }) {
 
   return (
     <div className="mt-2">
-      {/* hint line */}
-      <div className="mb-3 text-xs text-slate-500">
-        Swipe to explore milestones →
-      </div>
+      <div className="mb-3 bb-text text-slate-500">Swipe to explore milestones →</div>
 
       <div className="-mx-4 px-4 overflow-x-auto">
         <div className="flex gap-4 min-w-max snap-x snap-mandatory">
@@ -99,18 +101,15 @@ function MobileTimeline({ timeline = [] }) {
               key={`mt-${idx}`}
               className="snap-start w-[260px] rounded-2xl border border-slate-200 bg-white p-5"
             >
-              <div className={`text-4xl font-semibold ${item.colorClass || "text-slate-300"}`}>
-                {item.year}
-              </div>
+              {/* year is intentionally display-sized, keep as-is */}
+              <div className={`text-4xl font-semibold ${item.colorClass || "text-slate-300"}`}>{item.year}</div>
 
               <div className="mt-3 flex items-center gap-2">
                 <span className="h-3 w-3 rounded-full bg-white ring-2 ring-slate-300" />
                 <span className="h-px flex-1 bg-slate-200" />
               </div>
 
-              <p className="mt-3 text-sm text-slate-600 leading-relaxed">
-                {item.text}
-              </p>
+              <p className="mt-3 bb-text text-slate-600 leading-relaxed">{item.text}</p>
             </div>
           ))}
         </div>

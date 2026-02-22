@@ -4,29 +4,43 @@ import { useMemo } from "react";
 import Container from "@/components/layout/Container";
 import Image from "next/image";
 import CarouselTrack from "@/components/ui/carousel/CarouselTrack";
+import { resolveBg } from "@/lib/ui";
 
-export default function AdmissionsJourney({ 
-  eyebrow, 
-  title, 
+export default function AdmissionsJourney({
+  eyebrow,
+  title,
   items = [],
+
+  // NEW
+  sectionBg = "bg-white",
 }) {
   const safeItems = useMemo(() => items.filter(Boolean), [items]);
   const total = safeItems.length;
 
+  const resolved = resolveBg(sectionBg);
+
   return (
-    <section className="bg-white">
-      <Container className="py-12 sm:py-16">
+    <section
+      className={["bb-ui", "bb-section", resolved.className].filter(Boolean).join(" ")}
+      style={resolved.style}
+    >
+      <Container className="bb-section__inner">
         {/* Header */}
         <div className="text-center">
           {eyebrow ? (
-            <div className="inline-flex rounded-full bg-[#E7E8FF] px-4 py-1 text-[10px] font-semibold tracking-wider text-[#2C2F8F]">
-              {eyebrow}
+            <div
+              className="bb-pill"
+              style={{
+                "--bb-pill-bg": "#E7E8FF",
+                "--bb-pill-border": "transparent",
+                "--bb-pill-text": "#2C2F8F",
+              }}
+            >
+              <span className="bb-pill__text">{eyebrow}</span>
             </div>
           ) : null}
 
-          <h2 className="mt-4 text-3xl sm:text-4xl font-medium text-slate-900 whitespace-pre-line">
-            {title}
-          </h2>
+          {title ? <h2 className="bb-section-title mt-4 whitespace-pre-line">{title}</h2> : null}
         </div>
 
         {/* DESKTOP (static) */}
@@ -36,7 +50,7 @@ export default function AdmissionsJourney({
           ))}
         </div>
 
-        {/* MOBILE / TABLET (exact old behavior, but via CarouselTrack) */}
+        {/* MOBILE / TABLET */}
         <div className="lg:hidden mt-10 relative">
           <CarouselTrack
             total={total}
@@ -47,28 +61,22 @@ export default function AdmissionsJourney({
             gap={0}
             paddingX={0}
             mode="page"
-            arrows={{
-              show: false
-            }}
+            arrows={{ show: false }}
             dots={{
               show: total > 1,
               showOn: "mobile",
               count: total,
-              className: "mt-4 flex items-center justify-center gap-2",
-              dotClassName: "h-2 w-2",
-              activeClassName: "bg-[#1f3b82]",
-              inactiveClassName: "bg-slate-300",
-              focusRingClassName: "focus:ring-[#1f3b82]/30",
+              className: "bb-carousel-dots",
+              dotClassName: "bb-carousel-dot",
+              activeClassName: "bb-carousel-dot--active",
+              inactiveClassName: "bb-carousel-dot--inactive",
+              focusRingClassName: "bb-carousel-dot--focus",
             }}
             className="overflow-hidden"
           >
             {() =>
               safeItems.map((card, idx) => (
-                <div
-                  key={`mobile-${idx}`}
-                  className="w-full shrink-0 px-10 flex"
-                >
-                  {/* px-10 exactly like your old viewport */}
+                <div key={`mobile-${idx}`} className="w-full shrink-0 px-10 flex">
                   <JourneyCard {...card} />
                 </div>
               ))
@@ -80,43 +88,34 @@ export default function AdmissionsJourney({
   );
 }
 
-  
-function JourneyCard({ icon, title, text, cardTextClassName = "mt-2 text-xs leading-5 text-slate-600"}) {
+function JourneyCard({
+  icon,
+  title,
+  text,
+  cardTextClassName = "bb-card-text", // ✅ default now global
+}) {
   return (
     <div className="rounded-2xl bg-[#F3E3CF] px-6 py-6 h-full w-full flex flex-col justify-between">
       <div className="flex items-center justify-center">
         <div className="relative h-10 w-10">
-          {icon ? (
-            <Image
-              src={icon}
-              alt={title || ""}
-              fill
-              className="object-contain"
-            />
-          ) : null}
+          {icon ? <Image src={icon} alt={title || ""} fill className="object-contain" /> : null}
         </div>
       </div>
 
       <div className="text-center">
-        <div className="mt-2 text-sm font-semibold text-slate-800">{title}</div>
-        {/* <p className="">{text}</p> */}
+        {title ? <div className="bb-card-subtitle mt-2">{title}</div> : null}
+
         {Array.isArray(text) && text.length ? (
-          <div>
+          <div className="mt-2">
             {text.map((p, idx) =>
               typeof p === "string" ? (
-                <p
-                  className={cardTextClassName}
-                  key={idx}
-                  dangerouslySetInnerHTML={{ __html: p }}
-                />
+                <p className={cardTextClassName} key={idx} dangerouslySetInnerHTML={{ __html: p }} />
               ) : null
             )}
           </div>
         ) : typeof text === "string" ? (
-        <p
-          className={cardTextClassName}
-          dangerouslySetInnerHTML={{ __html: text }}
-        />) : null}
+          <p className="mt-2" dangerouslySetInnerHTML={{ __html: text }} />
+        ) : null}
       </div>
     </div>
   );

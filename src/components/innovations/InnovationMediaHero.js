@@ -1,80 +1,91 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
+import { resolveBg } from "@/lib/ui";
+
+function stripTypographySizing(className = "") {
+  return String(className)
+    .split(/\s+/)
+    .filter((t) => {
+      if (!t) return false;
+      if (/^(sm:|md:|lg:|xl:|2xl:)?text-/.test(t)) return false;
+      if (/^(sm:|md:|lg:|xl:|2xl:)?font-/.test(t)) return false;
+      if (/^(sm:|md:|lg:|xl:|2xl:)?leading-/.test(t)) return false;
+      if (/^(sm:|md:|lg:|xl:|2xl:)?tracking-/.test(t)) return false;
+      return true;
+    })
+    .join(" ")
+    .trim();
+}
 
 export default function InnovationMediaHero({
   spacingTop,
   image,
   title,
   subtitle,
+
+  // legacy default had text-xs/sm:text-sm; keep prop but strip sizing tokens
   cardTextClassName = "mt-3 text-white/85 text-xs sm:text-sm leading-relaxed",
+
   primaryCta,
   secondaryCta,
+
+  // NEW
+  sectionBg = "",
+
+  // legacy wrapper behavior
+  bg = "bg-white",
 }) {
+  const resolved = resolveBg(sectionBg || bg);
+
   return (
-    <section className={`bg-white ${spacingTop}`}>
-      <Container className="pb-10 sm:pb-14">
-        <div className="relative overflow-hidden rounded-3xl bg-slate-100">
-          <div className="relative aspect-[16/10] sm:aspect-[16/8]">
-            <Image
-              src={image}
-              alt={title || "Innovation"}
-              fill
-              priority
-              className="object-cover"
-              sizes="(min-width: 640px) 90vw, 100vw"
-            />
-            <div className="absolute inset-0 bg-black/40" />
-          </div>
+    <section className={["bb-ui", resolved.className, spacingTop].filter(Boolean).join(" ")} style={resolved.style}>
+      <div className="bb-section">
+        <div className="bb-section__inner">
+          <Container>
+            <div className="relative overflow-hidden rounded-3xl bg-slate-100">
+              <div className="relative aspect-[16/10] sm:aspect-[16/8]">
+                <Image
+                  src={image}
+                  alt={title || "Innovation"}
+                  fill
+                  priority
+                  className="object-cover"
+                  sizes="(min-width: 640px) 90vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-black/45" />
+              </div>
 
-          <div className="absolute inset-0 flex items-center">
-            <div className="w-full px-6 sm:px-10">
-              <div className="max-w-xl">
-                <h2 className="text-white text-4xl sm:text-5xl font-semibold main-title">
-                  {title}
-                </h2>
-
-                {Array.isArray(subtitle) && subtitle.length ? (
-                  <div>
-                    {subtitle.map((p, idx) =>
-                      typeof p === "string" ? (
-                        <p
-                          className={cardTextClassName}
-                          key={idx}
-                          dangerouslySetInnerHTML={{ __html: p }}
-                        />
-                      ) : null
-                    )}
-                  </div>
-                ) : typeof subtitle === "string" ? (
-                <p
-                  className={cardTextClassName}
-                  dangerouslySetInnerHTML={{ __html: subtitle }}
-                />) : null}
-
-                <div className="mt-5 flex flex-wrap items-center gap-3">
-                  {primaryCta?.href ? (
-                    <Link
-                      href={primaryCta.href}
-                      className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-xs sm:text-sm font-medium text-slate-900 hover:bg-white/90"
-                    >
-                      {primaryCta.label}
-                    </Link>
+              <div className="absolute inset-0 flex items-end">
+                <div className="w-full p-6 sm:p-10">
+                  {title ? <h1 className="bb-section-title text-white whitespace-pre-line">{title}</h1> : null}
+                  {subtitle ? (
+                    <p className={["bb-text text-white/85", stripTypographySizing(cardTextClassName)].filter(Boolean).join(" ")}>
+                      {subtitle}
+                    </p>
                   ) : null}
-                  {secondaryCta?.href ? (
-                    <Link
-                      href={secondaryCta.href}
-                      className="inline-flex items-center justify-center rounded-full bg-white/15 px-5 py-2 text-xs sm:text-sm font-medium text-white ring-1 ring-white/25 hover:bg-white/20"
-                    >
-                      {secondaryCta.label}
-                    </Link>
+
+                  {(primaryCta?.href && primaryCta?.label) || (secondaryCta?.href && secondaryCta?.label) ? (
+                    <div className="mt-6 flex flex-wrap gap-3">
+                      {primaryCta?.href && primaryCta?.label ? (
+                        <Link className="bb-btn bb-btn--primary" href={primaryCta.href}>
+                          {primaryCta.label}
+                        </Link>
+                      ) : null}
+
+                      {secondaryCta?.href && secondaryCta?.label ? (
+                        <Link className="bb-btn bb-btn--secondary" href={secondaryCta.href}>
+                          {secondaryCta.label}
+                        </Link>
+                      ) : null}
+                    </div>
                   ) : null}
                 </div>
               </div>
             </div>
-          </div>
+          </Container>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }
