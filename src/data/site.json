@@ -6139,10 +6139,10 @@
           {
             "type": "pageHero",
             "props": {
-              "title": "The Space Lab",
+              "title": "Innovation Lab",
               "breadcrumb": [
                 { "label": "Innovation", "href": "/innovation" },
-                { "label": "The Innovation Lab", "href": "/innovation/innovation-lab" }
+                { "label": "Innovation Lab", "href": "/innovation/innovation-lab" }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -6151,67 +6151,20 @@
               }
             }
           },
-          {
-            "type": "impactCollageSplit",
-            "props": {
-              "bg": "#FFFFFF",
-              "py": "py-16 sm:py-20",
-              "left": {
-                "eyebrow": "HIGHLIGHT",
-                "eyebrowBg": "#E7E8FF",
-                "eyebrowText": "#2C2F8F",
-                "title": "Five patent applications.\nStudents aged eight to twelve.",
-                "text": "In 2019, Blue Blocks Elementary students filed five patent applications with the Indian Patent Office. But the story isn’t just the patents. It’s that these young innovators evaluated their own work not only for novelty but for benefit. Does this help? Does this serve? Is this good for the world?\n\nThis is what happens when capability and conscience develop together."
-              },
-              "decor": {
-                "enabled": true,
-                "image": "/drone.webp",
-                "alt": "Drone",
-                "width": 930,
-                "height": 530,
-                "position": "bottom-left",
-                "opacity": 1
-              },
-              "right": {
-                "collage": {
-                  "main": {
-                    "src": "/innovation/innov_collage-4.webp",
-                    "alt": "Innovation team",
-                    "showPlay": true
-                  },
-                  "left": {
-                    "src": "/innovation/innov_collage-1.webp",
-                    "alt": "Students"
-                  },
-                  "right": {
-                    "src": "/innovation/innov_collage-2.webp",
-                    "alt": "Students with drones"
-                  }
-                },
-                "below": {
-                  "title": "Capability + Conscience",
-                  "titleColor": "#2B66F6",
-                  "text": "Formed conscience shows up as a question asked before action — not after."
-                }
-              }
-            }
-          },
+
           {
             "type": "imageText",
             "props": {
-              "bgClass": "bg-[#F3E3CF]",
+              "bgClass": "bg-[#FFFFFF]",
               "SecBg": "",
-              "title": "The Inventions Timeline: Consequences Across History",
+              "title": "THE INNOVATION LAB",
               "text": [
-                "Before students build drones, they study the Inventions Timeline — thirty game-changing innovations and their consequences. Life before and after each invention. Not just what was gained, but what was lost. Not just benefits, but costs.",
-                "The automobile: freedom of movement — and carbon emissions. The smartphone: connection across distance — and attention fragmentation. Every innovation has consequences, intended and unintended.",
-                "Children learn: I am part of this timeline. What I create will have consequences. My conscience must be engaged before I build, not after."
+                "Where Hands Build Minds — With Care",
+                "A space designed for ethical making — where hands build minds and develop respect for materials. Every tool is cared for. Every material is valued. Students learn that creation carries responsibility for what is created.",
+                "→ Explore The Innovation Lab"
               ],
-              "imageUrl": "/innovation/drone/inventions-timeline.webp",
+              "imageUrl": "/innovation/innovation-lab/innovation-lab-hero.webp",
               "variant": "default",
-              "cardBg": "#EEF7FD",
-              "cardRadius": "rounded-2xl",
-              "cardPadding": "p-8 sm:p-10",
               "imageSide": "right",
               "imageClassName": "rounded-2xl",
               "imageFit": "cover",
@@ -6219,53 +6172,91 @@
               "contentCenter": false
             }
           },
+
           {
-            "type": "featureGrid",
+            "type": "imageText",
             "props": {
-              "headline": "The Conscience Check: Not Procedure, But Disposition",
-              "subText": "Every flight at Blue Blocks begins with what we call a Conscience Check. But this is not a checklist to satisfy. It is an expression of conscience already formed — the natural question that arises when you have been raised to consider consequences.",
+              "bgClass": "bg-[#EEF7FD]",
+              "SecBg": "#EEF7FD",
+              "title": "",
+              "text": [
+                "“The hands are the instruments of man's intelligence.”",
+                "— Dr. Maria Montessori"
+              ],
+              "imageUrl": "",
+              "variant": "default",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "",
+              "imageSide": "right",
+              "contentCenter": true
+            }
+          },
+
+          {
+            "type": "AreasofDevelopment",
+            "props": {
+              "bg": "#FFFFFF",
+              "eyebrow": "",
+              "title": "The Ethics of Materials",
+              "description": "",
+              "gridCols": { "desktop": 3, "tablet": 2, "mobile": 1 },
+              "cardBg": "#273C75",
+              "textColor": "text-white",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-7 sm:p-8",
+              "cardMinHeight": 260,
+              "equalHeight": true,
+              "tightTitleWhenNoIcon": true,
+              "cardBehindTabs": {
+                "enabled": true,
+                "width": 28,
+                "offsetX": 10,
+                "offsetY": 0,
+                "radius": 18,
+                "insetTop": 0,
+                "insetBottom": 0,
+                "colors": ["#78D6F3", "#F5A48D", "#F9E27C"],
+                "borderColor": "#131313",
+                "borderWidth": 2
+              },
+              "cardDivider": {
+                "enabled": true,
+                "style": "dotted",
+                "color": "rgba(255,255,255,0.35)",
+                "marginTop": 18,
+                "marginBottom": 0
+              },
               "items": [
                 {
-                  "tag": "",
-                  "title": "Privacy",
-                  "icon": "/icon/brain.png",
-                  "text": "Where will this drone fly? Could it capture images without consent? The same sensitivity to others learned through Grace and Courtesy at age two — now applied to technology."
+                  "title": "Care of tools",
+                  "text": "Every tool has its place. Every tool is cleaned after use. This is Care of Environment extended into the workshop — the same principle learned at age two, now applied to laser cutters."
                 },
                 {
-                  "tag": "",
-                  "title": "Safety",
-                  "icon": "/icon/brain.png",
-                  "text": "What could go wrong? What is the risk to people, property, and wildlife? Care for others extended to care for all beings."
+                  "title": "Respect for materials",
+                  "text": "Wood comes from trees. Metal comes from ore. Plastic comes from oil. Nothing is \"just material.\" Students learn to use only what they need, to waste nothing, to see matter as precious."
                 },
                 {
-                  "tag": "",
-                  "title": "Ecology",
-                  "icon": "/icon/brain.png",
-                  "text": "What is the environmental impact? Noise disturbance? Energy use? Battery disposal? Care for environment extended to ecological conscience."
-                },
-                {
-                  "tag": "",
-                  "title": "Purpose",
-                  "icon": "/icon/brain.png",
-                  "text": "Why are we flying? Does the benefit justify the costs? Is this serving genuine need or manufactured desire?"
+                  "title": "Responsibility for creation",
+                  "text": "Whatever you make exists. It will persist. It will have effects. This awareness shapes design: Can it be repaired? Recycled? Will it burden the Earth?"
                 }
               ]
             }
           },
+
           {
             "type": "imageText",
             "props": {
-              "bgClass": "bg-[#F3E3CF]",
+              "bgClass": "bg-[#EEF7FD]",
               "SecBg": "",
-              "title": "Control of Error: Consequences as Teachers",
+              "title": "The Hand That Builds the Mind — And Conscience",
               "text": [
-                "Drones crash. This is control of error at work — the student sees for themselves what went wrong. But we extend this to ethical learning.",
-                "When a flight disturbs birds, the student sees the disturbance. When a design wastes material, the student feels the waste. When a purpose isn’t clear, the meaninglessness becomes apparent. Consequences teach — not through lectures, but through experience.",
-                "We measure time-to-restart: how quickly can a student recover from failure? But we also notice: how quickly do they ask “What did I not consider? What consequence did I not foresee?”"
+                "Dr. Montessori observed that children build their intelligence through their hands. But there is more. When the hand works with materials, it develops relationship with those materials. The child learns to respect the weight of the Pink Tower cube, the fragility of the glass pitcher, the living nature of clay.",
+                "This is the foundation of ethical making: respect for materials, care for tools, awareness that everything we touch has its own nature that must be honoured. The hand that builds the mind also builds sensitivity to matter — living and non-living."
               ],
-              "imageUrl": "/innovation/drone/control-of-error.webp",
+              "imageUrl": "/innovation/innovation-lab/materials-01.webp",
               "variant": "default",
-              "cardBg": "#ffffff",
+              "cardBg": "#FFFFFF",
               "cardRadius": "rounded-2xl",
               "cardPadding": "p-8 sm:p-10",
               "imageSide": "left",
@@ -6275,52 +6266,18 @@
               "contentCenter": false
             }
           },
-          {
-            "type": "featureGrid",
-            "props": {
-              "headline": "Technical Mastery — For What Purpose?",
-              "subText": "Students master aerodynamics, electronics, programming, calibration. But every technical skill is paired with a conscience question:",
-              "items": [
-                {
-                  "tag": "",
-                  "title": "Aerodynamics",
-                  "icon": "/icon/icon-capa.svg",
-                  "text": "Understanding lift and drag — and asking: Should this thing fly? Is flight necessary for this purpose?"
-                },
-                {
-                  "tag": "",
-                  "title": "Electronics",
-                  "icon": "/icon/icon-documented.svg",
-                  "text": "Wiring and soldering — and asking: Where do these components come from? What are the conditions of their manufacture? What happens when they’re discarded?"
-                },
-                {
-                  "tag": "",
-                  "title": "Programming",
-                  "icon": "/icon/icon-synaptic-fusion.svg",
-                  "text": "Coding flight paths — and asking: What should autonomous machines be permitted to do? What decisions should require human judgment?"
-                },
-                {
-                  "tag": "",
-                  "title": "Safety",
-                  "icon": "/icon/icon-AMI.svg",
-                  "text": "What could go wrong? What is the risk to people, property, wildlife? Care for others extended to care for all beings."
-                }
-              ]
-            }
-          },
+
           {
             "type": "imageText",
             "props": {
-              "bgClass": "bg-[#F3E3CF]",
-              "SecBg": "",
-              "title": "Real Applications — Real Responsibility",
+              "bgClass": "bg-[#FFFFFF]",
+              "SecBg": "bg-[#FFFFFF]",
+              "title": "Creation Carries Responsibility",
               "text": [
-                "Drone skills connect to genuine work — crop monitoring for Hydroponics, terrain mapping for agricultural projects. Every application carries responsibility:",
-                "Flying over crops: Are we disturbing beneficial insects? Is the flight necessary, or could we observe another way?",
-                "Documentation: Are we respecting privacy? Do we have permission to capture these images?",
-                "The patents: Each innovation evaluated not just for novelty but for benefit. The question “Will this help?” is as important as “Does this work?”"
+                "Our observations with children aged six and beyond revealed that the hands want more than manipulation. They want to create, to design, to construct. But creation carries responsibility. The child who makes something is responsible for what they make.",
+                "The Innovation Lab serves this need — the need to create with conscience. Every project includes the questions: What is this for? Who does it serve? What are its consequences for living and non-living systems?"
               ],
-              "imageUrl": "/innovation/drone/real-applications.webp",
+              "imageUrl": "/innovation/innovation-lab/creation-01.webp",
               "variant": "default",
               "cardBg": "#EEF7FD",
               "cardRadius": "rounded-2xl",
@@ -6332,157 +6289,134 @@
               "contentCenter": false
             }
           },
+
           {
-            "type": "montessoriForSuccess",
-            "props": {
-              "bg": "#FFFFFF",
-              "title": "Valorization With Conscience",
-              "items": [
-                {
-                  "name": "DR. MARIA MONTESSORI",
-                  "role": "Citizen of the World",
-                  "quote": "Children should be made to realize all great achievements... are due to the work of men driven by a profound passion... to create new benefits not only for the people who lived in their times, but also for those of the future."
-                }
-              ]
-            }
-          },
-          {
-            "type": "CenteredTextBlock",
+            "type": "AreasofDevelopment",
             "props": {
               "bg": "#EEF7FD",
-              "title": "Valorization With Conscience",
-              "subtitle": "",
-              "textParts": [
-                "The five patent applications are evidence of Valorization — the adolescent’s need to prove worth through genuine contribution. But this is Valorization with conscience. The students’ worth is proven not just by creating something novel, but by creating something good.",
-                "They have felt the “profound passion” Montessori described — and directed it toward “new benefits” for the future. For people and for the Earth.",
-                "The Drone Lab produces pilots with conscience — young people who can fly, and who ask before every flight: ",
-                { "bold": "Should I?" },
-                "\n\nBack to Biomimicry Hive  |  Explore The Space Lab →"
-              ],
-              "maxWidth": "56rem",
-              "sectionBg": "bg-iceSoft"
-            }
-          },
-          {
-            "type": "innovationLogoStrip",
-            "props": {
-              "sectionBg": "",
-              "sectionClass": "",
-              "sectionTitleClass": "text-[1.5rem] sm:text-base md:text-[2.8rem] text-[#4F4F4F] font-medium text-center pb-16",
-              "text": "Media Mentions",
-              "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
-              "logos": [
-                { "src": "/icon/media/cision.png", "alt": "Cision", "width": "169", "height": "76" },
-                { "src": "/icon/media/business-today.png", "alt": "Business Today", "width": "234", "height": "42" },
-                { "src": "/icon/media/disha.png", "alt": "Disha", "width": "234", "height": "76" },
-                { "src": "/icon/media/ew.png", "alt": "Cision", "width": "83", "height": "76" },
-                { "src": "/icon/media/one-news-page.png", "alt": "Business Today", "width": "234", "height": "76" },
-                { "src": "/icon/media/web-india.png", "alt": "Disha", "width": "234", "height": "76" },
-                { "src": "/icon/media/upturn.png", "alt": "Cision", "width": "186", "height": "76" },
-                { "src": "/icon/media/sanvad.png", "alt": "Business Today", "width": "155", "height": "76" },
-                { "src": "/icon/media/socialNews.png", "alt": "Disha", "width": "234", "height": "76" },
-                { "src": "/icon/media/manglorean.png", "alt": "Cision", "width": "234", "height": "76" },
-                { "src": "/icon/media/five.png", "alt": "Business Today", "width": "52", "height": "76" },
-                { "src": "/icon/media/varindia.png", "alt": "Disha", "width": "234", "height": "76" },
-                { "src": "/icon/media/pti.png", "alt": "Cision", "width": "234", "height": "76" },
-                { "src": "/icon/media/tmc.png", "alt": "Business Today", "width": "234", "height": "76" },
-                { "src": "/icon/media/ground.png", "alt": "Disha", "width": "234", "height": "76" },
-                { "src": "/icon/media/newDelhi.png", "alt": "Cision", "width": "74", "height": "76" },
-                { "src": "/icon/media/business-news.png", "alt": "Business News", "width": "234", "height": "76" },
-                { "src": "/icon/media/india-today.png", "alt": "India Today", "width": "141", "height": "76" }
-              ]
-            }
-          },
-          {
-            "type": "youngInnovatorsGrid",
-            "props": {
-              "bg": "#F3E3CF",
-              "title": "Meet Our Young Innovators",
-              "subtitle": "A celebration of hands-on learning, discovery, and fearless innovation.",
-              "maxWidth": "max-w-6xl",
-              "cols": { "base": 1, "md": 2 },
-              "gap": "gap-8",
+              "eyebrow": "",
+              "title": "Tools Across Development",
+              "description": "Our curriculum introduces five hundred tools across eighteen years — each expanding capability, each requiring care.",
+              "gridCols": { "desktop": 3, "tablet": 2, "mobile": 1 },
+              "cardBg": "#273C75",
+              "textColor": "text-slate-900",
               "cardRadius": "rounded-2xl",
-              "cardPadding": "p-5",
-              "cardBg": "#FFFFFF",
-              "imageRadius": "rounded-xl",
-              "imageAspect": "aspect-[4/3]",
+              "cardPadding": "p-7 sm:p-8",
+              "cardMinHeight": 260,
+              "equalHeight": true,
+              "tightTitleWhenNoIcon": true,
+              "cardBehindTabs": {
+                "enabled": true,
+                "width": 28,
+                "offsetX": 10,
+                "offsetY": 0,
+                "radius": 18,
+                "insetTop": 0,
+                "insetBottom": 0,
+                "colors": ["#78D6F3", "#F5A48D", "#F9E27C"],
+                "borderColor": "#131313",
+                "borderWidth": 2
+              },
+              "cardDivider": {
+                "enabled": false,
+                "style": "dotted",
+                "color": "rgba(0,0,0,0.15)",
+                "marginTop": 18,
+                "marginBottom": 0
+              },
               "items": [
-                { "layout": "card", "image": "/innovation/drone/innovator-01.webp", "alt": "Team photo 1", "text": "“These three young men are Ayushman, Sanshray and Dhairya who came up with the idea of a rescue drone to save children who may have fallen into open bore wells...”" },
-                { "layout": "card", "image": "/innovation/drone/innovator-02.webp", "alt": "Team photo 2", "text": "“Meet Nayonika, Uma, Aditi and Akira... a drone to deliver essential services...”" },
-                { "layout": "card", "image": "/innovation/drone/innovator-03.webp", "alt": "Team photo 3", "text": "“The team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...”" },
-                { "layout": "card", "image": "/innovation/drone/innovator-04.webp", "alt": "Team photo 4", "text": "“The team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...”" },
-                { "layout": "split", "span": { "md": 2 }, "image": "/innovation/drone/innovator-05.webp", "alt": "Team photo 5", "text": "“This is the team of Aryan, Hasith and Akshat... a security drone...”" },
                 {
-                  "layout": "textOnly",
-                  "span": { "md": 2 },
-                  "textParts": [
-                    "These children will grow into a world that you and me cannot even begin to imagine...",
-                    "“We are hoping to revolutionize the thinking and working of the school education system...”",
-                    "The Drone Research and Innovation Centre is a first of its kind..."
-                  ]
+                  "title": "First Plane (0–6): Foundations of Care",
+                  "text": "Pouring jugs. Scissors. Tweezers. The child learns to carry the pitcher gently, to return the scissors to their place. Hand control develops alongside respect for objects."
+                },
+                {
+                  "title": "Second Plane (6–12): Expanding with Responsibility",
+                  "text": "Hand saws. Hammers. Drills. Soldering irons. Each new tool requires learning proper use, maintenance, return to readiness. The Human Tendencies find expression within the context of responsibility."
+                },
+                {
+                  "title": "Third Plane (12–18): Power and Conscience",
+                  "text": "Laser cutters. 3D printers. CNC machines. Tools with real power and real consequences. With power comes responsibility; with capability comes conscience."
                 }
               ]
             }
           },
+
           {
-            "type": "innovationGallery",
+            "type": "imageText",
             "props": {
-              "eyebrow": "",
-              "title": "Voices of Young Innovators",
-              "cols": { "base": 1, "sm": 2, "lg": 2 },
-              "tileMinHeight": 410,
-              "tileMaxHeight": 410,
-              "showThumbnails": true,
-              "videoAutoplay": false,
-              "videoMuted": false,
-              "videoControls": true,
-              "videoLoop": false,
-              "items": [
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-01.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-02.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-03.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-04.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-05.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-06.webp" }
-              ]
+              "bgClass": "bg-[#FFFFFF]",
+              "SecBg": "",
+              "title": "Control of Error: Ethical Learning",
+              "text": [
+                "We celebrate the \"broken model\" — the prototype that failed. But we extend control of error to ethical learning. When a design wastes material, when it could harm — the student experiences consequences.",
+                "Conscience forms not through rules imposed, but through consequences experienced."
+              ],
+              "imageUrl": "",
+              "variant": "card",
+              "cardBg": "#FFFFFF",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "contentCenter": false
+            }
+          },
+
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#EEF7FD]",
+              "SecBg": "bg-[#EEF7FD]",
+              "title": "From Making to Serving",
+              "text": [
+                "Every project includes: Who is this for? Does it serve genuine need? Does it heal or harm? Does it regenerate or extract? Students who filed patent applications evaluated them not just for novelty but for benefit.",
+                "The question is never just \"Can I make this?\" It is always also \"Should I make this?\""
+              ],
+              "imageUrl": "/innovation/innovation-lab/serving-01.webp",
+              "variant": "default",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "left",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#F3E3CF]",
+              "SecBg": "",
+              "title": "The Conscientious Creator",
+              "text": [
+                "“We may define a scientist as one who... has felt so passionate a love for the mysteries of nature that he forgets himself.”",
+                "— Dr. Maria Montessori",
+                "&nbsp;",
+                "The Innovation Lab produces conscientious creators — makers who ask at every step: Does this serve life? Does this honour the Earth? The hands that learned care through pouring now create with care. The respect for materials learned at age two shapes design decisions at age sixteen."
+              ],
+              "imageUrl": "",
+              "variant": "default",
+              "cardBg": "#F3E3CF",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "contentCenter": false
             }
           },
           {
-            "type": "innovationGallery",
+          "type": "pageNavButtons",
             "props": {
-              "eyebrow": "",
-              "title": "Gallery",
-              "images": [
-                "/innovation/classroom-1.webp",
-                "/innovation/classroom-2.webp",
-                "/innovation/classroom-3.webp",
-                "/innovation/classroom-4.webp",
-                "/innovation/classroom-5.webp",
-                "/innovation/classroom-6.webp",
-                "/innovation/classroom-7.webp",
-                "/innovation/classroom-8.webp",
-                "/innovation/classroom-9.webp",
-                "/innovation/classroom-10.webp",
-                "/innovation/classroom-11.webp",
-                "/innovation/classroom-12.webp"
-              ]
-            }
-          },
-          {
-            "type": "ctaBanner",
-            "props": {
-              "title": "Experience Learning\nthe Blue Blocks Way.",
-              "text": "Seats are filled on a first-come basis.",
-              "cta": { "label": "Book Admission Workshop", "href": "/contact" },
-              "image": "/innovation/drone.webp",
-              "imageAlt": "Campus building",
-              "imageWidth": "566",
-              "imageHeight": "506",
-              "imagePositionTopRight": "sm:-right-10 sm:-top-40",
-              "customTopSpacing": "sm:pt-00",
-              "align": "left",
-              "theme": "dark"
+              "bg": "bg-[#F3E3CF]",
+              "prev": {
+                "label": "Back to Innovation",
+                "href": "/innovation"
+              },
+              "next": {
+                "label": "Explore The Biomimicry Hive",
+                "href": "/innovation/biomimicry-hive"
+              }
             }
           }
         ]
@@ -6837,6 +6771,20 @@
               "align": "left",
               "theme": "dark"
             }
+          },
+          {
+          "type": "pageNavButtons",
+            "props": {
+              "bg": "bg-[#FFFFFF]",
+              "prev": {
+                "label": "Back to Biomimicry Hive",
+                "href": "/innovation/biomimicry-hive"
+              },
+              "next": {
+                "label": "Explore The Space Lab",
+                "href": "/innovation/space-lab"
+              }
+            }
           }
         ]
       },
@@ -7040,57 +6988,6 @@
             }
           },
           {
-            "type": "innovationLogoStrip",
-            "props": {
-              "sectionBg": "",
-              "sectionClass": "",
-              "sectionTitleClass": "text-[1.5rem] sm:text-base md:text-[2.8rem] text-[#4F4F4F] font-medium text-center pb-16",
-              "text": "Media Mentions",
-              "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
-              "logos": [
-                { "src": "/icon/media/cision.png", "alt": "Cision", "width": "169", "height": "76" },
-                { "src": "/icon/media/business-today.png", "alt": "Business Today", "width": "234", "height": "42" },
-                { "src": "/icon/media/disha.png", "alt": "Disha", "width": "234", "height": "76" },
-                { "src": "/icon/media/ew.png", "alt": "EW", "width": "83", "height": "76" },
-                { "src": "/icon/media/one-news-page.png", "alt": "One News Page", "width": "234", "height": "76" },
-                { "src": "/icon/media/web-india.png", "alt": "Web India", "width": "234", "height": "76" },
-                { "src": "/icon/media/upturn.png", "alt": "Upturn", "width": "186", "height": "76" },
-                { "src": "/icon/media/sanvad.png", "alt": "Sanvad", "width": "155", "height": "76" },
-                { "src": "/icon/media/socialNews.png", "alt": "Social News", "width": "234", "height": "76" },
-                { "src": "/icon/media/manglorean.png", "alt": "Manglorean", "width": "234", "height": "76" },
-                { "src": "/icon/media/five.png", "alt": "Five", "width": "52", "height": "76" },
-                { "src": "/icon/media/varindia.png", "alt": "Varindia", "width": "234", "height": "76" },
-                { "src": "/icon/media/pti.png", "alt": "PTI", "width": "234", "height": "76" },
-                { "src": "/icon/media/tmc.png", "alt": "TMC", "width": "234", "height": "76" },
-                { "src": "/icon/media/ground.png", "alt": "Ground", "width": "234", "height": "76" },
-                { "src": "/icon/media/newDelhi.png", "alt": "New Delhi", "width": "74", "height": "76" },
-                { "src": "/icon/media/business-news.png", "alt": "Business News", "width": "234", "height": "76" },
-                { "src": "/icon/media/india-today.png", "alt": "India Today", "width": "141", "height": "76" }
-              ]
-            }
-          },
-          {
-            "type": "innovationGallery",
-            "props": {
-              "eyebrow": "",
-              "title": "Gallery",
-              "images": [
-                "/innovation/classroom-1.webp",
-                "/innovation/classroom-2.webp",
-                "/innovation/classroom-3.webp",
-                "/innovation/classroom-4.webp",
-                "/innovation/classroom-5.webp",
-                "/innovation/classroom-6.webp",
-                "/innovation/classroom-7.webp",
-                "/innovation/classroom-8.webp",
-                "/innovation/classroom-9.webp",
-                "/innovation/classroom-10.webp",
-                "/innovation/classroom-11.webp",
-                "/innovation/classroom-12.webp"
-              ]
-            }
-          },
-          {
             "type": "ctaBanner",
             "props": {
               "title": "Experience Learning\nthe Blue Blocks Way.",
@@ -7104,6 +7001,20 @@
               "customTopSpacing": "sm:pt-00",
               "align": "left",
               "theme": "dark"
+            }
+          },
+          {
+          "type": "pageNavButtons",
+            "props": {
+              "bg": "bg-[#FFFFFF]",
+              "prev": {
+                "label": " Back to Innovation Lab",
+                "href": "/innovation/innovation-lab"
+              },
+              "next": {
+                "label": " Explore The Drone Lab",
+                "href": "/innovation/drone-lab"
+              }
             }
           }
         ]
@@ -7465,6 +7376,20 @@
               "customTopSpacing": "sm:pt-00",
               "align": "left",
               "theme": "dark"
+            }
+          },
+          {
+          "type": "pageNavButtons",
+            "props": {
+              "bg": "bg-[#FFFFFF]",
+              "prev": {
+                "label": "Back to Drone Lab",
+                "href": "/innovation/drone-lab"
+              },
+              "next": {
+                "label": "Back to Innovation Home",
+                "href": "/innovation/"
+              }
             }
           }
         ]

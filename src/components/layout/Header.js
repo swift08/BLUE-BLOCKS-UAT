@@ -315,13 +315,13 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
               <div>
                 <div className="mb-2 p-5 pb-0 flex items-center justify-between gap-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                    {viewAll?.label || "View All"}{" "}
+                    
                     {viewAll?.href ? (
                       <Link
                         href={normalizeHref(viewAll.href)}
                         className="text-xs font-medium text-[#0E4AA2] hover:underline"
                       >
-                        →
+                        {viewAll?.label || "View All"} →
                       </Link>
                     ) : null}
                   </p>

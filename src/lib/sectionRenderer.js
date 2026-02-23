@@ -60,6 +60,7 @@ import YoungInnovatorsGrid from "@/components/blocks/YoungInnovatorsGrid";
 import ImpactCollageSplit from "@/components/blocks/ImpactCollageSplit";
 import FounderVisionSplit from "@/components/blocks/FounderVisionSplit";
 import LegalDocument from "@/components/blocks/LegalDocument";
+import PageNavButtons from "@/components/ui/PageNavButtons";
 
 export default function SectionRenderer({ sections = [] }) {
   return (
@@ -70,6 +71,9 @@ export default function SectionRenderer({ sections = [] }) {
 
         switch (type) {
           // ADD:
+          case "pageNavButtons": 
+            return <PageNavButtons key={key} {...props} />;
+
           case "legalDocument": 
             return <LegalDocument key={key} {...props} />;
 
