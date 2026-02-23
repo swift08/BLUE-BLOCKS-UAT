@@ -3246,7 +3246,7 @@
                 "sm": 2,
                 "lg": 3
               },
-              "maxWidth": "max-w-6xl",
+              "maxWidth": "none",
               "gap": "gap-8",
               "cardBg": "#273C75",
               "cardRadius": "rounded-[18px]",
@@ -3455,13 +3455,8 @@
             "props": {
               "title": "Programs",
               "breadcrumb": [
-                {
-                  "label": "Programs",
-                  "href": "program"
-                },
-                {
-                  "label": "The Self-Interpretive"
-                }
+                { "label": "Programs", "href": "program" },
+                { "label": "The Children's House" }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -3473,34 +3468,26 @@
           {
             "type": "programIntroSplit",
             "props": {
-              "eyebrow": "The Self-Interpretive",
-              "title": "The Absorbent Mind (Conscious)",
-              "subTitle": "",
+              "eyebrow": "THE CHILDREN'S HOUSE",
+              "title": "The Children's House",
+              "subTitle": "Primary Program (Ages 2.5–6 | Nursery, PP1, PP2)",
               "text": "",
+              "badge": "THE CHILDREN'S HOUSE",
               "metaRows": [
                 {
                   "label": "Sub-head",
-                  "value": "\"Help Me To Think For Myself\"",
-                  "bg": {
-                    "label": "#F3D8CF",
-                    "value": "#F3D8CF"
-                  }
+                  "value": "The Architect of the Self",
+                  "bg": { "label": "#F3D8CF", "value": "#F3D8CF" }
                 },
                 {
                   "label": "Age",
                   "value": "2.5 Years – 6 Years",
-                  "bg": {
-                    "label": "#DFE7DA",
-                    "value": "#DFE7DA"
-                  }
+                  "bg": { "label": "#DFE7DA", "value": "#DFE7DA" }
                 },
                 {
                   "label": "Theme",
                   "value": "Conscious Construction",
-                  "bg": {
-                    "label": "#D9E7EA",
-                    "value": "#D9E7EA"
-                  }
+                  "bg": { "label": "#D9E7EA", "value": "#D9E7EA" }
                 }
               ],
               "media": {
@@ -3521,150 +3508,298 @@
             }
           },
           {
-            "type": "CenteredTextBlock",
+            "type": "imageText",
             "props": {
-              "bg": "#EEF7FD",
-              "title": "The Psychological Phase",
-              "textParts": [
-                "The child moves from 'unconscious absorption' to  ",
-                {
-                  "bold": "Conscious Construction."
-                },
-                ". The hands become the instruments of the brain. Through touching, moving, and organizing, the child literally constructs their intellect.They are driven by a desire for order, precision, and repetition."
+              "title": "A Letter to You",
+              "text": [
+                "Your child is no longer the infant who absorbed the world unconsciously.",
+                "\n\n",
+                "Something has shifted. You've seen it — the endless \"why\" questions, the insistence on doing things \"by myself,\" the frustration when something doesn't work exactly right.",
+                "\n\n",
+                "Building on the Toddler's triumph of functional independence — \"Help me do it myself\" — the Primary child now issues a new command: \"Help me to think for myself.\" The hands that learned to move now learn to organize thought.",
+                "\n\n",
+                "Between birth and three, your child absorbed the world like a sponge — without effort or awareness. That phase has passed. Now, from 2.5 to 6 years, something different is happening. The mind that once absorbed unconsciously now constructs consciously.",
+                "\n\n",
+                "Your child is no longer just taking in impressions — she is organizing them, classifying them, building mental order.",
+                "\n\n",
+                "Dr. Montessori called this Conscious Construction — the child as architect of the self. The Children's House is designed to serve this construction."
               ],
-              "maxWidth": "56rem",
-              "sectionBg": "bg-iceSoft"
+              "imageUrl": "",
+              "align": "left",
+              "variant": "card",
+              "bg": "#F3E3CF",
+              "contentCenter" : true
             }
           },
           {
-            "type": "AreasofDevelopment",
+            "type": "imageText",
             "props": {
-              "bg": "#F3E3CF",
-              "title": "The Prepared Environment",
-              "description": "A space of order and beauty where materials are scientifically designed to isolate specific concepts.",
-              "headerAlign": "center",
-              "cols": {
-                "base": 1,
-                "sm": 2,
-                "lg": 2
-              },
-              "maxWidth": "max-w-5xl",
-              "gap": "gap-8",
-              "cardBg": "#273C75",
-              "cardRadius": "rounded-[18px]",
-              "cardPadding": "px-6 py-7",
-              "cardMinHeight": 260,
-              "equalHeight": true,
-              "tightTitleWhenNoIcon": true,
-              "cardBehindTabs": {
-                "enabled": true,
-                "width": 28,
-                "offsetX": 10,
-                "offsetY": 0,
-                "radius": 18,
-                "insetTop": 0,
-                "insetBottom": 0,
-                "colors": [
-                  "#78D6F3",
-                  "#F5A48D",
-                  "#F9E27C"
-                ],
-                "borderColor": "#131313",
-                "borderWidth": 2
-              },
-              "cardDivider": {
-                "enabled": true,
-                "style": "dotted",
-                "color": "rgba(255,255,255,0.35)",
-                "marginTop": 18,
-                "marginBottom": 0
-              },
-              "items": [
-                {
-                  "title": "Practical Life",
-                  "text": "These are not chores; they are the foundation of focus. Washing, polishing, and sweeping build coordination, the will, and the ability to complete a cycle of activity.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
-                },
-                {
-                  "title": "Sensorial",
-                  "text": "Refining the senses to perceive differences in the world. Using scientifically designed materials, the child learns to classify dimension, color, shape, and texture.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
-                },
-                {
-                  "title": "Language",
-                  "text": "A rich explosion of vocabulary. Through the 'Sandpaper Letters' and 'Moveable Alphabet,' the child discovers that sounds have symbols, leading to an explosion into writing and reading.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
-                },
-                {
-                  "title": "Mathematics",
-                  "text": "Making the abstract physically graspable. The child handles the 'Golden Beads' to understand the decimal system concretely before ever seeing a number on a page.",
-                  "tabColors": [
-                    "#78D6F3",
-                    "#F5A48D",
-                    "#F9E27C"
-                  ]
-                }
+              "sectionBg": "#FFFFFF",
+              "title": "The Graduate",
+              "text": [
+                "Recently, in one of Hyderabad's gated communities, organizers gathered 40 children of similar age for a group activity. Within minutes, 38 children couldn't follow instructions. The event was cancelled. Only two children remained calm — able to listen, respond, and engage with purpose.",
+                "Both were Blue Blocks children.",
+                "This is not obedience. It is something deeper: emotional equanimity — the inner balance that emerges when a child's energies have been consumed meaningfully, day after day, for three years. It cannot be taught directly. It can only be built.",
+                "This is what the Children's House builds."
+              ],
+              "imageUrl": "/programs/nursery/main.webp",
+              "variant": "default",
+              "cardBg": "#F7EADB",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "sectionBg": "#F7EADB",
+              "title": "The Work Cycle",
+              "text": [
+                "At Blue Blocks, children have 3 to 4 hours of uninterrupted work time every morning.",
+                "No bells. No forced transitions. No \"circle time\" breaks the spell of concentration.",
+                "Watch what happens: a child chooses work, engages deeply, repeats it — not once, but three, four, five times. Not because anyone asked her to, but because something inside needs this repetition. When she finishes, she is calm. Satisfied. Ready.",
+                "This is Normalization — Dr. Montessori's term for the natural state of the child when obstacles to development are removed. The scattered child becomes focused. The restless child becomes calm. This is not discipline imposed from outside; it is an order constructed from within."
+              ],
+              "imageUrl": "/programs/nursery/small-thumb-1.webp",
+              "variant": "default",
+              "imageSide": "left",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "sectionBg": "#FFFFFF",
+              "title": "The Explosion into Writing",
+              "text": [
+                "You may wonder: When will my child learn to read?",
+                "Here's what's different about Montessori: writing comes before reading.",
+                "Long before your child writes a single letter, her hand is being prepared through purposeful work. And one day — often without warning — the explosion happens. The child who could barely form letters suddenly writes words, sentences, and stories.",
+                "Reading follows naturally. A child who has built words letter by letter understands how language works from the inside out."
+              ],
+              "imageUrl": "/programs/nursery/small-thumb-2.webp",
+              "variant": "default",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "CenteredTextBlock",
+            "props": {
+              "bg": "#EEF7FD",
+              "title": "",
+              "textParts": [
+                "At Blue Blocks: While children in traditional pre-schools learn to print three-letter words, our children write in beautiful cursive script before age 6. By six, they read English fluently — not through drill, but through deep understanding."
               ]
             }
           },
           {
             "type": "imageText",
             "props": {
-              "title": "Expert Guidance",
+              "sectionBg": "#FFFFFF",
+              "title": "The Mathematical Mind",
               "text": [
-                "The guide does not lecture to the whole class. Instead, they give individual 'presentations,' offering a key to the world, and then leave the child to work freely. This protects the child's concentration from interruption."
+                "\"What about math? Will they learn numbers?\"",
+                "Your child will do far more than learn numbers. She will understand them.",
+                "In the Children's House, mathematics begins with the hands. The decimal system becomes tangible: a single bead is a unit, a bar of ten beads is a ten, a square of one hundred beads is a hundred, a cube of one thousand beads is a thousand. When a child carries the thousand cube across the room, she feels what a thousand means.",
+                "This is not memorisation. This is embodied understanding."
               ],
               "imageUrl": "/programs/nursery/expert-guidance.webp",
-              "variant": "card",
+              "variant": "default",
+              "imageSide": "left",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "CenteredTextBlock",
+            "props": {
+              "bg": "#EEF7FD",
+              "title": "",
+              "textParts": [
+                "At Blue Blocks: While traditional pre-schools teach one and two-digit addition, our children master addition, subtraction, multiplication, and division. Some reach fractions before entering Grade 1. This is not acceleration — it's what's possible when mathematics is made physically graspable."
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "sectionBg": "#FFFFFF",
+              "title": "Learning Without Fear",
+              "text": [
+                "In traditional schools, mistakes are corrected by teachers. A red mark. A verbal correction. The child learns that errors bring attention — and often, shame.",
+                "In the Children's House, every material contains its own Control of Error. When a child places the cylinders in the wrong sockets, the last one won't fit. The teacher doesn't even look. Doesn't bring it to the child's awareness. The child completes the work, sees that something is incomplete, removes all the cylinders, and tries again.",
+                "Three times. Four times. Five times. Until she gets it.",
+                "This builds something precious: the understanding that mistakes are information, not failures. The child develops resilience, persistence, and the courage to try."
+              ],
+              "imageUrl": "/programs/nursery/main.webp",
+              "variant": "default",
               "cardBg": "#EEF7FD",
               "cardRadius": "rounded-2xl",
-              "cardPadding": "p-8 sm:p-10",
+              "cardPadding": "",
               "imageSide": "right",
               "imageClassName": "rounded-2xl",
               "imageFit": "cover",
-              "imageAspect": "aspect-[4/3]"
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "sectionBg": "#F7EADB",
+              "title": "The Mixed-Age Community",
+              "text": [
+                "The Children's House contains three ages in one space. The younger children watch and learn. The older children consolidate their knowledge by helping — and in doing so, become leaders.",
+                "Recently, we observed a three-and-a-half-year-old helping a newly arrived two-and-a-half-year-old. The older child helped the younger one put her bag in the shelf, stayed with her until she was settled, and only then went to do her own work.",
+                "No adult asked her to do this. Leadership at Blue Blocks is not taught as a subject; it emerges naturally from a community that lives it."
+              ],
+              "imageUrl": "/programs/nursery/small-thumb-1.webp",
+              "variant": "default",
+              "imageSide": "left",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
             }
           },
           {
             "type": "outcomesPills",
             "props": {
               "bg": "#FFFFFF",
-              "title": "Outcomes",
+              "title": "Your Child at Six",
               "titleAlign": "center",
               "maxWidth": "",
               "gap": "gap-4",
               "items": [
                 {
                   "icon": "/icon/brain.png",
-                  "text": "Extended Concentration: The ability to focus deeply.",
+                  "text": "Functional Independence — she can take care of herself and her environment.",
                   "pillBg": "#F9E48F"
                 },
                 {
                   "icon": "/icon/heart-box.png",
-                  "text": "Love of Order: Internalizing structure",
+                  "text": "Love of Order — internal structure and calm routines.",
                   "pillBg": "#F9A78F"
                 },
                 {
-                  "icon": "/icon/brain-b.png",
-                  "text": "Mathematical Mind: Concrete understanding of the decimal system.",
+                  "icon": "/icon/community-b.png",
+                  "text": "Social Grace — courtesy, etiquette, and the ability to follow complex instructions.",
                   "pillBg": "#95D6ED"
                 },
                 {
-                  "icon": "/icon/community-b.png",
-                  "text": "Social Cohesion: Grace and Courtesy.",
+                  "icon": "/icon/brain-b.png",
+                  "text": "Deep Concentration — the ability to focus, stay with a task, and see it through.",
                   "pillBg": "#F9E48F"
+                },
+                {
+                  "icon": "/icon/brain-b.png",
+                  "text": "Mathematical Understanding — not just numbers, but the logic beneath them.",
+                  "pillBg": "#F9A78F"
+                },
+                {
+                  "icon": "/icon/community-b.png",
+                  "text": "Literacy — beautiful cursive writing and fluent reading.",
+                  "pillBg": "#95D6ED"
+                },
+                {
+                  "icon": "/icon/heart-box.png",
+                  "text": "Emotional Equanimity — inner balance built through meaningful engagement.",
+                  "pillBg": "#F9E48F"
+                }
+              ],
+              "footerText": "She is ready for Grade 1 of any school, any board in India. But more than that — she has become the architect of her own self."
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "sectionBg": "#F3E3CF",
+              "title": "The Innovation Bridge",
+              "text": [
+                "The hands that work in the Children's House are building something invisible but essential: a deep connection between hand and mind.",
+                "At Blue Blocks, the elementary program includes Drone Labs, Biomimicry projects, Space initiatives, and Innovation Labs. But these don't appear from nowhere. The 3–6 years are where the foundation is laid — where cognition is built through material work, where precision is developed through real tools, where the hand learns to serve the intellect.",
+                "In elementary, the same hands that manipulated Cylinder Blocks and Golden Beads now want to create.",
+                "The path from the Children's House to the Innovation Lab is continuous. It begins here."
+              ],
+              "imageUrl": "/programs/nursery/small-thumb-2.webp",
+              "variant": "default",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "montessoriForSuccess",
+            "props": {
+              "bg": "#FFFFFF",
+              "title": "EXPERTS SPEAK",
+              "items": [
+                {
+                  "name": "A Blue Blocks Parent",
+                  "role": "Maria Montessori, To Educate the Human Potential",
+                  "quote": "“We were worried about 'academics.' Everyone told us our son needed worksheets, homework, and competition. Instead, we watched him build the decimal system with golden beads, write his first story in cursive, and explain fractions to his younger cousin. At six, he wasn't just 'ready' for school — he was hungry for more.”"
+                }
+              ]
+            }
+          },
+          {
+            "type": "ctaBanner",
+            "props": {
+              "title": "For the developmental",
+              "text": "foundations of this approach, see our paper. The Conscious Construction of Intelligence",
+              "cta": {
+                "label": "Know More",
+                "href": "#"
+              },
+              "image": "/building-image-01.webp",
+              "imageAlt": "Campus building",
+              "imageWidth": "566",
+              "imageHeight": "506",
+              "customTopSpacing": "sm:pt-70",
+              "align": "left",
+              "theme": "dark"
+            }
+          },
+          {
+            "type": "faq",
+            "props": {
+              "bg": "#F3E3CF",
+              "defaultOpenIndex": 0,
+              "panelMaxWidth": "none",
+              "title": "Frequently Asked Questions",
+              "subtitle": "",
+              "items": [
+                {
+                  "q": "Will my child be ready for Grade 1?",
+                  "a": "Yes. By age 6, Blue Blocks children exceed the academic requirements for Grade 1 entry across all boards in India. More importantly, they have the concentration, social grace, and love of learning that makes them thrive anywhere."
+                },
+                {
+                  "q": "Is this just play, or is there real learning?",
+                  "a": "What you see is purposeful work — chosen by the child, repeated until mastered. The joy you see is not the absence of learning; it's the presence of meaningful engagement."
+                },
+                {
+                  "q": "How will I know what my child is learning?",
+                  "a": "We track developmental milestones and share progress reports with families. We discuss your child's trajectory in parent conferences — not in comparison to others, but in relation to their own development."
+                },
+                {
+                  "q": "What if my child doesn't want to work?",
+                  "a": "A child who appears unmotivated hasn't yet found work that matches their developmental need. When a child finds the right work, you don't need to motivate them — they can't be stopped."
                 }
               ]
             }
