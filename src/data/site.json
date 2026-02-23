@@ -9154,10 +9154,6 @@
             "title": "“The Social Newborn”",
             "subtitle": "Developmental Foundations of the Adolescent Community",
             "bgImageUrl": "/innovation/innov_hero.webp",
-            "description": [
-              "<b>Adolescent Programme (Ages 12–18 | Grades 7–12) | Third Plane of Development</b>",
-              "<b>How to read this paper:</b> This document completes the developmental sequence established in Papers 2, 4, and 6. Together, the eight papers constitute a complete account of the first three Planes of Development at Blue Blocks. Terminology follows the AMI training tradition. Contemporary neuroscience and developmental psychology references are included where they corroborate Montessori's original observations."
-            ],
             "primaryCta": "",
             "secondaryCta": "",
             "align": "center",
@@ -9172,7 +9168,9 @@
             "maxWidth":"none",
             "effectiveDate": "24/02/2026",
             "intro": [
-              "<b>PAPER 8</b>"            
+              "<b>PAPER 8</b>",
+              "<b>Adolescent Programme (Ages 12–18 | Grades 7–12) | Third Plane of Development</b>",
+              "<b>How to read this paper:</b> This document completes the developmental sequence established in Papers 2, 4, and 6. Together, the eight papers constitute a complete account of the first three Planes of Development at Blue Blocks. Terminology follows the AMI training tradition. Contemporary neuroscience and developmental psychology references are included where they corroborate Montessori's original observations."
             ],
             "sections": [
               {
@@ -9448,14 +9446,26 @@
           }
         },
         {
+          "type": "innovationMediaHero",
+          "props": {
+            "title": "“The Architecture of the Universe”",
+            "subtitle": "Developmental Foundations of the Elementary Community",
+            "bgImageUrl": "/innovation/innov_hero.webp",
+            "primaryCta": "",
+            "secondaryCta": "",
+            "align": "center",
+            "height": "innovation",
+            "overlay": "dark",
+            "showArcs": true
+          }
+        },
+        {
           "type": "legalDocument",
           "props": {
             "maxWidth":"none",
             "effectiveDate": "24/02/2026",
             "intro": [
               "<b>PAPER 6</b>",
-              "<b>The Architecture of the Universe</b>",
-              "Developmental Foundations of the Elementary Community",
               "<b>Elementary Programme (Ages 6–12 | Grades 1–6) | Second Plane of Development</b>",
               "<b>How to read this paper:</b> This document continues the developmental sequence established in Paper 2 (The Ground State: Birth to Three) and Paper 4 (The Conscious Construction of Intelligence: Ages 2.5–6). Together with Papers 5 and 6, they constitute a complete account of the first two Planes of Development. Terminology follows the AMI training tradition. Contemporary neuroscience references are included where they corroborate Montessori's original observations."
             ],

@@ -23,7 +23,6 @@ export default function InnovationMediaHero({
   image,
   title,
   subtitle,
-  description = [],
 
   // legacy default had text-xs/sm:text-sm; keep prop but strip sizing tokens
   cardTextClassName = "mt-3 text-white/85 text-xs sm:text-sm leading-relaxed",
@@ -65,14 +64,6 @@ export default function InnovationMediaHero({
                     <p className={["mt-8 bb-text text-white/85", stripTypographySizing(cardTextClassName)].filter(Boolean).join(" ")}>
                       {subtitle}
                     </p>
-                  ) : null}
-                  
-                  {Array.isArray(description) && description.length ? (
-                    <div className={["mt-8 bb-text text-white/85", stripTypographySizing(cardTextClassName)].filter(Boolean).join(" ")}>
-                      {description.map((line, idx) => (
-                        <p key={idx} className={idx ? "mt-3" : ""} dangerouslySetInnerHTML={{ __html: line }} />
-                      ))}
-                    </div>
                   ) : null}
 
                   {(primaryCta?.href && primaryCta?.label) || (secondaryCta?.href && secondaryCta?.label) ? (
