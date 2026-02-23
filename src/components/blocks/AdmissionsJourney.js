@@ -95,7 +95,7 @@ function JourneyCard({
   cardTextClassName = "bb-card-text", // ✅ default now global
 }) {
   return (
-    <div className="rounded-2xl bg-[#F3E3CF] px-6 py-6 h-full w-full flex flex-col justify-between">
+    <div className="rounded-2xl bg-[#F3E3CF] px-6 py-6 h-full w-full flex flex-col justify-flex-start">
       <div className="flex items-center justify-center">
         <div className="relative h-10 w-10">
           {icon ? <Image src={icon} alt={title || ""} fill className="object-contain" /> : null}

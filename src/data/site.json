@@ -3,34 +3,15 @@
     "name": "Blue Blocks",
     "logo": "/icon/logo.svg",
     "announcements": [
-      {
-        "text": "ADMISSIONS OPEN — JOIN OUR NEXT MONTESSORI ADMISSION WORKSHOP. LIMITED SEATS AVAILABLE!"
-      },
-      {
-        "text": "INDIA’S FIRST MONTESSORI + INNOVATION ECOSYSTEM — EMPOWERING LEARNERS FROM BIRTH TO 18."
-      }
+      {"text": "ADMISSIONS OPEN — JOIN OUR NEXT MONTESSORI ADMISSION WORKSHOP. LIMITED SEATS AVAILABLE!"},
+      {"text": "INDIA’S FIRST MONTESSORI + INNOVATION ECOSYSTEM — EMPOWERING LEARNERS FROM BIRTH TO 18."}
     ],
     "nav": [
-      {
-        "label": "Home",
-        "href": "/"
-      },
-      {
-        "label": "What do we do",
-        "href": "/about-us"
-      },
-      {
-        "label": "Programs",
-        "href": "/programs"
-      },
-      {
-        "label": "Innovations",
-        "href": "/innovation"
-      },
-      {
-        "label": "Contact",
-        "href": "/contact-us"
-      }
+      {"label": "Home", "href": "/"},
+      { "label": "What do we do", "href": "/about-us"},
+      { "label": "Programs", "href": "/programs"},
+      { "label": "Innovations", "href": "/innovation"},
+      { "label": "Contact", "href": "/contact-us"}
     ],
     "url": "#",
     "schema": {
@@ -57,22 +38,14 @@
             "telephone": "+91 9000955050",
             "contactType": "customer service",
             "areaServed": "IN",
-            "availableLanguage": [
-              "en",
-              "hi",
-              "te"
-            ]
+            "availableLanguage": ["en", "hi", "te"]
           },
           {
             "@type": "ContactPoint",
             "telephone": "+91 9000955053",
             "contactType": "WhatsApp",
             "areaServed": "IN",
-            "availableLanguage": [
-              "en",
-              "hi",
-              "te"
-            ]
+            "availableLanguage": ["en", "hi", "te"]
           }
         ],
         "foundingDate": "2009",
@@ -130,17 +103,10 @@
     "whatDoWeDo": {
       "label": "What do we do",
       "viewAll": {
-        "label": "What do we do",
+        "label": "About Us",
         "href": "/about-us"
       },
       "items": [
-        {
-          "id": "about-us",
-          "title": "About Us",
-          "href": "/about-us",
-          "description": "Child-first Montessori community nurturing confidence, independence, curiosity, and joyful learning.",
-          "image": "/programs/thumb-playgroup.webp"
-        },
         {
           "id": "montessori",
           "title": "Montessori",
@@ -167,13 +133,6 @@
           "title": "Videos",
           "href": "/videos",
           "description": "Watch real moments from classrooms, campus life, children, and educators.",
-          "image": "/programs/thumb-secondary.webp"
-        },
-        {
-          "id": "pdfs",
-          "title": "PDFs",
-          "href": "",
-          "description": "Download brochures, program guides, calendars, policies, and learning resources.",
           "image": "/programs/thumb-secondary.webp"
         }
       ],
@@ -239,17 +198,10 @@
       },
       "items": [
         {
-          "id": "drone",
-          "title": "Drone",
-          "href": "/innovation/drone",
+          "id": "innovation-lab",
+          "title": "Innovation Lab",
+          "href": "/innovation/innovation-lab",
           "description": "Hands-on drone learning builds creativity, engineering thinking, and problem-solving skills.",
-          "image": "/programs/thumb-playgroup.webp"
-        },
-        {
-          "id": "cubesat-mission",
-          "title": "Innovation - Cubsat Mission",
-          "href": "/innovation/cubesat-mission",
-          "description": "Students explore space science through CubSat missions, design, and teamwork",
           "image": "/programs/thumb-playgroup.webp"
         },
         {
@@ -260,9 +212,16 @@
           "image": "/programs/thumb-nursery.webp"
         },
         {
-          "id": "space-program",
-          "title": "Space Program",
-          "href": "/innovation/space-program",
+          "id": "drone-lab",
+          "title": "Drone Lab",
+          "href": "/innovation/drone-lab",
+          "description": "Hands-on drone learning builds creativity, engineering thinking, and problem-solving skills.",
+          "image": "/programs/thumb-playgroup.webp"
+        },
+        {
+          "id": "space-lab",
+          "title": "Space Program Lab",
+          "href": "/innovation/space-lab",
           "description": "Space learning builds curiosity through astronomy, rockets, experiments, and innovation.",
           "image": "/programs/thumb-playgroup.webp"
         }
@@ -279,18 +238,9 @@
   },
   "footer": {
     "gallery": [
-      {
-        "src": "/footer/footer-1.webp",
-        "alt": "Campus aerial view"
-      },
-      {
-        "src": "/footer/footer-2.webp",
-        "alt": "Campus grounds"
-      },
-      {
-        "src": "/footer/footer-3.webp",
-        "alt": "Learning spaces"
-      }
+      {"src": "/footer/footer-1.webp","alt": "Campus aerial view"},
+      {"src": "/footer/footer-2.webp","alt": "Campus grounds"},
+      {"src": "/footer/footer-3.webp","alt": "Learning spaces"}
     ],
     "aboutText": "Blue Blocks is a research-led learning ecosystem focused on authentic Montessori and child development.",
     "newsletter": {
@@ -308,50 +258,20 @@
       }
     },
     "quickLinks": [
-      {
-        "label": "About Us",
-        "href": "/about-us"
-      },
-      {
-        "label": "The Research Institute",
-        "href": "/research-institute"
-      },
-      {
-        "label": "Campus",
-        "href": "/campus"
-      },
-      {
-        "label": "Careers",
-        "href": "/careers"
-      }
+      {"label": "About Us","href": "/about-us"},
+      {"label": "The Research Institute","href": "/research-institute"},
+      {"label": "Campus","href": "/campus"},
+      {"label": "Careers","href": "/careers"}
     ],
     "programs": [
-      {
-        "label": "Playgroup",
-        "href": "/programs/playgroup"
-      },
-      {
-        "label": "Nursery, PP1, PP2",
-        "href": "/programs/nursery-school"
-      },
-      {
-        "label": "Primary School – Class 1 to 6",
-        "href": "/programs/primary-school-elementary"
-      },
-      {
-        "label": "Secondary School – Class 7 to 12",
-        "href": "/programs/secondary-school"
-      }
+      {"label": "Playgroup","href": "/programs/playgroup"},
+      {"label": "Nursery, PP1, PP2","href": "/programs/nursery-school"},
+      {"label": "Primary School – Class 1 to 6","href": "/programs/primary-school-elementary"},
+      {"label": "Secondary School – Class 7 to 12","href": "/programs/secondary-school"}
     ],
     "connect": [
-      {
-        "label": "Admissions Enquiry",
-        "href": "/admissions"
-      },
-      {
-        "label": "Contact",
-        "href": "/contact-us"
-      }
+      {"label": "Admissions Enquiry","href": "/admissions"},
+      {"label": "Contact","href": "/contact-us"}
     ],
     "contact": {
       "phone": "+91 9000955050",
@@ -359,26 +279,10 @@
       "email": "info@blueblocks.in"
     },
     "socials": [
-      {
-        "label": "Instagram",
-        "href": "https://www.instagram.com/blueblocksmontessorischool/",
-        "icon": "/icon/icon-insta.svg"
-      },
-      {
-        "label": "Facebook",
-        "href": "https://www.facebook.com/blueblockspreschool",
-        "icon": "/icon/icon-fb.svg"
-      },
-      {
-        "label": "YouTube",
-        "href": "https://www.youtube.com/channel/UCnJ6uX3B-uwAg63PgTK0LhQ",
-        "icon": "/icon/icon-youtube.svg"
-      },
-      {
-        "label": "LinkedIn",
-        "href": "https://www.linkedin.com/school/blue-blocks-school",
-        "icon": "/icon/icon-linkdin.svg"
-      }
+      {"label": "Instagram","href": "https://www.instagram.com/blueblocksmontessorischool/","icon": "/icon/icon-insta.svg"},
+      {"label": "Facebook","href": "https://www.facebook.com/blueblockspreschool","icon": "/icon/icon-fb.svg"},
+      {"label": "YouTube","href": "https://www.youtube.com/channel/UCnJ6uX3B-uwAg63PgTK0LhQ","icon": "/icon/icon-youtube.svg"},
+      {"label": "LinkedIn","href": "https://www.linkedin.com/school/blue-blocks-school","icon": "/icon/icon-linkdin.svg"}
     ]
   },
   "whatsapp": {
@@ -767,10 +671,7 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        }
+        {"name": "Home", "url": "#/"}
       ],
       "schema": [
         {
@@ -804,13 +705,8 @@
           "props": {
             "title": "About Us",
             "breadcrumb": [
-              {
-                "label": "Home",
-                "href": "/"
-              },
-              {
-                "label": "About Us"
-              }
+              {"label": "Home","href": "/"},
+              {"label": "About Us"}
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -2709,14 +2605,8 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "About Us",
-          "url": "#/about-us/"
-        }
+        {"name": "Home","url": "#/"},
+        {"name": "About Us","url": "#/about-us/"}
       ],
       "schema": [
         {
@@ -2752,17 +2642,27 @@
     "academics": {
       "sections": [
         {
+          "type": "pageHero",
+          "props": {
+            "title": "Programs",
+            "breadcrumb": [
+              { "label": "Programs", "href": "program" },
+              { "label": "The Elementary" }
+            ],
+            "bg": {
+              "base": "#F3E3CF",
+              "leftArc": "/ui/arc-left.webp",
+              "rightArc": "/ui/arc-right.webp"
+            }
+          }
+        },
+        {
           "type": "programsPageHero",
           "props": {
             "title": "Academics",
             "breadcrumb": [
-              {
-                "label": "Home",
-                "href": "/"
-              },
-              {
-                "label": "Academics"
-              }
+              {"label": "Home",  "href": "/"},
+              {"label": "Academics"}
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -3069,14 +2969,8 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Academics",
-          "url": "#/programs/"
-        }
+        {"name": "Home","url": "#/"},
+        {"name": "Academics", "url": "#/programs/"}
       ],
       "schema": [
         {
@@ -3324,7 +3218,7 @@
                 "sm": 2,
                 "lg": 2
               },
-              "maxWidth": "max-w-6xl",
+              "maxWidth": "max-w-8xl",
               "gap": "gap-8",
               "cardBg": "#273C75",
               "cardRadius": "rounded-[18px]",
@@ -6082,29 +5976,29 @@
                 "icon": "/icon/bulb.svg",
                 "title": "The Innovation Lab:",
                 "text": "Where hands build minds — and develop respect for materials. Every tool is cared for. Every material is valued. Students learn that creation carries responsibility for what is created.",
-                "linkName":"→ Explore The Space Lab",
-                "linkHref":"#"
+                "linkName":"→ Explore The Innovation Lab",
+                "linkHref":"/innovation/innovation-lab"
               },
               {
                 "icon": "/icon/bulb.svg",
                 "title": "The Bio-Mimicry Hive:",
                 "text": "Where nature becomes mentor — and students become custodians. Learning from 3.8 billion years of biological wisdom, students develop regenerative thinking: design that serves life, not just human convenience.",
-                "linkName":"→ Explore The Space Lab",
-                "linkHref":"#"
+                "linkName":"→ Explore The Bio-Mimicry Hive",
+                "linkHref":"/innovation/bio-mimicry-hive"
               },
               {
                 "icon": "/icon/bulb.svg",
                 "title": "The Drone Lab",
                 "text": "Where capability meets responsibility. Every flight begins with a Conscience Check — not as procedure but as expression of formed conscience. Privacy, safety, ecology, purpose: considered before every action.",
-                "linkName":"→ Explore The Space Lab",
-                "linkHref":"#"
+                "linkName":"→ Explore The Drone Lab",
+                "linkHref":"/innovation/drone-lab"
               },
               {
                 "icon": "/icon/bulb.svg",
                 "title": "The Space Lab",
                 "text": "Where Cosmic Education reaches orbit — and cosmic responsibility becomes real. Students who build satellites understand that space is shared commons, that debris endangers all missions, that Earth seen from orbit has no borders.",
                 "linkName":"→ Explore The Space Lab",
-                "linkHref":"#"
+                "linkHref":"/innovation/space-lab"
               }
             ]
           }
@@ -6240,40 +6134,27 @@
       ]
     },
     "innovationDetail": {
-      "drone": {
+      "innovation-lab": {
         "sections": [
           {
-            "type": "founderVisionSplit",
+            "type": "pageHero",
             "props": {
-              "bg": "#FFFFFF",
-              "py": "py-14 sm:py-16",
-              "leftArcs": {
-                "enabled": true,
-                "arcs": [
-                  { "color": "#95D6ED", "width": 220, "offsetX": -90 },
-                  { "color": "#F9A78F", "width": 210, "offsetX": -45 },
-                  { "color": "#F9E48F", "width": 200, "offsetX": 0 }
-                ]
-              },
-              "founder": {
-                "image": "/innovation/drone/drone-hero.webp",
-                "imageAlt": "THE DRONE LAB",
-                "roleTag": "Capability With Conscience",
-                "name": "THE DRONE LAB",
-                "nameColor": "#2B66F6",
-                "bio": "Where capability meets responsibility. Every flight begins with a Conscience Check — not as procedure but as expression of formed conscience. Privacy, safety, ecology, purpose: considered before every action."
-              },
-              "content": {
-                "eyebrow": "INNOVATION LAB",
-                "title": "The Drone Lab",
-                "text": "→ Explore The Drone Lab"
+              "title": "The Space Lab",
+              "breadcrumb": [
+                { "label": "Innovation", "href": "/innovation" },
+                { "label": "The Innovation Lab", "href": "/innovation/innovation-lab" }
+              ],
+              "bg": {
+                "base": "#F3E3CF",
+                "leftArc": "/ui/arc-left.webp",
+                "rightArc": "/ui/arc-right.webp"
               }
             }
           },
           {
             "type": "impactCollageSplit",
             "props": {
-              "bg": "#F3E3CF",
+              "bg": "#FFFFFF",
               "py": "py-16 sm:py-20",
               "left": {
                 "eyebrow": "HIGHLIGHT",
@@ -6318,7 +6199,7 @@
           {
             "type": "imageText",
             "props": {
-              "bgClass": "bg-[#ffffff]",
+              "bgClass": "bg-[#F3E3CF]",
               "SecBg": "",
               "title": "The Inventions Timeline: Consequences Across History",
               "text": [
@@ -6606,20 +6487,15 @@
           }
         ]
       },
-      "cubesat-mission": {
+      "drone-lab": {
         "sections": [
           {
             "type": "pageHero",
             "props": {
-              "title": "Innovation - Cubsat Mission ",
+              "title": "The Space Lab",
               "breadcrumb": [
-                {
-                  "label": "Innovation",
-                  "href": "/innovation"
-                },
-                {
-                  "label": "Innovation - Cubsat Mission "
-                }
+                { "label": "Innovation", "href": "/innovation" },
+                { "label": "The Drone Lab", "href": "/innovation/drone-lab" }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -6629,266 +6505,330 @@
             }
           },
           {
-            "type": "innovationMediaHero",
+            "type": "impactCollageSplit",
             "props": {
-              "be=title": "ISRO · PSLV-CXX · LEO MISSION",
-              "title": "PROJECT SBB-1:MISSION DASHBOARD",
-              "subtitle": "Validating “First Principles” in Low Earth Orbit.",
-              "bgImageUrl": "/innovation/innov-cube-hero.webp",
-              "primaryCta": "",
-              "secondaryCta": "",
-              "align": "center",
-              "height": "innovation",
-              "overlay": "dark",
-              "showArcs": true
+              "bg": "#ffffff",
+              "py": "py-16 sm:py-20",
+              "left": {
+                "eyebrow": "HIGHLIGHT",
+                "eyebrowBg": "#E7E8FF",
+                "eyebrowText": "#2C2F8F",
+                "title": "Five patent applications.\nStudents aged eight to twelve.",
+                "text": "In 2019, Blue Blocks Elementary students filed five patent applications with the Indian Patent Office. But the story isn’t just the patents. It’s that these young innovators evaluated their own work not only for novelty but for benefit. Does this help? Does this serve? Is this good for the world?\n\nThis is what happens when capability and conscience develop together."
+              },
+              "decor": {
+                "enabled": true,
+                "image": "/drone.webp",
+                "alt": "Drone",
+                "width": 930,
+                "height": 530,
+                "position": "bottom-left",
+                "opacity": 1
+              },
+              "right": {
+                "collage": {
+                  "main": {
+                    "src": "/innovation/innov_collage-4.webp",
+                    "alt": "Innovation team",
+                    "showPlay": true
+                  },
+                  "left": {
+                    "src": "/innovation/innov_collage-1.webp",
+                    "alt": "Students"
+                  },
+                  "right": {
+                    "src": "/innovation/innov_collage-2.webp",
+                    "alt": "Students with drones"
+                  }
+                },
+                "below": {
+                  "title": "Capability + Conscience",
+                  "titleColor": "#2B66F6",
+                  "text": "Formed conscience shows up as a question asked before action — not after."
+                }
+              }
             }
           },
           {
-            "type": "innovationHabitSplit",
+            "type": "imageText",
             "props": {
-              "bg": "#F7E7D5",
-              "className": "inline",
-              "image": "#",
-              "eyebrow": "",
-              "title": "Mission Profile",
-              "description": "Project SBB-1 is not a simulation. It is a fully functional CubeSat designed, built, and tested by students under the mentorship of aerospace professionals. The payload was fully flight-qualified and integrated for Low Earth Orbit operations, while validating core educational methodology. This mission represents the culmination of rigorous engineering, academic discipline, and real-world space systems experience.",
-              "subdescription": "",
-              "details": [
-                {
-                  "label": "MISSION TYPE",
-                  "value": "Technology Demonstration"
-                },
-                {
-                  "label": "ORBIT",
-                  "value": "Low Earth Orbit (LEO)"
-                },
-                {
-                  "label": "PRIMARY GOAL",
-                  "value": "Validate “First Principles” Learning"
-                },
-                {
-                  "label": "SECONDARY GOAL",
-                  "value": "On-Orbit Sensor Data Acquisition"
-                },
-                {
-                  "label": "DOI",
-                  "value": "10.5281/zenodo.18195108",
-                  "href": "https://zenodo.org/records/18195108"
-                }
+              "bgClass": "bg-[#F3E3CF]",
+              "SecBg": "",
+              "title": "The Inventions Timeline: Consequences Across History",
+              "text": [
+                "Before students build drones, they study the Inventions Timeline — thirty game-changing innovations and their consequences. Life before and after each invention. Not just what was gained, but what was lost. Not just benefits, but costs.",
+                "The automobile: freedom of movement — and carbon emissions. The smartphone: connection across distance — and attention fragmentation. Every innovation has consequences, intended and unintended.",
+                "Children learn: I am part of this timeline. What I create will have consequences. My conscience must be engaged before I build, not after."
               ],
-              "images": [
-                {
-                  "icon": "/innovation/satelite-image.webp",
-                  "title": "",
-                  "text": ""
-                },
-                {
-                  "icon": "/innovation/slider-image-2.webp",
-                  "title": "",
-                  "text": ""
-                },
-                {
-                  "icon": "/innovation-01/slider-image-3.webp",
-                  "title": "",
-                  "text": ""
-                },
-                {
-                  "icon": "/innovation/slider-image-4.webp",
-                  "title": "",
-                  "text": ""
-                }
-              ]
+              "imageUrl": "/innovation/drone/inventions-timeline.webp",
+              "variant": "default",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
             }
           },
           {
-            "type": "insights",
+            "type": "featureGrid",
             "props": {
-              "bg": "#FFFFFF",
-              "eyebrow": "SYSTEM ARCHITECTURE",
-              "title": "System Overview",
-              "subtitle": "",
-              "variant": "auto",
+              "headline": "The Conscience Check: Not Procedure, But Disposition",
+              "subText": "Every flight at Blue Blocks begins with what we call a Conscience Check. But this is not a checklist to satisfy. It is an expression of conscience already formed — the natural question that arises when you have been raised to consider consequences.",
               "items": [
                 {
-                  "id": "brain",
-                  "pill": "Onboard Compute Unit",
-                  "title": "The Brain",
-                  "meta": "Custom-designed flight computer managing all satellite operations, fault processes, and autonomous decision-making.",
-                  "bullets": [
-                    "ARM Cortex-M7 Core",
-                    "Fault-tolerant logic",
-                    "Real-time OS"
-                  ],
-                  "cardBg": "#95D6ED",
-                  "pillBg": "rgba(255,255,255,0.35)"
+                  "tag": "",
+                  "title": "Privacy",
+                  "icon": "/icon/brain.png",
+                  "text": "Where will this drone fly? Could it capture images without consent? The same sensitivity to others learned through Grace and Courtesy at age two — now applied to technology."
                 },
                 {
-                  "id": "senses",
-                  "pill": "Payload Systems",
-                  "title": "The Senses",
-                  "meta": "Integrated sensor suite capturing environmental data across multiple parameters for in-orbit validation.",
-                  "bullets": [
-                    "9-DOF IMU array",
-                    "Thermal monitoring",
-                    "Environmental sensors"
-                  ],
-                  "cardBg": "#F9A78F",
-                  "pillBg": "rgba(255,255,255,0.35)"
+                  "tag": "",
+                  "title": "Safety",
+                  "icon": "/icon/brain.png",
+                  "text": "What could go wrong? What is the risk to people, property, and wildlife? Care for others extended to care for all beings."
                 },
                 {
-                  "id": "voice",
-                  "pill": "Telemetry & Comm",
-                  "title": "The Voice",
-                  "meta": "UHF/VHF communication system enabling reliable ground station contact and beacon transmissions.",
-                  "bullets": [
-                    "UHF downlink",
-                    "VHF uplink",
-                    "Packet & sync"
-                  ],
-                  "cardBg": "#F9E48F",
-                  "pillBg": "rgba(255,255,255,0.35)"
+                  "tag": "",
+                  "title": "Ecology",
+                  "icon": "/icon/brain.png",
+                  "text": "What is the environmental impact? Noise disturbance? Energy use? Battery disposal? Care for environment extended to ecological conscience."
+                },
+                {
+                  "tag": "",
+                  "title": "Purpose",
+                  "icon": "/icon/brain.png",
+                  "text": "Why are we flying? Does the benefit justify the costs? Is this serving genuine need or manufactured desire?"
                 }
               ]
             }
           },
           {
-            "type": "AreasofDevelopment",
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#F3E3CF]",
+              "SecBg": "",
+              "title": "Control of Error: Consequences as Teachers",
+              "text": [
+                "Drones crash. This is control of error at work — the student sees for themselves what went wrong. But we extend this to ethical learning.",
+                "When a flight disturbs birds, the student sees the disturbance. When a design wastes material, the student feels the waste. When a purpose isn’t clear, the meaninglessness becomes apparent. Consequences teach — not through lectures, but through experience.",
+                "We measure time-to-restart: how quickly can a student recover from failure? But we also notice: how quickly do they ask “What did I not consider? What consequence did I not foresee?”"
+              ],
+              "imageUrl": "/innovation/drone/control-of-error.webp",
+              "variant": "default",
+              "cardBg": "#ffffff",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "left",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "featureGrid",
+            "props": {
+              "headline": "Technical Mastery — For What Purpose?",
+              "subText": "Students master aerodynamics, electronics, programming, calibration. But every technical skill is paired with a conscience question:",
+              "items": [
+                {
+                  "tag": "",
+                  "title": "Aerodynamics",
+                  "icon": "/icon/icon-capa.svg",
+                  "text": "Understanding lift and drag — and asking: Should this thing fly? Is flight necessary for this purpose?"
+                },
+                {
+                  "tag": "",
+                  "title": "Electronics",
+                  "icon": "/icon/icon-documented.svg",
+                  "text": "Wiring and soldering — and asking: Where do these components come from? What are the conditions of their manufacture? What happens when they’re discarded?"
+                },
+                {
+                  "tag": "",
+                  "title": "Programming",
+                  "icon": "/icon/icon-synaptic-fusion.svg",
+                  "text": "Coding flight paths — and asking: What should autonomous machines be permitted to do? What decisions should require human judgment?"
+                },
+                {
+                  "tag": "",
+                  "title": "Safety",
+                  "icon": "/icon/icon-AMI.svg",
+                  "text": "What could go wrong? What is the risk to people, property, wildlife? Care for others extended to care for all beings."
+                }
+              ]
+            }
+          },
+          {
+            "type": "imageText",
+            "props": {
+              "bgClass": "bg-[#F3E3CF]",
+              "SecBg": "",
+              "title": "Real Applications — Real Responsibility",
+              "text": [
+                "Drone skills connect to genuine work — crop monitoring for Hydroponics, terrain mapping for agricultural projects. Every application carries responsibility:",
+                "Flying over crops: Are we disturbing beneficial insects? Is the flight necessary, or could we observe another way?",
+                "Documentation: Are we respecting privacy? Do we have permission to capture these images?",
+                "The patents: Each innovation evaluated not just for novelty but for benefit. The question “Will this help?” is as important as “Does this work?”"
+              ],
+              "imageUrl": "/innovation/drone/real-applications.webp",
+              "variant": "default",
+              "cardBg": "#EEF7FD",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-8 sm:p-10",
+              "imageSide": "right",
+              "imageClassName": "rounded-2xl",
+              "imageFit": "cover",
+              "imageAspect": "aspect-[4/3]",
+              "contentCenter": false
+            }
+          },
+          {
+            "type": "montessoriForSuccess",
+            "props": {
+              "bg": "#FFFFFF",
+              "title": "Valorization With Conscience",
+              "items": [
+                {
+                  "name": "DR. MARIA MONTESSORI",
+                  "role": "Citizen of the World",
+                  "quote": "Children should be made to realize all great achievements... are due to the work of men driven by a profound passion... to create new benefits not only for the people who lived in their times, but also for those of the future."
+                }
+              ]
+            }
+          },
+          {
+            "type": "CenteredTextBlock",
             "props": {
               "bg": "#EEF7FD",
-              "eyebrow": "MISSION COMPLIANCE",
-              "title": "Institutional Framework & Compliance",
-              "description": "A mission is only as credible as the institutions that authorize and support it. SBB-1 is embedded within a rigorous regulatory and mentorship ecosystem.",
-              "subdescription": "",
+              "title": "Valorization With Conscience",
               "subtitle": "",
-              "headerAlign": "center",
-              "cols": {
-                "base": 1,
-                "sm": 2,
-                "lg": 3
-              },
-              "maxWidth": "place-content-center",
-              "gap": "gap-6",
-              "referenceColsDesktop": 4,
-              "desktopSpan": 3,
-              "cardBg": "#273C75",
-              "cardRadius": "rounded-[18px]",
-              "cardPadding": "px-6 py-7",
-              "cardMinHeight": 220,
-              "overLap": false,
-              "iconSize": "60",
-              "iconWrapClassName": "h-10 w-10",
+              "textParts": [
+                "The five patent applications are evidence of Valorization — the adolescent’s need to prove worth through genuine contribution. But this is Valorization with conscience. The students’ worth is proven not just by creating something novel, but by creating something good.",
+                "They have felt the “profound passion” Montessori described — and directed it toward “new benefits” for the future. For people and for the Earth.",
+                "The Drone Lab produces pilots with conscience — young people who can fly, and who ask before every flight: ",
+                { "bold": "Should I?" },
+                "\n\nBack to Biomimicry Hive  |  Explore The Space Lab →"
+              ],
+              "maxWidth": "56rem",
+              "sectionBg": "bg-iceSoft"
+            }
+          },
+          {
+            "type": "innovationLogoStrip",
+            "props": {
+              "sectionBg": "",
+              "sectionClass": "",
+              "sectionTitleClass": "text-[1.5rem] sm:text-base md:text-[2.8rem] text-[#4F4F4F] font-medium text-center pb-16",
+              "text": "Media Mentions",
+              "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
+              "logos": [
+                { "src": "/icon/media/cision.png", "alt": "Cision", "width": "169", "height": "76" },
+                { "src": "/icon/media/business-today.png", "alt": "Business Today", "width": "234", "height": "42" },
+                { "src": "/icon/media/disha.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/ew.png", "alt": "Cision", "width": "83", "height": "76" },
+                { "src": "/icon/media/one-news-page.png", "alt": "Business Today", "width": "234", "height": "76" },
+                { "src": "/icon/media/web-india.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/upturn.png", "alt": "Cision", "width": "186", "height": "76" },
+                { "src": "/icon/media/sanvad.png", "alt": "Business Today", "width": "155", "height": "76" },
+                { "src": "/icon/media/socialNews.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/manglorean.png", "alt": "Cision", "width": "234", "height": "76" },
+                { "src": "/icon/media/five.png", "alt": "Business Today", "width": "52", "height": "76" },
+                { "src": "/icon/media/varindia.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/pti.png", "alt": "Cision", "width": "234", "height": "76" },
+                { "src": "/icon/media/tmc.png", "alt": "Business Today", "width": "234", "height": "76" },
+                { "src": "/icon/media/ground.png", "alt": "Disha", "width": "234", "height": "76" },
+                { "src": "/icon/media/newDelhi.png", "alt": "Cision", "width": "74", "height": "76" },
+                { "src": "/icon/media/business-news.png", "alt": "Business News", "width": "234", "height": "76" },
+                { "src": "/icon/media/india-today.png", "alt": "India Today", "width": "141", "height": "76" }
+              ]
+            }
+          },
+          {
+            "type": "youngInnovatorsGrid",
+            "props": {
+              "bg": "#F3E3CF",
+              "title": "Meet Our Young Innovators",
+              "subtitle": "A celebration of hands-on learning, discovery, and fearless innovation.",
+              "maxWidth": "max-w-6xl",
+              "cols": { "base": 1, "md": 2 },
+              "gap": "gap-8",
+              "cardRadius": "rounded-2xl",
+              "cardPadding": "p-5",
+              "cardBg": "#FFFFFF",
+              "imageRadius": "rounded-xl",
+              "imageAspect": "aspect-[4/3]",
               "items": [
+                { "layout": "card", "image": "/innovation/drone/innovator-01.webp", "alt": "Team photo 1", "text": "“These three young men are Ayushman, Sanshray and Dhairya who came up with the idea of a rescue drone to save children who may have fallen into open bore wells...”" },
+                { "layout": "card", "image": "/innovation/drone/innovator-02.webp", "alt": "Team photo 2", "text": "“Meet Nayonika, Uma, Aditi and Akira... a drone to deliver essential services...”" },
+                { "layout": "card", "image": "/innovation/drone/innovator-03.webp", "alt": "Team photo 3", "text": "“The team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...”" },
+                { "layout": "card", "image": "/innovation/drone/innovator-04.webp", "alt": "Team photo 4", "text": "“The team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...”" },
+                { "layout": "split", "span": { "md": 2 }, "image": "/innovation/drone/innovator-05.webp", "alt": "Team photo 5", "text": "“This is the team of Aryan, Hasith and Akshat... a security drone...”" },
                 {
-                  "icon": "",
-                  "num": "01",
-                  "title": "Authorized by IN-SPACE",
-                  "text": "Project SBB-1 operates under official authorization from IN-SPACe."
-                },
-                {
-                  "icon": "",
-                  "num": "02",
-                  "title": "Mentored by Industry",
-                  "text": "Guidance provided by aerospace partners, ensuring flight-ready standards."
-                },
-                {
-                  "icon": "",
-                  "num": "03",
-                  "title": "Data Integrity",
-                  "text": "Mission data is processed, validated, and archived for research-grade outputs."
+                  "layout": "textOnly",
+                  "span": { "md": 2 },
+                  "textParts": [
+                    "These children will grow into a world that you and me cannot even begin to imagine...",
+                    "“We are hoping to revolutionize the thinking and working of the school education system...”",
+                    "The Drone Research and Innovation Centre is a first of its kind..."
+                  ]
                 }
               ]
             }
           },
           {
-            "type": "simpleImageSection",
+            "type": "innovationGallery",
             "props": {
-              "bg": "#FFFFFF",
-              "image": {
-                "src": "/innovation/lab-image.webp",
-                "alt": "Lab"
-              },
-              "height": 720,
-              "objectFit": "cover",
-              "fullBleed": true,
-              "overlayText": false
+              "eyebrow": "",
+              "title": "Voices of Young Innovators",
+              "cols": { "base": 1, "sm": 2, "lg": 2 },
+              "tileMinHeight": 410,
+              "tileMaxHeight": 410,
+              "showThumbnails": true,
+              "videoAutoplay": false,
+              "videoMuted": false,
+              "videoControls": true,
+              "videoLoop": false,
+              "items": [
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-01.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-02.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-03.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-04.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-05.webp" },
+                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-06.webp" }
+              ]
             }
           },
           {
-            "type": "systemOverview",
+            "type": "innovationGallery",
             "props": {
-              "bg": "#FFFFFF",
-              "maxWidth": "max-w-6xl",
-              "paddingY": "py-14 sm:py-16",
-              "header": {
-                "eyebrow": "SYSTEM ARCHITECTURE",
-                "title": "System Overview",
-                "align": "center"
-              },
-              "layout": {
-                "gap": "gap-10",
-                "leftWidth": "lg:col-span-7",
-                "rightWidth": "lg:col-span-5"
-              },
-              "media": {
-                "type": "image",
-                "src": "/innovation/system-overview-video-snap.webp",
-                "alt": "System overview",
-                "radius": "rounded-3xl",
-                "showPlay": true,
-                "playButton": {
-                  "size": 66,
-                  "bgImage": "/icon/play-transparent.png",
-                  "bg": "rgba(255,255,255,0.9)",
-                  "iconColor": "#111827"
-                }
-              },
-              "steps": {
-                "cardBg": "#EAF4FF",
-                "cardRadius": "rounded-2xl",
-                "cardPadding": "p-6",
-                "cardGap": "gap-4",
-                "numberColor": "rgba(15,23,42,0.55)",
-                "titleColor": "#0F172A",
-                "textColor": "rgba(15,23,42,0.65)",
-                "startAt": 1,
-                "pad": 2
-              },
-              "items": [
-                {
-                  "title": "Conceptualization",
-                  "text": "Mission definition, feasibility studies, and initial system architecture design."
-                },
-                {
-                  "title": "Prototyping",
-                  "text": "Breadboard models, component selection, and early integration testing."
-                },
-                {
-                  "title": "Engineering Model",
-                  "text": "Full-scale functional prototype with flight representative components."
-                },
-                {
-                  "title": "Qualification",
-                  "text": "Vibration, thermal vacuum, and EMC testing to space-grade standards."
-                },
-                {
-                  "title": "Launch Integration",
-                  "text": "Final assembly, pre-flight checkout, and integration with PSLV."
-                },
-                {
-                  "title": "Mission Conclusion",
-                  "text": "Payload successfully integrated. Mission concluded due to launch vehicle anomaly (Jan 12, 2026)."
-                }
+              "eyebrow": "",
+              "title": "Gallery",
+              "images": [
+                "/innovation/classroom-1.webp",
+                "/innovation/classroom-2.webp",
+                "/innovation/classroom-3.webp",
+                "/innovation/classroom-4.webp",
+                "/innovation/classroom-5.webp",
+                "/innovation/classroom-6.webp",
+                "/innovation/classroom-7.webp",
+                "/innovation/classroom-8.webp",
+                "/innovation/classroom-9.webp",
+                "/innovation/classroom-10.webp",
+                "/innovation/classroom-11.webp",
+                "/innovation/classroom-12.webp"
               ]
             }
           },
           {
             "type": "ctaBanner",
             "props": {
-              "titlefont": "text-3xl sm:text-4xl",
-              "title": "We didn't just teach them about space. We gave them a ticket to go there.",
-              "text": "",
-              "cta": "",
-              "image": "/satelight.webp",
+              "title": "Experience Learning\nthe Blue Blocks Way.",
+              "text": "Seats are filled on a first-come basis.",
+              "cta": { "label": "Book Admission Workshop", "href": "/contact" },
+              "image": "/innovation/drone.webp",
               "imageAlt": "Campus building",
               "imageWidth": "566",
               "imageHeight": "506",
@@ -6896,45 +6836,6 @@
               "customTopSpacing": "sm:pt-00",
               "align": "left",
               "theme": "dark"
-            }
-          },
-          {
-            "type": "benchmarkBanner",
-            "props": {
-              "logos": [
-                {
-                  "src": "/logos/nobel-peace-center.png",
-                  "alt": "Nobel Peace Center"
-                },
-                {
-                  "src": "/logos/unesco.png",
-                  "alt": "UNESCO"
-                },
-                {
-                  "src": "/logos/ami.png",
-                  "alt": "AMI"
-                },
-                {
-                  "src": "/logos/us-dept-of-state.png",
-                  "alt": "US Department of State"
-                },
-                {
-                  "src": "/logos/seal.png",
-                  "alt": "Seal"
-                },
-                {
-                  "src": "/logos/nobel-peace-center.png",
-                  "alt": "Nobel Peace Center"
-                },
-                {
-                  "src": "/logos/unesco.png",
-                  "alt": "UNESCO"
-                },
-                {
-                  "src": "/logos/ami.png",
-                  "alt": "AMI"
-                }
-              ]
             }
           }
         ]
@@ -7207,7 +7108,7 @@
           }
         ]
       },
-      "space-program": {
+      "space-lab": {
         "sections": [
           {
             "type": "pageHero",
@@ -7564,6 +7465,339 @@
               "customTopSpacing": "sm:pt-00",
               "align": "left",
               "theme": "dark"
+            }
+          }
+        ]
+      },
+      "cubesat-mission": {
+        "sections": [
+          {
+            "type": "pageHero",
+            "props": {
+              "title": "Innovation - Cubsat Mission ",
+              "breadcrumb": [
+                {
+                  "label": "Innovation",
+                  "href": "/innovation"
+                },
+                {
+                  "label": "Innovation - Cubsat Mission "
+                }
+              ],
+              "bg": {
+                "base": "#F3E3CF",
+                "leftArc": "/ui/arc-left.webp",
+                "rightArc": "/ui/arc-right.webp"
+              }
+            }
+          },
+          {
+            "type": "innovationMediaHero",
+            "props": {
+              "be=title": "ISRO · PSLV-CXX · LEO MISSION",
+              "title": "PROJECT SBB-1:MISSION DASHBOARD",
+              "subtitle": "Validating “First Principles” in Low Earth Orbit.",
+              "bgImageUrl": "/innovation/innov-cube-hero.webp",
+              "primaryCta": "",
+              "secondaryCta": "",
+              "align": "center",
+              "height": "innovation",
+              "overlay": "dark",
+              "showArcs": true
+            }
+          },
+          {
+            "type": "innovationHabitSplit",
+            "props": {
+              "bg": "#F7E7D5",
+              "className": "inline",
+              "image": "#",
+              "eyebrow": "",
+              "title": "Mission Profile",
+              "description": "Project SBB-1 is not a simulation. It is a fully functional CubeSat designed, built, and tested by students under the mentorship of aerospace professionals. The payload was fully flight-qualified and integrated for Low Earth Orbit operations, while validating core educational methodology. This mission represents the culmination of rigorous engineering, academic discipline, and real-world space systems experience.",
+              "subdescription": "",
+              "details": [
+                {
+                  "label": "MISSION TYPE",
+                  "value": "Technology Demonstration"
+                },
+                {
+                  "label": "ORBIT",
+                  "value": "Low Earth Orbit (LEO)"
+                },
+                {
+                  "label": "PRIMARY GOAL",
+                  "value": "Validate “First Principles” Learning"
+                },
+                {
+                  "label": "SECONDARY GOAL",
+                  "value": "On-Orbit Sensor Data Acquisition"
+                },
+                {
+                  "label": "DOI",
+                  "value": "10.5281/zenodo.18195108",
+                  "href": "https://zenodo.org/records/18195108"
+                }
+              ],
+              "images": [
+                {
+                  "icon": "/innovation/satelite-image.webp",
+                  "title": "",
+                  "text": ""
+                },
+                {
+                  "icon": "/innovation/slider-image-2.webp",
+                  "title": "",
+                  "text": ""
+                },
+                {
+                  "icon": "/innovation-01/slider-image-3.webp",
+                  "title": "",
+                  "text": ""
+                },
+                {
+                  "icon": "/innovation/slider-image-4.webp",
+                  "title": "",
+                  "text": ""
+                }
+              ]
+            }
+          },
+          {
+            "type": "insights",
+            "props": {
+              "bg": "#FFFFFF",
+              "eyebrow": "SYSTEM ARCHITECTURE",
+              "title": "System Overview",
+              "subtitle": "",
+              "variant": "auto",
+              "items": [
+                {
+                  "id": "brain",
+                  "pill": "Onboard Compute Unit",
+                  "title": "The Brain",
+                  "meta": "Custom-designed flight computer managing all satellite operations, fault processes, and autonomous decision-making.",
+                  "bullets": [
+                    "ARM Cortex-M7 Core",
+                    "Fault-tolerant logic",
+                    "Real-time OS"
+                  ],
+                  "cardBg": "#95D6ED",
+                  "pillBg": "rgba(255,255,255,0.35)"
+                },
+                {
+                  "id": "senses",
+                  "pill": "Payload Systems",
+                  "title": "The Senses",
+                  "meta": "Integrated sensor suite capturing environmental data across multiple parameters for in-orbit validation.",
+                  "bullets": [
+                    "9-DOF IMU array",
+                    "Thermal monitoring",
+                    "Environmental sensors"
+                  ],
+                  "cardBg": "#F9A78F",
+                  "pillBg": "rgba(255,255,255,0.35)"
+                },
+                {
+                  "id": "voice",
+                  "pill": "Telemetry & Comm",
+                  "title": "The Voice",
+                  "meta": "UHF/VHF communication system enabling reliable ground station contact and beacon transmissions.",
+                  "bullets": [
+                    "UHF downlink",
+                    "VHF uplink",
+                    "Packet & sync"
+                  ],
+                  "cardBg": "#F9E48F",
+                  "pillBg": "rgba(255,255,255,0.35)"
+                }
+              ]
+            }
+          },
+          {
+            "type": "AreasofDevelopment",
+            "props": {
+              "bg": "#EEF7FD",
+              "eyebrow": "MISSION COMPLIANCE",
+              "title": "Institutional Framework & Compliance",
+              "description": "A mission is only as credible as the institutions that authorize and support it. SBB-1 is embedded within a rigorous regulatory and mentorship ecosystem.",
+              "subdescription": "",
+              "subtitle": "",
+              "headerAlign": "center",
+              "cols": {
+                "base": 1,
+                "sm": 2,
+                "lg": 3
+              },
+              "maxWidth": "place-content-center",
+              "gap": "gap-6",
+              "referenceColsDesktop": 4,
+              "desktopSpan": 3,
+              "cardBg": "#273C75",
+              "cardRadius": "rounded-[18px]",
+              "cardPadding": "px-6 py-7",
+              "cardMinHeight": 220,
+              "overLap": false,
+              "iconSize": "60",
+              "iconWrapClassName": "h-10 w-10",
+              "items": [
+                {
+                  "icon": "",
+                  "num": "01",
+                  "title": "Authorized by IN-SPACE",
+                  "text": "Project SBB-1 operates under official authorization from IN-SPACe."
+                },
+                {
+                  "icon": "",
+                  "num": "02",
+                  "title": "Mentored by Industry",
+                  "text": "Guidance provided by aerospace partners, ensuring flight-ready standards."
+                },
+                {
+                  "icon": "",
+                  "num": "03",
+                  "title": "Data Integrity",
+                  "text": "Mission data is processed, validated, and archived for research-grade outputs."
+                }
+              ]
+            }
+          },
+          {
+            "type": "simpleImageSection",
+            "props": {
+              "bg": "#FFFFFF",
+              "image": {
+                "src": "/innovation/lab-image.webp",
+                "alt": "Lab"
+              },
+              "height": 720,
+              "objectFit": "cover",
+              "fullBleed": true,
+              "overlayText": false
+            }
+          },
+          {
+            "type": "systemOverview",
+            "props": {
+              "bg": "#FFFFFF",
+              "maxWidth": "max-w-6xl",
+              "paddingY": "py-14 sm:py-16",
+              "header": {
+                "eyebrow": "SYSTEM ARCHITECTURE",
+                "title": "System Overview",
+                "align": "center"
+              },
+              "layout": {
+                "gap": "gap-10",
+                "leftWidth": "lg:col-span-7",
+                "rightWidth": "lg:col-span-5"
+              },
+              "media": {
+                "type": "image",
+                "src": "/innovation/system-overview-video-snap.webp",
+                "alt": "System overview",
+                "radius": "rounded-3xl",
+                "showPlay": true,
+                "playButton": {
+                  "size": 66,
+                  "bgImage": "/icon/play-transparent.png",
+                  "bg": "rgba(255,255,255,0.9)",
+                  "iconColor": "#111827"
+                }
+              },
+              "steps": {
+                "cardBg": "#EAF4FF",
+                "cardRadius": "rounded-2xl",
+                "cardPadding": "p-6",
+                "cardGap": "gap-4",
+                "numberColor": "rgba(15,23,42,0.55)",
+                "titleColor": "#0F172A",
+                "textColor": "rgba(15,23,42,0.65)",
+                "startAt": 1,
+                "pad": 2
+              },
+              "items": [
+                {
+                  "title": "Conceptualization",
+                  "text": "Mission definition, feasibility studies, and initial system architecture design."
+                },
+                {
+                  "title": "Prototyping",
+                  "text": "Breadboard models, component selection, and early integration testing."
+                },
+                {
+                  "title": "Engineering Model",
+                  "text": "Full-scale functional prototype with flight representative components."
+                },
+                {
+                  "title": "Qualification",
+                  "text": "Vibration, thermal vacuum, and EMC testing to space-grade standards."
+                },
+                {
+                  "title": "Launch Integration",
+                  "text": "Final assembly, pre-flight checkout, and integration with PSLV."
+                },
+                {
+                  "title": "Mission Conclusion",
+                  "text": "Payload successfully integrated. Mission concluded due to launch vehicle anomaly (Jan 12, 2026)."
+                }
+              ]
+            }
+          },
+          {
+            "type": "ctaBanner",
+            "props": {
+              "titlefont": "text-3xl sm:text-4xl",
+              "title": "We didn't just teach them about space. We gave them a ticket to go there.",
+              "text": "",
+              "cta": "",
+              "image": "/satelight.webp",
+              "imageAlt": "Campus building",
+              "imageWidth": "566",
+              "imageHeight": "506",
+              "imagePositionTopRight": "sm:-right-10 sm:-top-40",
+              "customTopSpacing": "sm:pt-00",
+              "align": "left",
+              "theme": "dark"
+            }
+          },
+          {
+            "type": "benchmarkBanner",
+            "props": {
+              "logos": [
+                {
+                  "src": "/logos/nobel-peace-center.png",
+                  "alt": "Nobel Peace Center"
+                },
+                {
+                  "src": "/logos/unesco.png",
+                  "alt": "UNESCO"
+                },
+                {
+                  "src": "/logos/ami.png",
+                  "alt": "AMI"
+                },
+                {
+                  "src": "/logos/us-dept-of-state.png",
+                  "alt": "US Department of State"
+                },
+                {
+                  "src": "/logos/seal.png",
+                  "alt": "Seal"
+                },
+                {
+                  "src": "/logos/nobel-peace-center.png",
+                  "alt": "Nobel Peace Center"
+                },
+                {
+                  "src": "/logos/unesco.png",
+                  "alt": "UNESCO"
+                },
+                {
+                  "src": "/logos/ami.png",
+                  "alt": "AMI"
+                }
+              ]
             }
           }
         ]
@@ -8889,6 +9123,565 @@
               "item": "#/terms/"
             }
           ]
+        }
+      ]
+    },
+    "adolescentSocialNewbornPaper":{
+      "seo": {
+        "title": "Paper 8: The Social Newborn | Blue Blocks",
+        "description": "Developmental Foundations of the Adolescent Community — Adolescent Programme (Ages 12–18 | Grades 7–12) | Third Plane of Development."
+      },
+      "sections": [
+        {
+          "type": "pageHero",
+          "props": {
+            "title": "The Social Newborn",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Papers", "href": "/papers" },
+              { "label": "The Social Newborn" }
+            ],
+            "bg": {
+              "base": "#F3E3CF",
+              "leftArc": "/ui/arc-left.webp",
+              "rightArc": "/ui/arc-right.webp"
+            }
+          }
+        },
+        {
+          "type": "innovationMediaHero",
+          "props": {
+            "title": "“The Social Newborn”",
+            "subtitle": "Developmental Foundations of the Adolescent Community",
+            "bgImageUrl": "/innovation/innov_hero.webp",
+            "description": [
+              "<b>Adolescent Programme (Ages 12–18 | Grades 7–12) | Third Plane of Development</b>",
+              "<b>How to read this paper:</b> This document completes the developmental sequence established in Papers 2, 4, and 6. Together, the eight papers constitute a complete account of the first three Planes of Development at Blue Blocks. Terminology follows the AMI training tradition. Contemporary neuroscience and developmental psychology references are included where they corroborate Montessori's original observations."
+            ],
+            "primaryCta": "",
+            "secondaryCta": "",
+            "align": "center",
+            "height": "innovation",
+            "overlay": "dark",
+            "showArcs": true
+          }
+        },
+        {
+          "type": "legalDocument",
+          "props": {
+            "maxWidth":"none",
+            "effectiveDate": "24/02/2026",
+            "intro": [
+              "<b>PAPER 8</b>"            
+            ],
+            "sections": [
+              {
+                "id": "part-1",
+                "title": "Part I: The Third Plane Transformation",
+                "paragraphs": []
+              },
+              {
+                "id": "social-newborn",
+                "title": "I. The Social Newborn",
+                "paragraphs": [
+                  "The Adolescent Community serves young people during the Third Plane of Development (approximately 12 to 18 years). Dr. Montessori described the adolescent as a “social newborn” (neo-nato) — a term that signals a complete psychological and physical “rebirth” as profound as the transition from womb to world at birth.",
+                  "Just as the newborn infant is physically vulnerable and requires a specifically prepared environment to survive, the social newborn is psychologically and morally vulnerable and requires a prepared environment to develop into a mature, ethical adult.",
+                  "The inner commands of the first two planes — “Help me to do it myself” (0–3), “Help me to think for myself” (3–6), and “Help me to understand for myself” (6–12) — now evolve into: <b>“Help me to think with society.”</b>",
+                  "This is not merely social integration. It is the development of social consciousness — the capacity to feel with others, to recognise interdependence, to hold oneself accountable to the wellbeing of the whole. The child who was interested in what things are (First Plane) and why things work (Second Plane) now asks: <b>Who am I? What is right? What is my responsibility to others?</b>"
+                ]
+              },
+              {
+                "id": "physical-markers",
+                "title": "II. Physical Markers of Transition",
+                "paragraphs": [
+                  "The transition to the Third Plane is triggered by observable biological changes:"
+                ],
+                "bullets": [
+                  "<b>Physical growth:</b> More physical growth occurs during adolescence than at any time since the first three years of life. Limbs lengthen and weight is gained in uneven sequences, often making the adolescent feel physically “different” from one week to the next.",
+                  "<b>Neural restructuring:</b> The brain undergoes significant modification. New white matter appears, followed by dendrite growth and intense synaptic “pruning.” Contemporary neuroscience confirms that the prefrontal cortex — responsible for planning, impulse control, and complex reasoning — continues developing well into the mid-twenties.",
+                  "<b>Social-emotional neural development:</b> Research reveals that adolescence involves significant development in brain regions associated with social cognition, empathy, and moral reasoning. The capacity to understand others' perspectives and to feel with them neurologically matures during this period."
+                ],
+                "paragraphs2": [
+                  "<b>References:</b>",
+                  "Blakemore, S. J., & Choudhury, S. (2006). Development of the adolescent brain: Implications for executive function and social cognition. <i>Journal of Child Psychology and Psychiatry</i>, 47(3-4), 296-312.",
+                  "Crone, E. A., & Dahl, R. E. (2012). Understanding adolescence as a period of social-affective engagement and goal flexibility. <i>Nature Reviews Neuroscience</i>, 13(9), 636-650."
+                ]
+              },
+              {
+                "id": "awakening-conscience",
+                "title": "III. The Awakening of Conscience",
+                "paragraphs": [
+                  "The Third Plane marks a qualitative shift in moral development. The Elementary child understood rules and fairness — “That’s not fair!” was the characteristic moral assertion. The adolescent moves beyond rules to principles — asking not just “Is this fair?” but “What makes something fair? What kind of person should I be? What are my obligations to others?”",
+                  "Lawrence Kohlberg’s research on moral development identified adolescence as the period when post-conventional moral reasoning becomes possible — the capacity to evaluate social norms against universal ethical principles rather than simply accepting them. This aligns with Montessori’s observation that the adolescent is constructing a personal moral code.",
+                  "Contemporary research confirms that moral identity — the sense that being a good person is central to who one is — develops significantly during adolescence and predicts ethical behaviour more reliably than moral reasoning alone.",
+                  "<b>The principle:</b> Conscience cannot be taught through instruction. It develops through lived experience in communities that require ethical action, guided by adults who embody the values they wish to transmit."
+                ],
+                "paragraphs2": [
+                  "<b>References:</b>",
+                  "Kohlberg, L. (1984). <i>The Psychology of Moral Development: The Nature and Validity of Moral Stages</i>. Harper & Row.",
+                  "Hardy, S. A., & Carlo, G. (2011). Moral identity: What is it, how does it develop, and is it linked to moral action? <i>Child Development Perspectives</i>, 5(3), 212-218."
+                ]
+              },
+              {
+                "id": "valorization",
+                "title": "IV. Valorization: The Core Psychological Need",
+                "paragraphs": [
+                  "The primary psychological drive of the Third Plane is <b>Valorization</b> — the internal realisation of one's own value through successful, meaningful work.",
+                  "But Valorization has both economic and moral dimensions. The adolescent needs to know not only “I can produce value that society recognises” but also “I can act with integrity. I can be trusted. I am capable of good.”",
+                  "When these two dimensions align — when the adolescent does valuable work in an ethical way — deep Valorization occurs. This is why environments that reward shortcuts or tolerate dishonesty fundamentally obstruct adolescent development, even if they produce surface “success.”",
+                  "Dr. Montessori observed that Valorization marks the transition from childhood insecurity to adult self-confidence. When this process is obstructed — through overprotection, artificial challenges, or environments that divorce achievement from integrity — the adolescent may experience anxiety, self-doubt, or moral confusion.",
+                  "<b>The principle:</b> Valorization occurs when adolescents do genuinely valuable work with genuine integrity, facing genuine consequences. The environment must provide opportunities for both economic and moral achievement."
+                ]
+              },
+              {
+                "id": "social-consciousness",
+                "title": "V. Social Consciousness and Sensitivity",
+                "paragraphs": [
+                  "The Third Plane is characterised by heightened social sensitivity. Research confirms that adolescents process social information differently than adults, with increased attention to peer evaluation and social belonging.",
+                  "This sensitivity is not weakness — it is the raw material for developing social consciousness. Properly channelled, it enables:"
+                ],
+                "bullets": [
+                  "<b>Empathy:</b> The capacity to feel with others, to understand perspectives different from one's own.",
+                  "<b>Inclusion:</b> Awareness of who belongs and who is excluded, and the motivation to expand the circle of belonging.",
+                  "<b>Social harmony:</b> The understanding that individual wellbeing depends on community wellbeing, and that one's actions affect others."
+                ],
+                "paragraphs2": [
+                  "However, in unsupportive environments, social sensitivity can become anxiety, exclusivity, or conformity to destructive norms. The prepared environment must channel this sensitivity toward inclusion, harmony, and genuine connection.",
+                  "<b>Reference:</b> Somerville, L. H. (2013). The teenage brain: Sensitivity to social evaluation. <i>Current Directions in Psychological Science</i>, 22(2), 121-127."
+                ]
+              },
+              {
+                "id": "part-2",
+                "title": "Part II: The Erdkinder Framework",
+                "paragraphs": []
+              },
+              {
+                "id": "erdkinder",
+                "title": "VI. The Erdkinder Concept",
+                "paragraphs": [
+                  "Dr. Montessori proposed the Erdkinder (“Children of the Earth”) as the ideal environment for the Third Plane — a residential community where adolescents would experience economic and moral independence through real productive work.",
+                  "The core principles of Erdkinder include:"
+                ],
+                "bullets": [
+                  "<b>Distance from family:</b> The environment is intentionally separate from the home to support the adolescent's drive toward social (not just individual) independence.",
+                  "<b>Real economic activity:</b> Students engage in genuine production and exchange — not simulations — to experience the mechanisms by which societies function.",
+                  "<b>Community responsibility:</b> Managing the needs of the group — cooking, cleaning, maintenance — builds interdependence and the realisation that individual contribution matters to collective survival.",
+                  "<b>Moral community:</b> The Erdkinder is not merely an economic unit but a moral community — a place where integrity is expected, where actions have consequences for others, where the development of conscience is supported by the structure of daily life."
+                ],
+                "paragraphs2": [
+                  "At Blue Blocks, we have adapted the Erdkinder concept to our Hyderabad context, maintaining its essential principles while translating the “farm” into contemporary forms of meaningful production."
+                ]
+              },
+              {
+                "id": "micro-economy",
+                "title": "VII. The Micro-Economy: Ecological and Ethical Education",
+                "paragraphs": [
+                  "The Blue Blocks Adolescent Community operates as a <b>Micro-Economy</b> — but this is not merely economic education. It is ecological and ethical education through economic participation."
+                ],
+                "bullets": [
+                  "<b>Hydroponics and Sustainability Consciousness:</b> Students operate a high-efficiency hydroponic system that uses 90% less water than soil farming. Every operational choice — energy sourcing, nutrient management, waste handling — becomes a lesson in ecological interdependence. Students develop what we call sustainability consciousness: the habit of asking “What are the broader consequences? Is this regenerative?”",
+                  "<b>Terra Eutopia and Regenerative Thinking:</b> The paper recycling unit teaches circular thinking. In nature, there is no “waste” — only resources in transition. Students develop a regenerative mindset that sees endings as beginnings, that designs systems for renewal rather than depletion.",
+                  "<b>Ethical Dimensions of Economic Activity:</b> When you grow food others will eat, quality and honesty are not optional. When you sell products others will use, you learn that your word is your bond. The Micro-Economy teaches that all economic activity has ethical dimensions — that how you work matters as much as what you produce."
+                ]
+              },
+              {
+                "id": "grace-courtesy",
+                "title": "VIII. Grace, Courtesy, and Social Harmony",
+                "paragraphs": [
+                  "From the earliest days in the Toddler Community, Blue Blocks children learn Grace and Courtesy — the conscious cultivation of respectful, harmonious behaviour. In the Adolescent Community, this foundation matures into sophisticated social consciousness."
+                ],
+                "bullets": [
+                  "<b>Language and Communication:</b> Adolescents develop awareness of how their words affect others. They practice expressing disagreement without disrespect, giving feedback with care, and listening with genuine attention. Research confirms that communication skills developed during adolescence predict relationship quality and professional success in adulthood.",
+                  "<b>Inclusion and Sensitivity:</b> The mixed-age community naturally develops awareness of different needs and perspectives. Students learn to recognise exclusion and respond with inclusion, to notice struggle and offer support. This is not sentimentality but practical compassion — the understanding that community thrives when everyone belongs.",
+                  "<b>Conflict and Repair:</b> In any real community, conflicts arise. At Blue Blocks, we practice restorative justice: acknowledging harm, taking responsibility, making amends, and restoring relationship. This teaches that mistakes are not permanent — that repair is always possible when approached with honesty and care."
+                ]
+              },
+              {
+                "id": "part-3",
+                "title": "Part III: The Innovation Continuum",
+                "paragraphs": []
+              },
+              {
+                "id": "tech-service",
+                "title": "IX. Technology in Service of the Whole",
+                "paragraphs": [
+                  "In Papers 4 and 6, we introduced the Innovation Bridge — the concept that the hands working with Montessori materials in early childhood are being prepared for future creative work. In the Adolescent Community, this bridge is crossed with a crucial evolution in perspective.",
+                  "The Elementary child asked “What can we build?” The adolescent must ask “What should we build? For whom? With what consequences? With what responsibilities?”",
+                  "<b>The Pink Tower to CubeSat Arc:</b> In the Children’s House, three-year-olds carry the Pink Tower across the room. The largest cube measures exactly 10cm × 10cm × 10cm. Fifteen years later, those same hands build a CubeSat satellite — measuring exactly 10cm × 10cm × 10cm — for launch into orbit. But the true development is not the capability; it is the consciousness that accompanies it. The adolescent who launches the satellite understands that space is a shared commons, that their work exists within a web of relationships, that capability carries responsibility."
+                ]
+              },
+              {
+                "id": "innovation-labs",
+                "title": "X. The Blue Blocks Innovation Labs",
+                "paragraphs": [
+                  "The Innovation Labs introduced in the Elementary years continue into the Adolescent Community with evolved roles and expanded ethical reflection:"
+                ],
+                "bullets": [
+                  "<b>The Drone Lab:</b> Where Elementary students designed drones and filed five patent applications (2019), adolescents take on leadership roles while grappling with ethical questions: What are the responsible uses of drone technology? How do we balance capability with privacy and safety? They learn that technical mastery without ethical reflection is incomplete.",
+                  "<b>The Space Lab:</b> On January 11, 2026, a student-built CubeSat will launch aboard ISRO's PSLV C62 rocket. But the deeper curriculum involves cosmic responsibility: understanding space as shared commons, considering the ethics of resource expenditure, and asking how scientific work serves human flourishing.",
+                  "<b>The Biomimicry Hive:</b> Here, the Cosmic Task becomes engineering philosophy. Nature has solved most design problems over billions of years. When students learn from organisms — how leaves capture light, how termite mounds regulate temperature — they develop humility before nature and understand that human innovation works best when it works with natural principles."
+                ]
+              },
+              {
+                "id": "part-4",
+                "title": "Part IV: The Prepared Adult and Education for Peace",
+                "paragraphs": []
+              },
+              {
+                "id": "mentor",
+                "title": "XI. From Guide to Mentor: Embodying Values",
+                "paragraphs": [
+                  "The role of the adult undergoes transformation parallel to the child's development. In the First and Second Planes, the adult was a Guide. In the Third Plane, the adult becomes a Mentor and Expert who works alongside the adolescent as a colleague in shared endeavour.",
+                  "But the mentor's most important role is moral modeling. Research on moral development confirms that values are transmitted primarily through relationship with admired adults who embody those values, not through instruction.",
+                  "<b>Key principles of adult preparation for the Third Plane:</b>"
+                ],
+                "bullets": [
+                  "<b>Working alongside:</b> Mentors model integrity by engaging in the same work as students. The adolescent sees how the mentor responds to difficulty, acknowledges mistakes, maintains quality, and treats others.",
+                  "<b>Embodying values:</b> The mentor's honesty, care, persistence, and respect are not taught — they are demonstrated. The adolescent learns conscience by observing conscience in action.",
+                  "<b>Treating with dignity:</b> Dr. Montessori advised treating adolescents as having greater value than they currently show. The mentor protects dignity, trusts capacity for growth, and holds adolescents accountable to their own best selves.",
+                  "<b>Dialogue and reflection:</b> Adolescents need adults willing to engage in genuine dialogue — to discuss ethical dilemmas, to share their own struggles with integrity, to treat moral questions as worthy of serious thought."
+                ],
+                "paragraphs2": [
+                  "<b>Reference:</b> Walker, L. J., & Hennig, K. H. (2004). Differing conceptions of moral exemplarity: Just, brave, and caring. <i>Journal of Personality and Social Psychology</i>, 86(4), 629-647."
+                ]
+              },
+              {
+                "id": "peace",
+                "title": "XII. Education for Peace",
+                "paragraphs": [
+                  "Dr. Montessori's ultimate vision was not merely educational reform but the transformation of humanity. She believed that properly educated human beings — those who had developed their full potential in prepared environments — would naturally work toward peace."
+                ],
+                "paragraphs2": [
+                  "“Establishing lasting peace is the work of education; all politics can do is keep us out of war.”",
+                  "— Maria Montessori, <i>Education and Peace</i>",
+                  "At Blue Blocks, education for peace is not a separate curriculum but the fruit of the entire developmental sequence:"
+                ],
+                "bullets": [
+                  "<b>Inner peace:</b> The concentrated, purposeful child who experienced Normalisation in the Children's House carries inner equilibrium into adolescence and adulthood.",
+                  "<b>Social peace:</b> The skills of inclusion, communication, and conflict repair — practiced daily in the community — build capacity for harmonious relationship.",
+                  "<b>Ecological peace:</b> The sustainability consciousness and regenerative mindset developed through the Micro-Economy orient the young adult toward harmony with natural systems.",
+                  "<b>Cosmic peace:</b> The understanding that all beings are interconnected — developed through Cosmic Education — creates the foundation for what Montessori called “universal human solidarity.”"
+                ]
+              },
+              {
+                "id": "graduate-profile",
+                "title": "XIII. The Graduate Profile",
+                "paragraphs": [
+                  "Young people completing the Blue Blocks Adolescent Community demonstrate:"
+                ],
+                "bullets": [
+                  "<b>Deep conscience:</b> An inner moral compass that guides action even when no one is watching — the fruit of years of making real choices with real consequences in a community that values integrity.",
+                  "<b>Ecological consciousness:</b> Understanding of interdependence with natural systems, commitment to sustainability and regeneration, and the habit of considering broader consequences.",
+                  "<b>Social consciousness:</b> Sensitivity to others' experiences, commitment to inclusion, skill in communication and conflict repair, and genuine care for community wellbeing.",
+                  "<b>Economic capability:</b> Practical understanding of value, money, and labour — developed through running real operations with real consequences.",
+                  "<b>Emotional resilience:</b> The capacity to face setbacks, recover from failure, and maintain equilibrium — built through experience rather than protected from it.",
+                  "<b>Sense of purpose:</b> Clear understanding of their own gifts and how those gifts might serve the world — their personal Cosmic Task taking shape.",
+                  "<b>Academic readiness:</b> Full preparation for international university entry through Cambridge/IGCSE credentials, achieved not in opposition to character formation but integrated with it.",
+                  "<b>Human solidarity:</b> The understanding that they belong to a global community — an awareness that their wellbeing is bound up with the wellbeing of others and of the Earth itself."
+                ]
+              },
+              {
+                "id": "conclusion",
+                "title": "XIV. Conclusion: The Conscious Human Being",
+                "paragraphs": [
+                  "The period from 12 to 18 completes the Third Plane of Development. The functional independence of the First Plane and the intellectual independence of the Second Plane now support the construction of social and moral independence — the capacity to function as a conscious, contributing member of adult society.",
+                  "By serving the adolescent's drive for Valorization — both economic and moral — by providing genuine participation in a community that requires integrity, by offering mentorship that embodies values worth emulating, the Adolescent Community enables what Dr. Montessori ultimately envisioned: conscious human beings capable of thinking clearly, acting ethically, and holding the wellbeing of the whole in mind.",
+                  "The child who stacked Pink Tower cubes at age three now launches them into orbit — but more importantly, does so with consciousness of their place in the web of relationships that binds humanity to each other and to the Earth.",
+                  "The young adult who completes the Adolescent Community is ready for the Fourth Plane — university and the world of work — not merely as a capable individual, but as a conscious human being prepared to contribute to a world that urgently needs people of conscience, consciousness, and care."
+                ]
+              },
+              {
+                "id": "references",
+                "title": "References",
+                "paragraphs": [
+                  "<b>Montessori Primary Sources</b>"
+                ],
+                "bullets": [
+                  "Montessori, M. (1948). <i>From Childhood to Adolescence</i>. Clio Press.",
+                  "Montessori, M. (1948). <i>To Educate the Human Potential</i>. Clio Press.",
+                  "Montessori, M. (1949). <i>The Absorbent Mind</i>. Clio Press.",
+                  "Montessori, M. (1949). <i>Education and Peace</i>. Clio Press.",
+                  "Montessori, M. (1973). The Erdkinder and the Functions of the University. Reprinted in <i>NAMTA Journal</i>, 2011."
+                ],
+                "paragraphs2": [
+                  "<b>Contemporary Research</b>"
+                ],
+                "bullets2": [
+                  "Blakemore, S. J., & Choudhury, S. (2006). Development of the adolescent brain: Implications for executive function and social cognition. <i>Journal of Child Psychology and Psychiatry</i>, 47(3-4), 296-312.",
+                  "Crone, E. A., & Dahl, R. E. (2012). Understanding adolescence as a period of social-affective engagement and goal flexibility. <i>Nature Reviews Neuroscience</i>, 13(9), 636-650.",
+                  "Hardy, S. A., & Carlo, G. (2011). Moral identity: What is it, how does it develop, and is it linked to moral action? <i>Child Development Perspectives</i>, 5(3), 212-218.",
+                  "Kohlberg, L. (1984). <i>The Psychology of Moral Development: The Nature and Validity of Moral Stages</i>. Harper & Row.",
+                  "Somerville, L. H. (2013). The teenage brain: Sensitivity to social evaluation. <i>Current Directions in Psychological Science</i>, 22(2), 121-127.",
+                  "Walker, L. J., & Hennig, K. H. (2004). Differing conceptions of moral exemplarity: Just, brave, and caring. <i>Journal of Personality and Social Psychology</i>, 86(4), 629-647."
+                ],
+                "paragraphs3": [
+                  "<b>Blue Blocks Montessori</b>",
+                  "Hyderabad, India",
+                  "Adolescent Programme | Ages 12–18 | Grades 7–12"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "theArchitectureOfTheUniverse":{
+      "seo": {
+        "title": "Paper 6: The Architecture of the Universe | Blue Blocks",
+        "description": "Developmental Foundations of the Elementary Community — Elementary Programme (Ages 6–12 | Grades 1–6) | Second Plane of Development."
+      },
+      "sections": [
+        {
+          "type": "pageHero",
+          "props": {
+            "title": "The Architecture of the Universe",
+            "breadcrumb": [
+              { "label": "Home", "href": "/" },
+              { "label": "Papers", "href": "/papers" },
+              { "label": "The Architecture of the Universe" }
+            ],
+            "bg": {
+              "base": "#F3E3CF",
+              "leftArc": "/ui/arc-left.webp",
+              "rightArc": "/ui/arc-right.webp"
+            }
+          }
+        },
+        {
+          "type": "legalDocument",
+          "props": {
+            "maxWidth":"none",
+            "effectiveDate": "24/02/2026",
+            "intro": [
+              "<b>PAPER 6</b>",
+              "<b>The Architecture of the Universe</b>",
+              "Developmental Foundations of the Elementary Community",
+              "<b>Elementary Programme (Ages 6–12 | Grades 1–6) | Second Plane of Development</b>",
+              "<b>How to read this paper:</b> This document continues the developmental sequence established in Paper 2 (The Ground State: Birth to Three) and Paper 4 (The Conscious Construction of Intelligence: Ages 2.5–6). Together with Papers 5 and 6, they constitute a complete account of the first two Planes of Development. Terminology follows the AMI training tradition. Contemporary neuroscience references are included where they corroborate Montessori's original observations."
+            ],
+            "sections": [
+              {
+                "id": "part-1",
+                "title": "Part I: The Transformation of Mind",
+                "paragraphs": []
+              },
+              {
+                "id": "from-absorption-to-reasoning",
+                "title": "I. From Absorption to Reasoning",
+                "paragraphs": [
+                  "The Elementary Community serves children during the Second Plane of Development (approximately 6 to 12 years). This plane represents a qualitative shift in how the child engages with the world — not merely a continuation of earlier development, but a genuine metamorphosis.",
+                  "In the First Plane (0–6), the child possessed what Dr. Montessori called the Absorbent Mind — the capacity to take in environmental impressions without conscious effort. First unconsciously (0–3), then with emerging consciousness (3–6), the child absorbed language, movement, culture, and social patterns. The inner commands were “Help me to do it myself” and “Help me to think for myself.”",
+                  "At approximately age six, the Absorbent Mind fades. In its place emerges the Reasoning Mind — characterised by a drive to understand causes, relationships, and abstract principles. The inner command evolves: <b>“Help me to understand for myself.”</b>",
+                  "Where the first-plane child asked “What is this?”, the second-plane child asks “Why is this? How did this come to be? What caused this?” The child is no longer satisfied with facts; they hunger for reasons."
+                ]
+              },
+              {
+                "id": "physical-markers",
+                "title": "II. Physical Markers of Transition",
+                "paragraphs": [
+                  "Dr. Montessori identified observable physical changes that signal the transition between planes:"
+                ],
+                "bullets": [
+                  "<b>Dental transition:</b> The eruption of permanent molars and loss of deciduous teeth typically begins around age six — a biological marker that the first plane has completed.",
+                  "<b>Body composition:</b> The rounded contours of early childhood give way to a leaner, stronger physique. Skeletal calcification provides greater physical stamina.",
+                  "<b>Robust health:</b> Second-plane children typically exhibit reduced susceptibility to illness compared to the first plane, and greater capacity for sustained physical and mental effort."
+                ],
+                "paragraphs2": [
+                  "These physical changes correspond to psychological ones. The body that can sustain longer effort houses a mind ready for deeper investigation."
+                ]
+              },
+              {
+                "id": "imagination",
+                "title": "III. Imagination: The Great Power of This Age",
+                "paragraphs": [
+                  "Dr. Montessori identified imagination as “the great power of this age” (<i>From Childhood to Adolescence</i>). She drew an explicit parallel: “Touching is for the younger child what imagining is for the older one.”",
+                  "The first-plane child explored through direct sensorial contact — handling, tasting, manipulating. The second-plane child explores through mental images of things that cannot be directly experienced: atoms, historical events, distant galaxies, geological processes spanning millions of years.",
+                  "Montessori distinguished between reproductive imagination (calling up images of things previously experienced) and creative imagination (combining existing images to construct novel ones). The second plane sees the emergence of creative imagination as a primary cognitive tool.",
+                  "<b>The principle:</b> Imagination is not fantasy. It is the instrument by which the Reasoning Mind grasps realities beyond direct experience. The imagination, grounded in sensorial experiences from the first plane, enables the child to construct understanding of the entire universe."
+                ]
+              },
+              {
+                "id": "moral-social",
+                "title": "IV. Moral and Social Development",
+                "paragraphs": [
+                  "Between six and twelve, children develop an intense interest in questions of right and wrong, fairness and justice. Dr. Montessori observed that they form groups with elaborate rules, argue passionately about what is “fair,” and notice — and call out — perceived hypocrisy.",
+                  "This moral sensitivity is a developmental characteristic, not a behavioural problem. What adults sometimes label the “Age of Rudeness” — the child's blunt assertions, critical observations, and resistance to unexplained authority — represents a heroic claim to mental and moral independence. The child is constructing their own ethical framework.",
+                  "The group instinct (instincto gregario) drives children to form clubs and “gangs” with their own rules and hierarchies. This is not socialisation in the adult sense; it is experimentation with social mechanisms. Children are learning how societies function by creating miniature ones.",
+                  "Contemporary research in social cognition confirms that perspective-taking abilities — the capacity to understand others' mental states — become increasingly sophisticated during middle childhood. This supports Montessori's approach of using imagination for moral education: when children imagine how historical figures experienced events, or how participants in a conflict felt, they exercise the cognitive capacities that underpin mature moral reasoning."
+                ],
+                "paragraphs2": [
+                  "<b>Reference:</b> Miller, S. A. (2012). <i>Theory of mind: Beyond the preschool years</i>. Psychology Press."
+                ]
+              },
+              {
+                "id": "part-2",
+                "title": "Part II: The Curriculum Architecture",
+                "paragraphs": []
+              },
+              {
+                "id": "cosmic-education",
+                "title": "V. Cosmic Education: The Organising Principle",
+                "paragraphs": [
+                  "Traditional education typically presents subjects in isolation and builds from the particular to the general — home, neighbourhood, city, country, eventually (perhaps) universe. Dr. Montessori inverted this approach entirely.",
+                  "Cosmic Education offers the universe as a whole first, providing a central organising principle for the Reasoning Mind. Every subsequent fact finds its place within this framework. The decimal system is not merely arithmetic; it is humanity's solution to the problem of representing large quantities. Photosynthesis is not merely biology; it is one element in the oxygen cycle that connects to animal respiration, food chains, and human civilisation."
+                ],
+                "paragraphs2": [
+                  "<b>Montessori articulated this rationale clearly:</b>",
+                  "“If the idea of the universe be presented to the child in the right way, it will do more for him than just arouse his interest, for it will create in him admiration and wonder... The child's mind then will become fixed and can work. The knowledge he then acquires is organized and systematic; his intelligence becomes whole and complete because of the vision of the whole that has been presented to him.”",
+                  "— Maria Montessori, <i>To Educate the Human Potential</i>"
+                ]
+              },
+              {
+                "id": "five-great-stories",
+                "title": "VI. The Five Great Stories",
+                "paragraphs": [
+                  "The Elementary curriculum launches through five Great Stories (or Great Lessons) — vivid, dramatic narratives designed to strike the imagination and open fields for exploration:"
+                ],
+                "bullets": [
+                  "<b>1. God Who Has No Hands:</b> The story of the creation of the universe and the laws of physical science. This story introduces the idea that particles “obey” cosmic laws, maintaining the harmony of nature through their nature.",
+                  "<b>2. The Coming of Life:</b> The unfolding of evolution, from ancient single-celled organisms to the diversity of life today.",
+                  "<b>3. The Coming of Human Beings:</b> Humanity's unique gifts — the Reasoning Mind, the Imagination, and the Hand — and their emergence in prehistory.",
+                  "<b>4. The Story of Writing:</b> The history of human communication through signs, symbols, and alphabets.",
+                  "<b>5. The Story of Numbers:</b> The contributions of various civilisations to mathematics."
+                ],
+                "paragraphs2": [
+                  "These stories are not summaries to be memorised. They are designed to enthuse the child to their innermost core — creating impressions that spark further investigation. From each story radiate countless lessons and activities in geography, biology, history, language, and mathematics."
+                ]
+              },
+              {
+                "id": "incomplete-environment",
+                "title": "VII. The Intentionally Incomplete Environment",
+                "paragraphs": [
+                  "A critical architectural feature of the Elementary environment is that it is intentionally incomplete. Unlike the Children's House, where the prepared environment contains all that the child needs, the Elementary classroom provides “keys” to the universe rather than the universe itself.",
+                  "This incompleteness drives the Going Out programme. Because the shelves do not contain every answer, children are motivated to seek knowledge beyond the classroom — in libraries, museums, interviews with experts, and direct observation of the world.",
+                  "At Blue Blocks, Going Out expeditions are planned and executed by children. They write letters, make phone calls, arrange transportation, and manage budgets. The research skills developed are as valuable as the content acquired.",
+                  "Our Going Out Map across Hyderabad includes local flour mills (Economic Geography), bird walks and nature trails (Ecosystem studies), our dedicated farm (Agrarian economics), and geological sites featuring the Deccan granite and basaltic formations that form the literal foundation of our city."
+                ]
+              },
+              {
+                "id": "cosmic-task",
+                "title": "VIII. The Cosmic Task",
+                "paragraphs": [
+                  "Central to Cosmic Education is the concept of the Cosmic Task — the idea that every living thing contributes to the maintenance of global harmony, often unconsciously. Coral polyps purify the ocean of calcium carbonate while building their homes. Trees produce oxygen as a byproduct of their own nutrition. Every organism plays a role in the whole.",
+                  "Through this lens, biology becomes more than classification; it becomes a study of interdependencies. Children come to see themselves as part of this web — and to ask the profound question: “What is my own contribution to humanity?”",
+                  "This is the origin of what we call <b>Custodian consciousness</b> — the understanding that human beings have both the capacity and the responsibility to care for the world they inhabit."
+                ]
+              },
+              {
+                "id": "part-3",
+                "title": "Part III: The Prepared Environment",
+                "paragraphs": []
+              },
+              {
+                "id": "physical-architecture",
+                "title": "IX. The Physical Architecture",
+                "paragraphs": [
+                  "The Blue Blocks Elementary environment continues the architectural principles established in earlier planes. The octagonal design eliminates hidden zones and provides panoramic awareness. Open floor space accommodates the large-scale work characteristic of this age — panoramic timelines that stretch across the room, mathematical investigations using extensive materials, collaborative projects requiring physical space.",
+                  "Our sharing of a boundary with a 300-acre botanical garden provides daily access to natural soundscapes and visual landscapes. Our dedicated 2-acre Montessori Farm extends this connection through regular visits.",
+                  "<b>The principle:</b> Architecture does not cause development, but it can support or obstruct it. The Elementary environment creates conditions favourable to collaboration, extended work, and connection to the natural world."
+                ]
+              },
+              {
+                "id": "innovation-continuum",
+                "title": "X. The Innovation Continuum",
+                "paragraphs": [
+                  "In Paper 4, we introduced the Innovation Bridge — the concept that the hands working in the Children's House are being prepared for future creative work. In the Elementary years, this bridge is crossed.",
+                  "The Blue Blocks innovation spaces represent the natural evolutionary extension of Montessori's principle that “the hand is the instrument of intelligence.” We do not view these as departures from AMI standards but as their fulfilment for the contemporary world.",
+                  "The Drone Lab extends the Geography curriculum's “Work of Air” into practical application. Students programme flight paths, analyse aerodynamics, and engage in genuine engineering. In 2019, student designs resulted in five patent applications — evidence that the “Creative Imagination of Science” (Montessori's term for imagination applied to practical invention) is an operational reality.",
+                  "The Space Lab follows from the first Great Story (“God Who Has No Hands”) and allows students to explore the laws of physics through robotics and digital modelling, satisfying the Reasoning Mind's drive toward abstraction.",
+                  "The Biomimicry Hive is where Biology meets Engineering — the direct application of the Cosmic Task. Children study how organisms adapt and survive, then apply that logic to human engineering problems, transitioning from “Scientific Observers” to “Continuing Creators.”",
+                  "Access to these spaces follows a Competence Protocol. Children demonstrate motor proficiency and respect for the environment before graduating to advanced tools. This teaches risk assessment and self-discipline, transforming potential danger into character-building achievement."
+                ]
+              },
+              {
+                "id": "tools-of-responsibility",
+                "title": "XI. Tools of Responsibility",
+                "paragraphs": [
+                  "To support self-direction without license, we utilise three tools:"
+                ],
+                "bullets": [
+                  "<b>The Learning Journal:</b> Children maintain daily records of their work, moving from general subjects to specific materials and investigations. This develops metacognitive awareness — the capacity to monitor and regulate one's own learning.",
+                  "<b>Guide/Child Conferences:</b> Held at least every two weeks, these meetings allow the Guide and child to collaborate on analysing productivity and planning future work. The conference system transforms assessment from external judgment to shared reflection.",
+                  "<b>The Public School Curriculum:</b> Used strictly as a reference tool, this allows students to assess their own progress against societal standards without letting a traditional syllabus dictate the flow of Cosmic Education."
+                ]
+              },
+              {
+                "id": "part-4",
+                "title": "Part IV: Evidence and Outcomes",
+                "paragraphs": []
+              },
+              {
+                "id": "research-foundations",
+                "title": "XII. Research Foundations",
+                "paragraphs": [
+                  "Contemporary developmental science provides substantial support for Montessori's observations about middle childhood."
+                ],
+                "paragraphs2": [
+                  "<b>Executive Function Development</b>",
+                  "Executive functions — working memory, cognitive flexibility, and inhibitory control — show marked development during middle childhood. Research by Diamond (2013) demonstrates that these capabilities undergo substantial refinement between ages 6 and 12, enabling increasingly sophisticated planning, problem-solving, and self-regulation.",
+                  "Diamond, A. (2013). Executive functions. <i>Annual Review of Psychology</i>, 64, 135-168.",
+                  "<b>Metacognitive Development</b>",
+                  "Metacognition — the ability to think about one's own thinking — develops significantly during middle childhood. Research by Roebers (2017) demonstrates improvements in self-assessment accuracy and strategy selection throughout this period, aligning with Montessori's emphasis on intellectual independence.",
+                  "Roebers, C. M. (2017). Executive function and metacognition: Towards a unifying framework of cognitive self-regulation. <i>Developmental Review</i>, 45, 31-51.",
+                  "<b>Montessori Outcomes Research</b>",
+                  "Longitudinal research by Lillard and colleagues has consistently found positive outcomes for children in high-fidelity Montessori programmes. A 2017 review in <i>npj Science of Learning</i> found generally positive academic outcomes, particularly for programmes with authentic implementation (Marshall, 2017). Notably, Lillard's research found that executive function predicts academic achievement in conventional classrooms but not in Montessori environments — suggesting that Montessori provides alternative pathways to success that don't depend on pre-existing executive function capacity.",
+                  "Lillard, A. S., et al. (2017). Montessori preschool elevates and equalizes child outcomes: A longitudinal study. <i>Frontiers in Psychology</i>, 8, 1783.",
+                  "Marshall, C. (2017). Montessori education: A review of the evidence base. <i>npj Science of Learning</i>, 2(1), 1-9."
+                ]
+              },
+              {
+                "id": "graduate-profile",
+                "title": "XIII. The Graduate Profile",
+                "paragraphs": [
+                  "Children completing the Blue Blocks Elementary Community demonstrate:"
+                ],
+                "bullets": [
+                  "<b>Intellectual independence:</b> The capacity to assess one's own understanding, identify gaps, and direct one's own learning.",
+                  "<b>Moral independence:</b> A personal framework for ethical reasoning, constructed through years of navigating justice and fairness within a community.",
+                  "<b>Social capability:</b> The ability to collaborate, lead, follow, negotiate, and function within groups working toward shared goals.",
+                  "<b>Abstract and reasoning mind:</b> Facility with concepts, causes, relationships, and principles — not merely facts.",
+                  "<b>Cosmic perspective:</b> Knowledge organised around a vision of the whole, with awareness of interdependencies and one's place within them.",
+                  "<b>Love of learning:</b> Intrinsic motivation to understand — not compliance with external demands."
+                ]
+              },
+              {
+                "id": "conclusion",
+                "title": "XIV. Conclusion: The Completion of the Second Plane",
+                "paragraphs": [
+                  "The period from 6 to 12 completes the Second Plane of Development. The sensorial and functional foundations established in the First Plane now support the construction of the reasoning, moral, and social capacities that will carry the child into adolescence.",
+                  "By serving the Reasoning Mind's hunger for causes and relationships, by channelling the moral sense into constructive community experience, by providing access to the universe through imagination and investigation, the Elementary Community enables what Dr. Montessori envisioned: children who can think for themselves, collaborate with others, and engage meaningfully with the world's complexity.",
+                  "The child who completes the Elementary Community is ready — not merely for secondary school, but for the Third Plane, where the questions shift from “How does the world work?” to “Who am I, and what is my place in it?”"
+                ]
+              },
+              {
+                "id": "references",
+                "title": "References",
+                "paragraphs": [
+                  "<b>Montessori Primary Sources</b>"
+                ],
+                "bullets": [
+                  "Montessori, M. (1948). <i>To Educate the Human Potential</i>. Clio Press.",
+                  "Montessori, M. (1948). <i>From Childhood to Adolescence</i>. Clio Press.",
+                  "Montessori, M. (1949). <i>The Absorbent Mind</i>. Clio Press.",
+                  "AMI Elementary (6–12) Training Albums: Cosmic Education, Geography, Biology, History, Language, Mathematics.",
+                  "<b>Contemporary Research</b>",
+                  "Diamond, A. (2013). Executive functions. <i>Annual Review of Psychology</i>, 64, 135-168.",
+                  "Lillard, A. S. (2017). <i>Montessori: The Science Behind the Genius</i> (3rd ed.). Oxford University Press.",
+                  "Lillard, A. S., & Else-Quest, N. (2006). Evaluating Montessori education. <i>Science</i>, 313(5795), 1893-1894.",
+                  "Lillard, A. S., et al. (2017). Montessori preschool elevates and equalizes child outcomes: A longitudinal study. <i>Frontiers in Psychology</i>, 8, 1783.",
+                  "Marshall, C. (2017). Montessori education: A review of the evidence base. <i>npj Science of Learning</i>, 2(1), 1-9.",
+                  "Miller, S. A. (2012). <i>Theory of mind: Beyond the preschool years</i>. Psychology Press.",
+                  "Roebers, C. M. (2017). Executive function and metacognition: Towards a unifying framework of cognitive self-regulation. <i>Developmental Review</i>, 45, 31-51.",
+                  "Killen, M., & Smetana, J. G. (2015). Origins and development of morality. In <i>Handbook of Child Psychology and Developmental Science</i> (7th ed.)."
+                ],
+                "paragraphs2": [
+                  "<b>Blue Blocks Montessori</b>",
+                  "Hyderabad, India",
+                  "Elementary Programme | Ages 6–12 | Grades 1–6"
+                ]
+              }
+            ]
+          }
         }
       ]
     }

@@ -355,7 +355,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
 
               {/* RIGHT */}
               <div className="flex justify-between gap-4 p-5 sm:p-6 border-l border-slate-100">
-                <div className="flex flex-col justify-between space-y-2 bg-[#F3E3CF] rounded-2xl p-5 w-full">
+                {ctaCard ? <div className="flex flex-col justify-between space-y-2 bg-[#F3E3CF] rounded-2xl p-5 w-full">
                   <div>
                     <p className="text-[1.2rem] mb-4 font-semibold text-slate-900">
                       {ctaCard?.title}
@@ -371,7 +371,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                       {ctaCard.button.label}
                     </Link>
                   ) : null}
-                </div>
+                </div> : null}
 
                 <div className="mt-2 flex flex-col gap-2">
                   {(socials || []).map((s, idx) => {

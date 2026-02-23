@@ -23,6 +23,7 @@ export default function InnovationMediaHero({
   image,
   title,
   subtitle,
+  description = [],
 
   // legacy default had text-xs/sm:text-sm; keep prop but strip sizing tokens
   cardTextClassName = "mt-3 text-white/85 text-xs sm:text-sm leading-relaxed",
@@ -37,6 +38,7 @@ export default function InnovationMediaHero({
   bg = "bg-white",
 }) {
   const resolved = resolveBg(sectionBg || bg);
+  console.log("✅ InnovationMediaHero (NEW) is rendering", { title, subtitle, description });
 
   return (
     <section className={["bb-ui", resolved.className, spacingTop].filter(Boolean).join(" ")} style={resolved.style}>
@@ -60,9 +62,17 @@ export default function InnovationMediaHero({
                 <div className="w-full p-6 sm:p-10">
                   {title ? <h1 className="bb-section-title text-white whitespace-pre-line">{title}</h1> : null}
                   {subtitle ? (
-                    <p className={["bb-text text-white/85", stripTypographySizing(cardTextClassName)].filter(Boolean).join(" ")}>
+                    <p className={["mt-8 bb-text text-white/85", stripTypographySizing(cardTextClassName)].filter(Boolean).join(" ")}>
                       {subtitle}
                     </p>
+                  ) : null}
+                  
+                  {Array.isArray(description) && description.length ? (
+                    <div className={["mt-8 bb-text text-white/85", stripTypographySizing(cardTextClassName)].filter(Boolean).join(" ")}>
+                      {description.map((line, idx) => (
+                        <p key={idx} className={idx ? "mt-3" : ""} dangerouslySetInnerHTML={{ __html: line }} />
+                      ))}
+                    </div>
                   ) : null}
 
                   {(primaryCta?.href && primaryCta?.label) || (secondaryCta?.href && secondaryCta?.label) ? (

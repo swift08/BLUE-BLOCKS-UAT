@@ -154,8 +154,9 @@ export default function Footer() {
                       <Image
                         src="/icon/logo.svg"
                         alt={siteData?.site?.name || "Blue Blocks"}
-                        fill
                         className="object-contain p-1"
+                        width={94}
+                        height={94}
                         sizes="94px"
                       />
                     </div>

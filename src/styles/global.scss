@@ -29,14 +29,16 @@
 
   --bb-title-size: clamp(32px, 4vw, 42px);
   --bb-title-weight: 600;
-  --bb-title-line: 1.08;
+  --bb-title-line: 1.25;
 
-  --bb-subtitle-size: clamp(18px, 2.2vw, 28px);
+  --bb-subtitle-size: clamp(18px, 2.2vw, 22px);
   --bb-subtitle-weight: 500;
   --bb-subtitle-line: 1.25;
 
   --bb-body-size: 15px;
   --bb-body-line: 1.8;
+
+  --bb-spacing : 1rem;
 
   /* Card */
   --bb-radius: 18px;
@@ -184,6 +186,9 @@ html {
   font-weight: var(--bb-title-weight);
   line-height: var(--bb-title-line);
   color: var(--bb-text);
+  & + .bb-subtitle {
+    margin-top:var(--bb-spacing);
+  }
 }
 .has-darkBg .bb-section-title { color: var(--bb-hero-title-color, #fff); margin-bottom: 10px; }
 
@@ -436,7 +441,7 @@ html {
 }
 
 .bb-card-text {
-  font-size: var(--bb-card-text-size);
+  font-size: var(----bb-body-size);
   line-height: var(--bb-card-text-line);
   color: var(--bb-card-text-color);
 }
