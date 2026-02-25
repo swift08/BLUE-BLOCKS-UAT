@@ -1,4 +1,5 @@
 import Container from "@/components/layout/Container";
+import Link from "next/link";
 
 export default function ResearchMission({ 
   eyebrow,
@@ -15,6 +16,7 @@ export default function ResearchMission({
   CalloutWrapClass = "text-left bg-[#FFFFFF] border-2 border-[#131313] px-7 py-8 sm:px-12 sm:py-10",
   calloutTitle, 
   callout,
+  calloutCTA,
   calloutBg = "bg-[#FFDBAE]"
 }) {
   const body =
@@ -44,7 +46,7 @@ export default function ResearchMission({
               <div className={`relative rounded-[26px] ${CalloutWrapClass}`}>
                 {calloutTitle ? (<h3 className={`${calloutTitleClass}`}>{calloutTitle}</h3>) : null}
                 <p className={`${calloutClass}`}>
-                  {callout}
+                  {callout} {calloutCTA?.href ? (<Link href={calloutCTA?.href}>{calloutCTA?.label}</Link>) : null}
                 </p>
               </div>
             </div>

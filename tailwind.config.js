@@ -16,6 +16,9 @@ module.exports = {
       animation: {
         marquee: "marquee 18s linear infinite",
       },
+      spacing: {
+        70: "17.5rem",
+      },
     },
   },
   plugins: [],

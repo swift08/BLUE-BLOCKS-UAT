@@ -174,19 +174,19 @@ export default function CardsGridSection({
             ) : null}
 
             {description ? (
-              <p className={["bb-text", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}>
+              <p className={["bb-text mt-2", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}>
                 {description}
               </p>
             ) : null}
 
             {subdescription ? (
-              <p className={["bb-text", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}>
+              <p className={["bb-text mt-2", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}>
                 {subdescription}
               </p>
             ) : null}
 
             {subtitle ? (
-              <p className={["bb-text", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}>
+              <p className={["bb-text mt-2", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}>
                 <b>{subtitle}</b>
               </p>
             ) : null}

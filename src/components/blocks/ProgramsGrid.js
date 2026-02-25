@@ -155,7 +155,7 @@ function ProgramCard({ item }) {
             )}
             style={{ color: theme.ctaText }}
           >
-            {cta.label} <span aria-hidden>↗</span>
+            {cta.label} <span aria-hidden>→</span>
           </Link>
         </div>
       ) : null}

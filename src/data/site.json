@@ -2558,8 +2558,8 @@
           "props": {
             "title": "Programs",
             "breadcrumb": [
-              { "label": "Programs", "href": "program" },
-              { "label": "The Elementary" }
+              { "label": "ProgHomerams", "href": "program" },
+              { "label": "Programs" }
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -2689,7 +2689,7 @@
                 "parentText": "“My child isn’t just learning to read; they are learning to love learning.”",
                 "cta": {
                   "label": "Explore The Primary Environment",
-                  "href": "/programs/childrens-house"
+                  "href": "/programs/nursery-school"
                 },
                 "theme": {
                   "bg": "#F3DF83",
@@ -2712,7 +2712,7 @@
                 "parentText": "“They don’t ask for the answers anymore; they ask where to find them.”",
                 "cta": {
                   "label": "Explore The Elementary Environment",
-                  "href": "/programs/elementary"
+                  "href": "/programs/primary-school-elementary"
                 },
                 "theme": {
                   "bg": "#A8D9EF",
@@ -2735,7 +2735,7 @@
                 "parentText": "“My teenager has found a sense of purpose and belonging I didn’t think was possible in high school.”",
                 "cta": {
                   "label": "Explore The Adolescent Community",
-                  "href": "/programs/adolescent"
+                  "href": "/programs/secondary-school"
                 },
                 "theme": {
                   "bg": "#243B74",
@@ -2758,7 +2758,7 @@
             "eyebrow": "",
             "title": "Who Is Blue Blocks For?",
             "description": "",
-            "headerAlign": "left",
+            "headerAlign": "center",
             "cols": {
               "base": 1,
               "sm": 2,
@@ -2789,6 +2789,20 @@
                 "text": "Those who believe education is collaborative — between child, family, and school — find belonging at Blue Blocks."
               }
             ]
+          }
+        },
+        {
+          "type": "imageText",
+          "props": {
+            "title": "The 'Prepared Adult'",
+            "text": [
+              "In a Montessori environment, the adult is not a teacher who lectures, but a Guide who connects the child to the materials. Our guides are rigorous observers, trained to intervene only when necessary, ensuring that every discovery belongs to the child.",
+              "<b>AMI Certified:</b> Trained in the rigorous global standard of Montessori.",
+              "<b>Scientists, Not Tutors:</b> Our team treats education as a science.",
+              "<b>Long-Term Mentorship:</b> Guides stay with the cohort for 3-year cycles."
+            ],
+            "imageUrl": "/programs-01/hero-02.webp",
+            "align": "left"
           }
         },
         {
@@ -2972,7 +2986,7 @@
                 "When she begins to feel safe — when she looks at her guide and sees someone familiar, when she walks toward the shelf instead of toward the door — you'll know. And so will we. That is when we gently, gradually, begin the transition.",
                 "This is how trust is built: not by pushing through tears, but by honouring them."
               ],
-              "imageUrl": "/programs/playgroup/gentle-settlement.webp",
+              "imageUrl": "/programs/playgroup/image-01.webp",
               "align": "left"
             }
           },
@@ -2980,7 +2994,7 @@
             "type": "montessoriForSuccess",
             "props": {
               "bg": "#F3E3CF",
-              "title": "EXPERTS SPEAK",
+              "title": "PARENT TESTIMONIALS",
               "items": [
                 {
                   "name": "A Blue Blocks Parent",
@@ -3001,7 +3015,7 @@
                 "When she's overwhelmed, we stay close. When she's frustrated, we name what she might be feeling: \"You wanted that. It's hard to wait.\" When she needs comfort, we offer it — a lap to sit on, a soft voice, a hand to hold.",
                 "We do not expect toddlers to \"behave.\" We expect them to feel. Our job is to help them feel safe."
               ],
-              "imageUrl": "/programs/playgroup/emotional-safety.webp",
+              "imageUrl": "/programs/playgroup/image-02.webp",
               "align": "left",
               "imageSide":"right",
               "imageClassName":"",
@@ -3020,32 +3034,17 @@
                 "She will learn to open it herself, to serve herself, to wipe her space when she's done. These small acts of independence are not chores — they are quiet triumphs. And when she manages the clasp for the first time, or pours water without spilling, we'll celebrate with her (and tell you about it).",
                 "Beyond the lunchbox, food is part of our work here. Small hands peel bananas, squeeze oranges, and slice soft-boiled eggs. Children set tables with real ceramic and glass — not because we want them to be careful, but because we trust that they can be. And that trust becomes their confidence."
               ],
-              "imageUrl": "/programs/playgroup/food-as-love.webp",
+              "imageUrl": "/programs/playgroup/image-03.webp",
               "align": "left"
-            }
-          },
-          {
-            "type": "imageText",
-            "props": {
-              "title": "A Day of Purposeful Work",
-              "text": [
-                "You might wonder: What does she actually do all day?",
-                "She works. Not worksheets or structured lessons — but real, meaningful activity chosen by her, suited to her pace, designed for her stage of development."
-              ],
-              "imageUrl": "/programs/playgroup/day-of-work.webp",
-              "align": "left",
-              "imageSide":"right",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]"
             }
           },
           {
             "type": "AreasofDevelopment",
             "props": {
-              "bg": "#F3E3CF",
-              "title": "The Prepared Environment",
-              "description": "The classroom is no longer enough; the library and the outside world become the environment.",
+              "bg": "#FFFFFF",
+              "title": "A Day of Purposeful work",
+              "description":"You might wonder: What does she actually do all day?",
+              "subdescription":"She works. Not worksheets or structured lessons — but real, meaningful activity chosen by her, suited to her pace, designed for her stage of development.",
               "headerAlign": "center",
               "cols": {
                 "base": 1,
@@ -3107,6 +3106,7 @@
           {
             "type": "imageText",
             "props": {
+              "sectionBg":"bg-[#F3E3CF]",
               "title": "Toilet Learning: Respect for Her Body",
               "text": [
                 "This journey belongs to her — not to a schedule, and not to us.",
@@ -3114,16 +3114,16 @@
                 "There is no countdown. No sticker chart. No fanfare or fuss. Just a calm, matter-of-fact approach: this is a normal part of life, and when she's ready, she'll master it — just like everything else.",
                 "If there are accidents, they're simply part of the process. We respond with patience, and we move on."
               ],
-              "imageUrl": "/programs/playgroup/toilet-learning.webp",
+              "imageUrl": "/programs/playgroup/image-04.webp",
               "align": "left"
             }
           },
           {
             "type": "AreasofDevelopment",
             "props": {
-              "bg": "#F3E3CF",
-              "title": "The Prepared Environment",
-              "description": "The classroom is no longer enough; the library and the outside world become the environment.",
+              "bg": "#FFFFFF",
+              "title": "Language and Movement: How She Grows",
+              "description": "",
               "headerAlign": "center",
               "cols": {
                 "base": 1,
@@ -3159,6 +3159,7 @@
           {
             "type": "imageText",
             "props": {
+              "sectionBg":"bg-[#F3E3CF]",
               "title": "Your Family, Your Way",
               "text": [
                 "Every family is different. We don't assume who drops off, who picks up, who packs the lunch, or who she cries for most.",
@@ -3166,7 +3167,7 @@
                 "If both parents want to be part of the settling process, we welcome it. If a grandparent is her primary comfort, they are welcome too. We work with your family as it is, not as a template says it should be.",
                 "During this transition, partners often play a special role — a bridge between home and the wider world. But we follow your child's lead. She'll show us who she needs."
               ],
-              "imageUrl": "/programs/playgroup/family-your-way.webp",
+              "imageUrl": "/programs/playgroup/image-05.webp",
               "align": "left"
             }
           },
@@ -3182,12 +3183,12 @@
                 "And one day, the child who clung to you at the door will walk in on her own, find her work, and greet you at the end of the day full of stories.",
                 "That's the journey. And we're honoured to walk it with you."
               ],
-              "imageUrl": "/programs/playgroup/where-this-leads.webp",
+              "imageUrl": "/programs/playgroup/image-06.webp",
               "align": "left",
               "maxWidth": "none",
               "sectionBg": "bg-iceSoft"
             }
-          },        
+          },
           {
             "type": "researchMission",
             "props": {
@@ -3203,7 +3204,11 @@
               "calloutTitle": "",
               "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
               "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
-              "callout": " To understand the developmental science behind these practices, see our Developmental Architecture Paper."
+              "callout": " To understand the developmental science behind these practices, see our ",
+              "calloutCTA":{
+                "label": "Developmental Architecture Paper.",
+                "href": "/the-architecture-of-the-universe"
+              }
             }
           },
           {
@@ -3277,25 +3282,9 @@
               "eyebrow": "THE CHILDREN'S HOUSE",
               "title": "The Children's House",
               "subTitle": "Primary Program (Ages 2.5–6 | Nursery, PP1, PP2)",
-              "text": "",
+              "text": "The Architecht of the Self",
               "badge": "THE CHILDREN'S HOUSE",
-              "metaRows": [
-                {
-                  "label": "Sub-head",
-                  "value": "The Architect of the Self",
-                  "bg": { "label": "#F3D8CF", "value": "#F3D8CF" }
-                },
-                {
-                  "label": "Age",
-                  "value": "2.5 Years – 6 Years",
-                  "bg": { "label": "#DFE7DA", "value": "#DFE7DA" }
-                },
-                {
-                  "label": "Theme",
-                  "value": "Conscious Construction",
-                  "bg": { "label": "#D9E7EA", "value": "#D9E7EA" }
-                }
-              ],
+              "metaRows": [],
               "media": {
                 "main": {
                   "src": "/programs/nursery/main.webp",
@@ -3565,13 +3554,35 @@
             }
           },
           {
+            "type": "researchMission",
+            "props": {
+              "id": "mission",
+              "eyebrow": "",
+              "title": "",
+              "bgClassName": "",
+              "alignCenter": "text-center",
+              "text": [],
+              "calloutBg": "bg-[#B7D976]",
+              "CalloutAlign": "text-left",
+              "calloutGroupClass": "mt-0 sm:mt-0",
+              "calloutTitle": "",
+              "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
+              "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
+              "callout": " To understand the developmental science behind these practices, see our ",
+              "calloutCTA":{
+                "label": "Developmental Architecture Paper.",
+                "href": "/the-architecture-of-the-universe"
+              }
+            }
+          },
+          {
             "type": "ctaBanner",
             "props": {
-              "title": "For the developmental",
-              "text": "foundations of this approach, see our paper. The Conscious Construction of Intelligence",
+              "title": "Witness the Community in Action.",
+              "text": "To understand the dignity of the child, you must see them at work.",
               "cta": {
-                "label": "Know More",
-                "href": "#"
+                "label": "Book a Campus Tour",
+                "href": "/campus"
               },
               "image": "/building-image-01.webp",
               "imageAlt": "Campus building",
@@ -3635,18 +3646,9 @@
               "eyebrow": "THE ELEMENTARY COMMUNITY",
               "title": "The Elementary Community",
               "subTitle": "Elementary Programme (Ages 6–12 | Grades 1–6)",
+              "text":["The Reasoning Mind Awakens"],
               "badge": "THE ELEMENTARY",
-              "metaRows": [
-                { "label": "Sub-head", "value": "The Reasoning Mind Awakens", "bg": {"label": "#F3D8CF","value": "#F3D8CF"} },
-                { "label": "Age", "value": "6 Years – 12 Years", "bg": {
-                    "label": "#DFE7DA",
-                    "value": "#DFE7DA"
-                  } },
-                { "label": "Theme", "value": "Intellectual Independence", "bg": {
-                    "label": "#D9E7EA",
-                    "value": "#D9E7EA"
-                  } }
-              ],
+              "metaRows": [],
               "media": {
                 "main": {
                   "src": "/programs/the-elementary/main.webp",
@@ -4006,7 +4008,7 @@
             "type": "montessoriForSuccess",
             "props": {
               "bg": "#F3E3CF",
-              "title": "EXPERTS SPEAK",
+              "title": "PARENT TESTIMONIALS",
               "items": [
                 {
                   "name": "A Montessori Principle",
@@ -4017,13 +4019,35 @@
             }
           },
           {
+            "type": "researchMission",
+            "props": {
+              "id": "mission",
+              "eyebrow": "",
+              "title": "",
+              "bgClassName": "",
+              "alignCenter": "text-center",
+              "text": [],
+              "calloutBg": "bg-[#B7D976]",
+              "CalloutAlign": "text-left",
+              "calloutGroupClass": "mt-0 sm:mt-0",
+              "calloutTitle": "",
+              "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
+              "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
+              "callout": "For the developmental science behind these practices, see our Paper ",
+              "calloutCTA":{
+                "label": "The Architecture of the Universe.",
+                "href": "/the-architecture-of-the-universe"
+              }
+            }
+          },
+          {
             "type": "ctaBanner",
             "props": {
-              "title": "For the developmental science behind these practices, see our Paper The Architecture of the Universe.",
-              "text": "",
+              "title": "Witness the Community in Action.",
+              "text": "To understand the dignity of the child, you must see them at work.",
               "cta": {
-                "label": "Know More",
-                "href": "#"
+                "label": "Book a Campus Tour",
+                "href": "/campus"
               },
               "image": "/building-image-01.webp",
               "imageAlt": "Campus building",
@@ -4094,36 +4118,11 @@
               "eyebrow": "THE ADOLESCENT COMMUNITY",
               "title": "The Adolescent Community",
               "subTitle": "Adolescent Programme (Ages 12–18 | Grades 7–12)",
-              "text": "",
+              "text": "The Social Self Awakens",
               "imageUrl": "",
               "imageAlt": "",
               "showVideoIcon": false,
-              "metaRows": [
-                {
-                  "label": "Sub-head",
-                  "value": "The Social Self Awakens",
-                  "bg": {
-                    "label": "#F3D8CF",
-                    "value": "#F3D8CF"
-                  }
-                },
-                {
-                  "label": "Age",
-                  "value": "12 Years – 18 Years",
-                  "bg": {
-                    "label": "#DFE7DA",
-                    "value": "#DFE7DA"
-                  }
-                },
-                {
-                  "label": "Theme",
-                  "value": "Social Independence",
-                  "bg": {
-                    "label": "#D9E7EA",
-                    "value": "#D9E7EA"
-                  }
-                }
-              ],
+              "metaRows": [],
               "media": {
                 "main": {
                   "src": "/programs/the-adolescent-community/main.webp",
@@ -4174,7 +4173,7 @@
                 "Moral awakening: Most significantly for character formation, the adolescent develops the capacity for principled moral reasoning. The Elementary child understood rules and fairness. The adolescent begins to construct a personal ethical code — asking not just “Is this fair?” but “What kind of person do I want to be? What kind of world do I want to help create?”",
                 "The “social newborn” requires a specifically prepared environment — just as the infant did. But where the infant needed physical protection, the adolescent needs moral protection: a place where their emerging conscience can develop through real choices with real consequences, guided by adults who model integrity."
               ],
-              "imageUrl": "/programs/the-adolescent/second-rebirth.webp",
+              "imageUrl": "/programs/the-adolescent-community/image-01.webp",
               "imageAlt": "Adolescent development and community life",
               "imageSide":"left",
               "imageClassName":"",
@@ -4199,7 +4198,7 @@
                 "• The work is done with integrity — honesty, responsibility, care for quality",
                 "This is why traditional schooling often fails adolescents. Memorising content for tests does not produce Valorization. The adolescent knows, instinctively, that such work has no real value to anyone — and worse, that the system often rewards shortcuts over integrity. What they need is work that matters, done in a community that values how you work as much as what you produce."
               ],
-              "imageUrl": "/programs/the-adolescent/valorization.webp",
+              "imageUrl": "/programs/the-adolescent-community/image-02.webp",
               "imageAlt": "Students building meaningful work and competence",
               "variant": "default",
               "bgClass" : "bg-[#F3E3CF]",
@@ -4222,7 +4221,7 @@
                 "• Ethical responsibility: When you grow food others will eat, when you sell products others will use, you learn that quality and honesty are not optional — they are obligations.",
                 "• Interdependence: No one runs these operations alone. Students learn that their individual contribution matters to the whole, and that the whole sustains the individual."
               ],
-              "imageUrl": "/programs/the-adolescent/micro-economy.webp",
+              "imageUrl": "/programs/the-adolescent/image-03.webp",
               "imageAlt": "Students operating real ventures and systems",
               "imageSide":"left",
               "imageClassName":"",
@@ -4307,15 +4306,10 @@
                 "The Biomimicry Hive: Nature has solved most design problems over billions of years. When students learn from organisms — how a leaf captures light, how a termite mound regulates temperature — they develop humility before nature and a belief that human innovation works best when it works with natural principles, not against them.",
                 "This is the Innovation Bridge, completed — not just in capability, but in consciousness. The child who stacked cubes now launches them, understanding that the power to create carries the responsibility to create wisely."
               ],
-              "imageUrl": "/programs/the-adolescent/innovation-continuum.webp",
-              "imageAlt": "Students in innovation labs working on real projects",              
-              "imageSide":"right",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]",
+              "imageUrl": "",
               "variant": "default",
               "bgClass": "#FFFFFF",
-              "contentCenter": false
+              "contentCenter": true
             }
           },
           {
@@ -4374,7 +4368,7 @@
                 "Sports and Karate: Physical disciplines teach self-mastery — regulating impulse, persisting through difficulty, and maintaining composure under pressure. Competition emphasises the social contract: rules exist so everyone can participate. Winning with grace and losing with dignity build moral resilience.",
                 "Arts: Creative expression develops authenticity — the courage to express one’s genuine vision, and the humility to receive feedback. Making art requires both conviction and openness."
               ],
-              "imageUrl": "/programs/the-adolescent/labs-character.webp",
+              "imageUrl": "/programs/the-adolescent-community/image-04.webp",
               "imageAlt": "Co-curricular programs as character laboratories",              
               "imageSide":"left",
               "imageClassName":"",
@@ -4395,7 +4389,7 @@
                 "This alignment ensures that while students are learning through doing — managing hydroponics, building satellites, running ventures — they are simultaneously mastering the rigorous syllabi required for international university entry.",
                 "We do not view academic preparation and character formation as opposites. Academic knowledge without ethical grounding produces capable people without conscience. We aim for both."
               ],
-              "imageUrl": "/programs/the-adolescent/cambridge-igcse.webp",
+              "imageUrl": "/programs/the-adolescent-community/image-05.webp",
               "imageAlt": "Academic alignment and rigorous learning",              
               "imageSide":"right",
               "imageClassName":"",
@@ -4416,7 +4410,7 @@
                 "Crucially, mentors treat adolescents as having greater value than they currently show — protecting dignity, trusting capacity for growth, and holding them accountable to their own best selves.",
                 "This is how conscience develops: not through moralising, but through relationship with adults worth emulating."
               ],
-              "imageUrl": "/programs/the-adolescent/mentor.webp",
+              "imageUrl": "/programs/the-adolescent-community/image-06.webp",
               "imageAlt": "Mentors guiding adolescents through real work",              
               "imageSide":"left",
               "imageClassName":"",
@@ -4442,15 +4436,8 @@
                 "• Academic readiness: Full preparation for international university entry through Cambridge/IGCSE credentials.",
                 "They are ready for the fourth plane — university and the world of work — not merely as capable individuals, but as conscious human beings prepared to contribute to a world that urgently needs people who can think clearly, act ethically, and hold the wellbeing of the whole in mind."
               ],
-              "imageUrl": "/programs/the-adolescent/at-eighteen.webp",
-              "imageAlt": "Adolescent readiness and purpose",              
-              "imageSide":"right",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]",
-              "variant": "default",
               "bgClass": "bg-[#FFFFFF]",
-              "contentCenter": false
+              "contentCenter": true
             }
           },
           {
@@ -4467,14 +4454,45 @@
               ]
             }
           },
+          
+          {
+            "type": "researchMission",
+            "props": {
+              "id": "mission",
+              "eyebrow": "",
+              "title": "",
+              "bgClassName": "",
+              "alignCenter": "text-center",
+              "text": [],
+              "calloutBg": "bg-[#B7D976]",
+              "CalloutAlign": "text-left",
+              "calloutGroupClass": "mt-0 sm:mt-0",
+              "calloutTitle": "",
+              "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
+              "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
+              "callout": "For the developmental science behind these practices, see our Paper  ",
+              "calloutCTA":{
+                "label": "The Social Newborn.",
+                "href": "/adolescent-social-newborn-paper"
+              }
+            }
+          },
           {
             "type": "ctaBanner",
             "props": {
-              "title": "For the developmental science behind these practices, see our Paper The Social Newborn.",
-              "buttonText": "Read The Paper",
-              "buttonHref": "/papers/the-social-newborn",
-              "imageUrl": "/programs/cta-building.webp",
-              "imageAlt": "Blue Blocks campus building"
+              "title": "Witness the Community in Action.",
+              "text": "To understand the dignity of the child, you must see them at work.",
+              "cta": {
+                "label": "Book a Campus Tour",
+                "href": "/campus"
+              },
+              "image": "/building-image-01.webp",
+              "imageAlt": "Campus building",
+              "imageWidth": "566",
+              "imageHeight": "506",
+              "customTopSpacing": "sm:pt-70",
+              "align": "left",
+              "theme": "dark"
             }
           },
           {
