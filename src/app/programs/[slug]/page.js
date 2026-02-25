@@ -1,40 +1,26 @@
 import siteData from "@/data/site.json";
-import SectionRenderer from "@/lib/sectionRenderer";
 import { notFound } from "next/navigation";
+import SectionRendererClient from "@/components/SectionRendererClient";
 
+export const dynamic = "force-static";
 export const dynamicParams = false;
 
-/* ---------- helpers ---------- */
-const normalizeSlug = (v = "") =>
-  String(v)
-    .trim()
-    .replace(/^\/+/, "")
-    .replace(/\/+$/, "");
-
-const getPage = (pages, slug) => {
-  const s = normalizeSlug(slug);
-  return pages?.[s] || pages?.[`${s}/`] || null;
-};
-
-/* ---------- static params ---------- */
-export async function generateStaticParams() {
-  const pages = siteData?.pages?.programDetails ?? {};
-  return Object.keys(pages).map((k) => ({
-    slug: normalizeSlug(k),
-  }));
+function getProgramsMap() {
+  return siteData?.pages?.programDetails || {};
 }
 
-/* ---------- page ---------- */
-export default async function ProgramPage({ params }) {
-  // ✅ unwrap params promise
-  const { slug } = await params;
+export function generateStaticParams() {
+  const map = getProgramsMap();
+  return Object.keys(map).map((slug) => ({ slug }));
+}
 
-  const pages = siteData?.pages?.programDetails ?? {};
-  const page = getPage(pages, slug);
+export default function ProgramPage({ params }) {
+  const slug = params?.slug;
+  const map = getProgramsMap();
 
-  if (!page?.sections) {
-    notFound();
-  }
+  const page = map?.[slug];
+  if (!page) notFound();
 
-  return <SectionRenderer sections={page.sections} />;
+  const sections = Array.isArray(page?.sections) ? page.sections : [];
+  return <SectionRendererClient sections={sections} />;
 }

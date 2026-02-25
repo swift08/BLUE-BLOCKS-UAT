@@ -1,7 +1,7 @@
 import siteData from "@/data/site.json";
-import SectionRenderer from "@/lib/sectionRenderer";
+import SectionRendererClient from "@/components/SectionRendererClient";
 
 export default function HomePage() {
   const sections = siteData?.pages?.home?.sections || [];
-  return <SectionRenderer sections={sections} />;
+  return <SectionRendererClient sections={sections} />;
 }

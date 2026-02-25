@@ -1,5 +1,5 @@
 import siteData from "@/data/site.json";
-import InnovationSectionsClient from "./InnovationSectionsClient";
+import SectionRendererClient from "@/components/SectionRendererClient";
 
 export const dynamic = "force-static";
 
@@ -8,5 +8,5 @@ export default function InnovationPage() {
     ? siteData.pages.innovation.sections
     : [];
 
-  return <InnovationSectionsClient sections={sections} />;
+  return <SectionRendererClient sections={sections} />;
 }
