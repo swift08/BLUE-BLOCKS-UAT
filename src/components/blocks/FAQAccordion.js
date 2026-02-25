@@ -1,12 +1,14 @@
 import Container from "@/components/layout/Container";
 import Accordion from "@/components/ui/Accordion";
 import { resolveBg } from "@/lib/ui";
+import Link from "next/link";
 
 export default function FAQAccordion({
   // content
   title,
   subtitle,
   items = [],
+  cta = [],
 
   // ✅ background: keep old + add new
   bg = "#F3E3CF", // legacy
@@ -51,6 +53,14 @@ export default function FAQAccordion({
                 panelClassName={panelClassName}
               />
             </div>
+
+            {cta ? (
+              <Link
+              href={cta.href}
+              className={["bb-btn m-auto bb-btn--primary py-3 px-6 mt-6"]}>
+              {cta.label}
+              </Link>
+            ): null}
           </Container>
         </div>
       </div>

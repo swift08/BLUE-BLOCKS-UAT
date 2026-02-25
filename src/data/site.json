@@ -7760,7 +7760,7 @@
           "type": "innovationMediaHero",
           "props": {
             "title": "“One test of the correctness of educational procedure is the happiness of the child.”",
-            "subtitle": "-Maria Montessori",
+            "subtitle": "A Timeless Method for the Future Human",
             "bgImageUrl": "/innovation/innov_hero.webp",
             "primaryCta": "",
             "secondaryCta": "",
@@ -7769,16 +7769,50 @@
             "overlay": "dark",
             "showArcs": true
           }
-        },
+        },        
         {
-          "type": "imageText",
+          "type": "innovationHabitSplit",
           "props": {
-            "title": "",
-            "text": [
-              "Maria Montessori was a visionary who disabused the traditional methods of education for being too constrictive and non child friendly. In her lifelong work with children first as a pediatric doctor and then as researcher and educator Maria Montessori stumbled up on the secret to not just retaining children’s attention but to successfully divert it for productive work.",
-              "Maria Montessori believed that education is an aid for life. Her education philosophy can be summed up in her own words- Never help a child with a task at which he feels he can succeed. She believed the happiness you see in a child is directly proportional to the education he received. She spread her schooling philosophy far and wide to ensure that the first six years of every child lay the best possible foundations for an enriching future."
+            "bg": "#FFFFFF",
+            "className": "inline",
+            "image": "#",
+            "eyebrow": "",
+            "title": "More Than a School",
+            "description": [
+              "Dr. Maria Montessori was not merely an educator; she was a physician and a scientist. Through rigorous observation, she discovered that traditional education—built on rigid instruction and forced compliance—obstructs natural human development. She didn't invent a teaching method; she discovered the exact environmental conditions under which children naturally teach themselves.",
+              "Her philosophy is anchored in a profound respect for the child's capability: 'Never help a child with a task at which he feels he can succeed.' Today, in an era of rapid technological and social change, this century-old scientific method remains the most advanced preparation for the future. It proves that true innovation begins with the freedom to construct oneself."
             ],
-            "imageUrl": "/about-us/montessori-system/kids-being-part-sunday-school.webp"
+            "subdescription": "",
+            "autoplay": {
+              "enabled": true,
+              "delay": 3500,
+              "loop": true,
+              "pauseOnHover": true,
+              "pauseOnDrag": true
+            },
+            "bullets": [],
+            "images": [
+              {
+                "icon": "/about-us/montessori-system/kids-being-part-sunday-school.webp",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/innovation-01/slider-image-2.webp",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/innovation-01/slider-image-3.webp",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/innovation-01/slider-image-4.webp",
+                "title": "",
+                "text": ""
+              }
+            ]
           }
         },
         {
@@ -7793,16 +7827,16 @@
             "title": "",
             "text": [],
             "calloutTitle": "HOW DOES MONTESSORI WORK",
-            "callout": "The Montessori philosophy believes that every child is born with a creative mind and a drive to learn. These qualities can be best developed in a free environment. A constructive and proactive methodology, Montessori gives your child the freedom to develop varied interests and the competence needed to get her ready for life."
+            "callout": "Traditional education treats the child as an empty vessel to be filled. Montessori views the child as the architect of their own intellect. Instead of lecturing from a podium, our AMI-trained Guides prepare a precise environment rich with scientifically designed materials. Here, children are free to choose their work, correct their own errors, and follow their natural developmental drives. This is not unguided play; it is purposeful independence. It builds the executive function, adaptability, and inner discipline required to navigate a complex world."
           }
         },
         {
           "type": "AreasofDevelopment",
           "props": {
             "bg": "#F3E3CF",
-            "eyebrow": "PLAYGROUP (1 TO 2½ YEARS)",
+            "eyebrow": "",
             "title": "Areas of Development",
-            "description": "At Blue Blocks, our Montessori Toddler Community welcomes children from 1 to 2½ years into a warm, purposeful environment designed for exploration and growth.",
+            "description": "At Blue Blocks, development is not compartmentalized. The capabilities nurtured in the early years lay the exact foundation for the advanced innovations of the adolescent. Here is how our core developmental pillars scale as your child grows from infancy to adulthood.",
             "headerAlign": "center",
             "cols": {
               "base": 1,
@@ -7821,42 +7855,42 @@
               {
                 "icon": "/icon/brain.svg",
                 "title": "Brain Development",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
+                "text": "Intelligence is not fixed; it is constructed. We guide the child from absorbing sensory inputs in their early years, to the rigorous 'Reasoning Mind' of the elementary child, culminating in the complex ethical, scientific, and abstract problem-solving of the adolescent."
               },
               {
                 "icon": "/icon/movement.svg",
                 "title": "Movement Development",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
+                "text": "Dr. Montessori observed that the hand is the instrument of the intellect. Early refinement of gross and fine motor skills directly evolves into the precise manipulation of mathematical materials, and eventually, the advanced engineering of drones and CubeSats in our Innovation Labs"
               },
               {
                 "icon": "/icon/leaf.svg",
                 "title": "Care for Environment",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
+                "text": "It begins simply: a toddler learning to sweep a floor, push in a chair, or water a plant. By adolescence, this localized respect expands into 'Custodian Consciousness'—managing high-efficiency hydroponic farms and understanding global ecological sustainability."
               },
               {
                 "icon": "/icon/food.svg",
-                "title": "Food Activities",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
+                "title": "Food & Practical Life",
+                "text": "Preparing food is the child's first lesson in sequence, chemistry, and community. Slicing fruit in the Children's House naturally evolves into managing agricultural output and participating in the adolescent micro-economy."
               },
               {
                 "icon": "/icon/heart.svg",
                 "title": "Care For Self",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
+                "text": "True independence starts with mastering one's own dressing and hygiene. This foundational physical autonomy translates directly into the intellectual and moral independence required to navigate university and adult life without requiring constant adult supervision."
               },
               {
                 "icon": "/icon/toilet.svg",
-                "title": "Toilet Training",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
+                "title": "Autonomy & Self-Regulation",
+                "text": "What begins in toddlerhood as mastering physical milestones (such as biological independence without pressure or shame) grows into a profound, lifelong capability for emotional regulation, resilience, and personal boundary-setting."
               },
               {
                 "icon": "/icon/art.svg",
-                "title": "Art Activities",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
+                "title": "Creative Expression",
+                "text": "Creativity is not limited to a canvas. The free exploration of materials in early childhood forms the creative confidence needed later for complex theater productions, biomimetic design, and finding original solutions to real-world engineering constraints."
               },
               {
                 "icon": "/icon/music.svg",
-                "title": "Songs and Stories",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
+                "title": "Language & Communication",
+                "text": "The oral storytelling and vocabulary built in the early years trigger an explosion into fluent cursive writing and reading. By adolescence, this mastery of language empowers students to debate ethics, code software, and negotiate complex social harmonies."
               }
             ]
           }
@@ -7868,65 +7902,44 @@
             "title": "MONTESSORI FOR\nSUCCESS",
             "items": [
               {
-                "name": "LARRY PAGE AND\nSERGEY BRIN",
-                "role": "Founders, Google",
-                "quote": "Both went to Montessori schools and credit the Montessori education of “being self motivated, questioning what’s going on in the world, doing things a bit differently,” for being responsible for their success to a large extent."
+                "name": "Larry Page and Sergey Brin",
+                "role": "(Founders, Google)",
+                "quote": "Both founders credit their Montessori education for their success, noting that the environment taught them to be entirely self-motivated, to relentlessly question how the world works, and to approach complex problems differently than their peers."
               },
               {
-                "name": "JEFF BEZOS",
-                "role": "Founder, Amazon",
-                "quote": "Montessori is often referenced for encouraging independence and long-term thinking early."
+                "name": "Jeff Bezos",
+                "role": "(Founder, Amazon)",
+                "quote": "The Amazon founder’s visionary approach to long-term thinking, continuous innovation, and autonomous problem-solving is widely attributed to the foundational independence he developed in his early Montessori environments."
               }
             ]
           }
         },
         {
-          "type": "tabbedFaq",
+          "type": "faq",
           "props": {
             "bg": "#F3E3CF",
+            "defaultOpenIndex": 0,
+            "panelMaxWidth": "none",
             "title": "Frequently asked questions",
-            "subtitle": "Our guides are more than teachers — they are observers, facilitators, and partners in each child’s developmental journey.",
-            "tabs": [
+            "subtitle": "",
+            "items": [
               {
-                "label": "School Facilities",
-                "items": [
-                  {
-                    "q": "When can I start my course or workshop?",
-                    "a": "You can start..."
-                  },
-                  {
-                    "q": "Do you provide a certificate of completion?",
-                    "a": "Yes..."
-                  }
-                ]
+                "q": "Is Montessori too unstructured? Will my child learn discipline?",
+                "a": "Montessori offers freedom within limits. The discipline developed here is internal, not imposed by an adult. Because children are free to choose work that meets their exact developmental needs, they naturally develop profound concentration and self-regulation—the highest, most lasting forms of discipline."
               },
               {
-                "label": "School Recognition",
-                "items": [
-                  {
-                    "q": "Is Montessori recognized globally?",
-                    "a": "Yes..."
-                  }
-                ]
+                "q": "How do Montessori children adjust to traditional high schools or universities later on?",
+                "a": "Exceptionally well. Because they have spent years developing executive function, adaptability, and a genuine love for learning, they view new environments and testing structures simply as new systems to master, rather than threats to fear. They enter the world as capable, self-advocating learners."
               },
               {
-                "label": "Team",
-                "items": [
-                  {
-                    "q": "When can I start my course or workshop?",
-                    "a": "You can start your course or workshop instantly after completing your purchase. Our free course can be started directly after signing up to SuperHi. You can then access your courses and workshops through your SuperHi dashboard whenever you’d like, and learn at your own pace with lifetime access to your purchases!"
-                  },
-                  {
-                    "q": "Do you provide a certificate of completion?",
-                    "a": "Yes..."
-                  },
-                  {
-                    "q": "What will I be able to create after taking your courses?",
-                    "a": "Yes..."
-                  }
-                ]
+                "q": "What does 'Authentic AMI' mean, and why does it matter?",
+                "a": "The Association Montessori Internationale (AMI) was founded by Dr. Maria Montessori herself to protect the scientific integrity of her work. As an AMI-aligned institution, Blue Blocks ensures that our environments, physical materials, and Guide training meet the highest, uncompromising global standards, without dilution or commercialization."
               }
-            ]
+            ],            
+            "cta": {
+              "label": "Have questions about our facilities, campus, or admissions process? ",
+              "href": "/faq"
+            }
           }
         }
       ],
