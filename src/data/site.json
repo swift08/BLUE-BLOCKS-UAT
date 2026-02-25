@@ -2306,13 +2306,6 @@
               "We integrate classical Montessori foundations with modern innovation pathways. From early sensorial exploration to adolescent research, engineering, and innovation work, learners experience a coherent developmental journey that builds confidence, competence, and clarity.",
               "At Blue Blocks, success is measured not just through academics, but through independence, resilience, creativity, and social awareness. The goal is simple: to nurture individuals who are not only knowledgeable, but capable, grounded, and prepared for an evolving world."
             ],
-            "readMore": {
-              "enabled": true,
-              "text": "At Blue Blocks, success is measured not just through academics, but through independence, resilience, creativity, and social awareness. The goal is simple: to nurture individuals who are not only knowledgeable, but capable, grounded, and prepared for an evolving world.",
-              "selector": ".bb-text p", 
-              "readMoreLabel": "Read More",
-              "readLessLabel": "Read Less"
-            },
             "descriptionClassName": "text-[#717171] space-y-5 bb-text",
             "images": [
               {
@@ -6087,6 +6080,7 @@
     },
     "innovationDetail": {
       "innovation-lab": {
+        "slug": "innovation-lab",
         "sections": [
           {
             "type": "pageHero",
@@ -6374,6 +6368,7 @@
         ]
       },
       "drone-lab": {
+        "slug": "drone-lab",
         "sections": [
           {
             "type": "pageHero",
@@ -6741,6 +6736,7 @@
         ]
       },
       "biomimicry-hive": {
+        "slug": "biomimicry-hive",
         "sections": [
           {
             "type": "pageHero",
@@ -6972,6 +6968,7 @@
         ]
       },
       "space-lab": {
+        "slug": "space-lab",
         "sections": [
           {
             "type": "pageHero",
@@ -7347,6 +7344,7 @@
         ]
       },
       "cubesat-mission": {
+        "slug": "cubesat-mission",
         "sections": [
           {
             "type": "pageHero",
