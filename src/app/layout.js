@@ -7,8 +7,7 @@ import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import siteData from "@/data/site.json";
 import JsonLd from "@/components/seo/JsonLd";
 import { Poppins } from "next/font/google";
-import "@/styles/global.scss";
-import GlobalReadMoreEnhancer from "@/components/ui/GlobalReadMoreEnhancer";
+import "@/styles/global.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -84,7 +83,6 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Footer />
         <WhatsAppFloat config={siteData?.whatsapp} />
-        {/* <GlobalReadMoreEnhancer /> */}
       </body>
     </html>
   );

@@ -71,6 +71,13 @@ export default function InnovationHabitSplit({
                     gap={0}
                     paddingX={0}
                     arrows={{ show: false }}
+                    autoplay={{
+                      enabled: true,     // ← from JSON
+                      delay: 3500,       // ← from JSON
+                      loop: true,
+                      pauseOnHover: true,
+                      pauseOnDrag: true,
+                    }}
                     dots={{
                       show: total > 1,
                       showOn: "both",

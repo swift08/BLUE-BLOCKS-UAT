@@ -32,16 +32,25 @@ export default function CarouselTrack({
   paddingX = 0,
 
   // Optional controls
-  dots, // { show, count, className, dotClassName, activeClassName, inactiveClassName, focusRingClassName, showOn?: "all"|"desktop"|"mobile" }
-  arrows, // { show, className, btnClassName, prevLabel, nextLabel, showOn?: "all"|"desktop"|"mobile" }
+  dots,
+  arrows,
 
   // Optional: override max index logic (eg: 3 visible cards)
   maxIndexOverride,
 
-  className = "",
-  children, // (ctx) => nodes
+  // ✅ AUTOPLAY (new)
+  autoplay = {
+    enabled: false,
+    delay: 4000, // ms
+    loop: true, // when reaches end, go back to 0
+    pauseOnHover: true,
+    pauseOnDrag: true,
+    resumeDelay: 0, // ms delay before restarting after interaction (optional)
+  },
 
-  // optional callback to expose controller outside
+  className = "",
+  children,
+
   onControllerChange,
 }) {
   const wrapRef = useRef(null);
@@ -50,6 +59,10 @@ export default function CarouselTrack({
   // ✅ NEW: gate pointer move unless user is actively dragging
   const isPointerDownRef = useRef(false);
   const pointerIdRef = useRef(null);
+
+  // ✅ AUTOPLAY state
+  const [isHovered, setIsHovered] = useState(false);
+  const resumeTimerRef = useRef(null);
 
   // Internal carousel engine
   const carousel = useCarousel({
@@ -115,6 +128,7 @@ export default function CarouselTrack({
   const showOnClass = (showOn) => {
     if (showOn === "desktop") return "hidden md:flex";
     if (showOn === "mobile") return "flex md:hidden";
+    // accept "both" as "all"
     return "flex";
   };
 
@@ -166,12 +180,94 @@ export default function CarouselTrack({
     carousel.onPointerUp(e);
   };
 
+  // ✅ AUTOPLAY: pause on tab hidden
+  const isDocHidden = useMemo(() => {
+    // this memo just avoids crashes during SSR; component is client anyway
+    return typeof document !== "undefined" ? document.hidden : false;
+  }, []);
+
+  // ✅ AUTOPLAY effect
+  useEffect(() => {
+    const cfg = autoplay ?? {};
+    const enabled = Boolean(cfg.enabled);
+    const delay = Number.isFinite(cfg.delay) ? cfg.delay : 4000;
+
+    if (!enabled) return;
+    if (total <= 1) return;
+    if (maxIndexComputed <= 0) return; // nothing to slide (all visible)
+
+    const pauseOnHover = cfg.pauseOnHover !== false;
+    const pauseOnDrag = cfg.pauseOnDrag !== false;
+    const loop = cfg.loop !== false;
+
+    const shouldPause =
+      (pauseOnHover && isHovered) ||
+      (pauseOnDrag && (carousel.dragging || isPointerDownRef.current)) ||
+      (typeof document !== "undefined" && document.hidden);
+
+    // handle delayed resume after interactions
+    const resumeDelay = Number.isFinite(cfg.resumeDelay) ? cfg.resumeDelay : 0;
+
+    // clear any pending resume timer
+    if (resumeTimerRef.current) {
+      clearTimeout(resumeTimerRef.current);
+      resumeTimerRef.current = null;
+    }
+
+    if (shouldPause) {
+      // if user wants a delayed resume, we can schedule it by forcing a state flip via hover
+      // but simplest: just return; effect will rerun when pause condition changes
+      return;
+    }
+
+    // optional resume delay (useful after drag ends)
+    if (resumeDelay > 0) {
+      resumeTimerRef.current = setTimeout(() => {
+        // no-op: effect will already be active; this just ensures delay before interval starts
+      }, resumeDelay);
+    }
+
+    const id = setInterval(() => {
+      const atEnd = carousel.active >= maxIndexComputed;
+      if (atEnd) {
+        if (loop) carousel.goTo(0);
+      } else {
+        carousel.goTo(carousel.active + 1);
+      }
+    }, delay);
+
+    return () => {
+      clearInterval(id);
+      if (resumeTimerRef.current) {
+        clearTimeout(resumeTimerRef.current);
+        resumeTimerRef.current = null;
+      }
+    };
+    // include carousel.active so the interval uses latest position and feels responsive
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    autoplay?.enabled,
+    autoplay?.delay,
+    autoplay?.loop,
+    autoplay?.pauseOnHover,
+    autoplay?.pauseOnDrag,
+    autoplay?.resumeDelay,
+    total,
+    maxIndexComputed,
+    isHovered,
+    carousel.active,
+    carousel.dragging,
+    isDocHidden,
+  ]);
+
   return (
     <div className={className}>
       <div ref={wrapRef} className="w-full">
         <div
           className="relative overflow-hidden"
           style={{ paddingLeft: paddingX, paddingRight: paddingX }}
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
           {/* TRACK */}
           <div
@@ -186,7 +282,6 @@ export default function CarouselTrack({
             onPointerUp={endPointer}
             onPointerCancel={endPointer}
             onPointerLeave={(e) => {
-              // if mouse leaves while dragging, stop drag
               if (e.pointerType === "mouse") endPointer(e);
             }}
           >

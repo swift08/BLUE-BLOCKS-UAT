@@ -92,7 +92,7 @@ export default function EducationAidToLife({
               {paragraphs?.length ? (
                 <div className="mt-6 space-y-5 bb-text leading-7 text-slate-600 max-w-[34rem]">
                   {paragraphs.map((p, i) => (
-                    <p key={i}>{p}</p>
+                    <p key={i} dangerouslySetInnerHTML={{ __html: p }}></p>
                   ))}
                 </div>
               ) : null}

@@ -21,15 +21,13 @@ export default function VerifiedAchievements({
     <section className={["bb-ui", "bb-section", resolved.className].filter(Boolean).join(" ")} style={resolved.style}>
       <Container className={["bb-section__inner", maxWidth].filter(Boolean).join(" ")}>
         {/* Header */}
-        <div className="max-w-3xl">
-          <h2 className="bb-section-title text-center text-slate-900">{title}</h2>
+        <h2 className="bb-section-title text-center text-slate-900">{title}</h2>
 
-          {description ? (
-            <p className="mt-4 leading-relaxed text-slate-700">
-              {description}
-            </p>
-          ) : null}
-        </div>
+        {description ? (
+          <p className="mt-4 leading-relaxed text-slate-700">
+            {description}
+          </p>
+        ) : null}
 
         {/* Cards */}
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

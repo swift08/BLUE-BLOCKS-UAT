@@ -106,7 +106,7 @@ function FounderCard({
   const hasModal = Boolean(modal);
 
   return (
-    <div className="rounded-[26px] border-2 border-slate-900 bg-white p-6 sm:p-7">
+    <div className="h-full rounded-[26px] border-2 border-slate-900 bg-white p-6 sm:p-7 flex flex-col">
       {/* Image frame */}
       <div className="relative overflow-hidden rounded-[22px] border border-slate-200 bg-white">
         {image ? (
@@ -152,7 +152,7 @@ function FounderCard({
         </p>
       ) : null}
 
-      <div className="mt-5 flex justify-end">
+      <div className="mt-auto pt-5 flex justify-end">
         {hasModal ? (
           <FounderDetailsModalTrigger
             person={{ name, roleLabel, image, imageAlt, bio, tagline }}
@@ -271,7 +271,16 @@ function FounderDetailsModalTrigger({ person, modal }) {
                     </p>
                   );
                 }
-                if (typeof item === "string") return <p key={i}>{item}</p>;
+
+                if (typeof item === "string") {
+                  return (
+                    <p
+                      key={i}
+                      dangerouslySetInnerHTML={{ __html: item }}
+                    />
+                  );
+                }
+
                 return null;
               })}
             </div>

@@ -705,26 +705,17 @@
             "className": "inline",
             "image": "#",
             "eyebrow": "",
-            "title": "Who We Are - More Than a School",
+            "title": "More Than a School",
             "description": "Blue Blocks is a 'Children's House' in the truest sense. We are a community of 847 students, families, and guides committed to a single truth: the child is their own teacher. We do not believe in forcing children into molds. We believe in the prepared environment—a space where a 3-year-old finds focus scrubbing a table, and a 14-year-old finds purpose building a satellite. We offer the complete 0-18 Continuum, ensuring your child’s transition from toddlerhood to university is seamless, coherent, and grounded in deep self-knowledge",
             "subdescription": "",
-            "bullets": [
-              {
-                "icon": "/icon/certificate.svg",
-                "title": "Authenticity: ",
-                "text": "AMI-standard Montessori practice, without dilution or compromise."
-              },
-              {
-                "icon": "/icon/rounding.svg",
-                "title": "Continuum: ",
-                "text": "One of the few institutions in India offering a seamless 0-18 developmental journey."
-              },
-              {
-                "icon": "/icon/magnific-icon.svg",
-                "title": "Evidence: ",
-                "text": "Every claim we make is backed by documented outcomes. "
-              }
-            ],
+            "autoplay": {
+              "enabled": true,
+              "delay": 3500,
+              "loop": true,
+              "pauseOnHover": true,
+              "pauseOnDrag": true
+            },
+            "bullets": [],
             "images": [
               {
                 "icon": "/innovation-01/slider-image-1.webp",
@@ -789,19 +780,71 @@
           }
         },
         {
+          "type": "imageText",
+          "props": {
+            "bgClass" : "bg-iceSoft",
+            "title": "The Capable Human.",
+            "text": [
+              "Our vision is to normalize 'Genius.' We believe that independence, empathy, and innovation are not rare gifts, but natural consequences of an education that respects the human spirit.",
+              "We are raising a generation that does not just navigate the world but builds it. A Blue Blocks student carries a distinct signature: they are comfortable in their own skin, they know how to solve problems, and they do not wait for permission to learn."
+            ],
+            "imageUrl": "/about-us/the-capable-human.webp",
+            "align": "left",
+            "imageSide":"left",
+            "imageClassName":"",
+            "imageFit":"contain",
+            "imageAspect":"aspect-[16/10]"              
+          }
+        },
+        {
+          "type": "AreasofDevelopment",
+          "props": {
+            "bg": "#FFFFFF",
+            "eyebrow": "",
+            "title": "Why Blue Blocks?",
+            "description": "",
+            "subdescription": "",
+            "subtitle": "",
+            "headerAlign": "center",
+            "cols": {
+              "base": 1,
+              "sm": 2,
+              "lg": 3
+            },
+            "maxWidth": "max-w-6xl place-content-center",
+            "gap": "gap-6",
+            "cardBg": "#273C75",
+            "cardRadius": "rounded-[18px]",
+            "cardPadding": "px-6 py-7",
+            "cardMinHeight": 220,
+            "iconSize": "60",
+            "iconWrapClassName": "h-10 w-10",
+            "items": [
+              {
+                "icon": "/icon/brain.svg",
+                "title": "The Authentic Continuum (0-18)",
+                "text": "Most schools fragment a child's life. At Blue Blocks, the journey is one continuous arc. The nurturing independence of the early years transitions organically into the academic rigor of the Cambridge (IGCSE) years (Grades 7-10), without the jarring culture shocks that derail potential."
+              },
+              {
+                "icon": "/icon/movement.svg",
+                "title": "The Guide, Not the Boss",
+                "text": "Our teachers are AMI-Certified Guides. They do not lecture from a podium; they work on the floor with the child. They are trained to observe rather than judge, knowing exactly when to step in with a new challenge and—more importantly—when to step back and let the child succeed on their own."
+              },
+              {
+                "icon": "/icon/leaf.svg",
+                "title": "Applied Montessori",
+                "text": "We believe Montessori principals apply to the future as much as the past. Our campus includes specialized spaces like the Space Lab and Drone Centre, where students apply their natural focus to real-world engineering."
+              }
+            ]
+          }
+        },
+        {
           "type": "educationAidToLife",
           "props": {
             "bg": "#F3E3CF",
             "eyebrow": "",
-            "title": "Why Blue Blocks?",
-            "paragraphs": [
-              "The Authentic Continuum (0-18)",
-              "Most schools fragment a child's life. At Blue Blocks, the journey is one continuous arc. The nurturing independence of the early years transitions organically into the academic rigor of the Cambridge (IGCSE) years (Grades 7-10), without the jarring culture shocks that derail potential.",
-              "The Guide, Not the Boss ",
-              "Our teachers are AMI-Certified Guides. They do not lecture from a podium; they work on the floor with the child. They are trained to observe rather than judge, knowing exactly when to step in with a new challenge and—more importantly—when to step back and let the child succeed on their own.",
-              "Applied Montessori",
-              "We believe Montessori principals apply to the future as much as the past. Our campus includes specialized spaces like the Space Lab and Drone Centre, where students apply their natural focus to real-world engineering."
-            ],
+            "title": "Three stages of awakening. One unified path forward",
+            "paragraphs": [],
             "pyramidImage": "/about-us/pyramid.webp",
             "pyramid": {
               "top": {
@@ -823,53 +866,12 @@
           }
         },
         {
-          "type": "AreasofDevelopment",
-          "props": {
-            "bg": "#FFFFFF",
-            "eyebrow": "",
-            "title": "Who We Are",
-            "description": "Raising Conscious, Capable Citizens for 2050",
-            "subdescription": "The world of 2050 will need more than intelligence. It will need clarity, compassion, and a deep moral compass. Most schools ask: 'How do we make children smarter?'",
-            "subtitle": "We ask: 'How do we help children become fully human?'",
-            "headerAlign": "center",
-            "cols": {
-              "base": 1,
-              "sm": 2,
-              "lg": 3
-            },
-            "maxWidth": "max-w-6xl place-content-center",
-            "gap": "gap-6",
-            "cardBg": "#273C75",
-            "cardRadius": "rounded-[18px]",
-            "cardPadding": "px-6 py-7",
-            "cardMinHeight": 220,
-            "iconSize": "60",
-            "iconWrapClassName": "h-10 w-10",
-            "items": [
-              {
-                "icon": "/icon/brain.svg",
-                "title": "Brain Development",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
-              },
-              {
-                "icon": "/icon/movement.svg",
-                "title": "Movement Development",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
-              },
-              {
-                "icon": "/icon/leaf.svg",
-                "title": "Care for Environment",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
-              }
-            ]
-          }
-        },
-        {
           "type": "foundersGuides",
           "props": {
+            "bg" : "bg-[#FFFFFF]",
             "pill": "OUR FOUNDERS",
             "title": "The Custodians",
-            "description": "We do not view teaching as instruction, but as a scientific discipline...",
+            "description": "Education is not transmission. We practice the rigorous discipline of observing and protecting the child’s independent development.",
             "card": {
               "maxWidth": "420px"
             },
@@ -880,15 +882,15 @@
                 "roleColor": "#E08B64",
                 "image": "/team/pavan.webp",
                 "imageAlt": "Pavan Goyal",
-                "bio": "AMI, Netherlands certified for 0–3, 3–6, 6–12. Currently pursuing 12–15 Erd Kinder training.",
+                "bio": "Pavan holds the rare complete AMI Diploma (0-18). He bridges the gap between Montessori philosophy and future-ready innovation, ensuring that Blue Blocks remains a place where the 'Scientific Method' is a way of life.",
                 "readMoreHref": "/founders/pavan-goyal",
                 "modal": {
                   "title": "Founder’s Note",
                   "content": [
-                    "Pavan holds the rare complete AMI Diploma (0-18). He bridges the gap between Montessori philosophy and future-ready innovation, ensuring that Blue Blocks remains a place where the 'Scientific Method' is a way of life.",
-                    "The Architect of Learning: Pavan is not a traditional principal. With a background that merges systems thinking with pedagogy, he approaches the school as a 'living organism.'",
-                    "The AMI Journey: Holding the rare 0-18 AMI Certification, Pavan has spent over two decades studying the arc of human development. He doesn't just run the school; he designs the systems that allow innovation to flourish.",
-                    "The Research Focus: Pavan serves as the Principal Investigator for the Micro-Research Institute, leading the longitudinal study on how 'sovereign ownership' of ideas affects adolescent confidence."
+                    "AMI, Netherlands Certified for 0-3, 3-6, 6-12 and 12-18.",
+                    "<b>The Architect of Learning:</b> Pavan is not a traditional principal. With a background that merges systems thinking with pedagogy, he approaches the school as a 'living organism.'",
+                    "<b>The AMI Journey:</b> Holding the rare <b>0-18 AMI Certification</b>, Pavan has spent over two decades studying the arc of human development. He doesn't just run the school; he designs the systems that allow innovation to flourish.",
+                    "<b>The Research Focus:</b> Pavan serves as the Principal Investigator for the Micro-Research Institute, leading the longitudinal study on how 'sovereign ownership' of ideas affects adolescent confidence."
                   ],
                   "social": [
                     {
@@ -908,15 +910,14 @@
                 "roleColor": "#57B3CE",
                 "image": "/team/munira.webp",
                 "imageAlt": "Munira Hussain",
-                "bio": "Graduate in Psychology, AMI, Netherlands certified for 3–6 and 6–12.",
+                "bio": "Munira is the 'Protector of the Environment.' With strict AMI certification, she ensures that every classroom—from the Infant Community to the High School—remains a psychological sanctuary for the child, protecting the intimacy of the work cycle.",
                 "readMoreHref": "/founders/munira-hussain",
                 "modal": {
                   "title": "Founder’s Note",
                   "content": [
-                    "Munira is the 'Protector of the Environment.' With strict AMI certification, she ensures that every classroom—from the Infant Community to the High School—remains a psychological sanctuary for the child, protecting the intimacy of the work cycle.",
-                    "The Pedagogical Anchor: Munira ensures that Blue Blocks remains a 'psychological sanctuary.' She strictly audits every environment to ensure it meets the psychological needs of the child, not the convenience of the adult.",
-                    "The Mentor: She runs the internal 'Guide Training' program, mentoring new teachers on the art of observation. Her philosophy is simple: 'If the child is failing, the environment is failing.'",
-                    "The Parent Partner: Munira leads the Parent Education Program, helping families bridge the gap between the freedom of the classroom and the structure of the home."
+                    "<b>The Pedagogical Anchor:</b> Munira ensures that Blue Blocks remains a 'psychological sanctuary.' She strictly audits every environment to ensure it meets the psychological needs of the child, not the convenience of the adult.",
+                    "<b>The Mentor:</b> She runs the internal 'Guide Training' program, mentoring new teachers on the art of observation. Her philosophy is simple: 'If the child is failing, the environment is failing.'",
+                    "<b>The Parent Partner:</b> Munira leads the Parent Education Program, helping families bridge the gap between the freedom of the classroom and the structure of the home."
                   ],
                   "social": [
                     {
@@ -936,9 +937,9 @@
         {
           "type": "foundersGuides",
           "props": {
-            "bg": "bg-[#FFFFFF]",
-            "pill": "OUR Teams",
-            "title": "The Teaching Team",
+            "bg": "bg-[#F3E3CF]",
+            "pill": "OUR TEAM",
+            "title": "The Guides",
             "description": "In a traditional school, the teacher transmits information. At Blue Blocks, the Guide links the child to the environment.",
             "subdescription": "Our educators are masters of patience. They know that a child tying their own shoelaces is a victory for independence. Because our guides stay with the same children for three-year cycles, they know your child’s history, their temperament, and the precise moment they fell in love with reading. They are not just teachers; they are witnesses to your child's development.",
             "card": { "maxWidth": "420px" },
@@ -2305,7 +2306,14 @@
               "We integrate classical Montessori foundations with modern innovation pathways. From early sensorial exploration to adolescent research, engineering, and innovation work, learners experience a coherent developmental journey that builds confidence, competence, and clarity.",
               "At Blue Blocks, success is measured not just through academics, but through independence, resilience, creativity, and social awareness. The goal is simple: to nurture individuals who are not only knowledgeable, but capable, grounded, and prepared for an evolving world."
             ],
-            "descriptionClassName": "text-[#717171]",
+            "readMore": {
+              "enabled": true,
+              "text": "At Blue Blocks, success is measured not just through academics, but through independence, resilience, creativity, and social awareness. The goal is simple: to nurture individuals who are not only knowledgeable, but capable, grounded, and prepared for an evolving world.",
+              "selector": ".bb-text p", 
+              "readMoreLabel": "Read More",
+              "readLessLabel": "Read Less"
+            },
+            "descriptionClassName": "text-[#717171] space-y-5 bb-text",
             "images": [
               {
                 "icon": "/about-us/slider-image-3.webp",
@@ -2329,47 +2337,22 @@
               }
             ]
           }
-        },
+        },        
         {
-          "type": "AreasofDevelopment",
+          "type": "imageText",
           "props": {
-            "bg": "#FFFFFF",
-            "eyebrow": "",
-            "title": "The 3 Pillars (The Approach)",
-            "description": "",
-            "headerAlign": "center",
-            "cols": {
-              "base": 1,
-              "sm": 2,
-              "lg": 3
-            },
-            "maxWidth": "max-w-6xl place-content-center",
-            "gap": "gap-6",
-            "cardBg": "#F5E9DA",
-            "cardRadius": "rounded-[18px]",
-            "cardPadding": "px-6 py-7",
-            "cardMinHeight": 220,
-            "cardTitleClassName": "mt-5 font-medium leading-[1.18] text-[#414141]",
-            "cardTextClassName": "mt-4 leading-6 text-[#414141]",
-            "iconSize": "60",
-            "iconWrapClassName": "h-10 w-10",
-            "items": [
-              {
-                "icon": "/icon/brain.svg",
-                "title": "Brain Development",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
-              },
-              {
-                "icon": "/icon/movement.svg",
-                "title": "Movement Development",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
-              },
-              {
-                "icon": "/icon/leaf.svg",
-                "title": "Care for Environment",
-                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation."
-              }
-            ]
+            "bgClass" : "bg-[#F3E3CF]",
+            "title": "The Capable Human.",
+            "text": [
+              "Our vision is to normalize 'Genius.' We believe that independence, empathy, and innovation are not rare gifts, but natural consequences of an education that respects the human spirit.",
+              "We are raising a generation that does not just navigate the world but builds it. A Blue Blocks student carries a distinct signature: they are comfortable in their own skin, they know how to solve problems, and they do not wait for permission to learn."
+            ],
+            "imageUrl": "/about-us/the-capable-human.webp",
+            "align": "left",
+            "imageSide":"left",
+            "imageClassName":"",
+            "imageFit":"contain",
+            "imageAspect":"aspect-[16/10]"              
           }
         },
         {

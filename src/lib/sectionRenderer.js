@@ -61,6 +61,7 @@ import ImpactCollageSplit from "@/components/blocks/ImpactCollageSplit";
 import FounderVisionSplit from "@/components/blocks/FounderVisionSplit";
 import LegalDocument from "@/components/blocks/LegalDocument";
 import PageNavButtons from "@/components/ui/PageNavButtons";
+import ReadMoreInjector from "@/components/ui/ReadMoreInjector";
 
 export default function SectionRenderer({ sections = [] }) {
   return (
@@ -69,152 +70,167 @@ export default function SectionRenderer({ sections = [] }) {
         const { type, props } = section || {};
         const key = `${type || "section"}-${idx}`;
 
+        const wrap = (node) => {
+        const rm = props?.readMore;
+        if (!rm?.text) return node;
+
+        return (
+          <ReadMoreInjector
+            config={rm}
+            // default selector: finds the first paragraph inside bb-text
+            selector=".bb-text p"
+          >
+            {node}
+          </ReadMoreInjector>
+        );
+      };
+
         switch (type) {
           // ADD:
           case "pageNavButtons": 
             return <PageNavButtons key={key} {...props} />;
 
           case "legalDocument": 
-            return <LegalDocument key={key} {...props} />;
+            return wrap(<LegalDocument key={key} {...props} />);
 
           case "founderVisionSplit":
-            return <FounderVisionSplit key={key} {...props} />;
+            return wrap(<FounderVisionSplit key={key} {...props} />);
           case "impactCollageSplit":
-            return <ImpactCollageSplit key={key} {...props} />;
+            return wrap(<ImpactCollageSplit key={key} {...props} />);
           case "youngInnovatorsGrid":
-            return <YoungInnovatorsGrid key={key} {...props} />;
+            return wrap(<YoungInnovatorsGrid key={key} {...props} />);
 
           case "outcomesPills":
-            return <OutcomesPills key={key} {...props} />;
+            return wrap(<OutcomesPills key={key} {...props} />);
 
           case "CenteredTextBlock":
-            return <CenteredTextBlock key={key} {...section.props} />;
+            return wrap(<CenteredTextBlock key={key} {...section.props} />);
 
           case "simpleImageSection":
-            return <SimpleImageSection key={key} {...section.props} />;
+            return wrap(<SimpleImageSection key={key} {...section.props} />);
           case "systemOverview":
-            return <SystemOverview key={key} {...section.props} />;
+            return wrap(<SystemOverview key={key} {...section.props} />);
 
           case "careersSection":
-            return <CareersSection key={key} {...section.props} />;
+            return wrap(<CareersSection key={key} {...section.props} />);
 
           //About US > Montessori For Success 
           case "montessoriForSuccess":
-            return <MontessoriForSuccess key={key} {...props} />;
+            return wrap(<MontessoriForSuccess key={key} {...props} />);
           
           //ABOUT US
           case "ourStory":
-            return <OurStory key={key} {...props} />;
+            return wrap(<OurStory key={key} {...props} />);
           case "foundersGuides":
-            return <FoundersGuides key={key} {...props} />;
+            return wrap(<FoundersGuides key={key} {...props} />);
           case "verifiedAchievements":
-            return <VerifiedAchievements key={key} {...props} />;
+            return wrap(<VerifiedAchievements key={key} {...props} />);
           case "seekVsDeliver":
-            return <SeekVsDeliver key={key} {...props} />;
+            return wrap(<SeekVsDeliver key={key} {...props} />);
           case "benchmarkBanner":
-            return <BenchmarkBanner key={key} {...props} />;
+            return wrap(<BenchmarkBanner key={key} {...props} />);
           case "hexaInfrastructure":
-            return <HexaInfrastructure key={key} {...props} />;
+            return wrap(<HexaInfrastructure key={key} {...props} />);
 
           // ACADEMICS
           case "academicsIntro":
-            return <AcademicsIntro key={key} {...props} />;
+            return wrap(<AcademicsIntro key={key} {...props} />);
           case "educationAidToLife":
-            return <EducationAidToLife key={key} {...props} />;
+            return wrap(<EducationAidToLife key={key} {...props} />);
           case "programsGrid":
-            return <ProgramsGrid key={key} {...props} />;
+            return wrap(<ProgramsGrid key={key} {...props} />);
 
           // PROGRAMS
           case "programIntroSplit":
-            return <ProgramIntroSplit key={key} {...props} />;
+            return wrap(<ProgramIntroSplit key={key} {...props} />);
           case "AreasofDevelopment":
-            return <CardsGridSection key={key} {...props} />;
+            return wrap(<CardsGridSection key={key} {...props} />);
           case "programsctaBanner":
-            return <CtaBanner key={key} {...props} />;
+            return wrap(<CtaBanner key={key} {...props} />);
           
           // INNOVATION
           case "innovationMediaHero":
-            return <Hero key={key} {...props} />;
+            return wrap(<Hero key={key} {...props} />);
           case "innovationAgeCards":
-            return <InnovationAgeCards key={key} {...props} />;
+            return wrap(<InnovationAgeCards key={key} {...props} />);
           case "innovationLogoStrip":
-            return <InnovationLogoStrip key={key} {...props} />;
+            return wrap(<InnovationLogoStrip key={key} {...props} />);
           case "innovationHabitSplit":
-            return <InnovationHabitSplit key={key} {...props} />;
+            return wrap(<InnovationHabitSplit key={key} {...props} />);
           case "montessoriToMars":
-            return <MontessoriToMars key={key} {...props} />;
+            return wrap(<MontessoriToMars key={key} {...props} />);
           case "billionYears":
-            return <BillionYears key={key} {...props} />;
+            return wrap(<BillionYears key={key} {...props} />);
           case "highStakes":
-            return <HighStakes key={key} {...props} />;
+            return wrap(<HighStakes key={key} {...props} />);
           case "innovationGallery":
-            return <InnovationGallery key={key} {...props} />;
+            return wrap(<InnovationGallery key={key} {...props} />);
 
           // Research-Institute
           case "researchHero":
-            return <ResearchHero key={key} {...props} />;
+            return wrap(<ResearchHero key={key} {...props} />);
           case "researchMission":
-            return <ResearchMission key={key} {...props} />;
+            return wrap(<ResearchMission key={key} {...props} />);
           case "philosophyCards":
-            return <CardsGridSection key={key} {...props} />;
+            return wrap(<CardsGridSection key={key} {...props} />);
           case "methodFramework":
-            return <MethodFramework key={key} {...props} />;
+            return wrap(<MethodFramework key={key} {...props} />);
           case "researchStats":
-            return <ResearchStats key={key} {...props} />;
+            return wrap(<ResearchStats key={key} {...props} />);
           case "outcomesPatents":
-            return <OutcomesPatents key={key} {...props} />;
+            return wrap(<OutcomesPatents key={key} {...props} />);
           case "publicationsGrid":
-            return <PublicationsGrid key={key} {...props} />;
+            return wrap(<PublicationsGrid key={key} {...props} />);
           case "partnersStrip":
-            return <PartnersStrip key={key} {...props} />;
+            return wrap(<PartnersStrip key={key} {...props} />);
           case "councilCarousel":
-            return <CouncilCarousel key={key} {...props} />;
+            return wrap(<CouncilCarousel key={key} {...props} />);
           case "ethicsGovernance":
-            return <EthicsGovernance key={key} {...props} />;
+            return wrap(<EthicsGovernance key={key} {...props} />);
           
           // Parents
           case "books":
-            return <ParentsBooks key={key} {...props} />;
+            return wrap(<ParentsBooks key={key} {...props} />);
           case "insightsCarousel":
-            return <InsightsCarousel key={key} {...props} />;
+            return wrap(<InsightsCarousel key={key} {...props} />);
           case "tabbedFaq":
-            return <TabbedFaq key={key} {...props} />;
+            return wrap(<TabbedFaq key={key} {...props} />);
 
           // ADMISSIONS
           case "admissionsIntro":
-            return <AdmissionsIntro key={key} {...props} />;
+            return wrap(<AdmissionsIntro key={key} {...props} />);
           case "admissionsJourney":
-            return <AdmissionsJourney key={key} {...props} />;
+            return wrap(<AdmissionsJourney key={key} {...props} />);
             
           // CONTACT
           case "contactDetails":
-            return <ContactDetails key={key} {...props} />;
+            return wrap(<ContactDetails key={key} {...props} />);
           case "locationsGrid":
-            return <LocationsGrid key={key} {...props} />;
+            return wrap(<LocationsGrid key={key} {...props} />);
           case "positionsOpen":
-            return <PositionsOpen key={key} {...props} />;
+            return wrap(<PositionsOpen key={key} {...props} />);
 
           // HOME
           case "homeHero":
-            return <Hero key={key} {...props} />;
+            return wrap(<Hero key={key} {...props} />);
           case "imageText":
-            return <ImageText key={key} {...props} />;
+            return wrap(<ImageText key={key} {...props} />);
           case "journeyCards":
-            return <JourneyCards key={key} {...props} />;
+            return wrap(<JourneyCards key={key} {...props} />);
           case "featureGrid":
-            return <FeatureGrid key={key} {...props} />;
+            return wrap(<FeatureGrid key={key} {...props} />);
           case "insights":
-            return <Insights key={key} {...props} />;
+            return wrap(<Insights key={key} {...props} />);
           case "recognizedBy":
-            return <RecognizedBy key={key} {...props} />;
+            return wrap(<RecognizedBy key={key} {...props} />);
           case "faq":
-            return <FAQAccordion key={key} {...props} />;
+            return wrap(<FAQAccordion key={key} {...props} />);
 
           //COMMON
           case "pageHero":
-            return <PageHero key={key} {...props} />;
+            return wrap(<PageHero key={key} {...props} />);
           case "ctaBanner":
-            return <CtaBanner key={key} {...props} />;
+            return wrap(<CtaBanner key={key} {...props} />);
           default:
             return null;
         }

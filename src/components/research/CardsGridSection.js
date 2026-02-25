@@ -116,7 +116,7 @@ export default function CardsGridSection({
   cardTitleClassName = "mt-5 font-medium leading-[1.18] text-white whitespace-pre-line",
   cardTextClassName = "mt-4 leading-6 text-white/75",
 
-  showNum = true,
+  showNum = false,
   numClassName = "text-[3rem] sm:text-[3.2rem] font-semibold leading-none text-white/20",
   cardRightTabs,
   cardBehindTabs,
