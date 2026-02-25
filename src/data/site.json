@@ -137,10 +137,10 @@
         }
       ],
       "ctaCard": {
-        "title": "Start Your Child’s Montessori Journey",
-        "text": "Explore programs designed for independence, curiosity, and growth.",
+        "title": "Discover the Blue Blocks Vision",
+        "text": "Explore the research, philosophy, and 18-year developmental architecture shaping the innovators of tomorrow.",
         "button": {
-          "label": "Explore Programs →",
+          "label": "ABOUT US →",
           "href": "/programs"
         }
       }
@@ -2335,14 +2335,20 @@
           "type": "imageText",
           "props": {
             "bgClass" : "bg-[#F3E3CF]",
-            "title": "The Capable Human.",
+            "title": "Dr. Montessori was a Scientist.",
             "text": [
-              "Our vision is to normalize 'Genius.' We believe that independence, empathy, and innovation are not rare gifts, but natural consequences of an education that respects the human spirit.",
-              "We are raising a generation that does not just navigate the world but builds it. A Blue Blocks student carries a distinct signature: they are comfortable in their own skin, they know how to solve problems, and they do not wait for permission to learn."
+              "Many forget that Maria Montessori was a physician and a scientist. Her method was born from observation. We simply continue that tradition.",
+              "The Blue Blocks Micro Research Institute is not a separate lab; it is the heartbeat of our practice. We systematically observe how children learn so we can constantly refine our environment. We don't experiment on children; we learn from them. This ensures that our education is not based on assumptions, but on a deep, documented understanding of the child's needs."
+            ],
+            "readMore":[
+              "How We Observe (Zero Interference) Our research is invisible to the child. We use the 'Fly on the Wall' protocol.",
+              "No Clipboards: Guides record data mentally or on unobtrusive pocket pads.",
+              "No Tests: We do not pull children out of class for assessments. We evaluate their competency by watching them work with materials.",
+              "Privacy First: In our published studies, your child is never 'Subject A.' They are simply part of the aggregate data that helps us understand how all children learn better."
             ],
             "imageUrl": "/about-us/the-capable-human.webp",
             "align": "left",
-            "imageSide":"left",
+            "imageSide":"right",
             "imageClassName":"",
             "imageFit":"contain",
             "imageAspect":"aspect-[16/10]"              
@@ -2376,16 +2382,16 @@
               {
                 "image": "/achievements/patents.webp",
                 "imageAlt": "Patents",
-                "title": "Patents by 11-Year-Olds.",
-                "text": "In a traditional school, students replicate science experiments. In our Innovation Lab, they invent new technology.",
+                "title": "Innovation",
+                "text": "Our students have filed 5 Utility Patents for their own inventions—evidence that when children are trusted with real problems, they respond with original solutions.",
                 "href": "/research/patents",
                 "bg": "#F7E28D"
               },
               {
                 "image": "/achievements/sbb1.webp",
                 "imageAlt": "Mission SBB-1",
-                "title": "Mission SBB-1 (Authorized by ISRO/IN-SPACE).",
-                "text": "In a traditional school, students replicate science experiments. In our Innovation Lab, they invent new technology.",
+                "title": "Mission SBB-1 (Authorized by ISRO/IN-SPACe",
+                "text": "A payload designed and engineered by our adolescents received IN-SPACe authorization for launch with ISRO, demonstrating that Montessori students can operate within high-stakes technical and regulatory frameworks.",
                 "href": "/research/sbb-1",
                 "bg": "#78C4E5"
               },
@@ -2442,8 +2448,8 @@
             "title": "THE GLOBAL BENCHMARK FOR 2050",
             "text": "What does the future of education look like? The world is looking to Blue Blocks to find out. We are the first institution to simultaneously hold the trust of the US Department of State, the endorsement of the Association Montessori Internationale, and a premiere invitation from the Nobel Peace Center. From publishing open-science data on Zenodo to establishing India’s first K-12 innovation lab with IIT Hyderabad, we are moving beyond “schooling.” We are defining the global standard for the Zero-Shot Learner.",
             "cta": {
-              "label": "Read More",
-              "href": "/about"
+              "label": "",
+              "href": ""
             },
             "logos": [
               {

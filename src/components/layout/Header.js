@@ -366,7 +366,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                   {ctaCard?.button?.href ? (
                     <Link
                       href={normalizeHref(ctaCard.button.href)}
-                      className="inline-flex w-full items-center justify-center rounded-full bg-[#0F52BA] px-4 py-2 text-xs font-medium text-white hover:bg-[#0D47A1]"
+                      className="inline-flex w-full items-center justify-center rounded-full bg-[#0F52BA] px-4 py-3 text-xs font-medium text-white hover:bg-[#0D47A1]"
                     >
                       {ctaCard.button.label}
                     </Link>
