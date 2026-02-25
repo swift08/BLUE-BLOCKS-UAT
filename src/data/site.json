@@ -2488,45 +2488,6 @@
           }
         },
         {
-          "type": "hexaInfrastructure",
-          "props": {
-            "title": "Infrastructure for Innovation (0–18): Designed for the Developing Mind.",
-            "text": "At Blue Blocks, we believe architecture is not just a container for learning; it is an active participant in it. Our campus is designed as a “Living Laboratory,” where every angle, texture, and transition is engineered to stimulate specific neural pathways.",
-            "items": [
-              {
-                "title": "Octagonal\nClassrooms",
-                "image": "/infra/octagonal-1.webp",
-                "href": "/infrastructure/octagonal-classrooms",
-                "overlay": "bg-black/20"
-              },
-              {
-                "title": "The Wooden\nStaircase &\nTactile Design",
-                "image": "/infra/wooden-staircase.webp",
-                "href": "/infrastructure/wooden-staircase",
-                "overlay": "bg-black/20"
-              },
-              {
-                "title": "The Innovation\nInfrastructure\n(0–18)",
-                "image": "/infra/innovation.webp",
-                "href": "/infrastructure/innovation-infrastructure",
-                "overlay": "bg-black/20"
-              },
-              {
-                "title": "Octagonal\nClassrooms",
-                "image": "/infra/octagonal-2.webp",
-                "href": "/infrastructure/octagonal-classrooms-2",
-                "overlay": "bg-black/20"
-              },
-              {
-                "title": "Octagonal\nClassrooms",
-                "image": "/infra/octagonal-3.webp",
-                "href": "/infrastructure/octagonal-classrooms-3",
-                "overlay": "bg-black/20"
-              }
-            ]
-          }
-        },
-        {
           "type": "faq",
           "props": {
             "bg": "#F3E3CF",
@@ -8013,8 +7974,9 @@
             "className": "inline",
             "image": "#",
             "eyebrow": "",
-            "title": "Blueblocks Campus",
-            "description": "Blue Blocks campuses are designed as calm, spacious, and purpose-led learning environments where children feel safe to explore, move, and grow with independence. Every space—whether indoors or outdoors—is planned to support self-learning, curiosity, and meaningful social interaction, so children don’t just sit and follow instructions but actively discover, collaborate, and build confidence through hands-on experiences. From well-prepared classroom settings that encourage focus and choice, to open outdoor zones that strengthen coordination, resilience, and problem-solving, the campus becomes an extension of the child’s natural development journey. The overall atmosphere is warm, structured, and child-first—helping every learner develop not only academic foundations, but also real-world skills like responsibility, communication, and self-reliance.",
+            "title": "The Architecture of Independence",
+            "subtitle":"The Prepared Environment as the Third Teacher",
+            "description": "At Blue Blocks, we do not build traditional classrooms where children sit and comply. We engineer purposeful ecosystems. We view physical architecture as a scientific tool—the 'Third Teacher.' Every square foot of our campuses is a mathematically and psychologically calculated response to the developing human mind. Our spaces are designed to remove adult interference, allowing the child to move freely, collaborate spontaneously, and construct their own intellectual and physical independence.",
             "subdescription": "",
             "bullets": [
               {
@@ -8052,17 +8014,30 @@
             ]
           }
         },
+        
+        {
+          "type": "imageText",
+          "props": {
+            "sectionBg":"bg-[#EEF7FD]",
+            "title": "Two Campuses. One Continuous Arc.",
+            "text": [
+              "To serve the distinct biological and psychological needs of children from birth to eighteen, our ecosystem is divided into two purpose-built campuses:"
+            ],
+            "imageUrl": "",
+            "variant": "default",
+            "contentCenter": true
+          }
+        },
         {
           "type": "imageText",
           "props": {
             "title": "",
             "text": [
-              "<b>Blue Blocks Gachibowli Campus</b>",
-              "The Blue Blocks Self-learning Pre-school is a self sufficient spacious learning ground for children. The campus at Gachibowli has four environments that function in two shifts. While three of these environments are dedicated to the Self Interpretive Programme, two environments are dedicated to the Toddler Programme. The outdoors include sand pits, play area with swings, slides and monkey bars.",
+              "<b>The Gachibowli Campus: The Incubator (Ages 1–6)</b>",
+              "The young child’s intelligence is built entirely through movement and sensory absorption. Gachibowli is a sanctuary of spatial proportionality. Everything here is scaled to the young child, allowing them to navigate their world without constant adult intervention. The indoors flow seamlessly into the outdoors, utilizing sand, climbing apparatuses, and open space to build the physical equilibrium necessary for advanced cognitive focus.",
               "&nbsp;",
-              "<b>Blue Blocks Complete School</b>",
-              "The Blue Blocks Complete School is a sprawling campus in a one and half acre land at Osman Nagar, Tellapur. The school has two environments one each for Self Interpretive and Elementary Programme. The outdoors include Basketball court, Music Room, Art Room, Amphitheatre and a play area with sand pits and swing.",
-              "The outdoors include a Basket Ball Court, Music Room, Art Room, Amphitheatre, Play area including a sand pit, and swing."
+              "<b>The Tellapur Campus: The Expanse (Ages 2.5–18)</b>",
+              "As the child transitions into the reasoning mind and adolescence, their psychological need for physical space and complex societal interaction expands dramatically. The 1.5-acre Complete School at Tellapur is built to serve this exact biological shift, providing the vastness required for large-scale collaborative work, the operation of our student-led micro-economy, and our advanced aerospace and design laboratories."
             ],
             "imageUrl": "/campus/blueblocks-building-pic-min.webp",
             "variant": "card",
@@ -8073,6 +8048,126 @@
             "imageClassName": "rounded-2xl",
             "imageFit": "cover",
             "imageAspect": "aspect-[4/3]"
+          }
+        },
+        {
+          "type": "hexaInfrastructure",
+          "props": {
+            "title": "Infrastructure for Innovation (0-18): Designed for the Developing Mind.",
+            "text": "At Blue Blocks, we believe architecture is not just a container for learning; it is an active participant in it. Every angle, texture, and transition at our campus is engineered to stimulate specific neural pathways. From the tactile feedback of natural wood to the acoustic precision of our classrooms, our infrastructure is the physical manifestation of the Developmental Innovation Pedagogy (DIP).",
+            "items": [
+              {
+                "title": "Octagonal Classrooms",
+                "image": "/infra/octagonal-1.webp",
+                "href": "/infrastructure/octagonal-classrooms",
+                "overlay": "bg-black/20",
+                "readMoreLabel": "Read More",
+                "modal": {
+                  "title": "The Geometric Advantage: Octagonal Classrooms",
+                  "subtitle": "",
+                  "paragraphs": [
+                    "Unlike traditional \"box\" classrooms that create hierarchy (front vs. back), our signature Octagonal Environments are designed for community and acoustic clarity.",
+                    "The Neuroscience: The octagon shape eliminates \"dead corners\" and equalizes sound distribution. This reduces the cognitive load required for auditory processing, allowing the brain to allocate more energy to Focus and Synaptic Fusion.",
+                    "The Experience: A collaborative 360-degree environment where the teacher is a guide, not a lecturer, and every child feels equally anchored in the space."
+                  ],
+                  "cta": { "label": "View details", "href": "" },
+                  "maxWidthClass": "max-w-5xl"
+                }
+              },
+              {
+                "title": "The Wooden\nStaircase &\nTactile Design",
+                "image": "/infra/wooden-staircase.webp",
+                "href": "/infrastructure/wooden-staircase",
+                "overlay": "bg-black/20",
+                "readMoreLabel": "Read More",
+                "modal": {
+                  "title": "Sensorial Richness: The Wooden Staircase & Tactile Design",
+                  "subtitle": "",
+                  "paragraphs": [
+                    "In an era of plastic and concrete, we prioritized a Biophilic Design philosophy.",
+                    "The Wooden Staircase: Our central staircase is hand-crafted from natural wood with custom-designed handrails. For a child, gripping natural grain provides distinct tactile feedback (proprioception) that cold steel cannot. It turns a simple act of climbing into a grounding, sensory experience.",
+                    "Indoor-Outdoor Fluidity: Our spaces are rich in natural light and airflow, dissolving the barrier between the \"classroom\" and the \"world.\" This constant connection to nature regulates the circadian rhythms essential for emotional regulation and long-term memory retention."
+                  ],
+                  "cta": { "label": "View details", "href": "" },
+                  "maxWidthClass": "max-w-5xl"
+                }
+              },
+              {
+                "title": "The Innovation\nInfrastructure\n(0–18)",
+                "image": "/infra/innovation.webp",
+                "href": "/infrastructure/innovation-infrastructure",
+                "overlay": "bg-black/20",
+                "readMoreLabel": "Read More",
+                "modal": {
+                  "title": "The Innovation Infrastructure",
+                  "subtitle": "",
+                  "paragraphs": [
+                    "We have moved beyond the traditional \"Computer Lab.\"",
+                    "Our campus houses specialized zones that mirror professional R&D facilities.",
+                    "CESDI (Center for Early-Stage Design Innovation): A dedicated 1,000 sq. ft. facility established in collaboration with the Department of Design, IIT Hyderabad. This is where students engage in high-fidelity prototyping and undergo the IQx (Innovation Quotient) assessment.",
+                    "The Drone & Space Ports: Dedicated zones for our Space Science curriculum, where students move from theoretical physics to launching student-built satellites and drones.",
+                    "The Montessori Environments: A scientifically \"Prepared Environment\" stocked with standardized Montessori materials that isolate specific concepts (size, shape, pitch), allowing early learners to build the logical scaffolding required for later engineering tasks."
+                  ],
+                  "cta": { "label": "View details", "href": "" },
+                  "maxWidthClass": "max-w-6xl"
+                }
+              },
+              {
+                "title": "The Kinaesthetic\nLandscape",
+                "image": "/infra/octagonal-2.webp",
+                "href": "/infrastructure/kinaesthetic-landscape",
+                "overlay": "bg-black/20",
+                "readMoreLabel": "Read More",
+                "modal": {
+                  "title": "The Kinaesthetic Landscape: Sports & Movement",
+                  "subtitle": "",
+                  "paragraphs": [
+                    "We view the playground as an extension of the classroom.",
+                    "Risk & Resilience Zones: Our outdoor environments are designed to encourage \"Safe Risk-Taking.\" Whether balancing on beams or navigating complex play structures, students train their Vestibular System and Cerebellum—the same brain regions responsible for sequencing complex algorithms.",
+                    "The Sports-Music Nexus: Open spaces dedicated to our proprietary Multi-Modal Integration drills, where rhythm, movement, and logic converge to train the athletic brain."
+                  ],
+                  "cta": { "label": "View details", "href": "" },
+                  "maxWidthClass": "max-w-5xl"
+                }
+              },
+              {
+                "title": "Security\n& Trust",
+                "image": "/infra/octagonal-3.webp",
+                "href": "/infrastructure/security-trust",
+                "overlay": "bg-black/20",
+                "readMoreLabel": "Read More",
+                "modal": {
+                  "title": "Security & Trust",
+                  "subtitle": "",
+                  "paragraphs": [
+                    "US State Department Verified: Blue Blocks is listed by the United States Department of State as a verified educational institution, meeting rigorous standards for safety and operational integrity."
+                  ],
+                  "cta": { "label": "View details", "href": "" },
+                  "maxWidthClass": "max-w-4xl"
+                }
+              }
+            ],
+            "closingNote": {
+              "enabled": true,
+              "paragraphs": [
+                "We didn't just build a school. We built a brain-development engine.",
+                "Every inch of Blue Blocks—from the drone labs to the handrails—is intentional. It is a space where the architecture itself teaches resilience, innovation, and peace."
+              ]
+            }
+          }
+        },
+        {
+          "type": "innovationGallery",
+          "props": {
+            "eyebrow": "",
+            "title": "Gallery",
+            "images": [
+              "/campus-01/campus1-min.webp",
+              "/campus-01/campus2-min.webp",
+              "/campus-01/campus3-min.webp",
+              "/campus-01/campus4-min.webp",
+              "/campus-01/campus5-min.webp"
+            ]
           }
         },
         {

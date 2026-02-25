@@ -84,7 +84,7 @@ function AchievementCard({
           href={href}
           className="inline-flex items-center gap-2 font-semibold tracking-wide text-slate-900/80 hover:text-slate-900"
         >
-          READ MORE <span aria-hidden="true">⌄</span>
+          READ MORE <span aria-hidden="true">→</span>
         </a>
       </div>
     </div>

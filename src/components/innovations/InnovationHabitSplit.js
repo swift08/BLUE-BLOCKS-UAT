@@ -11,6 +11,7 @@ export default function InnovationHabitSplit({
   image,
   eyebrow,
   title,
+  subtitle,
   description,
 
   // ✅ Standard (NEW)
@@ -104,6 +105,8 @@ export default function InnovationHabitSplit({
                 {eyebrow ? <div className="bb-eyebrow">{eyebrow}</div> : null}
 
                 {title ? <h2 className="bb-section-title mt-2">{title}</h2> : null}
+
+                {subtitle ? <h3 className="bb-section-subtitle mt-2">{subtitle}</h3> : null}
 
                 {description ? (
                   <div className={finalDescriptionClassName}>

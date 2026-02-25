@@ -163,7 +163,7 @@ function FounderCard({
             href={readMoreHref}
             className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition"
           >
-            Read More <span aria-hidden="true">⌄</span>
+            Read More <span aria-hidden="true">→</span>
           </a>
         )}
       </div>
@@ -196,7 +196,7 @@ function FounderDetailsModalTrigger({ person, modal }) {
           type="button"
           className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition"
         >
-          Read More <span aria-hidden="true">⌄</span>
+          Read More <span aria-hidden="true">→</span>
         </button>
       }
       maxWidthClass="max-w-6xl"

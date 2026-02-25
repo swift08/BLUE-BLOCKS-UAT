@@ -46,7 +46,7 @@ export default function BenchmarkBanner({
                 className="inline-flex items-center gap-2 font-medium text-white/90 hover:text-white"
               >
                 {cta.label || "Read More"}
-                <span aria-hidden="true">⌄</span>
+                <span aria-hidden="true">→</span>
               </a>
             </div>
           ) : null}
