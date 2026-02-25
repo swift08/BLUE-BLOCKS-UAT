@@ -1,16 +1,8 @@
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
+import Link from "next/link";
 
-/**
- * InnovationLogoStrip
- * - Purpose: Logo strip with a single consistent section title + consistent spacing
- * - Backward compatible:
- *   - still accepts sectionTitleClass / sectionClass / logoWrapClass from JSON
- * - Standardized:
- *   - the "text" is rendered as a real section title (bb-section-title)
- *   - remove reliance on Tailwind font sizing in JSON (we ignore sizing intent)
- */
 function stripTypographySizing(className = "") {
   // remove common Tailwind typography sizing that breaks global consistency
   return className
@@ -28,6 +20,7 @@ function stripTypographySizing(className = "") {
 export default function InnovationLogoStrip({
   // ✅ Standard prop (token | class | hex)
   sectionBg = "bg-[#F8E5C7]",
+  anchorHref,
 
   // kept (non-breaking)
   sectionClass = "",
@@ -60,7 +53,7 @@ export default function InnovationLogoStrip({
               {Array.isArray(logos) && logos.length ? (
                 <div className={logoWrapClass}>
                   {logos.map((logo, idx) => (
-                    <div key={idx} className="relative">
+                    <Link key={idx} className="relative" href={logo.anchorHref}>
                       <Image
                         src={logo.src}
                         alt={logo.alt || ""}
@@ -68,7 +61,7 @@ export default function InnovationLogoStrip({
                         height={Number(logo.height) || 60}
                         className="h-auto w-auto max-h-16 object-contain"
                       />
-                    </div>
+                    </Link>
                   ))}
                 </div>
               ) : null}

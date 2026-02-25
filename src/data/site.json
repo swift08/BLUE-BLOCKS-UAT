@@ -315,7 +315,7 @@
             },
             "secondaryCta": {
               "label": "Visit the Campus",
-              "href": "/about-us/campus"
+              "href": "/campus"
             },
             "bgImageUrl": "/home/homepage-banner-01.webp"
           }
@@ -414,7 +414,7 @@
           "props": {
             "bg": "#F3E3CF",
             "eyebrow": "Awarded the Best Pre-school in Hyderabad by",
-            "title": "TIMES OF INDIA for three consecutive years",
+            "title": "TIMES OF INDIA for Nine consecutive years",
             "description": "",
             "headerAlign": "center",
             "cols": {
@@ -434,13 +434,13 @@
                 "icon": "",
                 "image": "/home-01/awards-01-min.webp",
                 "title": "",
-                "text": "Blue Blocks founders Pavan Goyal and Munira Hussain receiving the award"
+                "text": "Blue Blocks ranked top in the West Zone School Category"
               },
               {
                 "icon": "",
                 "image": "/home-01/awards-02-min.webp",
                 "title": "",
-                "text": "Times School Certificate Awards earned by Blue Blocks for topping the list of the Best Schools."
+                "text": "Awarded with the Outstanding Innovation School in the Full School Category"
               }
             ]
           }
@@ -455,112 +455,81 @@
             "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
             "logos": [
               {
-                "src": "/icon/media/cision.png",
-                "alt": "Cision",
-                "width": "169",
-                "height": "76"
+                "src": "/icon/media/new/news-arena-india.png",
+                "alt": "News Arena India",
+                "width": "200",
+                "height": "60",
+                "anchorHref": "https://newsarenaindia.com/states/in-a-first-students-build-cubesat-for-isro-launch/66962"
               },
               {
-                "src": "/icon/media/business-today.png",
-                "alt": "Business Today",
-                "width": "234",
-                "height": "42"
+                "src": "/icon/media/new/the-hans-india.png",
+                "alt": "The Hans India",
+                "width": "217",
+                "height": "37",
+                "anchorHref": "https://www.thehansindia.com/amp/hans/young-hans/hyderabad-school-students-build-cubesat-payload-for-upcoming-isro-launch-1037907"
               },
               {
-                "src": "/icon/media/disha.png",
-                "alt": "Disha",
-                "width": "234",
-                "height": "76"
+                "src": "/icon/media/new/the-siasat-daily.webp",
+                "alt": "The Siasat Daily",
+                "width": "200",
+                "height": "60",
+                "anchorHref": "https://www.siasat.com/from-classroom-to-cosmos-hyderabad-students-cubesat-set-for-isro-launch-3323433/amp/"
               },
               {
-                "src": "/icon/media/ew.png",
-                "alt": "Cision",
-                "width": "83",
-                "height": "76"
+                "src": "/icon/media/new/new-indian-express.png",
+                "alt": "The New Indian Express",
+                "width": "200",
+                "height": "60",
+                "anchorHref": "https://www.newindianexpress.com/states/telangana/2026/Jan/09/hyderabad-students-cubesat-headed-to-space"
               },
               {
-                "src": "/icon/media/one-news-page.png",
-                "alt": "Business Today",
-                "width": "234",
-                "height": "76"
+                "src": "/icon/media/new/telangana-today.png",
+                "alt": "Telangana Today",
+                "width": "200",
+                "height": "60",
+                "anchorHref": "https://telanganatoday.com/hyderabad-school-students-make-history-with-cubesat-on-isros-pslv-c62"
               },
               {
-                "src": "/icon/media/web-india.png",
-                "alt": "Disha",
-                "width": "234",
-                "height": "76"
+                "src": "/icon/media/new/india-today.png",
+                "alt": "India Today",
+                "width": "142",
+                "height": "77",
+                "anchorHref": "https://www.indiatoday.in/amp/technology/video/blue-blocks-co-founder-munira-hussain-students-cubesat-set-for-isro-launch-ytvd-2848900-2026-01-08"
               },
               {
-                "src": "/icon/media/upturn.png",
-                "alt": "Cision",
-                "width": "186",
-                "height": "76"
+                "src": "/icon/media/new/newsmeter.png",
+                "alt": "Indiatoday",
+                "width": "200",
+                "height": "60",
+                "anchorHref": "https://newsmeter.in/education/isros-jan-12-launch-to-carry-cubesat-payload-built-by-hyderabad-students-from-blue-blocks-761096"
               },
               {
-                "src": "/icon/media/sanvad.png",
-                "alt": "Business Today",
-                "width": "155",
-                "height": "76"
+                "src": "/icon/media/new/hyderabad-mail.png",
+                "alt": "Hyderabad Mail",
+                "width": "200",
+                "height": "60",
+                "anchorHref": "https://hyderabadmail.com/hyderabad-students-cubesat-isro-pslv-c62-launch/"
               },
               {
-                "src": "/icon/media/socialNews.png",
-                "alt": "Disha",
-                "width": "234",
-                "height": "76"
+                "src": "/icon/media/new/the-federal-telangana.png",
+                "alt": "The Federal Telangana",
+                "width": "200",
+                "height": "60",
+                "anchorHref": "https://telangana.thefederal.com/category/news/hyderabad-innovation-cubesat-set-to-travel-to-space-with-isros-pslv-c62-224592"
               },
               {
-                "src": "/icon/media/manglorean.png",
-                "alt": "Cision",
-                "width": "234",
-                "height": "76"
+                "src": "/icon/media/new/ndtv.svg",
+                "alt": "NDTV",
+                "width": "313",
+                "height": "65",
+                "anchorHref": "https://www.ndtv.com/india-news/17-hyderabad-students-build-payload-for-upcoming-isro-launch-10569889/amp/1"
               },
               {
-                "src": "/icon/media/five.png",
-                "alt": "Business Today",
-                "width": "52",
-                "height": "76"
-              },
-              {
-                "src": "/icon/media/varindia.png",
-                "alt": "Disha",
-                "width": "234",
-                "height": "76"
-              },
-              {
-                "src": "/icon/media/pti.png",
-                "alt": "Cision",
-                "width": "234",
-                "height": "76"
-              },
-              {
-                "src": "/icon/media/tmc.png",
-                "alt": "Business Today",
-                "width": "234",
-                "height": "76"
-              },
-              {
-                "src": "/icon/media/ground.png",
-                "alt": "Disha",
-                "width": "234",
-                "height": "76"
-              },
-              {
-                "src": "/icon/media/newDelhi.png",
-                "alt": "Cision",
-                "width": "74",
-                "height": "76"
-              },
-              {
-                "src": "/icon/media/business-news.png",
-                "alt": "Business Today",
-                "width": "234",
-                "height": "76"
-              },
-              {
-                "src": "/icon/media/india-today.png",
-                "alt": "Disha",
-                "width": "141",
-                "height": "76"
+                "src": "/icon/media/new/edexlive.jpg",
+                "alt": "EdexLive",
+                "width": "200",
+                "height": "60",
+                "anchorHref": "https://www.edexlive.com/news/hyderabad-students-cubesat-headed-to-space"
               }
             ]
           }
@@ -634,7 +603,7 @@
             "defaultOpenIndex": 0,
             "panelMaxWidth": "none",
             "title": "COMMUNITY QUESTIONS",
-            "subtitle": "Our guides are more than teachers — they are observers, facilitators, and partners in each child’s developmental journey.",
+            "subtitle": "",
             "items": [
               {
                 "q": "Why do you mix ages in one classroom?",
