@@ -54,11 +54,11 @@ export default function FAQAccordion({
               />
             </div>
 
-            {cta ? (
+            {cta?.href ? (
               <Link
-              href={cta.href}
+              href={cta?.href}
               className={["bb-btn m-auto bb-btn--primary py-3 px-6 mt-6"]}>
-              {cta.label}
+              {cta?.label}
               </Link>
             ): null}
           </Container>

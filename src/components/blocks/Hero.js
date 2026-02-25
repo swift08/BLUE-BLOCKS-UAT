@@ -95,7 +95,7 @@ export default function Hero({
               align === "center" ? "flex-col sm:flex-row justify-center" : "flex-col sm:flex-row",
             ].join(" ")}
           >
-            {primaryCta ? (
+            {primaryCta?.href ? (
               <Link href={primaryCta.href} className="bb-hero-cta bb-hero-cta--primary">
                 {primaryCta.label}
               </Link>
