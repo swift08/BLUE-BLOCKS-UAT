@@ -3250,10 +3250,10 @@
               "calloutTitle": "",
               "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
               "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
-              "callout": " To understand the developmental science behind these practices, see our ",
+              "callout": " To understand the developmental science behind these practices, see our Developmental Architecture Paper.",
               "calloutCTA":{
-                "label": "Developmental Architecture Paper.",
-                "href": "/the-architecture-of-the-universe"
+                "label": "View",
+                "href": "/toddler-developmental-architecture"
               }
             }
           },
@@ -3614,10 +3614,10 @@
               "calloutTitle": "",
               "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
               "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
-              "callout": " To understand the developmental science behind these practices, see our ",
+              "callout": " To understand the developmental science behind these practices, see our The Conscious Construction of Intelligence paper.",
               "calloutCTA":{
-                "label": "Developmental Architecture Paper.",
-                "href": "/the-architecture-of-the-universe"
+                "label": "View",
+                "href": "/the-conscious-construction-of-intelligence"
               }
             }
           },
@@ -4079,9 +4079,9 @@
               "calloutTitle": "",
               "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
               "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
-              "callout": "For the developmental science behind these practices, see our Paper ",
+              "callout": "To understand the developmental science behind these practices, see our The Architecture of The Universe paper. ",
               "calloutCTA":{
-                "label": "The Architecture of the Universe.",
+                "label": "View",
                 "href": "/the-architecture-of-the-universe"
               }
             }
@@ -4516,9 +4516,9 @@
               "calloutTitle": "",
               "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
               "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
-              "callout": "For the developmental science behind these practices, see our Paper  ",
+              "callout": "To understand the developmental science behind these practices, see our The Social Newborn paper.",
               "calloutCTA":{
-                "label": "The Social Newborn.",
+                "label": "View",
                 "href": "/adolescent-social-newborn-paper"
               }
             }

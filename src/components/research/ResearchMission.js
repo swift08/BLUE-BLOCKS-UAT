@@ -43,11 +43,13 @@ export default function ResearchMission({
             <div className={`relative mx-auto w-full ${calloutWidth}`}>
               <div aria-hidden className={`absolute top-0 left-0 -translate-x-[1.5%] translate-y-0 w-[103%] h-full rotate-[-1deg] rounded-[28px] border border-black/20 ${calloutBg}`}/>
  
-              <div className={`relative rounded-[26px] ${CalloutWrapClass}`}>
+              <div className={`relative text-center rounded-[26px] ${CalloutWrapClass}`}>
                 {calloutTitle ? (<h3 className={`${calloutTitleClass}`}>{calloutTitle}</h3>) : null}
                 <p className={`${calloutClass}`}>
-                  {callout} {calloutCTA?.href ? (<Link href={calloutCTA?.href}>{calloutCTA?.label}</Link>) : null}
+                  {callout}
                 </p>
+
+                {calloutCTA?.href ? (<div className="text-center"><Link className="bb-btn bb-btn--primary mt-6 " href="calloutCTA?.href">{calloutCTA?.label} <span class="ml-2" aria-hidden="true">→</span></Link></div>) : null}
               </div>
             </div>
           </div>
