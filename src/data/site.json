@@ -551,21 +551,51 @@
                 "pill": "The Philosophy",
                 "pillSec": "The Guide",
                 "title": "Lining the Nest",
-                "meta": "The definitive guide to the First Plane of Development (0-6). A handbook for parents navigating the “Absorbent Mind.”"
+                "meta": "The definitive guide to the First Plane of Development (0-6). A handbook for parents navigating the “Absorbent Mind.”",
+                "readMore": {
+                  "enabled": true,
+                  "labelMore": "Read More",
+                  "labelLess": "Read Less",
+                  "paragraphs": [
+                    "Montessori at ages <b>0–6</b> is about building independence through the prepared environment.",
+                    "This guide explains how the <b>Absorbent Mind</b> works—and what it means for routines, language, and emotional safety at home.",
+                    "Use it as a practical reference for daily decisions: what to help with, what to step back from, and how to observe before intervening."
+                  ]
+                }
               },
               {
                 "tone": "peach",
                 "pill": "The Student Innovation",
                 "pillSec": "The Outcome",
                 "title": "The Unscripted Learner",
-                "meta": "Witness how our adolescents (Ages 12-16) are solving real-world agricultural problems—not because we told them to, but because they chose to."
+                "meta": "Witness how our adolescents (Ages 12-16) are solving real-world agricultural problems—not because we told them to, but because they chose to.",
+                "readMore": {
+                  "enabled": true,
+                  "labelMore": "Read More",
+                  "labelLess": "Read Less",
+                  "paragraphs": [
+                    "At Blue Blocks, innovation is not a project—it’s a habit built over years.",
+                    "Our adolescents work through real constraints: <b>materials, time, feedback loops</b>, and measurable outcomes.",
+                    "The result is confidence that comes from ownership: they design, test, fail, iterate, and ship."
+                  ]
+                }
               },
               {
                 "tone": "yellow",
                 "pill": "From the Director",
                 "pillSec": "The Insight",
                 "title": "Why We Wait",
-                "meta": "In Montessori, the hardest thing for an adult to do is nothing. Why pausing before helping builds your child's confidence."
+                "meta": "In Montessori, the hardest thing for an adult to do is nothing. Why pausing before helping builds your child's confidence.",
+                "readMore": {
+                  "enabled": true,
+                  "labelMore": "Read More",
+                  "labelLess": "Read Less",
+                  "paragraphs": [
+                    "The pause is not neglect—it’s respect for the child’s process.",
+                    "When we wait, we give space for <b>problem-solving</b>, persistence, and self-correction to emerge naturally.",
+                    "Over time, this builds a child’s internal voice: “I can try again. I can figure this out.”"
+                  ]
+                }
               }
             ]
           }
@@ -749,6 +779,15 @@
               "It started with a simple observation: Hyderabad needed an environment that trusted the child completely. In 2009, Pavan Goyal and Munira Hussain founded Blue Blocks with a small group of students and a rigid commitment to pure AMI (Association Montessori Internationale) standards.",
               "We didn't start with grand buildings. We started with the materials. Over the last 15 years, that single classroom has grown into a campus housing innovation labs and a thriving adolescent community. But our core remains unchanged: we observe the child to understand their needs, just as Dr. Maria Montessori did."
             ],
+            "readMore": {
+              "enabled": true,
+              "labelMore": "Read More",
+              "labelLess": "Read Less",
+              "paragraphs": [
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+              ]
+            },
             "cta": "",
             "timeline": [
               {
@@ -2302,10 +2341,17 @@
             "subdescription": [
               "At Blue Blocks, education is not driven by trends, assumptions, or standardized templates. It is grounded in observation, developmental neuroscience, authentic Montessori pedagogy, and longitudinal research. Every environment, material, and intervention is designed around how children naturally grow, think, and construct understanding.", 
               "Our approach combines over a century of Montessori science with contemporary research in cognition, behavior, and innovation learning. The result is an ecosystem where development is intentional, measurable, and deeply human.",
-              "Beyond pedagogy, our approach is rooted in continuous observation and adaptation. Guides document developmental patterns, emerging interests, and learning readiness so the environment evolves with the child — not the other way around. This ensures learning remains natural, purposeful, and developmentally aligned.",
-              "We integrate classical Montessori foundations with modern innovation pathways. From early sensorial exploration to adolescent research, engineering, and innovation work, learners experience a coherent developmental journey that builds confidence, competence, and clarity.",
-              "At Blue Blocks, success is measured not just through academics, but through independence, resilience, creativity, and social awareness. The goal is simple: to nurture individuals who are not only knowledgeable, but capable, grounded, and prepared for an evolving world."
+              "Beyond pedagogy, our approach is rooted in continuous observation and adaptation. Guides document developmental patterns, emerging interests, and learning readiness so the environment evolves with the child — not the other way around. This ensures learning remains natural, purposeful, and developmentally aligned."
             ],
+            "readMore": {
+              "enabled": true,
+              "labelMore": "Read More",
+              "labelLess": "Read Less",
+              "paragraphs": [
+                "We integrate classical Montessori foundations with modern innovation pathways. From early sensorial exploration to adolescent research, engineering, and innovation work, learners experience a coherent developmental journey that builds confidence, competence, and clarity.",
+                "At Blue Blocks, success is measured not just through academics, but through independence, resilience, creativity, and social awareness. The goal is simple: to nurture individuals who are not only knowledgeable, but capable, grounded, and prepared for an evolving world."
+              ]
+            },
             "descriptionClassName": "text-[#717171] space-y-5 bb-text",
             "images": [
               {

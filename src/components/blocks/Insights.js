@@ -1,5 +1,6 @@
 import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
+import ReadMoreBlock from "@/components/ui/ReadMoreBlock";
 
 const pillClass = {
   sky: "bg-[#95D6ED]",
@@ -84,6 +85,13 @@ export default function Insights({
                 <div className="bb-text font-semibold mt-3">{it.title}</div>
 
                 {it.meta ? <div className="bb-text mt-2">{it.meta}</div> : null}
+
+                <ReadMoreBlock
+                  readMore={it.readMore}
+                  className=""
+                  contentClassName="bb-text"
+                  buttonClassName="mt-3 inline-flex items-center gap-1 text-sm font-semibold hover:opacity-80"
+                />
 
                 {it.bullets ? (
                   <ul className="mt-4 space-y-2 bb-text">

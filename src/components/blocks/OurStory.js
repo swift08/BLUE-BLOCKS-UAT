@@ -1,10 +1,12 @@
 import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
+import ReadMoreBlock from "@/components/ui/ReadMoreBlock";
 
 export default function OurStory({
   eyebrow,
   title,
   paragraphs = [],
+  readMore,
   cta = { label: "Explore", href: "/about" },
   timeline = [],
 
@@ -34,6 +36,13 @@ export default function OurStory({
                   ))}
                 </div>
               ) : null}
+
+              <ReadMoreBlock
+                readMore={readMore}
+                className=""
+                contentClassName="bb-text"
+                buttonClassName="mt-3 inline-flex items-center gap-1 text-sm font-semibold hover:opacity-80"
+              />
 
               {cta?.href ? (
                 <a href={cta.href} className="mt-8 inline-flex items-center gap-2 bb-btn bb-btn--primary">

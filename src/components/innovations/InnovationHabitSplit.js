@@ -6,6 +6,7 @@ import Container from "@/components/layout/Container";
 import CarouselTrack from "@/components/ui/carousel/CarouselTrack";
 import Link from "next/link";
 import { resolveBg } from "@/lib/ui";
+import ReadMoreBlock from "@/components/ui/ReadMoreBlock";
 
 export default function InnovationHabitSplit({
   image,
@@ -22,6 +23,7 @@ export default function InnovationHabitSplit({
 
   subdescription = [],
   className,
+  readMore,
 
   bullets = [],
   images = [],
@@ -123,6 +125,13 @@ export default function InnovationHabitSplit({
                     )}
                   </div>
                 ) : null}
+                
+                <ReadMoreBlock
+                  readMore={readMore}
+                  className=""
+                  contentClassName="bb-text"
+                  buttonClassName="mt-3 inline-flex items-center gap-1 text-sm font-semibold hover:opacity-80"
+                />
 
                 {/* Details rows */}
                 {hasDetails ? (

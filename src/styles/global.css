@@ -220,7 +220,7 @@ html {
 .bb-text p {
   font-size: var(--bb-body-size);
   line-height: var(--bb-body-line);
-  color: var(--bb-muted);
+  color: var(--bb-text);
 }
 
 .bb-text p + p {
