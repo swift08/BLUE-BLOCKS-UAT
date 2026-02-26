@@ -52,17 +52,27 @@ export default function InnovationLogoStrip({
 
               {Array.isArray(logos) && logos.length ? (
                 <div className={logoWrapClass}>
-                  {logos.map((logo, idx) => (
-                    <Link key={idx} className="relative" href={logo.anchorHref}>
-                      <Image
-                        src={logo.src}
-                        alt={logo.alt || ""}
-                        width={Number(logo.width) || 160}
-                        height={Number(logo.height) || 60}
-                        className="h-auto w-auto max-h-16 object-contain"
-                      />
-                    </Link>
-                  ))}
+                  {logos.map((logo, idx) => {
+                    const href = logo?.anchorHref;
+                    const Wrapper = href ? Link : "div";
+
+                    return (
+                      <Wrapper
+                        key={idx}
+                        {...(href ? { href } : {})}
+                        className="relative"
+                        aria-label={logo?.alt || "Logo"}
+                      >
+                        <Image
+                          src={logo.src}
+                          alt={logo.alt || ""}
+                          width={Number(logo.width) || 200}
+                          height={Number(logo.height) || 60}
+                          className="h-auto w-auto"
+                        />
+                      </Wrapper>
+                    );
+                  })}
                 </div>
               ) : null}
             </div>

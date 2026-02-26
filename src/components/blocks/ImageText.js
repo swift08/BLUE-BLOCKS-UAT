@@ -1,6 +1,8 @@
 import Container from "@/components/layout/Container";
 import Image from "next/image";
 import { resolveBg } from "@/lib/ui";
+import ReadMoreBlock from "@/components/ui/ReadMoreBlock";
+import Link from "next/link";
 
 export default function ImageText({
   // ✅ standard new prop names (but we support old ones too)
@@ -14,7 +16,9 @@ export default function ImageText({
   title,
   subtitle,
   text = [],
+  readMore,
   imageUrl = "",
+  cta,
 
   variant = "default", // "default" | "card"
   cardBg = "#EEF7FD",  // kept for backward compatibility
@@ -123,6 +127,14 @@ export default function ImageText({
                 )}
               </div>
             ) : null}
+               
+            <ReadMoreBlock
+              readMore={readMore}
+              className=""
+              contentClassName="bb-text"
+              buttonClassName="mt-3 inline-flex items-center gap-1 text-sm font-semibold hover:opacity-80"
+            />
+            {cta?.href ? (<Link className="bb-btn bb-btn--inverse mt-6" href={cta?.href}>{cta?.label} <span class="ml-2" aria-hidden="true">→</span></Link>) : null}
           </div>
         </div>
       </Container>

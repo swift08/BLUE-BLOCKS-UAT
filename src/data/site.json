@@ -2385,19 +2385,28 @@
             "text": [
               "Many forget that Maria Montessori was a physician and a scientist. Her method was born from observation. We simply continue that tradition.",
               "The Blue Blocks Micro Research Institute is not a separate lab; it is the heartbeat of our practice. We systematically observe how children learn so we can constantly refine our environment. We don't experiment on children; we learn from them. This ensures that our education is not based on assumptions, but on a deep, documented understanding of the child's needs."
-            ],
-            "readMore":[
-              "How We Observe (Zero Interference) Our research is invisible to the child. We use the 'Fly on the Wall' protocol.",
-              "No Clipboards: Guides record data mentally or on unobtrusive pocket pads.",
-              "No Tests: We do not pull children out of class for assessments. We evaluate their competency by watching them work with materials.",
-              "Privacy First: In our published studies, your child is never 'Subject A.' They are simply part of the aggregate data that helps us understand how all children learn better."
-            ],
+            ],            
+            "readMore": {
+              "enabled": true,
+              "labelMore": "Read More",
+              "labelLess": "Read Less",
+              "paragraphs": [
+                "How We Observe (Zero Interference) Our research is invisible to the child. We use the 'Fly on the Wall' protocol.",
+                "<b>No Clipboards:</b> Guides record data mentally or on unobtrusive pocket pads.",
+                "<b>No Tests:</b> We do not pull children out of class for assessments. We evaluate their competency by watching them work with materials.",
+                "<b>Privacy First:</b> In our published studies, your child is never 'Subject A.' They are simply part of the aggregate data that helps us understand how all children learn better."
+              ]
+            },
             "imageUrl": "/about-us/the-capable-human.webp",
             "align": "left",
             "imageSide":"right",
             "imageClassName":"",
             "imageFit":"contain",
-            "imageAspect":"aspect-[16/10]"              
+            "imageAspect":"aspect-[16/10]",
+            "cta": {
+              "label": "Click to visit the site",
+              "href": "https://research.blueblocks.in/"
+            }
           }
         },
         {
