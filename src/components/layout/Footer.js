@@ -261,7 +261,7 @@ export default function Footer() {
 
           {/* BOTTOM LEGAL ROW */}
           <div className="mt-6 flex flex-col gap-3 text-[0.75rem] text-white/45 lg:flex-row lg:items-center lg:justify-between">
-            <div>© 2025 Blue Blocks Research Institute</div>
+            <div>© 2025 Blue Blocks Micro Research Institute</div>
 
             <div className="flex items-center gap-2 lg:justify-end">
               <Link className="underline-offset-4 hover:underline" href="/privacy-policy">

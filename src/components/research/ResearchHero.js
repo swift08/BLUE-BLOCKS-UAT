@@ -4,7 +4,7 @@ import Container from "@/components/layout/Container";
 
 export default function ResearchHero({
   image,
-  eyebrow = "Research Institute",
+  eyebrow = "Micro Research Institute",
   imageBg = "bg-slate-100",
   contentBg = "",
   contentSpacing = "",
@@ -28,7 +28,7 @@ export default function ResearchHero({
             <div className={`relative w-full overflow-hidden rounded-3xl aspect-[16/12] sm:aspect-[16/11] lg:aspect-[16/12] ${imageBg}`}>
               <Image
                 src={image}
-                alt={title || "Research institute"}
+                alt={title || "Micro Research Institute"}
                 fill
                 priority
                 className="object-cover"
