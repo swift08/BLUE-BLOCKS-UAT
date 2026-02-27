@@ -68,7 +68,7 @@ export default function InnovationLogoStrip({
                           alt={logo.alt || ""}
                           width={Number(logo.width) || 200}
                           height={Number(logo.height) || 60}
-                          className="h-auto w-auto"
+                          className="h-15 w-auto"
                         />
                       </Wrapper>
                     );
