@@ -45,7 +45,7 @@ export default function InnovationLogoStrip({
           <Container>
             <div className={["flex flex-col", sectionClass].filter(Boolean).join(" ")}>
               {text ? (
-                <h2 className={["bb-section-title", safeTitleExtras].filter(Boolean).join(" ")}>
+                <h2 className={["bb-section-title text-center", safeTitleExtras].filter(Boolean).join(" ")}>
                   {text}
                 </h2>
               ) : null}

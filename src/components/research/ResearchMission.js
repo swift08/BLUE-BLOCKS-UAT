@@ -49,7 +49,7 @@ export default function ResearchMission({
                   {callout}
                 </p>
 
-                {calloutCTA?.href ? (<div className="text-center"><Link className="bb-btn bb-btn--primary mt-6 " href={calloutCTA?.href}>{calloutCTA?.label} <span class="ml-2" aria-hidden="true">→</span></Link></div>) : null}
+                {calloutCTA?.href ? (<div className="text-center"><Link className="bb-btn bb-btn--primary mt-6 " href={calloutCTA?.href}>{calloutCTA?.label} <span className="ml-2" aria-hidden="true">→</span></Link></div>) : null}
               </div>
             </div>
           </div>

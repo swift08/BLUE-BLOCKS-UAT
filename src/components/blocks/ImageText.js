@@ -134,7 +134,7 @@ export default function ImageText({
               contentClassName="bb-text"
               buttonClassName="mt-3 inline-flex items-center gap-1 text-sm font-semibold hover:opacity-80"
             />
-            {cta?.href ? (<Link className="bb-btn bb-btn--inverse mt-6" href={cta?.href}>{cta?.label} <span class="ml-2" aria-hidden="true">→</span></Link>) : null}
+            {cta?.href ? (<Link className="bb-btn bb-btn--inverse mt-6" href={cta?.href}>{cta?.label} <span className="ml-2" aria-hidden="true">→</span></Link>) : null}
           </div>
         </div>
       </Container>
