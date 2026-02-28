@@ -112,22 +112,19 @@
           "title": "Montessori",
           "href": "/montessori-system",
           "description": "Hands-on Montessori method building focus, creativity, discipline, and lifelong skills.",
-          "image": "/programs/thumb-nursery.webp"
-        },
+          "image": "/programs/thumb-nursery.webp" },
         {
           "id": "campus",
           "title": "Campus",
           "href": "/campus",
           "description": "Thoughtfully designed campuses supporting safe exploration, movement, and meaningful learning.",
-          "image": "/programs/thumb-primary.webp"
-        },
+          "image": "/programs/thumb-primary.webp" },
         {
           "id": "faq",
           "title": "FAQs",
           "href": "/faq",
           "description": "Quick answers about programs, routine, admissions, learning approach, and support.",
-          "image": "/programs/thumb-secondary.webp"
-        },
+          "image": "/programs/thumb-secondary.webp" },
         {
           "id": "videos",
           "title": "Videos",
@@ -157,22 +154,19 @@
           "title": "Playgroup",
           "href": "/programs/playgroup",
           "description": "Toddlers build independence, language, coordination, and confidence through guided play.",
-          "image": "/programs/thumb-playgroup.webp"
-        },
+          "image": "/programs/thumb-playgroup.webp" },
         {
           "id": "nursery-school",
           "title": "Nursery, PP1, PP2",
           "href": "/programs/nursery-school",
           "description": "Primary Montessori builds curiosity, focus, creativity, and strong early foundations.",
-          "image": "/programs/thumb-nursery.webp"
-        },
+          "image": "/programs/thumb-nursery.webp" },
         {
           "id": "primary-school",
           "title": "Primary School – Class 1 to 6",
           "href": "/programs/primary-school-elementary",
           "description": "Cambridge learning with hands-on projects, creativity, and structured academics.",
-          "image": "/programs/thumb-primary.webp"
-        },
+          "image": "/programs/thumb-primary.webp" },
         {
           "id": "secondary-school",
           "title": "Secondary School – Class 7 to 12",
@@ -202,22 +196,19 @@
           "title": "Innovation Lab",
           "href": "/innovation/innovation-lab",
           "description": "Hands-on drone learning builds creativity, engineering thinking, and problem-solving skills.",
-          "image": "/programs/thumb-playgroup.webp"
-        },
+          "image": "/programs/thumb-playgroup.webp" },
         {
           "id": "biomimicry-hive",
           "title": "Biomimicry Hive",
           "href": "/innovation/biomimicry-hive",
           "description": "Nature-inspired learning helps students solve problems through observation and design.",
-          "image": "/programs/thumb-nursery.webp"
-        },
+          "image": "/programs/thumb-nursery.webp" },
         {
           "id": "drone-lab",
           "title": "Drone Lab",
           "href": "/innovation/drone-lab",
           "description": "Hands-on drone learning builds creativity, engineering thinking, and problem-solving skills.",
-          "image": "/programs/thumb-playgroup.webp"
-        },
+          "image": "/programs/thumb-playgroup.webp" },
         {
           "id": "space-lab",
           "title": "Space Program Lab",
@@ -675,9 +666,7 @@
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Home",
-          "url": "#/",
+          "@type": "WebPage", "name": "Home",  "url": "#/",
           "description": "Authentic Montessori. The 0–16 Continuum. Education designed for the human spirit.",
           "isPartOf": {
             "@id": "##website"
@@ -2578,9 +2567,7 @@
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "About Us",
-          "url": "#/about-us/",
+          "@type": "WebPage", "name": "About Us",  "url": "#/about-us/",
           "description": "Education is not the filling of a bucket, but the lighting of a fire. Since 2009, Blue Blocks has stood as a sanctuary of Authentic Montessori practice, offerin",
           "isPartOf": {
             "@id": "##website"
@@ -2613,7 +2600,7 @@
           "props": {
             "title": "Programs",
             "breadcrumb": [
-              { "label": "ProgHomerams", "href": "program" },
+              { "label": "Home", "href": "/" },
               { "label": "Programs" }
             ],
             "bg": {
@@ -2956,9 +2943,7 @@
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Academics",
-          "url": "#/programs/",
+          "@type": "WebPage", "name": "Academics",  "url": "#/programs/",
           "description": "A Scientifically Mapped Journey from Infancy to Adolescence (0–16 Years)",
           "isPartOf": {
             "@id": "##website"
@@ -2985,6 +2970,611 @@
       ]
     },
     "programDetails": {
+      "toddler": {
+        "slug": "toddler",
+        "route": "/programs/toddler",
+        "label": "Toddler Program",
+        "meta": {
+          "title": "Toddler Program (12-30 months) | Where Conscience Begins | Blue Blocks Montessori",
+          "description": "AMI-certified Montessori toddler program in Hyderabad. Gentle settlement, Care of Environment, Care of Living Things. The foundations of conscience form here — in octagonal classrooms adjoining 300-acre botanical garden.",
+          "canonical": "https://www.blueblocks.in/programs/toddler",
+          "keywords": "Montessori toddler program Hyderabad, AMI certified toddler Hyderabad, Gentle settlement school, Toddler program 12-30 months, Where conscience begins",
+          "openGraph": {
+            "type": "website",
+            "url": "https://www.blueblocks.in/programs/toddler",
+            "title": "Toddler Program | Where Conscience Begins | Blue Blocks Montessori",
+            "description": "AMI-certified Montessori. Gentle settlement, purposeful work, foundations of care. The 18-year journey begins here.",
+            "image": "https://www.blueblocks.in/images/toddler-og-image.jpg",
+            "imageWidth": "1200",
+            "imageHeight": "630",
+            "siteName": "Blue Blocks Montessori",
+            "locale": "en_IN"
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "title": "Toddler Program | Blue Blocks Montessori Hyderabad",
+            "description": "AMI-certified Montessori for children 12 to 30 months. Where conscience begins.",
+            "image": "https://www.blueblocks.in/images/toddler-og-image.jpg"
+          }
+        },
+        "breadcrumbs": [
+          { "name": "Home", "item": "https://www.blueblocks.in" },
+          { "name": "Programs", "item": "https://www.blueblocks.in/programs" },
+          { "name": "Toddler", "item": "https://www.blueblocks.in/programs/toddler" }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Toddler Program (12-30 months)",
+            "description": "AMI-certified Montessori toddler program where conscience begins",
+            "url": "https://www.blueblocks.in/programs/toddler",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "Blue Blocks Montessori",
+              "url": "https://www.blueblocks.in"
+            },
+            "about": [
+              { "@type": "Thing", "name": "Montessori Education" },
+              { "@type": "Thing", "name": "Toddler Development" },
+              { "@type": "Thing", "name": "Care of Environment" },
+              { "@type": "Thing", "name": "Conscience Formation" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.blueblocks.in"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Programs",
+                "item": "https://www.blueblocks.in/programs"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Toddler",
+                "item": "https://www.blueblocks.in/programs/toddler"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": ["School", "LocalBusiness"],
+            "@id": "https://www.blueblocks.in/#organization",
+            "name": "Blue Blocks Montessori",
+            "description": "AMI-certified Montessori school developing conscience and capability together across 18 years",
+            "url": "https://www.blueblocks.in",
+            "telephone": "+91-XXXXXXXXXX",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "[Your Street Address]",
+              "addressLocality": "Hyderabad",
+              "addressRegion": "Telangana",
+              "postalCode": "[PIN Code]",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "[Latitude]",
+              "longitude": "[Longitude]"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Educational Programs",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Toddler Program (12-30 months)"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How do you handle the transition to school at Blue Blocks?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We practice Gentle Settlement. Unlike schools that expect quick separations, we invite parents to stay inside the campus until the child feels safe — whether that's three days or three weeks. There is no deadline for trust. We do not rush children or push through tears."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Blue Blocks approach to toilet learning?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We follow the child's body, not a schedule. We watch for signs that the nervous system is ready for control, offer child-sized toilets where feet rest flat on the ground, and use cotton underwear for sensory feedback. There is no countdown, no sticker chart — just calm, patient support at the child's own pace."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is food managed in the Toddler Community?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We treat the family's packed lunchbox as a bridge between home and school. Children learn to open their lunchbox, serve themselves, and care for their space. Beyond the lunchbox, children participate in food preparation — peeling bananas, squeezing oranges, slicing soft-boiled eggs — building independence and confidence with real tools."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What activities do toddlers do all day?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Children choose from purposeful activities suited to their development: language immersion (learning precise names like 'Kingfisher'), sensory exploration (Mystery Bags, sorting, matching), and practical life work (pouring water, washing tables, arranging flowers). Every activity has a beginning, middle, and end — teaching focus and the rhythm of completion."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does the First Plane connect to conscience formation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Conscience begins here. Through Care of Environment, toddlers develop sensitivity to non-living things — returning materials to shelves, pushing in chairs, not wasting water. Through Care of Plants and Animals, they develop sensitivity to living beings. Through Grace and Courtesy, they learn to consider others. These foundations of conscience will later become cosmic responsibility."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "toddlerDetail": {
+        "gentle-settlement": {
+          "slug": "gentle-settlement",
+          "route": "/programs/toddler/gentle-settlement",
+          "label": "Gentle Settlement",
+          "meta": {
+            "title": "Gentle Settlement | No Deadline for Trust | Blue Blocks Montessori",
+            "description": "Unlike schools expecting quick separations, we invite parents to stay until the child feels safe — whether three days or three weeks. There is no deadline for trust. We do not rush children or push through tears.",
+            "canonical": "https://www.blueblocks.in/programs/toddler/gentle-settlement",
+            "openGraph": {
+              "type": "website",
+              "url": "https://www.blueblocks.in/programs/toddler/gentle-settlement",
+              "title": "Gentle Settlement | Blue Blocks Montessori",
+              "description": "There is no deadline for trust. Parents stay until the child feels safe — three days or three weeks. We do not rush children.",
+              "image": "https://www.blueblocks.in/images/gentle-settlement-og.jpg"
+            },
+            "twitter": {
+              "card": "summary_large_image",
+              "title": "Gentle Settlement | Blue Blocks Montessori",
+              "description": "No deadline for trust. A child-led transition into school.",
+              "image": "https://www.blueblocks.in/images/gentle-settlement-og.jpg"
+            }
+          },
+          "breadcrumbs": [
+            { "name": "Home", "item": "https://www.blueblocks.in" },
+            { "name": "Programs", "item": "https://www.blueblocks.in/programs" },
+            { "name": "Toddler", "item": "https://www.blueblocks.in/programs/toddler" },
+            {
+              "name": "Gentle Settlement",
+              "item": "https://www.blueblocks.in/programs/toddler/gentle-settlement"
+            }
+          ],
+          "schema": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Gentle Settlement",
+              "description": "No deadline for trust — parents stay until the child feels safe",
+              "url": "https://www.blueblocks.in/programs/toddler/gentle-settlement",
+              "isPartOf": {
+                "@type": "WebPage",
+                "name": "Toddler Program",
+                "url": "https://www.blueblocks.in/programs/toddler"
+              },
+              "about": [
+                { "@type": "Thing", "name": "School Transition" },
+                { "@type": "Thing", "name": "Attachment Theory" },
+                { "@type": "Thing", "name": "Child-Led Separation" }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.blueblocks.in"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Programs",
+                  "item": "https://www.blueblocks.in/programs"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Toddler",
+                  "item": "https://www.blueblocks.in/programs/toddler"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Gentle Settlement",
+                  "item": "https://www.blueblocks.in/programs/toddler/gentle-settlement"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How long does Gentle Settlement take?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Each child is different. Some settle in three days, others need three weeks. We follow the child's cues, not a calendar. The parent stays on campus — in the garden, the parent room, or the classroom — until the child signals they feel safe."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What if my child cries when I leave?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We don't leave until the child is ready. Tears tell us the child doesn't yet feel safe — and that's information, not a problem to solve with quick separation. We stay, we wait, we build trust. When the child is ready to explore without you, they will show us."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why is Gentle Settlement important for conscience development?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Security is the foundation of exploration. A child who feels safe can attend to the world with full presence. The normalised child — concentrated, peaceful, aware — develops deep consciousness: presence to the world around them. This is the beginning of conscience formation."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "prepared-environment": {
+          "slug": "prepared-environment",
+          "route": "/programs/toddler/prepared-environment",
+          "label": "Prepared Environment",
+          "meta": {
+            "title": "The Prepared Environment | Octagonal Classrooms | Blue Blocks Montessori",
+            "description": "Octagonal classrooms adjoining 300-acre botanical garden. Child-sized everything. Real tools, real materials. An environment designed to develop independence, concentration, and care.",
+            "canonical": "https://www.blueblocks.in/programs/toddler/prepared-environment",
+            "openGraph": {
+              "type": "website",
+              "url": "https://www.blueblocks.in/programs/toddler/prepared-environment",
+              "title": "The Prepared Environment | Blue Blocks Montessori",
+              "description": "Octagonal classrooms adjoining 300-acre botanical garden. Everything at the child's height. Real tools, real materials, real respect.",
+              "image": "https://www.blueblocks.in/images/octagonal-classroom-og.jpg"
+            },
+            "twitter": {
+              "card": "summary_large_image",
+              "title": "Prepared Environment | Blue Blocks Montessori",
+              "description": "Octagonal classrooms, child-sized design, and a living outdoor curriculum.",
+              "image": "https://www.blueblocks.in/images/octagonal-classroom-og.jpg"
+            }
+          },
+          "breadcrumbs": [
+            { "name": "Home", "item": "https://www.blueblocks.in" },
+            { "name": "Programs", "item": "https://www.blueblocks.in/programs" },
+            { "name": "Toddler", "item": "https://www.blueblocks.in/programs/toddler" },
+            {
+              "name": "Prepared Environment",
+              "item": "https://www.blueblocks.in/programs/toddler/prepared-environment"
+            }
+          ],
+          "schema": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "The Prepared Environment",
+              "description": "Octagonal classrooms adjoining 300-acre botanical garden",
+              "url": "https://www.blueblocks.in/programs/toddler/prepared-environment",
+              "isPartOf": {
+                "@type": "WebPage",
+                "name": "Toddler Program",
+                "url": "https://www.blueblocks.in/programs/toddler"
+              },
+              "about": [
+                { "@type": "Thing", "name": "Montessori Classroom" },
+                { "@type": "Thing", "name": "Child-Sized Environment" },
+                { "@type": "Thing", "name": "Nature-Based Education" }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.blueblocks.in"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Programs",
+                  "item": "https://www.blueblocks.in/programs"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Toddler",
+                  "item": "https://www.blueblocks.in/programs/toddler"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Prepared Environment",
+                  "item": "https://www.blueblocks.in/programs/toddler/prepared-environment"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Why are the classrooms octagonal?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The octagonal shape eliminates corners where children might feel trapped or hide. Every angle opens to light and view. The design creates natural flow — children move easily between activity areas without congestion."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does the 300-acre botanical garden support learning?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The garden is an extension of the classroom. Children encounter real plants, real birds, real weather. They learn names like 'Kingfisher' and 'Banyan' from direct experience. This develops Care of Living Things and sensitivity to nature — foundations of ecological conscience."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What does 'child-sized' mean in practice?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Everything the child needs is within reach. Shelves at their height. Sinks where they can wash hands independently. Toilets where feet rest flat on the ground. Real glass pitchers they can lift. This isn't convenience — it's respect. It says: you are capable."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "practical-life": {
+          "slug": "practical-life",
+          "route": "/programs/toddler/practical-life",
+          "label": "Practical Life",
+          "meta": {
+            "title": "Practical Life | Care of Self, Environment, Others | Blue Blocks Montessori",
+            "description": "Pouring water, washing tables, arranging flowers. Real work with real purpose. Through Practical Life, toddlers develop concentration, independence, and the foundations of conscience: Care of Self, Care of Environment, Care of Others.",
+            "canonical": "https://www.blueblocks.in/programs/toddler/practical-life",
+            "openGraph": {
+              "type": "website",
+              "url": "https://www.blueblocks.in/programs/toddler/practical-life",
+              "title": "Practical Life | Where Conscience Begins | Blue Blocks",
+              "description": "Care of Self. Care of Environment. Care of Others. Real work with real purpose — the foundations of conscience form through the hands.",
+              "image": "https://www.blueblocks.in/images/practical-life-og.jpg"
+            },
+            "twitter": {
+              "card": "summary_large_image",
+              "title": "Practical Life | Blue Blocks Montessori",
+              "description": "Purposeful work that builds independence, concentration, and care.",
+              "image": "https://www.blueblocks.in/images/practical-life-og.jpg"
+            }
+          },
+          "breadcrumbs": [
+            { "name": "Home", "item": "https://www.blueblocks.in" },
+            { "name": "Programs", "item": "https://www.blueblocks.in/programs" },
+            { "name": "Toddler", "item": "https://www.blueblocks.in/programs/toddler" },
+            {
+              "name": "Practical Life",
+              "item": "https://www.blueblocks.in/programs/toddler/practical-life"
+            }
+          ],
+          "schema": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Practical Life",
+              "description": "Care of Self, Care of Environment, Care of Others — the foundations of conscience",
+              "url": "https://www.blueblocks.in/programs/toddler/practical-life",
+              "isPartOf": {
+                "@type": "WebPage",
+                "name": "Toddler Program",
+                "url": "https://www.blueblocks.in/programs/toddler"
+              },
+              "about": [
+                { "@type": "Thing", "name": "Practical Life" },
+                { "@type": "Thing", "name": "Care of Environment" },
+                { "@type": "Thing", "name": "Independence" },
+                { "@type": "Thing", "name": "Conscience Formation" }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.blueblocks.in"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Programs",
+                  "item": "https://www.blueblocks.in/programs"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Toddler",
+                  "item": "https://www.blueblocks.in/programs/toddler"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Practical Life",
+                  "item": "https://www.blueblocks.in/programs/toddler/practical-life"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Practical Life in Montessori?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Practical Life is purposeful work with real materials. Pouring water from a pitcher. Washing a table. Arranging flowers. Folding cloths. Every activity has a beginning, middle, and end — teaching concentration, coordination, independence, and order. These aren't chores; they're the work that builds the child."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does Care of Environment develop conscience?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "When a two-year-old returns materials to the shelf, pushes in their chair, wipes up a spill — they are developing sensitivity to non-living things. They learn that objects deserve care, that spaces deserve order, that their actions affect the environment. This is the foundation of sustainability thinking that will later become regenerative design."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Why do toddlers use real glass and real tools?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Real materials give real feedback. A glass pitcher that could break teaches careful handling. Real scissors teach real cutting. Control of error is built in — the child sees for themselves what worked and what didn't. This is how they learn that actions have consequences, the foundation of moral understanding."
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "language": {
+          "slug": "language",
+          "route": "/programs/toddler/language",
+          "label": "Language & Communication",
+          "meta": {
+            "title": "Language & Communication | Precise Names, Rich Vocabulary | Blue Blocks",
+            "description": "Not 'bird' but 'Kingfisher.' Not 'tree' but 'Banyan.' Toddlers absorb language effortlessly — we give them precise, beautiful vocabulary. Real names for real things, spoken with care and attention.",
+            "canonical": "https://www.blueblocks.in/programs/toddler/language",
+            "openGraph": {
+              "type": "website",
+              "url": "https://www.blueblocks.in/programs/toddler/language",
+              "title": "Language & Communication | Blue Blocks Montessori",
+              "description": "Not 'bird' but 'Kingfisher.' Not 'tree' but 'Banyan.' Precise vocabulary, spoken with care. Language as the foundation of thought.",
+              "image": "https://www.blueblocks.in/images/language-og.jpg"
+            },
+            "twitter": {
+              "card": "summary_large_image",
+              "title": "Language & Communication | Blue Blocks Montessori",
+              "description": "Precise names, rich vocabulary, and language rooted in real experience.",
+              "image": "https://www.blueblocks.in/images/language-og.jpg"
+            }
+          },
+          "breadcrumbs": [
+            { "name": "Home", "item": "https://www.blueblocks.in" },
+            { "name": "Programs", "item": "https://www.blueblocks.in/programs" },
+            { "name": "Toddler", "item": "https://www.blueblocks.in/programs/toddler" },
+            {
+              "name": "Language",
+              "item": "https://www.blueblocks.in/programs/toddler/language"
+            }
+          ],
+          "schema": [
+            {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "name": "Language & Communication",
+              "description": "Precise names, rich vocabulary — language as the foundation of thought",
+              "url": "https://www.blueblocks.in/programs/toddler/language",
+              "isPartOf": {
+                "@type": "WebPage",
+                "name": "Toddler Program",
+                "url": "https://www.blueblocks.in/programs/toddler"
+              },
+              "about": [
+                { "@type": "Thing", "name": "Language Development" },
+                { "@type": "Thing", "name": "Vocabulary Building" },
+                { "@type": "Thing", "name": "Early Literacy" }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://www.blueblocks.in"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Programs",
+                  "item": "https://www.blueblocks.in/programs"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Toddler",
+                  "item": "https://www.blueblocks.in/programs/toddler"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "name": "Language",
+                  "item": "https://www.blueblocks.in/programs/toddler/language"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Why do you use precise vocabulary with toddlers?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Toddlers are in the sensitive period for language — they absorb words effortlessly. We give them precise, beautiful vocabulary: 'Kingfisher' not 'bird,' 'Banyan' not 'tree,' 'cylinder' not 'round thing.' Precise language builds precise thinking. The child who knows the real name of something has a real relationship with it."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does the 300-acre garden support language development?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Language develops through real experience. Children don't learn 'Kingfisher' from a flashcard — they learn it by seeing the bird, hearing its call, watching it dive. The garden provides thousands of opportunities for naming: plants, birds, insects, textures, colours, sounds. Each name is a gift that opens the world."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What language materials do toddlers use?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mystery Bags for tactile vocabulary. Classified cards with real photographs. Sound games for phonemic awareness. Songs and fingerplays. Books with beautiful illustrations and precise language. And above all, conversation — unhurried, attentive talk between adult and child, naming the world together."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
       "playgroup": {
         "sections": [
           {
@@ -2993,7 +3583,6 @@
               "title": "The Toddler Community",
               "subtitle": "A Sanctuary for Your Child's Becoming",
               "breadcrumb": [
-                { "label": "Home", "href": "/" },
                 { "label": "Programs", "href": "/programs" },
                 { "label": "Playgroup" }
               ],
@@ -3321,7 +3910,7 @@
             "props": {
               "title": "Programs",
               "breadcrumb": [
-                { "label": "Programs", "href": "program" },
+                { "label": "Programs", "href": "programs" },
                 { "label": "The Children's House" }
               ],
               "bg": {
@@ -3685,7 +4274,7 @@
             "props": {
               "title": "Programs",
               "breadcrumb": [
-                { "label": "Programs", "href": "program" },
+                { "label": "Programs", "href": "/programs" },
                 { "label": "The Elementary" }
               ],
               "bg": {
@@ -4057,8 +4646,7 @@
               "align": "left",
               "contentCenter":true
             }
-          },
-          
+          },          
           {
             "type": "montessoriForSuccess",
             "props": {
@@ -4141,6 +4729,103 @@
               ]
             }
           }
+        ],
+        "breadcrumbs": [
+          { "name": "Home", "url": "#/" },
+          { "name": "Programs", "url": "#/programs/" },
+          { "name": "Elementary", "url": "#/programs/primary-school-elementary" }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Elementary Programme (Ages 6-12) | The Reasoning Mind Awakens",
+            "description": "Montessori Elementary in Hyderabad. Cosmic Education, Going Out expeditions, Innovation Labs. Where the Reasoning Mind awakens and Moral Independence emerges.",
+            "url": "#/programs/primary-school-elementary",
+            "isPartOf": { "@id": "##website" },
+            "about": [
+              { "@type": "Thing", "name": "Montessori Education" },
+              { "@type": "Thing", "name": "Cosmic Education" },
+              { "@type": "Thing", "name": "Moral Development" },
+              { "@type": "Thing", "name": "Innovation Education" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
+              { "@type": "ListItem", "position": 2, "name": "Programs", "item": "#/programs/" },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Elementary",
+                "item": "#/programs/primary-school-elementary"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Course",
+            "name": "Elementary Programme",
+            "alternateName": "Grades 1-6",
+            "description": "AMI-aligned Montessori Elementary for ages 6-12. Cosmic Education, Going Out expeditions, Innovation Labs. Development of Reasoning Mind and Moral Independence.",
+            "provider": { "@type": "EducationalOrganization", "name": "Blue Blocks" },
+            "educationalLevel": "Elementary",
+            "teaches": [
+              "Cosmic Education and interdisciplinary thinking",
+              "Moral independence and ethical reasoning",
+              "Cosmic Task and Custodian Consciousness",
+              "Innovation through Drone Lab, Biomimicry Hive, Space Lab",
+              "Going Out research expeditions"
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Will my child be ready for traditional school if they transfer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Blue Blocks children consistently meet or exceed academic requirements of all major boards in India. More importantly, they possess concentration, self-direction, and love of learning that allows them to thrive anywhere."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do Elementary children develop moral independence?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Between 6 and 12, children develop intense interest in right and wrong, fairness and justice. They form groups with elaborate rules, argue about what is fair, notice hypocrisy. This is a heroic claim to moral independence — the child constructing their own ethical framework through lived experience."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Cosmic Education?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We begin with the universe. Every fact exists within context of everything else. Central is the Cosmic Task — every living thing contributes to global harmony. This becomes Custodian Consciousness: understanding that humans have responsibility to care for the world."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Innovation Continuum?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Innovation Bridge from Children’s House is now crossed. Our Biomimicry Hive applies the Cosmic Task to engineering. The Drone Lab extends Geography into practical application — student designs resulted in patent applications. This is Cosmic Education in action."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Isn’t all that freedom chaotic?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Walk in and you’ll see organised complexity: small groups on different projects, children consulting references, pairs debating ideas, individuals in deep concentration. It’s not silent — the Reasoning Mind needs to talk through problems. But it’s purposeful."
+                }
+              }
+            ]
+          }
         ]
       },
       "secondary-school": {
@@ -4150,13 +4835,8 @@
             "props": {
               "title": "The Adolescent Community",
               "breadcrumb": [
-                {
-                  "label": "Programs",
-                  "href": "program"
-                },
-                {
-                  "label": "The Adolescent Community"
-                }
+                {"label": "Programs", "href": "/programs"},
+                {"label": "The Adolescent Community"}
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -4581,53 +5261,107 @@
         ]
       },
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Programs",
-          "url": "#/programs/"
-        },
-        {
-          "name": "{{title}}",
-          "url": "#/programs/{slug}"
-        }
+        { "name": "Home", "url": "#/"},
+        { "name": "Programs", "url": "#/programs/"},
+        { "name": "{{title}}", "url": "#/programs/{slug}"}
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Program Details",
-          "url": "#/programs/{slug}",
-          "description": "Learn more about Blue Blocks.",
-          "isPartOf": {
-            "@id": "##website"
-          }
+          "@type": "WebPage", "name": "Adolescent Programme (Ages 12-18)",
+          "description": "Montessori Adolescent — developing conscience, character, capability. Social Newborn, Valorization, Education for Peace.",  "url": "#/programs/secondary-school",
+          "isPartOf": { "@id": "##website" },
+          "about": [
+            { "@type": "Thing", "name": "Montessori Education" },
+            { "@type": "Thing", "name": "Character Education" },
+            { "@type": "Thing", "name": "Conscience Formation" },
+            { "@type": "Thing", "name": "Education for Peace" }
+          ]
         },
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
+            { "@type": "ListItem", "position": 2, "name": "Programs", "item": "#/programs/" },
+            { "@type": "ListItem", "position": 3, "name": "Adolescent", "item": "#/programs/secondary-school" }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Course", "name": "Adolescent Programme",
+          "alternateName": "Grades 7-12",
+          "description": "Montessori Adolescent for ages 12-18. Micro-Economy, Innovation Labs, Cambridge/IGCSE. Development of deep conscience, social consciousness, cosmic responsibility.",
+          "provider": {
+            "@type": "EducationalOrganization",
+            "name": "Blue Blocks Montessori"
+          },
+          "educationalLevel": "Secondary",
+          "educationalCredentialAwarded": "Cambridge IGCSE",
+          "teaches": [
+            "Deep conscience and moral development",
+            "Economic and ecological literacy through Micro-Economy",
+            "Social consciousness and community responsibility",
+            "Innovation with cosmic responsibility",
+            "Education for Peace"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
             {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "#/"
+              "@type": "Question",
+              "name": "How do you teach values without being preachy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We dont teach values through lectures. We create an environment where values become necessary. When you grow food others will eat, honesty about quality isnt optional. When you work in teams on complex projects, inclusion and communication are essential. Values are caught through experience and relationship, not taught through instruction."
+              }
             },
             {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Programs",
-              "item": "#/programs/"
+              "@type": "Question",
+              "name": "What is the Pink Tower to CubeSat story?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In the Childrens House, three-year-olds carry the Pink Tower — the largest cube is 10cm on each side. On January 11, 2026, adolescents will watch their CubeSat satellite launch via ISRO — also exactly 10cm. Same dimensions. Same hands, 15 years later. But the true achievement is not the satellite. It is the kind of human who built it — someone who asks not only Can we build this? but Should we? For whose benefit? With what responsibility?"
+              }
             },
             {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "{{title}}",
-              "item": "#/programs/{slug}"
+              "@type": "Question",
+              "name": "How does the Micro-Economy develop conscience?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Micro-Economy is not just economic education — it is ecological and ethical education through economic participation. Hydroponics teaches sustainability consciousness. Terra Eutopia teaches regenerative thinking. When your choices have real consequences for others, responsibility develops naturally. When you grow food others will eat, quality and honesty become obligations, not options."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What about students who join without prior Montessori experience?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We welcome students at all entry points. The programme is designed around developmental needs shared by all twelve-year-olds. Students new to Montessori often adapt quickly because the approach aligns with their natural drive for meaningful work and genuine contribution. We provide transition support and observe each students adjustment carefully."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you handle the emotional volatility of adolescence?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By providing what the adolescent actually needs: real work, real contribution, real community. Much adolescent volatility stems from environments offering only artificial challenges. When work genuinely matters, the energy has somewhere productive to go. We also teach repair — how to acknowledge harm, take responsibility, and restore relationship when things go wrong."
+              }
             }
           ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Event", "name": "Blue Blocks CubeSat Launch via ISRO PSLV C62",
+          "description": "Student-built CubeSat satellite launch into orbit — 18 years of Montessori development culminating in cosmic responsibility",
+          "startDate": "2026-01-11",
+          "eventStatus": "https://schema.org/EventScheduled",
+          "organizer": {
+            "@type": "EducationalOrganization",
+            "name": "Blue Blocks Montessori"
+          }
         }
       ]
     },
@@ -4738,21 +5472,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Admissions",
-          "url": "#/admissions/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Admissions",  "url": "#/admissions/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Admissions",
-          "url": "#/admissions/",
+          "@type": "WebPage", "name": "Admissions",  "url": "#/admissions/",
           "description": "At Blue Blocks, we do not admit a student; we admit a family. Education is not a transaction where you pay fees and we deliver a product. It is a 15-year collab",
           "isPartOf": {
             "@id": "##website"
@@ -4903,21 +5629,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Contact",
-          "url": "#/contact-us/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Contact",  "url": "#/contact-us/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Contact",
-          "url": "#/contact-us/",
+          "@type": "WebPage", "name": "Contact",  "url": "#/contact-us/",
           "description": "At Blue Blocks, education is not a job — it’s a responsibility. We are a community of educators, mentors, and lifelong learners committed to honoring childhood ",
           "isPartOf": {
             "@id": "##website"
@@ -5038,21 +5756,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Careers",
-          "url": "#/careers/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Careers",  "url": "#/careers/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Careers",
-          "url": "#/careers/",
+          "@type": "WebPage", "name": "Careers",  "url": "#/careers/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
             "@id": "##website"
@@ -5418,21 +6128,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Micro Research Institute",
-          "url": "#/research-institute/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Micro Research Institute",  "url": "#/research-institute/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Micro Research Institute",
-          "url": "#/research-institute/",
+          "@type": "WebPage", "name": "Micro Research Institute",  "url": "#/research-institute/",
           "description": "Advancing the Science of Innovation Development in Childhood and Adolescence",
           "isPartOf": {
             "@id": "##website"
@@ -5657,21 +6359,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "For Parents",
-          "url": "#/parents/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "For Parents",  "url": "#/parents/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "For Parents",
-          "url": "#/parents/",
+          "@type": "WebPage", "name": "For Parents",  "url": "#/parents/",
           "description": "Explore recommended books that deepen your understanding of Montessori philosophy, child psychology, and developmental stages from early childhood...",
           "isPartOf": {
             "@id": "##website"
@@ -6062,21 +6756,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Innovation",
-          "url": "#/innovation/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Innovation",  "url": "#/innovation/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Innovation",
-          "url": "#/innovation/",
+          "@type": "WebPage", "name": "Innovation",  "url": "#/innovation/",
           "description": "Innovation is not a subject. It is a biological stage of development. We don't just teach technology; we nurture the 'First Principles' thinking that created it",
           "isPartOf": {
             "@id": "##website"
@@ -6388,6 +7074,66 @@
                 "href": "/innovation/biomimicry-hive"
               }
             }
+          }
+        ],
+        "breadcrumbs": [
+          { "name": "Home", "url": "#/" },
+          { "name": "Innovation", "url": "#/innovation/" },
+          { "name": "Innovation Lab", "url": "#/innovation/innovation-lab" }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "The Innovation Lab",
+            "description": "Where hands build minds with care — respect for materials, responsibility for creation",
+            "url": "#/innovation/innovation-lab",
+            "isPartOf": { "@type": "WebPage", "name": "Innovation", "url": "#/innovation/" },
+            "about": [
+              { "@type": "Thing", "name": "Maker Education" },
+              { "@type": "Thing", "name": "Hand-Brain Connection" },
+              { "@type": "Thing", "name": "Care of Environment" },
+              { "@type": "Thing", "name": "Ethical Making" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
+              { "@type": "ListItem", "position": 2, "name": "Innovation", "item": "#/innovation/" },
+              { "@type": "ListItem", "position": 3, "name": "Innovation Lab", "item": "#/innovation/innovation-lab" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What tools do students learn to use in the Innovation Lab?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Students progress through 500 tools across 18 years. First Plane: pouring jugs, scissors, tweezers, needle and thread. Second Plane: hand saws, hammers, drills, soldering irons. Third Plane: laser cutters, 3D printers, CNC machines. Each tool requires learning care and maintenance alongside capability."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you teach respect for materials?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Students learn that nothing is 'just material.' Wood comes from trees, metal from ore, plastic from oil. They use only what they need, waste nothing, and consider: Can this be repaired? Recycled? What happens when it's discarded? This extends Care of Environment from the Toddler Community into ethical making."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the 'broken model' philosophy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We celebrate failed prototypes as teachers — extending Montessori's control of error. When a design fails or wastes material, students experience consequences directly. Conscience forms through consequences experienced, not rules imposed."
+                }
+              }
+            ]
           }
         ]
       },
@@ -6816,6 +7562,66 @@
               }
             }
           }
+        ],
+        "breadcrumbs": [
+          { "name": "Home", "url": "#/" },
+          { "name": "Innovation", "url": "#/innovation/" },
+          { "name": "Drone Lab", "url": "#/innovation/drone-lab" }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "The Drone Lab",
+            "description": "Capability with conscience — student patents, every flight begins with ethical consideration",
+            "url": "#/innovation/drone-lab",
+            "isPartOf": { "@type": "WebPage", "name": "Innovation", "url": "#/innovation/" },
+            "about": [
+              { "@type": "Thing", "name": "Drone Education" },
+              { "@type": "Thing", "name": "Aviation" },
+              { "@type": "Thing", "name": "Student Patents" },
+              { "@type": "Thing", "name": "Ethics in Technology" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
+              { "@type": "ListItem", "position": 2, "name": "Innovation", "item": "#/innovation/" },
+              { "@type": "ListItem", "position": 3, "name": "Drone Lab", "item": "#/innovation/drone-lab" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the Conscience Check?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Before every flight, students consider privacy (could this capture images without consent?), safety (what could go wrong?), ecology (what is the environmental impact?), and purpose (does the benefit justify the costs?). This isn't a checklist — it's an expression of conscience formed across years of Montessori development."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How did students aged 8-12 file patents?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In 2019, Elementary students filed five patent applications with the Indian Patent Office for genuine innovations in drone design. These emerged from the Inventions Timeline and were evaluated not just for novelty but for benefit to humanity."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the crash curriculum?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Drones crash — and crashes are teachers. We extend Montessori's control of error: students experience consequences directly, developing diagnostic thinking, self-regulation, and iteration. We measure 'time-to-restart' — how quickly can a student recover, diagnose, and try again?"
+                }
+              }
+            ]
+          }
         ]
       },
       "biomimicry-hive": {
@@ -7047,6 +7853,66 @@
                 "href": "/innovation/drone-lab"
               }
             }
+          }
+        ],
+        "breadcrumbs": [
+          { "name": "Home", "url": "#/" },
+          { "name": "Innovation", "url": "#/innovation/" },
+          { "name": "Biomimicry Hive", "url": "#/innovation/biomimicry-hive" }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "The Biomimicry Hive",
+            "description": "Learning from life, serving life — nature as mentor, students as custodians",
+            "url": "#/innovation/biomimicry-hive",
+            "isPartOf": { "@type": "WebPage", "name": "Innovation", "url": "#/innovation/" },
+            "about": [
+              { "@type": "Thing", "name": "Biomimicry" },
+              { "@type": "Thing", "name": "Regenerative Design" },
+              { "@type": "Thing", "name": "Cosmic Education" },
+              { "@type": "Thing", "name": "Sustainability" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
+              { "@type": "ListItem", "position": 2, "name": "Innovation", "item": "#/innovation/" },
+              { "@type": "ListItem", "position": 3, "name": "Biomimicry Hive", "item": "#/innovation/biomimicry-hive" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is biomimicry education?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Biomimicry is learning design principles from nature's 3.8 billion years of R&D. But at Blue Blocks, it's more than technique — it's relationship. Students see nature as mentor, not resource. They develop custodian consciousness: the understanding that humans are caretakers of Earth, not owners."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is regenerative design?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Regenerative design goes beyond sustainability. Instead of just minimizing harm, regenerative designers create systems that give back more than they take — actively contributing to ecological and social health. The question is not 'Is this sustainable?' but 'Does this regenerate?'"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What projects do students work on in the Biomimicry Hive?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Projects include gecko adhesion (reusable adhesives), termite ventilation (passive cooling), kingfisher aerodynamics (drag reduction), and the Seed Bank (preserving genetic diversity). Every investigation includes ethical reflection: What is our obligation to the organisms we study?"
+                }
+              }
+            ]
           }
         ]
       },
@@ -7483,6 +8349,88 @@
               }
             }
           }
+        ],
+        "breadcrumbs": [
+          { "name": "Home", "url": "#/" },
+          { "name": "Innovation", "url": "#/innovation/" },
+          { "name": "Space Lab", "url": "#/innovation/space-lab" }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "The Space Lab",
+            "description": "Cosmic consciousness becomes cosmic responsibility — CubeSat launch January 2026",
+            "url": "#/innovation/space-lab",
+            "isPartOf": { "@type": "WebPage", "name": "Innovation", "url": "#/innovation/" },
+            "about": [
+              { "@type": "Thing", "name": "Space Education" },
+              { "@type": "Thing", "name": "CubeSat" },
+              { "@type": "Thing", "name": "ISRO" },
+              { "@type": "Thing", "name": "Cosmic Education" },
+              { "@type": "Thing", "name": "Peace Education" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
+              { "@type": "ListItem", "position": 2, "name": "Innovation", "item": "#/innovation/" },
+              { "@type": "ListItem", "position": 3, "name": "Space Lab", "item": "#/innovation/space-lab" }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "Blue Blocks CubeSat Launch",
+            "description": "Student-built satellite launching into Earth orbit — capability and conscience reaching space together",
+            "startDate": "2026-01-11",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+              "@type": "Place",
+              "name": "Satish Dhawan Space Centre",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sriharikota",
+                "addressRegion": "Andhra Pradesh",
+                "addressCountry": "IN"
+              }
+            },
+            "organizer": { "@type": "EducationalOrganization", "name": "Blue Blocks", "url": "#/" },
+            "performer": { "@type": "EducationalOrganization", "name": "Blue Blocks Students" }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the connection between the Pink Tower and the CubeSat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Both measure exactly 10cm on each side. The Pink Tower cube that three-year-olds carry in the Children's House has the same dimensions as the CubeSat satellite launching into orbit. The same hands — 15 years later. The same care developed through handling wooden cubes now applied to building satellites."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do students develop cosmic responsibility?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It begins with Care of Environment at age 2, extends through Cosmic Education in Elementary, and culminates in cosmic responsibility: understanding that space is shared commons, debris endangers all missions, and Earth seen from orbit has no borders. Students become citizens of the world."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What ethical considerations apply to the CubeSat mission?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Students discuss space debris, resource allocation, scientific contribution, and human solidarity. From space, there are no borders. This is peace education at cosmic scale."
+                }
+              }
+            ]
+          }
         ]
       },
       "cubesat-mission": {
@@ -7815,25 +8763,14 @@
         ]
       },
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Innovation",
-          "url": "#/innovation/"
-        },
-        {
-          "name": "{{title}}",
-          "url": "#/innovation/{slug}"
-        }
+        {"name": "Home",  "url": "#/"},
+        {"name": "Innovation", "url": "#/innovation/"},
+        {"name": "{{title}}", "url": "#/innovation/{slug}"}
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Innovation Detail",
-          "url": "#/innovation/{slug}",
+          "@type": "WebPage", "name": "Innovation Detail",  "url": "#/innovation/{slug}",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
             "@id": "##website"
@@ -8075,21 +9012,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Montessori System",
-          "url": "#/montessori-system/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Montessori System",  "url": "#/montessori-system/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Montessori System",
-          "url": "#/montessori-system/",
+          "@type": "WebPage", "name": "Montessori System",  "url": "#/montessori-system/",
           "description": "Maria Montessori was a visionary who disabused the traditional methods of education for being too constrictive and non child friendly. In her lifelong work with",
           "isPartOf": {
             "@id": "##website"
@@ -8360,21 +9289,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Campus",
-          "url": "#/campus/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Campus",  "url": "#/campus/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Campus",
-          "url": "#/campus/",
+          "@type": "WebPage", "name": "Campus",  "url": "#/campus/",
           "description": "Blue Blocks campuses are designed as calm, spacious, and purpose-led learning environments where children feel safe to explore, move, and grow with independence",
           "isPartOf": {
             "@id": "##website"
@@ -8514,21 +9435,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Videos",
-          "url": "#/videos/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Videos",  "url": "#/videos/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Videos",
-          "url": "#/videos/",
+          "@type": "WebPage", "name": "Videos",  "url": "#/videos/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
             "@id": "##website"
@@ -8797,21 +9710,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "FAQ",
-          "url": "#/faq/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "FAQ",  "url": "#/faq/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "FAQ",
-          "url": "#/faq/",
+          "@type": "WebPage", "name": "FAQ",  "url": "#/faq/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
             "@id": "##website"
@@ -9013,21 +9918,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Privacy Policy",
-          "url": "#/privacy-policy/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Privacy Policy",  "url": "#/privacy-policy/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Privacy Policy",
-          "url": "#/privacy-policy/",
+          "@type": "WebPage", "name": "Privacy Policy",  "url": "#/privacy-policy/",
           "description": "Blue Blocks (<b>“Blue Blocks”, “we”, “our”, “us”</b>) respects your privacy and is committed to protecting the personal information you share with us.",
           "isPartOf": {
             "@id": "##website"
@@ -9245,21 +10142,13 @@
         }
       ],
       "breadcrumbs": [
-        {
-          "name": "Home",
-          "url": "#/"
-        },
-        {
-          "name": "Terms of Use",
-          "url": "#/terms/"
-        }
+        { "name": "Home",  "url": "#/" },
+        { "name": "Terms of Use",  "url": "#/terms/" }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Terms of Use",
-          "url": "#/terms/",
+          "@type": "WebPage", "name": "Terms of Use",  "url": "#/terms/",
           "description": "Welcome to the Blue Blocks website (<b>“Website”</b>). These Terms of Use (<b>“Terms”</b>) govern your access and use of this Website and its content.",
           "isPartOf": {
             "@id": "##website"
@@ -10311,6 +11200,470 @@
           }
         }
       ]
+    },
+    "primaryDetail": {
+      "breadcrumbs": [
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Programs",
+          "url": "#/programs/"
+        },
+        {
+          "name": "Primary",
+          "url": "#/programs/primary/"
+        },
+        {
+          "name": "{{title}}",
+          "url": "#/programs/primary/{slug}"
+        }
+      ],
+      "work-cycle": {
+        "slug": "work-cycle",
+        "sections": [],
+        "breadcrumbs": [
+          {
+            "name": "Home",
+            "url": "#/"
+          },
+          {
+            "name": "Programs",
+            "url": "#/programs/"
+          },
+          {
+            "name": "Primary",
+            "url": "#/programs/primary/"
+          },
+          {
+            "name": "Work Cycle",
+            "url": "#/programs/primary/work-cycle/"
+          }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "The Work Cycle",
+            "description": "3-4 hours uninterrupted work time — where Normalisation happens",
+            "url": "#/programs/primary/work-cycle/",
+            "isPartOf": {
+              "@type": "WebPage",
+              "name": "Primary Program",
+              "url": "#/programs/primary/"
+            },
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "Normalisation"
+              },
+              {
+                "@type": "Thing",
+                "name": "Concentration"
+              },
+              {
+                "@type": "Thing",
+                "name": "Self-Directed Learning"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "#/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Programs",
+                "item": "#/programs/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Primary",
+                "item": "#/programs/primary/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Work Cycle",
+                "item": "#/programs/primary/work-cycle/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Normalisation in Montessori?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Normalisation is the natural state of the child when obstacles to development are removed. Observable signs: love of work, extended concentration, self-discipline without external enforcement, joy and calm. The scattered child becomes focused. The restless child becomes calm. This is not discipline imposed from outside; it is order constructed from within."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why 3-4 hours without interruption?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Concentration cannot develop when constantly interrupted. The work cycle is not a scheduling preference; it is a developmental necessity. A child needs time to choose work, engage deeply, repeat it three, four, five times, and emerge calm and satisfied. This is how inner order is built."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does the work cycle connect to conscience?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The normalised child — concentrated, peaceful, aware — develops deep consciousness: presence to the world around them. This is the foundation of conscience. A child who can focus, who knows inner peace through meaningful work, has the capacity to attend to others, to notice consequences, to care."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "writing-reading": {
+        "slug": "writing-reading",
+        "sections": [],
+        "breadcrumbs": [
+          {
+            "name": "Home",
+            "url": "#/"
+          },
+          {
+            "name": "Programs",
+            "url": "#/programs/"
+          },
+          {
+            "name": "Primary",
+            "url": "#/programs/primary/"
+          },
+          {
+            "name": "Writing & Reading",
+            "url": "#/programs/primary/writing-reading/"
+          }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "The Explosion into Writing",
+            "description": "Writing before reading — cursive script before age 6",
+            "url": "#/programs/primary/writing-reading/",
+            "isPartOf": {
+              "@type": "WebPage",
+              "name": "Primary Program",
+              "url": "#/programs/primary/"
+            },
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "Literacy Development"
+              },
+              {
+                "@type": "Thing",
+                "name": "Cursive Writing"
+              },
+              {
+                "@type": "Thing",
+                "name": "Phonemic Awareness"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "#/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Programs",
+                "item": "#/programs/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Primary",
+                "item": "#/programs/primary/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Writing & Reading",
+                "item": "#/programs/primary/writing-reading/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why does writing come before reading in Montessori?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Writing is a motor act accessible to the young child; reading is a cognitive act that follows. The child who has built words letter by letter understands the structure of written language from the inside out, not merely its surface."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the 'explosion into writing'?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Long before a child writes a single letter, the hand is being prepared through purposeful work — Metal Insets for muscular control, Sandpaper Letters for sound-symbol correspondence. Then one day — often without warning — the explosion happens. The child who could barely form letters suddenly writes words, sentences, stories."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why cursive instead of print?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Cursive is a continuous flowing motion that follows the natural movement of the hand. While traditional preschools teach printing three-letter words, our children write in beautiful cursive script before age 6. By six, they read English fluently — not through drill, but through deep understanding."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "mathematical-mind": {
+        "slug": "mathematical-mind",
+        "sections": [],
+        "breadcrumbs": [
+          {
+            "name": "Home",
+            "url": "#/"
+          },
+          {
+            "name": "Programs",
+            "url": "#/programs/"
+          },
+          {
+            "name": "Primary",
+            "url": "#/programs/primary/"
+          },
+          {
+            "name": "Mathematical Mind",
+            "url": "#/programs/primary/mathematical-mind/"
+          }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "The Mathematical Mind",
+            "description": "Golden Bead Material — embodied mathematics, decimal system made tangible",
+            "url": "#/programs/primary/mathematical-mind/",
+            "isPartOf": {
+              "@type": "WebPage",
+              "name": "Primary Program",
+              "url": "#/programs/primary/"
+            },
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "Mathematics Education"
+              },
+              {
+                "@type": "Thing",
+                "name": "Golden Bead Material"
+              },
+              {
+                "@type": "Thing",
+                "name": "Concrete Mathematics"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "#/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Programs",
+                "item": "#/programs/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Primary",
+                "item": "#/programs/primary/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Mathematical Mind",
+                "item": "#/programs/primary/mathematical-mind/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the Golden Bead Material?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Golden Bead Material makes the decimal system tangible. A single bead is a unit. A bar of ten beads is a ten. A square of one hundred beads is a hundred. A cube of one thousand beads is a thousand. When a child carries the thousand cube across the room, she feels what a thousand means."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What math do children learn before Grade 1?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "While traditional preschools teach one and two-digit addition, our children master all four operations — addition, subtraction, multiplication, and division. Some reach fractions before entering Grade 1. This is not acceleration; it's what's possible when mathematics is made physically graspable."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does this connect to the Innovation Bridge?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The hands that manipulate Golden Beads are developing the hand-mind connection that will later serve innovation. Mathematical understanding embodied in childhood becomes the foundation for engineering, design, and scientific thinking. The path from Golden Beads to CubeSat satellites is continuous."
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sensorial": {
+        "slug": "sensorial",
+        "sections": [],
+        "breadcrumbs": [
+          {
+            "name": "Home",
+            "url": "#/"
+          },
+          {
+            "name": "Programs",
+            "url": "#/programs/"
+          },
+          {
+            "name": "Primary",
+            "url": "#/programs/primary/"
+          },
+          {
+            "name": "Sensorial",
+            "url": "#/programs/primary/sensorial/"
+          }
+        ],
+        "schema": [
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Sensorial Education",
+            "description": "Control of Error — learning that actions have consequences, mistakes are information",
+            "url": "#/programs/primary/sensorial/",
+            "isPartOf": {
+              "@type": "WebPage",
+              "name": "Primary Program",
+              "url": "#/programs/primary/"
+            },
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "Sensorial Education"
+              },
+              {
+                "@type": "Thing",
+                "name": "Control of Error"
+              },
+              {
+                "@type": "Thing",
+                "name": "Classification"
+              },
+              {
+                "@type": "Thing",
+                "name": "Moral Development"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "#/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Programs",
+                "item": "#/programs/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Primary",
+                "item": "#/programs/primary/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Sensorial",
+                "item": "#/programs/primary/sensorial/"
+              }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Control of Error?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Every Montessori material contains built-in feedback allowing self-correction without adult intervention. When a child places the cylinders in the wrong sockets, the last one won't fit. The teacher doesn't correct. The child completes the work, sees that something is incomplete, removes all the cylinders, and tries again. This teaches that mistakes are information, not failures."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does Control of Error develop conscience?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Control of Error teaches the foundational moral understanding: actions have consequences. The child learns this not through lectures or punishment, but through direct experience. This is how conscience forms — not through rules imposed, but through consequences experienced. The child develops resilience, persistence, and the courage to try."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What sensorial materials do children use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Materials isolate specific qualities. Cylinder Blocks, Pink Tower, Brown Stair, Red Rods for dimension. Colour Tablets for colour. Geometric Cabinet for form. Touch Boards for texture. Baric Tablets for weight. Bells for sound. Each material develops mental habits of discrimination and classification that transfer to every domain."
+                }
+              }
+            ]
+          }
+        ]
+      }
     }
   }
 }
