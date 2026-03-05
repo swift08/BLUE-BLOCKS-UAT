@@ -923,7 +923,7 @@
                   "social": [
                     {
                       "label": "LinkedIn",
-                      "href": "https://linkedin.com/in/pavan-goyal"
+                      "href": "https://www.linkedin.com/in/pavangoel?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                     },
                     {
                       "label": "Email",
@@ -950,7 +950,7 @@
                   "social": [
                     {
                       "label": "LinkedIn",
-                      "href": "https://linkedin.com/in/munira-hussain"
+                      "href": "https://www.linkedin.com/in/munira-hussain-b515bb14?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
                     },
                     {
                       "label": "Email",
@@ -1385,7 +1385,7 @@
                 "name": "R. Shanmuga Priya",
                 "roleLabel": "AMI Elementary Guide (6–12 Years)",
                 "roleColor": "#57B3CE",
-                "image": "",
+                "image": "/team/elementary/priya.webp",
                 "imageAlt": "R. Shanmuga Priya",
                 "tagline": "Applying operational precision to the construction of the reasoning mind.",
                 "bio": "MBA | AMI Elementary Diploma | 12 years tenure.",
@@ -1411,7 +1411,7 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
+                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/priya-raja-5b4975250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
                     { "label": "Email", "href": "mailto:shanmuga.priya@blueblocks.com" }
                   ]
                 }
@@ -1421,7 +1421,7 @@
                 "name": "Sri Satya Sai Kiranmayi R",
                 "roleLabel": "Elementary Mentor (Sciences)",
                 "roleColor": "#57B3CE",
-                "image": "",
+                "image": "/team/erd-kinder/kirammayee.webp",
                 "imageAlt": "Sri Satya Sai Kiranmayi R",
                 "tagline": "Moving from rote memorization to scientific deduction.",
                 "bio": "M.Sc. & M.Phil (Chemistry) | AMI Elem. Assistant | 11 years.",
@@ -1483,7 +1483,7 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
+                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/poulomi-bose-b8106114b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
                     { "label": "Email", "href": "mailto:poulomi.bose@blueblocks.com" }
                   ]
                 }
@@ -1601,7 +1601,7 @@
                 "name": "Dr. Shobha Ediga",
                 "roleLabel": "Adolescent Guide (Science & Inquiry)",
                 "roleColor": "#C59BEA",
-                "image": "",
+                "image": "/team/erd-kinder/dr-shoba.webp",
                 "imageAlt": "Dr. Shobha Ediga",
                 "tagline": "Bringing doctoral-level rigor to the adolescent mind.",
                 "bio": "Ph.D. Plant Sciences | Gold Medalist (Biochem) | AMI 6–12 Orientation.",
@@ -1627,7 +1627,7 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
+                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/dr-shobha-ediga-578b6644?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
                     { "label": "Email", "href": "mailto:shobha.ediga@blueblocks.com" }
                   ]
                 }
@@ -1781,7 +1781,7 @@
                 "name": "Badri Shruthi",
                 "roleLabel": "AMI Primary Guide (3–6 Years)",
                 "roleColor": "#E08B64",
-                "image": "",
+                "image": "/team/research-team/sruti.webp",
                 "imageAlt": "Badri Shruthi",
                 "tagline": "Decoding the logic of early language and development.",
                 "bio": "B.Tech (IT) | PG Data Science | AMI Certified (MTRT).",
@@ -1879,7 +1879,7 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
+                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/mridula-chunduri-8b5650b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
                     { "label": "Email", "href": "mailto:mridula.chunduri@blueblocks.com" }
                   ]
                 }
@@ -1889,7 +1889,7 @@
                 "name": "Sandhya Rao M",
                 "roleLabel": "AMI Elementary Guide (6–12 Years)",
                 "roleColor": "#57B3CE",
-                "image": "",
+                "image": "/team/administration/sandhya-rao.webp",
                 "imageAlt": "Sandhya Rao M",
                 "tagline": "Fusing physiological systems with the laws of nature.",
                 "bio": "M.PT | Biomimicry Specialist | AMI (Medha) | 6 years tenure.",
@@ -1915,7 +1915,7 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
+                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/sandhya-rao-98572116b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
                     { "label": "Email", "href": "mailto:sandhya.rao@blueblocks.com" }
                   ]
                 }
@@ -1961,7 +1961,7 @@
                 "name": "Siddiqua Rabiha",
                 "roleLabel": "AMI Primary Guide (3–6 Years)",
                 "roleColor": "#E08B64",
-                "image": "",
+                "image": "/team/self-interpretive/rabia.webp",
                 "imageAlt": "Siddiqua Rabiha",
                 "tagline": "From physical nutrition to the nourishment of the mind.",
                 "bio": "B.Sc. (Nutrition) | AMI Certified (MTRT) | 2025 graduate.",
@@ -2203,7 +2203,7 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
+                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/aishwarya-tejaswiraj-gundu-74376a9b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
                     { "label": "Email", "href": "mailto:aishwarya@blueblocks.com" }
                   ]
                 }
@@ -2239,7 +2239,7 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
+                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/someshwari-devi-telugu-675323250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
                     { "label": "Email", "href": "mailto:someshwari.devi@blueblocks.com" }
                   ]
                 }
@@ -2700,7 +2700,7 @@
             "items": [
               {
                 "id": "toddler",
-                "badge": "Nido (15 Months – 2.5 Years)",
+                "badge": "(15 Months – 2.5 Years)",
                 "cardTitle": "THE TODDLER COMMUNITY",
                 "focusLabel": "Focus",
                 "focusText": "Functional Independence",
@@ -2723,7 +2723,7 @@
               },
               {
                 "id": "childhouse",
-                "badge": "Nido (3 – 6 Years)",
+                "badge": "(3 – 6 Years)",
                 "cardTitle": "THE CHILDREN'S HOUSE",
                 "focusLabel": "Focus",
                 "focusText": "The Conscious Mind",
@@ -2746,7 +2746,7 @@
               },
               {
                 "id": "elementary",
-                "badge": "Nido (6 – 12 Years)",
+                "badge": "(6 – 12 Years)",
                 "cardTitle": "THE ELEMENTARY\nENVIRONMENT",
                 "focusLabel": "Focus",
                 "focusText": "The Reasoning Mind",
@@ -2769,7 +2769,7 @@
               },
               {
                 "id": "adolescent",
-                "badge": "Nido (12 – 16 Years)",
+                "badge": "(12 – 16 Years)",
                 "cardTitle": "THE ADOLESCENT\nCOMMUNITY",
                 "focusLabel": "Focus",
                 "focusText": "Social Independence",
