@@ -250,7 +250,7 @@
     },
     "quickLinks": [
       {"label": "About Us","href": "/about-us"},
-      {"label": "The Micro Research Institute","href": "/research-institute"},
+      {"label": "The Micro Research Institute","href": "https://mri2.vercel.app/"},
       {"label": "Campus","href": "/campus"},
       {"label": "Careers","href": "/careers"}
     ],
@@ -908,7 +908,7 @@
                 "name": "Pavan Goyal",
                 "roleLabel": "Founder & Principal",
                 "roleColor": "#E08B64",
-                "image": "/team/pavan.webp",
+                "image": "/team/pavan-goyal-founder.webp",
                 "imageAlt": "Pavan Goyal",
                 "bio": "Pavan holds the rare complete AMI Diploma (0-18). He bridges the gap between Montessori philosophy and future-ready innovation, ensuring that Blue Blocks remains a place where the 'Scientific Method' is a way of life.",
                 "readMoreHref": "/founders/pavan-goyal",
