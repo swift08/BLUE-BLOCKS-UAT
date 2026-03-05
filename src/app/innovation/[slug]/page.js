@@ -1,10 +1,10 @@
 import siteData from "@/data/site.json";
 import { notFound } from "next/navigation";
 import SectionRendererClient from "@/components/SectionRendererClient";
+import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
 
-// ✅ Adjust this path to your real JSON structure
 function getInnovationMap() {
   return siteData?.pages?.innovationDetail || {};
 }
@@ -23,5 +23,10 @@ export default function InnovationDetailPage({ params }) {
 
   const sections = Array.isArray(page?.sections) ? page.sections : [];
 
-  return <SectionRendererClient sections={sections} />;
+  return (
+    <>
+      <PageJsonLd baseId={`innovation-${slug}`} schema={page?.schema} />
+      <SectionRendererClient sections={sections} />
+    </>
+  );
 }

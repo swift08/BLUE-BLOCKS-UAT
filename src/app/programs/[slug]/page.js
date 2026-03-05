@@ -1,6 +1,7 @@
 import siteData from "@/data/site.json";
 import { notFound } from "next/navigation";
 import SectionRendererClient from "@/components/SectionRendererClient";
+import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -22,5 +23,11 @@ export default function ProgramPage({ params }) {
   if (!page) notFound();
 
   const sections = Array.isArray(page?.sections) ? page.sections : [];
-  return <SectionRendererClient sections={sections} />;
+
+  return (
+    <>
+      <PageJsonLd baseId={`programs-${slug}`} schema={page?.schema} />
+      <SectionRendererClient sections={sections} />
+    </>
+  );
 }

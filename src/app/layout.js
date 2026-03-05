@@ -6,6 +6,7 @@ import HashScrollFix from "@/components/ui/HashScrollFix";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import siteData from "@/data/site.json";
 import JsonLd from "@/components/seo/JsonLd";
+import normalizeJsonLd from "@/lib/seo/normalizeJsonLd";
 import { Poppins } from "next/font/google";
 import "@/styles/global.css";
 
@@ -16,7 +17,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+  ),
 
   title: {
     default: "Blue Blocks | Montessori + Innovation Ecosystem (Hyderabad)",
@@ -47,35 +50,17 @@ export const metadata = {
   },
 };
 
-const orgSchema = {
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  name: "Blue Blocks",
-  url: "",
-  logo: `/icon/logo.svg`,
-  address: [
-    {
-      "@type": "PostalAddress",
-      streetAddress: "MIG 3, Lane opposite to DLF, Gachibowli",
-      addressLocality: "Hyderabad",
-      addressRegion: "Telangana",
-      addressCountry: "IN",
-    },
-    {
-      "@type": "PostalAddress",
-      streetAddress: "Tellapur",
-      addressLocality: "Hyderabad",
-      addressRegion: "Telangana",
-      addressCountry: "IN",
-    },
-  ],
-};
-
 export default function RootLayout({ children }) {
+  // Global / site-wide schema from site.json
+  const org = normalizeJsonLd(siteData?.site?.schema?.organization);
+  const website = normalizeJsonLd(siteData?.site?.schema?.website);
+
   return (
     <html lang="en">
       <body className={`min-h-screen bg-white text-slate-900 ${poppins.className}`}>
-        <JsonLd id="org-jsonld" data={orgSchema} />
+        {/* Global JSON-LD (visible in view-source) */}
+        <JsonLd id="jsonld-organization" data={org} />
+        <JsonLd id="jsonld-website" data={website} />
 
         <HeaderShell />
         <NavigationLoader minMs={450} />

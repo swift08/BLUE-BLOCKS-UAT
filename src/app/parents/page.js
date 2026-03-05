@@ -1,7 +1,17 @@
 import siteData from "@/data/site.json";
-import SectionRenderer from "@/lib/sectionRenderer";
+import SectionRendererClient from "@/components/SectionRendererClient";
+import PageJsonLd from "@/components/seo/PageJsonLd";
+
+export const dynamic = "force-static";
 
 export default function ParentsPage() {
-  const sections = siteData?.pages?.parents?.sections || [];
-  return <SectionRenderer sections={sections} />;
+  const page = siteData?.pages?.parents || {};
+  const sections = Array.isArray(page?.sections) ? page.sections : [];
+
+  return (
+    <>
+      <PageJsonLd baseId="parents" schema={page?.schema} />
+      <SectionRendererClient sections={sections} />
+    </>
+  );
 }

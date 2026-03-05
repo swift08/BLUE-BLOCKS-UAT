@@ -1,11 +1,14 @@
-import Script from "next/script";
-
+// src/components/seo/JsonLd.js
 export default function JsonLd({ id, data }) {
+  if (!data) return null;
+
   return (
-    <Script
+    <script
       id={id}
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(data, null, 2), // 👈 pretty format like Apple
+      }}
     />
   );
 }
