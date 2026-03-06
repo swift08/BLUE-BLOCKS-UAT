@@ -8,8 +8,6 @@
     ],
     "nav": [
       { "label": "Home", "href": "/"},
-      { "label": "The Micro Research Institute","href": "https://mri2.vercel.app/"},
-      { "label": "Campus","href": "/campus"},
       { "label": "What do we do", "href": "/about-us"},
       { "label": "Programs", "href": "/programs"},
       { "label": "Innovations", "href": "/innovation"},
@@ -2398,7 +2396,7 @@
             "imageAspect":"aspect-[16/10]",
             "cta": {
               "label": "Click to visit the site",
-              "href": "https://research.blueblocks.in/"
+              "href": "https://mri2.vercel.app/"
             }
           }
         },
