@@ -3,7 +3,7 @@ name: Deploy to cPanel
 on:
   push:
     branches:
-      - production
+      - live
 
 jobs:
   build-and-deploy:
