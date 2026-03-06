@@ -1,6 +1,6 @@
 import siteData from "@/data/site.json";
 import SectionRendererClient from "@/components/SectionRendererClient";
-import PageJsonLd from "@/components/seo/PageJsonLd";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
