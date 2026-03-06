@@ -1,15 +1,15 @@
-<IfModule mod_headers.c>
+<!-- <IfModule mod_headers.c>
   Header set X-Robots-Tag "noindex, nofollow, noarchive"
-</IfModule>
+</IfModule> -->
 
 RewriteEngine On
 
 # --------------------------------------------------
 # 1) Force HTTPS + non-www
 # --------------------------------------------------
-<!-- RewriteCond %{HTTPS} !=on [OR]
-RewriteCond %{HTTP_HOST} ^www\.blueblocks\.in$ [NC]
-RewriteRule ^(.*)$ https://blueblocks.in/$1 [R=301,L] -->
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.dev65\.blueblocks\.in$ [NC]
+RewriteRule ^(.*)$ https://dev65.blueblocks.in/$1 [R=301,L]
 
 # --------------------------------------------------
 # 2) Main pages
