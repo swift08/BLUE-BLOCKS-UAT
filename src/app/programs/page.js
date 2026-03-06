@@ -4,7 +4,7 @@ import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
 
-export default function ProgramsIndexPage() {
+export default function ProgramPage() {
   const page = siteData?.pages?.programs || {};
   const sections = Array.isArray(page?.sections) ? page.sections : [];
 
