@@ -3,7 +3,7 @@ const path = require("path");
 
 const siteData = require("../src/data/site.json");
 
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://dev65.blueblocks.in").replace(/\/$/, "");
+const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.blueblocks.in").replace(/\/$/, "");
 
 function absoluteUrl(route = "/") {
   return `${SITE_URL}${route.startsWith("/") ? route : `/${route}`}`;
