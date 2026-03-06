@@ -13,92 +13,7 @@
       { "label": "Innovations", "href": "/innovation"},
       { "label": "Blog","href": "https://blueblocks.in/blog/"},
       { "label": "Contact", "href": "/contact-us"}
-    ],
-    "url": "#",
-    "schema": {
-      "organization": {
-        "@context": "https://schema.org",
-        "@type": [
-          "EducationalOrganization",
-          "Preschool"
-        ],
-        "name": "Blue Blocks",
-        "url": "#",
-        "logo": "#/icon/logo.svg",
-        "sameAs": [
-          "https://www.instagram.com/blueblocksmontessorischool/",
-          "https://www.facebook.com/blueblockspreschool",
-          "https://www.youtube.com/channel/UCnJ6uX3B-uwAg63PgTK0LhQ",
-          "https://www.linkedin.com/school/blue-blocks-school"
-        ],
-        "email": "info@blueblocks.in",
-        "telephone": "+91 9000955050",
-        "contactPoint": [
-          {
-            "@type": "ContactPoint",
-            "telephone": "+91 9000955050",
-            "contactType": "customer service",
-            "areaServed": "IN",
-            "availableLanguage": ["en", "hi", "te"]
-          },
-          {
-            "@type": "ContactPoint",
-            "telephone": "+91 9000955053",
-            "contactType": "WhatsApp",
-            "areaServed": "IN",
-            "availableLanguage": ["en", "hi", "te"]
-          }
-        ],
-        "foundingDate": "2009",
-        "founder": [
-          {
-            "@type": "Person",
-            "name": "Pavan Goyal"
-          },
-          {
-            "@type": "Person",
-            "name": "Munira Hussain"
-          }
-        ],
-        "department": [
-          {
-            "@type": "EducationalOrganization",
-            "name": "Blue Blocks Preschool",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "MIG 3, Lane opposite to DLF, Gachibowli, Hyderabad, Telangana",
-              "addressLocality": "Hyderabad",
-              "addressRegion": "Telangana",
-              "addressCountry": "IN"
-            },
-            "hasMap": "https://www.google.com/maps?q=Gachibowli%20Hyderabad&output=embed"
-          },
-          {
-            "@type": "EducationalOrganization",
-            "name": "Blue Blocks school",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Tellapur, Hyderabad, Telangana",
-              "addressLocality": "Hyderabad",
-              "addressRegion": "Telangana",
-              "addressCountry": "IN"
-            },
-            "hasMap": "https://www.google.com/maps?q=Tellapur%20Hyderabad&output=embed"
-          }
-        ],
-        "@id": "##organization"
-      },
-      "website": {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Blue Blocks",
-        "url": "#",
-        "@id": "##website",
-        "publisher": {
-          "@id": "##organization"
-        }
-      }
-    }
+    ]
   },
   "megaMenu": {
     "whatDoWeDo": {
@@ -664,28 +579,6 @@
       ],
       "breadcrumbs": [
         {"name": "Home", "url": "#/"}
-      ],
-      "schema": [
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Home",  "url": "#/",
-          "description": "Authentic Montessori. The 0–16 Continuum. Education designed for the human spirit.",
-          "isPartOf": {
-            "@id": "##website"
-          }
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "#/"
-            }
-          ]
-        }
       ]
     },
     "aboutUs": {
@@ -2565,34 +2458,6 @@
       "breadcrumbs": [
         {"name": "Home","url": "#/"},
         {"name": "About Us","url": "#/about-us/"}
-      ],
-      "schema": [
-        {
-          "@context": "https://schema.org",
-          "@type": "WebPage", "name": "About Us",  "url": "#/about-us/",
-          "description": "Education is not the filling of a bucket, but the lighting of a fire. Since 2009, Blue Blocks has stood as a sanctuary of Authentic Montessori practice, offerin",
-          "isPartOf": {
-            "@id": "##website"
-          }
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "#/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "About Us",
-              "item": "#/about-us/"
-            }
-          ]
-        }
       ]
     },
     "academics": {

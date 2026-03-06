@@ -7,7 +7,7 @@ export default function JsonLd({ id, data }) {
       id={id}
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(data, null, 2), // 👈 pretty format like Apple
+        __html: JSON.stringify(data, null, 2),
       }}
     />
   );
