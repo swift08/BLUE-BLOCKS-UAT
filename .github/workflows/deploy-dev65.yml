@@ -1,9 +1,9 @@
-name: Deploy to cPanel dev65
+name: Deploy to cPanel dev65 (staging)
 
 on:
   push:
     branches:
-      - live
+      - production
 
 jobs:
   build-and-deploy:
@@ -16,17 +16,17 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 24.11.1
+          node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build Next.js
-        run: npm run build && npm run export
+      # If next.config.js uses output: "export", next build generates /out
+      - name: Build (Static Export)
+        run: npm run build
 
-      - name: Deploy to cPanel via FTP
+      - name: Deploy to cPanel via FTP (dev65)
         uses: samkirkland/ftp-deploy-action@v4.3.5
-
         with:
           server: ${{ secrets.CPANEL_FTP_SERVER }}
           username: ${{ secrets.CPANEL_FTP_USERNAME }}

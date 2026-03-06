@@ -2836,6 +2836,87 @@
         }
       ]
     },
+    "programs": {
+      "sections": [
+        {
+            "type": "pageHero",
+            "props": {
+              "title": "Programs",
+              "breadcrumb": [
+                { "label": "Home", "href": "/" },
+                { "label": "Programs" }
+              ],
+              "bg": {
+                "base": "#F3E3CF",
+                "leftArc": "/ui/arc-left.webp",
+                "rightArc": "/ui/arc-right.webp"
+              }
+            }
+          },
+        {
+          "type": "programIntroSplit",
+          "props": {
+            "eyebrow": "PLAYGROUP (THE TODDLER COMMUNITY)",
+            "title": "Best Playgroup in\nHyderabad",
+            "text": "At Blue Blocks, our Montessori Toddler Community welcomes children from 1 to 2½ years into a warm, purposeful environment designed for exploration and growth. Here, little ones build independence through everyday activities like caring for themselves, exploring language and movement, and interacting with others with grace and joy. Guided by AMI-trained Montessori adults, children gain confidence, order, and a sense of belonging—laying the foundation for lifelong curiosity and self-reliance.",
+            "media": {
+              "main": { "src": "/programs/playgroup/main.webp", "alt": "Playgroup classroom" },
+              "left": { "src": "/programs/playgroup/left.webp", "alt": "Play activity" },
+              "right": { "src": "/programs/playgroup/right.webp", "alt": "Montessori materials" }
+            }
+          }
+        },
+        {
+        "type": "AreasofDevelopment",
+        "props": {
+          "bg": "#F3E3CF",
+          "eyebrow": "PLAYGROUP (1 TO 2½ YEARS)",
+          "title": "Areas of Development",
+          "description": "At Blue Blocks, our Montessori Toddler Community welcomes children from 1 to 2½ years into a warm, purposeful environment designed for exploration and growth.",
+          "headerAlign": "center",
+
+          "cols": { "base": 1, "sm": 2, "lg": 4 },
+          "maxWidth": "max-w-6xl",
+          "gap": "gap-6",
+
+          "cardBg": "#273C75",
+          "cardRadius": "rounded-[18px]",
+          "cardPadding": "px-6 py-7",
+          "cardMinHeight": 220,
+
+          "iconSize": "60",
+          "iconWrapClassName": "h-10 w-10",
+
+          "items": [
+            { "icon": "/icon/brain.svg", "title": "Brain Development", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation." },
+            { "icon": "/icon/movement.svg", "title": "Movement Development", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation." },
+            { "icon": "/icon/leaf.svg", "title": "Care for Environment", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation." },
+            { "icon": "/icon/food.svg", "title": "Food Activities", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation." },
+
+            { "icon": "/icon/heart.svg", "title": "Care For Self", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation." },
+            { "icon": "/icon/toilet.svg", "title": "Toilet Training", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation." },
+            { "icon": "/icon/art.svg", "title": "Art Activities", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation." },
+            { "icon": "/icon/music.svg", "title": "Songs and Stories", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speech—introducing up to seven languages to build a strong linguistic foundation." }
+          ]
+        }
+      },
+      {
+          "type": "ctaBanner",
+          "props": {
+            "title": "Experience Learning\nthe Blue Blocks Way.",
+            "text": "Seats are filled on a first-come basis.",
+            "cta": { "label": "Book Admission Workshop", "href": "/contact" },
+            "image": "/building-image-01.webp",
+            "imageAlt": "Campus building",
+            "imageWidth": "566",
+            "imageHeight": "506",
+            "customTopSpacing":"sm:pt-70",
+            "align": "left",
+            "theme": "dark"
+          }
+        }
+      ]
+    },
     "programDetails": {
       "playgroup": {
         "sections": [
