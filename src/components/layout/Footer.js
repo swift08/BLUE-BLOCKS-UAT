@@ -264,13 +264,11 @@ export default function Footer() {
             <div>© 2025 Blue Blocks Micro Research Institute</div>
 
             <div className="flex items-center gap-2 lg:justify-end">
-              <Link className="underline-offset-4 hover:underline" href="/privacy-policy">
-                Privacy Policy
-              </Link>
+              <Link className="underline-offset-4 hover:underline" href="/sitemap">Sitemap</Link>
               <span className="text-white/25">·</span>
-              <Link className="underline-offset-4 hover:underline" href="/terms">
-                Terms of Use
-              </Link>
+              <Link className="underline-offset-4 hover:underline" href="/privacy-policy">Privacy Policy</Link>
+              <span className="text-white/25">·</span>
+              <Link className="underline-offset-4 hover:underline" href="/terms">Terms of Use</Link>
             </div>
           </div>
         </div>

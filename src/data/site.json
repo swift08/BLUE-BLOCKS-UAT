@@ -47,6 +47,13 @@
           "href": "/videos",
           "description": "Watch real moments from classrooms, campus life, children, and educators.",
           "image": "/programs/thumb-secondary.webp"
+        },
+        {
+          "id": "Micro Research Institute",
+          "title": "Micro Research Institute",
+          "href": "https://mri2.vercel.app/",
+          "description": "Watch real moments from classrooms, campus life, children, and educators.",
+          "image": "/programs/thumb-secondary.webp"
         }
       ],
       "ctaCard": {
