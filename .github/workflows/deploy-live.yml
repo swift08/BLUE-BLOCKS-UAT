@@ -42,8 +42,8 @@ jobs:
         uses: samkirkland/ftp-deploy-action@v4.3.5
         with:
           server: ${{ secrets.CPANEL_LIVE_FTP_SERVER }}
-          username: ${{ secrets.CPANEL_FTP_USERNAME }}
-          password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+          username: ${{ secrets.CPANEL_LIVE_FTP_USERNAME }}
+          password: ${{ secrets.CPANEL_LIVE_FTP_PASSWORD }}
           local-dir: out/
           server-dir: ./
           dangerous-clean-slate: true
