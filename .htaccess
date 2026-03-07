@@ -1,53 +1,47 @@
 RewriteEngine On
 
 # --------------------------------------------------
-# 1) Force HTTPS + non-www
+# 1) Specific old URL -> new URL redirects FIRST
+# --------------------------------------------------
+
+# Main pages
+RewriteRule ^about-us\.shtml/?$ https://blueblocks.in/about-us/ [R=301,L,NC]
+RewriteRule ^montessori\.shtml/?$ https://blueblocks.in/montessori-system/ [R=301,L,NC]
+RewriteRule ^careers\.shtml/?$ https://blueblocks.in/careers/ [R=301,L,NC]
+RewriteRule ^campus\.shtml/?$ https://blueblocks.in/campus/ [R=301,L,NC]
+RewriteRule ^faq\.shtml/?$ https://blueblocks.in/faq/ [R=301,L,NC]
+RewriteRule ^admission\.shtml/?$ https://blueblocks.in/admissions/ [R=301,L,NC]
+RewriteRule ^programs\.shtml/?$ https://blueblocks.in/programs/ [R=301,L,NC]
+RewriteRule ^innovation\.shtml/?$ https://blueblocks.in/innovation/ [R=301,L,NC]
+RewriteRule ^privacy-policy\.shtml/?$ https://blueblocks.in/privacy-policy/ [R=301,L,NC]
+
+# Program pages
+RewriteRule ^toddler\.shtml/?$ https://blueblocks.in/programs/playgroup/ [R=301,L,NC]
+RewriteRule ^self\.shtml/?$ https://blueblocks.in/programs/nursery-school/ [R=301,L,NC]
+RewriteRule ^elementary\.shtml/?$ https://blueblocks.in/programs/primary-school-elementary/ [R=301,L,NC]
+RewriteRule ^high\.shtml/?$ https://blueblocks.in/programs/secondary-school/ [R=301,L,NC]
+
+# Innovation pages
+RewriteRule ^drone-patent\.shtml/?$ https://blueblocks.in/innovation/drone-lab/ [R=301,L,NC]
+RewriteRule ^space-program\.shtml/?$ https://blueblocks.in/innovation/space-lab/ [R=301,L,NC]
+RewriteRule ^biomimicryhive\.shtml/?$ https://blueblocks.in/innovation/biomimicry-hive/ [R=301,L,NC]
+
+# Legacy / special paths
+RewriteRule ^Innovation/CubeSat-Mission/?$ https://research.blueblocks.in/publications/CubeSat-INSPACE/ [R=301,L,NC]
+RewriteRule ^blog/?$ https://blueblocks.in/blog/ [R=301,L,NC]
+
+# Resolved formerly unmapped items
+RewriteRule ^positive-parenting\.shtml/?$ https://blueblocks.in/parents/ [R=301,L,NC]
+RewriteRule ^virtual-learning\.shtml/?$ https://blueblocks.in/programs/ [R=301,L,NC]
+RewriteRule ^public/resourses/documents/Drone-Innovation-and-Research\.pdf$ https://blueblocks.in/innovation/drone-lab/ [R=301,L,NC]
+RewriteRule ^public/resources/documents/Drone-Innovation-and-Research\.pdf$ https://blueblocks.in/innovation/drone-lab/ [R=301,L,NC]
+RewriteRule ^videos\.shtml/?$ https://blueblocks.in/videos/ [R=301,L,NC]
+RewriteRule ^schedule-meeting-with-parent-coordinator\.shtml/?$ https://blueblocks.in/contact-us/ [R=301,L,NC]
+RewriteRule ^schedule-meeting-with-director-elementory\.shtml/?$ https://blueblocks.in/admissions/ [R=301,L,NC]
+
+# --------------------------------------------------
+# 2) Force HTTPS + non-www AFTER specific redirects
 # --------------------------------------------------
 RewriteCond %{HTTPS} !=on [OR]
 RewriteCond %{HTTP_HOST} ^www\.blueblocks\.in$ [NC]
 RewriteRule ^(.*)$ https://blueblocks.in/$1 [R=301,L]
-
-# --------------------------------------------------
-# 2) Main pages
-# --------------------------------------------------
-# --------------------------------------------------
-RewriteRule ^about-us\.shtml$ https://blueblocks.in/about-us/ [R=301,L,NC]
-RewriteRule ^montessori\.shtml$ https://blueblocks.in/montessori-system/ [R=301,L,NC]
-RewriteRule ^careers\.shtml$ https://blueblocks.in/careers/ [R=301,L,NC]
-RewriteRule ^campus\.shtml$ https://blueblocks.in/campus/ [R=301,L,NC]
-RewriteRule ^faq\.shtml$ https://blueblocks.in/faq/ [R=301,L,NC]
-RewriteRule ^admission\.shtml$ https://blueblocks.in/admissions/ [R=301,L,NC]
-RewriteRule ^programs\.shtml$ https://blueblocks.in/programs/ [R=301,L,NC]
-RewriteRule ^innovation\.shtml$ https://blueblocks.in/innovation/ [R=301,L,NC]
-RewriteRule ^privacy-policy\.shtml$ https://blueblocks.in/privacy-policy/ [R=301,L,NC]
-
-# --------------------------------------------------
-# 3) Program pages
-# --------------------------------------------------
-RewriteRule ^toddler\.shtml$ https://blueblocks.in/programs/playgroup/ [R=301,L,NC]
-RewriteRule ^self\.shtml$ https://blueblocks.in/programs/nursery-school/ [R=301,L,NC]
-RewriteRule ^elementary\.shtml$ https://blueblocks.in/programs/primary-school-elementary/ [R=301,L,NC]
-RewriteRule ^high\.shtml$ https://blueblocks.in/programs/secondary-school/ [R=301,L,NC]
-
-# --------------------------------------------------
-# 4) Innovation pages
-# --------------------------------------------------
-RewriteRule ^drone-patent\.shtml$ https://blueblocks.in/innovation/drone-lab/ [R=301,L,NC]
-RewriteRule ^space-program\.shtml$ https://blueblocks.in/innovation/space-lab/ [R=301,L,NC]
-RewriteRule ^biomimicryhive\.shtml$ https://blueblocks.in/innovation/biomimicry-hive/ [R=301,L,NC]
-
-# --------------------------------------------------
-# 5) Legacy/special paths
-# --------------------------------------------------
-RewriteRule ^Innovation/CubeSat-Mission/?$ https://research.blueblocks.in/publications/CubeSat-INSPACE/ [R=301,L,NC]
-RewriteRule ^blog/?$ https://blueblocks.in/blog/ [R=301,L,NC]
-
-# --------------------------------------------------
-# 6) Resolved formerly unmapped items
-# --------------------------------------------------
-RewriteRule ^positive-parenting\.shtml$ https://blueblocks.in/parents/ [R=301,L,NC]
-RewriteRule ^virtual-learning\.shtml$ https://blueblocks.in/programs/ [R=301,L,NC]
-RewriteRule ^public/resourses/documents/Drone-Innovation-and-Research\.pdf$ https://blueblocks.in/innovation/drone-lab/ [R=301,L,NC]
-RewriteRule ^videos\.shtml$ https://blueblocks.in/videos/ [R=301,L,NC]
-RewriteRule ^schedule-meeting-with-parent-coordinator\.shtml$ https://blueblocks.in/contact-us/ [R=301,L,NC]
-RewriteRule ^schedule-meeting-with-director-elementory\.shtml$ https://blueblocks.in/admissions/ [R=301,L,NC]
