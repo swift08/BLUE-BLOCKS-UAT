@@ -7,13 +7,29 @@ function normalizePhone(phone = "") {
   return String(phone).replace(/[^\d]/g, "");
 }
 
+function isMobileDevice() {
+  if (typeof window === "undefined") return false;
+  return /Android|iPhone|iPad|iPod|Mobile|Opera Mini|IEMobile/i.test(
+    window.navigator.userAgent
+  );
+}
+
 function buildWaLink({ phone, text }) {
   const p = normalizePhone(phone);
   if (!p) return null;
 
-  const base = `https://wa.me/${p}`;
-  if (!text) return base;
-  return `${base}?text=${encodeURIComponent(text)}`;
+  const encodedText = text ? encodeURIComponent(text) : "";
+  const mobile = isMobileDevice();
+
+  if (mobile) {
+    return encodedText
+      ? `https://wa.me/${p}?text=${encodedText}`
+      : `https://wa.me/${p}`;
+  }
+
+  return encodedText
+    ? `https://web.whatsapp.com/send?phone=${p}&text=${encodedText}`
+    : `https://web.whatsapp.com/send?phone=${p}`;
 }
 
 export default function WhatsAppFloat({ config }) {
@@ -52,13 +68,12 @@ export default function WhatsAppFloat({ config }) {
         whileHover={prefersReducedMotion ? {} : { y: -12, scale: 1.04 }}
         whileTap={{ scale: 0.98 }}
       >
-        {/* WhatsApp icon (no extra libs) */}
         <svg
           width="26"
           height="26"
           viewBox="0 0 32 32"
           aria-hidden="true"
-          className="transition-transform duration-200 group-hover:scale-110"
+          className="transition-transform duration-200 group-hover:scale-110 text-white"
         >
           <path
             fill="currentColor"
@@ -71,7 +86,6 @@ export default function WhatsAppFloat({ config }) {
         </svg>
       </motion.a>
 
-      {/* Optional label (desktop only) */}
       {label ? (
         <div className="mt-2 hidden sm:block text-xs text-slate-600 text-right">
           {label}
