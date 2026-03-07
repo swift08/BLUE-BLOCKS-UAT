@@ -51,7 +51,7 @@
         {
           "id": "Micro Research Institute",
           "title": "Micro Research Institute",
-          "href": "https://mri2.vercel.app/",
+          "href": "https://research.blueblocks.in/",
           "description": "Watch real moments from classrooms, campus life, children, and educators.",
           "image": "/programs/thumb-secondary.webp"
         }
@@ -173,7 +173,7 @@
     },
     "quickLinks": [
       {"label": "About Us","href": "/about-us"},
-      {"label": "The Micro Research Institute","href": "https://mri2.vercel.app/"},
+      {"label": "The Micro Research Institute","href": "https://research.blueblocks.in/"},
       {"label": "Blog","href": "https://blueblocks.in/blog/"},
       {"label": "Campus","href": "/campus"},
       {"label": "Careers","href": "/careers"}
@@ -2296,7 +2296,7 @@
             "imageAspect":"aspect-[16/10]",
             "cta": {
               "label": "Click to visit the site",
-              "href": "https://mri2.vercel.app/"
+              "href": "https://research.blueblocks.in/"
             }
           }
         },
