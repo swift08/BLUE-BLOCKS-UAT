@@ -1,12 +1,14 @@
 import siteData from "@/data/site.json";
-import SectionRendererClient from "@/components/SectionRendererClient";
+import SectionRenderer from "@/lib/sectionRenderer";
 import JsonLd from "@/components/seo/JsonLd";
+
+export const dynamic = "force-static";
 
 export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
 
   // <title>...</title>
-  title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1–18) | Hyderabad hommmemeeeeeeeeee",
+  title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1–18) | Hyderabad homepage",
 
   // <meta name="description" ... />
   description:
@@ -408,7 +410,7 @@ export default function HomePage() {
     <>
       <JsonLd id="home-jsonld-graph" data={structuredData} />
       
-      <SectionRendererClient sections={sections} />
+      <SectionRenderer sections={sections} />
     </>
   );
 }

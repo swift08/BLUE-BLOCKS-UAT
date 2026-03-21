@@ -1,6 +1,6 @@
 import siteData from "@/data/site.json";
 import { notFound } from "next/navigation";
-import SectionRendererClient from "@/components/SectionRendererClient";
+import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
@@ -26,7 +26,7 @@ export default function InnovationDetailPage({ params }) {
   return (
     <>
       <PageJsonLd baseId={`innovation-${slug}`} schema={page?.schema} />
-      <SectionRendererClient sections={sections} />
+      <SectionRenderer sections={sections} />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import siteData from "@/data/site.json";
-import SectionRendererClient from "@/components/SectionRendererClient";
+import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
@@ -11,7 +11,7 @@ export default function FaqPage() {
   return (
     <>
       <PageJsonLd baseId="faq" schema={page?.schema} />
-      <SectionRendererClient sections={sections} />
+      <SectionRenderer sections={sections} />
     </>
   );
 }
