@@ -84,6 +84,10 @@ RewriteRule ^schedule-meeting-with-parent-coordinator\.shtml/?$ https://bluebloc
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^schedule-meeting-with-director-elementory\.shtml/?$ https://blueblocks.in/admissions/ [R=301,L,NE]
 
+# Homepage legacy
+RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
+RewriteRule ^index\.(shtml|html?)$ https://blueblocks.in/ [R=301,L,NC,NE]
+
 # --------------------------------------------------
 # 2) Canonical redirect for everything else
 # --------------------------------------------------
