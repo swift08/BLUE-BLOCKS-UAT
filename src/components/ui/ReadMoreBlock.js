@@ -7,8 +7,22 @@ const ALLOWED_ATTRS = new Set(["href", "target", "rel"]);
 
 function sanitizeBasicHtml(html) {
   if (!html) return "";
+
+  const input = String(html);
+
+  // Server-safe fallback for build/SSG
+  if (typeof document === "undefined") {
+    return input
+      .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "")
+      .replace(/<style[\s\S]*?>[\s\S]*?<\/style>/gi, "")
+      .replace(/\son\w+="[^"]*"/gi, "")
+      .replace(/\son\w+='[^']*'/gi, "")
+      .replace(/\son\w+=\{[^}]*\}/gi, "")
+      .replace(/href\s*=\s*["']\s*javascript:[^"']*["']/gi, "");
+  }
+
   const tpl = document.createElement("template");
-  tpl.innerHTML = String(html);
+  tpl.innerHTML = input;
 
   // remove scripts/styles
   tpl.content.querySelectorAll("script, style").forEach((n) => n.remove());
