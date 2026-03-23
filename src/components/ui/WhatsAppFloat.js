@@ -32,6 +32,34 @@ function buildWaLink({ phone, text }) {
     : `https://web.whatsapp.com/send?phone=${p}`;
 }
 
+function reportWhatsappConversion(url) {
+  if (typeof window === "undefined") return true;
+
+  const callback = function () {
+    if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
+
+  if (typeof window.gtag === "function") {
+    window.gtag("event", "conversion", {
+      send_to: "AW-1064646284/DiWTCNPHmKwDEIzt1PsD",
+      event_callback: callback,
+    });
+
+    // Fallback in case callback does not fire
+    setTimeout(() => {
+      callback();
+    }, 700);
+
+    return false;
+  }
+
+  // If gtag is not available, still open WhatsApp
+  callback();
+  return false;
+}
+
 export default function WhatsAppFloat({ config }) {
   const prefersReducedMotion = useReducedMotion();
 
@@ -48,6 +76,11 @@ export default function WhatsAppFloat({ config }) {
   const href = buildWaLink({ phone, text: message });
   if (!href) return null;
 
+  const handleClick = (event) => {
+    event.preventDefault();
+    reportWhatsappConversion(href);
+  };
+
   return (
     <div className="fixed z-[60]" style={{ bottom, right }}>
       <motion.a
@@ -56,6 +89,7 @@ export default function WhatsAppFloat({ config }) {
         rel="noopener noreferrer"
         aria-label={`Chat on ${label}`}
         title={`Chat on ${label}`}
+        onClick={handleClick}
         className="group grid place-items-center bg-[#25d366] rounded-full shadow-lg border backdrop-blur hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
         style={{ width: size, height: size }}
         initial={false}
@@ -63,7 +97,12 @@ export default function WhatsAppFloat({ config }) {
         transition={
           prefersReducedMotion
             ? { duration: 0 }
-            : { duration: 1.8, repeat: Infinity, repeatType: "loop", ease: "easeInOut" }
+            : {
+                duration: 1.8,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }
         }
         whileHover={prefersReducedMotion ? {} : { y: -12, scale: 1.04 }}
         whileTap={{ scale: 0.98 }}
