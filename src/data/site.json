@@ -165,8 +165,8 @@
       "submittingLabel": "Submitting",
       "hubspot": {
         "region": "na2",
-        "portalId": "244973317",
-        "formId": "b9701056-562d-4f41-abbf-960dcd4a908f",
+        "portalId": "245638953",
+        "formId": "f9cf6b44-57f4-4848-8e9e-ac7959844710",
         "pageName": "Footer Newsletter",
         "pageUri": "#/"
       }
@@ -4906,10 +4906,10 @@
               "successMessage": "Thanks! We’ll get back to you shortly.",
               "submittingLabel": "Submitting...",
               "hubspot": {
-                "portalId": "244973317",
-                "formId": "0af97cac-4550-47e6-9f2c-6a91e78b16d5",
+                "portalId": "245638953",
+                "formId": "a17fd9db-ad78-4dbf-8215-a9e29e801bea",
                 "pageName": "Contact Page",
-                "pageUri": ""
+                "pageUri": "#/"
               },
               "fields": [
                 {
