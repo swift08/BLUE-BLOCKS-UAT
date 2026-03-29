@@ -28,12 +28,11 @@ export async function generateMetadata({ params }) {
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
   const liveUrl = `https://blueblocks.in/blog/${slug}/`;
-  const embedUrl = `/blog/embed/${slug}/`;
 
   return (
     <main className="pt-28 sm:pt-32">
       <BlogEmbedFrame
-        src={embedUrl}
+        src={liveUrl}
         fallbackHref={liveUrl}
         title={`Blue Blocks Blog Article: ${slug}`}
       />

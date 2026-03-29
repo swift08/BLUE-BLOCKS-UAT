@@ -16,12 +16,11 @@ export const metadata = {
 };
 
 const BLOG_URL = "https://blueblocks.in/blog/";
-const EMBED_URL = "/blog/embed/";
 
 export default function BlogPage() {
   return (
     <main className="pt-28 sm:pt-32">
-      <BlogEmbedFrame src={EMBED_URL} fallbackHref={BLOG_URL} title="Blue Blocks Blog" />
+      <BlogEmbedFrame src={BLOG_URL} fallbackHref={BLOG_URL} title="Blue Blocks Blog" />
     </main>
   );
 }

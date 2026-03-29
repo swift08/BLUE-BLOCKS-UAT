@@ -25,6 +25,17 @@ jobs:
       - name: Build (Static Export)
         run: npm run build
 
+      - name: Verify export output
+        run: |
+          echo "PWD: $(pwd)"
+          ls -la
+          if [ ! -d "out" ]; then
+            echo "ERROR: out/ is missing. Check next.config output='export' and remove unsupported server-only routes."
+            exit 1
+          fi
+          ls -la out
+          find out -maxdepth 2 -name "index.html" -print
+
       - name: Deploy to cPanel via FTP (dev65)
         uses: samkirkland/ftp-deploy-action@v4.3.5
         with:

@@ -28,8 +28,12 @@ jobs:
         run: |
           echo "PWD: $(pwd)"
           ls -la
-          ls -la out || true
-          find out -maxdepth 2 -name "index.html" -print || true
+          if [ ! -d "out" ]; then
+            echo "ERROR: out/ is missing. Check next.config output='export' and remove unsupported server-only routes."
+            exit 1
+          fi
+          ls -la out
+          find out -maxdepth 2 -name "index.html" -print
 
       - name: Deploy to cPanel via FTPS (LIVE)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6

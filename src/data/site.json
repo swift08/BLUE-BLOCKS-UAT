@@ -3,8 +3,8 @@
     "name": "Blue Blocks",
     "logo": "/icon/logo.svg",
     "announcements": [
-      {"text": "ADMISSIONS OPEN â€” JOIN OUR NEXT MONTESSORI ADMISSION WORKSHOP. LIMITED SEATS AVAILABLE!"},
-      {"text": "INDIAâ€™S FIRST MONTESSORI + INNOVATION ECOSYSTEM â€” EMPOWERING LEARNERS FROM BIRTH TO 18."}
+      {"text": "ADMISSIONS OPEN - JOIN OUR NEXT MONTESSORI ADMISSION WORKSHOP. LIMITED SEATS AVAILABLE!"},
+      {"text": "INDIA'S FIRST MONTESSORI + INNOVATION ECOSYSTEM - EMPOWERING LEARNERS FROM BIRTH TO 18."}
     ],
     "nav": [
       { "label": "Home", "href": "/"},
