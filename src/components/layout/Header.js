@@ -7,16 +7,12 @@ import Image from "next/image";
 import siteData from "@/data/site.json";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { normalizeSiteHref } from "@/lib/links";
 
 /* ------------------------- helpers ------------------------- */
 
 const normalizeHref = (href) => {
-  const h = String(href || "").trim();
-  if (!h) return "";
-  // allow # anchors and external links
-  if (h.startsWith("#") || /^https?:\/\//i.test(h)) return h;
-  // ensure internal paths start with "/"
-  return h.startsWith("/") ? h : `/${h}`;
+  return normalizeSiteHref(href);
 };
 
 const isValidLinkHref = (href) => {
@@ -89,14 +85,100 @@ export default function Header({ variant = "dark" }) {
     return `transition ${base} ${hover} ${active ? activeCls : ""}`;
   };
 
-  const megaByLabel = useMemo(() => {
+  const { megaByLabel, navItems } = useMemo(() => {
     const mm = siteData?.megaMenu || {};
-    // map label => mega config
     const map = {};
-    if (mm.programs?.label) map[mm.programs.label] = mm.programs;
-    if (mm.whatDoWeDo?.label) map[mm.whatDoWeDo.label] = mm.whatDoWeDo;
-    if (mm.innovations?.label) map[mm.innovations.label] = mm.innovations;
-    return map;
+
+    const whatWeDo = mm.whatDoWeDo
+      ? {
+          ...mm.whatDoWeDo,
+          label: "What We Do",
+          items: Array.isArray(mm.whatDoWeDo.items)
+            ? [...mm.whatDoWeDo.items]
+            : [],
+        }
+      : null;
+
+    if (whatWeDo) {
+      const hasAmi = whatWeDo.items.some((it) => normalizeHref(it?.href) === "/ami-training/");
+      const hasCareers = whatWeDo.items.some((it) => normalizeHref(it?.href) === "/careers/");
+
+      if (!hasAmi) {
+        whatWeDo.items.push({
+          id: "ami-training",
+          title: "AMI Training",
+          href: "/ami-training/",
+          description: "AMI-aligned training pathway for guides and educational leaders.",
+          image: "/programs/thumb-secondary.webp",
+        });
+      }
+
+      if (!hasCareers) {
+        whatWeDo.items.push({
+          id: "careers",
+          title: "Careers",
+          href: "/careers/",
+          description: "Open roles for educators, researchers, and mission-aligned professionals.",
+          image: "/programs/thumb-primary.webp",
+        });
+      }
+    }
+
+    const programs = mm.programs
+      ? {
+          ...mm.programs,
+          items: Array.isArray(mm.programs.items) ? [...mm.programs.items] : [],
+          ctaCard: mm.programs.ctaCard
+            ? {
+                ...mm.programs.ctaCard,
+                button: mm.programs.ctaCard.button
+                  ? { ...mm.programs.ctaCard.button, label: "Admissions →", href: "/admissions/" }
+                  : undefined,
+              }
+            : mm.programs.ctaCard,
+        }
+      : null;
+
+    if (programs) {
+      const hasAdmissionsItem = programs.items.some(
+        (it) => normalizeHref(it?.href) === "/admissions/"
+      );
+      if (!hasAdmissionsItem) {
+        const admissionsItem = {
+          id: "admissions",
+          title: "Admissions",
+          href: "/admissions/",
+          description: "Admissions workflow, entry windows, and parent onboarding journey.",
+          image: "/programs/thumb-secondary.webp",
+        };
+        const insertAt = Math.min(4, programs.items.length);
+        programs.items.splice(insertAt, 0, admissionsItem);
+      }
+    }
+
+    const innovations = mm.innovations
+      ? { ...mm.innovations, items: Array.isArray(mm.innovations.items) ? [...mm.innovations.items] : [] }
+      : null;
+
+    if (programs?.label) map[programs.label] = programs;
+    if (whatWeDo?.label) map[whatWeDo.label] = whatWeDo;
+    if (innovations?.label) map[innovations.label] = innovations;
+
+    const nav = Array.isArray(site?.nav)
+      ? site.nav.map((item) => {
+          const href = normalizeHref(item?.href);
+          let label = item?.label || "";
+
+          if (label === "What do we do") label = "What We Do";
+          if (label === "Blog") {
+            return { ...item, label, href: "https://blueblocks.in/blog/" };
+          }
+          if (href === "/about-us") return { ...item, label, href: "/about-us/" };
+          return { ...item, label, href };
+        })
+      : [];
+
+    return { megaByLabel: map, navItems: nav };
   }, []);
 
   const socials = siteData?.footer?.socials || [];
@@ -150,13 +232,14 @@ export default function Header({ variant = "dark" }) {
               width={82}
               height={67}
               className="object-contain"
+              style={{ width: "auto", height: "auto" }}
               priority
             />
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-10 text-sm font-medium">
-            {(site?.nav || []).map((item, i) => {
+            {(navItems || []).map((item, i) => {
               const key = `${item?.href || "nohref"}|${item?.label || "nolabel"}|${i}`;
               const label = item?.label || "";
               const mega = megaByLabel[label];
@@ -164,10 +247,7 @@ export default function Header({ variant = "dark" }) {
               // Mega entries (desktop)
               if (mega) {
                 const active =
-                  isActiveHref(item?.href) ||
-                  (label === megaByLabel?.programs?.label
-                    ? pathname.startsWith("/programs")
-                    : false);
+                  isActiveHref(item?.href) || (label === "Programs" ? pathname.startsWith("/programs") : false);
 
                 return (
                   <ProgramsMegaMenu
@@ -238,7 +318,7 @@ export default function Header({ variant = "dark" }) {
                     <div className="h-full mx-3 my-3 rounded-2xl bg-[#273C75] text-white shadow-[0_18px_50px_rgba(0,0,0,0.35)]">
                       <div className="h-full px-5 py-6 pb-10">
                         <MobileNav
-                          nav={site?.nav || []}
+                          nav={navItems || []}
                           megaByLabel={megaByLabel}
                           pathname={pathname}
                           isActiveHref={isActiveHref}

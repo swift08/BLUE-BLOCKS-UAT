@@ -402,9 +402,86 @@ const structuredData = {
 ]
 };
 
+const HOME_HERO_SLIDES = [
+  {
+    id: "home-hero-1",
+    tag: "Institution / Hero",
+    title: "The Child, Understood",
+    subtitle:
+      "We don't teach. We observe. Then we build the precise environment your child needs to construct themselves.",
+    primaryCta: { label: "Explore Our Programmes", href: "/programs/" },
+    secondaryCta: { label: "Visit the Campus", href: "/campus/" },
+    bgImageUrl: "/home/homepage-banner-01.webp",
+    align: "left",
+    overlay: "dark",
+    topSpacing: "home",
+  },
+  {
+    id: "home-hero-2",
+    tag: "Toddler Community (Ages 15 months - 3 years)",
+    title: "A Sanctuary for Your Child's Becoming",
+    subtitle:
+      "We don't rush the separation. We stay with your child until trust is built - on her timeline, not ours.",
+    primaryCta: { label: "The Toddler Community", href: "/programs/" },
+    secondaryCta: { label: "Book a Visit", href: "/contact-us/" },
+    bgImageUrl: "/home-01/kids-being-part-sunday-school.webp",
+    align: "left",
+    overlay: "dark",
+    topSpacing: "home",
+  },
+  {
+    id: "home-hero-3",
+    tag: "Adolescent Community (Ages 12-18)",
+    title: "The Same Hands That Built the Pink Tower Built a Satellite",
+    subtitle:
+      "Between a wooden cube and a CubeSat in orbit lies eighteen years of conscience, capability, and care.",
+    primaryCta: { label: "The Adolescent Community", href: "/programs/secondary-school/" },
+    bgImageUrl: "/innovation/innov_hero.webp",
+    align: "left",
+    overlay: "dark",
+    topSpacing: "home",
+  },
+  {
+    id: "home-hero-4",
+    tag: "The Innovation Lab",
+    title: "Hands That Build Minds - and Conscience",
+    subtitle:
+      "Five hundred tools across eighteen years. Every one introduced with purpose, used with care, returned with respect.",
+    primaryCta: { label: "Explore the Labs", href: "/innovation/innovation-lab/" },
+    secondaryCta: { label: "Our Philosophy", href: "/montessori-system/" },
+    bgImageUrl: "/campus/blueblocks-building-pic-min.webp",
+    align: "left",
+    overlay: "dark",
+    topSpacing: "home",
+  },
+  {
+    id: "home-hero-5",
+    tag: "The Space Lab",
+    title: "Cosmic Responsibility Starts at Age Three",
+    subtitle:
+      "The child who learned to carry a Pink Tower cube is the same one who built a satellite for ISRO.",
+    primaryCta: { label: "Explore The Space Lab", href: "/innovation/space-lab/" },
+    bgImageUrl: "/research/hero.webp",
+    align: "left",
+    overlay: "dark",
+    topSpacing: "home",
+  },
+];
+
 export default function HomePage() {
   const page = siteData?.pages?.home || {};
-  const sections = Array.isArray(page?.sections) ? page.sections : [];
+  const baseSections = Array.isArray(page?.sections) ? page.sections : [];
+  const sections = baseSections.map((section, idx) => {
+    if (idx !== 0 || section?.type !== "homeHero") return section;
+    return {
+      ...section,
+      props: {
+        ...(section?.props || {}),
+        slides: HOME_HERO_SLIDES,
+        topSpacing: "home",
+      },
+    };
+  });
 
   return (
     <>

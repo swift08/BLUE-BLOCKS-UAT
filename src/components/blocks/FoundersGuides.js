@@ -2,8 +2,10 @@
 "use client";
 
 import { useMemo } from "react";
+import Link from "next/link";
 import EmblaCarousel from "../ui/carousel/EmblaCarousel";
 import AppModal from "../ui/modal/AppModal";
+import { normalizeSiteHref } from "@/lib/links";
 
 const BLANK_USER_SVG = (
   <svg viewBox="0 0 96 96" role="img" aria-label="Profile photo">
@@ -103,7 +105,10 @@ function FounderCard({
   readMoreHref = "/",
   modal,
 }) {
+  const normalizedReadMoreHref = normalizeSiteHref(readMoreHref);
   const hasModal = Boolean(modal);
+  const hasDedicatedPage = normalizedReadMoreHref.startsWith("/about-us/founders/");
+  const shouldOpenModal = hasModal && !hasDedicatedPage;
 
   return (
     <div className="h-full rounded-[26px] border-2 border-slate-900 bg-white p-6 sm:p-7 flex flex-col">
@@ -153,18 +158,18 @@ function FounderCard({
       ) : null}
 
       <div className="mt-auto pt-5 flex justify-end">
-        {hasModal ? (
+        {shouldOpenModal ? (
           <FounderDetailsModalTrigger
             person={{ name, roleLabel, image, imageAlt, bio, tagline }}
             modal={modal}
           />
         ) : (
-          <a
-            href={readMoreHref}
+          <Link
+            href={normalizedReadMoreHref}
             className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition"
           >
             Read More <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         )}
       </div>
     </div>

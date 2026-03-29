@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
   const website = normalizeJsonLd(siteData?.site?.schema?.website);
 
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={`min-h-screen bg-white text-slate-900 ${poppins.className}`}>
         {/* Global JSON-LD (visible in view-source) */}
         <JsonLd id="jsonld-organization" data={org} />

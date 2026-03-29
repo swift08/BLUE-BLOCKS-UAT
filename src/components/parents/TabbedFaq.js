@@ -1,8 +1,9 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Container from "@/components/layout/Container";
 import Accordion from "@/components/ui/Accordion";
+import { stripPlaygroupFromTabs } from "@/data/faq";
 
 /**
  * Supports both formats:
@@ -37,7 +38,13 @@ export default function TabbedFaq({
   sectionDividerClassName = "mt-10 border-t border-slate-900/10 pt-10",
 }) {
   const [active, setActive] = useState(0);
-  const current = useMemo(() => tabs[active] || {}, [tabs, active]);
+  const safeTabs = useMemo(() => stripPlaygroupFromTabs(tabs), [tabs]);
+  const current = useMemo(() => safeTabs[active] || {}, [safeTabs, active]);
+
+  useEffect(() => {
+    if (active < safeTabs.length) return;
+    setActive(0);
+  }, [active, safeTabs.length]);
 
   const onTabChange = (i) => setActive(i);
 
@@ -82,9 +89,9 @@ export default function TabbedFaq({
         </div>
 
         {/* Tabs */}
-        {tabs?.length ? (
+        {safeTabs?.length ? (
           <div className={tabsWrapClassName}>
-            {tabs.map((t, i) => (
+            {safeTabs.map((t, i) => (
               <button
                 key={t.label || i}
                 type="button"

@@ -1,5 +1,6 @@
 import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
+import { normalizeSiteHref } from "@/lib/links";
 
 export default function PageHero({
   title,
@@ -44,7 +45,7 @@ export default function PageHero({
                 {breadcrumb.map((b, i) => (
                   <span key={`${b.label}-${i}`}>
                     {b.href ? (
-                      <a href={b.href} className="hover:text-slate-900 transition">
+                      <a href={normalizeSiteHref(b.href)} className="hover:text-slate-900 transition">
                         {b.label}
                       </a>
                     ) : (

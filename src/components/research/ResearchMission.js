@@ -1,5 +1,6 @@
 import Container from "@/components/layout/Container";
 import Link from "next/link";
+import { normalizeSiteHref } from "@/lib/links";
 
 export default function ResearchMission({ 
   eyebrow,
@@ -49,7 +50,7 @@ export default function ResearchMission({
                   {callout}
                 </p>
 
-                {calloutCTA?.href ? (<div className="text-center"><Link className="bb-btn bb-btn--primary mt-6 " href={calloutCTA?.href}>{calloutCTA?.label} <span className="ml-2" aria-hidden="true">→</span></Link></div>) : null}
+                {calloutCTA?.href ? (<div className="text-center"><Link className="bb-btn bb-btn--primary mt-6 " href={normalizeSiteHref(calloutCTA?.href)}>{calloutCTA?.label} <span className="ml-2" aria-hidden="true">â†’</span></Link></div>) : null}
               </div>
             </div>
           </div>
@@ -58,3 +59,4 @@ export default function ResearchMission({
     </section>
   );
 }
+

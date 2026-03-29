@@ -5,7 +5,6 @@ const nextConfig = {
   trailingSlash: true,
   basePath: "",
   assetPrefix: "",
-  eslint: { ignoreDuringBuilds: true },
   images: {
     unoptimized: true,
   },

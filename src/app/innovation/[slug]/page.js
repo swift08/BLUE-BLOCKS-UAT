@@ -14,8 +14,8 @@ export function generateStaticParams() {
   return Object.keys(map).map((slug) => ({ slug }));
 }
 
-export default function InnovationDetailPage({ params }) {
-  const slug = params?.slug;
+export default async function InnovationDetailPage({ params }) {
+  const { slug } = await params;
   const map = getInnovationMap();
 
   const page = map?.[slug];

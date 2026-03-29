@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
+import { RESEARCH_PUBLICATIONS } from "@/data/publishing";
 
 function PlayOverlay() {
   return (
@@ -36,6 +37,35 @@ function DownloadButton({ href, label }) {
 }
 
 export default function PublicationsGrid({ title, subtitle, items = [] }) {
+  const fallbackItems = RESEARCH_PUBLICATIONS.map((item) => ({
+    image: item.image,
+    title: item.title,
+    meta: item.meta,
+    href: item.pageUrl,
+    downloadHref: item.downloadUrl,
+    downloadLabel: "Download from Zenodo",
+    desc: item.summary,
+  }));
+
+  const incomingItems = Array.isArray(items) ? items : [];
+  const incomingLooksPlaceholder =
+    incomingItems.length === 0 ||
+    incomingItems.every((it) => !it?.href || it.href === "#");
+
+  const mergedItems = incomingLooksPlaceholder
+    ? fallbackItems
+    : [
+        ...incomingItems,
+        ...fallbackItems.filter(
+          (fb) =>
+            !incomingItems.some(
+              (it) =>
+                String(it?.title || "").trim().toLowerCase() ===
+                String(fb.title || "").trim().toLowerCase()
+            )
+        ),
+      ];
+
   return (
     <section className="bg-white">
       <Container className="py-16 sm:py-20">
@@ -57,7 +87,7 @@ export default function PublicationsGrid({ title, subtitle, items = [] }) {
 
         {/* Cards */}
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {items.map((it, idx) => {
+          {mergedItems.map((it, idx) => {
            const cardKey = `${it.href || "no-href"}-${it.title || "no-title"}-${idx}`;
 
             return (

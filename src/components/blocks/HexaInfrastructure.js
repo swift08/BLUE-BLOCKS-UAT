@@ -12,6 +12,9 @@ export default function HexaInfrastructure({
   closingNote
 }) {
   const resolved = resolveBg(sectionBg || bgClass);
+  const modalContent = (Array.isArray(items) ? items : []).filter(
+    (item) => item?.modal?.title && Array.isArray(item?.modal?.paragraphs) && item.modal.paragraphs.length
+  );
 
   return (
     <section
@@ -40,6 +43,34 @@ export default function HexaInfrastructure({
             <HexCard key={it?.href || it?.title || idx} {...it} />
           ))}
         </div>
+
+        {modalContent.length ? (
+          <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-5 sm:p-6">
+            <h3 className="text-xl font-semibold text-slate-900">
+              Infrastructure Notes
+            </h3>
+            <p className="mt-2 text-sm leading-7 text-slate-700">
+              Extended descriptions from each infrastructure card are also available below for crawlable page content visibility.
+            </p>
+            <div className="mt-5 space-y-3">
+              {modalContent.map((item, idx) => (
+                <details
+                  key={`${item.modal.title}-${idx}`}
+                  className="rounded-xl border border-slate-200 bg-slate-50 p-4"
+                >
+                  <summary className="cursor-pointer text-sm font-semibold text-slate-900">
+                    {item.modal.title}
+                  </summary>
+                  <div className="mt-3 space-y-3 text-sm leading-7 text-slate-700">
+                    {item.modal.paragraphs.map((paragraph, pIdx) => (
+                      <p key={pIdx}>{paragraph}</p>
+                    ))}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        ) : null}
 
         {closingNote?.enabled && Array.isArray(closingNote.paragraphs) ? (
           <div className="mt-10 bb-text text-center  leading-relaxed text-slate-700 space-y-3">

@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { pathToFileURL } = require("url");
 
 const siteData = require("../src/data/site.json");
 
@@ -9,18 +10,24 @@ function absoluteUrl(route = "/") {
   return `${SITE_URL}${route.startsWith("/") ? route : `/${route}`}`;
 }
 
-function getRoutes() {
+function getRoutes({ researchOutputs = [] }) {
   const staticRoutes = [
     "/",
     "/about-us",
+    "/about-us/founders/pavan-goyal",
+    "/about-us/founders/munira-hussain",
     "/programs",
     "/admissions",
     "/contact-us",
     "/careers",
     "/research-institute",
+    "/papers",
     "/parents",
     "/innovation",
     "/montessori-system",
+    "/ami-training",
+    "/governance/ethics",
+    "/governance/our-standards",
     "/campus",
     "/videos",
     "/faq",
@@ -28,10 +35,17 @@ function getRoutes() {
     "/terms",
     "/adolescent-social-newborn-paper",
     "/the-architecture-of-the-universe",
-    "/toddler-developmental-architecture",
+    "/neuropsychiatry-of-toddler-plane",
     "/the-conscious-construction-of-intelligence",
     "/drone",
+    "/llms.txt",
+    "/llms-full.txt",
   ];
+
+  const publicationRoutes = researchOutputs.flatMap((item) => [
+    `/publications/${item.slug}`,
+    `/publications/${item.slug}/${item.slug}.md`,
+  ]);
 
   const programDetails = Object.keys(siteData?.pages?.programDetails || {})
     .filter((key) => !["breadcrumbs", "schema", "toddlerDetail"].includes(key))
@@ -45,7 +59,15 @@ function getRoutes() {
     .filter((key) => key !== "breadcrumbs")
     .map((slug) => `/primary/${slug}`);
 
-  return [...new Set([...staticRoutes, ...programDetails, ...innovationDetails, ...primaryDetails])];
+  return [
+    ...new Set([
+      ...staticRoutes,
+      ...publicationRoutes,
+      ...programDetails,
+      ...innovationDetails,
+      ...primaryDetails,
+    ]),
+  ];
 }
 
 function buildXml(routes) {
@@ -71,11 +93,25 @@ function buildXml(routes) {
 </urlset>`;
 }
 
-const routes = getRoutes();
-const xml = buildXml(routes);
+async function main() {
+  const publishingPath = path.join(process.cwd(), "src", "data", "publishing.js");
+  const publishingModule = await import(pathToFileURL(publishingPath).href);
+  const researchOutputs = Array.isArray(publishingModule.RESEARCH_OUTPUTS)
+    ? publishingModule.RESEARCH_OUTPUTS
+    : [];
 
-const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
-fs.writeFileSync(outputPath, xml, "utf8");
+  const routes = getRoutes({ researchOutputs });
+  const xml = buildXml(routes);
 
-console.log(`sitemap.xml generated at ${outputPath}`);
-console.log(`Base URL: ${SITE_URL}`);
+  const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
+  fs.writeFileSync(outputPath, xml, "utf8");
+
+  console.log(`sitemap.xml generated at ${outputPath}`);
+  console.log(`Base URL: ${SITE_URL}`);
+}
+
+main().catch((err) => {
+  console.error("Failed to generate sitemap.xml");
+  console.error(err);
+  process.exit(1);
+});

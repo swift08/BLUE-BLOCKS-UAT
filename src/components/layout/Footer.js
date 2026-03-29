@@ -6,6 +6,7 @@ import Link from "next/link";
 import Container from "@/components/layout/Container";
 import CarouselTrack from "@/components/ui/carousel/CarouselTrack";
 import siteData from "@/data/site.json";
+import { normalizeSiteHref } from "@/lib/links";
 
 /* ------------------------- helpers ------------------------- */
 
@@ -155,9 +156,8 @@ export default function Footer() {
                         src="/icon/logo.svg"
                         alt={siteData?.site?.name || "Blue Blocks"}
                         className="object-contain p-1"
-                        width={94}
-                        height={94}
-                        sizes="94px"
+                        fill
+                        sizes="48px"
                       />
                     </div>
 
@@ -329,7 +329,7 @@ function FooterColumn({ title, items }) {
       <ul className="mt-3 space-y-2 text-[0.75rem] text-white/55">
         {items.map((l) => (
           <li key={l.label}>
-            <Link className="hover:text-white/80 transition-colors" href={l.href}>
+            <Link className="hover:text-white/80 transition-colors" href={normalizeSiteHref(l.href)}>
               {l.label}
             </Link>
           </li>
@@ -340,9 +340,10 @@ function FooterColumn({ title, items }) {
 }
 
 function SocialButton({ item }) {
+  const href = normalizeSiteHref(item.href);
   return (
     <a
-      href={item.href}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="flex h-12 items-center justify-between rounded-[0.9rem] bg-[#2a2a2a] px-4 text-[0.875rem] text-white/80 hover:bg-[#303030] transition"

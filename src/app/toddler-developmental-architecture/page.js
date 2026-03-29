@@ -1,12 +1,32 @@
 import siteData from "@/data/site.json";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
+import { withPaperAuthorMeta } from "@/lib/papers";
 
 export const dynamic = "force-static";
 
+export const metadata = {
+  title:
+    siteData?.pages?.toddlerDevelopmentalArchitecture?.seo?.title ||
+    "Developmental Architecture | Blue Blocks",
+  description:
+    siteData?.pages?.toddlerDevelopmentalArchitecture?.seo?.description ||
+    "Developmental architecture of the toddler community.",
+  robots: {
+    index: false,
+    follow: true,
+  },
+  alternates: {
+    canonical: "/neuropsychiatry-of-toddler-plane/",
+  },
+};
+
 export default function ToddlerDevelopmentalArchitecture() {
   const page = siteData?.pages?.toddlerDevelopmentalArchitecture || {};
-  const sections = Array.isArray(page?.sections) ? page.sections : [];
+  const sections = withPaperAuthorMeta(
+    Array.isArray(page?.sections) ? page.sections : [],
+    "toddlerDevelopmentalArchitecture"
+  );
 
   return (
     <>

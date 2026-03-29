@@ -32,6 +32,10 @@ RewriteRule ^innovation\.shtml/?$ https://blueblocks.in/innovation/ [R=301,L,NE]
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^privacy-policy\.shtml/?$ https://blueblocks.in/privacy-policy/ [R=301,L,NE]
 
+# Paper URL migration
+RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
+RewriteRule ^toddler-developmental-architecture/?$ https://blueblocks.in/neuropsychiatry-of-toddler-plane/ [R=301,L,NE]
+
 # Program pages
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^toddler\.shtml/?$ https://blueblocks.in/programs/playgroup/ [R=301,L,NE]

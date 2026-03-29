@@ -2,6 +2,7 @@ import Container from "@/components/layout/Container";
 import Accordion from "@/components/ui/Accordion";
 import { resolveBg } from "@/lib/ui";
 import Link from "next/link";
+import { stripPlaygroupFromFaqItems } from "@/data/faq";
 
 export default function FAQAccordion({
   // content
@@ -30,6 +31,7 @@ export default function FAQAccordion({
   panelClassName = "",
 }) {
   const resolved = resolveBg(sectionBg || bg);
+  const safeItems = stripPlaygroupFromFaqItems(items);
 
   return (
     <section className={["bb-ui", resolved.className].filter(Boolean).join(" ")} style={resolved.style}>
@@ -43,7 +45,7 @@ export default function FAQAccordion({
 
             <div className={["mx-auto mt-8", panelMaxWidth, rowGapClassName].filter(Boolean).join(" ")}>
               <Accordion
-                items={items}
+                items={safeItems}
                 defaultOpenIndex={defaultOpenIndex}
                 allowToggleAllClosed={allowToggleAllClosed}
                 openItemClassName={openItemClassName}

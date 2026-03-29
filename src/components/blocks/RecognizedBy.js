@@ -28,9 +28,10 @@ export default function RecognizedBy({
               <Image
                 src={item.icon}
                 alt={item.title}
-                width={item.width}
-                height={item.height}
+                width={Number(item.width) || 160}
+                height={Number(item.height) || 80}
                 className="object-contain"
+                style={{ width: "auto", height: "auto" }}
               />
             </div>
           ))}

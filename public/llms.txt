@@ -1,0 +1,18 @@
+Blue Blocks LLM Index
+
+Canonical: https://blueblocks.in/
+Contact: https://blueblocks.in/contact-us/
+
+Primary Sections
+- https://blueblocks.in/about-us/
+- https://blueblocks.in/programs/
+- https://blueblocks.in/innovation/
+- https://blueblocks.in/research-institute/
+- https://blueblocks.in/papers/
+- https://blueblocks.in/blog/
+
+LLM Full Dataset
+- https://blueblocks.in/llms-full.txt
+
+Note
+- TODO: Replace this placeholder index with final production llms.txt content when provided.

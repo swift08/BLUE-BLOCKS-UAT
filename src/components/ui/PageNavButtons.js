@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/layout/Container";
+import { normalizeSiteHref } from "@/lib/links";
 
 export default function PageNavButtons({
   prev,
@@ -16,7 +17,7 @@ export default function PageNavButtons({
               {/* PREV BUTTON */}
               {prev?.href && prev?.label ? (
                 <Link
-                  href={prev.href}
+                  href={normalizeSiteHref(prev.href)}
                   className="group flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-6 py-5 transition-all duration-300 hover:border-slate-900 hover:shadow-md"
                 >
                     
@@ -38,7 +39,7 @@ export default function PageNavButtons({
               {/* NEXT BUTTON */}
               {next?.href && next?.label ? (
                 <Link
-                  href={next.href}
+                  href={normalizeSiteHref(next.href)}
                   className="group flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-6 py-5 transition-all duration-300 hover:border-slate-900 hover:shadow-md"
                 >
                   <div>

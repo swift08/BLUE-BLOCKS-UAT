@@ -15,8 +15,8 @@ export function generateStaticParams() {
   return Object.keys(map).map((slug) => ({ slug }));
 }
 
-export default function ProgramPage({ params }) {
-  const slug = params?.slug;
+export default async function ProgramPage({ params }) {
+  const { slug } = await params;
   const map = getProgramsMap();
 
   const page = map?.[slug];

@@ -1,0 +1,17 @@
+Blue Blocks LLM Full Content Placeholder
+
+This file is a scaffold endpoint for comprehensive LLM-facing content.
+
+TODO sections to populate:
+1. School profile and mission statement
+2. Programs overview (0-18 continuum)
+3. Innovation labs (Drone, Space, Biomimicry, Innovation Lab)
+4. Research institute publication and ethics references
+5. Admissions and campus information
+6. Papers and publication canonical links
+
+Canonical website:
+https://blueblocks.in/
+
+Last updated:
+TODO
