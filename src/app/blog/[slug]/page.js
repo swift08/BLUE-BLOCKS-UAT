@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { BLOG_POSTS } from "@/data/publishing";
+import BlogEmbedFrame from "@/components/blog/BlogEmbedFrame";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -13,8 +13,8 @@ export async function generateMetadata({ params }) {
   const liveUrl = `https://blueblocks.in/blog/${slug}/`;
 
   return {
-    title: "Blog Redirect | Blue Blocks",
-    description: "Redirecting to the live Blue Blocks blog article.",
+    title: "Blog Article | Blue Blocks",
+    description: "Embedded Blue Blocks blog article view.",
     robots: {
       index: false,
       follow: true,
@@ -28,21 +28,15 @@ export async function generateMetadata({ params }) {
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
   const liveUrl = `https://blueblocks.in/blog/${slug}/`;
+  const embedUrl = `/blog/embed/${slug}/`;
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-20 text-center">
-      <h1 className="text-2xl font-semibold text-slate-900">Blog Article</h1>
-      <p className="mt-3 text-sm text-slate-700">
-        This article is available on the live Blue Blocks blog.
-      </p>
-      <p className="mt-6">
-        <Link
-          href={liveUrl}
-          className="inline-flex rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:bg-slate-800"
-        >
-          Open Live Article
-        </Link>
-      </p>
+    <main className="pt-28 sm:pt-32">
+      <BlogEmbedFrame
+        src={embedUrl}
+        fallbackHref={liveUrl}
+        title={`Blue Blocks Blog Article: ${slug}`}
+      />
     </main>
   );
 }

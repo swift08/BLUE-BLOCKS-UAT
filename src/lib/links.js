@@ -6,11 +6,6 @@ const SITE_HOSTS = new Set([
   "127.0.0.1",
 ]);
 
-const EXTERNAL_REDIRECTS = new Map([
-  ["/blog", "https://blueblocks.in/blog/"],
-  ["/blog/", "https://blueblocks.in/blog/"],
-]);
-
 const PATH_REDIRECTS = new Map([
   ["/about-us.shtml", "/about-us/"],
   ["/montessori.shtml", "/montessori-system/"],
@@ -54,15 +49,6 @@ function normalizePath(pathname = "") {
   return PATH_REDIRECTS.get(lower) || withLead;
 }
 
-function getExternalRedirect(pathname = "") {
-  const clean = String(pathname || "").trim();
-  if (!clean) return "";
-
-  const withLead = clean.startsWith("/") ? clean : `/${clean}`;
-  const lower = withLead.toLowerCase();
-  return EXTERNAL_REDIRECTS.get(lower) || "";
-}
-
 export function normalizeSiteHref(href = "") {
   const raw = String(href || "").trim();
   if (!raw) return "";
@@ -75,20 +61,12 @@ export function normalizeSiteHref(href = "") {
     return raw;
   }
 
-  if (!/^https?:\/\//i.test(raw)) {
-    const external = getExternalRedirect(raw);
-    if (external) return external;
-  }
-
   // External URL (potentially our own domain)
   if (/^https?:\/\//i.test(raw)) {
     try {
       const url = new URL(raw);
       const host = String(url.hostname || "").toLowerCase();
       if (!SITE_HOSTS.has(host)) return raw;
-
-      const external = getExternalRedirect(url.pathname);
-      if (external) return external;
 
       url.pathname = normalizePath(url.pathname);
       return url.toString();

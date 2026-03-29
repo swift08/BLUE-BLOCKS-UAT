@@ -170,9 +170,6 @@ export default function Header({ variant = "dark" }) {
           let label = item?.label || "";
 
           if (label === "What do we do") label = "What We Do";
-          if (label === "Blog") {
-            return { ...item, label, href: "https://blueblocks.in/blog/" };
-          }
           if (href === "/about-us") return { ...item, label, href: "/about-us/" };
           return { ...item, label, href };
         })

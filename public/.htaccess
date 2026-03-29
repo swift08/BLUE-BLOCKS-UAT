@@ -63,9 +63,6 @@ RewriteRule ^biomimicryhive\.shtml/?$ https://blueblocks.in/innovation/biomimicr
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^Innovation/CubeSat-Mission/?$ https://research.blueblocks.in/publications/CubeSat-INSPACE/ [R=301,L,NE]
 
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^blog/?$ https://blueblocks.in/blog/ [R=301,L,NE]
-
 # Resolved formerly unmapped items
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^positive-parenting\.shtml/?$ https://blueblocks.in/parents/ [R=301,L,NE]

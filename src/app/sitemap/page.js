@@ -23,7 +23,7 @@ const sitemapGroups = [
       { label: "About Us", href: "/about-us" },
       { label: "Programs", href: "/programs" },
       { label: "Innovation", href: "/innovation" },
-      { label: "Blog", href: "https://blueblocks.in/blog/" },
+      { label: "Blog", href: "/blog" },
       { label: "Papers", href: "/papers" },
       { label: "Campus", href: "/campus" },
       { label: "Admissions", href: "/admissions" },
