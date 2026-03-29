@@ -23,18 +23,27 @@ export default function RecognizedBy({
         {title ? <h2 className="bb-section-title text-center">{title}</h2> : null}
 
         <div className="mt-6 flex flex-wrap items-center justify-center gap-10 text-slate-700">
-          {items.map((item) => (
-            <div key={item.title} className="opacity-80">
-              <Image
-                src={item.icon}
-                alt={item.title}
-                width={Number(item.width) || 160}
-                height={Number(item.height) || 80}
-                className="object-contain"
-                style={{ width: "auto", height: "auto" }}
-              />
-            </div>
-          ))}
+          {items.map((item) => {
+            const logoWidth = Math.max(1, Number(item.width) || 160);
+            const logoHeight = Math.max(1, Number(item.height) || 80);
+
+            return (
+              <div
+                key={item.title}
+                className="relative shrink-0 opacity-80"
+                style={{ width: `${logoWidth}px`, height: `${logoHeight}px` }}
+              >
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={logoWidth}
+                  height={logoHeight}
+                  className="h-full w-full object-contain"
+                  sizes={`${logoWidth}px`}
+                />
+              </div>
+            );
+          })}
         </div>
       </Container>
     </section>

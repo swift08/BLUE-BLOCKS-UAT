@@ -229,7 +229,6 @@ export default function Header({ variant = "dark" }) {
               width={82}
               height={67}
               className="object-contain"
-              style={{ width: "auto", height: "auto" }}
               priority
             />
           </Link>

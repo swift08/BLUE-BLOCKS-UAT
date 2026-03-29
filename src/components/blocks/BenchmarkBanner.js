@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
 
@@ -78,23 +77,36 @@ export default function BenchmarkBanner({
 }
 
 function Logo({ src, alt, width = 160, height = 100, href, altFallback }) {
+  const logoWidth = Math.max(1, Number(width) || 160);
+  const logoHeight = Math.max(1, Number(height) || 100);
+
   const img = (
-    <img
+    <Image
       src={src}
       alt={alt || altFallback}
-      width={width}
-      height={height}
-      className="h-18 w-auto object-contain grayscale contrast-125 opacity-70 transition hover:opacity-100"
+      width={logoWidth}
+      height={logoHeight}
+      className="h-full w-full object-contain grayscale contrast-125 opacity-70 transition hover:opacity-100"
+      sizes={`${logoWidth}px`}
     />
   );
 
   if (href) {
     return (
-      <a href={href} className="block" aria-label={alt || altFallback}>
+      <a
+        href={href}
+        className="block shrink-0"
+        style={{ width: `${logoWidth}px`, height: `${logoHeight}px` }}
+        aria-label={alt || altFallback}
+      >
         {img}
       </a>
     );
   }
 
-  return <div className="block">{img}</div>;
+  return (
+    <div className="block shrink-0" style={{ width: `${logoWidth}px`, height: `${logoHeight}px` }}>
+      {img}
+    </div>
+  );
 }

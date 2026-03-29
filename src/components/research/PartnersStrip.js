@@ -32,24 +32,30 @@ export default function PartnersStrip({ title, logos = [] }) {
             />
 
             <div className="flex items-center gap-14 whitespace-nowrap">
-              {logos.map((l, idx) => (
-                <div
-                  key={`${l.alt}-${idx}`}
-                  className="flex items-center justify-center opacity-70 grayscale"
-                  style={{
-                    width: Number(l.width),
-                    height: Number(l.height),
-                  }}
-                >
-                  <Image
-                    src={l.src}
-                    alt={l.alt}
-                    width={Number(l.width)}
-                    height={Number(l.height)}
-                    className="h-auto w-auto"
-                  />
-                </div>
-              ))}
+              {logos.map((l, idx) => {
+                const logoWidth = Math.max(1, Number(l.width) || 180);
+                const logoHeight = Math.max(1, Number(l.height) || 90);
+
+                return (
+                  <div
+                    key={`${l.alt}-${idx}`}
+                    className="flex shrink-0 items-center justify-center opacity-70 grayscale"
+                    style={{
+                      width: `${logoWidth}px`,
+                      height: `${logoHeight}px`,
+                    }}
+                  >
+                    <Image
+                      src={l.src}
+                      alt={l.alt}
+                      width={logoWidth}
+                      height={logoHeight}
+                      className="h-full w-full object-contain"
+                      sizes={`${logoWidth}px`}
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
