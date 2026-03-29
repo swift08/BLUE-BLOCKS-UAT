@@ -55,21 +55,24 @@ export default function InnovationLogoStrip({
                   {logos.map((logo, idx) => {
                     const href = logo?.anchorHref;
                     const Wrapper = href ? Link : "div";
+                    const logoWidth = Math.max(1, Number(logo.width) || 200);
+                    const logoHeight = Math.max(1, Number(logo.height) || 60);
 
                     return (
                       <Wrapper
                         key={idx}
                         {...(href ? { href } : {})}
-                        className="relative"
+                        className="relative block shrink-0"
+                        style={{ width: `${logoWidth}px`, height: `${logoHeight}px` }}
                         aria-label={logo?.alt || "Logo"}
                       >
                         <Image
                           src={logo.src}
                           alt={logo.alt || ""}
-                          width={Number(logo.width) || 200}
-                          height={Number(logo.height) || 60}
-                          className="w-auto object-contain"
-                          style={{ width: "auto", height: "auto" }}
+                          width={logoWidth}
+                          height={logoHeight}
+                          className="h-full w-full object-contain"
+                          sizes={`${logoWidth}px`}
                         />
                       </Wrapper>
                     );
