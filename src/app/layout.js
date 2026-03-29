@@ -1,11 +1,11 @@
-// src/app/layout.js
+﻿// src/app/layout.js
 import Script from "next/script";
 import HeaderShell from "@/components/layout/HeaderShell";
 import Footer from "@/components/layout/Footer";
 import NavigationLoader from "@/components/ui/NavigationLoader";
 import HashScrollFix from "@/components/ui/HashScrollFix";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
-import siteData from "@/data/site.json";
+import siteData from "@/data/site";
 import JsonLd from "@/components/seo/JsonLd";
 import normalizeJsonLd from "@/lib/seo/normalizeJsonLd";
 import { Poppins } from "next/font/google";
@@ -69,3 +69,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

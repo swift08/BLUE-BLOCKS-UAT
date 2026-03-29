@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
+import RichTextContent from "@/components/ui/RichTextContent";
 
 function splitTitleToTwoLines(title = "") {
   const t = String(title || "").trim();
@@ -174,21 +175,27 @@ export default function CardsGridSection({
             ) : null}
 
             {description ? (
-              <p className={["bb-text mt-2", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}>
-                {description}
-              </p>
+              <RichTextContent
+                as="p"
+                value={description}
+                className={["bb-text mt-2", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}
+              />
             ) : null}
 
             {subdescription ? (
-              <p className={["bb-text mt-2", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}>
-                {subdescription}
-              </p>
+              <RichTextContent
+                as="p"
+                value={subdescription}
+                className={["bb-text mt-2", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}
+              />
             ) : null}
 
             {subtitle ? (
-              <p className={["bb-text mt-2", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}>
-                <b>{subtitle}</b>
-              </p>
+              <RichTextContent
+                as="p"
+                value={`<b>${subtitle}</b>`}
+                className={["bb-text mt-2", "mx-auto", stripTypographySizing(descriptionClassName)].filter(Boolean).join(" ")}
+              />
             ) : null}
           </div>
         ) : null}
@@ -379,9 +386,11 @@ export default function CardsGridSection({
 
                   {/* Text */}
                   {text ? (
-                    <div className={cardTextClassNameOverride ?? cardTextClassName}>
-                      {text}
-                    </div>
+                    <RichTextContent
+                      as="div"
+                      value={text}
+                      className={cardTextClassNameOverride ?? cardTextClassName}
+                    />
                   ) : null}
                 </CardTag>
               );

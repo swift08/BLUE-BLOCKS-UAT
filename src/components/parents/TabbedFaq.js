@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Container from "@/components/layout/Container";
 import Accordion from "@/components/ui/Accordion";
 import { stripPlaygroupFromTabs } from "@/data/faq";
+import RichTextContent from "@/components/ui/RichTextContent";
 
 /**
  * Supports both formats:
@@ -76,15 +77,19 @@ export default function TabbedFaq({
         {/* Title */}
         <div className="text-center">
           {title ? (
-            <h2 className="text-4xl sm:text-5xl font-semibold text-slate-900 main-title">
-              {title}
-            </h2>
+            <RichTextContent
+              as="h2"
+              value={title}
+              className="text-4xl sm:text-5xl font-semibold text-slate-900 main-title"
+            />
           ) : null}
 
           {subtitle ? (
-            <p className="mt-3 text-slate-700/80 max-w-2xl mx-auto">
-              {subtitle}
-            </p>
+            <RichTextContent
+              as="p"
+              value={subtitle}
+              className="mt-3 text-slate-700/80 max-w-2xl mx-auto"
+            />
           ) : null}
         </div>
 
@@ -102,7 +107,7 @@ export default function TabbedFaq({
                     : "bg-white/60 text-slate-700 hover:bg-white"
                 }`}
               >
-                {t.label}
+                <RichTextContent as="span" value={t.label} />
               </button>
             ))}
           </div>
@@ -118,7 +123,7 @@ export default function TabbedFaq({
               return (
                 <div key={`${sec.heading || "section"}-${idx}`} className={wrapClass}>
                   {sec.heading ? (
-                    <h3 className={sectionHeadingClassName}>{sec.heading}</h3>
+                    <RichTextContent as="h3" value={sec.heading} className={sectionHeadingClassName} />
                   ) : null}
 
                   <div className={sec.heading ? "mt-4" : ""}>

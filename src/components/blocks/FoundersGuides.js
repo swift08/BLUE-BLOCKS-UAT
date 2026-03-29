@@ -1,4 +1,4 @@
-// src/components/blocks/FoundersGuides.js
+﻿// src/components/blocks/FoundersGuides.js
 "use client";
 
 import { useMemo } from "react";
@@ -6,6 +6,7 @@ import Link from "next/link";
 import EmblaCarousel from "../ui/carousel/EmblaCarousel";
 import AppModal from "../ui/modal/AppModal";
 import { normalizeSiteHref } from "@/lib/links";
+import RichTextContent from "@/components/ui/RichTextContent";
 
 const BLANK_USER_SVG = (
   <svg viewBox="0 0 96 96" role="img" aria-label="Profile photo">
@@ -21,11 +22,10 @@ export default function FoundersGuides({
   description,
   items = [],
   bg = "bg-[#F3E3CF]",
-
   layout = {
-    type: "grid", // "grid" | "carousel"
+    type: "grid",
     gap: 32,
-    cardWidth: 520, // px
+    cardWidth: 520,
     carousel: {
       loop: false,
       align: "start",
@@ -43,26 +43,30 @@ export default function FoundersGuides({
   return (
     <section className={bg}>
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 py-6 sm:py-8">
-        {/* Header */}
         <div className="max-w-3xl">
           {pill ? (
-            <div className="inline-flex rounded-full bg-[#D9D2F1] px-5 py-2 text-[11px] font-semibold tracking-wide text-[#2C2C6B]">
-              {pill}
-            </div>
+            <RichTextContent
+              as="div"
+              value={pill}
+              className="inline-flex rounded-full bg-[#D9D2F1] px-5 py-2 text-[11px] font-semibold tracking-wide text-[#2C2C6B]"
+            />
           ) : null}
 
-          <h2 className="mt-5 text-3xl sm:text-5xl font-semibold tracking-tight text-slate-900">
-            {title}
-          </h2>
+          <RichTextContent
+            as="h2"
+            value={title}
+            className="mt-5 text-3xl sm:text-5xl font-semibold tracking-tight text-slate-900"
+          />
 
           {description ? (
-            <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700">
-              {description}
-            </p>
+            <RichTextContent
+              as="p"
+              value={description}
+              className="mt-4 text-sm sm:text-base leading-relaxed text-slate-700"
+            />
           ) : null}
         </div>
 
-        {/* Cards */}
         <div className="mt-10">
           {isCarousel ? (
             <EmblaCarousel
@@ -112,7 +116,6 @@ function FounderCard({
 
   return (
     <div className="h-full rounded-[26px] border-2 border-slate-900 bg-white p-6 sm:p-7 flex flex-col">
-      {/* Image frame */}
       <div className="relative overflow-hidden rounded-[22px] border border-slate-200 bg-white">
         {image ? (
           <img
@@ -129,32 +132,26 @@ function FounderCard({
 
         {roleLabel ? (
           <div className="absolute bottom-5 left-5 right-5 flex justify-center">
-            <span
+            <RichTextContent
+              as="span"
+              value={roleLabel}
               className="inline-flex w-full max-w-[280px] justify-center rounded-lg px-4 py-2 text-xs sm:text-sm font-medium shadow-sm"
               style={{ backgroundColor: roleColor, color: roleTextColor }}
-            >
-              {roleLabel}
-            </span>
+            />
           </div>
         ) : null}
       </div>
 
       {name ? (
-        <h3 className="mt-6 text-xl sm:text-2xl font-medium text-blue-600">
-          {name}
-        </h3>
+        <RichTextContent as="h3" value={name} className="mt-6 text-xl sm:text-2xl font-medium text-blue-600" />
       ) : null}
 
       {tagline ? (
-        <p className="mt-1 text-sm sm:text-base font-medium text-slate-900">
-          {tagline}
-        </p>
+        <RichTextContent as="p" value={tagline} className="mt-1 text-sm sm:text-base font-medium text-slate-900" />
       ) : null}
 
       {bio ? (
-        <p className="mt-2 text-sm sm:text-base leading-relaxed text-slate-700">
-          {bio}
-        </p>
+        <RichTextContent as="p" value={bio} className="mt-2 text-sm sm:text-base leading-relaxed text-slate-700" />
       ) : null}
 
       <div className="mt-auto pt-5 flex justify-end">
@@ -207,7 +204,6 @@ function FounderDetailsModalTrigger({ person, modal }) {
       maxWidthClass="max-w-6xl"
     >
       <div className="grid gap-6 md:grid-cols-12">
-        {/* Left */}
         <div className="md:col-span-5">
           {person?.image ? (
             <div className="overflow-hidden rounded-2xl bg-slate-50 border">
@@ -234,56 +230,40 @@ function FounderDetailsModalTrigger({ person, modal }) {
                   rel={l.external ? "noreferrer" : undefined}
                   className="inline-flex items-center rounded-full border px-4 py-2 text-xs font-medium text-slate-700 hover:bg-slate-50"
                 >
-                  {l.label}
+                  <RichTextContent as="span" value={l.label} allowHtml={false} />
                 </a>
               ))}
             </div>
           ) : null}
         </div>
 
-        {/* Right */}
         <div className="md:col-span-7">
           {person?.name ? (
-            <div className="text-xl sm:text-2xl font-semibold text-blue-600">
-              {person.name}
-            </div>
+            <RichTextContent as="div" value={person.name} className="text-xl sm:text-2xl font-semibold text-blue-600" />
           ) : null}
 
           {person?.tagline ? (
-            <div className="mt-1 text-sm sm:text-base font-medium text-slate-900">
-              {person.tagline}
-            </div>
+            <RichTextContent as="div" value={person.tagline} className="mt-1 text-sm sm:text-base font-medium text-slate-900" />
           ) : null}
 
           {person?.bio ? (
-            <p className="mt-2 text-sm sm:text-base leading-relaxed text-slate-700">
-              {person.bio}
-            </p>
+            <RichTextContent as="p" value={person.bio} className="mt-2 text-sm sm:text-base leading-relaxed text-slate-700" />
           ) : null}
 
           {content.length ? (
             <div className="mt-4 space-y-4 text-sm sm:text-base leading-relaxed text-slate-700">
               {content.map((item, i) => {
-                if (
-                  item &&
-                  typeof item === "object" &&
-                  (item.label || item.text)
-                ) {
+                if (item && typeof item === "object" && (item.label || item.text)) {
                   return (
                     <p key={i}>
                       {item.label ? <strong>{item.label}:</strong> : null}{" "}
-                      {item.text || ""}
+                      <RichTextContent as="span" value={item.text || ""} />
                     </p>
                   );
                 }
 
                 if (typeof item === "string") {
-                  return (
-                    <p
-                      key={i}
-                      dangerouslySetInnerHTML={{ __html: item }}
-                    />
-                  );
+                  return <RichTextContent key={i} as="p" value={item} />;
                 }
 
                 return null;

@@ -1,7 +1,8 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import RichTextContent from "@/components/ui/RichTextContent";
 
 export default function Accordion({
   items = [],
@@ -54,10 +55,8 @@ export default function Accordion({
               className={`w-full flex items-center justify-between gap-4 px-5 sm:px-7 py-4 text-left ${buttonClassName}`}
               aria-expanded={open}
             >
-              <span className="bb-text font-semibold text-slate-900">{q}</span>
-              <span className={`text-xl text-slate-500 ${iconClassName}`}>
-                {open ? "×" : "+"}
-              </span>
+              <RichTextContent as="span" value={q} className="bb-text font-semibold text-slate-900" />
+              <span className={`text-xl text-slate-500 ${iconClassName}`}>{open ? "×" : "+"}</span>
             </button>
 
             <AnimatePresence initial={false}>
@@ -70,9 +69,11 @@ export default function Accordion({
                   transition={{ duration: 0.25, ease: "easeOut" }}
                   className="overflow-hidden"
                 >
-                  <div className={`px-5 sm:px-7 pb-5 bb-text text-slate-600 ${contentClassName}`}>
-                    {a}
-                  </div>
+                  <RichTextContent
+                    as="div"
+                    value={a}
+                    className={`px-5 sm:px-7 pb-5 bb-text text-slate-600 ${contentClassName}`}
+                  />
                 </motion.div>
               ) : null}
             </AnimatePresence>

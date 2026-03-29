@@ -1,6 +1,7 @@
 import Container from "@/components/layout/Container";
 import Image from "next/image";
 import { resolveBg } from "@/lib/ui";
+import RichTextContent from "@/components/ui/RichTextContent";
 
 export default function FeatureGrid({
   headline,
@@ -22,9 +23,9 @@ export default function FeatureGrid({
     >
       <Container className="bb-section__inner">
         {headline ? (
-          <h2 className="bb-section-title text-center whitespace-pre-line">{headline}</h2>
+          <RichTextContent as="h2" value={headline} className="bb-section-title text-center whitespace-pre-line" />
         ) : null}
-        {subText ? <p className="bb-subtitle text-center mt-3">{subText}</p> : null}
+        {subText ? <RichTextContent as="p" value={subText} className="bb-subtitle text-center mt-3" /> : null}
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
           {items.map((it) => (
@@ -69,8 +70,8 @@ export default function FeatureGrid({
                 />
               ) : null}
 
-              <div className="bb-text font-semibold mt-4">{it.title}</div>
-              <p className="bb-text mt-2">{it.text}</p>
+              <RichTextContent as="div" value={it.title} className="bb-text font-semibold mt-4" />
+              <RichTextContent as="p" value={it.text} className="bb-text mt-2" />
             </div>
           ))}
         </div>

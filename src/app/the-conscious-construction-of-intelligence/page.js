@@ -1,4 +1,4 @@
-import siteData from "@/data/site.json";
+﻿import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import { withPaperAuthorMeta } from "@/lib/papers";
@@ -34,3 +34,4 @@ export default function TheConsciousConstructionOfIntelligence() {
     </>
   );
 }
+

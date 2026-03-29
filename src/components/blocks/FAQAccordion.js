@@ -3,6 +3,7 @@ import Accordion from "@/components/ui/Accordion";
 import { resolveBg } from "@/lib/ui";
 import Link from "next/link";
 import { stripPlaygroupFromFaqItems } from "@/data/faq";
+import RichTextContent from "@/components/ui/RichTextContent";
 
 export default function FAQAccordion({
   // content
@@ -39,8 +40,8 @@ export default function FAQAccordion({
         <div className="bb-section__inner">
           <Container className={containerClassName}>
             <div className="mx-auto text-center">
-              {title ? <h2 className="bb-section-title">{title}</h2> : null}
-              {subtitle ? <p className="bb-subtitle">{subtitle}</p> : null}
+              {title ? <RichTextContent as="h2" value={title} className="bb-section-title" /> : null}
+              {subtitle ? <RichTextContent as="p" value={subtitle} className="bb-subtitle" /> : null}
             </div>
 
             <div className={["mx-auto mt-8", panelMaxWidth, rowGapClassName].filter(Boolean).join(" ")}>

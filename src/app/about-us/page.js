@@ -1,4 +1,4 @@
-import siteData from "@/data/site.json";
+﻿import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import JsonLd from "@/components/seo/JsonLd";
 

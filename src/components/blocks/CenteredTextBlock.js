@@ -1,5 +1,6 @@
 import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
+import RichTextContent from "@/components/ui/RichTextContent";
 
 export default function CenteredTextBlock({
   // OLD (keep backward compatible)
@@ -27,24 +28,22 @@ export default function CenteredTextBlock({
     >
       <Container className="bb-section__inner">
         <div className={`mx-auto ${alignClass}`} style={{ maxWidth }}>
-          {title ? <h2 className="bb-section-title">{title}</h2> : null}
-          {subtitle ? <h3 className="bb-subtitle">{subtitle}</h3> : null}
+          {title ? <RichTextContent as="h2" value={title} className="bb-section-title" /> : null}
+          {subtitle ? <RichTextContent as="h3" value={subtitle} className="bb-subtitle" /> : null}
 
           {Array.isArray(textParts) && textParts.length ? (
             <div className="bb-text">
               {textParts.map((p, idx) =>
                 typeof p === "string" ? (
-                  <p key={idx} dangerouslySetInnerHTML={{ __html: p }} />
+                  <RichTextContent key={idx} as="p" value={p} />
                 ) : p && typeof p === "object" && p.bold ? (
-                  <p key={idx}>
-                    <b>{p.bold}</b>
-                  </p>
+                  <RichTextContent key={idx} as="p" value={`<b>${p.bold}</b>`} />
                 ) : null
               )}
             </div>
           ) : text ? (
             <div className="bb-text">
-              <p>{text}</p>
+              <RichTextContent as="p" value={text} />
             </div>
           ) : null}
         </div>

@@ -1,6 +1,7 @@
-import Container from "@/components/layout/Container";
+﻿import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
 import ReadMoreBlock from "@/components/ui/ReadMoreBlock";
+import RichTextContent from "@/components/ui/RichTextContent";
 
 const pillClass = {
   sky: "bg-[#95D6ED]",
@@ -13,22 +14,15 @@ export default function Insights({
   subtitle,
   eyebrow,
   hasCTA,
-
-  // NEW (preferred)
   sectionBg = "",
-
   bgClassName = "bg-[#f5efe6]",
   bg,
-
   items = [],
-
   containerClassName = "py-14",
   cols = { base: 1, sm: 3, md: 3 },
   gapClassName = "gap-5",
 }) {
   const resolved = resolveBg(sectionBg || bg || bgClassName);
-
-  // keep dynamic grid-cols behavior (as in original)
   const gridColsClass = `grid grid-cols-${cols.base} sm:grid-cols-${cols.sm} md:grid-cols-${cols.md}`;
 
   return (
@@ -38,9 +32,9 @@ export default function Insights({
     >
       <Container className={["bb-section__inner", containerClassName].filter(Boolean).join(" ")}>
         <div className="text-center">
-          {eyebrow ? <div className="bb-eyebrow">{eyebrow}</div> : null}
-          {title ? <h2 className="bb-section-title mt-2">{title}</h2> : null}
-          {subtitle ? <p className="bb-subtitle mt-3">{subtitle}</p> : null}
+          {eyebrow ? <RichTextContent as="div" value={eyebrow} className="bb-eyebrow" /> : null}
+          {title ? <RichTextContent as="h2" value={title} className="bb-section-title mt-2" /> : null}
+          {subtitle ? <RichTextContent as="p" value={subtitle} className="bb-subtitle mt-3" /> : null}
         </div>
 
         <div className={`mt-8 ${gridColsClass} ${gapClassName}`}>
@@ -63,7 +57,7 @@ export default function Insights({
                         "--bb-pill-border": "transparent",
                       }}
                     >
-                      <span className="bb-pill__text">{it.pillSec}</span>
+                      <RichTextContent as="span" value={it.pillSec} className="bb-pill__text" />
                     </span>
                   ) : (
                     <span />
@@ -77,14 +71,14 @@ export default function Insights({
                         "--bb-pill-border": "transparent",
                       }}
                     >
-                      <span className="bb-pill__text">{it.pill}</span>
+                      <RichTextContent as="span" value={it.pill} className="bb-pill__text" />
                     </span>
                   ) : null}
                 </div>
 
-                <div className="bb-text font-semibold mt-3">{it.title}</div>
+                <RichTextContent as="div" value={it.title} className="bb-text font-semibold mt-3" />
 
-                {it.meta ? <div className="bb-text mt-2">{it.meta}</div> : null}
+                {it.meta ? <RichTextContent as="div" value={it.meta} className="bb-text mt-2" /> : null}
 
                 <ReadMoreBlock
                   readMore={it.readMore}
@@ -98,7 +92,7 @@ export default function Insights({
                     {it.bullets.map((b) => (
                       <li key={b} className="flex items-start gap-2">
                         <span className="mt-[7px] h-1.5 w-1.5 rounded-full bg-slate-900/60 flex-shrink-0" />
-                        <span>{b}</span>
+                        <RichTextContent as="span" value={b} />
                       </li>
                     ))}
                   </ul>
@@ -106,7 +100,7 @@ export default function Insights({
 
                 {hasCTA ? (
                   <div className="mt-5 underline underline-offset-4">
-                    {it.cta?.label || "Read this guide →"}
+                    <RichTextContent as="span" value={it.cta?.label || "Read this guide →"} allowHtml={false} />
                   </div>
                 ) : null}
               </div>

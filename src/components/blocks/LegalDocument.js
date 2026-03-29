@@ -1,37 +1,5 @@
-import Container from "@/components/layout/Container";
-
-// very small allowlist for inline HTML (bold + line breaks only)
-function sanitizeInlineHtml(input = "") {
-  if (typeof input !== "string") return "";
-
-  let s = input;
-
-  // remove script/style blocks (safety)
-  s = s.replace(/<\s*(script|style)[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, "");
-
-  // remove all tags except: b, strong, br
-  s = s.replace(/<\/?(?!b\b|strong\b|br\b)[a-z0-9]+[^>]*>/gi, "");
-
-  // normalize <br>
-  s = s.replace(/<br\s*\/?\s*>/gi, "<br/>");
-
-  // strip attributes from allowed tags
-  s = s.replace(/<(b|strong)\s+[^>]*>/gi, "<$1>");
-
-  return s;
-}
-
-function HtmlLine({ text }) {
-  const safe = sanitizeInlineHtml(text);
-  if (!safe) return null;
-
-  return (
-    <p
-      className="text-[0.98rem] leading-7 text-slate-700"
-      dangerouslySetInnerHTML={{ __html: safe }}
-    />
-  );
-}
+﻿import Container from "@/components/layout/Container";
+import RichTextContent from "@/components/ui/RichTextContent";
 
 export default function LegalDocument({
   effectiveDate,
@@ -46,9 +14,9 @@ export default function LegalDocument({
 
   const getParagraphGroups = (section) =>
     Object.keys(section || {})
-      .filter((k) => /^paragraphs\d*$/.test(k))
+      .filter((key) => /^paragraphs\d*$/.test(key))
       .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-      .map((k) => section[k])
+      .map((key) => section[key])
       .filter((arr) => Array.isArray(arr) && arr.length);
 
   return (
@@ -58,51 +26,57 @@ export default function LegalDocument({
           {hasAuthorBlock ? (
             <div className="mb-6 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 sm:px-5 sm:py-4">
               {authorByline ? (
-                <div className="text-sm text-slate-700">
-                  {authorByline}
-                </div>
+                <RichTextContent as="div" value={authorByline} className="text-sm text-slate-700" />
               ) : null}
-              <div className="mt-1 text-sm text-slate-700">
-                Dated: {datedValue}
-              </div>
+              <div className="mt-1 text-sm text-slate-700">Dated: {datedValue}</div>
             </div>
           ) : effectiveDate ? (
-            <div className="text-sm text-slate-500 mb-6">
-              Effective Date: {effectiveDate}
-            </div>
+            <div className="text-sm text-slate-500 mb-6">Effective Date: {effectiveDate}</div>
           ) : null}
 
           {Array.isArray(intro) && intro.length ? (
             <div className="space-y-3">
-              {intro.map((p, i) => (
-                <HtmlLine key={i} text={p} />
+              {intro.map((paragraph, index) => (
+                <RichTextContent
+                  key={index}
+                  as="p"
+                  value={paragraph}
+                  className="text-[0.98rem] leading-7 text-slate-700"
+                />
               ))}
             </div>
           ) : null}
 
           {Array.isArray(sections) && sections.length ? (
             <div className="mt-10 space-y-10">
-              {sections.map((sec, idx) => (
-                <div key={sec?.id || idx} className="space-y-3">
-                  {sec?.title ? (
-                    <h2 className="text-xl sm:text-2xl font-semibold text-slate-900">
-                      {sec.title}
-                    </h2>
+              {sections.map((section, index) => (
+                <div key={section?.id || index} className="space-y-3">
+                  {section?.title ? (
+                    <RichTextContent
+                      as="h2"
+                      value={section.title}
+                      className="text-xl sm:text-2xl font-semibold text-slate-900"
+                    />
                   ) : null}
 
-                  {getParagraphGroups(sec).map((group, groupIdx) => (
-                    <div key={groupIdx} className="space-y-3">
-                      {group.map((p, i) => (
-                        <HtmlLine key={`${groupIdx}-${i}`} text={p} />
+                  {getParagraphGroups(section).map((group, groupIndex) => (
+                    <div key={groupIndex} className="space-y-3">
+                      {group.map((paragraph, paragraphIndex) => (
+                        <RichTextContent
+                          key={`${groupIndex}-${paragraphIndex}`}
+                          as="p"
+                          value={paragraph}
+                          className="text-[0.98rem] leading-7 text-slate-700"
+                        />
                       ))}
                     </div>
                   ))}
 
-                  {Array.isArray(sec?.bullets) && sec.bullets.length ? (
+                  {Array.isArray(section?.bullets) && section.bullets.length ? (
                     <ul className="list-disc pl-5 space-y-2 text-slate-700">
-                      {sec.bullets.map((b, i) => (
-                        <li key={i} className="leading-7">
-                          <HtmlLine text={b} />
+                      {section.bullets.map((bullet, bulletIndex) => (
+                        <li key={bulletIndex} className="leading-7">
+                          <RichTextContent as="span" value={bullet} />
                         </li>
                       ))}
                     </ul>

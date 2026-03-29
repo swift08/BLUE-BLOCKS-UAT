@@ -1,79 +1,10 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-
-const ALLOWED_TAGS = new Set(["B", "STRONG", "I", "EM", "A", "BR", "UL", "OL", "LI", "P", "SPAN"]);
-const ALLOWED_ATTRS = new Set(["href", "target", "rel"]);
-
-function sanitizeBasicHtml(html) {
-  if (!html) return "";
-
-  const input = String(html);
-
-  // Server-safe fallback for build/SSG
-  if (typeof document === "undefined") {
-    return input
-      .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, "")
-      .replace(/<style[\s\S]*?>[\s\S]*?<\/style>/gi, "")
-      .replace(/\son\w+="[^"]*"/gi, "")
-      .replace(/\son\w+='[^']*'/gi, "")
-      .replace(/\son\w+=\{[^}]*\}/gi, "")
-      .replace(/href\s*=\s*["']\s*javascript:[^"']*["']/gi, "");
-  }
-
-  const tpl = document.createElement("template");
-  tpl.innerHTML = input;
-
-  // remove scripts/styles
-  tpl.content.querySelectorAll("script, style").forEach((n) => n.remove());
-
-  // strip disallowed tags and attributes
-  const walker = document.createTreeWalker(tpl.content, NodeFilter.SHOW_ELEMENT);
-  const toRemove = [];
-
-  while (walker.nextNode()) {
-    const el = walker.currentNode;
-
-    // remove tags not in allowed list (unwrap them)
-    if (!ALLOWED_TAGS.has(el.tagName)) {
-      toRemove.push(el);
-      continue;
-    }
-
-    // remove unsafe attrs
-    [...el.attributes].forEach((attr) => {
-      const name = attr.name.toLowerCase();
-      if (!ALLOWED_ATTRS.has(name) && !name.startsWith("data-")) {
-        el.removeAttribute(attr.name);
-      }
-    });
-
-    // protect javascript: links
-    if (el.tagName === "A") {
-      const href = el.getAttribute("href") || "";
-      if (/^\s*javascript:/i.test(href)) el.removeAttribute("href");
-
-      // default safe link behavior
-      if (!el.getAttribute("target")) el.setAttribute("target", "_self");
-      if (el.getAttribute("target") === "_blank" && !el.getAttribute("rel")) {
-        el.setAttribute("rel", "noopener noreferrer");
-      }
-    }
-  }
-
-  // unwrap disallowed nodes
-  for (const el of toRemove) {
-    const parent = el.parentNode;
-    if (!parent) continue;
-    while (el.firstChild) parent.insertBefore(el.firstChild, el);
-    parent.removeChild(el);
-  }
-
-  return tpl.innerHTML;
-}
+import { sanitizeTrustedHtml } from "@/lib/content/text";
 
 export default function ReadMoreBlock({
-  readMore, // { enabled?: boolean, labelMore?: string, labelLess?: string, paragraphs?: string[] }
+  readMore, // { enabled: boolean, labelMore: string, labelLess: string, paragraphs: string[] }
   className = "",
   contentClassName = "text-sm sm:text-base leading-relaxed text-slate-700",
   buttonClassName = "mt-4 inline-flex items-center gap-2 text-sm font-semibold hover:opacity-80",
@@ -92,7 +23,7 @@ export default function ReadMoreBlock({
 
   const safeParagraphs = useMemo(() => {
     return paragraphs
-      .map((p) => sanitizeBasicHtml(p))
+      .map((p) => sanitizeTrustedHtml(p))
       .filter((p) => String(p).trim().length > 0);
   }, [paragraphs]);
 

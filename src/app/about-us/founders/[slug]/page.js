@@ -1,5 +1,5 @@
-import { notFound } from "next/navigation";
-import siteData from "@/data/site.json";
+﻿import { notFound } from "next/navigation";
+import siteData from "@/data/site";
 import FounderProfilePage from "@/components/blocks/FounderProfilePage";
 
 export const dynamic = "force-static";
@@ -61,3 +61,4 @@ export default async function FounderRoutePage({ params }) {
 
   return <FounderProfilePage founder={founder} />;
 }
+

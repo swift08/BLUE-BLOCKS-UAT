@@ -1,11 +1,11 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
 import CarouselTrack from "@/components/ui/carousel/CarouselTrack";
-import siteData from "@/data/site.json";
+import siteData from "@/data/site";
 import { normalizeSiteHref } from "@/lib/links";
 
 /* ------------------------- helpers ------------------------- */
@@ -17,11 +17,11 @@ function isEmail(v = "") {
 
 function getHutkCookie() {
   if (typeof document === "undefined") return "";
-  const match = document.cookie.match(/(?:^|;\s*)hubspotutk=([^;]+)/);
+  const match = document.cookie.match(/(:^|;\s*)hubspotutk=([^;]+)/);
   return match ? decodeURIComponent(match[1]) : "";
 }
 
-// ✅ HubSpot endpoint depends on region (na1/na2/eu1, etc.)
+// HubSpot endpoint depends on region (na1/na2/eu1, etc.)
 function hsBaseUrl(region = "") {
   const r = String(region || "").toLowerCase().trim();
   if (!r) return "https://api.hsforms.com";
@@ -37,9 +37,9 @@ async function submitToHubSpot({ portalId, formId, fields, context, region }) {
     context: {
       hutk: getHutkCookie() || undefined,
       pageUri:
-        context?.pageUri ||
+        context.pageUri ||
         (typeof window !== "undefined" ? window.location.href : ""),
-      pageName: context?.pageName || undefined,
+      pageName: context.pageName || undefined,
     },
   };
 
@@ -54,9 +54,9 @@ async function submitToHubSpot({ portalId, formId, fields, context, region }) {
     try {
       const j = await res.json();
       msg =
-        j?.message ||
-        j?.errors?.[0]?.message ||
-        j?.errors?.[0]?.error ||
+        j.message ||
+        j.errors?.[0]?.message ||
+        j.errors?.[0]?.error ||
         msg;
       // Helpful debug
       // eslint-disable-next-line no-console
@@ -76,7 +76,7 @@ export default function Footer() {
   const [newsSubmitting, setNewsSubmitting] = useState(false);
 
   const gallery = useMemo(() => {
-    if (Array.isArray(footer?.gallery) && footer.gallery.length) return footer.gallery;
+    if (Array.isArray(footer.gallery) && footer.gallery.length) return footer.gallery;
     return [{ src: "/footer-map-img.webp", alt: "Campus" }];
   }, [footer]);
 
@@ -94,8 +94,8 @@ export default function Footer() {
       return;
     }
 
-    const hs = footer?.newsletter?.hubspot;
-    if (!hs?.portalId || !hs?.formId) {
+    const hs = footer.newsletter.hubspot;
+    if (!hs.portalId || !hs.formId) {
       setNewsStatus({
         type: "error",
         msg: "Newsletter is not configured yet (missing HubSpot portalId/formId).",
@@ -107,10 +107,10 @@ export default function Footer() {
       setNewsSubmitting(true);
 
       // HubSpot field name must match your form property (usually: "email")
-      const fieldName = footer?.newsletter?.emailFieldName || "email";
+      const fieldName = footer.newsletter.emailFieldName || "email";
 
       await submitToHubSpot({
-        region: hs?.region, // ✅ add region from JSON (ex: "na2")
+        region: hs.region, // add region from JSON (ex: "na2")
         portalId: hs.portalId,
         formId: hs.formId,
         fields: [{ name: fieldName, value: v }],
@@ -119,13 +119,13 @@ export default function Footer() {
 
       setNewsStatus({
         type: "success",
-        msg: footer?.newsletter?.successMessage || "Subscribed successfully.",
+        msg: footer.newsletter.successMessage || "Subscribed successfully.",
       });
       setEmail("");
     } catch (err) {
       setNewsStatus({
         type: "error",
-        msg: err?.message || "Unable to subscribe. Please try again.",
+        msg: err.message || "Unable to subscribe. Please try again.",
       });
     } finally {
       setNewsSubmitting(false);
@@ -154,7 +154,7 @@ export default function Footer() {
                     <div className="relative h-10 w-12 overflow-hidden rounded-md bg-white">
                       <Image
                         src="/icon/logo.svg"
-                        alt={siteData?.site?.name || "Blue Blocks"}
+                        alt={siteData.site.name || "Blue Blocks"}
                         className="object-contain p-1"
                         fill
                         sizes="48px"
@@ -162,7 +162,7 @@ export default function Footer() {
                     </div>
 
                     <p className="text-[0.75rem] leading-5 text-white/65">
-                      {footer?.aboutText}
+                      {footer.aboutText}
                     </p>
                   </div>
 
@@ -176,7 +176,7 @@ export default function Footer() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       type="email"
-                      placeholder={footer?.newsletter?.placeholder || "Enter Your E-mail"}
+                      placeholder={footer.newsletter.placeholder || "Enter Your E-mail"}
                       className="h-11 w-full rounded-xl bg-[#3a3a3a] px-4 text-[0.8125rem] text-white placeholder:text-white/45 outline-none ring-1 ring-transparent focus:ring-white/20"
                       disabled={newsSubmitting}
                     />
@@ -191,14 +191,14 @@ export default function Footer() {
                     >
                       <span className="hidden sm:inline">
                         {newsSubmitting
-                          ? footer?.newsletter?.submittingLabel || "Submitting"
-                          : footer?.newsletter?.buttonLabel || "Submit"}{" "}
+                          ? footer.newsletter.submittingLabel || "Submitting"
+                          : footer.newsletter.buttonLabel || "Submit"}{" "}
                       </span>
-                      <span aria-hidden>↗</span>
+                      <span aria-hidden>{"\u2192"}</span>
                     </button>
                   </form>
 
-                  {newsStatus?.msg ? (
+                  {newsStatus.msg ? (
                     <div
                       className={[
                         "mt-3 rounded-xl px-4 py-3 text-[0.8125rem]",
@@ -214,7 +214,7 @@ export default function Footer() {
 
                 {/* Social stack */}
                 <div className="hidden lg:flex lg:flex-col lg:gap-3">
-                  {footer?.socials?.map((s) => (
+                  {footer.socials.map((s) => (
                     <SocialButton key={s.label} item={s} />
                   ))}
                 </div>
@@ -223,9 +223,9 @@ export default function Footer() {
               {/* LINKS GRID */}
               <div className="mt-5 rounded-[1.25rem] bg-transparent">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  <FooterColumn title="Quick Links" items={footer?.quickLinks || []} />
-                  <FooterColumn title="Programs" items={footer?.programs || []} />
-                  <FooterColumn title="Connect" items={footer?.connect || []} />
+                  <FooterColumn title="Quick Links" items={footer.quickLinks || []} />
+                  <FooterColumn title="Programs" items={footer.programs || []} />
+                  <FooterColumn title="Connect" items={footer.connect || []} />
                 </div>
               </div>
 
@@ -233,18 +233,18 @@ export default function Footer() {
               <div className="mt-6 rounded-[1rem] bg-[#2a2a2a] px-4 py-3">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex flex-wrap items-center gap-3 text-[0.75rem] text-white/70">
-                    <span aria-hidden className="text-white/60">☎</span>
-                    <Link className="whitespace-nowrap" href={`tel:${footer?.contact?.phone}`}>{footer?.contact?.phone}</Link>
-                    <Link className="whitespace-nowrap" href="https://wa.link/vohpxj">{footer?.contact?.whatsapp}</Link>
+                    <span aria-hidden className="text-white/60">{"\u260E"}</span>
+                    <Link className="whitespace-nowrap" href={`tel:${footer.contact.phone}`}>{footer.contact.phone}</Link>
+                    <Link className="whitespace-nowrap" href="https://wa.link/vohpxj">{footer.contact.whatsapp}</Link>
                   </div>
 
                   <div className="flex items-center gap-2 text-[0.75rem] text-white/70">
-                    <span aria-hidden className="text-white/60">✉</span>
+                    <span aria-hidden className="text-white/60">{"\u2709"}</span>
                     <a
                       className="underline-offset-4 hover:underline"
-                      href={`mailto:${footer?.contact?.email}`}
+                      href={`mailto:${footer.contact.email}`}
                     >
-                      {footer?.contact?.email}
+                      {footer.contact.email}
                     </a>
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export default function Footer() {
 
               {/* Mobile socials */}
               <div className="mt-5 grid grid-cols-1 gap-3 lg:hidden">
-                {footer?.socials?.map((s) => (
+                {footer.socials.map((s) => (
                   <SocialButton key={s.label} item={s} />
                 ))}
               </div>
@@ -261,13 +261,13 @@ export default function Footer() {
 
           {/* BOTTOM LEGAL ROW */}
           <div className="mt-6 flex flex-col gap-3 text-[0.75rem] text-white/45 lg:flex-row lg:items-center lg:justify-between">
-            <div>© 2025 Blue Blocks Micro Research Institute</div>
+            <div>{"\u00A9"} 2025 Blue Blocks Micro Research Institute</div>
 
             <div className="flex items-center gap-2 lg:justify-end">
               <Link className="underline-offset-4 hover:underline" href="/sitemap">Sitemap</Link>
-              <span className="text-white/25">·</span>
+              <span className="text-white/25">{"\u00B7"}</span>
               <Link className="underline-offset-4 hover:underline" href="/privacy-policy">Privacy Policy</Link>
-              <span className="text-white/25">·</span>
+              <span className="text-white/25">{"\u00B7"}</span>
               <Link className="underline-offset-4 hover:underline" href="/terms">Terms of Use</Link>
             </div>
           </div>
@@ -355,8 +355,9 @@ function SocialButton({ item }) {
         {item.label}
       </span>
       <span aria-hidden className="text-white/40">
-        ↗
+        {"\u2197"}
       </span>
     </a>
   );
 }
+

@@ -1,4 +1,4 @@
-import siteData from "@/data/site.json";
+﻿import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import JsonLd from "@/components/seo/JsonLd";
 
@@ -8,7 +8,7 @@ export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
 
   // <title>...</title>
-  title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1–18) | Hyderabad homepage",
+  title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1-18) | Hyderabad homepage",
 
   // <meta name="description" ... />
   description:
@@ -57,7 +57,7 @@ export const metadata = {
     url: "https://www.blueblocks.in/",
     locale: "en_IN",
     siteName: "Blue Blocks Montessori School",
-    title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1–18) | Hyderabad",
+    title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1-18) | Hyderabad",
     description:
       "Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad offering continuous developmental education from 15 months to 18 years. Innovation labs, student patents, CubeSat engineering, and Cambridge IGCSE integration.",
     images: [
@@ -74,7 +74,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@BlueblocksEdu",
-    title: "Blue Blocks | AMI Montessori School, Hyderabad (Ages 1–18)",
+    title: "Blue Blocks | AMI Montessori School, Hyderabad (Ages 1-18)",
     description:
       "AMI-certified Montessori from toddler to adolescence. Innovation labs, CubeSat engineering, student patents, Cambridge IGCSE.",
     images: ["https://www.blueblocks.in/images/og-homepage.jpg"],
@@ -112,7 +112,7 @@ const structuredData = {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.blueblocks.in/search?q={search_term_string}"
+        "urlTemplate": "https://www.blueblocks.in/searchq={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -157,7 +157,7 @@ const structuredData = {
         "@id": "https://www.blueblocks.in/#pavan",
         "name": "Pavan Goyal",
         "jobTitle": "Founder & Principal",
-        "description": "Holds all four AMI Diplomas (0-3, 3-6, 6-12, 12-18) — the complete Montessori continuum. Principal Investigator at Blue Blocks Micro Research Institute.",
+        "description": "Holds all four AMI Diplomas (0-3, 3-6, 6-12, 12-18) - the complete Montessori continuum. Principal Investigator at Blue Blocks Micro Research Institute.",
         "sameAs": "https://www.linkedin.com/in/pavangoel/"
       },
       {
@@ -268,9 +268,9 @@ const structuredData = {
       }
     ],
     "award": [
-      "Best Pre-School in Hyderabad — Times of India (3 Consecutive Years)",
+      "Best Pre-School in Hyderabad - Times of India (3 Consecutive Years)",
       "ISRO IN-SPACe Authorization for Student CubeSat Mission (2025)",
-      "Invited Presentation — Nobel Peace Centre, Oslo (2024)"
+      "Invited Presentation - Nobel Peace Centre, Oslo (2024)"
     ],
 
 
@@ -375,7 +375,7 @@ const structuredData = {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Why do you mix ages in one classroom?",
+        "name": "Why do you mix ages in one classroom",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Because real life is not segregated by birth year. In a mixed-age community, younger children learn by watching, and older children master concepts by teaching. This builds deep social intelligence and mirrors how humans have learned for millennia."
@@ -383,7 +383,7 @@ const structuredData = {
       },
       {
         "@type": "Question",
-        "name": "How does Montessori prepare children for the real world?",
+        "name": "How does Montessori prepare children for the real world",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "The real world rewards those who can think, adapt, and solve problems independently. By prioritising executive function over rote memorisation, we prepare children to lead, not just follow. Our students transition seamlessly to Cambridge IGCSE and university entrance."
@@ -391,7 +391,7 @@ const structuredData = {
       },
       {
         "@type": "Question",
-        "name": "What is the Blue Blocks research approach?",
+        "name": "What is the Blue Blocks research approach",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Education should be a science, not an assumption. Our internal observation team at the Blue Blocks Micro Research Institute studies how children learn best across a 15-year longitudinal dataset. We don't experiment on children; we learn from them."
@@ -491,3 +491,4 @@ export default function HomePage() {
     </>
   );
 }
+

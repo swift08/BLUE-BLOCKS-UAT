@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useMemo, useState } from "react";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
-import siteData from "@/data/site.json";
+import siteData from "@/data/site";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { normalizeSiteHref } from "@/lib/links";
@@ -100,8 +100,8 @@ export default function Header({ variant = "dark" }) {
       : null;
 
     if (whatWeDo) {
-      const hasAmi = whatWeDo.items.some((it) => normalizeHref(it?.href) === "/ami-training/");
-      const hasCareers = whatWeDo.items.some((it) => normalizeHref(it?.href) === "/careers/");
+      const hasAmi = whatWeDo.items.some((it) => normalizeHref(it.href) === "/ami-training/");
+      const hasCareers = whatWeDo.items.some((it) => normalizeHref(it.href) === "/careers/");
 
       if (!hasAmi) {
         whatWeDo.items.push({
@@ -132,7 +132,7 @@ export default function Header({ variant = "dark" }) {
             ? {
                 ...mm.programs.ctaCard,
                 button: mm.programs.ctaCard.button
-                  ? { ...mm.programs.ctaCard.button, label: "Admissions →", href: "/admissions/" }
+                  ? { ...mm.programs.ctaCard.button, label: "Admissions", href: "/admissions/" }
                   : undefined,
               }
             : mm.programs.ctaCard,
@@ -141,7 +141,7 @@ export default function Header({ variant = "dark" }) {
 
     if (programs) {
       const hasAdmissionsItem = programs.items.some(
-        (it) => normalizeHref(it?.href) === "/admissions/"
+        (it) => normalizeHref(it.href) === "/admissions/"
       );
       if (!hasAdmissionsItem) {
         const admissionsItem = {
@@ -178,7 +178,7 @@ export default function Header({ variant = "dark" }) {
     return { megaByLabel: map, navItems: nav };
   }, []);
 
-  const socials = siteData?.footer?.socials || [];
+  const socials = siteData.footer.socials || [];
 
   const toggleMenu = () => setMenuOpen((v) => !v);
 
@@ -211,7 +211,7 @@ export default function Header({ variant = "dark" }) {
                 className="px-2 font-semibold"
                 aria-label="Close announcement"
               >
-                ✕
+                {"\u2715"}
               </button>
             </div>
           </Container>
@@ -224,8 +224,8 @@ export default function Header({ variant = "dark" }) {
           {/* Logo */}
           <Link href="/">
             <Image
-              src={site?.logo || "/icon/logo.svg"}
-              alt={site?.name || "Logo"}
+              src={site.logo || "/icon/logo.svg"}
+              alt={site.name || "Logo"}
               width={82}
               height={67}
               className="object-contain"
@@ -236,14 +236,14 @@ export default function Header({ variant = "dark" }) {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-10 text-sm font-medium">
             {(navItems || []).map((item, i) => {
-              const key = `${item?.href || "nohref"}|${item?.label || "nolabel"}|${i}`;
-              const label = item?.label || "";
+              const key = `${item.href || "nohref"}|${item.label || "nolabel"}|${i}`;
+              const label = item.label || "";
               const mega = megaByLabel[label];
 
               // Mega entries (desktop)
               if (mega) {
                 const active =
-                  isActiveHref(item?.href) || (label === "Programs" ? pathname.startsWith("/programs") : false);
+                  isActiveHref(item.href) || (label === "Programs" ? pathname.startsWith("/programs") : false);
 
                 return (
                   <ProgramsMegaMenu
@@ -258,8 +258,8 @@ export default function Header({ variant = "dark" }) {
               }
 
               // Normal link
-              const active = isActiveHref(item?.href);
-              const href = normalizeHref(item?.href);
+              const active = isActiveHref(item.href);
+              const href = normalizeHref(item.href);
 
               // If href missing, render as plain text (prevents Next <Link> crash)
               if (!isValidLinkHref(href)) {
@@ -285,11 +285,11 @@ export default function Header({ variant = "dark" }) {
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
           >
-            {menuOpen ? "✖" : "☰"}
+            {menuOpen ? "\u2715" : "\u2630"}
           </button>
         </Container>
 
-        {/* ✅ MOBILE FULL-VIEWPORT DRAWER (scrollable) */}
+        {/* ? MOBILE FULL-VIEWPORT DRAWER (scrollable) */}
         <AnimatePresence>
           {menuOpen ? (
             <motion.div
@@ -335,7 +335,7 @@ export default function Header({ variant = "dark" }) {
                   className="absolute top-5 right-5 grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white hover:bg-white/15"
                   aria-label="Close menu"
                 >
-                  ✕
+                  ?
                 </button>
               </motion.div>
             </motion.div>
@@ -351,9 +351,9 @@ export default function Header({ variant = "dark" }) {
 function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className = "" }) {
   const [open, setOpen] = useState(false);
 
-  const items = mega?.items || [];
-  const viewAll = mega?.viewAll;
-  const ctaCard = mega?.ctaCard;
+  const items = mega.items || [];
+  const viewAll = mega.viewAll;
+  const ctaCard = mega.ctaCard;
 
   const showActive = open || isActive;
 
@@ -373,8 +373,8 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
         type="button"
         className={`flex items-center gap-1 text-sm font-medium transition ${className} ${openActiveCls}`}
       >
-        {mega?.label || "Menu"}
-        <span className="text-lg">▾</span>
+        {mega.label || "Menu"}
+        <span className="text-lg">{"\u25BE"}</span>
       </button>
 
       <AnimatePresence>
@@ -397,7 +397,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                         href={normalizeHref(viewAll.href)}
                         className="text-xs font-medium text-[#0E4AA2] hover:underline"
                       >
-                        {viewAll?.label || "View All"} →
+                        {viewAll.label || "View All"} <span aria-hidden>{"\u2192"}</span>
                       </Link>
                     ) : null}
                   </p>
@@ -406,8 +406,8 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                 <div className="grid grid-cols-2 border-t border-slate-100">
                   {items.map((program, idx) => (
                     <Link
-                      key={`${program?.href || program?.title || "item"}|${idx}`}
-                      href={normalizeHref(program?.href)}
+                      key={`${program.href || program.title || "item"}|${idx}`}
+                      href={normalizeHref(program.href)}
                       className="flex gap-3 p-5 sm:p-6 hover:bg-slate-50 border-r border-slate-100 last:border-r-0"
                     >
                       <div className="relative h-16 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-slate-200">
@@ -434,38 +434,38 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                 {ctaCard ? <div className="flex flex-col justify-between space-y-2 bg-[#F3E3CF] rounded-2xl p-5 w-full">
                   <div>
                     <p className="text-[1.2rem] mb-4 font-semibold text-slate-900">
-                      {ctaCard?.title}
+                      {ctaCard.title}
                     </p>
-                    <p className="text-[0.75rem] text-slate-600">{ctaCard?.text}</p>
+                    <p className="text-[0.75rem] text-slate-600">{ctaCard.text}</p>
                   </div>
 
                   {ctaCard?.button?.href ? (
                     <Link
-                      href={normalizeHref(ctaCard.button.href)}
+                      href={normalizeHref(ctaCard?.button?.href)}
                       className="inline-flex w-full items-center justify-center rounded-full bg-[#0F52BA] px-4 py-3 text-xs font-medium text-white hover:bg-[#0D47A1]"
                     >
-                      {ctaCard.button.label}
+                      {ctaCard?.button?.label}
                     </Link>
                   ) : null}
                 </div> : null}
 
                 <div className="mt-2 flex flex-col gap-2">
                   {(socials || []).map((s, idx) => {
-                    const href = normalizeHref(s?.href);
+                    const href = normalizeHref(s.href);
                     if (!isValidLinkHref(href)) return null;
 
                     return (
                       <Link
-                        key={`${s?.label || "social"}|${idx}`}
+                        key={`${s.label || "social"}|${idx}`}
                         href={href}
                         target="_blank"
                         rel="noreferrer"
                         className="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#000000]/5 text-xs font-semibold text-slate-900 shadow-sm hover:bg-slate-50"
-                        aria-label={s?.label}
+                        aria-label={s.label}
                       >
                         <Image
-                          src={s?.icon}
-                          alt={(s?.label || "").slice(0, 2)}
+                          src={s.icon}
+                          alt={(s.label || "").slice(0, 2)}
                           width={34}
                           height={34}
                           className="object-contain"
@@ -515,7 +515,7 @@ function MobileNav({
                 className="flex w-full items-center justify-between px-4 py-4 text-left"
               >
                 <span className="text-sm font-semibold">{label}</span>
-                <span className="text-lg">{isOpen ? "−" : "+"}</span>
+                <span className="text-lg">{isOpen ? "-" : "+"}</span>
               </button>
 
               <AnimatePresence initial={false}>
@@ -531,17 +531,17 @@ function MobileNav({
                       {/* View all */}
                       {mega?.viewAll?.href ? (
                         <Link
-                          href={normalizeHref(mega.viewAll.href)}
+                          href={normalizeHref(mega?.viewAll?.href)}
                           onClick={onNavigate}
                           className="block rounded-lg bg-white/10 px-4 py-3 text-sm font-medium hover:bg-white/15"
                         >
-                          {mega.viewAll.label || "View All"} →
+                          {mega.viewAll.label || "View All"} <span aria-hidden>{"\u2192"}</span>
                         </Link>
                       ) : null}
 
                       {/* Mega items */}
                       <div className="space-y-2">
-                        {(mega?.items || []).map((m, i) => {
+                        {(mega.items || []).map((m, i) => {
                           const mhref = normalizeHref(m?.href);
                           if (!isValidLinkHref(mhref)) return null;
 
@@ -555,8 +555,8 @@ function MobileNav({
                               <div className="relative h-12 w-14 overflow-hidden rounded-lg bg-white/10">
                                 {m?.image ? (
                                   <Image
-                                    src={m.image}
-                                    alt={m.title || ""}
+                                    src={m?.image}
+                                    alt={m?.title || ""}
                                     fill
                                     className="object-cover"
                                     sizes="56px"
@@ -566,7 +566,7 @@ function MobileNav({
                               <div>
                                 <div className="text-sm font-semibold">{m?.title}</div>
                                 {m?.description ? (
-                                  <div className="text-xs text-white/65 line-clamp-2">{m.description}</div>
+                                  <div className="text-xs text-white/65 line-clamp-2">{m?.description}</div>
                                 ) : null}
                               </div>
                             </Link>
@@ -577,11 +577,11 @@ function MobileNav({
                       {/* CTA */}
                       {mega?.ctaCard?.button?.href ? (
                         <Link
-                          href={normalizeHref(mega.ctaCard.button.href)}
+                          href={normalizeHref(mega?.ctaCard?.button?.href)}
                           onClick={onNavigate}
                           className="mt-2 block rounded-xl bg-[#0F52BA] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#0D47A1]"
                         >
-                          {mega.ctaCard.button.label}
+                          {mega?.ctaCard?.button?.label}
                         </Link>
                       ) : null}
                     </div>
@@ -627,19 +627,19 @@ function MobileNav({
           </div>
           <div className="mt-3 grid grid-cols-4 gap-3">
             {(socials || []).map((s, i) => {
-              const href = normalizeHref(s?.href);
+              const href = normalizeHref(s.href);
               if (!isValidLinkHref(href)) return null;
 
               return (
                 <a
-                  key={`${s?.label || "social"}|${i}`}
+                  key={`${s.label || "social"}|${i}`}
                   href={href}
                   target="_blank"
                   rel="noreferrer"
                   className="flex h-12 items-center justify-center rounded-xl bg-white/5 hover:bg-white/10"
-                  aria-label={s?.label}
+                  aria-label={s.label}
                 >
-                  <Image src={s?.icon} alt="" width={22} height={22} className="object-contain" />
+                  <Image src={s.icon} alt="" width={22} height={22} className="object-contain" />
                 </a>
               );
             })}
@@ -649,3 +649,4 @@ function MobileNav({
     </div>
   );
 }
+
