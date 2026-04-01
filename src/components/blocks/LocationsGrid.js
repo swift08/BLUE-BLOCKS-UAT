@@ -16,24 +16,17 @@ export default function LocationsGrid({ bg = "#F3E3CF", locations = [] }) {
               </div>
 
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-                {isEmbeddableMapUrl(loc?.mapEmbedUrl) ? (
+                {loc?.mapEmbedUrl ? (
                   <iframe
-                    src={loc?.mapEmbedUrl}
+                    src={getMapIframeSrc(loc?.mapEmbedUrl)}
                     className="w-full h-[260px] lg:h-[420px]"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title={loc?.title || "Campus map"}
                   />
                 ) : (
-                  <div className="flex h-[260px] lg:h-[420px] items-center justify-center bg-slate-50 p-6 text-center">
-                    <a
-                      href={loc?.mapEmbedUrl || "#"}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center justify-center rounded-full bg-[#0F52BA] px-6 py-3 text-sm font-medium text-white hover:bg-[#0D47A1]"
-                    >
-                      Open {loc?.title || "Campus"} Map
-                    </a>
+                  <div className="flex h-[260px] lg:h-[420px] items-center justify-center bg-slate-50 p-6 text-center text-sm text-slate-600">
+                    Map unavailable
                   </div>
                 )}
               </div>
@@ -45,12 +38,18 @@ export default function LocationsGrid({ bg = "#F3E3CF", locations = [] }) {
   );
 }
 
-function isEmbeddableMapUrl(url) {
-  const value = String(url || "").toLowerCase();
-  if (!value) return false;
-  return (
-    value.includes("output=embed") ||
-    value.includes("/maps/embed") ||
-    value.includes("google.com/maps?q=")
-  );
+function getMapIframeSrc(url) {
+  const value = String(url || "").trim();
+  const lowered = value.toLowerCase();
+  if (!value) return "";
+
+  if (
+    lowered.includes("output=embed") ||
+    lowered.includes("/maps/embed") ||
+    lowered.includes("google.com/maps?q=")
+  ) {
+    return value;
+  }
+
+  return `https://www.google.com/maps?q=${encodeURIComponent(value)}&output=embed`;
 }
