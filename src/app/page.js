@@ -405,7 +405,6 @@ const structuredData = {
 const HOME_HERO_SLIDES = [
   {
     id: "home-hero-1",
-    tag: "Institution / Hero",
     title: "The Child, Understood",
     subtitle:
       "We don't teach. We observe. Then we build the precise environment your child needs to construct themselves.",
@@ -418,7 +417,6 @@ const HOME_HERO_SLIDES = [
   },
   {
     id: "home-hero-2",
-    tag: "Toddler Community (Ages 15 months - 3 years)",
     title: "A Sanctuary for Your Child's Becoming",
     subtitle:
       "We don't rush the separation. We stay with your child until trust is built - on her timeline, not ours.",
@@ -431,7 +429,6 @@ const HOME_HERO_SLIDES = [
   },
   {
     id: "home-hero-3",
-    tag: "Adolescent Community (Ages 12-18)",
     title: "The Same Hands That Built the Pink Tower Built a Satellite",
     subtitle:
       "Between a wooden cube and a CubeSat in orbit lies eighteen years of conscience, capability, and care.",
@@ -443,7 +440,6 @@ const HOME_HERO_SLIDES = [
   },
   {
     id: "home-hero-4",
-    tag: "The Innovation Lab",
     title: "Hands That Build Minds - and Conscience",
     subtitle:
       "Five hundred tools across eighteen years. Every one introduced with purpose, used with care, returned with respect.",
@@ -456,7 +452,6 @@ const HOME_HERO_SLIDES = [
   },
   {
     id: "home-hero-5",
-    tag: "The Space Lab",
     title: "Cosmic Responsibility Starts at Age Three",
     subtitle:
       "The child who learned to carry a Pink Tower cube is the same one who built a satellite for ISRO.",
@@ -478,6 +473,7 @@ export default function HomePage() {
       props: {
         ...(section?.props || {}),
         slides: HOME_HERO_SLIDES,
+        note: "",
         topSpacing: "home",
       },
     };

@@ -1683,7 +1683,7 @@
                 "name": "Badri Shruthi",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
                 "roleColor": "#E08B64",
-                "image": "",
+                "image": "/team/self-interpretive/Badri-Shruthi.webp",
                 "imageAlt": "Badri Shruthi",
                 "tagline": "Decoding the logic of early language and development.",
                 "bio": "B.Tech (IT) | PG Data Science | AMI Certified (MTRT).",
@@ -4948,12 +4948,12 @@
               {
                 "title": "Blue Blocks Preschool",
                 "address": "MIG 3, Lane opposite to DLF, Gachibowli, Hyderabad, Telangana",
-                "mapEmbedUrl": "https://www.google.com/maps?q=Gachibowli%20Hyderabad&output=embed"
+                "mapEmbedUrl": "https://maps.app.goo.gl/nXS83s1kXhGm9yD58?g_st=iw"
               },
               {
                 "title": "Blue Blocks school",
                 "address": "Tellapur, Hyderabad, Telangana",
-                "mapEmbedUrl": "https://www.google.com/maps?q=Tellapur%20Hyderabad&output=embed"
+                "mapEmbedUrl": "https://maps.app.goo.gl/c7M22czhHjQNEchP9"
               }
             ]
           }
