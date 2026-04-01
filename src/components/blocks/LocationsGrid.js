@@ -43,6 +43,11 @@ function getMapIframeSrc(url) {
   const lowered = value.toLowerCase();
   if (!value) return "";
 
+  if (lowered.includes("<iframe")) {
+    const srcMatch = value.match(/src=["']([^"']+)["']/i);
+    if (srcMatch?.[1]) return srcMatch[1];
+  }
+
   if (
     lowered.includes("output=embed") ||
     lowered.includes("/maps/embed") ||
