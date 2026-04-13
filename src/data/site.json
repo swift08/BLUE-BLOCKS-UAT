@@ -92,7 +92,7 @@
           "image": "/programs/thumb-primary.webp" },
         {
           "id": "secondary-school",
-          "title": "Secondary School – Class 7 to 12",
+          "title": "Secondary School – Class 7 to 10",
           "href": "/programs/secondary-school",
           "description": "Teen years guided through real-life projects, leadership, and Cambridge learning.",
           "image": "/programs/thumb-secondary.webp"
@@ -182,7 +182,7 @@
       {"label": "Playgroup","href": "/programs/playgroup"},
       {"label": "Nursery, PP1, PP2","href": "/programs/nursery-school"},
       {"label": "Primary School – Class 1 to 6","href": "/programs/primary-school-elementary"},
-      {"label": "Secondary School – Class 7 to 12","href": "/programs/secondary-school"}
+      {"label": "Secondary School – Class 7 to 10","href": "/programs/secondary-school"}
     ],
     "connect": [
       {"label": "Admissions Enquiry","href": "/admissions"},
@@ -8867,7 +8867,7 @@
                       },
                       {
                         "q": "Do you have branches?",
-                        "a": "Yes. Our Gachibowli campus has the Toddler and Primary environments while our Osman Nagar campus has Primary, Elementary (Grade 1 to 6) environments and High School (Grade 7 to 12) â€“ Erdkinder Adolescent Program."
+                        "a": "Yes. Our Gachibowli campus has the Toddler and Primary environments while our Osman Nagar campus has Primary, Elementary (Grade 1 to 6) environments and High School (Grade 7 to 10) â€“ Erdkinder Adolescent Program."
                       },
                       {
                         "q": "Do you provide transport?",
