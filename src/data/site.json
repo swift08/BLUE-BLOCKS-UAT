@@ -542,6 +542,20 @@
           }
         },
         {
+          "type": "imageText",
+          "props": {
+            "title": "WHERE ENVIRONMENT IS THE EDUCATOR",
+            "text": [
+              "A building can be designed for control, or it can be designed for growth. At Blue Blocks, every corridor, classroom, and open space serves a single purpose: the child.",
+              "Our campus is a prepared environment — conceived through Montessori principles — where the architecture itself supports independence, exploration, and a deep sense of belonging.",
+              "Children thrive when their surroundings are built for their scale, their needs, and their natural impulse to move, build, and make meaning. This is not a place children come to. It is a place children grow in."
+            ],
+            "imageUrl": "/home-01/buildings-001.webp",
+            "align": "left",
+            "imageSide":"right"
+          }
+        },
+        {
           "type": "faq",
           "props": {
             "bg": "#F3E3CF",
