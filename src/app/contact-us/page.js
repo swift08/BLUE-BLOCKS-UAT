@@ -4,6 +4,10 @@ import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
 
+export const metadata = {
+  alternates: { canonical: "https://www.blueblocks.in/contact-us/" },
+};
+
 export default function ContactPage() {
   const page = siteData?.pages?.contact || {};
   const baseSections = Array.isArray(page?.sections)

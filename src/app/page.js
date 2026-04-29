@@ -130,8 +130,7 @@ const structuredData = {
       "Blue Blocks",
       "BlueBlocks",
       "Blue Blocks Complete School",
-      "Blue Blocks Education Society",
-      "BBMES"
+      "Blue Blocks Montessori Educational Society"
     ],
     "disambiguatingDescription": "AMI-certified Montessori school and micro-research institute in Hyderabad, India, offering continuous developmental education from 15 months to 18 years with innovation labs in space technology, drone engineering, and biomimicry.",
 
@@ -279,7 +278,6 @@ const structuredData = {
         "@type": "ResearchOrganization",
         "@id": "https://www.blueblocks.in/#microresearch",
         "name": "Blue Blocks Micro Research Institute",
-        "alternateName": ["BBMRI", "Blue Blocks Research"],
         "description": "The research arm of Blue Blocks Montessori School. Conducts longitudinal observational research on child development across a 15-year dataset of 847 children within authentic Montessori environments.",
         "parentOrganization": {
           "@id": "https://www.blueblocks.in/#organization"
@@ -295,7 +293,6 @@ const structuredData = {
         "@type": "ResearchOrganization",
         "@id": "https://www.blueblocks.in/#foundation",
         "name": "Blue Blocks Research Institute Foundation",
-        "alternateName": ["BBRIF"],
         "description": "The philanthropic and research-funding arm supporting longitudinal studies in child development, innovation pedagogy, and Montessori educational outcomes.",
         "parentOrganization": {
           "@id": "https://www.blueblocks.in/#organization"
@@ -405,9 +402,9 @@ const structuredData = {
 const HOME_HERO_SLIDES = [
   {
     id: "home-hero-1",
-    title: "The Child, Understood",
+    title: "AMI Montessori Research Institution: Birth to 18, One Continuous Arc",
     subtitle:
-      "We don't teach. We observe. Then we build the precise environment your child needs to construct themselves.",
+      "Blue Blocks is the only AMI-certified Montessori school in India backed by a Micro Research Institute (BBMRI) - a 17-year longitudinal observation of child development from 15 months to Cambridge IGCSE.",
     primaryCta: { label: "Explore Our Programmes", href: "/programs/" },
     secondaryCta: { label: "Visit the Campus", href: "/campus/" },
     bgImageUrl: "/home/homepage-banner-01.webp",
@@ -475,6 +472,8 @@ export default function HomePage() {
         slides: HOME_HERO_SLIDES,
         note: "",
         topSpacing: "home",
+        autoRotate: true,
+        autoRotateMs: 6000,
       },
     };
   });

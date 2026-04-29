@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
     title: `${item.title} | Blue Blocks`,
     description: item.summary,
     alternates: {
-      canonical: `/publications/${item.slug}/`,
+      canonical: `https://www.blueblocks.in/publications/${item.slug}/`,
     },
   };
 }
@@ -34,14 +34,72 @@ export default async function PublicationDetailPage({ params }) {
   const item = getOutput(slug);
   if (!item) notFound();
 
-  const schema = {
+  const url = `https://www.blueblocks.in/publications/${item.slug}/`;
+  const isCubeSat = item.slug === "inspace-authorization-cubesat-mission";
+
+  const baseAuthor = {
+    "@type": "Organization",
+    name: "Blue Blocks Micro Research Institute",
+    url: "https://www.blueblocks.in/",
+  };
+
+  const principalAuthor = {
+    "@type": "Person",
+    name: "Pavan Goyal",
+    jobTitle: "Principal Investigator",
+    affiliation: baseAuthor,
+  };
+
+  const scholarly = {
     "@context": "https://schema.org",
     "@type": item.kind === "patent" ? "CreativeWork" : "ScholarlyArticle",
     headline: item.title,
+    name: item.title,
     description: item.summary,
-    url: `#/publications/${item.slug}/`,
-    publisher: { "@id": "##organization" },
+    url,
+    image: item.image
+      ? `https://www.blueblocks.in${item.image}`
+      : undefined,
+    author: principalAuthor,
+    publisher: {
+      "@type": "Organization",
+      "@id": "https://www.blueblocks.in/#organization",
+      name: "Blue Blocks Micro Research Institute",
+    },
+    datePublished: "2025-01-01",
+    inLanguage: "en",
+    isAccessibleForFree: true,
+    identifier: item.slug,
   };
+
+  const schema = [scholarly];
+
+  if (isCubeSat) {
+    schema.push({
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      headline: "IN-SPACe Authorization Technical Report - Student CubeSat Mission",
+      name: "IN-SPACe Authorization Technical Report",
+      description:
+        "Technical and mission governance documentation for the Blue Blocks student CubeSat payload authorized by IN-SPACe (Indian National Space Promotion and Authorization Centre).",
+      url,
+      author: principalAuthor,
+      publisher: {
+        "@type": "Organization",
+        "@id": "https://www.blueblocks.in/#organization",
+        name: "Blue Blocks Micro Research Institute",
+      },
+      datePublished: "2025-01-01",
+      proficiencyLevel: "Expert",
+      dependencies: "PSLV launch vehicle, IN-SPACe authorization",
+      identifier: "BBMRI-INSPACe-CubeSat-2025",
+      about: [
+        { "@type": "Thing", name: "CubeSat" },
+        { "@type": "Thing", name: "IN-SPACe" },
+        { "@type": "Thing", name: "Student-led space research" },
+      ],
+    });
+  }
 
   return (
     <>

@@ -12,7 +12,8 @@
       { "label": "Programs", "href": "/programs"},
       { "label": "Innovations", "href": "/innovation"},
       { "label": "Blog","href": "/blog/"},
-      { "label": "Contact", "href": "/contact-us"}
+      { "label": "Contact", "href": "/contact-us"},
+      { "label": "Careers", "href": "/careers/"}
     ]
   },
   "megaMenu": {
@@ -2448,6 +2449,54 @@
           }
         },
         {
+          "type": "verifiedAchievements",
+          "props": {
+            "title": "A Research Institution, Not Just a School",
+            "description": "Blue Blocks operates as the only AMI-certified Montessori school in India backed by a registered Micro Research Institute (Blue Blocks Micro Research Institute). Our work is grounded in measurable outcomes, not marketing claims.",
+            "items": [
+              {
+                "image": "/achievements/patents.webp",
+                "imageAlt": "17-year longitudinal dataset",
+                "title": "17-Year Longitudinal Dataset",
+                "text": "Continuous observational research on child development since 2009 across 847 cumulative students within authentic Montessori environments. The dataset informs every pedagogical decision at Blue Blocks.",
+                "bg": "#F7E28D"
+              },
+              {
+                "image": "/achievements/world-stage.webp",
+                "imageAlt": "Times of India recognition",
+                "title": "Times of India - Best Pre-School (3 Consecutive Years)",
+                "text": "Recognised by the Times of India as Best Pre-School in Hyderabad for three consecutive years - an independent verification of consistency, not a one-off accolade.",
+                "bg": "#78C4E5"
+              },
+              {
+                "image": "/achievements/sbb1.webp",
+                "imageAlt": "IMF Trusteeship",
+                "title": "IMF (Institutional) Trusteeship",
+                "text": "The Blue Blocks Research Institute Foundation operates under formal trusteeship to fund longitudinal child-development research, observation protocols, and AMI-aligned innovation pedagogy.",
+                "bg": "#F6A894"
+              }
+            ]
+          }
+        },
+        {
+          "type": "imageText",
+          "props": {
+            "bgClass": "bg-iceSoft",
+            "title": "The Blue Blocks Micro Research Institute Mission",
+            "text": [
+              "Education should be a science, not an assumption. The Blue Blocks Micro Research Institute (the research arm of Blue Blocks Montessori) studies how children actually learn across a 17-year longitudinal observational dataset.",
+              "We do not experiment on children; we learn from them. Observation is passive, invisible, and consent-based. Findings inform classroom design, guide training, and the four-plane developmental architecture from 15 months through Cambridge IGCSE.",
+              "Outputs include peer-published papers, observation protocols, the IN-SPACe-authorised student CubeSat mission, and the longitudinal dataset that underpins our continuum (0-18)."
+            ],
+            "imageUrl": "/about-us/the-capable-human.webp",
+            "align": "left",
+            "imageSide": "right",
+            "imageClassName": "",
+            "imageFit": "contain",
+            "imageAspect": "aspect-[16/10]"
+          }
+        },
+        {
           "type": "faq",
           "props": {
             "bg": "#F3E3CF",
@@ -4216,7 +4265,7 @@
             "props": {
               "eyebrow": "THE ADOLESCENT COMMUNITY",
               "title": "The Adolescent Community",
-              "subTitle": "Adolescent Programme (Ages 12â€“18 | Grades 7â€“12)",
+              "subTitle": "Adolescent Programme (Ages 12â€“18 | Grades 7â€“10)",
               "text": "The Social Self Awakens",
               "imageUrl": "",
               "imageAlt": "",
@@ -4654,7 +4703,7 @@
         {
           "@context": "https://schema.org",
           "@type": "Course", "name": "Adolescent Programme",
-          "alternateName": "Grades 7-12",
+          "alternateName": "Grades 7-10",
           "description": "Montessori Adolescent for ages 12-18. Micro-Economy, Innovation Labs, Cambridge/IGCSE. Development of deep conscience, social consciousness, cosmic responsibility.",
           "provider": {
             "@type": "EducationalOrganization",
@@ -4842,7 +4891,7 @@
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Admissions",  "url": "#/admissions/",
+          "@type": "WebPage", "name": "Admissions",  "url": "https://www.blueblocks.in/admissions/",
           "description": "At Blue Blocks, we do not admit a student; we admit a family. Education is not a transaction where you pay fees and we deliver a product. It is a 15-year collab",
           "isPartOf": {
             "@id": "##website"
@@ -4856,13 +4905,75 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://www.blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Admissions",
-              "item": "#/admissions/"
+              "item": "https://www.blueblocks.in/admissions/"
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the admissions process at Blue Blocks Montessori?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Admission begins with a parent enquiry, followed by a parent orientation workshop, a campus visit and observation, and a meeting with our pedagogical team. We admit families, not just students - because Montessori only works when home and school share the same understanding of the child."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the right age to enrol my child?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We accept children from 15 months (Toddler Community) through to 18 years (Adolescent Programme / Cambridge IGCSE). The earlier the start, the deeper the benefit of the absorbent mind, but we welcome admissions across all four planes of development."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you require prior Montessori experience?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. We welcome students at all entry points. Children new to Montessori often adapt quickly because the approach aligns with the natural drive for meaningful, self-directed work. We provide transition support and observe each student's adjustment carefully."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Blue Blocks AMI certified?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Blue Blocks is one of the few schools in India offering AMI-certified Montessori across all four planes of development (0-3, 3-6, 6-12, 12-18). Our founder Pavan Goyal holds all four AMI Diplomas - the complete Montessori continuum."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you follow Cambridge IGCSE?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Our Elementary and Adolescent programmes are integrated with Cambridge International curriculum, including Cambridge Primary and Cambridge IGCSE. Students transition seamlessly from Montessori work-cycles to Cambridge examinations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What documents are required for admission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We require a completed enquiry form, a copy of the child's birth certificate, recent photographs, vaccination records, and prior school records (if applicable). The detailed checklist is shared after the initial parent orientation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I book a campus visit?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can book a campus visit through the contact form on our website, by calling +91 9000955050, or by writing to info@blueblocks.in. Visits include observation of a working classroom and a meeting with the pedagogical team."
+              }
             }
           ]
         }
@@ -5022,6 +5133,79 @@
               "item": "#/contact-us/"
             }
           ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "EducationalOrganization",
+          "@id": "https://www.blueblocks.in/contact-us/#gachibowli-campus",
+          "name": "Blue Blocks Montessori - Gachibowli Campus",
+          "alternateName": "Blue Blocks Preschool",
+          "url": "https://www.blueblocks.in/contact-us/",
+          "telephone": "+91-9000955050",
+          "email": "info@blueblocks.in",
+          "image": "https://www.blueblocks.in/images/campus-gachibowli.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "MIG 3, Lane opposite to DLF, APHB Colony, Gachibowli",
+            "addressLocality": "Hyderabad",
+            "addressRegion": "Telangana",
+            "postalCode": "500032",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 17.4506609,
+            "longitude": 78.3562301
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "08:30",
+              "closes": "16:30"
+            }
+          ],
+          "hasMap": "https://maps.google.com/?cid=2096929938310545200",
+          "areaServed": "Hyderabad",
+          "parentOrganization": {
+            "@id": "https://www.blueblocks.in/#organization"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "EducationalOrganization",
+          "@id": "https://www.blueblocks.in/contact-us/#tellapur-campus",
+          "name": "Blue Blocks Montessori - Tellapur Campus",
+          "alternateName": "Blue Blocks Complete School",
+          "url": "https://www.blueblocks.in/contact-us/",
+          "telephone": "+91-9000955050",
+          "email": "info@blueblocks.in",
+          "image": "https://www.blueblocks.in/images/campus-tellapur.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Osman Nagar Road, Tellapur",
+            "addressLocality": "Hyderabad",
+            "addressRegion": "Telangana",
+            "postalCode": "502032",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 17.4858,
+            "longitude": 78.2862
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "08:30",
+              "closes": "16:30"
+            }
+          ],
+          "areaServed": "Hyderabad",
+          "parentOrganization": {
+            "@id": "https://www.blueblocks.in/#organization"
+          }
         }
       ]
     },
@@ -5961,7 +6145,7 @@
             "text": "Curiosity, observation, and engineering combine into real missions with external mentorship.",
             "cta": {
               "label": "Explore CubeSat Mission",
-              "href": "/research-institute"
+              "href": "/innovation/cubesat-mission/"
             },
             "smallImages": [
               "/innovation/innov_collage-1.webp",
@@ -9541,7 +9725,7 @@
     "adolescentSocialNewbornPaper":{
       "seo": {
         "title": "Paper 8: The Social Newborn | Blue Blocks",
-        "description": "Developmental Foundations of the Adolescent Community â€” Adolescent Programme (Ages 12â€“18 | Grades 7â€“12) | Third Plane of Development."
+        "description": "Developmental Foundations of the Adolescent Community â€” Adolescent Programme (Ages 12â€“18 | Grades 7â€“10) | Third Plane of Development."
       },
       "sections": [
         {
@@ -9581,7 +9765,7 @@
             "effectiveDate": "24/02/2026",
             "intro": [
               "<b>PAPER 8</b>",
-              "<b>Adolescent Programme (Ages 12â€“18 | Grades 7â€“12) | Third Plane of Development</b>",
+              "<b>Adolescent Programme (Ages 12â€“18 | Grades 7â€“10) | Third Plane of Development</b>",
               "<b>How to read this paper:</b> This document completes the developmental sequence established in Papers 2, 4, and 6. Together, the eight papers constitute a complete account of the first three Planes of Development at Blue Blocks. Terminology follows the AMI training tradition. Contemporary neuroscience and developmental psychology references are included where they corroborate Montessori's original observations."
             ],
             "sections": [
@@ -9827,7 +10011,7 @@
                 "paragraphs3": [
                   "<b>Blue Blocks Montessori</b>",
                   "Hyderabad, India",
-                  "Adolescent Programme | Ages 12â€“18 | Grades 7â€“12"
+                  "Adolescent Programme | Ages 12â€“18 | Grades 7â€“10"
                 ]
               }
             ]

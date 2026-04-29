@@ -88,20 +88,32 @@ export default function FounderProfilePage({ founder }) {
                     {founder?.name}
                   </h1>
                   {founder?.bio ? (
-                    <p className="mt-4 text-sm leading-7 text-slate-700">{founder.bio}</p>
+                    <p
+                      className="mt-4 text-sm leading-7 text-slate-700"
+                      dangerouslySetInnerHTML={{ __html: founder.bio }}
+                    />
                   ) : null}
 
                   <div className="mt-6 space-y-4 text-sm leading-7 text-slate-700">
                     {(founder?.modal?.content || [
                       "TODO: Founder long-form profile content will be added here.",
                     ]).map((entry, idx) => {
-                      if (typeof entry === "string") return <p key={idx}>{entry}</p>;
+                      if (typeof entry === "string") {
+                        return (
+                          <p
+                            key={idx}
+                            dangerouslySetInnerHTML={{ __html: entry }}
+                          />
+                        );
+                      }
 
                       if (entry && typeof entry === "object") {
                         return (
                           <p key={idx}>
                             {entry.label ? <strong>{entry.label}: </strong> : null}
-                            {entry.text || ""}
+                            <span
+                              dangerouslySetInnerHTML={{ __html: entry.text || "" }}
+                            />
                           </p>
                         );
                       }

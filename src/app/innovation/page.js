@@ -4,6 +4,10 @@ import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
 
+export const metadata = {
+  alternates: { canonical: "https://www.blueblocks.in/innovation/" },
+};
+
 export default function InnovationIndexPage() {
   const page = siteData?.pages?.innovation || {};
   const sections = Array.isArray(page?.sections) ? page.sections : [];

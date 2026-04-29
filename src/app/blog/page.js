@@ -7,11 +7,11 @@ export const metadata = {
   description:
     "Embedded Blue Blocks blog view.",
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
   alternates: {
-    canonical: "https://blueblocks.in/blog/",
+    canonical: "https://www.blueblocks.in/blog/",
   },
 };
 

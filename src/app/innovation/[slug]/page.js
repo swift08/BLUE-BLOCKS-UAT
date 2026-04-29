@@ -14,6 +14,15 @@ export function generateStaticParams() {
   return Object.keys(map).map((slug) => ({ slug }));
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  return {
+    alternates: {
+      canonical: `https://www.blueblocks.in/innovation/${slug}/`,
+    },
+  };
+}
+
 export default async function InnovationDetailPage({ params }) {
   const { slug } = await params;
   const map = getInnovationMap();

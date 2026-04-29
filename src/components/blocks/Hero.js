@@ -213,6 +213,7 @@ function HeroCarousel({
             overlay={slide.overlay}
             showArcs={slide.showArcs}
             topSpacing={slide.topSpacing}
+            headingLevel={idx === 0 ? "h1" : "h2"}
             snapStart
           />
         ))}
@@ -277,7 +278,9 @@ function HeroPane({
   topSpacing,
   className = "",
   snapStart = false,
+  headingLevel = "h1",
 }) {
+  const HeadingTag = headingLevel === "h2" ? "h2" : "h1";
   const resolvedBg = resolveBg(sectionBg);
   const bgStyle = bgImageUrl ? { backgroundImage: `url(${bgImageUrl})` } : undefined;
 
@@ -334,12 +337,12 @@ function HeroPane({
             </span>
           ) : null}
 
-          <h1 className={[
+          <HeadingTag className={[
             align === "center" ? "bb-hero-title bb-hero-title--center" : "bb-hero-title",
             tag ? "mt-5" : "",
           ].join(" ")}>
             {renderMultiline(title)}
-          </h1>
+          </HeadingTag>
 
           {subtitle ? (
             <p className={align === "center" ? "bb-hero-subtitle bb-hero-subtitle--center" : "bb-hero-subtitle"}>

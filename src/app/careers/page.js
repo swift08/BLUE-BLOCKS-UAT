@@ -4,6 +4,14 @@ import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
 
+export const metadata = {
+  title: "Careers at Blue Blocks Montessori | Open Roles in Hyderabad",
+  description:
+    "Join Blue Blocks Montessori in Hyderabad. View open roles for AMI-certified guides, educators, innovation lab leads, and operations staff across our Gachibowli and Tellapur campuses.",
+  alternates: { canonical: "https://www.blueblocks.in/careers/" },
+  robots: { index: true, follow: true },
+};
+
 export default function CareersPage() {
   const page = siteData?.pages?.careers || {};
   const baseSections = Array.isArray(page?.sections) ? page.sections : [];
