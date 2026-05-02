@@ -1,4 +1,4 @@
-﻿import siteData from "@/data/site";
+import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import JsonLd from "@/components/seo/JsonLd";
 
@@ -402,9 +402,12 @@ const structuredData = {
 const HOME_HERO_SLIDES = [
   {
     id: "home-hero-1",
-    title: "AMI Montessori Research Institution: Birth to 18, One Continuous Arc",
+    tag: "INSTITUTION / HERO",
+    title: "The Child,\nUnderstood",
     subtitle:
-      "Blue Blocks is the only AMI-certified Montessori school in India backed by a Micro Research Institute (BBMRI) - a 17-year longitudinal observation of child development from 15 months to Cambridge IGCSE.",
+      "We don't teach. We observe. Then we build the precise environment your child needs to construct themselves.",
+    note:
+      "At Blue Blocks, we do not view children as empty vessels to be filled. We view them as complete human beings unfolding. While most schools rush to 'teach,' we take the time to observe. By understanding your child's natural development—without interference or pressure—we create the precise environment they need to construct themselves.",
     primaryCta: { label: "Explore Our Programmes", href: "/programs/" },
     secondaryCta: { label: "Visit the Campus", href: "/campus/" },
     bgImageUrl: "/home/homepage-banner-01.webp",
