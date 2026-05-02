@@ -402,12 +402,9 @@ const structuredData = {
 const HOME_HERO_SLIDES = [
   {
     id: "home-hero-1",
-    tag: "INSTITUTION / HERO",
     title: "The Child,\nUnderstood",
     subtitle:
       "We don't teach. We observe. Then we build the precise environment your child needs to construct themselves.",
-    note:
-      "At Blue Blocks, we do not view children as empty vessels to be filled. We view them as complete human beings unfolding. While most schools rush to 'teach,' we take the time to observe. By understanding your child's natural development—without interference or pressure—we create the precise environment they need to construct themselves.",
     primaryCta: { label: "Explore Our Programmes", href: "/programs/" },
     secondaryCta: { label: "Visit the Campus", href: "/campus/" },
     bgImageUrl: "/home/homepage-banner-01.webp",
