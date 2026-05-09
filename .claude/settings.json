@@ -7,7 +7,9 @@
       "Bash(node --check src/app/publications/[slug]/page.js)",
       "Bash(node --check src/app/page.js)",
       "Bash(node --check src/components/blocks/Hero.js)",
-      "Bash(timeout 180 npx next build)"
+      "Bash(timeout 180 npx next build)",
+      "Bash(npm run *)",
+      "Bash(npm install *)"
     ]
   }
 }
