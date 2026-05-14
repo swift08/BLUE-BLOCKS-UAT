@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /_next/
-Disallow: /private/
+Disallow: /admin/
 
 Sitemap: https://blueblocks.in/sitemap.xml
