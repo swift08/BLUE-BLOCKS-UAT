@@ -42,3 +42,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Claude-generated work files
+.claude-work/
+
+# Standardized data file (auto-generated, not for version control)
+src/data/site.standardized.json
