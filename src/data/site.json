@@ -8706,7 +8706,6 @@
               {
                 "title": "Octagonal Classrooms",
                 "image": "/infra/octagonal-1.webp",
-                "href": "/infrastructure/octagonal-classrooms",
                 "overlay": "bg-black/20",
                 "readMoreLabel": "Read More",
                 "modal": {
@@ -8724,7 +8723,6 @@
               {
                 "title": "The Wooden\nStaircase &\nTactile Design",
                 "image": "/infra/wooden-staircase.webp",
-                "href": "/infrastructure/wooden-staircase",
                 "overlay": "bg-black/20",
                 "readMoreLabel": "Read More",
                 "modal": {
@@ -8742,7 +8740,6 @@
               {
                 "title": "The Innovation\nInfrastructure\n(0â€“18)",
                 "image": "/infra/innovation.webp",
-                "href": "/infrastructure/innovation-infrastructure",
                 "overlay": "bg-black/20",
                 "readMoreLabel": "Read More",
                 "modal": {
@@ -8762,7 +8759,6 @@
               {
                 "title": "The Kinaesthetic\nLandscape",
                 "image": "/infra/octagonal-2.webp",
-                "href": "/infrastructure/kinaesthetic-landscape",
                 "overlay": "bg-black/20",
                 "readMoreLabel": "Read More",
                 "modal": {
@@ -8780,7 +8776,6 @@
               {
                 "title": "Security\n& Trust",
                 "image": "/infra/octagonal-3.webp",
-                "href": "/infrastructure/security-trust",
                 "overlay": "bg-black/20",
                 "readMoreLabel": "Read More",
                 "modal": {

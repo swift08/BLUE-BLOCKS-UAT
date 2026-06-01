@@ -163,50 +163,13 @@ RewriteRule ^programs/nursery-school/programs/?$ https://blueblocks.in/programs/
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^founders/pavan-goyal/?$ https://blueblocks.in/about-us/founders/pavan-goyal/ [R=301,L,NE]
 
+# All /team/* URLs -> /about-us/ (deleted team-member pages + stale team image URLs).
+# The !-f / !-d guard keeps real team images under /team/ serving (200); only
+# non-existent team URLs redirect. Covers every current AND future team 404 in one rule.
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/anurag-c-j/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/barsha-mishra/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/bharrgavi-bandreddi/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/chandini-priya-allu/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/j-h-dasan-perumallapalli/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/kiranmayee-gorthi/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/kriti-khare/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/mridula-chunduri/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/narmada-gattu/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/nidhi-vora/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/protiti-mookherjee/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/shibani-patel/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/sravani-ponnala/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/telugu-someshwari-devi/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/zabin-veerani/?$ https://blueblocks.in/about-us/ [R=301,L,NE]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^team/.+$ https://blueblocks.in/about-us/ [R=301,L,NE]
 
 # Section 5 - Broken image/asset URLs being crawled by Google
 # Drone lab images
@@ -266,12 +229,7 @@ RewriteRule ^programs/the-elementary/metamorphosis\.webp$ https://blueblocks.in/
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^programs/the-elementary/tribe\.webp$ https://blueblocks.in/programs/primary-school-elementary/ [R=301,L,NE]
 
-# Team member image URLs
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/krishnaveni\.webp$ https://blueblocks.in/about-us/ [R=301,L,NE]
-
-RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^team/krithi\.webp$ https://blueblocks.in/about-us/ [R=301,L,NE]
+# (Team member image URLs are now covered by the guarded ^team/.+$ rule in Section 4.)
 
 # Logo image URLs (malformed -N suffix from old site, still crawled by Google)
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
@@ -317,6 +275,20 @@ RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^blog/.+$ https://blueblocks.in/blog/ [R=301,L,NE]
+
+# Section 9a - Noindex .md publication endpoints (X-Robots-Tag, since output:export
+# ignores Next.js headers() config — must be set at the Apache layer)
+<FilesMatch "\.md$">
+  Header set X-Robots-Tag "noindex, follow"
+</FilesMatch>
+
+# Section 9b - Infrastructure cards (modal-only on /campus; no real /infrastructure route)
+# The hexaInfrastructure cards on /campus open modals, not links; these slugs are stale
+# crawl artifacts. Send them to /campus, where that content actually lives.
+RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^infrastructure/.+$ https://blueblocks.in/campus/ [R=301,L,NE]
 
 # Catch-all: any remaining .shtml URL not handled above -> homepage
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]

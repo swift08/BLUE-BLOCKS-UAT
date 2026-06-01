@@ -42,10 +42,7 @@ function getRoutes({ researchOutputs = [] }) {
     "/llms-full.txt",
   ];
 
-  const publicationRoutes = researchOutputs.flatMap((item) => [
-    `/publications/${item.slug}`,
-    `/publications/${item.slug}/${item.slug}.md`,
-  ]);
+  const publicationRoutes = researchOutputs.map((item) => `/publications/${item.slug}`);
 
   const programDetails = Object.keys(siteData?.pages?.programDetails || {})
     .filter((key) => !["breadcrumbs", "schema", "toddlerDetail"].includes(key))
