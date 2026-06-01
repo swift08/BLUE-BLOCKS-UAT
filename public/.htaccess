@@ -129,6 +129,12 @@ RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^secondary-school\.shtml/1000$ https://blueblocks.in/programs/secondary-school/ [R=301,L,NE]
 
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
+RewriteRule ^secondary-school\.shtml/privacy-policy\.shtml$ https://blueblocks.in/privacy-policy/ [R=301,L,NE]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
+RewriteRule ^secondary-school\.shtml/toddler-playgroup\.shtml$ https://blueblocks.in/programs/playgroup/ [R=301,L,NE]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^Innovation/CubeSat-Mission/space-program\.shtml$ https://blueblocks.in/innovation/space-lab/ [R=301,L,NE]
 
 # Section 3 - URL path fixes & slug changes
