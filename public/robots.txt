@@ -8,8 +8,8 @@ Disallow: /blog/wp-*.php
 Disallow: /blog/wp-content/plugins/
 Disallow: /blog/wp-includes/
 Disallow: /_next/static/media/
-Disallow: /logos/.png-
-Disallow: /innovation/drone/.webp-
+Disallow: /logos/*.png-*
+Disallow: /innovation/drone/*.webp-*
 Disallow: /favicon.ico
 Disallow: /?ref=
 Disallow: /public/

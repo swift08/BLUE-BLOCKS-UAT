@@ -282,12 +282,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^blog/.+$ https://blueblocks.in/blog/ [R=301,L,NE]
 
-# Section 9a - Noindex .md publication endpoints (X-Robots-Tag, since output:export
-# ignores Next.js headers() config — must be set at the Apache layer)
-<FilesMatch "\.md$">
-  Header set X-Robots-Tag "noindex, follow"
-</FilesMatch>
-
 # Section 9b - Infrastructure cards (modal-only on /campus; no real /infrastructure route)
 # The hexaInfrastructure cards on /campus open modals, not links; these slugs are stale
 # crawl artifacts. Send them to /campus, where that content actually lives.
