@@ -5,8 +5,12 @@ const nextConfig = {
   trailingSlash: true,
   basePath: "",
   assetPrefix: "",
+  poweredByHeader: false,
   images: {
     unoptimized: true,
+  },
+  experimental: {
+    optimizePackageImports: ["framer-motion"],
   },
 };
 

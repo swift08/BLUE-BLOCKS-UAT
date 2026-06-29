@@ -47,7 +47,7 @@ export default function ImageText({
 
   const imgInnerClass = isCard
     ? `${imageAspect} relative`
-    : "aspect-[16/10] flex items-center justify-center text-sm text-slate-500";
+    : "aspect-[16/10] relative overflow-hidden";
 
   const imgFitClass = imageFit === "cover" ? "object-cover" : "object-contain";
 
@@ -89,9 +89,9 @@ export default function ImageText({
                   <Image
                     src={imageUrl}
                     alt={title || ""}
-                    width={815}
-                    height={555}
+                    fill
                     className={imgFitClass}
+                    sizes="(min-width: 768px) 50vw, 100vw"
                   />
                 )}
               </div>

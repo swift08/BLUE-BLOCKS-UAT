@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Container from "@/components/layout/Container";
 import Link from "next/link";
+import Image from "next/image";
 import { resolveBg } from "@/lib/ui";
 import { normalizeSiteHref } from "@/lib/links";
 
@@ -67,6 +68,7 @@ export default function Hero({
       showArcs={showArcs}
       topSpacing={topSpacing}
       className={className}
+      priority
     />
   );
 }
@@ -214,6 +216,7 @@ function HeroCarousel({
             showArcs={slide.showArcs}
             topSpacing={slide.topSpacing}
             headingLevel={idx === 0 ? "h1" : "h2"}
+            priority={idx === 0}
             snapStart
           />
         ))}
@@ -279,10 +282,10 @@ function HeroPane({
   className = "",
   snapStart = false,
   headingLevel = "h1",
+  priority = false,
 }) {
   const HeadingTag = headingLevel === "h2" ? "h2" : "h1";
   const resolvedBg = resolveBg(sectionBg);
-  const bgStyle = bgImageUrl ? { backgroundImage: `url(${bgImageUrl})` } : undefined;
 
   const minH =
     height === "innovation"
@@ -299,7 +302,7 @@ function HeroPane({
 
   return (
     <div
-      style={{ ...(resolvedBg.style || {}), ...(bgStyle || {}) }}
+      style={resolvedBg.style || undefined}
       className={[
         "relative bg-cover bg-center text-white",
         resolvedBg.className,
@@ -314,6 +317,17 @@ function HeroPane({
         .filter(Boolean)
         .join(" ")}
     >
+      {bgImageUrl ? (
+        <Image
+          src={bgImageUrl}
+          alt=""
+          fill
+          priority={priority}
+          className="object-cover object-center -z-[1]"
+          sizes="100vw"
+          quality={85}
+        />
+      ) : null}
       {showArcs ? (
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute right-0 bottom-0 h-[72%] w-[46%] rounded-tl-[999px] bg-sky-300/60" />

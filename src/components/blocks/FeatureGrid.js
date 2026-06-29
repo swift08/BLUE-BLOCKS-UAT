@@ -61,13 +61,15 @@ export default function FeatureGrid({
               </div>
 
               {it.icon ? (
-                <Image
-                  src={it.icon}
-                  alt={it.title || ""}
-                  width={100}
-                  height={100}
-                  className="object-contain"
-                />
+                <div style={{ width: 100, height: 100, position: "relative", flexShrink: 0 }}>
+                  <Image
+                    src={it.icon}
+                    alt={it.title || ""}
+                    fill
+                    className="object-contain"
+                    sizes="100px"
+                  />
+                </div>
               ) : null}
 
               <RichTextContent as="div" value={it.title} className="bb-text font-semibold mt-4" />

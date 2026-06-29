@@ -13,7 +13,5 @@ Disallow: /innovation/drone/*.webp-*
 Disallow: /favicon.ico
 Disallow: /?ref=
 Disallow: /public/
-Disallow: /$
-Disallow: /&
 
 Sitemap: https://blueblocks.in/sitemap.xml

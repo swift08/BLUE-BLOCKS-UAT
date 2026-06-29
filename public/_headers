@@ -1,0 +1,56 @@
+## HTML pages — always revalidate
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+## Next.js hashed JS/CSS bundles — immutable 1 year
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+## Images — 1 year
+/home/*
+  Cache-Control: public, max-age=31536000, immutable
+/home-01/*
+  Cache-Control: public, max-age=31536000, immutable
+/footer/*
+  Cache-Control: public, max-age=31536000, immutable
+/icon/*
+  Cache-Control: public, max-age=31536000, immutable
+/campus/*
+  Cache-Control: public, max-age=31536000, immutable
+/campus-01/*
+  Cache-Control: public, max-age=31536000, immutable
+/innovation/*
+  Cache-Control: public, max-age=31536000, immutable
+/innovation-01/*
+  Cache-Control: public, max-age=31536000, immutable
+/research/*
+  Cache-Control: public, max-age=31536000, immutable
+/about-us/*
+  Cache-Control: public, max-age=31536000, immutable
+/parents/*
+  Cache-Control: public, max-age=31536000, immutable
+/programs/*
+  Cache-Control: public, max-age=31536000, immutable
+/programs-01/*
+  Cache-Control: public, max-age=31536000, immutable
+/logos/*
+  Cache-Control: public, max-age=31536000, immutable
+/achievements/*
+  Cache-Control: public, max-age=31536000, immutable
+/careers/*
+  Cache-Control: public, max-age=31536000, immutable
+/ui/*
+  Cache-Control: public, max-age=31536000, immutable
+
+## Fonts (served via Next.js /_next/static/media)
+## Already covered by /_next/static/* above
+
+## Robots and sitemap — short cache
+/robots.txt
+  Cache-Control: public, max-age=86400
+/sitemap.xml
+  Cache-Control: public, max-age=86400

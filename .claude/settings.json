@@ -11,7 +11,11 @@
       "Bash(npm run *)",
       "Bash(npm install *)",
       "Bash(git -C d:\\\\projects\\\\greensquare log --all --oneline -- src/components/blocks/BenchmarkBanner.js)",
-      "Bash(grep -v \"Using \\\\`<img\\\\`\")"
+      "Bash(grep -v \"Using \\\\`<img\\\\`\")",
+      "Bash(node -e \"const s = require\\('./src/data/site.json'\\); console.log\\(JSON.stringify\\(s.footer?.socials, null, 2\\)\\)\")",
+      "Bash(npx next *)",
+      "Bash(node -e \"const s = require\\('./src/data/site.json'\\); const g = s.footer?.gallery; console.log\\('Gallery:', JSON.stringify\\(g\\)\\)\")",
+      "Bash(node -e \"const s = require\\('./src/data/site.json'\\); console.log\\('logo:', s.site?.logo\\)\")"
     ]
   }
 }
