@@ -80,6 +80,7 @@ export default function CtaBanner({
                   alt={imageAlt || ""}
                   width={Number(imageWidth) || 566}
                   height={Number(imageHeight) || 506}
+                  style={{ height: "auto" }}
                   className={`object-contain rounded-xl absolute ${imagePositionTopRight}`}
                 />
               </div>

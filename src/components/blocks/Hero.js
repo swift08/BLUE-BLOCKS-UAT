@@ -328,7 +328,6 @@ function HeroPane({
           priority={priority}
           className="object-cover object-center -z-[1]"
           sizes="100vw"
-          quality={85}
         />
       ) : null}
       {showArcs ? (

@@ -230,6 +230,7 @@ export default function Header({ variant = "dark" }) {
               alt={site.name || "Logo"}
               width={82}
               height={67}
+              style={{ height: "auto" }}
               className="object-contain"
               priority
             />

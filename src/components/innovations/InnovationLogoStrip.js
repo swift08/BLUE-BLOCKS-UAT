@@ -46,7 +46,12 @@ export default function InnovationLogoStrip({
   const resolvedSection = resolveBg(sectionBg);
 
   // allow color/alignment/padding from legacy prop, but strip typography sizing
-  const safeTitleExtras = stripTypographySizing(sectionTitleClass);
+  const hasSubtitle = text === "Media Mentions";
+  let safeTitleExtras = stripTypographySizing(sectionTitleClass);
+  if (hasSubtitle) {
+    // Strip padding bottom from title to avoid double spacing
+    safeTitleExtras = safeTitleExtras.replace(/\b(pb-\d+|pb-\[[^\]]+\])\b/g, "");
+  }
 
   return (
     <section
@@ -58,26 +63,45 @@ export default function InnovationLogoStrip({
           <Container>
             <div className={["flex flex-col", sectionClass].filter(Boolean).join(" ")}>
               {text ? (
-                <h2 className={["bb-section-title text-center", safeTitleExtras].filter(Boolean).join(" ")}>
+                <h2 className={["bb-section-title text-center", safeTitleExtras, hasSubtitle ? "pb-2" : ""].filter(Boolean).join(" ")}>
                   {text}
                 </h2>
               ) : null}
 
+              {hasSubtitle ? (
+                <p className="text-center text-[#4F4F4F] text-base sm:text-lg font-normal pb-10 sm:pb-12">
+                  Click on any logo to read the full article
+                </p>
+              ) : null}
+
               {Array.isArray(logos) && logos.length ? (
-                <div className={logoWrapClass}>
+                <div className="grid grid-cols-2 gap-x-4 gap-y-8 place-items-center sm:flex sm:flex-row sm:flex-wrap sm:justify-center sm:items-center sm:gap-10">
                   {logos.map((logo, idx) => {
                     const href = logo?.anchorHref;
                     const Wrapper = href ? Link : "div";
-                    const logoWidth = Math.max(1, Number(logo.width) || 200);
-                    const logoHeight = Math.max(1, Number(logo.height) || 60);
+                    
+                    const isBigNews = logo?.src && logo.src.includes("Big-news-network.webp");
+                    const scale = isBigNews ? 1.6 : 0.95;
+                    
+                    const logoWidth = Math.max(1, Number(logo.width) || 200) * scale;
+                    const logoHeight = Math.max(1, Number(logo.height) || 60) * scale;
                     const imageSrc = localAssets[logo.src] || logo.src;
+
+                    // Make Big News Network even larger on mobile screen
+                    const maxWClass = isBigNews ? "max-w-[55vw]" : "max-w-[45vw]";
+                    const maxHClass = isBigNews ? "max-h-[20vw]" : "max-h-[14vw]";
 
                     return (
                       <Wrapper
                         key={idx}
                         {...(href ? { href, target: "_blank", rel: "noopener noreferrer" } : {})}
-                        className="relative block shrink-0"
-                        style={{ width: `${logoWidth}px`, height: `${logoHeight}px` }}
+                        className="relative block shrink-0 cursor-pointer p-2 rounded-xl transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 hover:bg-white/90 hover:shadow-md"
+                        style={{ 
+                          width: `var(--logo-w, ${logoWidth}px)`, 
+                          height: `var(--logo-h, ${logoHeight}px)`,
+                          "--logo-w": `${logoWidth}px`,
+                          "--logo-h": `${logoHeight}px`,
+                        }}
                         aria-label={logo?.alt || "Logo"}
                       >
                         <Image
@@ -85,8 +109,8 @@ export default function InnovationLogoStrip({
                           alt={logo.alt || ""}
                           width={logoWidth}
                           height={logoHeight}
-                          className="h-full w-full object-contain"
-                          sizes={`${logoWidth}px`}
+                          className={`h-full w-full object-contain ${maxWClass} ${maxHClass} sm:max-w-none sm:max-h-none`}
+                          sizes="(max-width: 640px) 50vw, 200px"
                         />
                       </Wrapper>
                     );
