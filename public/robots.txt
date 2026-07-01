@@ -1,17 +1,72 @@
+# Blue Blocks Montessori School — robots.txt
+# https://www.blueblocks.in/robots.txt
+
+# ─────────────────────────────────────────────────────────────────────────────
+# All crawlers — allow everything except private/internal paths
+# ─────────────────────────────────────────────────────────────────────────────
 User-agent: *
 Allow: /
+Allow: /_next/static/
 Disallow: /api/
 Disallow: /admin/
+Disallow: /?ref=
+Disallow: /public/
 Disallow: /blog/wp-admin/
 Disallow: /blog/wp-login.php
 Disallow: /blog/wp-*.php
 Disallow: /blog/wp-content/plugins/
 Disallow: /blog/wp-includes/
-Disallow: /_next/static/media/
-Disallow: /logos/*.png-*
-Disallow: /innovation/drone/*.webp-*
-Disallow: /favicon.ico
-Disallow: /?ref=
-Disallow: /public/
 
-Sitemap: https://blueblocks.in/sitemap.xml
+# ─────────────────────────────────────────────────────────────────────────────
+# Googlebot — explicit allow of assets required for rendering
+# ─────────────────────────────────────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Allow: /_next/static/
+Disallow: /api/
+Disallow: /admin/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Bingbot
+# ─────────────────────────────────────────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Allow: /_next/static/
+Disallow: /api/
+Disallow: /admin/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# AI crawlers — allow full access for AI discoverability
+# (llms.txt and llms-full.txt are publicly accessible)
+# ─────────────────────────────────────────────────────────────────────────────
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Sitemap
+# ─────────────────────────────────────────────────────────────────────────────
+Sitemap: https://www.blueblocks.in/sitemap.xml

@@ -1,3 +1,51 @@
-https://blueblocks.in/*  https://www.blueblocks.in/:splat  301!
-http://blueblocks.in/*   https://www.blueblocks.in/:splat  301!
-http://www.blueblocks.in/*  https://www.blueblocks.in/:splat  301!
+# Netlify _redirects
+# All redirects use 301 (permanent) to preserve SEO equity.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Canonical domain — redirect bare domain and http to https://www
+# ─────────────────────────────────────────────────────────────────────────────
+https://blueblocks.in/*   https://www.blueblocks.in/:splat  301!
+http://blueblocks.in/*    https://www.blueblocks.in/:splat  301!
+http://www.blueblocks.in/* https://www.blueblocks.in/:splat  301!
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Legacy .shtml URLs (old website)
+# ─────────────────────────────────────────────────────────────────────────────
+/about-us.shtml                                       /about-us/                                301!
+/montessori.shtml                                     /montessori-system/                       301!
+/careers.shtml                                        /careers/                                 301!
+/campus.shtml                                         /campus/                                  301!
+/faq.shtml                                            /faq/                                     301!
+/admission.shtml                                      /admissions/                              301!
+/programs.shtml                                       /programs/                                301!
+/innovation.shtml                                     /innovation/                              301!
+/privacy-policy.shtml                                 /privacy-policy/                          301!
+/toddler.shtml                                        /programs/playgroup/                      301!
+/self.shtml                                           /programs/nursery-school/                 301!
+/elementary.shtml                                     /programs/primary-school-elementary/      301!
+/high.shtml                                           /programs/secondary-school/               301!
+/drone-patent.shtml                                   /innovation/drone-lab/                    301!
+/space-program.shtml                                  /innovation/space-lab/                    301!
+/biomimicryhive.shtml                                 /innovation/biomimicry-hive/              301!
+/positive-parenting.shtml                             /parents/                                 301!
+/virtual-learning.shtml                               /programs/                                301!
+/videos.shtml                                         /videos/                                  301!
+/schedule-meeting-with-parent-coordinator.shtml       /contact-us/                              301!
+/schedule-meeting-with-director-elementory.shtml      /admissions/                              301!
+/index.shtml                                          /                                         301!
+/index.html                                           /                                         301!
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Old URL structure redirects
+# ─────────────────────────────────────────────────────────────────────────────
+/research/about                                       /research-institute/                      301!
+/research/patents                                     /research-institute/                      301!
+/research/sbb-1                                       /research-institute/                      301!
+/founders/pavan-goyal                                 /about-us/founders/pavan-goyal/           301!
+/founders/munira-hussain                              /about-us/founders/munira-hussain/        301!
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Legacy slug redirects
+# ─────────────────────────────────────────────────────────────────────────────
+/toddler-developmental-architecture                   /neuropsychiatry-of-toddler-plane/        301!
+/toddler-developmental-architecture/                  /neuropsychiatry-of-toddler-plane/        301!

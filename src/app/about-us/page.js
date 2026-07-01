@@ -1,9 +1,8 @@
-﻿import siteData from "@/data/site";
+import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import JsonLd from "@/components/seo/JsonLd";
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: "About Blue Blocks | AMI Montessori Since 2009 | Our Story & Mission",
   description:
     "Since 2009, Blue Blocks has stood as a sanctuary of authentic Montessori practice in Hyderabad. Founded by Pavan Goyal (all four AMI Diplomas) and Munira Hussain, offering a continuous developmental journey from infancy through adolescence.",
@@ -17,21 +16,23 @@ export const metadata = {
   ],
   robots: { index: true, follow: true },
   alternates: {
-    canonical: "https://www.blueblocks.in/about",
+    canonical: "https://www.blueblocks.in/about-us",
     languages: {
-      "en-in": "https://www.blueblocks.in/about",
-      "x-default": "https://www.blueblocks.in/about",
+      "en-in": "https://www.blueblocks.in/about-us",
+      "x-default": "https://www.blueblocks.in/about-us",
     },
   },
   openGraph: {
     type: "website",
-    url: "https://www.blueblocks.in/about",
+    url: "https://www.blueblocks.in/about-us",
     title: "About Blue Blocks | AMI Montessori Since 2009 | Our Story & Mission",
     description:
       "Since 2009, Blue Blocks has stood as a sanctuary of authentic Montessori practice in Hyderabad. Founded by Pavan Goyal (all four AMI Diplomas) and Munira Hussain, offering a continuous developmental journey from infancy through adolescence.",
     images: [
       {
         url: "https://www.blueblocks.in/images/og-about.jpg",
+        width: 1200,
+        height: 630,
         alt: "Blue Blocks founders Pavan Goyal and Munira Hussain",
       },
     ],
@@ -46,8 +47,8 @@ const structuredData = {
   "@graph": [
     {
       "@type": "AboutPage",
-      "@id": "https://www.blueblocks.in/about/#webpage",
-      url: "https://www.blueblocks.in/about",
+      "@id": "https://www.blueblocks.in/about-us/#webpage",
+      url: "https://www.blueblocks.in/about-us",
       name: "About Blue Blocks | Our Story, Founders & Mission",
       description:
         "Since 2009, Blue Blocks has stood as a sanctuary of authentic Montessori practice in Hyderabad, offering a continuous developmental journey from infancy through adolescence.",
@@ -88,7 +89,7 @@ const structuredData = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.blueblocks.in/about/#faq",
+      "@id": "https://www.blueblocks.in/about-us/#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -130,10 +131,10 @@ const structuredData = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.blueblocks.in/about/#breadcrumb",
+      "@id": "https://www.blueblocks.in/about-us/#breadcrumb",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: "https://www.blueblocks.in/" },
-        { "@type": "ListItem", position: 2, name: "About Us", item: "https://www.blueblocks.in/about" },
+        { "@type": "ListItem", position: 2, name: "About Us", item: "https://www.blueblocks.in/about-us" },
       ],
     },
   ],

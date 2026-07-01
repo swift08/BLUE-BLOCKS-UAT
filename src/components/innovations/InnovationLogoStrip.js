@@ -3,6 +3,19 @@ import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
 import Link from "next/link";
 
+import bigNewsNetwork from "@/assets/Big-news-network.webp";
+import aniNews from "@/assets/ANI news.png";
+import businessStandard from "@/assets/business-standard-logo-2.png";
+
+const localAssets = {
+  "src/assets/Big-news-network.webp": bigNewsNetwork,
+  "src/assets/ANI news.png": aniNews,
+  "src/assets/business-standard-logo-2.png": businessStandard,
+  "/src/assets/Big-news-network.webp": bigNewsNetwork,
+  "/src/assets/ANI news.png": aniNews,
+  "/src/assets/business-standard-logo-2.png": businessStandard,
+};
+
 function stripTypographySizing(className = "") {
   // remove common Tailwind typography sizing that breaks global consistency
   return className
@@ -57,17 +70,18 @@ export default function InnovationLogoStrip({
                     const Wrapper = href ? Link : "div";
                     const logoWidth = Math.max(1, Number(logo.width) || 200);
                     const logoHeight = Math.max(1, Number(logo.height) || 60);
+                    const imageSrc = localAssets[logo.src] || logo.src;
 
                     return (
                       <Wrapper
                         key={idx}
-                        {...(href ? { href } : {})}
+                        {...(href ? { href, target: "_blank", rel: "noopener noreferrer" } : {})}
                         className="relative block shrink-0"
                         style={{ width: `${logoWidth}px`, height: `${logoHeight}px` }}
                         aria-label={logo?.alt || "Logo"}
                       >
                         <Image
-                          src={logo.src}
+                          src={imageSrc}
                           alt={logo.alt || ""}
                           width={logoWidth}
                           height={logoHeight}

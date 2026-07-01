@@ -10,8 +10,10 @@ export default function InnovationContactSplit({ image, title, form }) {
             <div className="relative overflow-hidden rounded-3xl bg-slate-100 aspect-[16/10] lg:h-full lg:aspect-auto">
               <Image
                 src={image}
-                alt=""
+                alt={title ? `${title} — Blue Blocks Innovation` : "Blue Blocks Innovation contact section"}
                 fill
+                loading="lazy"
+                decoding="async"
                 className="object-cover"
                 sizes="(min-width: 1024px) 60vw, 100vw"
               />

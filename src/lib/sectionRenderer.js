@@ -1,66 +1,99 @@
+/**
+ * sectionRenderer.js — Data-driven section renderer.
+ *
+ * Strategy:
+ *   - Above-the-fold sections (Hero, PageHero) use static imports for LCP.
+ *   - All other sections use next/dynamic with ssr:true to enable code-splitting.
+ *     This creates separate JS chunks per section group, reducing the initial
+ *     bundle downloaded on every page.
+ */
+
+import dynamic from "next/dynamic";
+
+// ─────────────────────────────────────────────────────────────────────────────
+// STATIC imports — critical above-the-fold sections (affect LCP)
+// ─────────────────────────────────────────────────────────────────────────────
 import Hero from "@/components/blocks/Hero";
-import ImageText from "@/components/blocks/ImageText";
-import JourneyCards from "@/components/blocks/JourneyCards";
-import FeatureGrid from "@/components/blocks/FeatureGrid";
-import Insights from "@/components/blocks/Insights";
-import RecognizedBy from "@/components/blocks/RecognizedBy";
-import FAQAccordion from "@/components/blocks/FAQAccordion";
-import CtaBanner from "@/components/blocks/CtaBanner";
-
 import PageHero from "@/components/blocks/PageHero";
-import ContactDetails from "@/components/blocks/ContactDetails";
-import LocationsGrid from "@/components/blocks/LocationsGrid";
-import PositionsOpen from "@/components/blocks/PositionsOpen";
 
-import AdmissionsIntro from "@/components/blocks/AdmissionsIntro";
-import AdmissionsJourney from "@/components/blocks/AdmissionsJourney";
+// ─────────────────────────────────────────────────────────────────────────────
+// DYNAMIC imports — below-the-fold sections (code-split into separate chunks)
+// ─────────────────────────────────────────────────────────────────────────────
 
-import ParentsBooks from "@/components/parents/ParentsBooks";
-import InsightsCarousel from "@/components/parents/InsightsCarousel";
-import TabbedFaq from "@/components/parents/TabbedFaq";
+// Home page sections
+const ImageText = dynamic(() => import("@/components/blocks/ImageText"), { ssr: true });
+const JourneyCards = dynamic(() => import("@/components/blocks/JourneyCards"), { ssr: true });
+const FeatureGrid = dynamic(() => import("@/components/blocks/FeatureGrid"), { ssr: true });
+const Insights = dynamic(() => import("@/components/blocks/Insights"), { ssr: true });
+const RecognizedBy = dynamic(() => import("@/components/blocks/RecognizedBy"), { ssr: true });
+const FAQAccordion = dynamic(() => import("@/components/blocks/FAQAccordion"), { ssr: true });
+const CtaBanner = dynamic(() => import("@/components/blocks/CtaBanner"), { ssr: true });
 
-import ResearchHero from "@/components/research/ResearchHero";
-import ResearchMission from "@/components/research/ResearchMission";
-import MethodFramework from "@/components/research/MethodFramework";
-import ResearchStats from "@/components/research/ResearchStats";
-import OutcomesPatents from "@/components/research/OutcomesPatents";
-import PublicationsGrid from "@/components/research/PublicationsGrid";
-import PartnersStrip from "@/components/research/PartnersStrip";
-import CouncilCarousel from "@/components/research/CouncilCarousel";
-import EthicsGovernance from "@/components/research/EthicsGovernance";
+// Contact / Careers
+const ContactDetails = dynamic(() => import("@/components/blocks/ContactDetails"), { ssr: true });
+const LocationsGrid = dynamic(() => import("@/components/blocks/LocationsGrid"), { ssr: true });
+const PositionsOpen = dynamic(() => import("@/components/blocks/PositionsOpen"), { ssr: true });
 
-import InnovationAgeCards from "@/components/innovations/InnovationAgeCards";
-import InnovationLogoStrip from "@/components/innovations/InnovationLogoStrip";
-import InnovationHabitSplit from "@/components/innovations/InnovationHabitSplit";
-import MontessoriToMars from "@/components/innovations/MontessoriToMars";
-import BillionYears from "@/components/innovations/BillionYears";
-import HighStakes from "@/components/innovations/HighStakes";
-import InnovationGallery from "@/components/innovations/InnovationGallery";
-import ProgramIntroSplit from "@/components/blocks/ProgramIntroSplit";
+// Admissions
+const AdmissionsIntro = dynamic(() => import("@/components/blocks/AdmissionsIntro"), { ssr: true });
+const AdmissionsJourney = dynamic(() => import("@/components/blocks/AdmissionsJourney"), { ssr: true });
 
-import CardsGridSection from "@/components/research/CardsGridSection";
+// Parents
+const ParentsBooks = dynamic(() => import("@/components/parents/ParentsBooks"), { ssr: true });
+const InsightsCarousel = dynamic(() => import("@/components/parents/InsightsCarousel"), { ssr: true });
+const TabbedFaq = dynamic(() => import("@/components/parents/TabbedFaq"), { ssr: true });
 
-import AcademicsIntro from "@/components/blocks/AcademicsIntro";
-import EducationAidToLife from "@/components/blocks/EducationAidToLife";
-import ProgramsGrid from "@/components/blocks/ProgramsGrid";
+// Research Institute
+const ResearchHero = dynamic(() => import("@/components/research/ResearchHero"), { ssr: true });
+const ResearchMission = dynamic(() => import("@/components/research/ResearchMission"), { ssr: true });
+const MethodFramework = dynamic(() => import("@/components/research/MethodFramework"), { ssr: true });
+const ResearchStats = dynamic(() => import("@/components/research/ResearchStats"), { ssr: true });
+const OutcomesPatents = dynamic(() => import("@/components/research/OutcomesPatents"), { ssr: true });
+const PublicationsGrid = dynamic(() => import("@/components/research/PublicationsGrid"), { ssr: true });
+const PartnersStrip = dynamic(() => import("@/components/research/PartnersStrip"), { ssr: true });
+const CouncilCarousel = dynamic(() => import("@/components/research/CouncilCarousel"), { ssr: true });
+const EthicsGovernance = dynamic(() => import("@/components/research/EthicsGovernance"), { ssr: true });
+const CardsGridSection = dynamic(() => import("@/components/research/CardsGridSection"), { ssr: true });
 
-import OurStory from "@/components/blocks/OurStory";
-import FoundersGuides from "@/components/blocks/FoundersGuides";
-import VerifiedAchievements from "@/components/blocks/VerifiedAchievements";
-import SeekVsDeliver from "@/components/blocks/SeekVsDeliver";
-import BenchmarkBanner from "@/components/blocks/BenchmarkBanner";
-import HexaInfrastructure from "@/components/blocks/HexaInfrastructure";
-import MontessoriForSuccess from "@/components/blocks/montessoriForSuccessSlider.js";
-import CareersSection from "@/components/blocks/CareersSection";
-import SystemOverview from "@/components/blocks/SystemOverview";
-import SimpleImageSection from "@/components/blocks/StaticImageBanner";
-import CenteredTextBlock from "@/components/blocks/CenteredTextBlock";
-import OutcomesPills from "@/components/blocks/OutcomesPills";
-import YoungInnovatorsGrid from "@/components/blocks/YoungInnovatorsGrid";
-import ImpactCollageSplit from "@/components/blocks/ImpactCollageSplit";
-import FounderVisionSplit from "@/components/blocks/FounderVisionSplit";
-import LegalDocument from "@/components/blocks/LegalDocument";
-import PageNavButtons from "@/components/ui/PageNavButtons";
+// Innovation
+const InnovationAgeCards = dynamic(() => import("@/components/innovations/InnovationAgeCards"), { ssr: true });
+const InnovationLogoStrip = dynamic(() => import("@/components/innovations/InnovationLogoStrip"), { ssr: true });
+const InnovationHabitSplit = dynamic(() => import("@/components/innovations/InnovationHabitSplit"), { ssr: true });
+const MontessoriToMars = dynamic(() => import("@/components/innovations/MontessoriToMars"), { ssr: true });
+const BillionYears = dynamic(() => import("@/components/innovations/BillionYears"), { ssr: true });
+const HighStakes = dynamic(() => import("@/components/innovations/HighStakes"), { ssr: true });
+const InnovationGallery = dynamic(() => import("@/components/innovations/InnovationGallery"), { ssr: true });
+
+// Programs
+const ProgramIntroSplit = dynamic(() => import("@/components/blocks/ProgramIntroSplit"), { ssr: true });
+const AcademicsIntro = dynamic(() => import("@/components/blocks/AcademicsIntro"), { ssr: true });
+const EducationAidToLife = dynamic(() => import("@/components/blocks/EducationAidToLife"), { ssr: true });
+const ProgramsGrid = dynamic(() => import("@/components/blocks/ProgramsGrid"), { ssr: true });
+
+// About Us
+const OurStory = dynamic(() => import("@/components/blocks/OurStory"), { ssr: true });
+const FoundersGuides = dynamic(() => import("@/components/blocks/FoundersGuides"), { ssr: true });
+const VerifiedAchievements = dynamic(() => import("@/components/blocks/VerifiedAchievements"), { ssr: true });
+const SeekVsDeliver = dynamic(() => import("@/components/blocks/SeekVsDeliver"), { ssr: true });
+const BenchmarkBanner = dynamic(() => import("@/components/blocks/BenchmarkBanner"), { ssr: true });
+const HexaInfrastructure = dynamic(() => import("@/components/blocks/HexaInfrastructure"), { ssr: true });
+const MontessoriForSuccess = dynamic(() => import("@/components/blocks/montessoriForSuccessSlider.js"), { ssr: true });
+const SystemOverview = dynamic(() => import("@/components/blocks/SystemOverview"), { ssr: true });
+
+// Misc
+const CareersSection = dynamic(() => import("@/components/blocks/CareersSection"), { ssr: true });
+const SimpleImageSection = dynamic(() => import("@/components/blocks/StaticImageBanner"), { ssr: true });
+const CenteredTextBlock = dynamic(() => import("@/components/blocks/CenteredTextBlock"), { ssr: true });
+const OutcomesPills = dynamic(() => import("@/components/blocks/OutcomesPills"), { ssr: true });
+const YoungInnovatorsGrid = dynamic(() => import("@/components/blocks/YoungInnovatorsGrid"), { ssr: true });
+const ImpactCollageSplit = dynamic(() => import("@/components/blocks/ImpactCollageSplit"), { ssr: true });
+const FounderVisionSplit = dynamic(() => import("@/components/blocks/FounderVisionSplit"), { ssr: true });
+const LegalDocument = dynamic(() => import("@/components/blocks/LegalDocument"), { ssr: true });
+const PageNavButtons = dynamic(() => import("@/components/ui/PageNavButtons"), { ssr: true });
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Renderer
+// ─────────────────────────────────────────────────────────────────────────────
 
 export default function SectionRenderer({ sections = [] }) {
   return (
@@ -70,11 +103,10 @@ export default function SectionRenderer({ sections = [] }) {
         const key = `${type || "section"}-${idx}`;
 
         switch (type) {
-          // ADD:
-          case "pageNavButtons": 
+          case "pageNavButtons":
             return <PageNavButtons key={key} {...props} />;
 
-          case "legalDocument": 
+          case "legalDocument":
             return <LegalDocument key={key} {...props} />;
 
           case "founderVisionSplit":
@@ -98,11 +130,11 @@ export default function SectionRenderer({ sections = [] }) {
           case "careersSection":
             return <CareersSection key={key} {...section.props} />;
 
-          //About US > Montessori For Success 
+          // About Us — Montessori For Success
           case "montessoriForSuccess":
             return <MontessoriForSuccess key={key} {...props} />;
-          
-          //ABOUT US
+
+          // About Us
           case "ourStory":
             return <OurStory key={key} {...props} />;
           case "foundersGuides":
@@ -116,7 +148,7 @@ export default function SectionRenderer({ sections = [] }) {
           case "hexaInfrastructure":
             return <HexaInfrastructure key={key} {...props} />;
 
-          // ACADEMICS
+          // Academics
           case "academicsIntro":
             return <AcademicsIntro key={key} {...props} />;
           case "educationAidToLife":
@@ -124,15 +156,15 @@ export default function SectionRenderer({ sections = [] }) {
           case "programsGrid":
             return <ProgramsGrid key={key} {...props} />;
 
-          // PROGRAMS
+          // Programs
           case "programIntroSplit":
             return <ProgramIntroSplit key={key} {...props} />;
           case "AreasofDevelopment":
             return <CardsGridSection key={key} {...props} />;
           case "programsctaBanner":
             return <CtaBanner key={key} {...props} />;
-          
-          // INNOVATION
+
+          // Innovation
           case "innovationMediaHero":
             return <Hero key={key} {...props} />;
           case "innovationAgeCards":
@@ -150,7 +182,7 @@ export default function SectionRenderer({ sections = [] }) {
           case "innovationGallery":
             return <InnovationGallery key={key} {...props} />;
 
-          // Research-Institute
+          // Research Institute
           case "researchHero":
             return <ResearchHero key={key} {...props} />;
           case "researchMission":
@@ -171,7 +203,7 @@ export default function SectionRenderer({ sections = [] }) {
             return <CouncilCarousel key={key} {...props} />;
           case "ethicsGovernance":
             return <EthicsGovernance key={key} {...props} />;
-          
+
           // Parents
           case "books":
             return <ParentsBooks key={key} {...props} />;
@@ -180,13 +212,13 @@ export default function SectionRenderer({ sections = [] }) {
           case "tabbedFaq":
             return <TabbedFaq key={key} {...props} />;
 
-          // ADMISSIONS
+          // Admissions
           case "admissionsIntro":
             return <AdmissionsIntro key={key} {...props} />;
           case "admissionsJourney":
             return <AdmissionsJourney key={key} {...props} />;
-            
-          // CONTACT
+
+          // Contact
           case "contactDetails":
             return <ContactDetails key={key} {...props} />;
           case "locationsGrid":
@@ -194,7 +226,7 @@ export default function SectionRenderer({ sections = [] }) {
           case "positionsOpen":
             return <PositionsOpen key={key} {...props} />;
 
-          // HOME
+          // Home
           case "homeHero":
             return <Hero key={key} {...props} />;
           case "imageText":
@@ -210,7 +242,7 @@ export default function SectionRenderer({ sections = [] }) {
           case "faq":
             return <FAQAccordion key={key} {...props} />;
 
-          //COMMON
+          // Common
           case "pageHero":
             return <PageHero key={key} {...props} />;
           case "ctaBanner":

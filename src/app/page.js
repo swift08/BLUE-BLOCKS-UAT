@@ -5,7 +5,7 @@ import JsonLd from "@/components/seo/JsonLd";
 export const dynamic = "force-static";
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  // metadataBase is inherited from layout.js (always production).
 
   // <title>...</title>
   title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1-18) | Hyderabad homepage",
@@ -112,7 +112,7 @@ const structuredData = {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.blueblocks.in/searchq={search_term_string}"
+        "urlTemplate": "https://www.blueblocks.in/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }

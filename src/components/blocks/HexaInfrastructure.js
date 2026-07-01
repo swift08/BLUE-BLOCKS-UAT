@@ -198,10 +198,14 @@ function ModalBody({ modal }) {
       {/* Optional image */}
       {modal?.image ? (
         <div className="overflow-hidden rounded-2xl border">
-          {/* Use normal img to keep it simple in modal */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={modal.image.src}
             alt={modal.image.alt || ""}
+            width={800}
+            height={500}
+            loading="lazy"
+            decoding="async"
             className="h-auto w-full object-cover"
           />
         </div>

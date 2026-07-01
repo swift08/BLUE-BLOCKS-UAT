@@ -59,7 +59,6 @@ async function submitToHubSpot({ portalId, formId, fields, context, region }) {
         j.errors?.[0]?.error ||
         msg;
       // Helpful debug
-      // eslint-disable-next-line no-console
       console.error("HubSpot newsletter error:", j);
     } catch (e) {}
     throw new Error(msg);

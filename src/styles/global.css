@@ -1,14 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* NOTE: Poppins is loaded via next/font/google in layout.js.
+   The Google Fonts @import has been intentionally removed to prevent
+   a duplicate render-blocking network request. */
 
 @import "yet-another-react-lightbox/styles.css";
 @import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 @import "tailwindcss";
-
-/* Tailwind CSS */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* =====================================================
    DESIGN TOKENS (Single Source of Truth)

@@ -3,17 +3,42 @@
     "name": "Blue Blocks",
     "logo": "/icon/logo.svg",
     "announcements": [
-      {"text": "ADMISSIONS OPEN - JOIN OUR NEXT MONTESSORI ADMISSION WORKSHOP. LIMITED SEATS AVAILABLE!"},
-      {"text": "INDIA'S FIRST MONTESSORI + INNOVATION ECOSYSTEM - EMPOWERING LEARNERS FROM BIRTH TO 18."}
+      {
+        "text": "ADMISSIONS OPEN - JOIN OUR NEXT MONTESSORI ADMISSION WORKSHOP. LIMITED SEATS AVAILABLE!"
+      },
+      {
+        "text": "INDIA'S FIRST MONTESSORI + INNOVATION ECOSYSTEM - EMPOWERING LEARNERS FROM BIRTH TO 18."
+      }
     ],
     "nav": [
-      { "label": "Home", "href": "/"},
-      { "label": "What do we do", "href": "/about-us"},
-      { "label": "Programs", "href": "/programs"},
-      { "label": "Innovations", "href": "/innovation"},
-      { "label": "Blog","href": "/blog/"},
-      { "label": "Contact", "href": "/contact-us"},
-      { "label": "Careers", "href": "/careers/"}
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "What do we do",
+        "href": "/about-us"
+      },
+      {
+        "label": "Programs",
+        "href": "/programs"
+      },
+      {
+        "label": "Innovations",
+        "href": "/innovation"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog/"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact-us"
+      },
+      {
+        "label": "Careers",
+        "href": "/careers/"
+      }
     ]
   },
   "megaMenu": {
@@ -29,19 +54,22 @@
           "title": "Montessori",
           "href": "/montessori-system",
           "description": "Hands-on Montessori method building focus, creativity, discipline, and lifelong skills.",
-          "image": "/programs/thumb-nursery.webp" },
+          "image": "/programs/thumb-nursery.webp"
+        },
         {
           "id": "campus",
           "title": "Campus",
           "href": "/campus",
           "description": "Thoughtfully designed campuses supporting safe exploration, movement, and meaningful learning.",
-          "image": "/programs/thumb-primary.webp" },
+          "image": "/programs/thumb-primary.webp"
+        },
         {
           "id": "faq",
           "title": "FAQs",
           "href": "/faq",
           "description": "Quick answers about programs, routine, admissions, learning approach, and support.",
-          "image": "/programs/thumb-secondary.webp" },
+          "image": "/programs/thumb-secondary.webp"
+        },
         {
           "id": "videos",
           "title": "Videos",
@@ -78,19 +106,22 @@
           "title": "Playgroup",
           "href": "/programs/playgroup",
           "description": "Toddlers build independence, language, coordination, and confidence through guided play.",
-          "image": "/programs/thumb-playgroup.webp" },
+          "image": "/programs/thumb-playgroup.webp"
+        },
         {
           "id": "nursery-school",
           "title": "Nursery, PP1, PP2",
           "href": "/programs/nursery-school",
           "description": "Primary Montessori builds curiosity, focus, creativity, and strong early foundations.",
-          "image": "/programs/thumb-nursery.webp" },
+          "image": "/programs/thumb-nursery.webp"
+        },
         {
           "id": "primary-school",
           "title": "Primary School – Class 1 to 6",
           "href": "/programs/primary-school-elementary",
           "description": "Cambridge learning with hands-on projects, creativity, and structured academics.",
-          "image": "/programs/thumb-primary.webp" },
+          "image": "/programs/thumb-primary.webp"
+        },
         {
           "id": "secondary-school",
           "title": "Secondary School – Class 7 to 10",
@@ -120,19 +151,22 @@
           "title": "Innovation Lab",
           "href": "/innovation/innovation-lab",
           "description": "Hands-on drone learning builds creativity, engineering thinking, and problem-solving skills.",
-          "image": "/programs/thumb-playgroup.webp" },
+          "image": "/programs/thumb-playgroup.webp"
+        },
         {
           "id": "biomimicry-hive",
           "title": "Biomimicry Hive",
           "href": "/innovation/biomimicry-hive",
           "description": "Nature-inspired learning helps students solve problems through observation and design.",
-          "image": "/programs/thumb-nursery.webp" },
+          "image": "/programs/thumb-nursery.webp"
+        },
         {
           "id": "drone-lab",
           "title": "Drone Lab",
           "href": "/innovation/drone-lab",
           "description": "Hands-on drone learning builds creativity, engineering thinking, and problem-solving skills.",
-          "image": "/programs/thumb-playgroup.webp" },
+          "image": "/programs/thumb-playgroup.webp"
+        },
         {
           "id": "space-lab",
           "title": "Space Program Lab",
@@ -153,9 +187,18 @@
   },
   "footer": {
     "gallery": [
-      {"src": "/footer/footer-1.webp","alt": "Campus aerial view"},
-      {"src": "/footer/footer-2.webp","alt": "Campus grounds"},
-      {"src": "/footer/footer-3.webp","alt": "Learning spaces"}
+      {
+        "src": "/footer/footer-1.webp",
+        "alt": "Campus aerial view"
+      },
+      {
+        "src": "/footer/footer-2.webp",
+        "alt": "Campus grounds"
+      },
+      {
+        "src": "/footer/footer-3.webp",
+        "alt": "Learning spaces"
+      }
     ],
     "aboutText": "Blue Blocks is a research-led learning ecosystem focused on authentic Montessori and child development.",
     "newsletter": {
@@ -173,21 +216,54 @@
       }
     },
     "quickLinks": [
-      {"label": "About Us","href": "/about-us"},
-      {"label": "The Micro Research Institute","href": "https://research.blueblocks.in/"},
-      {"label": "Blog","href": "/blog/"},
-      {"label": "Campus","href": "/campus"},
-      {"label": "Careers","href": "/careers"}
+      {
+        "label": "About Us",
+        "href": "/about-us"
+      },
+      {
+        "label": "The Micro Research Institute",
+        "href": "https://research.blueblocks.in/"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog/"
+      },
+      {
+        "label": "Campus",
+        "href": "/campus"
+      },
+      {
+        "label": "Careers",
+        "href": "/careers"
+      }
     ],
     "programs": [
-      {"label": "Playgroup","href": "/programs/playgroup"},
-      {"label": "Nursery, PP1, PP2","href": "/programs/nursery-school"},
-      {"label": "Primary School – Class 1 to 6","href": "/programs/primary-school-elementary"},
-      {"label": "Secondary School – Class 7 to 10","href": "/programs/secondary-school"}
+      {
+        "label": "Playgroup",
+        "href": "/programs/playgroup"
+      },
+      {
+        "label": "Nursery, PP1, PP2",
+        "href": "/programs/nursery-school"
+      },
+      {
+        "label": "Primary School – Class 1 to 6",
+        "href": "/programs/primary-school-elementary"
+      },
+      {
+        "label": "Secondary School – Class 7 to 10",
+        "href": "/programs/secondary-school"
+      }
     ],
     "connect": [
-      {"label": "Admissions Enquiry","href": "/admissions"},
-      {"label": "Contact","href": "/contact-us"}
+      {
+        "label": "Admissions Enquiry",
+        "href": "/admissions"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact-us"
+      }
     ],
     "contact": {
       "phone": "+91 9000955050",
@@ -195,10 +271,26 @@
       "email": "info@blueblocks.in"
     },
     "socials": [
-      {"label": "Instagram","href": "https://www.instagram.com/blueblocksmontessorischool/","icon": "/icon/icon-insta.svg"},
-      {"label": "Facebook","href": "https://www.facebook.com/blueblockspreschool","icon": "/icon/icon-fb.svg"},
-      {"label": "YouTube","href": "https://www.youtube.com/channel/UCnJ6uX3B-uwAg63PgTK0LhQ","icon": "/icon/icon-youtube.svg"},
-      {"label": "LinkedIn","href": "https://www.linkedin.com/school/blue-blocks-school","icon": "/icon/icon-linkdin.svg"}
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/blueblocksmontessorischool/",
+        "icon": "/icon/icon-insta.svg"
+      },
+      {
+        "label": "Facebook",
+        "href": "https://www.facebook.com/blueblockspreschool",
+        "icon": "/icon/icon-fb.svg"
+      },
+      {
+        "label": "YouTube",
+        "href": "https://www.youtube.com/channel/UCnJ6uX3B-uwAg63PgTK0LhQ",
+        "icon": "/icon/icon-youtube.svg"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/school/blue-blocks-school",
+        "icon": "/icon/icon-linkdin.svg"
+      }
     ]
   },
   "whatsapp": {
@@ -446,6 +538,27 @@
                 "width": "200",
                 "height": "60",
                 "anchorHref": "https://www.edexlive.com/news/hyderabad-students-cubesat-headed-to-space"
+              },
+              {
+                "src": "src/assets/Big-news-network.webp",
+                "alt": "Big News Network",
+                "width": "106",
+                "height": "60",
+                "anchorHref": "https://www.bignewsnetwork.com/news/279077506/blue-blocks-montessori-school-india-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond"
+              },
+              {
+                "src": "src/assets/ANI news.png",
+                "alt": "ANI News",
+                "width": "120",
+                "height": "60",
+                "anchorHref": "https://www.aninews.in/news/business/blue-blocks-montessori-school-indias-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond20260425190508/"
+              },
+              {
+                "src": "src/assets/business-standard-logo-2.png",
+                "alt": "Business Standard",
+                "width": "180",
+                "height": "60",
+                "anchorHref": "https://www.business-standard.com/content/press-releases-ani/blue-blocks-montessori-school-india-s-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond-126042500829_1.html"
               }
             ]
           }
@@ -553,7 +666,7 @@
             ],
             "imageUrl": "/home-01/buildings-001.webp",
             "align": "left",
-            "imageSide":"right"
+            "imageSide": "right"
           }
         },
         {
@@ -600,7 +713,10 @@
         }
       ],
       "breadcrumbs": [
-        {"name": "Home", "url": "#/"}
+        {
+          "name": "Home",
+          "url": "#/"
+        }
       ]
     },
     "aboutUs": {
@@ -610,8 +726,13 @@
           "props": {
             "title": "About Us",
             "breadcrumb": [
-              {"label": "Home","href": "/"},
-              {"label": "About Us"}
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "About Us"
+              }
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -727,7 +848,7 @@
         {
           "type": "imageText",
           "props": {
-            "bgClass" : "bg-iceSoft",
+            "bgClass": "bg-iceSoft",
             "title": "The Capable Human.",
             "text": [
               "Our vision is to normalize 'Genius.' We believe that independence, empathy, and innovation are not rare gifts, but natural consequences of an education that respects the human spirit.",
@@ -735,10 +856,10 @@
             ],
             "imageUrl": "/about-us/the-capable-human.webp",
             "align": "left",
-            "imageSide":"left",
-            "imageClassName":"",
-            "imageFit":"contain",
-            "imageAspect":"aspect-[16/10]"              
+            "imageSide": "left",
+            "imageClassName": "",
+            "imageFit": "contain",
+            "imageAspect": "aspect-[16/10]"
           }
         },
         {
@@ -813,7 +934,7 @@
         {
           "type": "foundersGuides",
           "props": {
-            "bg" : "bg-[#FFFFFF]",
+            "bg": "bg-[#FFFFFF]",
             "pill": "OUR FOUNDERS",
             "title": "The Custodians",
             "description": "Education is not transmission. We practice the rigorous discipline of observing and protecting the childâ€™s independent development.",
@@ -887,7 +1008,9 @@
             "title": "The Guides",
             "description": "In a traditional school, the teacher transmits information. At Blue Blocks, the Guide links the child to the environment.",
             "subdescription": "Our educators are masters of patience. They know that a child tying their own shoelaces is a victory for independence. Because our guides stay with the same children for three-year cycles, they know your childâ€™s history, their temperament, and the precise moment they fell in love with reading. They are not just teachers; they are witnesses to your child's development.",
-            "card": { "maxWidth": "420px" },
+            "card": {
+              "maxWidth": "420px"
+            },
             "layout": {
               "type": "carousel",
               "gap": 24,
@@ -896,7 +1019,11 @@
                 "loop": false,
                 "align": "start",
                 "sizingMode": "perView",
-                "perView": { "desktop": 3, "tablet": 2, "mobile": 1 },
+                "perView": {
+                  "desktop": 3,
+                  "tablet": 2,
+                  "mobile": 1
+                },
                 "showDots": false,
                 "navPosition": "center"
               }
@@ -932,12 +1059,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:suneetha.gnanavalli@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:suneetha.gnanavalli@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Sravani Ponnala",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -968,12 +1100,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:sravani.ponnala@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:sravani.ponnala@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Sree Divya",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1004,12 +1141,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:sree.divya@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:sree.divya@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Narmada Gattu",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1040,12 +1182,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:narmada.gattu@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:narmada.gattu@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Syeda Saleha Nishat",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1076,12 +1223,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:saleha.nishat@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:saleha.nishat@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Ramya Devi Yedla",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1112,12 +1264,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:ramya.yedla@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:ramya.yedla@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Afsha Ameet Jassani",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1148,12 +1305,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:afsha.jassani@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:afsha.jassani@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Konda Sai Nishkala",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1184,12 +1346,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:nishkala.konda@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:nishkala.konda@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Kriti Khare",
                 "roleLabel": "Adolescent Math Mentor (12â€“18 Years)",
@@ -1220,12 +1387,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:kriti.khare@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:kriti.khare@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Barsha Mishra",
                 "roleLabel": "Elementary Mentor",
@@ -1256,12 +1428,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:barsha.mishra@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:barsha.mishra@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Protiti Mookherjee",
                 "roleLabel": "Movement & Cultural Mentor",
@@ -1292,12 +1469,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:protiti.mookherjee@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:protiti.mookherjee@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "R. Shanmuga Priya",
                 "roleLabel": "AMI Elementary Guide (6â€“12 Years)",
@@ -1328,12 +1510,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/priya-raja-5b4975250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-                    { "label": "Email", "href": "mailto:shanmuga.priya@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": "https://www.linkedin.com/in/priya-raja-5b4975250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:shanmuga.priya@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Sri Satya Sai Kiranmayi R",
                 "roleLabel": "Elementary Mentor (Sciences)",
@@ -1364,12 +1551,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:kiranmayi.r@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:kiranmayi.r@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Poulomi Bose",
                 "roleLabel": "AMI Adolescent Guide (12â€“18 Years)",
@@ -1400,12 +1592,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/poulomi-bose-b8106114b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-                    { "label": "Email", "href": "mailto:poulomi.bose@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": "https://www.linkedin.com/in/poulomi-bose-b8106114b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:poulomi.bose@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "J H Dasan Perumallapalli",
                 "roleLabel": "Montessori Sports Guide",
@@ -1436,12 +1633,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:joseph.dasan@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:joseph.dasan@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Shibani Patel",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1472,12 +1674,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:shibani.patel@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:shibani.patel@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Satya Sree Ansuri",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1508,12 +1715,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:satya.ansuri@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:satya.ansuri@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Dr. Shobha Ediga",
                 "roleLabel": "Adolescent Guide (Science & Inquiry)",
@@ -1544,12 +1756,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/dr-shobha-ediga-578b6644?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-                    { "label": "Email", "href": "mailto:shobha.ediga@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": "https://www.linkedin.com/in/dr-shobha-ediga-578b6644?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:shobha.ediga@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Shailaja Pagadala",
                 "roleLabel": "Elementary Guide (6â€“12 Years)",
@@ -1580,12 +1797,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:shailaja.pagadala@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:shailaja.pagadala@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Zabin Veerani",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1616,12 +1838,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:zabin.veerani@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:zabin.veerani@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Kiranmayee Gorthi",
                 "roleLabel": "AMI Toddler Guide (0â€“3 Years)",
@@ -1652,12 +1879,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:kiranmayee.gorthi@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:kiranmayee.gorthi@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Gandepalli Sree Theja",
                 "roleLabel": "AMI Elementary Guide (6â€“12 Years)",
@@ -1688,12 +1920,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:sree.theja@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:sree.theja@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Badri Shruthi",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1724,12 +1961,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:shruthi.badri@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:shruthi.badri@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Ranjan Kumar",
                 "roleLabel": "Innovation and Drone Mentor (STEM)",
@@ -1760,12 +2002,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:ranjan.kumar@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:ranjan.kumar@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Mridula Chunduri",
                 "roleLabel": "AMI Elementary Guide (6â€“12 Years)",
@@ -1796,12 +2043,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/mridula-chunduri-8b5650b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
-                    { "label": "Email", "href": "mailto:mridula.chunduri@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": "https://www.linkedin.com/in/mridula-chunduri-8b5650b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:mridula.chunduri@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Sandhya Rao M",
                 "roleLabel": "AMI Elementary Guide (6â€“12 Years)",
@@ -1832,12 +2084,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/sandhya-rao-98572116b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-                    { "label": "Email", "href": "mailto:sandhya.rao@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": "https://www.linkedin.com/in/sandhya-rao-98572116b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:sandhya.rao@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Fizza Fallah",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1868,12 +2125,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:fizza.fallah@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:fizza.fallah@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Siddiqua Rabiha",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1904,12 +2166,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:rabiha.siddiqua@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:rabiha.siddiqua@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Afrin Syed",
                 "roleLabel": "AMI Primary Guide (3â€“6 Years)",
@@ -1940,12 +2207,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:afrin.syed@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:afrin.syed@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Bharrgavi Bandreddi",
                 "roleLabel": "AMI Elementary Guide (6â€“12 Years)",
@@ -1976,12 +2248,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:bharrgavi.bandreddi@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:bharrgavi.bandreddi@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Chandini Priya Allu",
                 "roleLabel": "AMI Toddler Guide (0â€“3 Years)",
@@ -2012,12 +2289,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:chandini.allu@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:chandini.allu@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Anurag C J",
                 "roleLabel": "Art Mentor (Studio Arts)",
@@ -2048,12 +2330,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:anurag@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:anurag@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Anisha Kandukuri",
                 "roleLabel": "Administration & Communications (AMI Primary Diploma)",
@@ -2084,12 +2371,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:anisha.kandukuri@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:anisha.kandukuri@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Aishwarya Tejaswiraj",
                 "roleLabel": "AMI Elementary Guide (6â€“12 Years)",
@@ -2120,12 +2412,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/aishwarya-tejaswiraj-gundu-74376a9b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-                    { "label": "Email", "href": "mailto:aishwarya@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": "https://www.linkedin.com/in/aishwarya-tejaswiraj-gundu-74376a9b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:aishwarya@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Telugu Someshwari Devi",
                 "roleLabel": "Montessori Mentor & Support",
@@ -2156,12 +2453,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/someshwari-devi-telugu-675323250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-                    { "label": "Email", "href": "mailto:someshwari.devi@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": "https://www.linkedin.com/in/someshwari-devi-telugu-675323250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:someshwari.devi@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Nidhi Vora",
                 "roleLabel": "Head of Admissions & Parent Partnership",
@@ -2192,12 +2494,17 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:nidhi.vora@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:nidhi.vora@blueblocks.com"
+                    }
                   ]
                 }
               },
-
               {
                 "name": "Vanga Praveena Reddy",
                 "roleLabel": "AMI Elementary Guide (6â€“12 Years)",
@@ -2228,8 +2535,14 @@
                     }
                   ],
                   "social": [
-                    { "label": "LinkedIn", "href": "" },
-                    { "label": "Email", "href": "mailto:praveena.reddy@blueblocks.com" }
+                    {
+                      "label": "LinkedIn",
+                      "href": ""
+                    },
+                    {
+                      "label": "Email",
+                      "href": "mailto:praveena.reddy@blueblocks.com"
+                    }
                   ]
                 }
               }
@@ -2245,7 +2558,7 @@
             "title": "THE SCIENCE BEHIND THE SUCCESS",
             "description": "We Donâ€™t Guess. We Observe.",
             "subdescription": [
-              "At Blue Blocks, education is not driven by trends, assumptions, or standardized templates. It is grounded in observation, developmental neuroscience, authentic Montessori pedagogy, and longitudinal research. Every environment, material, and intervention is designed around how children naturally grow, think, and construct understanding.", 
+              "At Blue Blocks, education is not driven by trends, assumptions, or standardized templates. It is grounded in observation, developmental neuroscience, authentic Montessori pedagogy, and longitudinal research. Every environment, material, and intervention is designed around how children naturally grow, think, and construct understanding.",
               "Our approach combines over a century of Montessori science with contemporary research in cognition, behavior, and innovation learning. The result is an ecosystem where development is intentional, measurable, and deeply human.",
               "Beyond pedagogy, our approach is rooted in continuous observation and adaptation. Guides document developmental patterns, emerging interests, and learning readiness so the environment evolves with the child â€” not the other way around. This ensures learning remains natural, purposeful, and developmentally aligned."
             ],
@@ -2282,16 +2595,16 @@
               }
             ]
           }
-        },        
+        },
         {
           "type": "imageText",
           "props": {
-            "bgClass" : "bg-[#F3E3CF]",
+            "bgClass": "bg-[#F3E3CF]",
             "title": "Dr. Montessori was a Scientist.",
             "text": [
               "Many forget that Maria Montessori was a physician and a scientist. Her method was born from observation. We simply continue that tradition.",
               "The Blue Blocks Micro Research Institute is not a separate lab; it is the heartbeat of our practice. We systematically observe how children learn so we can constantly refine our environment. We don't experiment on children; we learn from them. This ensures that our education is not based on assumptions, but on a deep, documented understanding of the child's needs."
-            ],            
+            ],
             "readMore": {
               "enabled": true,
               "labelMore": "Read More",
@@ -2305,10 +2618,10 @@
             },
             "imageUrl": "/about-us/the-capable-human.webp",
             "align": "left",
-            "imageSide":"right",
-            "imageClassName":"",
-            "imageFit":"contain",
-            "imageAspect":"aspect-[16/10]",
+            "imageSide": "right",
+            "imageClassName": "",
+            "imageFit": "contain",
+            "imageAspect": "aspect-[16/10]",
             "cta": {
               "label": "Click to visit the site",
               "href": "https://research.blueblocks.in/"
@@ -2526,8 +2839,14 @@
         }
       ],
       "breadcrumbs": [
-        {"name": "Home","url": "#/"},
-        {"name": "About Us","url": "#/about-us/"}
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "About Us",
+          "url": "#/about-us/"
+        }
       ]
     },
     "academics": {
@@ -2537,8 +2856,13 @@
           "props": {
             "title": "Programs",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Programs" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Programs"
+              }
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -2552,8 +2876,13 @@
           "props": {
             "title": "Academics",
             "breadcrumb": [
-              {"label": "Home",  "href": "/"},
-              {"label": "Academics"}
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Academics"
+              }
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -2874,13 +3203,21 @@
         }
       ],
       "breadcrumbs": [
-        {"name": "Home","url": "#/"},
-        {"name": "Academics", "url": "#/programs/"}
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Academics",
+          "url": "#/programs/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Academics",  "url": "#/programs/",
+          "@type": "WebPage",
+          "name": "Academics",
+          "url": "#/programs/",
           "description": "A Scientifically Mapped Journey from Infancy to Adolescence (0â€“16 Years)",
           "isPartOf": {
             "@id": "##website"
@@ -2909,20 +3246,25 @@
     "programs": {
       "sections": [
         {
-            "type": "pageHero",
-            "props": {
-              "title": "Programs",
-              "breadcrumb": [
-                { "label": "Home", "href": "/" },
-                { "label": "Programs" }
-              ],
-              "bg": {
-                "base": "#F3E3CF",
-                "leftArc": "/ui/arc-left.webp",
-                "rightArc": "/ui/arc-right.webp"
+          "type": "pageHero",
+          "props": {
+            "title": "Programs",
+            "breadcrumb": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Programs"
               }
+            ],
+            "bg": {
+              "base": "#F3E3CF",
+              "leftArc": "/ui/arc-left.webp",
+              "rightArc": "/ui/arc-right.webp"
             }
-          },
+          }
+        },
         {
           "type": "programIntroSplit",
           "props": {
@@ -2930,57 +3272,100 @@
             "title": "Best Playgroup in\nHyderabad",
             "text": "At Blue Blocks, our Montessori Toddler Community welcomes children from 1 to 2Â½ years into a warm, purposeful environment designed for exploration and growth. Here, little ones build independence through everyday activities like caring for themselves, exploring language and movement, and interacting with others with grace and joy. Guided by AMI-trained Montessori adults, children gain confidence, order, and a sense of belongingâ€”laying the foundation for lifelong curiosity and self-reliance.",
             "media": {
-              "main": { "src": "/programs/playgroup/main.webp", "alt": "Playgroup classroom" },
-              "left": { "src": "/programs/playgroup/left.webp", "alt": "Play activity" },
-              "right": { "src": "/programs/playgroup/right.webp", "alt": "Montessori materials" }
+              "main": {
+                "src": "/programs/playgroup/main.webp",
+                "alt": "Playgroup classroom"
+              },
+              "left": {
+                "src": "/programs/playgroup/left.webp",
+                "alt": "Play activity"
+              },
+              "right": {
+                "src": "/programs/playgroup/right.webp",
+                "alt": "Montessori materials"
+              }
             }
           }
         },
         {
-        "type": "AreasofDevelopment",
-        "props": {
-          "bg": "#F3E3CF",
-          "eyebrow": "PLAYGROUP (1 TO 2Â½ YEARS)",
-          "title": "Areas of Development",
-          "description": "At Blue Blocks, our Montessori Toddler Community welcomes children from 1 to 2Â½ years into a warm, purposeful environment designed for exploration and growth.",
-          "headerAlign": "center",
-
-          "cols": { "base": 1, "sm": 2, "lg": 4 },
-          "maxWidth": "max-w-6xl",
-          "gap": "gap-6",
-
-          "cardBg": "#273C75",
-          "cardRadius": "rounded-[18px]",
-          "cardPadding": "px-6 py-7",
-          "cardMinHeight": 220,
-
-          "iconSize": "60",
-          "iconWrapClassName": "h-10 w-10",
-
-          "items": [
-            { "icon": "/icon/brain.svg", "title": "Brain Development", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation." },
-            { "icon": "/icon/movement.svg", "title": "Movement Development", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation." },
-            { "icon": "/icon/leaf.svg", "title": "Care for Environment", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation." },
-            { "icon": "/icon/food.svg", "title": "Food Activities", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation." },
-
-            { "icon": "/icon/heart.svg", "title": "Care For Self", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation." },
-            { "icon": "/icon/toilet.svg", "title": "Toilet Training", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation." },
-            { "icon": "/icon/art.svg", "title": "Art Activities", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation." },
-            { "icon": "/icon/music.svg", "title": "Songs and Stories", "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation." }
-          ]
-        }
-      },
-      {
+          "type": "AreasofDevelopment",
+          "props": {
+            "bg": "#F3E3CF",
+            "eyebrow": "PLAYGROUP (1 TO 2Â½ YEARS)",
+            "title": "Areas of Development",
+            "description": "At Blue Blocks, our Montessori Toddler Community welcomes children from 1 to 2Â½ years into a warm, purposeful environment designed for exploration and growth.",
+            "headerAlign": "center",
+            "cols": {
+              "base": 1,
+              "sm": 2,
+              "lg": 4
+            },
+            "maxWidth": "max-w-6xl",
+            "gap": "gap-6",
+            "cardBg": "#273C75",
+            "cardRadius": "rounded-[18px]",
+            "cardPadding": "px-6 py-7",
+            "cardMinHeight": 220,
+            "iconSize": "60",
+            "iconWrapClassName": "h-10 w-10",
+            "items": [
+              {
+                "icon": "/icon/brain.svg",
+                "title": "Brain Development",
+                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation."
+              },
+              {
+                "icon": "/icon/movement.svg",
+                "title": "Movement Development",
+                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation."
+              },
+              {
+                "icon": "/icon/leaf.svg",
+                "title": "Care for Environment",
+                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation."
+              },
+              {
+                "icon": "/icon/food.svg",
+                "title": "Food Activities",
+                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation."
+              },
+              {
+                "icon": "/icon/heart.svg",
+                "title": "Care For Self",
+                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation."
+              },
+              {
+                "icon": "/icon/toilet.svg",
+                "title": "Toilet Training",
+                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation."
+              },
+              {
+                "icon": "/icon/art.svg",
+                "title": "Art Activities",
+                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation."
+              },
+              {
+                "icon": "/icon/music.svg",
+                "title": "Songs and Stories",
+                "text": "At this age, children learn through observation and imitation. As they begin to talk, we nurture language by modeling clear, grammatically correct speechâ€”introducing up to seven languages to build a strong linguistic foundation."
+              }
+            ]
+          }
+        },
+        {
           "type": "ctaBanner",
           "props": {
             "title": "Experience Learning\nthe Blue Blocks Way.",
             "text": "Seats are filled on a first-come basis.",
-            "cta": { "label": "Book Admission Workshop", "href": "/contact" },
+            "cta": {
+              "label": "Book Admission Workshop",
+              "href": "/contact"
+            },
             "image": "/building-image-01.webp",
             "imageAlt": "Campus building",
             "imageWidth": "566",
             "imageHeight": "506",
-            "customTopSpacing":"sm:pt-70",
+            "customTopSpacing": "sm:pt-70",
             "align": "left",
             "theme": "dark"
           }
@@ -2996,8 +3381,13 @@
               "title": "The Toddler Community",
               "subtitle": "A Sanctuary for Your Child's Becoming",
               "breadcrumb": [
-                { "label": "Programs", "href": "/programs" },
-                { "label": "Playgroup" }
+                {
+                  "label": "Programs",
+                  "href": "/programs"
+                },
+                {
+                  "label": "Playgroup"
+                }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -3029,7 +3419,7 @@
               "imageClassName": "rounded-2xl",
               "imageFit": "cover",
               "imageAspect": "aspect-[4/3]",
-              "contentCenter" : true
+              "contentCenter": true
             }
           },
           {
@@ -3064,7 +3454,7 @@
           {
             "type": "imageText",
             "props": {
-              "bgClass" : "bg-white",
+              "bgClass": "bg-white",
               "title": "Emotional Safety: She Will Be Held",
               "text": [
                 "Toddlers feel everything intensely, but they don't yet have the words to tell us. Frustration, joy, fear, excitement â€” it all comes out in waves.",
@@ -3074,16 +3464,16 @@
               ],
               "imageUrl": "/programs/playgroup/image-02.webp",
               "align": "left",
-              "imageSide":"right",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]"              
+              "imageSide": "right",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]"
             }
           },
           {
             "type": "imageText",
             "props": {
-              "bgClass" : "bg-[#F3E3CF]",
+              "bgClass": "bg-[#F3E3CF]",
               "title": "Food as Love: The Lunchbox and Beyond",
               "text": [
                 "We know what goes into that lunchbox: the thought, the love, the hope that she'll actually eat it.",
@@ -3100,8 +3490,8 @@
             "props": {
               "bg": "#FFFFFF",
               "title": "A Day of Purposeful work",
-              "description":"You might wonder: What does she actually do all day?",
-              "subdescription":"She works. Not worksheets or structured lessons â€” but real, meaningful activity chosen by her, suited to her pace, designed for her stage of development.",
+              "description": "You might wonder: What does she actually do all day?",
+              "subdescription": "She works. Not worksheets or structured lessons â€” but real, meaningful activity chosen by her, suited to her pace, designed for her stage of development.",
               "headerAlign": "center",
               "cols": {
                 "base": 1,
@@ -3163,7 +3553,7 @@
           {
             "type": "imageText",
             "props": {
-              "sectionBg":"bg-[#F3E3CF]",
+              "sectionBg": "bg-[#F3E3CF]",
               "title": "Toilet Learning: Respect for Her Body",
               "text": [
                 "This journey belongs to her â€” not to a schedule, and not to us.",
@@ -3216,7 +3606,7 @@
           {
             "type": "imageText",
             "props": {
-              "sectionBg":"bg-[#F3E3CF]",
+              "sectionBg": "bg-[#F3E3CF]",
               "title": "Your Family, Your Way",
               "text": [
                 "Every family is different. We don't assume who drops off, who picks up, who packs the lunch, or who she cries for most.",
@@ -3260,9 +3650,9 @@
               "calloutGroupClass": "mt-0 sm:mt-0",
               "calloutTitle": "",
               "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
-              "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
+              "calloutClass": "text-center text-xl leading-relaxed text-slate-700",
               "callout": "Â To understand the developmental science behind these practices, see our Developmental Architecture Paper.",
-              "calloutCTA":{
+              "calloutCTA": {
                 "label": "View",
                 "href": "/toddler-developmental-architecture"
               }
@@ -3323,8 +3713,13 @@
             "props": {
               "title": "Programs",
               "breadcrumb": [
-                { "label": "Programs", "href": "programs" },
-                { "label": "The Children's House" }
+                {
+                  "label": "Programs",
+                  "href": "programs"
+                },
+                {
+                  "label": "The Children's House"
+                }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -3380,7 +3775,7 @@
               "align": "left",
               "variant": "card",
               "bg": "#F3E3CF",
-              "contentCenter" : true
+              "contentCenter": true
             }
           },
           {
@@ -3624,9 +4019,9 @@
               "calloutGroupClass": "mt-0 sm:mt-0",
               "calloutTitle": "",
               "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
-              "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
+              "calloutClass": "text-center text-xl leading-relaxed text-slate-700",
               "callout": "Â To understand the developmental science behind these practices, see our The Conscious Construction of Intelligence paper.",
-              "calloutCTA":{
+              "calloutCTA": {
                 "label": "View",
                 "href": "/the-conscious-construction-of-intelligence"
               }
@@ -3687,8 +4082,13 @@
             "props": {
               "title": "Programs",
               "breadcrumb": [
-                { "label": "Programs", "href": "/programs" },
-                { "label": "The Elementary" }
+                {
+                  "label": "Programs",
+                  "href": "/programs"
+                },
+                {
+                  "label": "The Elementary"
+                }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -3703,7 +4103,9 @@
               "eyebrow": "THE ELEMENTARY COMMUNITY",
               "title": "The Elementary Community",
               "subTitle": "Elementary Programme (Ages 6–12 | Grades 1–6)",
-              "text":["The Reasoning Mind Awakens"],
+              "text": [
+                "The Reasoning Mind Awakens"
+              ],
               "badge": "THE ELEMENTARY",
               "metaRows": [],
               "media": {
@@ -3739,7 +4141,7 @@
               "align": "left",
               "variant": "card",
               "bg": "#F3E3CF",
-              "contentCenter" : true
+              "contentCenter": true
             }
           },
           {
@@ -3761,7 +4163,11 @@
               "bg": "#F3E3CF",
               "title": "The Physical Signs of Change",
               "description": "Nature provides unmistakable signals that this transformation is underway. As your child approaches six, you will notice:",
-              "cols": { "base": 1, "sm": 2, "lg": 3 },
+              "cols": {
+                "base": 1,
+                "sm": 2,
+                "lg": 3
+              },
               "cardBg": "#273C75",
               "textColor": "#FFFFFF",
               "maxWidth": "max-w-6xl",
@@ -3798,17 +4204,29 @@
                 {
                   "title": "The loss of baby teeth",
                   "text": "The eruption of permanent molars and the falling out of deciduous teeth is not merely dental â€” it signals that the first plane of development has completed.",
-                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
+                  "tabColors": [
+                    "#78D6F3",
+                    "#F5A48D",
+                    "#F9E27C"
+                  ]
                 },
                 {
                   "title": "The leaner body",
                   "text": "The rounded contours of early childhood disappear. The body becomes slimmer, stronger, capable of sustained physical effort.",
-                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
+                  "tabColors": [
+                    "#78D6F3",
+                    "#F5A48D",
+                    "#F9E27C"
+                  ]
                 },
                 {
                   "title": "The stamina",
                   "text": "Where the younger child is tired easily, the Elementary child can work and play from morning until evening. They no longer need the same level of adult comfort and rest.",
-                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
+                  "tabColors": [
+                    "#78D6F3",
+                    "#F5A48D",
+                    "#F9E27C"
+                  ]
                 }
               ]
             }
@@ -3823,7 +4241,7 @@
               "imageUrl": "",
               "align": "left",
               "bg": "#F3E3CF",
-              "contentCenter" : true
+              "contentCenter": true
             }
           },
           {
@@ -3838,7 +4256,7 @@
               ],
               "imageUrl": "/programs/the-elementary/expert-guidance.webp",
               "align": "right",
-              "bgClass" : "bg-[#F3E3CF]"
+              "bgClass": "bg-[#F3E3CF]"
             }
           },
           {
@@ -3853,10 +4271,10 @@
               ],
               "imageUrl": "/programs/the-elementary/imagination.webp",
               "align": "left",
-              "imageSide":"right",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]"
+              "imageSide": "right",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]"
             }
           },
           {
@@ -3873,7 +4291,7 @@
               ],
               "imageUrl": "/programs/the-elementary/independence.webp",
               "align": "right",
-              "bgClass" : "bg-[#F3E3CF]"
+              "bgClass": "bg-[#F3E3CF]"
             }
           },
           {
@@ -3888,10 +4306,10 @@
               ],
               "imageUrl": "/programs/the-elementary/tribe.webp",
               "align": "left",
-              "imageSide":"right",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]"
+              "imageSide": "right",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]"
             }
           },
           {
@@ -3905,7 +4323,7 @@
               ],
               "imageUrl": "/programs/the-elementary/going-out.webp",
               "align": "right",
-              "bgClass" : "bg-[#F3E3CF]"
+              "bgClass": "bg-[#F3E3CF]"
             }
           },
           {
@@ -3944,9 +4362,9 @@
                 "Children write letters, make phone calls, plan transportation, manage budgets. The learning extends far beyond subject matter. They discover that the world outside school contains resources and experts willing to help â€” and that asking questions is not a sign of ignorance but a tool for understanding."
               ],
               "imageUrl": "",
-              "bgClass" : "bg-[#F3E3CF]",
+              "bgClass": "bg-[#F3E3CF]",
               "align": "left",
-              "contentCenter":true
+              "contentCenter": true
             }
           },
           {
@@ -3971,7 +4389,11 @@
               "bg": "#F3E3CF",
               "title": "Laboratories of Character",
               "description": "We do not view Karate, Sports, Dance, and Arts as \"extra-curricular\" activities. We view them as Laboratories of Character â€” the physical extension of the moral development happening in the classroom.",
-              "cols": { "base": 1, "sm": 2, "lg": 2 },
+              "cols": {
+                "base": 1,
+                "sm": 2,
+                "lg": 2
+              },
               "cardBg": "#273C75",
               "textColor": "#FFFFFF",
               "maxWidth": "max-w-6xl",
@@ -3992,12 +4414,20 @@
                 {
                   "title": "Sports and Karate",
                   "text": "Sports and Karate cater to the child's physical stamina and psychological \"toughness.\" They serve as training grounds for self-discipline and the sense of justice. When our children participate in inter-school competitions, they aren't just playing a game â€” they're practising adherence to rules under pressure, learning to win with grace and lose with dignity.",
-                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
+                  "tabColors": [
+                    "#78D6F3",
+                    "#F5A48D",
+                    "#F9E27C"
+                  ]
                 },
                 {
                   "title": "Dance and Arts",
                   "text": "Dance and Arts serve what Dr. Montessori called humanity's \"spiritual needs\" â€” the need for culture, beauty, and creative self-expression. Dance at Blue Blocks is the refinement of movement applied to artistic creation, helping the child find their unique voice within the community.",
-                  "tabColors": ["#78D6F3", "#F5A48D", "#F9E27C"]
+                  "tabColors": [
+                    "#78D6F3",
+                    "#F5A48D",
+                    "#F9E27C"
+                  ]
                 }
               ]
             }
@@ -4011,13 +4441,13 @@
               ],
               "imageUrl": "",
               "align": "left",
-              "contentCenter":true
+              "contentCenter": true
             }
           },
           {
             "type": "outcomesPills",
             "props": {
-              "bg" : "#F3E3CF",
+              "bg": "#F3E3CF",
               "title": "Your Child at Twelve",
               "items": [
                 {
@@ -4057,9 +4487,9 @@
               ],
               "imageUrl": "",
               "align": "left",
-              "contentCenter":true
+              "contentCenter": true
             }
-          },          
+          },
           {
             "type": "montessoriForSuccess",
             "props": {
@@ -4088,9 +4518,9 @@
               "calloutGroupClass": "mt-0 sm:mt-0",
               "calloutTitle": "",
               "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
-              "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
+              "calloutClass": "text-center text-xl leading-relaxed text-slate-700",
               "callout": "To understand the developmental science behind these practices, see our The Architecture of The Universe paper. ",
-              "calloutCTA":{
+              "calloutCTA": {
                 "label": "View",
                 "href": "/the-architecture-of-the-universe"
               }
@@ -4144,9 +4574,18 @@
           }
         ],
         "breadcrumbs": [
-          { "name": "Home", "url": "#/" },
-          { "name": "Programs", "url": "#/programs/" },
-          { "name": "Elementary", "url": "#/programs/primary-school-elementary" }
+          {
+            "name": "Home",
+            "url": "#/"
+          },
+          {
+            "name": "Programs",
+            "url": "#/programs/"
+          },
+          {
+            "name": "Elementary",
+            "url": "#/programs/primary-school-elementary"
+          }
         ],
         "schema": [
           {
@@ -4155,20 +4594,44 @@
             "name": "Elementary Programme (Ages 6-12) | The Reasoning Mind Awakens",
             "description": "Montessori Elementary in Hyderabad. Cosmic Education, Going Out expeditions, Innovation Labs. Where the Reasoning Mind awakens and Moral Independence emerges.",
             "url": "#/programs/primary-school-elementary",
-            "isPartOf": { "@id": "##website" },
+            "isPartOf": {
+              "@id": "##website"
+            },
             "about": [
-              { "@type": "Thing", "name": "Montessori Education" },
-              { "@type": "Thing", "name": "Cosmic Education" },
-              { "@type": "Thing", "name": "Moral Development" },
-              { "@type": "Thing", "name": "Innovation Education" }
+              {
+                "@type": "Thing",
+                "name": "Montessori Education"
+              },
+              {
+                "@type": "Thing",
+                "name": "Cosmic Education"
+              },
+              {
+                "@type": "Thing",
+                "name": "Moral Development"
+              },
+              {
+                "@type": "Thing",
+                "name": "Innovation Education"
+              }
             ]
           },
           {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
-              { "@type": "ListItem", "position": 2, "name": "Programs", "item": "#/programs/" },
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "#/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Programs",
+                "item": "#/programs/"
+              },
               {
                 "@type": "ListItem",
                 "position": 3,
@@ -4183,7 +4646,10 @@
             "name": "Elementary Programme",
             "alternateName": "Grades 1-6",
             "description": "AMI-aligned Montessori Elementary for ages 6-12. Cosmic Education, Going Out expeditions, Innovation Labs. Development of Reasoning Mind and Moral Independence.",
-            "provider": { "@type": "EducationalOrganization", "name": "Blue Blocks" },
+            "provider": {
+              "@type": "EducationalOrganization",
+              "name": "Blue Blocks"
+            },
             "educationalLevel": "Elementary",
             "teaches": [
               "Cosmic Education and interdisciplinary thinking",
@@ -4248,8 +4714,13 @@
             "props": {
               "title": "The Adolescent Community",
               "breadcrumb": [
-                {"label": "Programs", "href": "/programs"},
-                {"label": "The Adolescent Community"}
+                {
+                  "label": "Programs",
+                  "href": "/programs"
+                },
+                {
+                  "label": "The Adolescent Community"
+                }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -4323,10 +4794,10 @@
               ],
               "imageUrl": "/programs/the-adolescent-community/image-01.webp",
               "imageAlt": "Adolescent development and community life",
-              "imageSide":"left",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]",
+              "imageSide": "left",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]",
               "variant": "default",
               "bgClass": "#FFFFFF",
               "contentCenter": false
@@ -4349,12 +4820,12 @@
               "imageUrl": "/programs/the-adolescent-community/image-02.webp",
               "imageAlt": "Students building meaningful work and competence",
               "variant": "default",
-              "bgClass" : "bg-[#F3E3CF]",
+              "bgClass": "bg-[#F3E3CF]",
               "align": "left",
-              "imageSide":"right",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]",
+              "imageSide": "right",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]",
               "contentCenter": false
             }
           },
@@ -4371,10 +4842,10 @@
               ],
               "imageUrl": "/programs/the-adolescent-community/image-03.webp",
               "imageAlt": "Students operating real ventures and systems",
-              "imageSide":"left",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]",
+              "imageSide": "left",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]",
               "variant": "default",
               "bgClass": "#FFFFFF",
               "contentCenter": false
@@ -4468,13 +4939,13 @@
                 "From the earliest days in the Toddler Community, Blue Blocks children learn Grace and Courtesy â€” the conscious cultivation of respectful, harmonious behaviour. In the Adolescent Community, this foundation deepens into sophisticated social consciousness."
               ],
               "imageUrl": "",
-              "imageAlt": "",              
-              "imageSide":"left",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]",
+              "imageAlt": "",
+              "imageSide": "left",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]",
               "variant": "default",
-              "bgClass" : "bg-[#F3E3CF]",
+              "bgClass": "bg-[#F3E3CF]",
               "contentCenter": true
             }
           },
@@ -4517,11 +4988,11 @@
                 "Arts: Creative expression develops authenticity â€” the courage to express oneâ€™s genuine vision, and the humility to receive feedback. Making art requires both conviction and openness."
               ],
               "imageUrl": "/programs/the-adolescent-community/image-04.webp",
-              "imageAlt": "Co-curricular programs as character laboratories",              
-              "imageSide":"left",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]",
+              "imageAlt": "Co-curricular programs as character laboratories",
+              "imageSide": "left",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]",
               "variant": "default",
               "bgClass": "bg-[#F3E3CF]",
               "contentCenter": false
@@ -4538,11 +5009,11 @@
                 "We do not view academic preparation and character formation as opposites. Academic knowledge without ethical grounding produces capable people without conscience. We aim for both."
               ],
               "imageUrl": "/programs/the-adolescent-community/image-05.webp",
-              "imageAlt": "Academic alignment and rigorous learning",              
-              "imageSide":"right",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]",
+              "imageAlt": "Academic alignment and rigorous learning",
+              "imageSide": "right",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]",
               "variant": "default",
               "bgClass": "bg-[#FFFFFF]",
               "contentCenter": false
@@ -4559,11 +5030,11 @@
                 "This is how conscience develops: not through moralising, but through relationship with adults worth emulating."
               ],
               "imageUrl": "/programs/the-adolescent-community/image-06.webp",
-              "imageAlt": "Mentors guiding adolescents through real work",              
-              "imageSide":"left",
-              "imageClassName":"",
-              "imageFit":"contain",
-              "imageAspect":"aspect-[16/10]",
+              "imageAlt": "Mentors guiding adolescents through real work",
+              "imageSide": "left",
+              "imageClassName": "",
+              "imageFit": "contain",
+              "imageAspect": "aspect-[16/10]",
               "variant": "default",
               "bgClass": "bg-[#F3E3CF]",
               "contentCenter": false
@@ -4602,7 +5073,6 @@
               ]
             }
           },
-          
           {
             "type": "researchMission",
             "props": {
@@ -4617,9 +5087,9 @@
               "calloutGroupClass": "mt-0 sm:mt-0",
               "calloutTitle": "",
               "calloutTitleClass": "text-[1.2rem] sm:text-[1.4rem] font-medium",
-              "calloutClass": "text-center text-xl leading-relaxed text-slate-700", 
+              "calloutClass": "text-center text-xl leading-relaxed text-slate-700",
               "callout": "To understand the developmental science behind these practices, see our The Social Newborn paper.",
-              "calloutCTA":{
+              "calloutCTA": {
                 "label": "View",
                 "href": "/adolescent-social-newborn-paper"
               }
@@ -4674,35 +5144,76 @@
         ]
       },
       "breadcrumbs": [
-        { "name": "Home", "url": "#/"},
-        { "name": "Programs", "url": "#/programs/"},
-        { "name": "{{title}}", "url": "#/programs/{slug}"}
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Programs",
+          "url": "#/programs/"
+        },
+        {
+          "name": "{{title}}",
+          "url": "#/programs/{slug}"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Adolescent Programme (Ages 12-18)",
-          "description": "Montessori Adolescent â€” developing conscience, character, capability. Social Newborn, Valorization, Education for Peace.",  "url": "#/programs/secondary-school",
-          "isPartOf": { "@id": "##website" },
+          "@type": "WebPage",
+          "name": "Adolescent Programme (Ages 12-18)",
+          "description": "Montessori Adolescent â€” developing conscience, character, capability. Social Newborn, Valorization, Education for Peace.",
+          "url": "#/programs/secondary-school",
+          "isPartOf": {
+            "@id": "##website"
+          },
           "about": [
-            { "@type": "Thing", "name": "Montessori Education" },
-            { "@type": "Thing", "name": "Character Education" },
-            { "@type": "Thing", "name": "Conscience Formation" },
-            { "@type": "Thing", "name": "Education for Peace" }
+            {
+              "@type": "Thing",
+              "name": "Montessori Education"
+            },
+            {
+              "@type": "Thing",
+              "name": "Character Education"
+            },
+            {
+              "@type": "Thing",
+              "name": "Conscience Formation"
+            },
+            {
+              "@type": "Thing",
+              "name": "Education for Peace"
+            }
           ]
         },
         {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
-            { "@type": "ListItem", "position": 2, "name": "Programs", "item": "#/programs/" },
-            { "@type": "ListItem", "position": 3, "name": "Adolescent", "item": "#/programs/secondary-school" }
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "#/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Programs",
+              "item": "#/programs/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Adolescent",
+              "item": "#/programs/secondary-school"
+            }
           ]
         },
         {
           "@context": "https://schema.org",
-          "@type": "Course", "name": "Adolescent Programme",
+          "@type": "Course",
+          "name": "Adolescent Programme",
           "alternateName": "Grades 7-10",
           "description": "Montessori Adolescent for ages 12-18. Micro-Economy, Innovation Labs, Cambridge/IGCSE. Development of deep conscience, social consciousness, cosmic responsibility.",
           "provider": {
@@ -4767,7 +5278,8 @@
         },
         {
           "@context": "https://schema.org",
-          "@type": "Event", "name": "Blue Blocks CubeSat Launch via ISRO PSLV C62",
+          "@type": "Event",
+          "name": "Blue Blocks CubeSat Launch via ISRO PSLV C62",
           "description": "Student-built CubeSat satellite launch into orbit â€” 18 years of Montessori development culminating in cosmic responsibility",
           "startDate": "2026-01-11",
           "eventStatus": "https://schema.org/EventScheduled",
@@ -4885,13 +5397,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Admissions",  "url": "#/admissions/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Admissions",
+          "url": "#/admissions/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Admissions",  "url": "https://www.blueblocks.in/admissions/",
+          "@type": "WebPage",
+          "name": "Admissions",
+          "url": "https://www.blueblocks.in/admissions/",
           "description": "At Blue Blocks, we do not admit a student; we admit a family. Education is not a transaction where you pay fees and we deliver a product. It is a 15-year collab",
           "isPartOf": {
             "@id": "##website"
@@ -5104,13 +5624,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Contact",  "url": "#/contact-us/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Contact",
+          "url": "#/contact-us/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Contact",  "url": "#/contact-us/",
+          "@type": "WebPage",
+          "name": "Contact",
+          "url": "#/contact-us/",
           "description": "At Blue Blocks, education is not a job â€” itâ€™s a responsibility. We are a community of educators, mentors, and lifelong learners committed to honoring childhood ",
           "isPartOf": {
             "@id": "##website"
@@ -5160,7 +5688,13 @@
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
               "opens": "08:30",
               "closes": "16:30"
             }
@@ -5197,7 +5731,13 @@
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+              ],
               "opens": "08:30",
               "closes": "16:30"
             }
@@ -5304,13 +5844,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Careers",  "url": "#/careers/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Careers",
+          "url": "#/careers/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Careers",  "url": "#/careers/",
+          "@type": "WebPage",
+          "name": "Careers",
+          "url": "#/careers/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
             "@id": "##website"
@@ -5676,13 +6224,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Micro Research Institute",  "url": "#/research-institute/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Micro Research Institute",
+          "url": "#/research-institute/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Micro Research Institute",  "url": "#/research-institute/",
+          "@type": "WebPage",
+          "name": "Micro Research Institute",
+          "url": "#/research-institute/",
           "description": "Advancing the Science of Innovation Development in Childhood and Adolescence",
           "isPartOf": {
             "@id": "##website"
@@ -5907,13 +6463,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "For Parents",  "url": "#/parents/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "For Parents",
+          "url": "#/parents/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "For Parents",  "url": "#/parents/",
+          "@type": "WebPage",
+          "name": "For Parents",
+          "url": "#/parents/",
           "description": "Explore recommended books that deepen your understanding of Montessori philosophy, child psychology, and developmental stages from early childhood...",
           "isPartOf": {
             "@id": "##website"
@@ -6018,7 +6582,7 @@
             "sectionBg": "bg-white",
             "eyebrow": "CHILDREN",
             "title": "The Formation of Conscience",
-            "desc":"Innovation without conscience is not innovation â€” it is extraction. The capacity for ethical action doesn't emerge from rules imposed at sixteen. It develops across eighteen years of Montessori formation.",
+            "desc": "Innovation without conscience is not innovation â€” it is extraction. The capacity for ethical action doesn't emerge from rules imposed at sixteen. It develops across eighteen years of Montessori formation.",
             "cardWidth": "sm:w-[25.5rem]",
             "cards": [
               {
@@ -6156,7 +6720,7 @@
                 "title": "Deepening Montessori: Our Approach",
                 "text": [
                   "We have developed what we call the Developmental Innovation Protocol (DIP) â€” an eighteen-year architecture that nurtures innovative capability and ethical sensibility together. They cannot be separated.",
-                "Every innovation activity includes the conscience dimension. Every exercise develops both capability and ethical sensitivity. Every thinking type we nurture includes the question: What is my responsibility here?",
+                  "Every innovation activity includes the conscience dimension. Every exercise develops both capability and ethical sensitivity. Every thinking type we nurture includes the question: What is my responsibility here?",
                   "When capabilities integrate â€” when technical skill fuses with creative imagination fuses with ethical sensibility â€” something emerges. We call this Synaptic Fusion. It is not just innovative capability. It is innovative capability with conscience built in."
                 ],
                 "icon": "/icon/ISRO.svg"
@@ -6165,7 +6729,7 @@
                 "title": "Innovation With Conscience at Every Stage",
                 "text": [
                   "Ages 0-6: The child builds the foundations of conscience alongside capability. Care of environment, care of living things, sensitivity to others. Creative problem-solving emerges â€” always within the context of care. The scientist is born: the child who observes, experiments, and discovers â€” with respect for what they discover.",
-                "Ages 6-12: Imagination meets reasoning meets moral understanding. Through the Inventions Timeline, children learn that innovation has consequences â€” life before and after each invention. Five patent applications filed by students aged eight to twelve â€” each evaluated not just for novelty but for benefit. Does this serve? Does this heal? Does this regenerate?",
+                  "Ages 6-12: Imagination meets reasoning meets moral understanding. Through the Inventions Timeline, children learn that innovation has consequences â€” life before and after each invention. Five patent applications filed by students aged eight to twelve â€” each evaluated not just for novelty but for benefit. Does this serve? Does this heal? Does this regenerate?",
                   "Ages 12-18: Full integration â€” technical capability fused with social consciousness, economic thinking, and ethical reasoning. Students don't just build satellites; they discuss space debris, resource allocation, human solidarity. They don't just run micro-economies; they consider fair exchange, community benefit, ecological impact.",
                   "On January 11, 2026, a student-built CubeSat satellite will launch into orbit aboard ISRO's PSLV C62 rocket. The students who built it carry not just technical capability but cosmic responsibility â€” the understanding that space, like Earth, requires custodianship."
                 ],
@@ -6179,37 +6743,37 @@
           "props": {
             "title": "Our Prepared Environments",
             "subheading": "DRONE LAB",
-            "description":"Each innovation space is designed to develop both capability and conscience:",
+            "description": "Each innovation space is designed to develop both capability and conscience:",
             "droneImage": "/innovation/drone.webp",
-            "gridNumber":"lg:grid-cols-4",
+            "gridNumber": "lg:grid-cols-4",
             "featureSections": [
               {
                 "icon": "/icon/bulb.svg",
                 "title": "The Innovation Lab:",
                 "text": "Where hands build minds â€” and develop respect for materials. Every tool is cared for. Every material is valued. Students learn that creation carries responsibility for what is created.",
-                "linkName":"â†’ Explore The Innovation Lab",
-                "linkHref":"/innovation/innovation-lab"
+                "linkName": "â†’ Explore The Innovation Lab",
+                "linkHref": "/innovation/innovation-lab"
               },
               {
                 "icon": "/icon/bulb.svg",
                 "title": "The Bio-Mimicry Hive:",
                 "text": "Where nature becomes mentor â€” and students become custodians. Learning from 3.8 billion years of biological wisdom, students develop regenerative thinking: design that serves life, not just human convenience.",
-                "linkName":"â†’ Explore The Bio-Mimicry Hive",
-                "linkHref":"/innovation/bio-mimicry-hive"
+                "linkName": "â†’ Explore The Bio-Mimicry Hive",
+                "linkHref": "/innovation/bio-mimicry-hive"
               },
               {
                 "icon": "/icon/bulb.svg",
                 "title": "The Drone Lab",
                 "text": "Where capability meets responsibility. Every flight begins with a Conscience Check â€” not as procedure but as expression of formed conscience. Privacy, safety, ecology, purpose: considered before every action.",
-                "linkName":"â†’ Explore The Drone Lab",
-                "linkHref":"/innovation/drone-lab"
+                "linkName": "â†’ Explore The Drone Lab",
+                "linkHref": "/innovation/drone-lab"
               },
               {
                 "icon": "/icon/bulb.svg",
                 "title": "The Space Lab",
                 "text": "Where Cosmic Education reaches orbit â€” and cosmic responsibility becomes real. Students who build satellites understand that space is shared commons, that debris endangers all missions, that Earth seen from orbit has no borders.",
-                "linkName":"â†’ Explore The Space Lab",
-                "linkHref":"/innovation/space-lab"
+                "linkName": "â†’ Explore The Space Lab",
+                "linkHref": "/innovation/space-lab"
               }
             ]
           }
@@ -6255,34 +6819,34 @@
           }
         },
         {
-        "type": "outcomesPills",
-        "props": {
-          "title": "The Outcome",
-          "maxWidth": "none",
-          "items": [
-            {
-              "icon": "/icon/brain.png",
-              "pillBg": "#F9E48F",
-              "text": "Driven by profound passion â€” not merely to create, but to create new benefits for their times and for the future. For humanity and for the Earth."
-            },
-            {
-              "icon": "/icon/brain.png",
-              "pillBg": "#95D6ED",
-              "text": "Graduates with evidence of capability â€” patents filed, satellites launched, real-world problems solved."
-            },
-            {
-              "icon": "/icon/brain.png",
-              "pillBg": "#F9A78F",
-              "text": "Guided by conscience as their compass. They do not ask 'Can I build this?' They ask 'Should I build this? Does it serve life? Does it honour the Earth?'"
-            },
-            {
-              "icon": "/icon/brain.png",
-              "pillBg": "#F9E48F",
-              "text": "Prepared for 2050 â€” not just because they can innovate, but because they will innovate with integrity and take responsibility for the Mother Earth."
-            }
-          ]
-        }
-      },
+          "type": "outcomesPills",
+          "props": {
+            "title": "The Outcome",
+            "maxWidth": "none",
+            "items": [
+              {
+                "icon": "/icon/brain.png",
+                "pillBg": "#F9E48F",
+                "text": "Driven by profound passion â€” not merely to create, but to create new benefits for their times and for the future. For humanity and for the Earth."
+              },
+              {
+                "icon": "/icon/brain.png",
+                "pillBg": "#95D6ED",
+                "text": "Graduates with evidence of capability â€” patents filed, satellites launched, real-world problems solved."
+              },
+              {
+                "icon": "/icon/brain.png",
+                "pillBg": "#F9A78F",
+                "text": "Guided by conscience as their compass. They do not ask 'Can I build this?' They ask 'Should I build this? Does it serve life? Does it honour the Earth?'"
+              },
+              {
+                "icon": "/icon/brain.png",
+                "pillBg": "#F9E48F",
+                "text": "Prepared for 2050 â€” not just because they can innovate, but because they will innovate with integrity and take responsibility for the Mother Earth."
+              }
+            ]
+          }
+        },
         {
           "type": "ctaBanner",
           "props": {
@@ -6304,13 +6868,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Innovation",  "url": "#/innovation/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Innovation",
+          "url": "#/innovation/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Innovation",  "url": "#/innovation/",
+          "@type": "WebPage",
+          "name": "Innovation",
+          "url": "#/innovation/",
           "description": "Innovation is not a subject. It is a biological stage of development. We don't just teach technology; we nurture the 'First Principles' thinking that created it",
           "isPartOf": {
             "@id": "##website"
@@ -6345,8 +6917,13 @@
             "props": {
               "title": "Innovation Lab",
               "breadcrumb": [
-                { "label": "Innovation", "href": "/innovation" },
-                { "label": "Innovation Lab" }
+                {
+                  "label": "Innovation",
+                  "href": "/innovation"
+                },
+                {
+                  "label": "Innovation Lab"
+                }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -6355,7 +6932,6 @@
               }
             }
           },
-
           {
             "type": "imageText",
             "props": {
@@ -6376,7 +6952,6 @@
               "contentCenter": false
             }
           },
-
           {
             "type": "imageText",
             "props": {
@@ -6396,7 +6971,6 @@
               "contentCenter": true
             }
           },
-
           {
             "type": "AreasofDevelopment",
             "props": {
@@ -6404,7 +6978,11 @@
               "eyebrow": "",
               "title": "The Ethics of Materials",
               "description": "",
-              "gridCols": { "desktop": 3, "tablet": 2, "mobile": 1 },
+              "gridCols": {
+                "desktop": 3,
+                "tablet": 2,
+                "mobile": 1
+              },
               "cardBg": "#273C75",
               "textColor": "text-white",
               "cardRadius": "rounded-2xl",
@@ -6420,7 +6998,11 @@
                 "radius": 18,
                 "insetTop": 0,
                 "insetBottom": 0,
-                "colors": ["#78D6F3", "#F5A48D", "#F9E27C"],
+                "colors": [
+                  "#78D6F3",
+                  "#F5A48D",
+                  "#F9E27C"
+                ],
                 "borderColor": "#131313",
                 "borderWidth": 2
               },
@@ -6447,7 +7029,6 @@
               ]
             }
           },
-
           {
             "type": "imageText",
             "props": {
@@ -6470,7 +7051,6 @@
               "contentCenter": false
             }
           },
-
           {
             "type": "imageText",
             "props": {
@@ -6493,7 +7073,6 @@
               "contentCenter": false
             }
           },
-
           {
             "type": "AreasofDevelopment",
             "props": {
@@ -6501,7 +7080,11 @@
               "eyebrow": "",
               "title": "Tools Across Development",
               "description": "Our curriculum introduces five hundred tools across eighteen years â€” each expanding capability, each requiring care.",
-              "gridCols": { "desktop": 3, "tablet": 2, "mobile": 1 },
+              "gridCols": {
+                "desktop": 3,
+                "tablet": 2,
+                "mobile": 1
+              },
               "cardBg": "#273C75",
               "textColor": "text-slate-900",
               "cardRadius": "rounded-2xl",
@@ -6517,7 +7100,11 @@
                 "radius": 18,
                 "insetTop": 0,
                 "insetBottom": 0,
-                "colors": ["#78D6F3", "#F5A48D", "#F9E27C"],
+                "colors": [
+                  "#78D6F3",
+                  "#F5A48D",
+                  "#F9E27C"
+                ],
                 "borderColor": "#131313",
                 "borderWidth": 2
               },
@@ -6544,7 +7131,6 @@
               ]
             }
           },
-
           {
             "type": "imageText",
             "props": {
@@ -6564,7 +7150,6 @@
               "contentCenter": false
             }
           },
-
           {
             "type": "imageText",
             "props": {
@@ -6587,7 +7172,6 @@
               "contentCenter": false
             }
           },
-
           {
             "type": "imageText",
             "props": {
@@ -6610,7 +7194,7 @@
             }
           },
           {
-          "type": "pageNavButtons",
+            "type": "pageNavButtons",
             "props": {
               "bg": "bg-[#F3E3CF]",
               "prev": {
@@ -6625,9 +7209,18 @@
           }
         ],
         "breadcrumbs": [
-          { "name": "Home", "url": "#/" },
-          { "name": "Innovation", "url": "#/innovation/" },
-          { "name": "Innovation Lab", "url": "#/innovation/innovation-lab" }
+          {
+            "name": "Home",
+            "url": "#/"
+          },
+          {
+            "name": "Innovation",
+            "url": "#/innovation/"
+          },
+          {
+            "name": "Innovation Lab",
+            "url": "#/innovation/innovation-lab"
+          }
         ],
         "schema": [
           {
@@ -6636,21 +7229,52 @@
             "name": "The Innovation Lab",
             "description": "Where hands build minds with care â€” respect for materials, responsibility for creation",
             "url": "#/innovation/innovation-lab",
-            "isPartOf": { "@type": "WebPage", "name": "Innovation", "url": "#/innovation/" },
+            "isPartOf": {
+              "@type": "WebPage",
+              "name": "Innovation",
+              "url": "#/innovation/"
+            },
             "about": [
-              { "@type": "Thing", "name": "Maker Education" },
-              { "@type": "Thing", "name": "Hand-Brain Connection" },
-              { "@type": "Thing", "name": "Care of Environment" },
-              { "@type": "Thing", "name": "Ethical Making" }
+              {
+                "@type": "Thing",
+                "name": "Maker Education"
+              },
+              {
+                "@type": "Thing",
+                "name": "Hand-Brain Connection"
+              },
+              {
+                "@type": "Thing",
+                "name": "Care of Environment"
+              },
+              {
+                "@type": "Thing",
+                "name": "Ethical Making"
+              }
             ]
           },
           {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
-              { "@type": "ListItem", "position": 2, "name": "Innovation", "item": "#/innovation/" },
-              { "@type": "ListItem", "position": 3, "name": "Innovation Lab", "item": "#/innovation/innovation-lab" }
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "#/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Innovation",
+                "item": "#/innovation/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Innovation Lab",
+                "item": "#/innovation/innovation-lab"
+              }
             ]
           },
           {
@@ -6693,8 +7317,13 @@
             "props": {
               "title": "The Drone Lab",
               "breadcrumb": [
-                { "label": "Innovation", "href": "/innovation" },
-                { "label": "The Drone Lab" }
+                {
+                  "label": "Innovation",
+                  "href": "/innovation"
+                },
+                {
+                  "label": "The Drone Lab"
+                }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -6908,7 +7537,9 @@
                 "The five patent applications are evidence of Valorization â€” the adolescentâ€™s need to prove worth through genuine contribution. But this is Valorization with conscience. The studentsâ€™ worth is proven not just by creating something novel, but by creating something good.",
                 "They have felt the â€œprofound passionâ€ Montessori described â€” and directed it toward â€œnew benefitsâ€ for the future. For people and for the Earth.",
                 "The Drone Lab produces pilots with conscience â€” young people who can fly, and who ask before every flight: ",
-                { "bold": "Should I?" },
+                {
+                  "bold": "Should I?"
+                },
                 "\n\nBack to Biomimicry Hive  |  Explore The Space Lab â†’"
               ],
               "maxWidth": "56rem",
@@ -7000,6 +7631,27 @@
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://www.edexlive.com/news/hyderabad-students-cubesat-headed-to-space"
+                },
+                {
+                  "src": "src/assets/Big-news-network.webp",
+                  "alt": "Big News Network",
+                  "width": "106",
+                  "height": "60",
+                  "anchorHref": "https://www.bignewsnetwork.com/news/279077506/blue-blocks-montessori-school-india-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond"
+                },
+                {
+                  "src": "src/assets/ANI news.png",
+                  "alt": "ANI News",
+                  "width": "120",
+                  "height": "60",
+                  "anchorHref": "https://www.aninews.in/news/business/blue-blocks-montessori-school-indias-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond20260425190508/"
+                },
+                {
+                  "src": "src/assets/business-standard-logo-2.png",
+                  "alt": "Business Standard",
+                  "width": "180",
+                  "height": "60",
+                  "anchorHref": "https://www.business-standard.com/content/press-releases-ani/blue-blocks-montessori-school-india-s-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond-126042500829_1.html"
                 }
               ]
             }
@@ -7011,7 +7663,10 @@
               "title": "Meet Our Young Innovators",
               "subtitle": "A celebration of hands-on learning, discovery, and fearless innovation.",
               "maxWidth": "max-w-6xl",
-              "cols": { "base": 1, "md": 2 },
+              "cols": {
+                "base": 1,
+                "md": 2
+              },
               "gap": "gap-8",
               "cardRadius": "rounded-2xl",
               "cardPadding": "p-5",
@@ -7019,14 +7674,44 @@
               "imageRadius": "rounded-xl",
               "imageAspect": "aspect-[4/3]",
               "items": [
-                { "layout": "card", "image": "/innovation/drone/innovator-01.webp", "alt": "Team photo 1", "text": "â€œThese three young men are Ayushman, Sanshray and Dhairya who came up with the idea of a rescue drone to save children who may have fallen into open bore wells...â€" },
-                { "layout": "card", "image": "/innovation/drone/innovator-02.webp", "alt": "Team photo 2", "text": "â€œMeet Nayonika, Uma, Aditi and Akira... a drone to deliver essential services...â€" },
-                { "layout": "card", "image": "/innovation/drone/innovator-03.webp", "alt": "Team photo 3", "text": "â€œThe team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...â€" },
-                { "layout": "card", "image": "/innovation/drone/innovator-04.webp", "alt": "Team photo 4", "text": "â€œThe team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...â€" },
-                { "layout": "split", "span": { "md": 2 }, "image": "/innovation/drone/innovator-05.webp", "alt": "Team photo 5", "text": "â€œThis is the team of Aryan, Hasith and Akshat... a security drone...â€" },
+                {
+                  "layout": "card",
+                  "image": "/innovation/drone/innovator-01.webp",
+                  "alt": "Team photo 1",
+                  "text": "â€œThese three young men are Ayushman, Sanshray and Dhairya who came up with the idea of a rescue drone to save children who may have fallen into open bore wells...â€"
+                },
+                {
+                  "layout": "card",
+                  "image": "/innovation/drone/innovator-02.webp",
+                  "alt": "Team photo 2",
+                  "text": "â€œMeet Nayonika, Uma, Aditi and Akira... a drone to deliver essential services...â€"
+                },
+                {
+                  "layout": "card",
+                  "image": "/innovation/drone/innovator-03.webp",
+                  "alt": "Team photo 3",
+                  "text": "â€œThe team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...â€"
+                },
+                {
+                  "layout": "card",
+                  "image": "/innovation/drone/innovator-04.webp",
+                  "alt": "Team photo 4",
+                  "text": "â€œThe team of Shourya, Anshul, Nihal and Vivaswath... detection of covid patients...â€"
+                },
+                {
+                  "layout": "split",
+                  "span": {
+                    "md": 2
+                  },
+                  "image": "/innovation/drone/innovator-05.webp",
+                  "alt": "Team photo 5",
+                  "text": "â€œThis is the team of Aryan, Hasith and Akshat... a security drone...â€"
+                },
                 {
                   "layout": "textOnly",
-                  "span": { "md": 2 },
+                  "span": {
+                    "md": 2
+                  },
                   "textParts": [
                     "These children will grow into a world that you and me cannot even begin to imagine...",
                     "â€œWe are hoping to revolutionize the thinking and working of the school education system...â€",
@@ -7041,7 +7726,11 @@
             "props": {
               "eyebrow": "",
               "title": "Voices of Young Innovators",
-              "cols": { "base": 1, "sm": 2, "lg": 2 },
+              "cols": {
+                "base": 1,
+                "sm": 2,
+                "lg": 2
+              },
               "tileMinHeight": 410,
               "tileMaxHeight": 410,
               "showThumbnails": true,
@@ -7050,12 +7739,36 @@
               "videoControls": true,
               "videoLoop": false,
               "items": [
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-01.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-02.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-03.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-04.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-05.webp" },
-                { "type": "video", "src": "/videos/demo.mp4", "poster": "/innovation/innovators-voice-06.webp" }
+                {
+                  "type": "video",
+                  "src": "/videos/demo.mp4",
+                  "poster": "/innovation/innovators-voice-01.webp"
+                },
+                {
+                  "type": "video",
+                  "src": "/videos/demo.mp4",
+                  "poster": "/innovation/innovators-voice-02.webp"
+                },
+                {
+                  "type": "video",
+                  "src": "/videos/demo.mp4",
+                  "poster": "/innovation/innovators-voice-03.webp"
+                },
+                {
+                  "type": "video",
+                  "src": "/videos/demo.mp4",
+                  "poster": "/innovation/innovators-voice-04.webp"
+                },
+                {
+                  "type": "video",
+                  "src": "/videos/demo.mp4",
+                  "poster": "/innovation/innovators-voice-05.webp"
+                },
+                {
+                  "type": "video",
+                  "src": "/videos/demo.mp4",
+                  "poster": "/innovation/innovators-voice-06.webp"
+                }
               ]
             }
           },
@@ -7085,7 +7798,10 @@
             "props": {
               "title": "Experience Learning\nthe Blue Blocks Way.",
               "text": "Seats are filled on a first-come basis.",
-              "cta": { "label": "Book Admission Workshop", "href": "/contact-us" },
+              "cta": {
+                "label": "Book Admission Workshop",
+                "href": "/contact-us"
+              },
               "image": "/innovation/drone.webp",
               "imageAlt": "Campus building",
               "imageWidth": "566",
@@ -7097,7 +7813,7 @@
             }
           },
           {
-          "type": "pageNavButtons",
+            "type": "pageNavButtons",
             "props": {
               "bg": "bg-[#FFFFFF]",
               "prev": {
@@ -7112,9 +7828,18 @@
           }
         ],
         "breadcrumbs": [
-          { "name": "Home", "url": "#/" },
-          { "name": "Innovation", "url": "#/innovation/" },
-          { "name": "Drone Lab", "url": "#/innovation/drone-lab" }
+          {
+            "name": "Home",
+            "url": "#/"
+          },
+          {
+            "name": "Innovation",
+            "url": "#/innovation/"
+          },
+          {
+            "name": "Drone Lab",
+            "url": "#/innovation/drone-lab"
+          }
         ],
         "schema": [
           {
@@ -7123,21 +7848,52 @@
             "name": "The Drone Lab",
             "description": "Capability with conscience â€” student patents, every flight begins with ethical consideration",
             "url": "#/innovation/drone-lab",
-            "isPartOf": { "@type": "WebPage", "name": "Innovation", "url": "#/innovation/" },
+            "isPartOf": {
+              "@type": "WebPage",
+              "name": "Innovation",
+              "url": "#/innovation/"
+            },
             "about": [
-              { "@type": "Thing", "name": "Drone Education" },
-              { "@type": "Thing", "name": "Aviation" },
-              { "@type": "Thing", "name": "Student Patents" },
-              { "@type": "Thing", "name": "Ethics in Technology" }
+              {
+                "@type": "Thing",
+                "name": "Drone Education"
+              },
+              {
+                "@type": "Thing",
+                "name": "Aviation"
+              },
+              {
+                "@type": "Thing",
+                "name": "Student Patents"
+              },
+              {
+                "@type": "Thing",
+                "name": "Ethics in Technology"
+              }
             ]
           },
           {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
-              { "@type": "ListItem", "position": 2, "name": "Innovation", "item": "#/innovation/" },
-              { "@type": "ListItem", "position": 3, "name": "Drone Lab", "item": "#/innovation/drone-lab" }
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "#/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Innovation",
+                "item": "#/innovation/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Drone Lab",
+                "item": "#/innovation/drone-lab"
+              }
             ]
           },
           {
@@ -7180,8 +7936,13 @@
             "props": {
               "title": "Biomimicry Hive",
               "breadcrumb": [
-                { "label": "Innovation", "href": "/innovation" },
-                { "label": "Biomimicry Hive" }
+                {
+                  "label": "Innovation",
+                  "href": "/innovation"
+                },
+                {
+                  "label": "Biomimicry Hive"
+                }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -7377,7 +8138,10 @@
             "props": {
               "title": "Experience Learning\nthe Blue Blocks Way.",
               "text": "Seats are filled on a first-come basis.",
-              "cta": { "label": "Book Admission Workshop", "href": "/contact-us" },
+              "cta": {
+                "label": "Book Admission Workshop",
+                "href": "/contact-us"
+              },
               "image": "/innovation/drone.webp",
               "imageAlt": "Campus building",
               "imageWidth": "566",
@@ -7389,7 +8153,7 @@
             }
           },
           {
-          "type": "pageNavButtons",
+            "type": "pageNavButtons",
             "props": {
               "bg": "bg-[#FFFFFF]",
               "prev": {
@@ -7404,9 +8168,18 @@
           }
         ],
         "breadcrumbs": [
-          { "name": "Home", "url": "#/" },
-          { "name": "Innovation", "url": "#/innovation/" },
-          { "name": "Biomimicry Hive", "url": "#/innovation/biomimicry-hive" }
+          {
+            "name": "Home",
+            "url": "#/"
+          },
+          {
+            "name": "Innovation",
+            "url": "#/innovation/"
+          },
+          {
+            "name": "Biomimicry Hive",
+            "url": "#/innovation/biomimicry-hive"
+          }
         ],
         "schema": [
           {
@@ -7415,21 +8188,52 @@
             "name": "The Biomimicry Hive",
             "description": "Learning from life, serving life â€” nature as mentor, students as custodians",
             "url": "#/innovation/biomimicry-hive",
-            "isPartOf": { "@type": "WebPage", "name": "Innovation", "url": "#/innovation/" },
+            "isPartOf": {
+              "@type": "WebPage",
+              "name": "Innovation",
+              "url": "#/innovation/"
+            },
             "about": [
-              { "@type": "Thing", "name": "Biomimicry" },
-              { "@type": "Thing", "name": "Regenerative Design" },
-              { "@type": "Thing", "name": "Cosmic Education" },
-              { "@type": "Thing", "name": "Sustainability" }
+              {
+                "@type": "Thing",
+                "name": "Biomimicry"
+              },
+              {
+                "@type": "Thing",
+                "name": "Regenerative Design"
+              },
+              {
+                "@type": "Thing",
+                "name": "Cosmic Education"
+              },
+              {
+                "@type": "Thing",
+                "name": "Sustainability"
+              }
             ]
           },
           {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
-              { "@type": "ListItem", "position": 2, "name": "Innovation", "item": "#/innovation/" },
-              { "@type": "ListItem", "position": 3, "name": "Biomimicry Hive", "item": "#/innovation/biomimicry-hive" }
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "#/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Innovation",
+                "item": "#/innovation/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Biomimicry Hive",
+                "item": "#/innovation/biomimicry-hive"
+              }
             ]
           },
           {
@@ -7472,8 +8276,13 @@
             "props": {
               "title": "The Space Lab",
               "breadcrumb": [
-                { "label": "Innovation", "href": "/innovation" },
-                { "label": "The Space Lab" }
+                {
+                  "label": "Innovation",
+                  "href": "/innovation"
+                },
+                {
+                  "label": "The Space Lab"
+                }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -7507,7 +8316,7 @@
                 "This is not just technical achievement. It is the visible arc of conscience formation. The child who learned to care for a wooden cube now cares for a satellite â€” and for the shared space it will occupy, and for the Earth it will orbit."
               ],
               "variant": "default",
-              "contentCenter":true
+              "contentCenter": true
             }
           },
           {
@@ -7530,7 +8339,7 @@
               "imageClassName": "rounded-2xl",
               "imageFit": "cover",
               "imageAspect": "aspect-[4/3]",
-              "contentCenter":false
+              "contentCenter": false
             }
           },
           {
@@ -7539,7 +8348,11 @@
               "bg": "#EEF7FD",
               "eyebrow": "",
               "title": "Three Planes of Conscience",
-              "cols": { "base": 1, "sm": 2, "lg": 3 },
+              "cols": {
+                "base": 1,
+                "sm": 2,
+                "lg": 3
+              },
               "gap": "gap-8",
               "cardBg": "#273C75",
               "cardRadius": "rounded-[18px]",
@@ -7595,7 +8408,11 @@
               "bg": "#F3E3CF",
               "eyebrow": "",
               "title": "The Conscience of Space",
-              "cols": { "base": 1, "sm": 2, "lg": 2 },
+              "cols": {
+                "base": 1,
+                "sm": 2,
+                "lg": 2
+              },
               "gap": "gap-8",
               "cardBg": "#273C75",
               "cardRadius": "rounded-[18px]",
@@ -7666,7 +8483,7 @@
               "imageClassName": "rounded-2xl",
               "imageFit": "cover",
               "imageAspect": "aspect-[4/3]",
-              "contentCenter":false
+              "contentCenter": false
             }
           },
           {
@@ -7712,7 +8529,11 @@
               "bg": "#EEF7FD",
               "eyebrow": "CubeSat Launch: January 11, 2026",
               "title": "ISRO PSLV C62",
-              "cols": { "base": 1, "sm": 2, "lg": 3 },
+              "cols": {
+                "base": 1,
+                "sm": 2,
+                "lg": 3
+              },
               "gap": "gap-8",
               "cardBg": "#273C75",
               "cardRadius": "rounded-[18px]",
@@ -7759,7 +8580,6 @@
               ]
             }
           },
-
           {
             "type": "innovationLogoStrip",
             "props": {
@@ -7845,6 +8665,27 @@
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://www.edexlive.com/news/hyderabad-students-cubesat-headed-to-space"
+                },
+                {
+                  "src": "src/assets/Big-news-network.webp",
+                  "alt": "Big News Network",
+                  "width": "106",
+                  "height": "60",
+                  "anchorHref": "https://www.bignewsnetwork.com/news/279077506/blue-blocks-montessori-school-india-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond"
+                },
+                {
+                  "src": "src/assets/ANI news.png",
+                  "alt": "ANI News",
+                  "width": "120",
+                  "height": "60",
+                  "anchorHref": "https://www.aninews.in/news/business/blue-blocks-montessori-school-indias-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond20260425190508/"
+                },
+                {
+                  "src": "src/assets/business-standard-logo-2.png",
+                  "alt": "Business Standard",
+                  "width": "180",
+                  "height": "60",
+                  "anchorHref": "https://www.business-standard.com/content/press-releases-ani/blue-blocks-montessori-school-india-s-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond-126042500829_1.html"
                 }
               ]
             }
@@ -7872,7 +8713,10 @@
             "props": {
               "title": "Experience Learning\nthe Blue Blocks Way.",
               "text": "Seats are filled on a first-come basis.",
-              "cta": { "label": "Book Admission Workshop", "href": "/contact-us" },
+              "cta": {
+                "label": "Book Admission Workshop",
+                "href": "/contact-us"
+              },
               "image": "/innovation/drone.webp",
               "imageAlt": "Campus building",
               "imageWidth": "566",
@@ -7884,7 +8728,7 @@
             }
           },
           {
-          "type": "pageNavButtons",
+            "type": "pageNavButtons",
             "props": {
               "bg": "bg-[#FFFFFF]",
               "prev": {
@@ -7899,9 +8743,18 @@
           }
         ],
         "breadcrumbs": [
-          { "name": "Home", "url": "#/" },
-          { "name": "Innovation", "url": "#/innovation/" },
-          { "name": "Space Lab", "url": "#/innovation/space-lab" }
+          {
+            "name": "Home",
+            "url": "#/"
+          },
+          {
+            "name": "Innovation",
+            "url": "#/innovation/"
+          },
+          {
+            "name": "Space Lab",
+            "url": "#/innovation/space-lab"
+          }
         ],
         "schema": [
           {
@@ -7910,22 +8763,56 @@
             "name": "The Space Lab",
             "description": "Cosmic consciousness becomes cosmic responsibility â€” CubeSat launch January 2026",
             "url": "#/innovation/space-lab",
-            "isPartOf": { "@type": "WebPage", "name": "Innovation", "url": "#/innovation/" },
+            "isPartOf": {
+              "@type": "WebPage",
+              "name": "Innovation",
+              "url": "#/innovation/"
+            },
             "about": [
-              { "@type": "Thing", "name": "Space Education" },
-              { "@type": "Thing", "name": "CubeSat" },
-              { "@type": "Thing", "name": "ISRO" },
-              { "@type": "Thing", "name": "Cosmic Education" },
-              { "@type": "Thing", "name": "Peace Education" }
+              {
+                "@type": "Thing",
+                "name": "Space Education"
+              },
+              {
+                "@type": "Thing",
+                "name": "CubeSat"
+              },
+              {
+                "@type": "Thing",
+                "name": "ISRO"
+              },
+              {
+                "@type": "Thing",
+                "name": "Cosmic Education"
+              },
+              {
+                "@type": "Thing",
+                "name": "Peace Education"
+              }
             ]
           },
           {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "#/" },
-              { "@type": "ListItem", "position": 2, "name": "Innovation", "item": "#/innovation/" },
-              { "@type": "ListItem", "position": 3, "name": "Space Lab", "item": "#/innovation/space-lab" }
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "#/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Innovation",
+                "item": "#/innovation/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Space Lab",
+                "item": "#/innovation/space-lab"
+              }
             ]
           },
           {
@@ -7946,8 +8833,15 @@
                 "addressCountry": "IN"
               }
             },
-            "organizer": { "@type": "EducationalOrganization", "name": "Blue Blocks", "url": "#/" },
-            "performer": { "@type": "EducationalOrganization", "name": "Blue Blocks Students" }
+            "organizer": {
+              "@type": "EducationalOrganization",
+              "name": "Blue Blocks",
+              "url": "#/"
+            },
+            "performer": {
+              "@type": "EducationalOrganization",
+              "name": "Blue Blocks Students"
+            }
           },
           {
             "@context": "https://schema.org",
@@ -7989,8 +8883,13 @@
             "props": {
               "title": "Innovation - Cubsat Mission ",
               "breadcrumb": [
-                {"label": "Innovation", "href": "/innovation"},
-                {"label": "Innovation - Cubsat Mission "}
+                {
+                  "label": "Innovation",
+                  "href": "/innovation"
+                },
+                {
+                  "label": "Innovation - Cubsat Mission "
+                }
               ],
               "bg": {
                 "base": "#F3E3CF",
@@ -8311,14 +9210,25 @@
         ]
       },
       "breadcrumbs": [
-        {"name": "Home",  "url": "#/"},
-        {"name": "Innovation", "url": "#/innovation/"},
-        {"name": "{{title}}", "url": "#/innovation/{slug}"}
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Innovation",
+          "url": "#/innovation/"
+        },
+        {
+          "name": "{{title}}",
+          "url": "#/innovation/{slug}"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Innovation Detail",  "url": "#/innovation/{slug}",
+          "@type": "WebPage",
+          "name": "Innovation Detail",
+          "url": "#/innovation/{slug}",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
             "@id": "##website"
@@ -8385,7 +9295,7 @@
             "overlay": "dark",
             "showArcs": true
           }
-        },        
+        },
         {
           "type": "innovationHabitSplit",
           "props": {
@@ -8551,7 +9461,7 @@
                 "q": "What does 'Authentic AMI' mean, and why does it matter?",
                 "a": "The Association Montessori Internationale (AMI) was founded by Dr. Maria Montessori herself to protect the scientific integrity of her work. As an AMI-aligned institution, Blue Blocks ensures that our environments, physical materials, and Guide training meet the highest, uncompromising global standards, without dilution or commercialization."
               }
-            ],            
+            ],
             "cta": {
               "label": "Have questions about our facilities, campus, or admissions process? ",
               "href": "/faq"
@@ -8560,13 +9470,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Montessori System",  "url": "#/montessori-system/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Montessori System",
+          "url": "#/montessori-system/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Montessori System",  "url": "#/montessori-system/",
+          "@type": "WebPage",
+          "name": "Montessori System",
+          "url": "#/montessori-system/",
           "description": "Maria Montessori was a visionary who disabused the traditional methods of education for being too constrictive and non child friendly. In her lifelong work with",
           "isPartOf": {
             "@id": "##website"
@@ -8622,7 +9540,7 @@
             "image": "#",
             "eyebrow": "",
             "title": "The Architecture of Independence",
-            "subtitle":"The Prepared Environment as the Third Teacher",
+            "subtitle": "The Prepared Environment as the Third Teacher",
             "description": "At Blue Blocks, we do not build traditional classrooms where children sit and comply. We engineer purposeful ecosystems. We view physical architecture as a scientific toolâ€”the 'Third Teacher.' Every square foot of our campuses is a mathematically and psychologically calculated response to the developing human mind. Our spaces are designed to remove adult interference, allowing the child to move freely, collaborate spontaneously, and construct their own intellectual and physical independence.",
             "subdescription": "",
             "bullets": [
@@ -8661,11 +9579,10 @@
             ]
           }
         },
-        
         {
           "type": "imageText",
           "props": {
-            "sectionBg":"bg-[#EEF7FD]",
+            "sectionBg": "bg-[#EEF7FD]",
             "title": "Two Campuses. One Continuous Arc.",
             "text": [
               "To serve the distinct biological and psychological needs of children from birth to eighteen, our ecosystem is divided into two purpose-built campuses:"
@@ -8716,7 +9633,10 @@
                     "The Neuroscience: The octagon shape eliminates \"dead corners\" and equalizes sound distribution. This reduces the cognitive load required for auditory processing, allowing the brain to allocate more energy to Focus and Synaptic Fusion.",
                     "The Experience: A collaborative 360-degree environment where the teacher is a guide, not a lecturer, and every child feels equally anchored in the space."
                   ],
-                  "cta": { "label": "View details", "href": "" },
+                  "cta": {
+                    "label": "View details",
+                    "href": ""
+                  },
                   "maxWidthClass": "max-w-5xl"
                 }
               },
@@ -8733,7 +9653,10 @@
                     "The Wooden Staircase: Our central staircase is hand-crafted from natural wood with custom-designed handrails. For a child, gripping natural grain provides distinct tactile feedback (proprioception) that cold steel cannot. It turns a simple act of climbing into a grounding, sensory experience.",
                     "Indoor-Outdoor Fluidity: Our spaces are rich in natural light and airflow, dissolving the barrier between the \"classroom\" and the \"world.\" This constant connection to nature regulates the circadian rhythms essential for emotional regulation and long-term memory retention."
                   ],
-                  "cta": { "label": "View details", "href": "" },
+                  "cta": {
+                    "label": "View details",
+                    "href": ""
+                  },
                   "maxWidthClass": "max-w-5xl"
                 }
               },
@@ -8752,7 +9675,10 @@
                     "The Drone & Space Ports: Dedicated zones for our Space Science curriculum, where students move from theoretical physics to launching student-built satellites and drones.",
                     "The Montessori Environments: A scientifically \"Prepared Environment\" stocked with standardized Montessori materials that isolate specific concepts (size, shape, pitch), allowing early learners to build the logical scaffolding required for later engineering tasks."
                   ],
-                  "cta": { "label": "View details", "href": "" },
+                  "cta": {
+                    "label": "View details",
+                    "href": ""
+                  },
                   "maxWidthClass": "max-w-6xl"
                 }
               },
@@ -8769,7 +9695,10 @@
                     "Risk & Resilience Zones: Our outdoor environments are designed to encourage \"Safe Risk-Taking.\" Whether balancing on beams or navigating complex play structures, students train their Vestibular System and Cerebellumâ€”the same brain regions responsible for sequencing complex algorithms.",
                     "The Sports-Music Nexus: Open spaces dedicated to our proprietary Multi-Modal Integration drills, where rhythm, movement, and logic converge to train the athletic brain."
                   ],
-                  "cta": { "label": "View details", "href": "" },
+                  "cta": {
+                    "label": "View details",
+                    "href": ""
+                  },
                   "maxWidthClass": "max-w-5xl"
                 }
               },
@@ -8784,7 +9713,10 @@
                   "paragraphs": [
                     "US State Department Verified: Blue Blocks is listed by the United States Department of State as a verified educational institution, meeting rigorous standards for safety and operational integrity."
                   ],
-                  "cta": { "label": "View details", "href": "" },
+                  "cta": {
+                    "label": "View details",
+                    "href": ""
+                  },
                   "maxWidthClass": "max-w-4xl"
                 }
               }
@@ -8832,13 +9764,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Campus",  "url": "#/campus/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Campus",
+          "url": "#/campus/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Campus",  "url": "#/campus/",
+          "@type": "WebPage",
+          "name": "Campus",
+          "url": "#/campus/",
           "description": "Blue Blocks campuses are designed as calm, spacious, and purpose-led learning environments where children feel safe to explore, move, and grow with independence",
           "isPartOf": {
             "@id": "##website"
@@ -8978,13 +9918,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Videos",  "url": "#/videos/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Videos",
+          "url": "#/videos/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Videos",  "url": "#/videos/",
+          "@type": "WebPage",
+          "name": "Videos",
+          "url": "#/videos/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
             "@id": "##website"
@@ -9253,13 +10201,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "FAQ",  "url": "#/faq/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "FAQ",
+          "url": "#/faq/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "FAQ",  "url": "#/faq/",
+          "@type": "WebPage",
+          "name": "FAQ",
+          "url": "#/faq/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
             "@id": "##website"
@@ -9461,13 +10417,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Privacy Policy",  "url": "#/privacy-policy/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Privacy Policy",
+          "url": "#/privacy-policy/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Privacy Policy",  "url": "#/privacy-policy/",
+          "@type": "WebPage",
+          "name": "Privacy Policy",
+          "url": "#/privacy-policy/",
           "description": "Blue Blocks (<b>â€œBlue Blocksâ€, â€œweâ€, â€œourâ€, â€œusâ€</b>) respects your privacy and is committed to protecting the personal information you share with us.",
           "isPartOf": {
             "@id": "##website"
@@ -9685,13 +10649,21 @@
         }
       ],
       "breadcrumbs": [
-        { "name": "Home",  "url": "#/" },
-        { "name": "Terms of Use",  "url": "#/terms/" }
+        {
+          "name": "Home",
+          "url": "#/"
+        },
+        {
+          "name": "Terms of Use",
+          "url": "#/terms/"
+        }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
-          "@type": "WebPage", "name": "Terms of Use",  "url": "#/terms/",
+          "@type": "WebPage",
+          "name": "Terms of Use",
+          "url": "#/terms/",
           "description": "Welcome to the Blue Blocks website (<b>â€œWebsiteâ€</b>). These Terms of Use (<b>â€œTermsâ€</b>) govern your access and use of this Website and its content.",
           "isPartOf": {
             "@id": "##website"
@@ -9717,7 +10689,7 @@
         }
       ]
     },
-    "adolescentSocialNewbornPaper":{
+    "adolescentSocialNewbornPaper": {
       "seo": {
         "title": "Paper 8: The Social Newborn | Blue Blocks",
         "description": "Developmental Foundations of the Adolescent Community â€” Adolescent Programme (Ages 12â€“18 | Grades 7â€“10) | Third Plane of Development."
@@ -9728,9 +10700,17 @@
           "props": {
             "title": "The Social Newborn",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Papers", "href": "/papers" },
-              { "label": "The Social Newborn" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Papers",
+                "href": "/papers"
+              },
+              {
+                "label": "The Social Newborn"
+              }
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -9756,7 +10736,7 @@
         {
           "type": "legalDocument",
           "props": {
-            "maxWidth":"none",
+            "maxWidth": "none",
             "effectiveDate": "24/02/2026",
             "intro": [
               "<b>PAPER 8</b>",
@@ -10014,7 +10994,7 @@
         }
       ]
     },
-    "theArchitectureOfTheUniverse":{
+    "theArchitectureOfTheUniverse": {
       "seo": {
         "title": "Paper 6: The Architecture of the Universe | Blue Blocks",
         "description": "Developmental Foundations of the Elementary Community — Elementary Programme (Ages 6–12 | Grades 1–6) | Second Plane of Development."
@@ -10025,9 +11005,17 @@
           "props": {
             "title": "The Architecture of the Universe",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Papers", "href": "/papers" },
-              { "label": "The Architecture of the Universe" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Papers",
+                "href": "/papers"
+              },
+              {
+                "label": "The Architecture of the Universe"
+              }
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -10053,7 +11041,7 @@
         {
           "type": "legalDocument",
           "props": {
-            "maxWidth":"none",
+            "maxWidth": "none",
             "effectiveDate": "24/02/2026",
             "intro": [
               "<b>PAPER 6</b>",
@@ -10297,9 +11285,17 @@
           "props": {
             "title": "Developmental Architecture",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Papers", "href": "/papers" },
-              { "label": "Developmental Architecture" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Papers",
+                "href": "/papers"
+              },
+              {
+                "label": "Developmental Architecture"
+              }
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -10485,7 +11481,9 @@
               {
                 "id": "references",
                 "title": "References",
-                "paragraphs": ["<b>Classic Montessori Sources</b>"],
+                "paragraphs": [
+                  "<b>Classic Montessori Sources</b>"
+                ],
                 "bullets": [
                   "Montessori, M. (1949). <i>The Absorbent Mind</i>. Clio Press.",
                   "Montessori, M. (1936). <i>The Secret of Childhood</i>. Ballantine Books.",
@@ -10516,9 +11514,17 @@
           "props": {
             "title": "The Conscious Construction of Intelligence",
             "breadcrumb": [
-              { "label": "Home", "href": "/" },
-              { "label": "Papers", "href": "/papers" },
-              { "label": "The Conscious Construction of Intelligence" }
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Papers",
+                "href": "/papers"
+              },
+              {
+                "label": "The Conscious Construction of Intelligence"
+              }
             ],
             "bg": {
               "base": "#F3E3CF",
@@ -10726,7 +11732,9 @@
               {
                 "id": "references",
                 "title": "References",
-                "paragraphs": ["<b>Montessori Primary Sources</b>"],
+                "paragraphs": [
+                  "<b>Montessori Primary Sources</b>"
+                ],
                 "bullets": [
                   "Montessori, M. (1949). <i>The Absorbent Mind</i>. Clio Press.",
                   "Montessori, M. (1936). <i>The Secret of Childhood</i>. Ballantine Books.",

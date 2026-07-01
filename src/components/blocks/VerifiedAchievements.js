@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
 
@@ -58,9 +59,13 @@ function AchievementCard({
     >
       {/* Image */}
       <div className="overflow-hidden rounded-xl bg-white/30">
-        <img
+        <Image
           src={image}
           alt={imageAlt || title || "Achievement"}
+          width={480}
+          height={192}
+          loading="lazy"
+          decoding="async"
           className="h-44 w-full object-cover sm:h-48"
         />
       </div>

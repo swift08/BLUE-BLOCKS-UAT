@@ -90,6 +90,7 @@ export default function ContactDetails({ eyebrow, heading, items = [], form }) {
     return errors;
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const errors = useMemo(() => validate(), [values]); // basic live validation
 
   async function onSubmit(e) {

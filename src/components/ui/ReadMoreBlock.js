@@ -14,18 +14,17 @@ export default function ReadMoreBlock({
   const labelMore = readMore?.labelMore || "Read More";
   const labelLess = readMore?.labelLess || "Read Less";
 
-  const paragraphs = Array.isArray(readMore?.paragraphs) ? readMore.paragraphs : [];
-  const hasContent = enabled && paragraphs.some((p) => String(p || "").trim().length > 0);
-
-  const [open, setOpen] = useState(false);
-  const innerRef = useRef(null);
-  const [height, setHeight] = useState(0);
-
   const safeParagraphs = useMemo(() => {
+    const paragraphs = Array.isArray(readMore?.paragraphs) ? readMore.paragraphs : [];
     return paragraphs
       .map((p) => sanitizeTrustedHtml(p))
       .filter((p) => String(p).trim().length > 0);
-  }, [paragraphs]);
+  }, [readMore?.paragraphs]);
+
+  const hasContent = enabled && safeParagraphs.length > 0;
+  const [open, setOpen] = useState(false);
+  const innerRef = useRef(null);
+  const [height, setHeight] = useState(0);
 
   useEffect(() => {
     if (!innerRef.current) return;

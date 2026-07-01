@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "@/components/layout/Container";
 import { resolveBg } from "@/lib/ui";
 import { normalizeSiteHref } from "@/lib/links";
@@ -19,18 +20,30 @@ export default function PageHero({
       {/* fixed header space (manual) */}
       <div className="pt-32 sm:pt-36" />
 
-      {/* arcs (legacy) */}
+      {/* decorative arcs (legacy bg prop) */}
       {bg?.leftArc ? (
-        <img
+        <Image
           src={bg.leftArc}
           alt=""
+          role="presentation"
+          aria-hidden="true"
+          fill={false}
+          width={400}
+          height={600}
+          priority
           className="pointer-events-none absolute left-0 top-0 h-full w-auto opacity-100"
         />
       ) : null}
       {bg?.rightArc ? (
-        <img
+        <Image
           src={bg.rightArc}
           alt=""
+          role="presentation"
+          aria-hidden="true"
+          fill={false}
+          width={400}
+          height={600}
+          priority
           className="pointer-events-none absolute right-0 top-0 h-full w-auto opacity-100"
         />
       ) : null}

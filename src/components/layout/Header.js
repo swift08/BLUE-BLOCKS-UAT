@@ -176,6 +176,7 @@ export default function Header({ variant = "dark" }) {
       : [];
 
     return { megaByLabel: map, navItems: nav };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const socials = siteData.footer.socials || [];

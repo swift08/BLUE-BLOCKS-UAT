@@ -1,4 +1,5 @@
 # Blue Blocks Montessori School & Micro Research Institute
+> Last updated: 2026-07-01T07:27:48.799Z
 
 > Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad, India, offering a continuous developmental education from 15 months to 18 years (Ages 1-18), integrated with the Cambridge IGCSE curriculum. The school operates two campuses (Gachibowli and Tellapur) and houses innovation labs in space technology, drone engineering, and biomimicry. The Blue Blocks Micro Research Institute conducts a 17-year longitudinal observational study of child development across 847 cumulative students.
 
@@ -42,12 +43,27 @@ Founded: 2009
 - [Papers](https://www.blueblocks.in/papers/): The four published developmental papers.
 - [Publications](https://www.blueblocks.in/publications/): Authorisation dossiers, longitudinal studies, methodological contributions, patents.
 
-## Foundational papers
+## Foundational Papers
 
-- [Neuropsychiatry of the Toddler Plane](https://www.blueblocks.in/neuropsychiatry-of-toddler-plane/) - Paper 2: Toddler developmental architecture (15 months - 3 years).
-- [The Conscious Construction of Intelligence](https://www.blueblocks.in/the-conscious-construction-of-intelligence/) - Paper 4: Children's House framework (3-6 years).
-- [The Architecture of the Universe](https://www.blueblocks.in/the-architecture-of-the-universe/) - Paper 6: Elementary Cosmic Education (6-12 years).
-- [The Social Newborn](https://www.blueblocks.in/adolescent-social-newborn-paper/) - Paper 8: Adolescent third-plane foundations (12-18 years).
+- [Neuropsychiatry of the Toddler Plane](https://www.blueblocks.in/neuropsychiatry-of-toddler-plane/): Developmental architecture for the toddler community, grounding movement, language, and early executive function.
+- [The Conscious Construction of Intelligence](https://www.blueblocks.in/the-conscious-construction-of-intelligence/): Developmental architecture of the Children's House and the transition from unconscious to conscious absorption.
+- [The Architecture of the Universe](https://www.blueblocks.in/the-architecture-of-the-universe/): Elementary developmental framework linking Cosmic Education, moral reasoning, and innovation readiness.
+- [The Social Newborn](https://www.blueblocks.in/adolescent-social-newborn-paper/): Third-plane developmental foundations for the adolescent community and social valorization.
+
+## Publications
+
+- [IN-SPACe Authorization: Student CubeSat Mission](https://www.blueblocks.in/publications/inspace-authorization-cubesat-mission/): Formal authorization and mission-governance documentation for Blue Blocks student CubeSat participation.
+- [A Longitudinal Study of Innovation Development (0–18)](https://www.blueblocks.in/publications/longitudinal-innovation-development-0-18/): A developmental continuum study tracking innovation capacities from birth through adolescence.
+- [Research Briefs Series](https://www.blueblocks.in/publications/research-briefs-series/): Short publications addressing specific developmental and pedagogical research questions.
+- [Methodological Contributions: Observation Protocols](https://www.blueblocks.in/publications/methodological-contributions-observation-protocols/): Observation coding systems, reliability protocol notes, and analytical framework documentation.
+- [Drone Patent Series (Student Filings, 2019)](https://www.blueblocks.in/publications/drone-patent-series-2019/): Consolidated overview of student drone patent applications and design intent documentation.
+
+## Blog
+
+- [Helicopter Parenting and the Independence Gap](https://www.blueblocks.in/blog/helicopter-parenting-and-the-independence-gap/): Why over-assistance can delay executive function and what constructive independence looks like at home.
+- [The Huge Gap Between Marks and Learning](https://www.blueblocks.in/blog/the-huge-gap-between-marks-and-learning/): A practical guide to separating assessment scores from durable understanding and capability.
+- [Why Octagonal Classrooms Support Focus](https://www.blueblocks.in/blog/why-octagonal-classrooms-support-focus/): How geometry, acoustics, and movement pathways can reduce cognitive overhead in early learning spaces.
+- [CubeSat Mission: How Students Build Real Systems](https://www.blueblocks.in/blog/cubsat-mission-how-students-build-real-systems/): From prepared environments to applied systems engineering in adolescent innovation programs.
 
 ## Credentials and recognition
 

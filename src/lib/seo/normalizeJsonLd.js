@@ -1,5 +1,9 @@
 function getBaseUrl() {
-  const raw = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  // Always use the production domain — never localhost or Vercel preview URLs.
+  // In a static export there is no server context, so localhost would be
+  // baked into every JSON-LD @id and published to search engines.
+  const raw =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.blueblocks.in";
   return raw.endsWith("/") ? raw.slice(0, -1) : raw;
 }
 

@@ -1,4 +1,4 @@
-﻿// src/app/layout.js
+// src/app/layout.js
 import Script from "next/script";
 import HeaderShell from "@/components/layout/HeaderShell";
 import Footer from "@/components/layout/Footer";
@@ -14,18 +14,31 @@ import GoogleConversions from "@/components/GoogleConversions";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300","400","500","600","700"],
-  display: "optional",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.blueblocks.in"),
+  // Always production — never localhost or Vercel preview URLs.
+  metadataBase: new URL("https://www.blueblocks.in"),
   verification: {
     google: "SI7CvW22nLVTd7Oz5CRp01zUa_mrzQSWsufefVcW9QA",
   },
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      maxSnippet: -1,
+      maxImagePreview: "large",
+      maxVideoPreview: -1,
+    },
   },
 };
 

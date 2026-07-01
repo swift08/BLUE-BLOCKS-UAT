@@ -1,7 +1,8 @@
-﻿// src/components/blocks/FoundersGuides.js
+// src/components/blocks/FoundersGuides.js
 "use client";
 
 import { useMemo } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import EmblaCarousel from "../ui/carousel/EmblaCarousel";
 import AppModal from "../ui/modal/AppModal";
@@ -118,9 +119,13 @@ function FounderCard({
     <div className="h-full rounded-[26px] border-2 border-slate-900 bg-white p-6 sm:p-7 flex flex-col">
       <div className="relative overflow-hidden rounded-[22px] border border-slate-200 bg-white">
         {image ? (
-          <img
+          <Image
             src={image}
             alt={imageAlt || name || "Profile photo"}
+            width={480}
+            height={320}
+            loading="lazy"
+            decoding="async"
             className="h-[280px] w-full object-cover sm:h-[320px]"
             style={{ backgroundColor: "#fff" }}
           />
@@ -180,14 +185,15 @@ function FounderDetailsModalTrigger({ person, modal }) {
   const social = Array.isArray(modal?.social) ? modal.social : [];
 
   const safeLinks = useMemo(() => {
-    return social
+    const links = Array.isArray(modal?.social) ? modal.social : [];
+    return links
       .filter((l) => l?.href)
       .map((l) => ({
         label: l.label || l.href,
         href: l.href,
         external: /^https?:\/\//.test(l.href),
       }));
-  }, [social]);
+  }, [modal?.social]);
 
   return (
     <AppModal
@@ -207,9 +213,13 @@ function FounderDetailsModalTrigger({ person, modal }) {
         <div className="md:col-span-5">
           {person?.image ? (
             <div className="overflow-hidden rounded-2xl bg-slate-50 border">
-              <img
+              <Image
                 src={person.image}
                 alt={person.imageAlt || person.name || ""}
+                width={480}
+                height={320}
+                loading="lazy"
+                decoding="async"
                 className="h-[320px] w-full object-cover"
                 style={{ backgroundColor: "#fff" }}
               />

@@ -37,7 +37,6 @@ export default function InnovationMediaHero({
   bg = "bg-white",
 }) {
   const resolved = resolveBg(sectionBg || bg);
-  console.log("✅ InnovationMediaHero (NEW) is rendering", { title, subtitle, description });
 
   return (
     <section className={["bb-ui", resolved.className, spacingTop].filter(Boolean).join(" ")} style={resolved.style}>
