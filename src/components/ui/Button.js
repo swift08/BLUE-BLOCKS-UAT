@@ -38,7 +38,7 @@ export default function Button({
   }
 
   return (
-    <button className={cls} {...props}>
+    <button className={cls} {...props} suppressHydrationWarning>
       {children}
     </button>
   );

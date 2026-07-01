@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -54,6 +54,7 @@ export default function Accordion({
               onClick={() => toggle(index)}
               className={`w-full flex items-center justify-between gap-4 px-5 sm:px-7 py-4 text-left ${buttonClassName}`}
               aria-expanded={open}
+              suppressHydrationWarning
             >
               <RichTextContent as="span" value={q} className="bb-text font-semibold text-slate-900" />
               <span className={`text-xl text-slate-500 ${iconClassName}`}>{open ? "×" : "+"}</span>

@@ -33,6 +33,7 @@ export default function InnovationContactSplit({ image, title, form }) {
                       <textarea
                         key={f.name}
                         name={f.name}
+                        suppressHydrationWarning
                         placeholder={f.placeholder}
                         rows={5}
                         className="w-full rounded-xl bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/60 outline-none ring-1 ring-white/15 focus:ring-white/30"
@@ -45,6 +46,7 @@ export default function InnovationContactSplit({ image, title, form }) {
                       key={f.name}
                       name={f.name}
                       type={f.type || "text"}
+                      suppressHydrationWarning
                       placeholder={f.placeholder}
                       className="w-full rounded-xl bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white/60 outline-none ring-1 ring-white/15 focus:ring-white/30"
                     />
@@ -53,6 +55,7 @@ export default function InnovationContactSplit({ image, title, form }) {
 
                 <button
                   type="submit"
+                  suppressHydrationWarning
                   className="w-full rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#0f2d5c] hover:bg-white/90"
                 >
                   {form?.buttonLabel || "Submit"}

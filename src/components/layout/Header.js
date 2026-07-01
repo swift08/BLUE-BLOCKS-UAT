@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useMemo, useState } from "react";
 import Container from "./Container";
@@ -208,6 +208,7 @@ export default function Header({ variant = "dark" }) {
 
               <button
                 onClick={closeAnnouncementBar}
+                suppressHydrationWarning
                 className="px-2 font-semibold"
                 aria-label="Close announcement"
               >
@@ -282,6 +283,7 @@ export default function Header({ variant = "dark" }) {
           <button
             className={`md:hidden ${isLight ? "text-white" : "text-[#131313]"}`}
             onClick={toggleMenu}
+            suppressHydrationWarning
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
           >
@@ -332,6 +334,7 @@ export default function Header({ variant = "dark" }) {
                 <button
                   type="button"
                   onClick={() => setMenuOpen(false)}
+                  suppressHydrationWarning
                   className="absolute top-5 right-5 grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white hover:bg-white/15"
                   aria-label="Close menu"
                 >
@@ -371,6 +374,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
     >
       <button
         type="button"
+        suppressHydrationWarning
         className={`flex items-center gap-1 text-sm font-medium transition ${className} ${openActiveCls}`}
       >
         {mega.label || "Menu"}

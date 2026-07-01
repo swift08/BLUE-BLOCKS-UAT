@@ -75,6 +75,7 @@ export default function ReadMoreBlock({
         className={buttonClassName}
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
+        suppressHydrationWarning
       >
         {open ? labelLess : labelMore}
         <span

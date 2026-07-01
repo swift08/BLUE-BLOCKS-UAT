@@ -202,6 +202,7 @@ export default function ContactDetails({ eyebrow, heading, items = [], form }) {
                     <div key={name}>
                       <textarea
                         name={name}
+                        suppressHydrationWarning
                         placeholder={f.placeholder}
                         rows={f.rows || 5}
                         value={values?.[name] ?? ""}
@@ -222,6 +223,7 @@ export default function ContactDetails({ eyebrow, heading, items = [], form }) {
                     <input
                       name={name}
                       type={f.type || "text"}
+                      suppressHydrationWarning
                       placeholder={f.placeholder}
                       value={values?.[name] ?? ""}
                       onChange={(e) => setField(name, e.target.value)}
@@ -253,6 +255,7 @@ export default function ContactDetails({ eyebrow, heading, items = [], form }) {
               <button
                 type="submit"
                 disabled={submitting}
+                suppressHydrationWarning
                 className={[
                   "w-full rounded-lg bg-[#1f3b82] px-5 py-3 text-sm font-medium text-white hover:opacity-95",
                   submitting ? "opacity-70 cursor-not-allowed" : "",

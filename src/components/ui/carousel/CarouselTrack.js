@@ -305,6 +305,7 @@ export default function CarouselTrack({
               <button
                 type="button"
                 onClick={goPrev}
+                suppressHydrationWarning
                 disabled={carousel.active === 0}
                 aria-label={arrows?.prevLabel ?? "Previous"}
                 className={
@@ -318,6 +319,7 @@ export default function CarouselTrack({
               <button
                 type="button"
                 onClick={goNext}
+                suppressHydrationWarning
                 disabled={carousel.active === maxIndexComputed}
                 aria-label={arrows?.nextLabel ?? "Next"}
                 className={
@@ -345,6 +347,7 @@ export default function CarouselTrack({
               <button
                 key={`dot-${i}`}
                 type="button"
+                suppressHydrationWarning
                 onClick={() => carousel.goTo(i)}
                 aria-label={`Go to slide ${i + 1}`}
                 className={`

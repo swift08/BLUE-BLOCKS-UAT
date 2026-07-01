@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useMemo, useState } from "react";
 import Image from "next/image";
@@ -169,13 +169,14 @@ export default function Footer() {
                   {/* Newsletter */}
                   <form
                     onSubmit={onNewsletterSubmit}
-                    className="mt-4 grid grid-cols-[1fr_auto] gap-3 relative z-10"
+                    className="mt-4 flex flex-col gap-3 relative z-10"
                     noValidate
                   >
                     <input
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       type="email"
+                      suppressHydrationWarning
                       placeholder={footer.newsletter.placeholder || "Enter Your E-mail"}
                       className="h-11 w-full rounded-xl bg-[#3a3a3a] px-4 text-[0.8125rem] text-white placeholder:text-white/45 outline-none ring-1 ring-transparent focus:ring-white/20"
                       disabled={newsSubmitting}
@@ -184,12 +185,13 @@ export default function Footer() {
                     <button
                       type="submit"
                       disabled={newsSubmitting}
+                      suppressHydrationWarning
                       className={[
-                        "h-11 rounded-xl bg-white px-4 text-[0.8125rem] font-medium text-[#111] hover:bg-white/90",
+                        "h-11 w-full rounded-xl bg-white px-4 text-[0.8125rem] font-medium text-[#111] hover:bg-white/90",
                         newsSubmitting ? "opacity-70 cursor-not-allowed" : "",
                       ].join(" ")}
                     >
-                      <span className="hidden sm:inline">
+                      <span>
                         {newsSubmitting
                           ? footer.newsletter.submittingLabel || "Submitting"
                           : footer.newsletter.buttonLabel || "Submit"}{" "}

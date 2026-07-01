@@ -230,6 +230,7 @@ function HeroCarousel({
               onClick={() => scrollToIndex(activeIndex - 1)}
               className="pointer-events-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-black/35 text-white transition hover:bg-black/50"
               aria-label="Previous slide"
+              suppressHydrationWarning
             >
               <span aria-hidden="true">&larr;</span>
             </button>
@@ -246,6 +247,7 @@ function HeroCarousel({
                     "h-2.5 rounded-full transition-all",
                     activeIndex === idx ? "w-8 bg-white" : "w-2.5 bg-white/60 hover:bg-white/80",
                   ].join(" ")}
+                  suppressHydrationWarning
                 />
               ))}
             </div>
@@ -255,6 +257,7 @@ function HeroCarousel({
               onClick={() => scrollToIndex(activeIndex + 1)}
               className="pointer-events-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-black/35 text-white transition hover:bg-black/50"
               aria-label="Next slide"
+              suppressHydrationWarning
             >
               <span aria-hidden="true">&rarr;</span>
             </button>
