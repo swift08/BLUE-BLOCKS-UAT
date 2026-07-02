@@ -3,25 +3,25 @@ import FaqItem from "@/components/secondary/FaqItem";
 import Container from "@/components/layout/Container";
 import Link from "next/link";
 import Image from "next/image";
-import heroLeftImg from "@/assets/Secondary School/WhatsApp Image 2026-02-10 at 10.17.51.jpeg";
-import heroRightImg from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.14.jpeg";
+import heroLeftImg from "@/assets/Secondary School/WhatsApp Image 2026-02-10 at 10.17.51.webp";
+import heroRightImg from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.14.webp";
 import AcademicsTabs from "@/components/secondary/AcademicsTabs";
 
-import gImg1 from "@/assets/Secondary School/DSC02836.JPG";
-import gImg2 from "@/assets/Secondary School/DSC02929.JPG";
-import gImg3 from "@/assets/Secondary School/DSC02939.JPG";
-import gImg4 from "@/assets/Secondary School/DSC02965.JPG";
-import gImg5 from "@/assets/Secondary School/WhatsApp Image 2026-02-03 at 14.41.58 (1).jpeg";
-import gImg6 from "@/assets/Secondary School/WhatsApp Image 2026-02-03 at 14.41.58.jpeg";
-import gImg7 from "@/assets/Secondary School/WhatsApp Image 2026-02-03 at 14.41.59 (1).jpeg";
-import gImg8 from "@/assets/Secondary School/WhatsApp Image 2026-02-03 at 14.41.59.jpeg";
-import gImg9 from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.05.jpeg";
-import gImg10 from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.13.jpeg";
-import gImg11 from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.14 (1).jpeg";
-import gImg12 from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.14.jpeg";
-import gImg13 from "@/assets/Secondary School/WhatsApp Image 2026-02-10 at 10.17.48.jpeg";
-import gImg14 from "@/assets/Secondary School/WhatsApp Image 2026-02-10 at 10.17.49.jpeg";
-import gImg15 from "@/assets/Secondary School/WhatsApp Image 2026-02-10 at 10.17.52.jpeg";
+import gImg1 from "@/assets/Secondary School/DSC02836.webp";
+import gImg2 from "@/assets/Secondary School/DSC02929.webp";
+import gImg3 from "@/assets/Secondary School/DSC02939.webp";
+import gImg4 from "@/assets/Secondary School/DSC02965.webp";
+import gImg5 from "@/assets/Secondary School/WhatsApp Image 2026-02-03 at 14.41.58 (1).webp";
+import gImg6 from "@/assets/Secondary School/WhatsApp Image 2026-02-03 at 14.41.58.webp";
+import gImg7 from "@/assets/Secondary School/WhatsApp Image 2026-02-03 at 14.41.59 (1).webp";
+import gImg8 from "@/assets/Secondary School/WhatsApp Image 2026-02-03 at 14.41.59.webp";
+import gImg9 from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.05.webp";
+import gImg10 from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.13.webp";
+import gImg11 from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.14 (1).webp";
+import gImg12 from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.14.webp";
+import gImg13 from "@/assets/Secondary School/WhatsApp Image 2026-02-10 at 10.17.48.webp";
+import gImg14 from "@/assets/Secondary School/WhatsApp Image 2026-02-10 at 10.17.49.webp";
+import gImg15 from "@/assets/Secondary School/WhatsApp Image 2026-02-10 at 10.17.52.webp";
 
 const galleryImages = [
   gImg1, gImg2, gImg3, gImg4, gImg5, 
