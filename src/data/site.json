@@ -4782,6 +4782,10 @@
             }
           },
           {
+            "type": "discoverMoreGrid",
+            "props": {}
+          },
+          {
             "type": "imageText",
             "props": {
               "title": "The Second Rebirth",

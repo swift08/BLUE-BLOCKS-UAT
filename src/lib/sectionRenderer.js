@@ -69,6 +69,7 @@ const ProgramIntroSplit = dynamic(() => import("@/components/blocks/ProgramIntro
 const AcademicsIntro = dynamic(() => import("@/components/blocks/AcademicsIntro"), { ssr: true });
 const EducationAidToLife = dynamic(() => import("@/components/blocks/EducationAidToLife"), { ssr: true });
 const ProgramsGrid = dynamic(() => import("@/components/blocks/ProgramsGrid"), { ssr: true });
+const DiscoverMoreGrid = dynamic(() => import("@/components/blocks/DiscoverMoreGrid"), { ssr: true });
 
 // About Us
 const OurStory = dynamic(() => import("@/components/blocks/OurStory"), { ssr: true });
@@ -155,6 +156,8 @@ export default function SectionRenderer({ sections = [] }) {
             return <EducationAidToLife key={key} {...props} />;
           case "programsGrid":
             return <ProgramsGrid key={key} {...props} />;
+          case "discoverMoreGrid":
+            return <DiscoverMoreGrid key={key} {...props} />;
 
           // Programs
           case "programIntroSplit":

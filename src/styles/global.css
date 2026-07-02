@@ -127,6 +127,21 @@ html {
   animation: bb-spin 1.2s linear infinite;
 }
 
+@keyframes bb-float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-bb-float {
+  animation: bb-float 6s ease-in-out infinite;
+}
+
+.animate-bb-float-delayed {
+  animation: bb-float 6s ease-in-out infinite;
+  animation-delay: 3s;
+}
+
 /* =====================================================
    OPT-IN UI WRAPPER
    Use .bb-ui around standardized sections/pages.

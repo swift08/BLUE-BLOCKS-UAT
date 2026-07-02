@@ -221,7 +221,7 @@ export default function Header({ variant = "dark" }) {
       )}
 
       {/* Main Header */}
-      <header className="bg-[#FFFFFF]/30 backdrop-blur">
+      <header className="bg-transparent">
         <Container className="py-4 flex items-center justify-between relative">
           {/* Logo */}
           <Link href="/">
