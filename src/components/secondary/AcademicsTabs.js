@@ -30,7 +30,7 @@ export default function AcademicsTabs({ data }) {
             >
               <div className="flex items-center gap-3">
                 {isActive && (
-                  <div className="w-1 h-5 rounded-full bg-[#E07B54]" />
+                  <div className="w-1 h-5 rounded-full bg-[#C2410C]" />
                 )}
                 <span className={isActive ? "text-[#1a1a1a]" : ""}>{tab.label}</span>
               </div>
@@ -54,7 +54,7 @@ export default function AcademicsTabs({ data }) {
                 onClick={() => setActiveSubIndex(idx)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors border ${
                   isSubActive
-                    ? "bg-[#E07B54] text-white border-[#E07B54] shadow-md shadow-[#E07B54]/20"
+                    ? "bg-[#C2410C] text-white border-[#C2410C] shadow-md shadow-[#C2410C]/20"
                     : "bg-white text-slate-500 border-slate-200 hover:border-slate-300"
                 }`}
               >

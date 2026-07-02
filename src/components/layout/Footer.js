@@ -329,7 +329,7 @@ function FooterGallerySlider({ slides }) {
 function FooterColumn({ title, items }) {
   return (
     <div>
-      <h4 className="text-[0.875rem] font-medium text-white">{title}</h4>
+      <h3 className="text-[0.875rem] font-medium text-white">{title}</h3>
       <ul className="mt-3 space-y-2 text-[0.75rem] text-white/55">
         {items.map((l) => (
           <li key={l.label}>

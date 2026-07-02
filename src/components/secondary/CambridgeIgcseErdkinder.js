@@ -387,7 +387,7 @@ export default function CambridgeIgcseErdkinder() {
             
             <div className="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-t-[4px] border-[#1F3B82] flex flex-col h-full">
               <div className="text-2xl mb-3">🚀</div>
-              <h3 className="text-sm font-bold text-slate-900 mb-2 leading-snug">SBB-1 CubeSat</h3>
+              <h2 className="text-sm font-bold text-slate-900 mb-2 leading-snug">SBB-1 CubeSat</h2>
               <p className="text-xs text-slate-500 leading-relaxed">
                 Student-built payload. IN-SPACe authorised. Flew on ISRO&apos;s PSLV-C62, 12 January 2026.
               </p>
@@ -395,7 +395,7 @@ export default function CambridgeIgcseErdkinder() {
 
             <div className="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-t-[4px] border-[#1F3B82] flex flex-col h-full">
               <div className="text-2xl mb-3">📡</div>
-              <h3 className="text-sm font-bold text-slate-900 mb-2 leading-snug">SBB-2 Announcement</h3>
+              <h2 className="text-sm font-bold text-slate-900 mb-2 leading-snug">SBB-2 Announcement</h2>
               <p className="text-xs text-slate-500 leading-relaxed">
                 Second-generation payload announced April 2026. SBB-1 alumni now mentor next cohort.
               </p>
@@ -403,7 +403,7 @@ export default function CambridgeIgcseErdkinder() {
 
             <div className="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-t-[4px] border-[#1F3B82] flex flex-col h-full">
               <div className="text-2xl mb-3">📄</div>
-              <h3 className="text-sm font-bold text-slate-900 mb-2 leading-snug">Five Patents Filed</h3>
+              <h2 className="text-sm font-bold text-slate-900 mb-2 leading-snug">Five Patents Filed</h2>
               <p className="text-xs text-slate-500 leading-relaxed">
                 Drone humanitarian technology. Filed with Govt. of India by children ages 8–12.
               </p>
@@ -411,7 +411,7 @@ export default function CambridgeIgcseErdkinder() {
 
             <div className="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-t-[4px] border-[#1F3B82] flex flex-col h-full">
               <div className="text-2xl mb-3">🤖</div>
-              <h3 className="text-sm font-bold text-slate-900 mb-2 leading-snug">Dream Teachers<br/>(Agentic AI)</h3>
+              <h2 className="text-sm font-bold text-slate-900 mb-2 leading-snug">Dream Teachers<br/>(Agentic AI)</h2>
               <p className="text-xs text-slate-500 leading-relaxed">
                 Twelve adolescents built personalised AI tutors. Peer-reviewed preprint, May 2026.
               </p>
@@ -419,7 +419,7 @@ export default function CambridgeIgcseErdkinder() {
 
             <div className="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-t-[4px] border-[#1F3B82] flex flex-col h-full">
               <div className="text-2xl mb-3">🎙️</div>
-              <h3 className="text-sm font-bold text-slate-900 mb-2 leading-snug">AMI Talks Podcast</h3>
+              <h2 className="text-sm font-bold text-slate-900 mb-2 leading-snug">AMI Talks Podcast</h2>
               <p className="text-xs text-slate-500 leading-relaxed">
                 From the Absorbent Mind to the Innovative Mind. First students ever featured in AMI Talks.
               </p>
@@ -427,7 +427,7 @@ export default function CambridgeIgcseErdkinder() {
 
             <div className="bg-white rounded-2xl p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-t-[4px] border-[#1F3B82] flex flex-col h-full">
               <div className="text-2xl mb-3">🌍</div>
-              <h3 className="text-sm font-bold text-slate-900 mb-2 leading-snug">International<br/>Recognition</h3>
+              <h2 className="text-sm font-bold text-slate-900 mb-2 leading-snug">International<br/>Recognition</h2>
               <p className="text-xs text-slate-500 leading-relaxed">
                 30th Montessori Congress (Mexico). Scientific Congress, Nobel Peace Center, Oslo.
               </p>
@@ -478,8 +478,8 @@ export default function CambridgeIgcseErdkinder() {
           {/* Header Row */}
           <div className="flex flex-col lg:flex-row gap-12 items-center mb-8">
             <div className="w-full lg:w-1/2">
-              <div className="border-l-[3px] border-[#E07B54] pl-4 mb-4">
-                <p className="text-[#E07B54] text-xs font-bold tracking-wider uppercase">
+              <div className="border-l-[3px] border-[#C2410C] pl-4 mb-4">
+                <p className="text-[#C2410C] text-xs font-bold tracking-wider uppercase">
                   Academic Foundation
                 </p>
                 <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2">
@@ -512,15 +512,15 @@ export default function CambridgeIgcseErdkinder() {
               </p>
               <ol className="space-y-4 mb-6">
                 <li className="flex gap-3 items-start">
-                  <span className="text-[#E07B54] font-bold mt-0.5">1.</span>
+                  <span className="text-[#C2410C] font-bold mt-0.5">1.</span>
                   <p className="text-sm text-slate-700"><strong className="font-semibold text-slate-900">Self-assessment</strong> against the Cambridge Marks Scheme</p>
                 </li>
                 <li className="flex gap-3 items-start">
-                  <span className="text-[#E07B54] font-bold mt-0.5">2.</span>
+                  <span className="text-[#C2410C] font-bold mt-0.5">2.</span>
                   <p className="text-sm text-slate-700"><strong className="font-semibold text-slate-900">Peer review</strong> against the same criteria to build evaluative thinking</p>
                 </li>
                 <li className="flex gap-3 items-start">
-                  <span className="text-[#E07B54] font-bold mt-0.5">3.</span>
+                  <span className="text-[#C2410C] font-bold mt-0.5">3.</span>
                   <p className="text-sm text-slate-700"><strong className="font-semibold text-slate-900">Mentor assessment</strong> as the calibrating benchmark</p>
                 </li>
               </ol>
@@ -530,7 +530,7 @@ export default function CambridgeIgcseErdkinder() {
             </div>
             <div className="w-full md:w-1/3">
               <div className="bg-white rounded-2xl p-8 text-center shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-slate-100 flex flex-col justify-center items-center h-full min-h-[220px]">
-                <div className="text-5xl font-black text-[#E07B54] mb-2">100%</div>
+                <div className="text-5xl font-black text-[#C2410C] mb-2">100%</div>
                 <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">
                   Cambridge Pass Rate
                 </div>
@@ -551,8 +551,8 @@ export default function CambridgeIgcseErdkinder() {
       <section id="projects" className="bg-[#FCFBF9] py-20 scroll-mt-[200px]">
         <Container>
           <div className="mb-14">
-            <div className="border-l-[3px] border-[#5D9CC5] pl-4 mb-4">
-              <p className="text-[#5D9CC5] text-xs font-bold tracking-wider uppercase">
+            <div className="border-l-[3px] border-[#1E6091] pl-4 mb-4">
+              <p className="text-[#1E6091] text-xs font-bold tracking-wider uppercase">
                 Productive Work
               </p>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2">
@@ -568,7 +568,7 @@ export default function CambridgeIgcseErdkinder() {
             {/* Card 1 */}
             <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col h-full hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-shadow">
               <div className="mb-6">
-                <span className="inline-block bg-[#EAF4FF] text-[#5D9CC5] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
+                <span className="inline-block bg-[#EAF4FF] text-[#1E6091] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
                   SPACE LAB & PROTOTYPING
                 </span>
               </div>
@@ -578,7 +578,7 @@ export default function CambridgeIgcseErdkinder() {
               <p className="text-sm text-slate-500 mb-8 flex-grow leading-relaxed">
                 Real satellite payload design, SBB-1 CubeSat integrated on ISRO&apos;s PSLV-C62. Showcased on national television.
               </p>
-              <button className="text-[#5D9CC5] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
+              <button className="text-[#1E6091] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
                 EXPLORE PROJECT <span>&#9656;</span>
               </button>
             </div>
@@ -586,7 +586,7 @@ export default function CambridgeIgcseErdkinder() {
             {/* Card 2 */}
             <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col h-full hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-shadow">
               <div className="mb-6">
-                <span className="inline-block bg-[#EAF4FF] text-[#5D9CC5] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
+                <span className="inline-block bg-[#EAF4FF] text-[#1E6091] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
                   DRONE-BASED HUMANITARIAN TECHNOLOGIES
                 </span>
               </div>
@@ -596,7 +596,7 @@ export default function CambridgeIgcseErdkinder() {
               <p className="text-sm text-slate-500 mb-8 flex-grow leading-relaxed">
                 Five patents filed with the Government of India. Invented by students aged 8-12.
               </p>
-              <button className="text-[#5D9CC5] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
+              <button className="text-[#1E6091] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
                 EXPLORE PROJECT <span>&#9656;</span>
               </button>
             </div>
@@ -604,7 +604,7 @@ export default function CambridgeIgcseErdkinder() {
             {/* Card 3 */}
             <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col h-full hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-shadow">
               <div className="mb-6">
-                <span className="inline-block bg-[#EAF4FF] text-[#5D9CC5] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
+                <span className="inline-block bg-[#EAF4FF] text-[#1E6091] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
                   SOCIOLOGICAL FIELD RESEARCH
                 </span>
               </div>
@@ -614,7 +614,7 @@ export default function CambridgeIgcseErdkinder() {
               <p className="text-sm text-slate-500 mb-8 flex-grow leading-relaxed">
                 Student-designed 25-question psychological research instrument deployed for study in workspaces.
               </p>
-              <button className="text-[#5D9CC5] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
+              <button className="text-[#1E6091] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
                 EXPLORE PROJECT <span>&#9656;</span>
               </button>
             </div>
@@ -622,7 +622,7 @@ export default function CambridgeIgcseErdkinder() {
             {/* Card 4 */}
             <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col h-full hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-shadow">
               <div className="mb-6">
-                <span className="inline-block bg-[#EAF4FF] text-[#5D9CC5] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
+                <span className="inline-block bg-[#EAF4FF] text-[#1E6091] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
                   STUDENT-RUN PAPER RECYCLING INITIATIVE
                 </span>
               </div>
@@ -632,7 +632,7 @@ export default function CambridgeIgcseErdkinder() {
               <p className="text-sm text-slate-500 mb-8 flex-grow leading-relaxed">
                 Pulping, drying, and reforming to study circular economics.
               </p>
-              <button className="text-[#5D9CC5] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
+              <button className="text-[#1E6091] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
                 EXPLORE PROJECT <span>&#9656;</span>
               </button>
             </div>
@@ -640,7 +640,7 @@ export default function CambridgeIgcseErdkinder() {
             {/* Card 5 */}
             <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col h-full hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-shadow">
               <div className="mb-6">
-                <span className="inline-block bg-[#EAF4FF] text-[#5D9CC5] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
+                <span className="inline-block bg-[#EAF4FF] text-[#1E6091] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
                   COLLABORATIVE PROJECT WITH UPSCHOOL AND UN
                 </span>
               </div>
@@ -650,7 +650,7 @@ export default function CambridgeIgcseErdkinder() {
               <p className="text-sm text-slate-500 mb-8 flex-grow leading-relaxed">
                 Studying Javan Rhino, Indian Vulture, and Amur Leopard.
               </p>
-              <button className="text-[#5D9CC5] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
+              <button className="text-[#1E6091] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
                 EXPLORE PROJECT <span>&#9656;</span>
               </button>
             </div>
@@ -658,7 +658,7 @@ export default function CambridgeIgcseErdkinder() {
             {/* Card 6 */}
             <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] flex flex-col h-full hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-shadow">
               <div className="mb-6">
-                <span className="inline-block bg-[#EAF4FF] text-[#5D9CC5] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
+                <span className="inline-block bg-[#EAF4FF] text-[#1E6091] text-[10px] font-bold tracking-wider uppercase px-3 py-1.5 rounded-full">
                   AGENTIC AI / PERSONAL TUTORS
                 </span>
               </div>
@@ -668,7 +668,7 @@ export default function CambridgeIgcseErdkinder() {
               <p className="text-sm text-slate-500 mb-8 flex-grow leading-relaxed">
                 Twelve adolescents built personalised AI tutors. Peer-reviewed preprint May 2026, dataset on Harvard Dataverse.
               </p>
-              <button className="text-[#5D9CC5] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
+              <button className="text-[#1E6091] text-xs font-bold tracking-wide flex items-center gap-1 uppercase hover:text-[#4a84a8] transition-colors self-start">
                 EXPLORE PROJECT <span>&#9656;</span>
               </button>
             </div>
@@ -706,8 +706,8 @@ export default function CambridgeIgcseErdkinder() {
       <section id="day" className="bg-[#FCFBF9] py-20 scroll-mt-[200px]">
         <Container>
           <div className="mb-12">
-            <div className="border-l-[3px] border-[#DDA343] pl-4 mb-4">
-              <p className="text-[#DDA343] text-xs font-bold tracking-wider uppercase">
+            <div className="border-l-[3px] border-[#A16207] pl-4 mb-4">
+              <p className="text-[#A16207] text-xs font-bold tracking-wider uppercase">
                 Daily Rhythm
               </p>
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 mt-2">
@@ -769,7 +769,7 @@ export default function CambridgeIgcseErdkinder() {
             <div className="flex flex-col gap-8">
               {/* Sports Card */}
               <div className="bg-white rounded-3xl border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] p-8">
-                <h3 className="text-[#DDA343] text-sm font-bold tracking-wider uppercase mb-4">Sports</h3>
+                <h3 className="text-[#A16207] text-sm font-bold tracking-wider uppercase mb-4">Sports</h3>
                 <p className="text-sm text-slate-500 mb-6 leading-relaxed">
                   Part of the daily rhythm. Basketball, Table Tennis, Volleyball, 5K Running, 100m Sprint, Karate.
                 </p>
@@ -808,7 +808,7 @@ export default function CambridgeIgcseErdkinder() {
                   key={i}
                   className="rounded-3xl bg-white border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.02)] p-6 flex flex-col gap-2 hover:shadow-[0_4px_20px_-4px_rgba(0,0,0,0.06)] transition-shadow"
                 >
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#DDA343] mb-1">{s.step}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#A16207] mb-1">{s.step}</span>
                   <span className="font-bold text-slate-900 text-lg">{s.label}</span>
                   <p className="text-sm text-slate-500 leading-relaxed mt-2">{s.detail}</p>
                 </div>

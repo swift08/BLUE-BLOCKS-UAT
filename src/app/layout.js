@@ -55,9 +55,9 @@ export default function RootLayout({ children }) {
         <JsonLd id="jsonld-website" data={website} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-KYX146E33J"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="gtag-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

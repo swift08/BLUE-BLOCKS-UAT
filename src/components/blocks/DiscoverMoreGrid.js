@@ -97,7 +97,7 @@ export default function DiscoverMoreGrid() {
       <Container>
         <div className="mx-auto max-w-5xl text-center">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#1a1a1a] mb-12">
-            Discover More About Our Secondary School Community
+            About Our Secondary School Community
           </h2>
         </div>
 
