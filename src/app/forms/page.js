@@ -42,9 +42,9 @@ export default function FormsSelectionPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h2 className="text-xl font-semibold text-slate-900 mb-3">5-Question Version</h2>
+            <h2 className="text-xl font-semibold text-slate-900 mb-3">Food Foundations</h2>
             <p className="text-slate-500 mb-6 flex-grow">A quick, 2-minute version to discover your child&apos;s food foundations.</p>
-            <span className="text-green-600 font-medium group-hover:underline">Start 5-Question Version &rarr;</span>
+            <span className="text-green-600 font-medium group-hover:underline">Start Food Foundations &rarr;</span>
           </Link>
         </div>
       </div>

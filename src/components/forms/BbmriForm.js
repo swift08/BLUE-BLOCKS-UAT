@@ -24,7 +24,7 @@ export default function BbmriForm() {
     q17: [],
     q18: "",
     q19: "",
-    q20: [], q20Other: "",
+    q20: "", q20Other: "",
     childName: "",
     parentName: "",
     phone: "",
@@ -38,6 +38,87 @@ export default function BbmriForm() {
   const [status, setStatus] = useState("idle"); // idle, submitting, success, error
   const [progress, setProgress] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
+
+  const [showConfirm, setShowConfirm] = useState(false);
+  const [showNotification, setShowNotification] = useState(false);
+  const cancelBtnRef = useRef(null);
+
+  const initialFormState = {
+    q1: "",
+    q2: "", q2Other: "",
+    q3: "",
+    q4: "",
+    q5: "",
+    q6: [],
+    q7: "",
+    q8: "",
+    q9: "",
+    q10: [],
+    q11: "", q11Other: "",
+    q12: "",
+    q13: "",
+    q14: "",
+    q15: "",
+    q16: "",
+    q17: [],
+    q18: "",
+    q19: "",
+    q20: "", q20Other: "",
+    childName: "",
+    parentName: "",
+    phone: "",
+    email: "",
+    address: "",
+    source: "", sourceOther: "",
+    consent: ""
+  };
+
+  const handleClearClick = () => {
+    setShowConfirm(true);
+  };
+
+  const confirmClear = () => {
+    setFormData(initialFormState);
+    setErrors({});
+    setStatus("idle");
+    localStorage.removeItem("bbmri_form_data");
+    
+    // Smooth scroll back to top of form
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // Focus on the first question input
+    setTimeout(() => {
+      const firstInput = document.getElementById("q1");
+      if (firstInput) {
+        firstInput.focus();
+      }
+    }, 100);
+
+    setShowConfirm(false);
+    setShowNotification(true);
+    setTimeout(() => {
+      setShowNotification(false);
+    }, 3000);
+  };
+
+  // Close confirmation modal on Escape key
+  useEffect(() => {
+    if (!showConfirm) return;
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setShowConfirm(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [showConfirm]);
+
+  // Focus Cancel button when confirmation modal opens
+  useEffect(() => {
+    if (showConfirm && cancelBtnRef.current) {
+      cancelBtnRef.current.focus();
+    }
+  }, [showConfirm]);
 
   // Load from localStorage on mount
   useEffect(() => {
@@ -66,7 +147,7 @@ export default function BbmriForm() {
       formData.q6.length > 0 ? "y" : "", formData.q7, formData.q8, formData.q9,
       formData.q10.length > 0 ? "y" : "", formData.q11, formData.q12, formData.q13,
       formData.q14, formData.q15, formData.q16, formData.q17.length > 0 ? "y" : "",
-      formData.q18, formData.q19, formData.q20.length > 0 ? "y" : "",
+      formData.q18, formData.q19, formData.q20,
       formData.childName, formData.parentName, formData.phone, formData.email,
       formData.address, formData.source, formData.consent
     ];
@@ -117,7 +198,7 @@ export default function BbmriForm() {
     if (!formData.q14) newErrors.q14 = reqText;
     if (formData.q17.length === 0) newErrors.q17 = reqText;
     
-    if (formData.q20.includes("Other") && !formData.q20Other.trim()) newErrors.q20Other = reqText;
+    if (formData.q20 === "Other" && !formData.q20Other.trim()) newErrors.q20Other = reqText;
     
     if (!formData.childName.trim()) newErrors.childName = reqText;
     if (!formData.parentName.trim()) newErrors.parentName = reqText;
@@ -171,20 +252,20 @@ Child Name: ${formData.childName}
 Age: ${formData.q1}
 
 --- Section 2: Let's Begin With Mealtimes ---
-Q2 (First feeling): ${formData.q2 === "Other" ? formData.q2Other : formData.q2}
+Q2 (What worries you most when child eats very little): ${formData.q2 === "Other" ? formData.q2Other : formData.q2}
 
 --- Section 3: Eating Patterns & Appetite ---
 Q3 (Eating across day): ${formData.q3 || "Not answered"}
-Q4 (Appetite description): ${formData.q4 || "Not answered"}
+Q4 (Sentence sounds most like child): ${formData.q4 || "Not answered"}
 
 --- Section 4: Understanding Food Refusals ---
 Q5 (When child refuses): ${formData.q5 || "Not answered"}
 Q6 (Happening right now): ${formData.q6.length > 0 ? formData.q6.join(", ") : "None selected"}
 
 --- Section 5: Your Child's Food Personality ---
-Q7 (New food appearance): ${formData.q7}
+Q7 (When hungry, they usually): ${formData.q7}
 Q8 (Approach to food): ${formData.q8}
-Q9 (Statement sounds most like child): ${formData.q9 || "Not answered"}
+Q9 (Response to new food): ${formData.q9 || "Not answered"}
 
 --- Section 6: Mealtime Environment ---
 Q10 (Mealtimes in home): ${formData.q10.join(", ")}
@@ -193,17 +274,17 @@ Q12 (Screens used): ${formData.q12 || "Not answered"}
 Q13 (Meal duration): ${formData.q13 || "Not answered"}
 
 --- Section 7: Appetite Regulation & Feeding Dynamics ---
-Q14 (Who decides how much): ${formData.q14}
-Q15 (Trust child to stop): ${formData.q15 || "Not answered"}
+Q14 (Action when child says "I'm full"): ${formData.q14}
+Q15 (First instinct if child chooses not to eat): ${formData.q15 || "Not answered"}
 Q16 (Treats as encouragement): ${formData.q16 || "Not answered"}
 
 --- Section 8: Independence at Mealtimes ---
 Q17 (Child can do): ${formData.q17.join(", ")}
-Q18 (Reason for stepping in): ${formData.q18 || "Not answered"}
+Q18 (Comfort with mess): ${formData.q18 || "Not answered"}
 Q19 (Participation in prep): ${formData.q19 || "Not answered"}
 
 --- Section 9: Reflection & Insights ---
-Q20 (Worries most): ${formData.q20.map(v => v === "Other" ? formData.q20Other : v).join(", ") || "None selected"}
+Q20 (One thing to change about mealtimes): ${formData.q20 === "Other" ? formData.q20Other : formData.q20 || "Not answered"}
 
 --- Section 11: Research Consent ---
 Consent choice: ${formData.consent}
@@ -422,9 +503,9 @@ Consent choice: ${formData.consent}
       <section className="bb-section -mt-8 px-4 pb-32">
         <form onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-12" noValidate>
           
-          {/* Section 2 */}
+          {/* Section 1 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 2</div>
+            <div className="bb-eyebrow mb-2">Section 1</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-6">Let&apos;s Begin With Mealtimes</h2>
             <p className="text-slate-600 mb-8 text-justify">There are no right or wrong answers. Simply choose the response that feels closest to your family&apos;s everyday experience.</p>
             
@@ -435,15 +516,23 @@ Consent choice: ${formData.consent}
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q2. When you picture your child at a meal, what&apos;s the first feeling that comes up? <span className="text-red-500">*</span></h3>
-                {renderRadioGroup("q2", ["Joy", "Concern", "Frustration", "Exhaustion", "It depends on the day", "Other"], true)}
+                <h3 className="font-medium text-lg text-slate-800">Q2. When your child eats very little, what worries you the most? <span className="text-red-500">*</span></h3>
+                {renderRadioGroup("q2", [
+                  "They won't get enough nutrition",
+                  "They'll lose weight",
+                  "They'll become weak or fall sick",
+                  "They'll never learn to eat well",
+                  "People may think I'm not feeding them properly",
+                  "I'm not sure",
+                  "Other"
+                ], true)}
               </div>
             </div>
           </motion.div>
 
-          {/* Section 3 */}
+          {/* Section 2 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 3</div>
+            <div className="bb-eyebrow mb-2">Section 2</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-8">Eating Patterns & Appetite</h2>
             
             <div className="space-y-8">
@@ -453,15 +542,21 @@ Consent choice: ${formData.consent}
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q4. Which best describes your child&apos;s appetite?</h3>
-                {renderRadioGroup("q4", ["Consistently good", "Good on some days, low on others", "Usually low", "Depends heavily on snacks and drinks", "I'm worried they don't eat enough"])}
+                <h3 className="font-medium text-lg text-slate-800">Q4. Which sentence sounds most like your child?</h3>
+                {renderRadioGroup("q4", [
+                  "Eats well most days.",
+                  "Eats a lot one day and very little the next.",
+                  "Usually has a small appetite.",
+                  "Often prefers snacks over meals.",
+                  "I can't predict their appetite."
+                ])}
               </div>
             </div>
           </motion.div>
 
-          {/* Section 4 */}
+          {/* Section 3 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 4</div>
+            <div className="bb-eyebrow mb-2">Section 3</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-8">Understanding Food Refusals</h2>
             
             <div className="space-y-8">
@@ -477,32 +572,50 @@ Consent choice: ${formData.consent}
             </div>
           </motion.div>
 
-          {/* Section 5 */}
+          {/* Section 4 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 5</div>
+            <div className="bb-eyebrow mb-2">Section 4</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-8">Your Child&apos;s Food Personality</h2>
             
             <div className="space-y-8">
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q7. When a new food appears, where is your child on this journey? <span className="text-red-500">*</span></h3>
-                {renderRadioGroup("q7", ["Won't let it on the plate", "Lets it sit there", "Touches or smells it", "Tastes it", "Eats it"])}
+                <h3 className="font-medium text-lg text-slate-800">Q7. When your child is hungry, they usually... <span className="text-red-500">*</span></h3>
+                {renderRadioGroup("q7", [
+                  "Tell me they're hungry.",
+                  "Ask for food themselves.",
+                  "Become irritable before I realise they're hungry.",
+                  "Wait until someone offers food.",
+                  "It's difficult to tell."
+                ])}
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q8. How would you describe your child&apos;s approach to food? <span className="text-red-500">*</span></h3>
-                {renderRadioGroup("q8", ["Cautious", "Strong-willed", "Enthusiastic", "Easygoing", "Unpredictable"])}
+                <h3 className="font-medium text-lg text-slate-800">Q8. Which word best describes your child&apos;s approach to food? <span className="text-red-500">*</span></h3>
+                {renderRadioGroup("q8", [
+                  "Curious",
+                  "Cautious",
+                  "Adventurous",
+                  "Prefers familiar foods",
+                  "Unpredictable"
+                ])}
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q9. Which statement sounds most like your child?</h3>
-                {renderRadioGroup("q9", ["\"I want to do it myself.\"", "\"I need time before I try something new.\"", "\"I love exploring and experimenting.\"", "\"I prefer familiar routines.\"", "\"It depends on the day.\""])}
+                <h3 className="font-medium text-lg text-slate-800">Q9. When your child sees a completely new food, what usually happens first?</h3>
+                {renderRadioGroup("q9", [
+                  "Refuses it immediately",
+                  "Watches it carefully",
+                  "Touches or smells it",
+                  "Takes a tiny taste",
+                  "Starts eating it"
+                ])}
               </div>
             </div>
           </motion.div>
 
-          {/* Section 6 */}
+          {/* Section 5 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 6</div>
+            <div className="bb-eyebrow mb-2">Section 5</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-8">Mealtime Environment</h2>
             
             <div className="space-y-8">
@@ -528,20 +641,32 @@ Consent choice: ${formData.consent}
             </div>
           </motion.div>
 
-          {/* Section 7 */}
+          {/* Section 6 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 7</div>
+            <div className="bb-eyebrow mb-2">Section 6</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-8">Appetite Regulation & Feeding Dynamics</h2>
             
             <div className="space-y-8">
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q14. At your table, who decides how much your child eats? <span className="text-red-500">*</span></h3>
-                {renderRadioGroup("q14", ["I mostly decide", "We both influence it", "My child mostly decides", "I've never thought about it this way"])}
+                <h3 className="font-medium text-lg text-slate-800">Q14. When your child says, &quot;I&apos;m full,&quot; what do you usually do? <span className="text-red-500">*</span></h3>
+                {renderRadioGroup("q14", [
+                  "Trust them",
+                  "Encourage a few more bites",
+                  "Ask them to finish",
+                  "Offer something different",
+                  "It depends"
+                ])}
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q15. How often do you trust your child to stop eating when they feel full?</h3>
-                {renderRadioGroup("q15", ["Rarely", "Sometimes", "Often", "Almost always"])}
+                <h3 className="font-medium text-lg text-slate-800">Q15. If your child chooses not to eat at a meal, what is your first instinct?</h3>
+                {renderRadioGroup("q15", [
+                  "They'll eat when they're hungry.",
+                  "I offer another food.",
+                  "I encourage them to eat.",
+                  "I become worried.",
+                  "It depends."
+                ])}
               </div>
               
               <div>
@@ -551,9 +676,9 @@ Consent choice: ${formData.consent}
             </div>
           </motion.div>
 
-          {/* Section 8 */}
+          {/* Section 7 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 8</div>
+            <div className="bb-eyebrow mb-2">Section 7</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-8">Independence at Mealtimes</h2>
             
             <div className="space-y-8">
@@ -563,8 +688,14 @@ Consent choice: ${formData.consent}
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q18. When you step in to feed your child, what is usually the reason?</h3>
-                {renderRadioGroup("q18", ["Needs help", "Needs encouragement", "It's quicker", "It avoids mess", "A combination of these", "They already self-feed"])}
+                <h3 className="font-medium text-lg text-slate-800">Q18. How comfortable are you allowing your child to make a mess while learning to eat independently?</h3>
+                {renderRadioGroup("q18", [
+                  "Very comfortable",
+                  "Mostly comfortable",
+                  "Sometimes",
+                  "Rarely",
+                  "Not at all"
+                ])}
               </div>
               
               <div>
@@ -574,22 +705,33 @@ Consent choice: ${formData.consent}
             </div>
           </motion.div>
 
-          {/* Section 9 */}
+          {/* Section 8 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 9</div>
+            <div className="bb-eyebrow mb-2">Section 8</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-8">Reflection & Insights</h2>
             
             <div className="space-y-8">
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q20. What worries you most about your child&apos;s eating right now?</h3>
-                {renderCheckboxGroup("q20", ["Not eating enough", "Picky eating", "Nutrition", "Weight gain", "Mealtime stress", "Screen dependence", "Lack of independence", "Nothing in particular", "Other"], true)}
+                <h3 className="font-medium text-lg text-slate-800">Q20. If you could change just ONE thing about mealtimes, what would it be?</h3>
+                {renderRadioGroup("q20", [
+                  "Eat a wider variety of foods",
+                  "Eat enough for their needs",
+                  "Be more willing to try new foods",
+                  "Enjoy mealtimes more",
+                  "Make mealtimes less stressful for our family",
+                  "Become more independent during meals",
+                  "Develop healthier eating habits",
+                  "Reduce reliance on screens or distractions during meals",
+                  "Nothing in particular – things are going well",
+                  "Other"
+                ], true)}
               </div>
             </div>
           </motion.div>
 
-          {/* Section 10 */}
+          {/* Section 9 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 10</div>
+            <div className="bb-eyebrow mb-2">Section 9</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-8">Receive Your Personalised Reflection</h2>
             
             <div className="space-y-4">
@@ -606,9 +748,9 @@ Consent choice: ${formData.consent}
             </div>
           </motion.div>
 
-          {/* Section 11 */}
+          {/* Section 10 */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 11</div>
+            <div className="bb-eyebrow mb-2">Section 10</div>
             <h2 className="text-2xl font-semibold text-slate-900 mb-4">Research Consent</h2>
             <p className="text-slate-600 mb-8 text-justify">We never share anything that could identify you or your child. You&apos;ll receive your full personalised reflection whatever you choose.</p>
             
@@ -629,25 +771,99 @@ Consent choice: ${formData.consent}
             {Object.keys(errors).length > 0 && (
               <p className="text-red-500 mb-4 font-medium">Please complete all required fields correctly before submitting.</p>
             )}
-            <button
-              type="submit"
-              disabled={status === "submitting"}
-              className="bb-btn bb-btn--primary px-12 py-4 text-lg font-semibold w-full sm:w-auto shadow-lg shadow-[#1f3b82]/30"
-            >
-              {status === "submitting" ? (
-                <>
-                  <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                  </svg>
-                  Submitting Reflection...
-                </>
-              ) : "Submit Reflection"}
-            </button>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <button
+                type="submit"
+                disabled={status === "submitting"}
+                className="bb-btn bb-btn--primary px-12 py-4 text-lg font-semibold w-full sm:w-auto shadow-lg shadow-[#1f3b82]/30 order-1 sm:order-2"
+              >
+                {status === "submitting" ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Submitting Reflection...
+                  </>
+                ) : "Submit Reflection"}
+              </button>
+              <button
+                type="button"
+                onClick={handleClearClick}
+                className="px-12 py-4 text-lg font-semibold w-full sm:w-auto border border-slate-300 hover:border-slate-400 text-slate-600 hover:bg-slate-50 transition-all rounded-full order-2 sm:order-1 outline-none focus:ring-2 focus:ring-[#1f3b82] focus:ring-offset-2"
+              >
+                Clear Form
+              </button>
+            </div>
             <p className="text-slate-500 text-sm mt-4">By submitting, you agree to our privacy policy and terms.</p>
           </div>
         </form>
       </section>
+
+      {/* Confirmation Dialog Modal */}
+      <AnimatePresence>
+        {showConfirm && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm"
+            onClick={() => setShowConfirm(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ type: "spring", duration: 0.3 }}
+              className="bg-white rounded-2xl p-6 max-w-md w-full shadow-2xl space-y-4"
+              onClick={(e) => e.stopPropagation()}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="dialog-title"
+              aria-describedby="dialog-desc"
+            >
+              <h3 id="dialog-title" className="text-xl font-semibold text-slate-900">
+                Clear all responses?
+              </h3>
+              <p id="dialog-desc" className="text-slate-600 leading-relaxed text-[15px]">
+                This will remove all the answers you&apos;ve entered in this form. This action cannot be undone.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                <button
+                  type="button"
+                  ref={cancelBtnRef}
+                  onClick={() => setShowConfirm(false)}
+                  className="flex-1 px-4 py-3 rounded-xl border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 transition-all text-center focus:ring-2 focus:ring-[#1f3b82] outline-none"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  onClick={confirmClear}
+                  className="flex-1 px-4 py-3 rounded-xl bg-red-600 text-white font-medium hover:bg-red-700 transition-all text-center focus:ring-2 focus:ring-red-500 outline-none"
+                >
+                  Clear Form
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Success Toast Notification */}
+      <AnimatePresence>
+        {showNotification && (
+          <motion.div
+            initial={{ opacity: 0, y: -20, x: "-50%" }}
+            animate={{ opacity: 1, y: 0, x: "-50%" }}
+            exit={{ opacity: 0, y: -20, x: "-50%" }}
+            className="fixed top-6 left-1/2 z-[110] bg-slate-900 text-white px-6 py-3 rounded-full shadow-lg text-sm font-medium flex items-center gap-2 pointer-events-none"
+          >
+            <span>✨</span>
+            <span>All responses have been cleared successfully.</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
