@@ -71,6 +71,7 @@ function stripTypographySizing(className = "") {
 }
 
 export default function CardsGridSection({
+  id,
   // Section
   bg = "#FBF7F1",
   sectionBg = "",
@@ -147,6 +148,7 @@ export default function CardsGridSection({
 
   return (
     <section
+      id={id}
       className={["bb-ui", "bb-section", sectionClassName, resolvedSection.className]
         .filter(Boolean)
         .join(" ")}

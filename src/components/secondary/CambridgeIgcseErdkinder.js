@@ -449,7 +449,14 @@ export default function CambridgeIgcseErdkinder() {
         </Container>
       </section>
       {/* ── TRACK NAV BAR ──────────────────────────────────────────────── */}
-      <SectionNav />
+      <SectionNav items={[
+        { id: "academics", label: "Academics" },
+        { id: "projects", label: "What Students Build" },
+        { id: "day", label: "A Day in Erdkinder" },
+        { id: "going-outs", label: "Going Outs" },
+        { id: "mentors", label: "Mentors" },
+        { id: "faq", label: "FAQ" },
+      ]} />
 
 
       {/* ── RESEARCH LINE ─────────────────────────────────────────────── */}

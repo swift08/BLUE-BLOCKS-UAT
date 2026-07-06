@@ -2,16 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 
-const NAV_ITEMS = [
-  { id: "academics",   label: "Academics" },
-  { id: "projects",    label: "What Students Build" },
-  { id: "day",         label: "A Day in Erdkinder" },
-  { id: "going-outs",  label: "Going Outs" },
-  { id: "mentors",     label: "Mentors" },
-  { id: "faq",         label: "FAQ" },
-];
-
-const ACCENT = "#E07B54"; /* warm coral — matches the reference screenshot */
+const ACCENT = "#E07B54"; /* warm coral */
 
 function getHeaderHeight() {
   const el =
@@ -19,19 +10,21 @@ function getHeaderHeight() {
   return el ? Math.ceil(el.getBoundingClientRect().height) : 0;
 }
 
-export default function SectionNav() {
-  const [active, setActive]       = useState("academics");
-  const [headerH, setHeaderH]     = useState(0);
-  const navRef                    = useRef(null);
-  const observerRef               = useRef(null);
-  const isClickScrolling          = useRef(false);
+export default function SectionNav({ items }) {
+  /* Use passed items; fall back to empty array so nothing crashes */
+  const NAV_ITEMS = Array.isArray(items) && items.length > 0 ? items : [];
+
+  const [active, setActive] = useState(NAV_ITEMS[0]?.id ?? "");
+  const [headerH, setHeaderH] = useState(0);
+  const navRef = useRef(null);
+  const observerRef = useRef(null);
+  const isClickScrolling = useRef(false);
 
   /* ── Measure header height (on mount + resize) ───────────────────── */
   useEffect(() => {
     const measure = () => setHeaderH(getHeaderHeight());
     measure();
     window.addEventListener("resize", measure, { passive: true });
-    /* re-measure after a short delay (announcement bar may animate in) */
     const t = setTimeout(measure, 400);
     return () => {
       window.removeEventListener("resize", measure);
@@ -41,10 +34,14 @@ export default function SectionNav() {
 
   /* ── IntersectionObserver — active section tracking ─────────────── */
   useEffect(() => {
+    if (!NAV_ITEMS.length) return;
+
     const targets = NAV_ITEMS
       .map(({ id }) => document.getElementById(id))
       .filter(Boolean);
     if (!targets.length) return;
+
+    observerRef.current?.disconnect();
 
     observerRef.current = new IntersectionObserver(
       (entries) => {
@@ -56,9 +53,11 @@ export default function SectionNav() {
       },
       { rootMargin: "-15% 0px -72% 0px", threshold: 0 }
     );
+
     targets.forEach((el) => observerRef.current.observe(el));
     return () => observerRef.current?.disconnect();
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [JSON.stringify(NAV_ITEMS.map(i => i.id))]);
 
   /* ── Smooth scroll on click ──────────────────────────────────────── */
   const scrollTo = useCallback((id) => {
@@ -68,14 +67,16 @@ export default function SectionNav() {
     setActive(id);
     isClickScrolling.current = true;
 
-    const navH   = navRef.current?.offsetHeight || 0;
-    const hdrH   = getHeaderHeight();
+    const navH = navRef.current?.offsetHeight || 0;
+    const hdrH = getHeaderHeight();
     const offset = hdrH + navH + 12;
-    const top    = window.scrollY + el.getBoundingClientRect().top - offset;
+    const top = window.scrollY + el.getBoundingClientRect().top - offset;
 
     window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
     setTimeout(() => { isClickScrolling.current = false; }, 900);
   }, []);
+
+  if (!NAV_ITEMS.length) return null;
 
   return (
     <div
@@ -92,12 +93,14 @@ export default function SectionNav() {
         <div className="flex items-center justify-between py-4 w-full overflow-x-auto scrollbar-hide">
           {NAV_ITEMS.map(({ id, label }, index) => {
             const isActive = active === id;
-            const isLast   = index === NAV_ITEMS.length - 1;
+            const isLast = index === NAV_ITEMS.length - 1;
 
             return (
-              <div key={id} className={`flex items-center flex-shrink-0 ${isLast ? '' : 'flex-1'}`}>
+              <div key={id} className={`flex items-center flex-shrink-0 ${isLast ? "" : "flex-1"}`}>
                 {/* ── Nav item ─────────────────────────────────────── */}
                 <button
+                  type="button"
+                  suppressHydrationWarning
                   onClick={() => scrollTo(id)}
                   aria-current={isActive ? "location" : undefined}
                   className="flex items-center gap-2.5 group focus:outline-none flex-shrink-0"

@@ -6,6 +6,7 @@ import { stripPlaygroupFromFaqItems } from "@/data/faq";
 import RichTextContent from "@/components/ui/RichTextContent";
 
 export default function FAQAccordion({
+  id,
   // content
   title,
   subtitle,
@@ -35,7 +36,11 @@ export default function FAQAccordion({
   const safeItems = stripPlaygroupFromFaqItems(items);
 
   return (
-    <section className={["bb-ui", resolved.className].filter(Boolean).join(" ")} style={resolved.style}>
+    <section
+      id={id}
+      className={["bb-ui", resolved.className].filter(Boolean).join(" ")}
+      style={resolved.style}
+    >
       <div className="bb-section">
         <div className="bb-section__inner">
           <Container className={containerClassName}>

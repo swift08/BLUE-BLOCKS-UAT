@@ -7,6 +7,8 @@ export default function FaqItem({ q, a }) {
   return (
     <div className="border border-slate-200 rounded-[var(--bb-radius)] overflow-hidden">
       <button
+        type="button"
+        suppressHydrationWarning
         onClick={() => setOpen((v) => !v)}
         className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left font-medium text-[#1a1a1a] hover:bg-slate-50 transition-colors"
         aria-expanded={open}

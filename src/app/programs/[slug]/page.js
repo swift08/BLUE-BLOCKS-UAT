@@ -1,4 +1,4 @@
-﻿import siteData from "@/data/site";
+import siteData from "@/data/site";
 import { notFound } from "next/navigation";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";

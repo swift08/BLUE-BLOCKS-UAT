@@ -17,6 +17,8 @@ export default function AcademicsTabs({ data }) {
           const isActive = activeTab === tab.id;
           return (
             <button
+              type="button"
+              suppressHydrationWarning
               key={tab.id}
               onClick={() => {
                 setActiveTab(tab.id);
@@ -50,6 +52,8 @@ export default function AcademicsTabs({ data }) {
             const isSubActive = activeSubIndex === idx;
             return (
               <button
+                type="button"
+                suppressHydrationWarning
                 key={idx}
                 onClick={() => setActiveSubIndex(idx)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors border ${

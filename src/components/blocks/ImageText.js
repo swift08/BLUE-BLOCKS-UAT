@@ -1,4 +1,4 @@
-﻿import Container from "@/components/layout/Container";
+import Container from "@/components/layout/Container";
 import Image from "next/image";
 import { resolveBg } from "@/lib/ui";
 import ReadMoreBlock from "@/components/ui/ReadMoreBlock";
@@ -6,6 +6,7 @@ import Link from "next/link";
 import RichTextContent from "@/components/ui/RichTextContent";
 
 export default function ImageText({
+  id,
   sectionBg = "white",
   wrapBg = "",
   bgClass = "",
@@ -60,6 +61,7 @@ export default function ImageText({
 
   return (
     <section
+      id={id}
       className={["bb-ui", "bb-section", resolvedSection.className].filter(Boolean).join(" ")}
       style={resolvedSection.style}
     >
