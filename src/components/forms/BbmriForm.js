@@ -2,6 +2,31 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+
+/* ─── Section image header component ─── */
+function SectionImage({ src, alt }) {
+  return (
+    <div className="relative w-full aspect-square overflow-hidden rounded-t-2xl -mx-0">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 768px) 100vw, 768px"
+        className="object-cover object-center"
+        priority={false}
+      />
+      {/* Gradient fade-out at the bottom so it blends into the card */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent 80%, rgba(255,255,255,0.9) 95%, #ffffff 100%)",
+        }}
+      />
+    </div>
+  );
+}
 
 export default function BbmriForm() {
   const [formData, setFormData] = useState({
@@ -320,24 +345,46 @@ Consent choice: ${formData.consent}
 
   if (status === "success") {
     return (
-      <div className="min-h-screen py-16 px-4 flex items-center justify-center">
+      <div className="min-h-screen py-16 px-4 flex items-center justify-center bg-[#faf9f7]">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bb-card bg-white max-w-2xl w-full text-center shadow-xl shadow-slate-200/50"
+          className="bb-card bg-white max-w-2xl w-full text-center shadow-2xl shadow-slate-200/60 overflow-hidden p-0"
         >
-          <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-            <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-            </svg>
+          {/* Thank You illustration */}
+          <div className="relative w-full aspect-square overflow-hidden">
+            <Image
+              src="/forms-images/thank-you-message.webp"
+              alt="A mother hugging her child warmly"
+              fill
+              sizes="(max-width: 768px) 100vw, 672px"
+              className="object-cover object-center"
+              priority
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to bottom, transparent 80%, rgba(255,255,255,0.9) 95%, #ffffff 100%)",
+              }}
+            />
           </div>
-          <h2 className="bb-section-title mb-6">Thank you for completing the Food Foundations Reflection.</h2>
-          <div className="text-justify space-y-4 text-slate-700 leading-relaxed text-[15px]">
-            <p>If a few of the questions made you pause and think, &quot;I hadn&apos;t looked at it that way before,&quot; that&apos;s exactly why we created this reflection.</p>
-            <p>We&apos;re now preparing your personalised report based on your responses. Within the next 24–48 hours, you&apos;ll receive insights into your child&apos;s eating habits, emerging strengths, and gentle ideas you can try at home.</p>
-            <p>Remember, this isn&apos;t about being a perfect parent. It&apos;s about understanding your child a little more deeply than you did yesterday.</p>
-            <p>Keep an eye on your WhatsApp - your reflection is on its way.</p>
-            <p className="pt-4 font-medium italic">With warmth,<br/>- Blue Blocks Micro Research Institute (BBMRI)</p>
+
+          {/* Thank you content */}
+          <div className="px-8 pb-10 -mt-4">
+            <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-5">
+              <svg className="w-9 h-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h2 className="bb-section-title mb-6">Thank you for completing the Food Foundations Reflection.</h2>
+            <div className="text-justify space-y-4 text-slate-700 leading-relaxed text-[15px]">
+              <p>If a few of the questions made you pause and think, &quot;I hadn&apos;t looked at it that way before,&quot; that&apos;s exactly why we created this reflection.</p>
+              <p>We&apos;re now preparing your personalised report based on your responses. Within the next 24–48 hours, you&apos;ll receive insights into your child&apos;s eating habits, emerging strengths, and gentle ideas you can try at home.</p>
+              <p>Remember, this isn&apos;t about being a perfect parent. It&apos;s about understanding your child a little more deeply than you did yesterday.</p>
+              <p>Keep an eye on your WhatsApp - your reflection is on its way.</p>
+              <p className="pt-4 font-medium italic">With warmth,<br/>- Blue Blocks Micro Research Institute (BBMRI)</p>
+            </div>
           </div>
         </motion.div>
       </div>
@@ -484,282 +531,436 @@ Consent choice: ${formData.consent}
       </div>
       
       {/* Hero Section */}
-      <section className="bb-section bg-[#1f3b82] text-white pt-20 pb-24 px-4 text-center">
-        <div className="max-w-3xl mx-auto space-y-6">
-          <h1 className="bb-hero-title">Food Foundations Reflection</h1>
-          <p className="bb-hero-subtitle !text-white/90">Most parents complete this reflection in under 3 minutes.</p>
-          
-          <div className="bg-white/10 p-8 rounded-2xl backdrop-blur-sm mt-8 text-justify space-y-4 text-white/90 leading-relaxed">
-            <p>If mealtimes sometimes feel stressful - the picky eating, food refusals, or wondering whether your child has eaten enough - you&apos;re not alone.</p>
-            <p>These questions are designed to help you see your child&apos;s eating habits through a different lens. Many parents tell us the questions themselves were eye-opening.</p>
-            <p>Complete the reflection today and receive your FREE personalised report within 24 hours, including insights into your child&apos;s eating habits, strengths, and practical ideas to try at home.</p>
-            <p className="font-medium text-white">There are no right or wrong answers - simply answer honestly based on your everyday experience.</p>
+      <section className="relative overflow-hidden bg-[#1f3b82] text-white">
+        {/* Background watercolor hero image */}
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/forms-images/header-image.webp"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+            priority
+            aria-hidden="true"
+          />
+        </div>
+
+        {/* Hero text content */}
+        <div className="relative z-10 max-w-5xl mx-auto px-4 pt-16 pb-0">
+          <div className="grid md:grid-cols-2 gap-10 items-end">
+            {/* Left: text */}
+            <div className="pb-16 space-y-6">
+              <p className="text-white/60 text-sm uppercase tracking-widest font-semibold">
+                Blue Blocks Micro Research Institute (BBMRI)
+              </p>
+              <h1 className="bb-hero-title !text-white leading-tight">
+                Food Foundations<br/>Reflection
+              </h1>
+              <p className="text-white/80 text-lg leading-relaxed">
+                Most parents complete this reflection in under 3 minutes.
+              </p>
+
+              <div className="bg-white/10 p-6 rounded-2xl backdrop-blur-sm space-y-3 text-white/90 leading-relaxed text-[15px] text-justify border border-white/10">
+                <p>If mealtimes sometimes feel stressful — the picky eating, food refusals, or wondering whether your child has eaten enough — you&apos;re not alone.</p>
+                <p>These questions are designed to help you see your child&apos;s eating habits through a different lens. Many parents tell us the questions themselves were eye-opening.</p>
+                <p>Complete the reflection today and receive your <strong className="text-white">FREE personalised report</strong> within 24 hours.</p>
+                <p className="font-medium text-white">There are no right or wrong answers — simply answer honestly based on your everyday experience.</p>
+              </div>
+            </div>
+
+            {/* Right: hero illustration */}
+            <div className="hidden md:block relative self-end" style={{ height: 380 }}>
+              <Image
+                src="/forms-images/header-image.webp"
+                alt="A young child exploring food at the table"
+                fill
+                sizes="50vw"
+                className="object-contain object-bottom drop-shadow-2xl"
+                priority
+              />
+            </div>
           </div>
-          <p className="text-white/70 text-sm pt-4 uppercase tracking-wider font-semibold">Blue Blocks Micro Research Institute (BBMRI)</p>
         </div>
       </section>
 
       {/* Form Area */}
-      <section className="bb-section -mt-8 px-4 pb-32">
-        <form onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-12" noValidate>
+      <section className="bb-section -mt-6 px-4 pb-32 bg-[#faf9f7]">
+        <form onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-10" noValidate>
           
           {/* Section 1 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 1</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-6">Let&apos;s Begin With Mealtimes</h2>
-            <p className="text-slate-600 mb-8 text-justify">There are no right or wrong answers. Simply choose the response that feels closest to your family&apos;s everyday experience.</p>
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q1. How old is your child? <span className="text-red-500">*</span></h3>
-                {renderInput("q1", "", "text", "off", "How old is your child?")}
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            <SectionImage
+              src="/forms-images/section-1.webp"
+              alt="A mother watching her child sit at the dinner table"
+              height={240}
+            />
+            <div className="p-8 pt-2">
+              <div className="bb-eyebrow mb-2">Section 1</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Let&apos;s Begin With Mealtimes</h2>
+              <p className="text-slate-600 mb-8 text-justify">There are no right or wrong answers. Simply choose the response that feels closest to your family&apos;s everyday experience.</p>
               
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q2. When your child eats very little, what worries you the most? <span className="text-red-500">*</span></h3>
-                {renderRadioGroup("q2", [
-                  "They won't get enough nutrition",
-                  "They'll lose weight",
-                  "They'll become weak or fall sick",
-                  "They'll never learn to eat well",
-                  "People may think I'm not feeding them properly",
-                  "I'm not sure",
-                  "Other"
-                ], true)}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q1. How old is your child? <span className="text-red-500">*</span></h3>
+                  {renderInput("q1", "", "text", "off", "How old is your child?")}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q2. When your child eats very little, what worries you the most? <span className="text-red-500">*</span></h3>
+                  {renderRadioGroup("q2", [
+                    "They won't get enough nutrition",
+                    "They'll lose weight",
+                    "They'll become weak or fall sick",
+                    "They'll never learn to eat well",
+                    "People may think I'm not feeding them properly",
+                    "I'm not sure",
+                    "Other"
+                  ], true)}
+                </div>
               </div>
             </div>
           </motion.div>
 
           {/* Section 2 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 2</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-8">Eating Patterns & Appetite</h2>
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q3. Roughly how does your child eat across a day?</h3>
-                {renderRadioGroup("q3", ["3 proper meals", "3 meals + snacks", "1–2 meals, picks at the rest", "Nibbles all day"])}
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            <SectionImage
+              src="/forms-images/section-2.webp"
+              alt="A child resting chin on hand, thinking about food"
+              height={240}
+            />
+            <div className="p-8 pt-2">
+              <div className="bb-eyebrow mb-2">Section 2</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-8">Eating Patterns &amp; Appetite</h2>
               
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q4. Which sentence sounds most like your child?</h3>
-                {renderRadioGroup("q4", [
-                  "Eats well most days.",
-                  "Eats a lot one day and very little the next.",
-                  "Usually has a small appetite.",
-                  "Often prefers snacks over meals.",
-                  "I can't predict their appetite."
-                ])}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q3. Roughly how does your child eat across a day?</h3>
+                  {renderRadioGroup("q3", ["3 proper meals", "3 meals + snacks", "1–2 meals, picks at the rest", "Nibbles all day"])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q4. Which sentence sounds most like your child?</h3>
+                  {renderRadioGroup("q4", [
+                    "Eats well most days.",
+                    "Eats a lot one day and very little the next.",
+                    "Usually has a small appetite.",
+                    "Often prefers snacks over meals.",
+                    "I can't predict their appetite."
+                  ])}
+                </div>
               </div>
             </div>
           </motion.div>
 
           {/* Section 3 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 3</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-8">Understanding Food Refusals</h2>
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q5. When your child refuses food, what feels most true?</h3>
-                {renderRadioGroup("q5", ["They genuinely don't want the food", "They want more control over the situation", "They are tired, distracted, or overwhelmed", "It changes from day to day", "I'm not sure"])}
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            <SectionImage
+              src="/forms-images/section-3.webp"
+              alt="A child holding up a hand, refusing food on a plate"
+              height={240}
+            />
+            <div className="p-8 pt-2">
+              <div className="bb-eyebrow mb-2">Section 3</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-8">Understanding Food Refusals</h2>
               
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q6. Which of these are happening right now?</h3>
-                {renderCheckboxGroup("q6", ["Refuses foods they once loved", "Eats almost nothing some days, then loads up the next", "Lives on beige/sweet foods", "Rejects anything new on sight", "Leaves the table frequently"])}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q5. When your child refuses food, what feels most true?</h3>
+                  {renderRadioGroup("q5", ["They genuinely don't want the food", "They want more control over the situation", "They are tired, distracted, or overwhelmed", "It changes from day to day", "I'm not sure"])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q6. Which of these are happening right now?</h3>
+                  {renderCheckboxGroup("q6", ["Refuses foods they once loved", "Eats almost nothing some days, then loads up the next", "Lives on beige/sweet foods", "Rejects anything new on sight", "Leaves the table frequently"])}
+                </div>
               </div>
             </div>
           </motion.div>
 
           {/* Section 4 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 4</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-8">Your Child&apos;s Food Personality</h2>
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q7. When your child is hungry, they usually... <span className="text-red-500">*</span></h3>
-                {renderRadioGroup("q7", [
-                  "Tell me they're hungry.",
-                  "Ask for food themselves.",
-                  "Become irritable before I realise they're hungry.",
-                  "Wait until someone offers food.",
-                  "It's difficult to tell."
-                ])}
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            <SectionImage
+              src="/forms-images/section-4.webp"
+              alt="A child gazing curiously at a strawberry on the table"
+              height={240}
+            />
+            <div className="p-8 pt-2">
+              <div className="bb-eyebrow mb-2">Section 4</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-8">Your Child&apos;s Food Personality</h2>
               
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q8. Which word best describes your child&apos;s approach to food? <span className="text-red-500">*</span></h3>
-                {renderRadioGroup("q8", [
-                  "Curious",
-                  "Cautious",
-                  "Adventurous",
-                  "Prefers familiar foods",
-                  "Unpredictable"
-                ])}
-              </div>
-              
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q9. When your child sees a completely new food, what usually happens first?</h3>
-                {renderRadioGroup("q9", [
-                  "Refuses it immediately",
-                  "Watches it carefully",
-                  "Touches or smells it",
-                  "Takes a tiny taste",
-                  "Starts eating it"
-                ])}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q7. When your child is hungry, they usually... <span className="text-red-500">*</span></h3>
+                  {renderRadioGroup("q7", [
+                    "Tell me they're hungry.",
+                    "Ask for food themselves.",
+                    "Become irritable before I realise they're hungry.",
+                    "Wait until someone offers food.",
+                    "It's difficult to tell."
+                  ])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q8. Which word best describes your child&apos;s approach to food? <span className="text-red-500">*</span></h3>
+                  {renderRadioGroup("q8", [
+                    "Curious",
+                    "Cautious",
+                    "Adventurous",
+                    "Prefers familiar foods",
+                    "Unpredictable"
+                  ])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q9. When your child sees a completely new food, what usually happens first?</h3>
+                  {renderRadioGroup("q9", [
+                    "Refuses it immediately",
+                    "Watches it carefully",
+                    "Touches or smells it",
+                    "Takes a tiny taste",
+                    "Starts eating it"
+                  ])}
+                </div>
               </div>
             </div>
           </motion.div>
 
           {/* Section 5 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 5</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-8">Mealtime Environment</h2>
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q10. Which of these are part of mealtimes in your home? <span className="text-red-500">*</span></h3>
-                {renderCheckboxGroup("q10", ["My child sits and eats at the table", "Parent reminds child to eat", "I chase my child around to feed them", "Toys or distractions are used to encourage eating", "It depends on the day"])}
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            <SectionImage
+              src="/forms-images/section-5.webp"
+              alt="A family sharing a meal together at a round table"
+              height={260}
+            />
+            <div className="p-8 pt-2">
+              <div className="bb-eyebrow mb-2">Section 5</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-8">Mealtime Environment</h2>
               
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q11. Who usually feeds your child during most meals?</h3>
-                {renderRadioGroup("q11", ["Mother", "Father", "Grandparent", "My child mostly feeds themselves", "Other"], true)}
-              </div>
-              
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q12. How often are screens used during meals?</h3>
-                {renderRadioGroup("q12", ["Never", "Rarely", "Sometimes", "Often", "Almost every meal"])}
-              </div>
-              
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q13. How long does a typical meal last?</h3>
-                {renderRadioGroup("q13", ["Less than 10 minutes", "10–20 minutes", "20–30 minutes", "30–45 minutes", "More than 45 minutes"])}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q10. Which of these are part of mealtimes in your home? <span className="text-red-500">*</span></h3>
+                  {renderCheckboxGroup("q10", ["My child sits and eats at the table", "Parent reminds child to eat", "I chase my child around to feed them", "Toys or distractions are used to encourage eating", "It depends on the day"])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q11. Who usually feeds your child during most meals?</h3>
+                  {renderRadioGroup("q11", ["Mother", "Father", "Grandparent", "My child mostly feeds themselves", "Other"], true)}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q12. How often are screens used during meals?</h3>
+                  {renderRadioGroup("q12", ["Never", "Rarely", "Sometimes", "Often", "Almost every meal"])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q13. How long does a typical meal last?</h3>
+                  {renderRadioGroup("q13", ["Less than 10 minutes", "10–20 minutes", "20–30 minutes", "30–45 minutes", "More than 45 minutes"])}
+                </div>
               </div>
             </div>
           </motion.div>
 
           {/* Section 6 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 6</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-8">Appetite Regulation & Feeding Dynamics</h2>
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q14. When your child says, &quot;I&apos;m full,&quot; what do you usually do? <span className="text-red-500">*</span></h3>
-                {renderRadioGroup("q14", [
-                  "Trust them",
-                  "Encourage a few more bites",
-                  "Ask them to finish",
-                  "Offer something different",
-                  "It depends"
-                ])}
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            <SectionImage
+              src="/forms-images/section-6.webp"
+              alt="A young child reaching for a spoon independently at the table"
+              height={240}
+            />
+            <div className="p-8 pt-2">
+              <div className="bb-eyebrow mb-2">Section 6</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-8">Appetite Regulation &amp; Feeding Dynamics</h2>
               
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q15. If your child chooses not to eat at a meal, what is your first instinct?</h3>
-                {renderRadioGroup("q15", [
-                  "They'll eat when they're hungry.",
-                  "I offer another food.",
-                  "I encourage them to eat.",
-                  "I become worried.",
-                  "It depends."
-                ])}
-              </div>
-              
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q16. How often do treats become part of encouraging your child to eat?</h3>
-                {renderRadioGroup("q16", ["Often", "Sometimes", "Rarely because we don't keep treats at home", "Never"])}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q14. When your child says, &quot;I&apos;m full,&quot; what do you usually do? <span className="text-red-500">*</span></h3>
+                  {renderRadioGroup("q14", [
+                    "Trust them",
+                    "Encourage a few more bites",
+                    "Ask them to finish",
+                    "Offer something different",
+                    "It depends"
+                  ])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q15. If your child chooses not to eat at a meal, what is your first instinct?</h3>
+                  {renderRadioGroup("q15", [
+                    "They'll eat when they're hungry.",
+                    "I offer another food.",
+                    "I encourage them to eat.",
+                    "I become worried.",
+                    "It depends."
+                  ])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q16. How often do treats become part of encouraging your child to eat?</h3>
+                  {renderRadioGroup("q16", ["Often", "Sometimes", "Rarely because we don't keep treats at home", "Never"])}
+                </div>
               </div>
             </div>
           </motion.div>
 
           {/* Section 7 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 7</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-8">Independence at Mealtimes</h2>
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q17. Which of these can your child already do? <span className="text-red-500">*</span></h3>
-                {renderCheckboxGroup("q17", ["Use a spoon/fork", "Drink from an open cup", "Serve themselves food", "Pour water", "Carry or clear a plate", "None yet"])}
-              </div>
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            <SectionImage
+              src="/forms-images/section-7.webp"
+              alt="A toddler independently pouring water into a glass while standing on a stool"
+              height={260}
+            />
+            <div className="p-8 pt-2">
+              <div className="bb-eyebrow mb-2">Section 7</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-8">Independence at Mealtimes</h2>
               
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q18. How comfortable are you allowing your child to make a mess while learning to eat independently?</h3>
-                {renderRadioGroup("q18", [
-                  "Very comfortable",
-                  "Mostly comfortable",
-                  "Sometimes",
-                  "Rarely",
-                  "Not at all"
-                ])}
-              </div>
-              
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q19. How often does your child participate in food preparation?</h3>
-                {renderRadioGroup("q19", ["Daily", "Several times per week", "Occasionally", "Rarely", "Never"])}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q17. Which of these can your child already do? <span className="text-red-500">*</span></h3>
+                  {renderCheckboxGroup("q17", ["Use a spoon/fork", "Drink from an open cup", "Serve themselves food", "Pour water", "Carry or clear a plate", "None yet"])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q18. How comfortable are you allowing your child to make a mess while learning to eat independently?</h3>
+                  {renderRadioGroup("q18", [
+                    "Very comfortable",
+                    "Mostly comfortable",
+                    "Sometimes",
+                    "Rarely",
+                    "Not at all"
+                  ])}
+                </div>
+                
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q19. How often does your child participate in food preparation?</h3>
+                  {renderRadioGroup("q19", ["Daily", "Several times per week", "Occasionally", "Rarely", "Never"])}
+                </div>
               </div>
             </div>
           </motion.div>
 
           {/* Section 8 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 8</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-8">Reflection & Insights</h2>
-            
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-medium text-lg text-slate-800">Q20. If you could change just ONE thing about mealtimes, what would it be?</h3>
-                {renderRadioGroup("q20", [
-                  "Eat a wider variety of foods",
-                  "Eat enough for their needs",
-                  "Be more willing to try new foods",
-                  "Enjoy mealtimes more",
-                  "Make mealtimes less stressful for our family",
-                  "Become more independent during meals",
-                  "Develop healthier eating habits",
-                  "Reduce reliance on screens or distractions during meals",
-                  "Nothing in particular – things are going well",
-                  "Other"
-                ], true)}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            <SectionImage
+              src="/forms-images/section-8.webp"
+              alt="A mother thoughtfully journaling while her child plays nearby"
+              height={260}
+            />
+            <div className="p-8 pt-2">
+              <div className="bb-eyebrow mb-2">Section 8</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-8">Reflection &amp; Insights</h2>
+              
+              <div className="space-y-8">
+                <div>
+                  <h3 className="font-medium text-lg text-slate-800">Q20. If you could change just ONE thing about mealtimes, what would it be?</h3>
+                  {renderRadioGroup("q20", [
+                    "Eat a wider variety of foods",
+                    "Eat enough for their needs",
+                    "Be more willing to try new foods",
+                    "Enjoy mealtimes more",
+                    "Make mealtimes less stressful for our family",
+                    "Become more independent during meals",
+                    "Develop healthier eating habits",
+                    "Reduce reliance on screens or distractions during meals",
+                    "Nothing in particular – things are going well",
+                    "Other"
+                  ], true)}
+                </div>
               </div>
             </div>
           </motion.div>
 
           {/* Section 9 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 9</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-8">Receive Your Personalised Reflection</h2>
-            
-            <div className="space-y-4">
-              {renderInput("childName", "Child's Name *", "text", "off")}
-              {renderInput("parentName", "Parent Name *", "text", "name")}
-              {renderInput("phone", "Phone Number (WhatsApp) *", "tel", "tel")}
-              {renderInput("email", "Email Address *", "email", "email")}
-              {renderInput("address", "Home Address (Area, Pincode) *", "text", "street-address")}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            <SectionImage
+              src="/forms-images/section-9.webp"
+              alt="A personalised report envelope with a warm cup of tea"
+              height={240}
+            />
+            <div className="p-8 pt-2">
+              <div className="bb-eyebrow mb-2">Section 9</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-8">Receive Your Personalised Reflection</h2>
               
-              <div className="mt-8 pt-4 border-t border-slate-100">
-                <h3 className="font-medium text-lg text-slate-800">How did you hear about us? <span className="text-red-500">*</span></h3>
-                {renderRadioGroup("source", ["Instagram", "Facebook", "Google", "Friend", "School parent", "Workshop", "LinkedIn", "Other"], true)}
+              <div className="space-y-4">
+                {renderInput("childName", "Child's Name *", "text", "off")}
+                {renderInput("parentName", "Parent Name *", "text", "name")}
+                {renderInput("phone", "Phone Number (WhatsApp) *", "tel", "tel")}
+                {renderInput("email", "Email Address *", "email", "email")}
+                {renderInput("address", "Home Address (Area, Pincode) *", "text", "street-address")}
+                
+                <div className="mt-8 pt-4 border-t border-slate-100">
+                  <h3 className="font-medium text-lg text-slate-800">How did you hear about us? <span className="text-red-500">*</span></h3>
+                  {renderRadioGroup("source", ["Instagram", "Facebook", "Google", "Friend", "School parent", "Workshop", "LinkedIn", "Other"], true)}
+                </div>
               </div>
             </div>
           </motion.div>
 
           {/* Section 10 */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} className="bb-card bg-white shadow-xl shadow-slate-200/50">
-            <div className="bb-eyebrow mb-2">Section 10</div>
-            <h2 className="text-2xl font-semibold text-slate-900 mb-4">Research Consent</h2>
-            <p className="text-slate-600 mb-8 text-justify">We never share anything that could identify you or your child. You&apos;ll receive your full personalised reflection whatever you choose.</p>
-            
-            <div>
-              <h3 className="font-medium text-lg text-slate-800">Choose how you&apos;d like to receive your personalised AI report <span className="text-red-500">*</span></h3>
-              {renderRadioGroup("consent", [
-                "Option 1 (Free): Receive my personalised AI report FREE - I consent to my responses being used anonymously by BBMRI for research, publications, and improving future parent reports. My identity and my child's identity will never be disclosed.",
-                "Option 2 (Private Report – ₹1,000): Receive my personalised AI report as a private report - my responses will be used only to generate my report and will not be included in BBMRI's research database or publications."
-              ])}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden"
+          >
+            {/* Subtle decorative band for this section */}
+            <div className="h-2 w-full bg-gradient-to-r from-[#1f3b82] via-[#3b5bdb] to-[#1f3b82]" />
+            <div className="p-8">
+              <div className="bb-eyebrow mb-2">Section 10</div>
+              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Research Consent</h2>
+              <p className="text-slate-600 mb-8 text-justify">We never share anything that could identify you or your child. You&apos;ll receive your full personalised reflection whatever you choose.</p>
+              
+              <div>
+                <h3 className="font-medium text-lg text-slate-800">Choose how you&apos;d like to receive your personalised AI report <span className="text-red-500">*</span></h3>
+                {renderRadioGroup("consent", [
+                  "Option 1 (Free): Receive my personalised AI report FREE - I consent to my responses being used anonymously by BBMRI for research, publications, and improving future parent reports. My identity and my child's identity will never be disclosed.",
+                  "Option 2 (Private Report – ₹1,000): Receive my personalised AI report as a private report - my responses will be used only to generate my report and will not be included in BBMRI's research database or publications."
+                ])}
+              </div>
             </div>
           </motion.div>
 
