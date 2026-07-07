@@ -6,6 +6,7 @@ import Image from "next/image";
 import heroLeftImg from "@/assets/Secondary School/WhatsApp Image 2026-02-10 at 10.17.51.webp";
 import heroRightImg from "@/assets/Secondary School/WhatsApp Image 2026-02-06 at 10.32.14.webp";
 import AcademicsTabs from "@/components/secondary/AcademicsTabs";
+import MentorsGrid from "@/components/secondary/MentorsGrid";
 
 import gImg1 from "@/assets/Secondary School/DSC02836.webp";
 import gImg2 from "@/assets/Secondary School/DSC02929.webp";
@@ -252,17 +253,17 @@ const researchPubs = [
    SHARED UI HELPERS
 ───────────────────────────────────────────────────────────────────────── */
 
-/** Bordered data table with alternating row shading */
+/** Bordered data table with alternating row shading and column dividers */
 function DataTable({ headers, rows, colWidths = [] }) {
   return (
-    <div className="overflow-x-auto rounded-[var(--bb-radius)] border border-slate-200">
+    <div className="overflow-x-auto rounded-[var(--bb-radius)] border border-slate-200 shadow-sm bg-white my-6">
       <table className="w-full text-sm">
         <thead>
           <tr className="bg-[#F3E3CF]/70">
             {headers.map((h, i) => (
               <th
                 key={i}
-                className="px-4 py-3 text-left font-semibold text-[#1a1a1a] border-b border-slate-200"
+                className="px-4 py-3 text-left font-bold text-[#1a1a1a] border-b border-r border-slate-200 last:border-r-0"
                 style={colWidths[i] ? { width: colWidths[i] } : undefined}
               >
                 {h}
@@ -276,7 +277,7 @@ function DataTable({ headers, rows, colWidths = [] }) {
               {row.map((cell, ci) => (
                 <td
                   key={ci}
-                  className="px-4 py-3 text-[#334155] border-b border-slate-100 align-top leading-relaxed"
+                  className="px-4 py-3 text-[#334155] border-b border-r border-slate-100 last:border-r-0 align-top leading-relaxed"
                 >
                   {cell}
                 </td>
@@ -354,12 +355,12 @@ export default function CambridgeIgcseErdkinder() {
           </div>
           
           {/* Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-black text-slate-900 tracking-tight max-w-4xl mx-auto mb-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight max-w-4xl mx-auto mb-6">
             Erdkinder Cambridge IGCSE
           </h1>
           
           {/* Paragraph */}
-          <p className="text-base sm:text-lg leading-relaxed text-[#475569] max-w-2xl mx-auto mb-10 text-justify">
+          <p className="text-base sm:text-lg leading-relaxed text-[#475569] max-w-3xl mx-auto mb-10 text-center">
             Blue Blocks runs Cambridge IGCSE in Hyderabad the Montessori way. The Erdkinder programme follows AMI-certified Montessori curriculum standards for adolescents ages 12 to 16, integrated with Cambridge Lower Secondary and Cambridge IGCSE assessments. Running since 2005, full birth-to-eighteen programme since 2017. 1,047 children across the journey; over 45,000 parents engaged through workshops worldwide. Our adolescents have built a CubeSat that flew on ISRO&apos;s PSLV-C62, filed five patents with the Government of India, and authored peer-reviewed research with DOIs. The work below is what students do here.
           </p>
 
@@ -857,11 +858,7 @@ export default function CambridgeIgcseErdkinder() {
             subtitle="AMI-certified diploma-holders and Cambridge-trained subject specialists, working together."
           />
           <div className="mt-10">
-            <DataTable
-              headers={["#", "Name", "Qualifications", "Subject"]}
-              colWidths={["5%", "20%", "52%", "18%"]}
-              rows={mentors.map((m) => [String(m.num), m.name, m.quals, m.subject])}
-            />
+            <MentorsGrid />
           </div>
           <PhotoNeededBadge>EACH MENTOR: Photo + 2–3 sentence bio.</PhotoNeededBadge>
         </Container>
@@ -896,44 +893,28 @@ export default function CambridgeIgcseErdkinder() {
             subtitle="Canonical institutional sources for the work referenced above."
           />
           <div className="mt-10">
-            <div className="overflow-x-auto rounded-[var(--bb-radius)] border border-slate-200">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-[#F3E3CF]/70">
-                    <th className="px-4 py-3 text-left font-semibold text-[#1a1a1a] border-b border-slate-200 w-[40%]">
-                      Publication
-                    </th>
-                    <th className="px-4 py-3 text-left font-semibold text-[#1a1a1a] border-b border-slate-200">
-                      Where to Read
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {researchPubs.map((r, ri) => (
-                    <tr key={ri} className={ri % 2 === 0 ? "bg-white" : "bg-slate-50/60"}>
-                      <td className="px-4 py-3 text-[#334155] border-b border-slate-100 align-top leading-relaxed">
-                        {r.pub}
-                      </td>
-                      <td className="px-4 py-3 border-b border-slate-100 align-top leading-relaxed">
-                        <a
-                          href={r.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[#1f3b82] hover:underline break-all"
-                        >
-                          {r.where}
-                        </a>
-                        {r.note && (
-                          <span className="text-slate-400 text-xs ml-1">{r.note}</span>
-                        )}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <DataTable
+              headers={["Publication", "Where to Read"]}
+              rows={researchPubs.map((r, idx) => [
+                r.pub,
+                <div key={`pub-link-wrapper-${idx}`}>
+                  <a
+                    href={r.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#1f3b82] hover:underline break-all"
+                  >
+                    {r.where}
+                  </a>
+                  {r.note && (
+                    <span className="text-slate-400 text-xs ml-1.5 font-normal">{r.note}</span>
+                  )}
+                </div>
+              ])}
+              colWidths={["40%", "60%"]}
+            />
           </div>
-        </Container>
+          </Container>
       </section>
 
       {/* ════════════════════════════════════════════════════════════════
@@ -963,6 +944,12 @@ export default function CambridgeIgcseErdkinder() {
                 >
                   Download Programme Guide (PDF)
                 </a>
+              </div>
+              <div className="text-slate-400 text-xs mt-6">
+                Coming from Elementary?{" "}
+                <Link href="/programs/primary-school-elementary/class-1-to-6" className="text-[#58A5F3] hover:underline font-semibold">
+                  See our Elementary programme →
+                </Link>
               </div>
             </div>
           </div>

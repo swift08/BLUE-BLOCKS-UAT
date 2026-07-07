@@ -4,16 +4,16 @@ import { resolveBg } from "@/lib/ui";
 import Link from "next/link";
 
 import bigNewsNetwork from "@/assets/Big-news-network.webp";
-import aniNews from "@/assets/ANI news.png";
-import businessStandard from "@/assets/business-standard-logo-2.png";
+import aniNews from "@/assets/ANI news.webp";
+import businessStandard from "@/assets/business-standard-logo-2.webp";
 
 const localAssets = {
   "src/assets/Big-news-network.webp": bigNewsNetwork,
-  "src/assets/ANI news.png": aniNews,
-  "src/assets/business-standard-logo-2.png": businessStandard,
+  "src/assets/ANI news.webp": aniNews,
+  "src/assets/business-standard-logo-2.webp": businessStandard,
   "/src/assets/Big-news-network.webp": bigNewsNetwork,
-  "/src/assets/ANI news.png": aniNews,
-  "/src/assets/business-standard-logo-2.png": businessStandard,
+  "/src/assets/ANI news.webp": aniNews,
+  "/src/assets/business-standard-logo-2.webp": businessStandard,
 };
 
 function stripTypographySizing(className = "") {

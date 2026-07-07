@@ -126,6 +126,11 @@ ${blogSection}
 - Verified educational institution - U.S. Department of State.
 - Affiliation - Indian Institute of Technology Hyderabad (IIT-H).
 
+## SEO and Semantic Graph
+
+- Next-level structured data featuring over 250+ interlinked Schema.org JSON-LD nodes.
+- Fully mapped entity relationships detailing the school organization, campuses, founders, mentors, educational programs, curriculum subjects, patents, research publications, and dynamic subject-matter FAQs.
+
 ## Authoritative dataset
 
 - [Full LLM dataset](${abs("/llms-full.txt")})

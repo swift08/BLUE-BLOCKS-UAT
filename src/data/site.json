@@ -463,14 +463,14 @@
             "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
             "logos": [
               {
-                "src": "/icon/media/new/news-arena-india.png",
+                "src": "/icon/media/new/news-arena-india.webp",
                 "alt": "News Arena India",
                 "width": "200",
                 "height": "60",
                 "anchorHref": "https://newsarenaindia.com/states/in-a-first-students-build-cubesat-for-isro-launch/66962"
               },
               {
-                "src": "/icon/media/new/the-hans-india.png",
+                "src": "/icon/media/new/the-hans-india.webp",
                 "alt": "The Hans India",
                 "width": "217",
                 "height": "37",
@@ -484,56 +484,56 @@
                 "anchorHref": "https://www.siasat.com/from-classroom-to-cosmos-hyderabad-students-cubesat-set-for-isro-launch-3323433/amp/"
               },
               {
-                "src": "/icon/media/new/new-indian-express.png",
+                "src": "/icon/media/new/new-indian-express.webp",
                 "alt": "The New Indian Express",
                 "width": "200",
                 "height": "60",
                 "anchorHref": "https://www.newindianexpress.com/states/telangana/2026/Jan/09/hyderabad-students-cubesat-headed-to-space"
               },
               {
-                "src": "/icon/media/new/telangana-today.png",
+                "src": "/icon/media/new/telangana-today.webp",
                 "alt": "Telangana Today",
                 "width": "200",
                 "height": "60",
                 "anchorHref": "https://telanganatoday.com/hyderabad-school-students-make-history-with-cubesat-on-isros-pslv-c62"
               },
               {
-                "src": "/icon/media/new/india-today.png",
+                "src": "/icon/media/new/india-today.webp",
                 "alt": "India Today",
                 "width": "142",
                 "height": "77",
                 "anchorHref": "https://www.indiatoday.in/amp/technology/video/blue-blocks-co-founder-munira-hussain-students-cubesat-set-for-isro-launch-ytvd-2848900-2026-01-08"
               },
               {
-                "src": "/icon/media/new/newsmeter.png",
+                "src": "/icon/media/new/newsmeter.webp",
                 "alt": "Indiatoday",
                 "width": "200",
                 "height": "60",
                 "anchorHref": "https://newsmeter.in/education/isros-jan-12-launch-to-carry-cubesat-payload-built-by-hyderabad-students-from-blue-blocks-761096"
               },
               {
-                "src": "/icon/media/new/hyderabad-mail.png",
+                "src": "/icon/media/new/hyderabad-mail.webp",
                 "alt": "Hyderabad Mail",
                 "width": "200",
                 "height": "60",
                 "anchorHref": "https://hyderabadmail.com/hyderabad-students-cubesat-isro-pslv-c62-launch/"
               },
               {
-                "src": "/icon/media/new/the-federal-telangana.png",
+                "src": "/icon/media/new/the-federal-telangana.webp",
                 "alt": "The Federal Telangana",
                 "width": "200",
                 "height": "60",
                 "anchorHref": "https://telangana.thefederal.com/category/news/hyderabad-innovation-cubesat-set-to-travel-to-space-with-isros-pslv-c62-224592"
               },
               {
-                "src": "/icon/media/new/ndtv.png",
+                "src": "/icon/media/new/ndtv.webp",
                 "alt": "NDTV",
                 "width": "313",
                 "height": "65",
                 "anchorHref": "https://www.ndtv.com/india-news/17-hyderabad-students-build-payload-for-upcoming-isro-launch-10569889/amp/1"
               },
               {
-                "src": "/icon/media/new/edexlive.jpg",
+                "src": "/icon/media/new/edexlive.webp",
                 "alt": "EdexLive",
                 "width": "200",
                 "height": "60",
@@ -547,14 +547,14 @@
                 "anchorHref": "https://www.bignewsnetwork.com/news/279077506/blue-blocks-montessori-school-india-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond"
               },
               {
-                "src": "src/assets/ANI news.png",
+                "src": "src/assets/ANI news.webp",
                 "alt": "ANI News",
                 "width": "120",
                 "height": "60",
                 "anchorHref": "https://www.aninews.in/news/business/blue-blocks-montessori-school-indias-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond20260425190508/"
               },
               {
-                "src": "src/assets/business-standard-logo-2.png",
+                "src": "src/assets/business-standard-logo-2.webp",
                 "alt": "Business Standard",
                 "width": "180",
                 "height": "60",
@@ -642,13 +642,13 @@
               },
               {
                 "title": "CAMBRIDGE",
-                "icon": "/icon/cambridge-color.png",
+                "icon": "/icon/cambridge-color.webp",
                 "width": "433",
                 "height": "74"
               },
               {
                 "title": "AMI",
-                "icon": "/icon/AMI-color.png",
+                "icon": "/icon/AMI-color.webp",
                 "width": "158",
                 "height": "121"
               }
@@ -807,13 +807,10 @@
               "We didn't start with grand buildings. We started with the materials. Over the last 15 years, that single classroom has grown into a campus housing innovation labs and a thriving adolescent community. But our core remains unchanged: we observe the child to understand their needs, just as Dr. Maria Montessori did."
             ],
             "readMore": {
-              "enabled": true,
+              "enabled": false,
               "labelMore": "Read More",
               "labelLess": "Read Less",
-              "paragraphs": [
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-                "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-              ]
+              "paragraphs": []
             },
             "cta": "",
             "timeline": [
@@ -2727,35 +2724,35 @@
             },
             "logos": [
               {
-                "src": "/logos/nobel-peace-center.png",
+                "src": "/logos/nobel-peace-center.webp",
                 "alt": "Nobel Peace Center"
               },
               {
-                "src": "/logos/unesco.png",
+                "src": "/logos/unesco.webp",
                 "alt": "UNESCO"
               },
               {
-                "src": "/logos/ami.png",
+                "src": "/logos/ami.webp",
                 "alt": "AMI"
               },
               {
-                "src": "/logos/us-dept-of-state.png",
+                "src": "/logos/us-dept-of-state.webp",
                 "alt": "US Department of State"
               },
               {
-                "src": "/logos/seal.png",
+                "src": "/logos/seal.webp",
                 "alt": "Seal"
               },
               {
-                "src": "/logos/nobel-peace-center.png",
+                "src": "/logos/nobel-peace-center.webp",
                 "alt": "Nobel Peace Center"
               },
               {
-                "src": "/logos/unesco.png",
+                "src": "/logos/unesco.webp",
                 "alt": "UNESCO"
               },
               {
-                "src": "/logos/ami.png",
+                "src": "/logos/ami.webp",
                 "alt": "AMI"
               }
             ]
@@ -3728,37 +3725,37 @@
               "gap": "gap-4",
               "items": [
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Functional Independence â€” she can take care of herself and her environment.",
                   "pillBg": "#F9E48F"
                 },
                 {
-                  "icon": "/icon/heart-box.png",
+                  "icon": "/icon/heart-box.webp",
                   "text": "Love of Order â€” internal structure and calm routines.",
                   "pillBg": "#F9A78F"
                 },
                 {
-                  "icon": "/icon/community-b.png",
+                  "icon": "/icon/community-b.webp",
                   "text": "Social Grace â€” courtesy, etiquette, and the ability to follow complex instructions.",
                   "pillBg": "#95D6ED"
                 },
                 {
-                  "icon": "/icon/brain-b.png",
+                  "icon": "/icon/brain-b.webp",
                   "text": "Deep Concentration â€” the ability to focus, stay with a task, and see it through.",
                   "pillBg": "#F9E48F"
                 },
                 {
-                  "icon": "/icon/brain-b.png",
+                  "icon": "/icon/brain-b.webp",
                   "text": "Mathematical Understanding â€” not just numbers, but the logic beneath them.",
                   "pillBg": "#F9A78F"
                 },
                 {
-                  "icon": "/icon/community-b.png",
+                  "icon": "/icon/community-b.webp",
                   "text": "Literacy â€” beautiful cursive writing and fluent reading.",
                   "pillBg": "#95D6ED"
                 },
                 {
-                  "icon": "/icon/heart-box.png",
+                  "icon": "/icon/heart-box.webp",
                   "text": "Emotional Equanimity â€” inner balance built through meaningful engagement.",
                   "pillBg": "#F9E48F"
                 }
@@ -3937,6 +3934,79 @@
               "variant": "card",
               "bg": "#F3E3CF",
               "contentCenter": true
+            }
+          },
+          {
+            "type": "discoverMoreGrid",
+            "props": {
+              "title": "Discover More About Our Elementary Community",
+              "base": "/programs/primary-school-elementary/class-1-to-6",
+              "items": [
+                {
+                  "title": "Curriculum & Subjects",
+                  "description": "Explore the subjects and Cambridge integration.",
+                  "href": "/programs/primary-school-elementary/class-1-to-6#curriculum",
+                  "bgColor": "bg-[#FFF2F2]",
+                  "accentColor": "text-[#E27685]",
+                  "borderColor": "border-[#E27685]/30",
+                  "hoverBorder": "hover:border-[#E27685]/60",
+                  "icon": "book"
+                },
+                {
+                  "title": "What Children Build",
+                  "description": "Learn about design thinking, space, and drone projects.",
+                  "href": "/programs/primary-school-elementary/class-1-to-6#projects",
+                  "bgColor": "bg-[#F3F8FF]",
+                  "accentColor": "text-[#58A5F3]",
+                  "borderColor": "border-[#58A5F3]/30",
+                  "hoverBorder": "hover:border-[#58A5F3]/60",
+                  "icon": "lightbulb"
+                },
+                {
+                  "title": "A Day in Elementary",
+                  "description": "Understand the daily rhythm and activities.",
+                  "href": "/programs/primary-school-elementary/class-1-to-6#day",
+                  "bgColor": "bg-[#FFFBF2]",
+                  "accentColor": "text-[#E6A04B]",
+                  "borderColor": "border-[#E6A04B]/30",
+                  "hoverBorder": "hover:border-[#E6A04B]/60",
+                  "icon": "home"
+                },
+                {
+                  "title": "Going Outs",
+                  "description": "Expeditions planned and executed by children.",
+                  "href": "/programs/primary-school-elementary/class-1-to-6#going-outs",
+                  "bgColor": "bg-[#F3FAF5]",
+                  "accentColor": "text-[#76C289]",
+                  "borderColor": "border-[#76C289]/30",
+                  "hoverBorder": "hover:border-[#76C289]/60",
+                  "icon": "userOutline"
+                },
+                {
+                  "title": "Elementary Mentors",
+                  "description": "Meet the guides who foster cognitive growth.",
+                  "href": "/programs/primary-school-elementary/class-1-to-6#mentors",
+                  "bgColor": "bg-[#FFF4F2]",
+                  "accentColor": "text-[#E67D65]",
+                  "borderColor": "border-[#E67D65]/30",
+                  "hoverBorder": "hover:border-[#E67D65]/60",
+                  "icon": "academicCap"
+                },
+                {
+                  "title": "FAQ",
+                  "description": "Frequently asked questions about Elementary.",
+                  "href": "/programs/primary-school-elementary/class-1-to-6#faq",
+                  "bgColor": "bg-[#F7F4FB]",
+                  "accentColor": "text-[#AA8CE6]",
+                  "borderColor": "border-[#AA8CE6]/30",
+                  "hoverBorder": "hover:border-[#AA8CE6]/60",
+                  "icon": "question"
+                }
+              ],
+              "cta": {
+                "label": "Discover More",
+                "href": "/programs/primary-school-elementary/class-1-to-6"
+              }
             }
           },
           {
@@ -4127,22 +4197,22 @@
               "title": "Going Out Map",
               "items": [
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "The flour mill â€” to research production and consumption as part of Economic Geography.",
                   "pillBg": "#F9E48F"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Local bird walks and nature trails â€” to perform population studies and observe ecosystem interdependencies.",
                   "pillBg": "#F9A78F"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Our own farm â€” to experience agrarian economics and participate in cultivation.",
                   "pillBg": "#95D6ED"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "The Deccan plateau itself â€” our Geology studies connect to the literal foundation of Hyderabad, examining local granite and basaltic formations rather than generic \"rocks.\"",
                   "pillBg": "#F9E48F"
                 }
@@ -4246,27 +4316,27 @@
               "title": "Your Child at Twelve",
               "items": [
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Intellectual independence â€” the capacity to assess their own understanding, identify gaps, seek help when needed, and persevere through difficulty.",
                   "pillBg": "#F9E48F"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Moral independence â€” a personal framework for ethical reasoning, developed through years of navigating justice and fairness within a community.",
                   "pillBg": "#F9A78F"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Social capability â€” the ability to collaborate, lead, follow, negotiate, and function within groups working toward shared goals.",
                   "pillBg": "#95D6ED"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "A cosmic perspective â€” knowledge organised around a vision of the whole, where every fact connects to every other fact.",
                   "pillBg": "#F9E48F"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Love of learning â€” not as something imposed by adults, but as a natural response to being human in a universe full of things worth understanding.",
                   "pillBg": "#F9A78F"
                 }
@@ -4754,22 +4824,22 @@
               "title": "Outcomes",
               "items": [
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Language and Communication: Adolescents develop awareness of how their words affect others. They practice expressing disagreement without disrespect, giving feedback with care, and listening with genuine attention.",
                   "pillBg": "#F9E48F"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Inclusion and Sensitivity: Students learn to recognise when someone feels excluded and to respond with kindness. Differences become opportunities for growth rather than sources of division.",
                   "pillBg": "#F9A78F"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Conflict and Repair: Students learn restorative justice â€” to acknowledge harm, take responsibility, make amends, and restore relationship.",
                   "pillBg": "#95D6ED"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Acceptance and Belonging: Belonging is built through genuine contribution. When your work matters to the community, you know you belong because you can see the evidence.",
                   "pillBg": "#F9E48F"
                 }
@@ -5599,42 +5669,42 @@
               "items": [
                 {
                   "icon": "hand",
-                  "iconImage": "/icon/icon-e-hand.png",
+                  "iconImage": "/icon/icon-e-hand.webp",
                   "label": "Motivated to work with Children"
                 },
                 {
                   "icon": "book",
-                  "iconImage": "/icon/icon-book.png",
+                  "iconImage": "/icon/icon-book.webp",
                   "label": "Open to learning."
                 },
                 {
                   "icon": "heart",
-                  "iconImage": "/icon/icon-soft-heart.png",
+                  "iconImage": "/icon/icon-soft-heart.webp",
                   "label": "Pleasant personality and soft demeanour"
                 },
                 {
                   "icon": "brain",
-                  "iconImage": "/icon/icon-brain.png",
+                  "iconImage": "/icon/icon-brain.webp",
                   "label": "Good logical and analytical skills"
                 },
                 {
                   "icon": "chat",
-                  "iconImage": "/icon/icon-chat.png",
+                  "iconImage": "/icon/icon-chat.webp",
                   "label": "Good communication skills"
                 },
                 {
                   "icon": "desktop",
-                  "iconImage": "/icon/icon-desktop.png",
+                  "iconImage": "/icon/icon-desktop.webp",
                   "label": "Basic computer skills"
                 },
                 {
                   "icon": "age",
-                  "iconImage": "/icon/icon-age.png",
+                  "iconImage": "/icon/icon-age.webp",
                   "label": "Age 20 years and above"
                 },
                 {
                   "icon": "cap",
-                  "iconImage": "/icon/icon-cap.png",
+                  "iconImage": "/icon/icon-cap.webp",
                   "label": "Graduate in any stream"
                 }
               ]
@@ -6624,22 +6694,22 @@
             "maxWidth": "none",
             "items": [
               {
-                "icon": "/icon/brain.png",
+                "icon": "/icon/brain.webp",
                 "pillBg": "#F9E48F",
                 "text": "Driven by profound passion â€” not merely to create, but to create new benefits for their times and for the future. For humanity and for the Earth."
               },
               {
-                "icon": "/icon/brain.png",
+                "icon": "/icon/brain.webp",
                 "pillBg": "#95D6ED",
                 "text": "Graduates with evidence of capability â€” patents filed, satellites launched, real-world problems solved."
               },
               {
-                "icon": "/icon/brain.png",
+                "icon": "/icon/brain.webp",
                 "pillBg": "#F9A78F",
                 "text": "Guided by conscience as their compass. They do not ask 'Can I build this?' They ask 'Should I build this? Does it serve life? Does it honour the Earth?'"
               },
               {
-                "icon": "/icon/brain.png",
+                "icon": "/icon/brain.webp",
                 "pillBg": "#F9E48F",
                 "text": "Prepared for 2050 â€” not just because they can innovate, but because they will innovate with integrity and take responsibility for the Mother Earth."
               }
@@ -7208,25 +7278,25 @@
                 {
                   "tag": "",
                   "title": "Privacy",
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Where will this drone fly? Could it capture images without consent? The same sensitivity to others learned through Grace and Courtesy at age two â€” now applied to technology."
                 },
                 {
                   "tag": "",
                   "title": "Safety",
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "What could go wrong? What is the risk to people, property, and wildlife? Care for others extended to care for all beings."
                 },
                 {
                   "tag": "",
                   "title": "Ecology",
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "What is the environmental impact? Noise disturbance? Energy use? Battery disposal? Care for environment extended to ecological conscience."
                 },
                 {
                   "tag": "",
                   "title": "Purpose",
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "text": "Why are we flying? Does the benefit justify the costs? Is this serving genuine need or manufactured desire?"
                 }
               ]
@@ -7355,14 +7425,14 @@
               "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
               "logos": [
                 {
-                  "src": "/icon/media/new/news-arena-india.png",
+                  "src": "/icon/media/new/news-arena-india.webp",
                   "alt": "News Arena India",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://newsarenaindia.com/states/in-a-first-students-build-cubesat-for-isro-launch/66962"
                 },
                 {
-                  "src": "/icon/media/new/the-hans-india.png",
+                  "src": "/icon/media/new/the-hans-india.webp",
                   "alt": "The Hans India",
                   "width": "217",
                   "height": "37",
@@ -7376,56 +7446,56 @@
                   "anchorHref": "https://www.siasat.com/from-classroom-to-cosmos-hyderabad-students-cubesat-set-for-isro-launch-3323433/amp/"
                 },
                 {
-                  "src": "/icon/media/new/new-indian-express.png",
+                  "src": "/icon/media/new/new-indian-express.webp",
                   "alt": "The New Indian Express",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://www.newindianexpress.com/states/telangana/2026/Jan/09/hyderabad-students-cubesat-headed-to-space"
                 },
                 {
-                  "src": "/icon/media/new/telangana-today.png",
+                  "src": "/icon/media/new/telangana-today.webp",
                   "alt": "Telangana Today",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://telanganatoday.com/hyderabad-school-students-make-history-with-cubesat-on-isros-pslv-c62"
                 },
                 {
-                  "src": "/icon/media/new/india-today.png",
+                  "src": "/icon/media/new/india-today.webp",
                   "alt": "India Today",
                   "width": "142",
                   "height": "77",
                   "anchorHref": "https://www.indiatoday.in/amp/technology/video/blue-blocks-co-founder-munira-hussain-students-cubesat-set-for-isro-launch-ytvd-2848900-2026-01-08"
                 },
                 {
-                  "src": "/icon/media/new/newsmeter.png",
+                  "src": "/icon/media/new/newsmeter.webp",
                   "alt": "Indiatoday",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://newsmeter.in/education/isros-jan-12-launch-to-carry-cubesat-payload-built-by-hyderabad-students-from-blue-blocks-761096"
                 },
                 {
-                  "src": "/icon/media/new/hyderabad-mail.png",
+                  "src": "/icon/media/new/hyderabad-mail.webp",
                   "alt": "Hyderabad Mail",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://hyderabadmail.com/hyderabad-students-cubesat-isro-pslv-c62-launch/"
                 },
                 {
-                  "src": "/icon/media/new/the-federal-telangana.png",
+                  "src": "/icon/media/new/the-federal-telangana.webp",
                   "alt": "The Federal Telangana",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://telangana.thefederal.com/category/news/hyderabad-innovation-cubesat-set-to-travel-to-space-with-isros-pslv-c62-224592"
                 },
                 {
-                  "src": "/icon/media/new/ndtv.png",
+                  "src": "/icon/media/new/ndtv.webp",
                   "alt": "NDTV",
                   "width": "313",
                   "height": "65",
                   "anchorHref": "https://www.ndtv.com/india-news/17-hyderabad-students-build-payload-for-upcoming-isro-launch-10569889/amp/1"
                 },
                 {
-                  "src": "/icon/media/new/edexlive.jpg",
+                  "src": "/icon/media/new/edexlive.webp",
                   "alt": "EdexLive",
                   "width": "200",
                   "height": "60",
@@ -7439,14 +7509,14 @@
                   "anchorHref": "https://www.bignewsnetwork.com/news/279077506/blue-blocks-montessori-school-india-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond"
                 },
                 {
-                  "src": "src/assets/ANI news.png",
+                  "src": "src/assets/ANI news.webp",
                   "alt": "ANI News",
                   "width": "120",
                   "height": "60",
                   "anchorHref": "https://www.aninews.in/news/business/blue-blocks-montessori-school-indias-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond20260425190508/"
                 },
                 {
-                  "src": "src/assets/business-standard-logo-2.png",
+                  "src": "src/assets/business-standard-logo-2.webp",
                   "alt": "Business Standard",
                   "width": "180",
                   "height": "60",
@@ -7887,22 +7957,22 @@
               "title": "Student Investigations",
               "items": [
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "pillBg": "#F9E48F",
                   "text": "Gecko Adhesion: Students study gecko feet â€” but also ask: What is our obligation to geckos? How do we ensure our biomimicry benefits, not harms, their species?"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "pillBg": "#95D6ED",
                   "text": "Termite Ventilation: Students design passive cooling â€” but also study how termites cooperate, how colonies function as superorganisms. What can we learn about community?"
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "pillBg": "#F9A78F",
                   "text": "Seed Dispersal: Students apply principles of passive flight â€” but also participate in the Seed Bank, preserving genetic diversity. Taking and giving back."
                 },
                 {
-                  "icon": "/icon/brain.png",
+                  "icon": "/icon/brain.webp",
                   "pillBg": "#F9E48F",
                   "text": "The Seed Bank: A long-term project of preservation and reciprocity. Students don't just learn from seeds; they serve them, ensuring their continuation."
                 }
@@ -8389,14 +8459,14 @@
               "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
               "logos": [
                 {
-                  "src": "/icon/media/new/news-arena-india.png",
+                  "src": "/icon/media/new/news-arena-india.webp",
                   "alt": "News Arena India",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://newsarenaindia.com/states/in-a-first-students-build-cubesat-for-isro-launch/66962"
                 },
                 {
-                  "src": "/icon/media/new/the-hans-india.png",
+                  "src": "/icon/media/new/the-hans-india.webp",
                   "alt": "The Hans India",
                   "width": "217",
                   "height": "37",
@@ -8410,56 +8480,56 @@
                   "anchorHref": "https://www.siasat.com/from-classroom-to-cosmos-hyderabad-students-cubesat-set-for-isro-launch-3323433/amp/"
                 },
                 {
-                  "src": "/icon/media/new/new-indian-express.png",
+                  "src": "/icon/media/new/new-indian-express.webp",
                   "alt": "The New Indian Express",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://www.newindianexpress.com/states/telangana/2026/Jan/09/hyderabad-students-cubesat-headed-to-space"
                 },
                 {
-                  "src": "/icon/media/new/telangana-today.png",
+                  "src": "/icon/media/new/telangana-today.webp",
                   "alt": "Telangana Today",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://telanganatoday.com/hyderabad-school-students-make-history-with-cubesat-on-isros-pslv-c62"
                 },
                 {
-                  "src": "/icon/media/new/india-today.png",
+                  "src": "/icon/media/new/india-today.webp",
                   "alt": "India Today",
                   "width": "142",
                   "height": "77",
                   "anchorHref": "https://www.indiatoday.in/amp/technology/video/blue-blocks-co-founder-munira-hussain-students-cubesat-set-for-isro-launch-ytvd-2848900-2026-01-08"
                 },
                 {
-                  "src": "/icon/media/new/newsmeter.png",
+                  "src": "/icon/media/new/newsmeter.webp",
                   "alt": "Indiatoday",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://newsmeter.in/education/isros-jan-12-launch-to-carry-cubesat-payload-built-by-hyderabad-students-from-blue-blocks-761096"
                 },
                 {
-                  "src": "/icon/media/new/hyderabad-mail.png",
+                  "src": "/icon/media/new/hyderabad-mail.webp",
                   "alt": "Hyderabad Mail",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://hyderabadmail.com/hyderabad-students-cubesat-isro-pslv-c62-launch/"
                 },
                 {
-                  "src": "/icon/media/new/the-federal-telangana.png",
+                  "src": "/icon/media/new/the-federal-telangana.webp",
                   "alt": "The Federal Telangana",
                   "width": "200",
                   "height": "60",
                   "anchorHref": "https://telangana.thefederal.com/category/news/hyderabad-innovation-cubesat-set-to-travel-to-space-with-isros-pslv-c62-224592"
                 },
                 {
-                  "src": "/icon/media/new/ndtv.png",
+                  "src": "/icon/media/new/ndtv.webp",
                   "alt": "NDTV",
                   "width": "313",
                   "height": "65",
                   "anchorHref": "https://www.ndtv.com/india-news/17-hyderabad-students-build-payload-for-upcoming-isro-launch-10569889/amp/1"
                 },
                 {
-                  "src": "/icon/media/new/edexlive.jpg",
+                  "src": "/icon/media/new/edexlive.webp",
                   "alt": "EdexLive",
                   "width": "200",
                   "height": "60",
@@ -8473,14 +8543,14 @@
                   "anchorHref": "https://www.bignewsnetwork.com/news/279077506/blue-blocks-montessori-school-india-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond"
                 },
                 {
-                  "src": "src/assets/ANI news.png",
+                  "src": "src/assets/ANI news.webp",
                   "alt": "ANI News",
                   "width": "120",
                   "height": "60",
                   "anchorHref": "https://www.aninews.in/news/business/blue-blocks-montessori-school-indias-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond20260425190508/"
                 },
                 {
-                  "src": "src/assets/business-standard-logo-2.png",
+                  "src": "src/assets/business-standard-logo-2.webp",
                   "alt": "Business Standard",
                   "width": "180",
                   "height": "60",
@@ -8906,7 +8976,7 @@
                 "showPlay": true,
                 "playButton": {
                   "size": 66,
-                  "bgImage": "/icon/play-transparent.png",
+                  "bgImage": "/icon/play-transparent.webp",
                   "bg": "rgba(255,255,255,0.9)",
                   "iconColor": "#111827"
                 }
@@ -8972,35 +9042,35 @@
             "props": {
               "logos": [
                 {
-                  "src": "/logos/nobel-peace-center.png",
+                  "src": "/logos/nobel-peace-center.webp",
                   "alt": "Nobel Peace Center"
                 },
                 {
-                  "src": "/logos/unesco.png",
+                  "src": "/logos/unesco.webp",
                   "alt": "UNESCO"
                 },
                 {
-                  "src": "/logos/ami.png",
+                  "src": "/logos/ami.webp",
                   "alt": "AMI"
                 },
                 {
-                  "src": "/logos/us-dept-of-state.png",
+                  "src": "/logos/us-dept-of-state.webp",
                   "alt": "US Department of State"
                 },
                 {
-                  "src": "/logos/seal.png",
+                  "src": "/logos/seal.webp",
                   "alt": "Seal"
                 },
                 {
-                  "src": "/logos/nobel-peace-center.png",
+                  "src": "/logos/nobel-peace-center.webp",
                   "alt": "Nobel Peace Center"
                 },
                 {
-                  "src": "/logos/unesco.png",
+                  "src": "/logos/unesco.webp",
                   "alt": "UNESCO"
                 },
                 {
-                  "src": "/logos/ami.png",
+                  "src": "/logos/ami.webp",
                   "alt": "AMI"
                 }
               ]

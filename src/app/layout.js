@@ -8,6 +8,7 @@ import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import siteData from "@/data/site";
 import JsonLd from "@/components/seo/JsonLd";
 import normalizeJsonLd from "@/lib/seo/normalizeJsonLd";
+import { buildNextLevelSchema } from "@/lib/seo/nextLevelSchemas";
 import { Poppins } from "next/font/google";
 import "@/styles/global.css";
 import GoogleConversions from "@/components/GoogleConversions";
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
   // Global / site-wide schema from site.json
   const org = normalizeJsonLd(siteData?.site?.schema?.organization);
   const website = normalizeJsonLd(siteData?.site?.schema?.website);
+  const nextLevelSchema = buildNextLevelSchema();
 
   return (
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
@@ -53,6 +55,7 @@ export default function RootLayout({ children }) {
         {/* Global JSON-LD (visible in view-source) */}
         <JsonLd id="jsonld-organization" data={org} />
         <JsonLd id="jsonld-website" data={website} />
+        <JsonLd id="jsonld-next-level" data={nextLevelSchema} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-KYX146E33J"
           strategy="lazyOnload"

@@ -43,7 +43,7 @@ export default function SystemOverview({
     alt: "",
     radius: "rounded-3xl",
     showPlay: true,
-    playButton: { size: 66, bgImage: "/icon/play-transparent.png", bg: "rgba(255,255,255,0.9)", iconColor: "#111827" }
+    playButton: { size: 66, bgImage: "/icon/play-transparent.webp", bg: "rgba(255,255,255,0.9)", iconColor: "#111827" }
   },
 
   steps = {
