@@ -186,12 +186,20 @@ export default function BbmriForm() {
     const { name, value, type, checked } = e.target;
     if (type === "checkbox") {
       setFormData((prev) => {
-        const currentArr = prev[name];
+        let currentArr = [...prev[name]];
         if (checked) {
-          return { ...prev, [name]: [...currentArr, value] };
+          if (value === "None of these" || value === "None yet") {
+            currentArr = [value];
+          } else {
+            currentArr = currentArr.filter(
+              (item) => item !== "None of these" && item !== "None yet"
+            );
+            currentArr.push(value);
+          }
         } else {
-          return { ...prev, [name]: currentArr.filter((item) => item !== value) };
+          currentArr = currentArr.filter((item) => item !== value);
         }
+        return { ...prev, [name]: currentArr };
       });
     } else {
       setFormData((prev) => ({ ...prev, [name]: value }));
@@ -206,6 +214,40 @@ export default function BbmriForm() {
     }
   };
 
+  const fieldLabels = {
+    q1: "Q1. How old is your child?",
+    q2: "Q2. When your child eats very little, what worries you most?",
+    q2Other: "Q2. Other specification",
+    q3: "Q3. Roughly how does your child eat across a day?",
+    q4: "Q4. Which sentence sounds most like your child?",
+    q5: "Q5. When your child refuses food, what feels most true?",
+    q6: "Q6. Which of these are happening right now?",
+    q7: "Q7. When hungry, they usually...",
+    q8: "Q8. Approach to food",
+    q9: "Q9. Response to new food",
+    q10: "Q10. Mealtimes in home",
+    q11: "Q11. Who usually feeds",
+    q11Other: "Q11. Other specification",
+    q12: "Q12. Screens used",
+    q13: "Q13. Meal duration",
+    q14: "Q14. Action when child says 'I'm full'",
+    q15: "Q15. First instinct if child chooses not to eat",
+    q16: "Q16. Treats as encouragement",
+    q17: "Q17. Child can do",
+    q18: "Q18. Comfort with mess",
+    q19: "Q19. Participation in prep",
+    q20: "Q20. One thing to change about mealtimes",
+    q20Other: "Q20. Other specification",
+    childName: "Child's Name",
+    parentName: "Parent Name",
+    phone: "Phone Number (WhatsApp)",
+    email: "Email Address",
+    address: "Home Address",
+    source: "How did you hear about us?",
+    sourceOther: "How did you hear about us? (Other specification)",
+    consent: "Research Consent"
+  };
+
   const validateForm = () => {
     const newErrors = {};
     const reqText = "This field is required";
@@ -214,15 +256,33 @@ export default function BbmriForm() {
     if (!formData.q2) newErrors.q2 = reqText;
     if (formData.q2 === "Other" && !formData.q2Other.trim()) newErrors.q2Other = reqText;
     
+    if (!formData.q3) newErrors.q3 = reqText;
+    if (!formData.q4) newErrors.q4 = reqText;
+    if (!formData.q5) newErrors.q5 = reqText;
+    if (formData.q6.length === 0) newErrors.q6 = reqText;
+    
     if (!formData.q7) newErrors.q7 = reqText;
     if (!formData.q8) newErrors.q8 = reqText;
+    if (!formData.q9) newErrors.q9 = reqText;
     
     if (formData.q10.length === 0) newErrors.q10 = reqText;
+    
+    if (!formData.q11) newErrors.q11 = reqText;
     if (formData.q11 === "Other" && !formData.q11Other.trim()) newErrors.q11Other = reqText;
     
+    if (!formData.q12) newErrors.q12 = reqText;
+    if (!formData.q13) newErrors.q13 = reqText;
+    
     if (!formData.q14) newErrors.q14 = reqText;
+    if (!formData.q15) newErrors.q15 = reqText;
+    if (!formData.q16) newErrors.q16 = reqText;
+    
     if (formData.q17.length === 0) newErrors.q17 = reqText;
     
+    if (!formData.q18) newErrors.q18 = reqText;
+    if (!formData.q19) newErrors.q19 = reqText;
+    
+    if (!formData.q20) newErrors.q20 = reqText;
     if (formData.q20 === "Other" && !formData.q20Other.trim()) newErrors.q20Other = reqText;
     
     if (!formData.childName.trim()) newErrors.childName = reqText;
@@ -245,7 +305,7 @@ export default function BbmriForm() {
     if (Object.keys(newErrors).length > 0) {
       // Find first error and scroll to it
       const firstErrorKey = Object.keys(newErrors)[0];
-      const errorElement = document.getElementById(`field-${firstErrorKey}`);
+      const errorElement = document.getElementById(`field-${firstErrorKey}`) || document.getElementById(firstErrorKey);
       if (errorElement) {
         errorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
@@ -349,7 +409,7 @@ Consent choice: ${formData.consent}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bb-card bg-white max-w-2xl w-full text-center shadow-2xl shadow-slate-200/60 overflow-hidden p-0"
+          className="bg-white max-w-2xl w-full text-center shadow-2xl shadow-slate-200/60 overflow-hidden rounded-2xl p-0"
         >
           {/* Thank You illustration */}
           <div className="relative w-full aspect-square overflow-hidden">
@@ -371,19 +431,19 @@ Consent choice: ${formData.consent}
           </div>
 
           {/* Thank you content */}
-          <div className="px-8 pb-10 -mt-4">
+          <div className="px-4 py-8 md:px-8 md:pb-10 -mt-4">
             <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-5">
               <svg className="w-9 h-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h2 className="bb-section-title mb-6">Thank you for completing the Food Foundations Reflection.</h2>
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-900 mb-6 leading-tight text-center">Thank you for completing the Food Foundations Reflection.</h2>
             <div className="text-justify space-y-4 text-slate-700 leading-relaxed text-[15px]">
               <p>If a few of the questions made you pause and think, &quot;I hadn&apos;t looked at it that way before,&quot; that&apos;s exactly why we created this reflection.</p>
               <p>We&apos;re now preparing your personalised report based on your responses. Within the next 24–48 hours, you&apos;ll receive insights into your child&apos;s eating habits, emerging strengths, and gentle ideas you can try at home.</p>
               <p>Remember, this isn&apos;t about being a perfect parent. It&apos;s about understanding your child a little more deeply than you did yesterday.</p>
               <p>Keep an eye on your WhatsApp - your reflection is on its way.</p>
-              <p className="pt-4 font-medium italic">With warmth,<br/>- Blue Blocks Micro Research Institute (BBMRI)</p>
+              <p className="pt-4 font-medium italic text-left">With warmth,<br/>- Blue Blocks Micro Research Institute (BBMRI)</p>
             </div>
           </div>
         </motion.div>
@@ -569,12 +629,12 @@ Consent choice: ${formData.consent}
             </div>
 
             {/* Right: hero illustration */}
-            <div className="hidden md:block relative self-end" style={{ height: 380 }}>
+            <div className="relative w-full h-[240px] sm:h-[300px] md:h-[380px] self-end mt-6 md:mt-0">
               <Image
                 src="/forms-images/header-image.webp"
                 alt="A young child exploring food at the table"
                 fill
-                sizes="50vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-contain object-bottom drop-shadow-2xl"
                 priority
               />
@@ -644,12 +704,12 @@ Consent choice: ${formData.consent}
               
               <div className="space-y-8">
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q3. Roughly how does your child eat across a day?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q3. Roughly how does your child eat across a day? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q3", ["3 proper meals", "3 meals + snacks", "1–2 meals, picks at the rest", "Nibbles all day"])}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q4. Which sentence sounds most like your child?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q4. Which sentence sounds most like your child? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q4", [
                     "Eats well most days.",
                     "Eats a lot one day and very little the next.",
@@ -680,13 +740,13 @@ Consent choice: ${formData.consent}
               
               <div className="space-y-8">
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q5. When your child refuses food, what feels most true?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q5. When your child refuses food, what feels most true? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q5", ["They genuinely don't want the food", "They want more control over the situation", "They are tired, distracted, or overwhelmed", "It changes from day to day", "I'm not sure"])}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q6. Which of these are happening right now?</h3>
-                  {renderCheckboxGroup("q6", ["Refuses foods they once loved", "Eats almost nothing some days, then loads up the next", "Lives on beige/sweet foods", "Rejects anything new on sight", "Leaves the table frequently"])}
+                  <h3 className="font-medium text-lg text-slate-800">Q6. Which of these are happening right now? <span className="text-red-500">*</span></h3>
+                  {renderCheckboxGroup("q6", ["Refuses foods they once loved", "Eats almost nothing some days, then loads up the next", "Lives on beige/sweet foods", "Rejects anything new on sight", "Leaves the table frequently", "None of these"])}
                 </div>
               </div>
             </div>
@@ -732,7 +792,7 @@ Consent choice: ${formData.consent}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q9. When your child sees a completely new food, what usually happens first?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q9. When your child sees a completely new food, what usually happens first? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q9", [
                     "Refuses it immediately",
                     "Watches it carefully",
@@ -764,21 +824,21 @@ Consent choice: ${formData.consent}
               <div className="space-y-8">
                 <div>
                   <h3 className="font-medium text-lg text-slate-800">Q10. Which of these are part of mealtimes in your home? <span className="text-red-500">*</span></h3>
-                  {renderCheckboxGroup("q10", ["My child sits and eats at the table", "Parent reminds child to eat", "I chase my child around to feed them", "Toys or distractions are used to encourage eating", "It depends on the day"])}
+                  {renderCheckboxGroup("q10", ["My child sits and eats at the table", "Parent reminds child to eat", "I chase my child around to feed them", "Toys or distractions are used to encourage eating", "It depends on the day", "None of these"])}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q11. Who usually feeds your child during most meals?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q11. Who usually feeds your child during most meals? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q11", ["Mother", "Father", "Grandparent", "My child mostly feeds themselves", "Other"], true)}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q12. How often are screens used during meals?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q12. How often are screens used during meals? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q12", ["Never", "Rarely", "Sometimes", "Often", "Almost every meal"])}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q13. How long does a typical meal last?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q13. How long does a typical meal last? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q13", ["Less than 10 minutes", "10–20 minutes", "20–30 minutes", "30–45 minutes", "More than 45 minutes"])}
                 </div>
               </div>
@@ -814,7 +874,7 @@ Consent choice: ${formData.consent}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q15. If your child chooses not to eat at a meal, what is your first instinct?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q15. If your child chooses not to eat at a meal, what is your first instinct? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q15", [
                     "They'll eat when they're hungry.",
                     "I offer another food.",
@@ -825,7 +885,7 @@ Consent choice: ${formData.consent}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q16. How often do treats become part of encouraging your child to eat?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q16. How often do treats become part of encouraging your child to eat? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q16", ["Often", "Sometimes", "Rarely because we don't keep treats at home", "Never"])}
                 </div>
               </div>
@@ -855,7 +915,7 @@ Consent choice: ${formData.consent}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q18. How comfortable are you allowing your child to make a mess while learning to eat independently?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q18. How comfortable are you allowing your child to make a mess while learning to eat independently? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q18", [
                     "Very comfortable",
                     "Mostly comfortable",
@@ -866,7 +926,7 @@ Consent choice: ${formData.consent}
                 </div>
                 
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q19. How often does your child participate in food preparation?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q19. How often does your child participate in food preparation? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q19", ["Daily", "Several times per week", "Occasionally", "Rarely", "Never"])}
                 </div>
               </div>
@@ -891,7 +951,7 @@ Consent choice: ${formData.consent}
               
               <div className="space-y-8">
                 <div>
-                  <h3 className="font-medium text-lg text-slate-800">Q20. If you could change just ONE thing about mealtimes, what would it be?</h3>
+                  <h3 className="font-medium text-lg text-slate-800">Q20. If you could change just ONE thing about mealtimes, what would it be? <span className="text-red-500">*</span></h3>
                   {renderRadioGroup("q20", [
                     "Eat a wider variety of foods",
                     "Eat enough for their needs",
@@ -965,12 +1025,52 @@ Consent choice: ${formData.consent}
           </motion.div>
 
           {/* Submit Action */}
-          <div className="pt-12 text-center">
+          <div className="pt-12 text-left sm:text-center">
             {status === "error" && (
-              <p className="text-red-500 mb-4">There was an error submitting your form. Please try again.</p>
+              <p className="text-red-500 mb-4 text-center">There was an error submitting your form. Please try again.</p>
             )}
+            
             {Object.keys(errors).length > 0 && (
-              <p className="text-red-500 mb-4 font-medium">Please complete all required fields correctly before submitting.</p>
+              <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl mb-8 shadow-sm text-left max-w-3xl mx-auto">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <svg className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h3 className="text-lg font-semibold text-red-800">Please answer all required questions</h3>
+                    <div className="mt-2 text-sm text-red-700">
+                      <p className="mb-2 font-medium">The following questions or fields are unanswered or invalid. Click on a question to go directly to it:</p>
+                      <ul className="list-disc pl-5 space-y-1">
+                        {Object.keys(errors).map((key) => {
+                          const label = fieldLabels[key] || key;
+                          return (
+                            <li key={key}>
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  const el = document.getElementById(`field-${key}`) || document.getElementById(key);
+                                  if (el) {
+                                    el.scrollIntoView({ behavior: "smooth", block: "center" });
+                                    setTimeout(() => {
+                                      const input = el.querySelector("input, select, textarea");
+                                      if (input) input.focus();
+                                    }, 500);
+                                  }
+                                }}
+                                className="text-left hover:underline text-red-700 hover:text-red-900 font-medium cursor-pointer focus:outline-none"
+                              >
+                                {label}
+                              </button>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             )}
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <button

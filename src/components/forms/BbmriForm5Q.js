@@ -149,13 +149,34 @@ export default function BbmriForm5Q() {
     }
   };
 
+  const fieldLabels = {
+    q1: "Q1. What worries you most about your child's eating right now?",
+    q1Other: "Q1. Other specification",
+    q2: "Q2. When your child sees a completely new food, what usually happens first?",
+    q3: "Q3. Which statement sounds most like your child?",
+    q4: "Q4. When your child says, 'I'm full', what do you usually do?",
+    q5: "Q5. Which statement best describes mealtimes in your home?",
+    childName: "Child's name",
+    childAge: "How old is your child?",
+    parentName: "Parent name",
+    phone: "Phone number (WhatsApp)",
+    email: "Email Address",
+    address: "Home Address",
+    source: "How did you hear about us?",
+    sourceOther: "How did you hear about us? (Other specification)",
+    consent: "Research Consent"
+  };
+
   const validateForm = () => {
     const newErrors = {};
     const reqText = "This field is required";
 
     if (!formData.q1) newErrors.q1 = reqText;
     if (formData.q1 === "Other" && !formData.q1Other.trim()) newErrors.q1Other = reqText;
+    if (!formData.q2) newErrors.q2 = reqText;
+    if (!formData.q3) newErrors.q3 = reqText;
     if (!formData.q4) newErrors.q4 = reqText;
+    if (!formData.q5) newErrors.q5 = reqText;
     
     if (!formData.childName.trim()) newErrors.childName = reqText;
     if (!formData.childAge.trim()) newErrors.childAge = reqText;
@@ -178,7 +199,7 @@ export default function BbmriForm5Q() {
     if (Object.keys(newErrors).length > 0) {
       // Find first error and scroll to it
       const firstErrorKey = Object.keys(newErrors)[0];
-      const errorElement = document.getElementById(`field-${firstErrorKey}`);
+      const errorElement = document.getElementById(`field-${firstErrorKey}`) || document.getElementById(firstErrorKey);
       if (errorElement) {
         errorElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
@@ -250,16 +271,16 @@ Consent choice: ${formData.consent}
 
   if (status === "success") {
     return (
-      <div className="min-h-screen py-16 px-4 flex items-center justify-center">
+      <div className="min-h-screen py-16 px-4 flex items-center justify-center bg-[#faf9f7]">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bb-card bg-white max-w-2xl w-full text-center shadow-xl shadow-slate-200/50"
+          className="bg-white max-w-2xl w-full text-center shadow-xl shadow-slate-200/50 rounded-2xl p-6 md:p-10"
         >
           <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
             <span className="text-4xl">🌱</span>
           </div>
-          <h2 className="bb-section-title mb-6">Thank you for completing your Food Foundations Reflection.</h2>
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-900 mb-6 leading-tight text-center">Thank you for completing your Food Foundations Reflection.</h2>
           <div className="text-justify space-y-4 text-slate-700 leading-relaxed text-[15px]">
             <p>We&apos;re now preparing your personalised report using your responses.</p>
             <p>Within the next 24–48 hours you&apos;ll receive practical insights into your child&apos;s eating patterns, emerging strengths, and gentle Montessori-informed ideas to support happier mealtimes.</p>
@@ -404,7 +425,7 @@ Consent choice: ${formData.consent}
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q2. When your child sees a completely new food, what usually happens first?</h3>
+                <h3 className="font-medium text-lg text-slate-800">Q2. When your child sees a completely new food, what usually happens first? <span className="text-red-500">*</span></h3>
                 {renderRadioGroup("q2", [
                   "Refuses it immediately",
                   "Watches it carefully",
@@ -415,7 +436,7 @@ Consent choice: ${formData.consent}
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q3. Which statement sounds most like your child?</h3>
+                <h3 className="font-medium text-lg text-slate-800">Q3. Which statement sounds most like your child? <span className="text-red-500">*</span></h3>
                 {renderRadioGroup("q3", [
                   "Eats fairly consistently each day.",
                   "Eats a lot one day and very little the next.",
@@ -437,7 +458,7 @@ Consent choice: ${formData.consent}
               </div>
               
               <div>
-                <h3 className="font-medium text-lg text-slate-800">Q5. Which statement best describes mealtimes in your home?</h3>
+                <h3 className="font-medium text-lg text-slate-800">Q5. Which statement best describes mealtimes in your home? <span className="text-red-500">*</span></h3>
                 {renderRadioGroup("q5", [
                   "We never use screens during meals.",
                   "Screens are used occasionally.",
@@ -486,12 +507,52 @@ Consent choice: ${formData.consent}
           </motion.div>
 
           {/* Submit Action */}
-          <div className="pt-12 text-center">
+          <div className="pt-12 text-left sm:text-center">
             {status === "error" && (
-              <p className="text-red-500 mb-4">There was an error submitting your form. Please try again.</p>
+              <p className="text-red-500 mb-4 text-center">There was an error submitting your form. Please try again.</p>
             )}
+            
             {Object.keys(errors).length > 0 && (
-              <p className="text-red-500 mb-4 font-medium">Please complete all required fields correctly before submitting.</p>
+              <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl mb-8 shadow-sm text-left max-w-3xl mx-auto">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <svg className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                  </div>
+                  <div className="ml-3">
+                    <h3 className="text-lg font-semibold text-red-800">Please answer all required questions</h3>
+                    <div className="mt-2 text-sm text-red-700">
+                      <p className="mb-2 font-medium">The following questions or fields are unanswered or invalid. Click on a question to go directly to it:</p>
+                      <ul className="list-disc pl-5 space-y-1">
+                        {Object.keys(errors).map((key) => {
+                          const label = fieldLabels[key] || key;
+                          return (
+                            <li key={key}>
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  const el = document.getElementById(`field-${key}`) || document.getElementById(key);
+                                  if (el) {
+                                    el.scrollIntoView({ behavior: "smooth", block: "center" });
+                                    setTimeout(() => {
+                                      const input = el.querySelector("input, select, textarea");
+                                      if (input) input.focus();
+                                    }, 500);
+                                  }
+                                }}
+                                className="text-left hover:underline text-red-700 hover:text-red-900 font-medium cursor-pointer focus:outline-none"
+                              >
+                                {label}
+                              </button>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             )}
             <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
               <button
