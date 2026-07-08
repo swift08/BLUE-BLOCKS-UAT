@@ -22,7 +22,7 @@ const poppins = Poppins({
 
 export const metadata = {
   // Always production — never localhost or Vercel preview URLs.
-  metadataBase: new URL("https://www.blueblocks.in"),
+  metadataBase: new URL("https://blueblocks.in"),
   verification: {
     google: "SI7CvW22nLVTd7Oz5CRp01zUa_mrzQSWsufefVcW9QA",
   },

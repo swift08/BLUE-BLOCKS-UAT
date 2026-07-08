@@ -3,7 +3,7 @@ function getBaseUrl() {
   // In a static export there is no server context, so localhost would be
   // baked into every JSON-LD @id and published to search engines.
   const raw =
-    process.env.NEXT_PUBLIC_SITE_URL || "https://www.blueblocks.in";
+    process.env.NEXT_PUBLIC_SITE_URL || "https://blueblocks.in";
   return raw.endsWith("/") ? raw.slice(0, -1) : raw;
 }
 

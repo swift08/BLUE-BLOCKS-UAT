@@ -9,7 +9,7 @@ const fs = require("fs");
 const path = require("path");
 
 const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.blueblocks.in"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://blueblocks.in"
 ).replace(/\/$/, "");
 
 function abs(p) {
@@ -92,9 +92,12 @@ Founded: 2009
 ## Programs
 
 - [Playgroup (Toddler Community, Ages 1-3)](${abs("/programs/playgroup/")})
+  - [Montessori Toddler (Playgroup Detail)](${abs("/programs/playgroup/montessori-toddler/")})
 - [Nursery, PP1, PP2 (Children's House, Ages 3-6)](${abs("/programs/nursery-school/")})
 - [Primary School - Class 1 to 6 (Elementary, Ages 6-12)](${abs("/programs/primary-school-elementary/")})
+  - [Elementary Class 1 to 6 (Primary Detail)](${abs("/programs/primary-school-elementary/class-1-to-6/")})
 - [Secondary School - Class 7 to 10 (Adolescent, Ages 12-18)](${abs("/programs/secondary-school/")})
+  - [Cambridge IGCSE & Erdkinder (Secondary Detail)](${abs("/programs/secondary-school/cambridge-igcse-erdkinder/")})
 
 ## Innovation Labs
 

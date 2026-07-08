@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Browse all important Blue Blocks pages, programmes, innovation pages, and resources from one place.",
   alternates: {
-    canonical: "/sitemap",
+    canonical: "/sitemap/",
   },
 };
 
@@ -43,14 +43,12 @@ const sitemapGroups = [
     title: "Program Pages",
     links: [
       { label: "Playgroup", href: "/programs/playgroup" },
+      { label: "Montessori Toddler (Playgroup Detail)", href: "/programs/playgroup/montessori-toddler" },
       { label: "Nursery, PP1, PP2", href: "/programs/nursery-school" },
       { label: "Primary School – Class 1 to 6", href: "/programs/primary-school-elementary" },
-      { label: "Secondary School – Class 7 to 12", href: "/programs/secondary-school" },
-    //   { label: "Toddler Program", href: "/programs/toddler" },
-    //   { label: "Gentle Settlement", href: "/programs/toddler/gentle-settlement" },
-    //   { label: "Prepared Environment", href: "/programs/toddler/prepared-environment" },
-    //   { label: "Practical Life", href: "/programs/toddler/practical-life" },
-    //   { label: "Language & Communication", href: "/programs/toddler/language" },
+      { label: "Elementary Class 1 to 6 (Primary Detail)", href: "/programs/primary-school-elementary/class-1-to-6" },
+      { label: "Secondary School – Class 7 to 10", href: "/programs/secondary-school" },
+      { label: "Cambridge IGCSE & Erdkinder (Secondary Detail)", href: "/programs/secondary-school/cambridge-igcse-erdkinder" },
     ],
   },
   {

@@ -4,278 +4,326 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
           http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://www.blueblocks.in/</loc>
+    <loc>https://blueblocks.in/about-us/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/admissions/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/adolescent-social-newborn-paper/</loc>
     <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/ami-training/</loc>
+    <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/blog/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/campus/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/careers/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/contact-us/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/drone/</loc>
+    <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/faq/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/governance/ethics/</loc>
+    <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/governance/our-standards/</loc>
+    <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/innovation/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/montessori-system/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/neuropsychiatry-of-toddler-plane/</loc>
+    <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/programs</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/admissions</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/contact-us</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/about-us</loc>
+    <loc>https://blueblocks.in/papers/</loc>
     <lastmod>2026-07-05T07:29:46Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/about-us/founders/pavan-goyal</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/parents/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/about-us/founders/munira-hussain</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/innovation</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/research-institute</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/campus</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/blog</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/papers</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/parents</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/careers</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/montessori-system</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/ami-training</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/faq</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/videos</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/sitemap</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/governance/ethics</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/governance/our-standards</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/adolescent-social-newborn-paper</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/the-architecture-of-the-universe</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/neuropsychiatry-of-toddler-plane</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/the-conscious-construction-of-intelligence</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/drone</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.blueblocks.in/privacy-policy</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <loc>https://blueblocks.in/privacy-policy/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/terms</loc>
-    <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <loc>https://blueblocks.in/programs/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/programs/playgroup/montessori-toddler/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/programs/primary-school-elementary/class-1-to-6/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/programs/secondary-school/cambridge-igcse-erdkinder/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/research-institute/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/sitemap/</loc>
+    <lastmod>2026-07-08T05:09:44Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/terms/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/programs/playgroup</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/the-architecture-of-the-universe/</loc>
+    <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/the-conscious-construction-of-intelligence/</loc>
+    <lastmod>2026-07-05T07:29:46Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/videos/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/about-us/founders/pavan-goyal/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/about-us/founders/munira-hussain/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/programs/playgroup/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/programs/nursery-school</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/programs/nursery-school/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/programs/primary-school-elementary</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/programs/primary-school-elementary/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/programs/secondary-school</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/programs/secondary-school/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/innovation/innovation-lab</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/innovation/innovation-lab/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/innovation/drone-lab</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/innovation/drone-lab/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/innovation/biomimicry-hive</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/innovation/biomimicry-hive/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/innovation/space-lab</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/innovation/space-lab/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/innovation/cubesat-mission</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/innovation/cubesat-mission/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/publications/inspace-authorization-cubesat-mission</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/publications/inspace-authorization-cubesat-mission/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/publications/longitudinal-innovation-development-0-18</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/publications/longitudinal-innovation-development-0-18/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/publications/research-briefs-series</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/publications/research-briefs-series/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/publications/methodological-contributions-observation-protocols</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/publications/methodological-contributions-observation-protocols/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/publications/drone-patent-series-2019</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/publications/drone-patent-series-2019/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/blog/helicopter-parenting-and-the-independence-gap</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/publications/inspace-authorization-cubesat-mission/inspace-authorization-cubesat-mission.md</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/publications/longitudinal-innovation-development-0-18/longitudinal-innovation-development-0-18.md</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/publications/research-briefs-series/research-briefs-series.md</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/publications/methodological-contributions-observation-protocols/methodological-contributions-observation-protocols.md</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/publications/drone-patent-series-2019/drone-patent-series-2019.md</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/blog/helicopter-parenting-and-the-independence-gap/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/blog/the-huge-gap-between-marks-and-learning</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/blog/the-huge-gap-between-marks-and-learning/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/blog/why-octagonal-classrooms-support-focus</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/blog/why-octagonal-classrooms-support-focus/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.blueblocks.in/blog/cubsat-mission-how-students-build-real-systems</loc>
-    <lastmod>2026-07-07T11:08:19Z</lastmod>
+    <loc>https://blueblocks.in/blog/cubsat-mission-how-students-build-real-systems/</loc>
+    <lastmod>2026-07-08T05:41:38Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -1,11 +1,13 @@
-﻿import siteData from "@/data/site";
+import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
 
 export const metadata = {
-  alternates: { canonical: "https://www.blueblocks.in/contact-us/" },
+  title: "Contact Us | Blue Blocks Tellapur & Gachibowli Campuses",
+  description: "Contact Blue Blocks Montessori School. Find phone numbers, WhatsApp links, and physical addresses for our Tellapur and Gachibowli school campuses in Hyderabad.",
+  alternates: { canonical: "https://blueblocks.in/contact-us/" },
 };
 
 export default function ContactPage() {

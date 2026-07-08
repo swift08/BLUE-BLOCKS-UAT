@@ -22,7 +22,7 @@ export async function generateMetadata({ params }) {
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `https://www.blueblocks.in/programs/${slug}/`,
+      canonical: `https://blueblocks.in/programs/${slug}/`,
     },
   };
 }
@@ -121,7 +121,7 @@ const PROGRAM_SCHEMA_DETAILS = {
 function buildProgramSchema(slug) {
   const detail = PROGRAM_SCHEMA_DETAILS[slug];
   if (!detail) return [];
-  const url = `https://www.blueblocks.in/programs/${slug}/`;
+  const url = `https://blueblocks.in/programs/${slug}/`;
 
   const courseSchema = {
     "@context": "https://schema.org",
@@ -132,7 +132,7 @@ function buildProgramSchema(slug) {
     provider: {
       "@type": "EducationalOrganization",
       name: "Blue Blocks Montessori",
-      sameAs: "https://www.blueblocks.in/",
+      sameAs: "https://blueblocks.in/",
     },
     url,
     educationalLevel: detail.educationalLevel,
@@ -161,12 +161,12 @@ function buildProgramSchema(slug) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.blueblocks.in/" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://blueblocks.in/" },
       {
         "@type": "ListItem",
         position: 2,
         name: "Programs",
-        item: "https://www.blueblocks.in/programs/",
+        item: "https://blueblocks.in/programs/",
       },
       { "@type": "ListItem", position: 3, name: detail.crumbName, item: url },
     ],

@@ -23,7 +23,7 @@ const path = require("path");
 
 const siteData = require("../src/data/site.json");
 const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.blueblocks.in"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://blueblocks.in"
 ).replace(/\/$/, "");
 
 // ---------------------------------------------------------------------------
@@ -31,7 +31,12 @@ const SITE_URL = (
 // ---------------------------------------------------------------------------
 
 function absoluteUrl(route = "/") {
-  return `${SITE_URL}${route.startsWith("/") ? route : `/${route}`}`;
+  const cleanRoute = route.startsWith("/") ? route : `/${route}`;
+  // Enforce trailing slash if it doesn't end with one and has no file extension
+  if (!cleanRoute.endsWith("/") && !path.extname(cleanRoute)) {
+    return `${SITE_URL}${cleanRoute}/`;
+  }
+  return `${SITE_URL}${cleanRoute}`;
 }
 
 /**
@@ -67,57 +72,62 @@ function getLastmod(route) {
 // Route definitions
 // ---------------------------------------------------------------------------
 
+function getStaticRoutes(dir, base = "", routes = []) {
+  const items = fs.readdirSync(dir);
+  for (const item of items) {
+    const fullPath = path.join(dir, item);
+    const stat = fs.statSync(fullPath);
+    if (stat.isDirectory()) {
+      // Skip dynamic route folders starting with '['
+      if (item.startsWith("[")) continue;
+      // Skip forms index and subpages completely (they are noindexed)
+      if (item === "forms") continue;
+      getStaticRoutes(fullPath, `${base}/${item}`, routes);
+    } else if (item === "page.js") {
+      const route = base || "/";
+      if (route === "/_not-found") continue;
+      routes.push(route);
+    }
+  }
+  return routes;
+}
+
+function getPriorityAndFreq(route) {
+  if (route === "/") return { changefreq: "weekly", priority: "1.0" };
+  if (["/programs", "/admissions", "/contact-us"].includes(route)) {
+    return { changefreq: "monthly", priority: "0.9" };
+  }
+  if (route.startsWith("/privacy-policy") || route.startsWith("/terms")) {
+    return { changefreq: "yearly", priority: "0.6" };
+  }
+  return { changefreq: "monthly", priority: "0.8" };
+}
+
 function getRoutes({ researchOutputs = [], blogPosts = [] }) {
-  // Routes that are HTML pages and should appear in the sitemap
-  const tier10 = [
-    { route: "/", changefreq: "weekly", priority: "1.0" },
-  ];
+  const appDir = path.join(process.cwd(), "src", "app");
+  const staticRoutesList = getStaticRoutes(appDir);
 
-  const tier09 = [
-    { route: "/programs", changefreq: "monthly", priority: "0.9" },
-    { route: "/admissions", changefreq: "monthly", priority: "0.9" },
-    { route: "/contact-us", changefreq: "monthly", priority: "0.9" },
-  ];
+  const staticRoutes = staticRoutesList.map((route) => {
+    const config = getPriorityAndFreq(route);
+    return { route, ...config };
+  });
 
-  const tier08 = [
-    { route: "/about-us", changefreq: "monthly", priority: "0.8" },
-    { route: "/about-us/founders/pavan-goyal", changefreq: "monthly", priority: "0.8" },
-    { route: "/about-us/founders/munira-hussain", changefreq: "monthly", priority: "0.8" },
-    { route: "/innovation", changefreq: "monthly", priority: "0.8" },
-    { route: "/research-institute", changefreq: "monthly", priority: "0.8" },
-    { route: "/campus", changefreq: "monthly", priority: "0.8" },
-    { route: "/blog", changefreq: "weekly", priority: "0.8" },
-    { route: "/papers", changefreq: "monthly", priority: "0.8" },
-    { route: "/parents", changefreq: "monthly", priority: "0.8" },
-    { route: "/careers", changefreq: "monthly", priority: "0.8" },
-    { route: "/montessori-system", changefreq: "monthly", priority: "0.8" },
-    { route: "/ami-training", changefreq: "monthly", priority: "0.8" },
-    { route: "/faq", changefreq: "monthly", priority: "0.8" },
-    { route: "/videos", changefreq: "monthly", priority: "0.8" },
-    { route: "/sitemap", changefreq: "monthly", priority: "0.8" },
-  ];
-
-  const tier07 = [
-    // Governance
-    { route: "/governance/ethics", changefreq: "monthly", priority: "0.7" },
-    { route: "/governance/our-standards", changefreq: "monthly", priority: "0.7" },
-    // Standalone paper pages
-    { route: "/adolescent-social-newborn-paper", changefreq: "monthly", priority: "0.7" },
-    { route: "/the-architecture-of-the-universe", changefreq: "monthly", priority: "0.7" },
-    { route: "/neuropsychiatry-of-toddler-plane", changefreq: "monthly", priority: "0.7" },
-    { route: "/the-conscious-construction-of-intelligence", changefreq: "monthly", priority: "0.7" },
-    // Innovation/drone standalone
-    { route: "/drone", changefreq: "monthly", priority: "0.7" },
-  ];
-
-  const tier06 = [
-    { route: "/privacy-policy", changefreq: "yearly", priority: "0.6" },
-    { route: "/terms", changefreq: "yearly", priority: "0.6" },
-  ];
-
-  // ---------------------------------------------------------------------------
   // Dynamic routes from data
-  // ---------------------------------------------------------------------------
+
+  // Founders (under about-us/founders/[slug])
+  const aboutUsSection = (siteData?.pages?.aboutUs?.sections || []).find(
+    (item) => item?.type === "foundersGuides"
+  );
+  const founders = Array.isArray(aboutUsSection?.props?.items) ? aboutUsSection.props.items.slice(0, 2) : [];
+  const founderRoutes = founders.map((founder) => {
+    const raw = String(founder?.readMoreHref || founder?.name || "").trim().toLowerCase();
+    const slug = raw.includes("pavan-goyal")
+      ? "pavan-goyal"
+      : raw.includes("munira-hussain")
+      ? "munira-hussain"
+      : raw.replace(/^\/+|\/+$/g, "").split("/").pop();
+    return { route: `/about-us/founders/${slug}`, changefreq: "monthly", priority: "0.8" };
+  });
 
   // Program detail pages
   const programDetails = Object.keys(siteData?.pages?.programDetails || {})
@@ -129,16 +139,18 @@ function getRoutes({ researchOutputs = [], blogPosts = [] }) {
     .filter((key) => !["breadcrumbs", "schema"].includes(key))
     .map((slug) => ({ route: `/innovation/${slug}`, changefreq: "monthly", priority: "0.7" }));
 
-  // Primary detail pages
-  const primaryDetails = Object.keys(siteData?.pages?.primaryDetail || {})
-    .filter((key) => key !== "breadcrumbs")
-    .map((slug) => ({ route: `/primary/${slug}`, changefreq: "monthly", priority: "0.7" }));
-
   // Research publications
   const publicationRoutes = researchOutputs.map((item) => ({
     route: `/publications/${item.slug}`,
     changefreq: "monthly",
     priority: "0.7",
+  }));
+
+  // Research publications markdown views
+  const publicationMdRoutes = researchOutputs.map((item) => ({
+    route: `/publications/${item.slug}/${item.slug}.md`,
+    changefreq: "monthly",
+    priority: "0.5",
   }));
 
   // Blog posts
@@ -152,15 +164,12 @@ function getRoutes({ researchOutputs = [], blogPosts = [] }) {
 
   // Combine all, deduplicate by route
   const all = [
-    ...tier10,
-    ...tier09,
-    ...tier08,
-    ...tier07,
-    ...tier06,
+    ...staticRoutes,
+    ...founderRoutes,
     ...programDetails,
     ...innovationDetails,
-    ...primaryDetails,
     ...publicationRoutes,
+    ...publicationMdRoutes,
     ...blogRoutes,
   ];
 

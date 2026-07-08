@@ -1,4 +1,4 @@
-﻿import siteData from "@/data/site";
+import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import {
@@ -8,6 +8,14 @@ import {
 } from "@/data/faq";
 
 export const dynamic = "force-static";
+
+export const metadata = {
+  title: "Frequently Asked Questions | Blue Blocks Montessori",
+  description: "Find answers to common parent questions about admissions, Montessori methods, Cambridge integration, and campus facilities.",
+  alternates: {
+    canonical: "https://blueblocks.in/faq/",
+  },
+};
 
 export default function FaqPage() {
   const page = siteData?.pages?.faq || {};

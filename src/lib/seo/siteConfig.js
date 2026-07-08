@@ -5,7 +5,7 @@
  * schema builders instead of repeating the URL/name inline everywhere.
  */
 
-export const SITE_URL = "https://www.blueblocks.in";
+export const SITE_URL = "https://blueblocks.in";
 export const SITE_NAME = "Blue Blocks Montessori School";
 export const SITE_LEGAL_NAME = "Blue Blocks Montessori Educational Society";
 export const SITE_TWITTER = "@BlueblocksEdu";

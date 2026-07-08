@@ -5280,7 +5280,7 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Admissions",
-          "url": "https://www.blueblocks.in/admissions/",
+          "url": "https://blueblocks.in/admissions/",
           "description": "At Blue Blocks, we do not admit a student; we admit a family. Education is not a transaction where you pay fees and we deliver a product. It is a 15-year collab",
           "isPartOf": {
             "@id": "##website"
@@ -5294,13 +5294,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://www.blueblocks.in/"
+              "item": "https://blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Admissions",
-              "item": "https://www.blueblocks.in/admissions/"
+              "item": "https://blueblocks.in/admissions/"
             }
           ]
         },
@@ -5534,13 +5534,13 @@
         {
           "@context": "https://schema.org",
           "@type": "EducationalOrganization",
-          "@id": "https://www.blueblocks.in/contact-us/#gachibowli-campus",
+          "@id": "https://blueblocks.in/contact-us/#gachibowli-campus",
           "name": "Blue Blocks Montessori - Gachibowli Campus",
           "alternateName": "Blue Blocks Preschool",
-          "url": "https://www.blueblocks.in/contact-us/",
+          "url": "https://blueblocks.in/contact-us/",
           "telephone": "+91-9000955050",
           "email": "info@blueblocks.in",
-          "image": "https://www.blueblocks.in/images/campus-gachibowli.jpg",
+          "image": "https://blueblocks.in/images/campus-gachibowli.jpg",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "MIG 3, Lane opposite to DLF, APHB Colony, Gachibowli",
@@ -5571,19 +5571,19 @@
           "hasMap": "https://maps.google.com/?cid=2096929938310545200",
           "areaServed": "Hyderabad",
           "parentOrganization": {
-            "@id": "https://www.blueblocks.in/#organization"
+            "@id": "https://blueblocks.in/#organization"
           }
         },
         {
           "@context": "https://schema.org",
           "@type": "EducationalOrganization",
-          "@id": "https://www.blueblocks.in/contact-us/#tellapur-campus",
+          "@id": "https://blueblocks.in/contact-us/#tellapur-campus",
           "name": "Blue Blocks Montessori - Tellapur Campus",
           "alternateName": "Blue Blocks Complete School",
-          "url": "https://www.blueblocks.in/contact-us/",
+          "url": "https://blueblocks.in/contact-us/",
           "telephone": "+91-9000955050",
           "email": "info@blueblocks.in",
-          "image": "https://www.blueblocks.in/images/campus-tellapur.jpg",
+          "image": "https://blueblocks.in/images/campus-tellapur.jpg",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Osman Nagar Road, Tellapur",
@@ -5613,7 +5613,7 @@
           ],
           "areaServed": "Hyderabad",
           "parentOrganization": {
-            "@id": "https://www.blueblocks.in/#organization"
+            "@id": "https://blueblocks.in/#organization"
           }
         }
       ]

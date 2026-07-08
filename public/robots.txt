@@ -1,5 +1,5 @@
 # Blue Blocks Montessori School — robots.txt
-# https://www.blueblocks.in/robots.txt
+# https://blueblocks.in/robots.txt
 
 # ─────────────────────────────────────────────────────────────────────────────
 # All crawlers — allow everything except private/internal paths
@@ -69,4 +69,4 @@ Allow: /
 # ─────────────────────────────────────────────────────────────────────────────
 # Sitemap
 # ─────────────────────────────────────────────────────────────────────────────
-Sitemap: https://www.blueblocks.in/sitemap.xml
+Sitemap: https://blueblocks.in/sitemap.xml

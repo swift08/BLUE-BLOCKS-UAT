@@ -1,12 +1,10 @@
 # Netlify _redirects
 # All redirects use 301 (permanent) to preserve SEO equity.
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Canonical domain — redirect bare domain and http to https://www
-# ─────────────────────────────────────────────────────────────────────────────
-https://blueblocks.in/*   https://www.blueblocks.in/:splat  301!
-http://blueblocks.in/*    https://www.blueblocks.in/:splat  301!
-http://www.blueblocks.in/* https://www.blueblocks.in/:splat  301!
+# Canonical domain — redirect www and http to HTTPS bare domain
+https://www.blueblocks.in/*   https://blueblocks.in/:splat  301!
+http://blueblocks.in/*        https://blueblocks.in/:splat  301!
+http://www.blueblocks.in/*    https://blueblocks.in/:splat  301!
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Legacy .shtml URLs (old website)

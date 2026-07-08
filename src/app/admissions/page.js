@@ -1,11 +1,13 @@
-﻿import siteData from "@/data/site";
+import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
 
 export const metadata = {
-  alternates: { canonical: "https://www.blueblocks.in/admissions/" },
+  title: "Admissions Workflow & Entry Windows | Blue Blocks Montessori",
+  description: "Apply to Blue Blocks Montessori School. Explore our parents onboarding journey, developmental orientation, admission interview processes, and entry guidelines.",
+  alternates: { canonical: "https://blueblocks.in/admissions/" },
 };
 
 export default function AdmissionsPage() {

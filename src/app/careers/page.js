@@ -8,7 +8,7 @@ export const metadata = {
   title: "Careers at Blue Blocks Montessori | Open Roles in Hyderabad",
   description:
     "Join Blue Blocks Montessori in Hyderabad. View open roles for AMI-certified guides, educators, innovation lab leads, and operations staff across our Gachibowli and Tellapur campuses.",
-  alternates: { canonical: "https://www.blueblocks.in/careers/" },
+  alternates: { canonical: "https://blueblocks.in/careers/" },
   robots: { index: true, follow: true },
 };
 

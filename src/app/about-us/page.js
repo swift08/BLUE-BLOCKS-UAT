@@ -16,21 +16,21 @@ export const metadata = {
   ],
   robots: { index: true, follow: true },
   alternates: {
-    canonical: "https://www.blueblocks.in/about-us",
+    canonical: "https://blueblocks.in/about-us/",
     languages: {
-      "en-in": "https://www.blueblocks.in/about-us",
-      "x-default": "https://www.blueblocks.in/about-us",
+      "en-in": "https://blueblocks.in/about-us/",
+      "x-default": "https://blueblocks.in/about-us/",
     },
   },
   openGraph: {
     type: "website",
-    url: "https://www.blueblocks.in/about-us",
+    url: "https://blueblocks.in/about-us/",
     title: "About Blue Blocks | AMI Montessori Since 2009 | Our Story & Mission",
     description:
       "Since 2009, Blue Blocks has stood as a sanctuary of authentic Montessori practice in Hyderabad. Founded by Pavan Goyal (all four AMI Diplomas) and Munira Hussain, offering a continuous developmental journey from infancy through adolescence.",
     images: [
       {
-        url: "https://www.blueblocks.in/images/og-about.jpg",
+        url: "https://blueblocks.in/images/og-about.jpg",
         width: 1200,
         height: 630,
         alt: "Blue Blocks founders Pavan Goyal and Munira Hussain",
@@ -47,23 +47,23 @@ const structuredData = {
   "@graph": [
     {
       "@type": "AboutPage",
-      "@id": "https://www.blueblocks.in/about-us/#webpage",
-      url: "https://www.blueblocks.in/about-us",
+      "@id": "https://blueblocks.in/about-us/#webpage",
+      url: "https://blueblocks.in/about-us",
       name: "About Blue Blocks | Our Story, Founders & Mission",
       description:
         "Since 2009, Blue Blocks has stood as a sanctuary of authentic Montessori practice in Hyderabad, offering a continuous developmental journey from infancy through adolescence.",
-      isPartOf: { "@id": "https://www.blueblocks.in/#website" },
-      publisher: { "@id": "https://www.blueblocks.in/#organization" },
-      mainEntity: { "@id": "https://www.blueblocks.in/#organization" },
+      isPartOf: { "@id": "https://blueblocks.in/#website" },
+      publisher: { "@id": "https://blueblocks.in/#organization" },
+      mainEntity: { "@id": "https://blueblocks.in/#organization" },
     },
     {
       "@type": "Person",
-      "@id": "https://www.blueblocks.in/#pavan",
+      "@id": "https://blueblocks.in/#pavan",
       name: "Pavan Goyal",
       jobTitle: "Founder & Principal",
       description:
         "Pavan holds the rare distinction of all four AMI Diplomas (0-3, 3-6, 6-12, 12-18), making him one of the few people globally certified across the complete Montessori continuum. He serves as the Principal Investigator for the Blue Blocks Micro Research Institute and leads the Innovation Programme.",
-      worksFor: { "@id": "https://www.blueblocks.in/#organization" },
+      worksFor: { "@id": "https://blueblocks.in/#organization" },
       alumniOf: {
         "@type": "Organization",
         name: "Association Montessori Internationale",
@@ -80,16 +80,16 @@ const structuredData = {
     },
     {
       "@type": "Person",
-      "@id": "https://www.blueblocks.in/#munira",
+      "@id": "https://blueblocks.in/#munira",
       name: "Munira Hussain",
       jobTitle: "Co-Founder & Director of Pedagogy",
       description:
         "Munira ensures that every classroom remains a psychological sanctuary for the child. She leads the Parent Education Programme and Guide Training, having conducted workshops for over 40,000 parents across 18 years.",
-      worksFor: { "@id": "https://www.blueblocks.in/#organization" },
+      worksFor: { "@id": "https://blueblocks.in/#organization" },
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.blueblocks.in/about-us/#faq",
+      "@id": "https://blueblocks.in/about-us/#faq",
       mainEntity: [
         {
           "@type": "Question",
@@ -131,10 +131,10 @@ const structuredData = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.blueblocks.in/about-us/#breadcrumb",
+      "@id": "https://blueblocks.in/about-us/#breadcrumb",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.blueblocks.in/" },
-        { "@type": "ListItem", position: 2, name: "About Us", item: "https://www.blueblocks.in/about-us" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://blueblocks.in/" },
+        { "@type": "ListItem", position: 2, name: "About Us", item: "https://blueblocks.in/about-us" },
       ],
     },
   ],

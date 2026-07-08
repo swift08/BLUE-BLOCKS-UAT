@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
     title: `${item.title} | Blue Blocks`,
     description: item.summary,
     alternates: {
-      canonical: `https://www.blueblocks.in/publications/${item.slug}/`,
+      canonical: `https://blueblocks.in/publications/${item.slug}/`,
     },
   };
 }
@@ -34,13 +34,13 @@ export default async function PublicationDetailPage({ params }) {
   const item = getOutput(slug);
   if (!item) notFound();
 
-  const url = `https://www.blueblocks.in/publications/${item.slug}/`;
+  const url = `https://blueblocks.in/publications/${item.slug}/`;
   const isCubeSat = item.slug === "inspace-authorization-cubesat-mission";
 
   const baseAuthor = {
     "@type": "Organization",
     name: "Blue Blocks Micro Research Institute",
-    url: "https://www.blueblocks.in/",
+    url: "https://blueblocks.in/",
   };
 
   const principalAuthor = {
@@ -58,12 +58,12 @@ export default async function PublicationDetailPage({ params }) {
     description: item.summary,
     url,
     image: item.image
-      ? `https://www.blueblocks.in${item.image}`
+      ? `https://blueblocks.in${item.image}`
       : undefined,
     author: principalAuthor,
     publisher: {
       "@type": "Organization",
-      "@id": "https://www.blueblocks.in/#organization",
+      "@id": "https://blueblocks.in/#organization",
       name: "Blue Blocks Micro Research Institute",
     },
     datePublished: "2025-01-01",
@@ -86,7 +86,7 @@ export default async function PublicationDetailPage({ params }) {
       author: principalAuthor,
       publisher: {
         "@type": "Organization",
-        "@id": "https://www.blueblocks.in/#organization",
+        "@id": "https://blueblocks.in/#organization",
         name: "Blue Blocks Micro Research Institute",
       },
       datePublished: "2025-01-01",

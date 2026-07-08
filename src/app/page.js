@@ -42,19 +42,19 @@ export const metadata = {
     },
   },
 
-  // <link rel="canonical" href="https://www.blueblocks.in/" />
+  // <link rel="canonical" href="https://blueblocks.in/" />
   alternates: {
-    canonical: "https://www.blueblocks.in/",
+    canonical: "https://blueblocks.in/",
     languages: {
-      "en-in": "https://www.blueblocks.in/",
-      "x-default": "https://www.blueblocks.in/",
+      "en-in": "https://blueblocks.in/",
+      "x-default": "https://blueblocks.in/",
     },
   },
 
   // Open Graph tags
   openGraph: {
     type: "website",
-    url: "https://www.blueblocks.in/",
+    url: "https://blueblocks.in/",
     locale: "en_IN",
     siteName: "Blue Blocks Montessori School",
     title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1-18) | Hyderabad",
@@ -62,7 +62,7 @@ export const metadata = {
       "Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad offering continuous developmental education from 15 months to 18 years. Innovation labs, student patents, CubeSat engineering, and Cambridge IGCSE integration.",
     images: [
       {
-        url: "https://www.blueblocks.in/images/og-homepage.jpg",
+        url: "https://blueblocks.in/images/og-homepage.jpg",
         width: 1200,
         height: 630,
         alt: "Blue Blocks Montessori School campus in Hyderabad",
@@ -77,7 +77,7 @@ export const metadata = {
     title: "Blue Blocks | AMI Montessori School, Hyderabad (Ages 1-18)",
     description:
       "AMI-certified Montessori from toddler to adolescence. Innovation labs, CubeSat engineering, student patents, Cambridge IGCSE.",
-    images: ["https://www.blueblocks.in/images/og-homepage.jpg"],
+    images: ["https://blueblocks.in/images/og-homepage.jpg"],
   },
 
   // Geo meta tags (go under "other")
@@ -100,19 +100,19 @@ const structuredData = {
 "@graph": [
   {
     "@type": "WebSite",
-    "@id": "https://www.blueblocks.in/#website",
-    "url": "https://www.blueblocks.in/",
+    "@id": "https://blueblocks.in/#website",
+    "url": "https://blueblocks.in/",
     "name": "Blue Blocks Montessori School",
     "description": "AMI-certified Montessori education from 15 months to 18 years. Innovation labs, student patents, CubeSat engineering, and Cambridge IGCSE integration.",
     "publisher": {
-      "@id": "https://www.blueblocks.in/#organization"
+      "@id": "https://blueblocks.in/#organization"
     },
     "inLanguage": "en-IN",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://www.blueblocks.in/search?q={search_term_string}"
+        "urlTemplate": "https://blueblocks.in/search?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
@@ -121,7 +121,7 @@ const structuredData = {
 
   {
     "@type": ["EducationalOrganization", "ResearchOrganization"],
-    "@id": "https://www.blueblocks.in/#organization",
+    "@id": "https://blueblocks.in/#organization",
 
 
     "name": "Blue Blocks Montessori School",
@@ -135,14 +135,14 @@ const structuredData = {
     "disambiguatingDescription": "AMI-certified Montessori school and micro-research institute in Hyderabad, India, offering continuous developmental education from 15 months to 18 years with innovation labs in space technology, drone engineering, and biomimicry.",
 
 
-    "url": "https://www.blueblocks.in/",
+    "url": "https://blueblocks.in/",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.blueblocks.in/images/logo.svg",
+      "url": "https://blueblocks.in/images/logo.svg",
       "width": 300,
       "height": 100
     },
-    "image": "https://www.blueblocks.in/images/campus-aerial.jpg",
+    "image": "https://blueblocks.in/images/campus-aerial.jpg",
     "description": "An AMI-certified Montessori school and micro-research institute in Hyderabad offering continuous developmental education from 15 months to 18 years. The only school in India with a student-built ISRO-manifested CubeSat payload, 5 filed drone patents, and innovation labs in biomimicry, drone technology, and space engineering.",
     "foundingDate": "2009",
     "numberOfStudents": {
@@ -153,7 +153,7 @@ const structuredData = {
     "founder": [
       {
         "@type": "Person",
-        "@id": "https://www.blueblocks.in/#pavan",
+        "@id": "https://blueblocks.in/#pavan",
         "name": "Pavan Goyal",
         "jobTitle": "Founder & Principal",
         "description": "Holds all four AMI Diplomas (0-3, 3-6, 6-12, 12-18) - the complete Montessori continuum. Principal Investigator at Blue Blocks Micro Research Institute.",
@@ -161,7 +161,7 @@ const structuredData = {
       },
       {
         "@type": "Person",
-        "@id": "https://www.blueblocks.in/#munira",
+        "@id": "https://blueblocks.in/#munira",
         "name": "Munira Hussain",
         "jobTitle": "Co-Founder & Director of Pedagogy",
         "description": "Leads parent education programmes and guide training. Ensures every classroom remains a psychological sanctuary for the child."
@@ -276,11 +276,11 @@ const structuredData = {
     "department": [
       {
         "@type": "ResearchOrganization",
-        "@id": "https://www.blueblocks.in/#microresearch",
+        "@id": "https://blueblocks.in/#microresearch",
         "name": "Blue Blocks Micro Research Institute",
         "description": "The research arm of Blue Blocks Montessori School. Conducts longitudinal observational research on child development across a 15-year dataset of 847 children within authentic Montessori environments.",
         "parentOrganization": {
-          "@id": "https://www.blueblocks.in/#organization"
+          "@id": "https://blueblocks.in/#organization"
         },
         "knowsAbout": [
           {"@type": "Thing", "name": "Longitudinal study", "sameAs": "https://en.wikipedia.org/wiki/Longitudinal_study"},
@@ -291,47 +291,47 @@ const structuredData = {
       },
       {
         "@type": "ResearchOrganization",
-        "@id": "https://www.blueblocks.in/#foundation",
+        "@id": "https://blueblocks.in/#foundation",
         "name": "Blue Blocks Research Institute Foundation",
         "description": "The philanthropic and research-funding arm supporting longitudinal studies in child development, innovation pedagogy, and Montessori educational outcomes.",
         "parentOrganization": {
-          "@id": "https://www.blueblocks.in/#organization"
+          "@id": "https://blueblocks.in/#organization"
         }
       },
       {
         "@type": "ResearchOrganization",
-        "@id": "https://www.blueblocks.in/#spacelab",
+        "@id": "https://blueblocks.in/#spacelab",
         "name": "Blue Blocks Space Lab",
         "description": "Student-led aerospace research facility where adolescents design CubeSat payloads and conduct space science experiments.",
         "parentOrganization": {
-          "@id": "https://www.blueblocks.in/#organization"
+          "@id": "https://blueblocks.in/#organization"
         }
       },
       {
         "@type": "ResearchOrganization",
-        "@id": "https://www.blueblocks.in/#dronelab",
+        "@id": "https://blueblocks.in/#dronelab",
         "name": "Blue Blocks Drone Lab",
         "description": "Student drone research and innovation centre. Five patent applications filed with the Indian Patent Office by elementary students aged 8-12.",
         "parentOrganization": {
-          "@id": "https://www.blueblocks.in/#organization"
+          "@id": "https://blueblocks.in/#organization"
         }
       },
       {
         "@type": "ResearchOrganization",
-        "@id": "https://www.blueblocks.in/#biomimicry",
+        "@id": "https://blueblocks.in/#biomimicry",
         "name": "Blue Blocks Biomimicry Hive",
         "description": "Hexagonal research space designed by IIT Hyderabad for nature-inspired innovation education and regenerative engineering.",
         "parentOrganization": {
-          "@id": "https://www.blueblocks.in/#organization"
+          "@id": "https://blueblocks.in/#organization"
         }
       },
       {
         "@type": "ResearchOrganization",
-        "@id": "https://www.blueblocks.in/#innovationlab",
+        "@id": "https://blueblocks.in/#innovationlab",
         "name": "Blue Blocks Innovation Lab",
         "description": "Ethical making and design facility with 500 tools across all three Planes of Development, from hand tools to CNC machines.",
         "parentOrganization": {
-          "@id": "https://www.blueblocks.in/#organization"
+          "@id": "https://blueblocks.in/#organization"
         }
       }
     ],
@@ -368,7 +368,7 @@ const structuredData = {
 
   {
     "@type": "FAQPage",
-    "@id": "https://www.blueblocks.in/#faq",
+    "@id": "https://blueblocks.in/#faq",
     "mainEntity": [
       {
         "@type": "Question",

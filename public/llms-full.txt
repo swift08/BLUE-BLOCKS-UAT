@@ -1,9 +1,9 @@
 # Blue Blocks Montessori School & Micro Research Institute
-> Last updated: 2026-07-07T11:26:54.531Z
+> Last updated: 2026-07-08T05:42:01.781Z
 
 > Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad, India, offering a continuous developmental education from 15 months to 18 years (Ages 1-18), integrated with the Cambridge IGCSE curriculum. The school operates two campuses (Gachibowli and Tellapur) and houses innovation labs in space technology, drone engineering, and biomimicry. The Blue Blocks Micro Research Institute conducts a 17-year longitudinal observational study of child development across 847 cumulative students.
 
-Canonical: https://www.blueblocks.in/
+Canonical: https://blueblocks.in/
 Primary email: info@blueblocks.in
 Primary phone: +91 9000955050
 WhatsApp: +91 9000955053
@@ -11,59 +11,62 @@ Founded: 2009
 
 ## Core pages
 
-- [Home](https://www.blueblocks.in/): Overview of the AMI Montessori continuum, 0-18 developmental architecture, and research-led pedagogy.
-- [About Us](https://www.blueblocks.in/about-us/): Founding story, founder bios (Pavan Goyal, Munira Hussain), 17-year longitudinal dataset, Times of India recognition, BBMRI mission.
-- [Programs](https://www.blueblocks.in/programs/): Full program catalogue across the four planes of Montessori development.
-- [Innovation](https://www.blueblocks.in/innovation/): Innovation Lab, Drone Lab, Space Lab, Biomimicry Hive, CubeSat Mission.
-- [Admissions](https://www.blueblocks.in/admissions/): Admissions process, parent orientation, entry windows, Cambridge integration.
-- [Campus](https://www.blueblocks.in/campus/): Octagonal classrooms, biophilic design, Innovation Infrastructure (CESDI), kinaesthetic landscape.
-- [Careers](https://www.blueblocks.in/careers/): Open roles for AMI guides, educators, innovation lab leads, and operations staff.
-- [Contact](https://www.blueblocks.in/contact-us/): Both campus addresses, phone, email, and enquiry form.
-- [FAQ](https://www.blueblocks.in/faq/): Common questions about Montessori, admissions, and Cambridge IGCSE integration.
-- [Blog](https://www.blueblocks.in/blog/): Articles on Montessori, parenting, innovation pedagogy.
+- [Home](https://blueblocks.in/): Overview of the AMI Montessori continuum, 0-18 developmental architecture, and research-led pedagogy.
+- [About Us](https://blueblocks.in/about-us/): Founding story, founder bios (Pavan Goyal, Munira Hussain), 17-year longitudinal dataset, Times of India recognition, BBMRI mission.
+- [Programs](https://blueblocks.in/programs/): Full program catalogue across the four planes of Montessori development.
+- [Innovation](https://blueblocks.in/innovation/): Innovation Lab, Drone Lab, Space Lab, Biomimicry Hive, CubeSat Mission.
+- [Admissions](https://blueblocks.in/admissions/): Admissions process, parent orientation, entry windows, Cambridge integration.
+- [Campus](https://blueblocks.in/campus/): Octagonal classrooms, biophilic design, Innovation Infrastructure (CESDI), kinaesthetic landscape.
+- [Careers](https://blueblocks.in/careers/): Open roles for AMI guides, educators, innovation lab leads, and operations staff.
+- [Contact](https://blueblocks.in/contact-us/): Both campus addresses, phone, email, and enquiry form.
+- [FAQ](https://blueblocks.in/faq/): Common questions about Montessori, admissions, and Cambridge IGCSE integration.
+- [Blog](https://blueblocks.in/blog/): Articles on Montessori, parenting, innovation pedagogy.
 
 ## Programs
 
-- [Playgroup (Toddler Community, Ages 1-3)](https://www.blueblocks.in/programs/playgroup/)
-- [Nursery, PP1, PP2 (Children's House, Ages 3-6)](https://www.blueblocks.in/programs/nursery-school/)
-- [Primary School - Class 1 to 6 (Elementary, Ages 6-12)](https://www.blueblocks.in/programs/primary-school-elementary/)
-- [Secondary School - Class 7 to 10 (Adolescent, Ages 12-18)](https://www.blueblocks.in/programs/secondary-school/)
+- [Playgroup (Toddler Community, Ages 1-3)](https://blueblocks.in/programs/playgroup/)
+  - [Montessori Toddler (Playgroup Detail)](https://blueblocks.in/programs/playgroup/montessori-toddler/)
+- [Nursery, PP1, PP2 (Children's House, Ages 3-6)](https://blueblocks.in/programs/nursery-school/)
+- [Primary School - Class 1 to 6 (Elementary, Ages 6-12)](https://blueblocks.in/programs/primary-school-elementary/)
+  - [Elementary Class 1 to 6 (Primary Detail)](https://blueblocks.in/programs/primary-school-elementary/class-1-to-6/)
+- [Secondary School - Class 7 to 10 (Adolescent, Ages 12-18)](https://blueblocks.in/programs/secondary-school/)
+  - [Cambridge IGCSE & Erdkinder (Secondary Detail)](https://blueblocks.in/programs/secondary-school/cambridge-igcse-erdkinder/)
 
 ## Innovation Labs
 
-- [Innovation Lab](https://www.blueblocks.in/innovation/innovation-lab/): Ethical making and design facility with 500 tools across all three Planes of Development.
-- [Drone Lab](https://www.blueblocks.in/innovation/drone-lab/): Student drone research; 5 patent applications filed by elementary students aged 8-12.
-- [Space Lab](https://www.blueblocks.in/innovation/space-lab/): Student-led aerospace research; CubeSat payload development.
-- [Biomimicry Hive](https://www.blueblocks.in/innovation/biomimicry-hive/): Hexagonal research space designed by IIT Hyderabad for nature-inspired innovation.
-- [CubeSat Mission](https://www.blueblocks.in/innovation/cubesat-mission/): IN-SPACe-authorised student CubeSat payload (Project SBB-1).
+- [Innovation Lab](https://blueblocks.in/innovation/innovation-lab/): Ethical making and design facility with 500 tools across all three Planes of Development.
+- [Drone Lab](https://blueblocks.in/innovation/drone-lab/): Student drone research; 5 patent applications filed by elementary students aged 8-12.
+- [Space Lab](https://blueblocks.in/innovation/space-lab/): Student-led aerospace research; CubeSat payload development.
+- [Biomimicry Hive](https://blueblocks.in/innovation/biomimicry-hive/): Hexagonal research space designed by IIT Hyderabad for nature-inspired innovation.
+- [CubeSat Mission](https://blueblocks.in/innovation/cubesat-mission/): IN-SPACe-authorised student CubeSat payload (Project SBB-1).
 
 ## Research and Publications
 
-- [Research Institute](https://www.blueblocks.in/research-institute/): Blue Blocks Micro Research Institute mission, methodology, ethics, governance.
-- [Papers](https://www.blueblocks.in/papers/): The four published developmental papers.
-- [Publications](https://www.blueblocks.in/publications/): Authorisation dossiers, longitudinal studies, methodological contributions, patents.
+- [Research Institute](https://blueblocks.in/research-institute/): Blue Blocks Micro Research Institute mission, methodology, ethics, governance.
+- [Papers](https://blueblocks.in/papers/): The four published developmental papers.
+- [Publications](https://blueblocks.in/publications/): Authorisation dossiers, longitudinal studies, methodological contributions, patents.
 
 ## Foundational Papers
 
-- [Neuropsychiatry of the Toddler Plane](https://www.blueblocks.in/neuropsychiatry-of-toddler-plane/): Developmental architecture for the toddler community, grounding movement, language, and early executive function.
-- [The Conscious Construction of Intelligence](https://www.blueblocks.in/the-conscious-construction-of-intelligence/): Developmental architecture of the Children's House and the transition from unconscious to conscious absorption.
-- [The Architecture of the Universe](https://www.blueblocks.in/the-architecture-of-the-universe/): Elementary developmental framework linking Cosmic Education, moral reasoning, and innovation readiness.
-- [The Social Newborn](https://www.blueblocks.in/adolescent-social-newborn-paper/): Third-plane developmental foundations for the adolescent community and social valorization.
+- [Neuropsychiatry of the Toddler Plane](https://blueblocks.in/neuropsychiatry-of-toddler-plane/): Developmental architecture for the toddler community, grounding movement, language, and early executive function.
+- [The Conscious Construction of Intelligence](https://blueblocks.in/the-conscious-construction-of-intelligence/): Developmental architecture of the Children's House and the transition from unconscious to conscious absorption.
+- [The Architecture of the Universe](https://blueblocks.in/the-architecture-of-the-universe/): Elementary developmental framework linking Cosmic Education, moral reasoning, and innovation readiness.
+- [The Social Newborn](https://blueblocks.in/adolescent-social-newborn-paper/): Third-plane developmental foundations for the adolescent community and social valorization.
 
 ## Publications
 
-- [IN-SPACe Authorization: Student CubeSat Mission](https://www.blueblocks.in/publications/inspace-authorization-cubesat-mission/): Formal authorization and mission-governance documentation for Blue Blocks student CubeSat participation.
-- [A Longitudinal Study of Innovation Development (0–18)](https://www.blueblocks.in/publications/longitudinal-innovation-development-0-18/): A developmental continuum study tracking innovation capacities from birth through adolescence.
-- [Research Briefs Series](https://www.blueblocks.in/publications/research-briefs-series/): Short publications addressing specific developmental and pedagogical research questions.
-- [Methodological Contributions: Observation Protocols](https://www.blueblocks.in/publications/methodological-contributions-observation-protocols/): Observation coding systems, reliability protocol notes, and analytical framework documentation.
-- [Drone Patent Series (Student Filings, 2019)](https://www.blueblocks.in/publications/drone-patent-series-2019/): Consolidated overview of student drone patent applications and design intent documentation.
+- [IN-SPACe Authorization: Student CubeSat Mission](https://blueblocks.in/publications/inspace-authorization-cubesat-mission/): Formal authorization and mission-governance documentation for Blue Blocks student CubeSat participation.
+- [A Longitudinal Study of Innovation Development (0–18)](https://blueblocks.in/publications/longitudinal-innovation-development-0-18/): A developmental continuum study tracking innovation capacities from birth through adolescence.
+- [Research Briefs Series](https://blueblocks.in/publications/research-briefs-series/): Short publications addressing specific developmental and pedagogical research questions.
+- [Methodological Contributions: Observation Protocols](https://blueblocks.in/publications/methodological-contributions-observation-protocols/): Observation coding systems, reliability protocol notes, and analytical framework documentation.
+- [Drone Patent Series (Student Filings, 2019)](https://blueblocks.in/publications/drone-patent-series-2019/): Consolidated overview of student drone patent applications and design intent documentation.
 
 ## Blog
 
-- [Helicopter Parenting and the Independence Gap](https://www.blueblocks.in/blog/helicopter-parenting-and-the-independence-gap/): Why over-assistance can delay executive function and what constructive independence looks like at home.
-- [The Huge Gap Between Marks and Learning](https://www.blueblocks.in/blog/the-huge-gap-between-marks-and-learning/): A practical guide to separating assessment scores from durable understanding and capability.
-- [Why Octagonal Classrooms Support Focus](https://www.blueblocks.in/blog/why-octagonal-classrooms-support-focus/): How geometry, acoustics, and movement pathways can reduce cognitive overhead in early learning spaces.
-- [CubeSat Mission: How Students Build Real Systems](https://www.blueblocks.in/blog/cubsat-mission-how-students-build-real-systems/): From prepared environments to applied systems engineering in adolescent innovation programs.
+- [Helicopter Parenting and the Independence Gap](https://blueblocks.in/blog/helicopter-parenting-and-the-independence-gap/): Why over-assistance can delay executive function and what constructive independence looks like at home.
+- [The Huge Gap Between Marks and Learning](https://blueblocks.in/blog/the-huge-gap-between-marks-and-learning/): A practical guide to separating assessment scores from durable understanding and capability.
+- [Why Octagonal Classrooms Support Focus](https://blueblocks.in/blog/why-octagonal-classrooms-support-focus/): How geometry, acoustics, and movement pathways can reduce cognitive overhead in early learning spaces.
+- [CubeSat Mission: How Students Build Real Systems](https://blueblocks.in/blog/cubsat-mission-how-students-build-real-systems/): From prepared environments to applied systems engineering in adolescent innovation programs.
 
 ## Credentials and recognition
 
@@ -82,10 +85,10 @@ Founded: 2009
 
 ## Authoritative dataset
 
-- [Full LLM dataset](https://www.blueblocks.in/llms-full.txt)
-- [Sitemap](https://www.blueblocks.in/sitemap.xml)
-- [Privacy policy](https://www.blueblocks.in/privacy-policy/)
-- [Terms](https://www.blueblocks.in/terms/)
+- [Full LLM dataset](https://blueblocks.in/llms-full.txt)
+- [Sitemap](https://blueblocks.in/sitemap.xml)
+- [Privacy policy](https://blueblocks.in/privacy-policy/)
+- [Terms](https://blueblocks.in/terms/)
 
 ---
 

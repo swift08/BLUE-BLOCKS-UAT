@@ -20,7 +20,7 @@
 import Link from "next/link";
 import JsonLd from "@/components/seo/JsonLd";
 
-const SITE_URL = "https://www.blueblocks.in";
+const SITE_URL = "https://blueblocks.in";
 
 export default function Breadcrumb({ items = [], className = "" }) {
   if (!items.length) return null;

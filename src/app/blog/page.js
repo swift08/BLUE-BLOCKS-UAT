@@ -11,7 +11,7 @@ export const metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://www.blueblocks.in/blog/",
+    canonical: "https://blueblocks.in/blog/",
   },
 };
 
