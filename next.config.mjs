@@ -1,30 +1,42 @@
+import withBundleAnalyzer from "@next/bundle-analyzer";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   output: "export",
   trailingSlash: true,
-  basePath: "",
-  assetPrefix: "",
   poweredByHeader: false,
 
   // Static export requires unoptimized images (no server-side processing).
-  // Image quality is improved via proper width/height/alt/loading attributes.
+  // Images are pre-compressed at source via scripts/compress-gallery.js.
   images: {
     unoptimized: true,
   },
 
-  // Compress responses (gzip) in the dev server and static export.
+  // Transpile ES modules from node_modules for server-side compatibility
+  transpilePackages: ["yet-another-react-lightbox"],
+
+  // Compress responses (gzip) in the dev server.
   compress: true,
 
-  // Reduce bundle size by tree-shaking package subpath imports.
   experimental: {
+    // Tree-shake large package subpath imports — reduces initial JS bundle.
     optimizePackageImports: [
       "framer-motion",
       "embla-carousel-react",
       "@radix-ui/react-dialog",
       "yet-another-react-lightbox",
     ],
+
+    // React Compiler — automatically memoizes components and hooks,
+    // eliminating the need for manual useMemo/useCallback in many places.
+    // babel-plugin-react-compiler is already installed as a devDependency.
+    reactCompiler: true,
   },
 };
 
-export default nextConfig;
+const withBA = withBundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
+
+export default withBA(nextConfig);

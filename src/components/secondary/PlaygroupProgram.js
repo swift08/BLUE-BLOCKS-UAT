@@ -887,6 +887,12 @@ export default function PlaygroupProgram() {
                   Book a Free Observation →
                 </Link>
               </div>
+              <div className="mt-6 text-slate-400 text-xs">
+                Ready for Nursery?{" "}
+                <Link href="/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum" className="text-[#58A5F3] hover:underline font-semibold">
+                  See our Pre-Primary Montessori programme →
+                </Link>
+              </div>
             </div>
           </div>
         </Container>

@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import AcademicsTabs from "@/components/secondary/AcademicsTabs";
 import MentorsGrid from "@/components/secondary/MentorsGrid";
+import InnovationGallery from "@/components/innovations/InnovationGallery";
 
 /* ─────────────────────────────────────────────────────────────────────────
    IMAGE IMPORTS
@@ -18,6 +19,7 @@ import imgLab2 from "@/assets/primary school/1M7A0545.webp";
 import imgMaterials1 from "@/assets/primary school/1M7A5936.webp";
 import imgMaterials2 from "@/assets/primary school/1M7A5950.webp";
 import imgGoingOut1 from "@/assets/primary school/1M7A0559.webp";
+import galleryImages from "@/assets/nursery";
 
 /* ─────────────────────────────────────────────────────────────────────────
    DATA STRUCTS
@@ -656,6 +658,16 @@ export default function ElementaryClass1to6() {
         </Container>
       </section>
 
+      {/* ── GALLERY SECTION ───────────────────────────────────────────── */}
+      <section id="gallery" className="scroll-mt-[135px]">
+        <InnovationGallery
+          eyebrow="CAMPUS GALLERY"
+          title="Elementary Campus Gallery"
+          items={galleryImages}
+          cols={{ base: 2, sm: 3, lg: 4 }}
+        />
+      </section>
+
       {/* ── MENTORS SECTION ───────────────────────────────────────────── */}
       <section id="mentors" className="py-24 bg-[#FDFCF7] border-t border-slate-100 scroll-mt-[135px]">
         <Container>
@@ -751,11 +763,20 @@ export default function ElementaryClass1to6() {
                 Download Elementary Programme Guide (PDF)
               </a>
             </div>
-            <div className="mt-12 text-slate-500 text-xs">
-              Transitioning to Secondary?{" "}
-              <Link href="/programs/secondary-school/cambridge-igcse-erdkinder" className="text-[#58A5F3] hover:underline font-semibold">
-                See our Erdkinder (Adolescent) programme →
-              </Link>
+            <div className="mt-12 text-slate-500 text-xs flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-6">
+              <div>
+                Transitioning to Secondary?{" "}
+                <Link href="/programs/secondary-school/cambridge-igcse-erdkinder" className="text-[#58A5F3] hover:underline font-semibold">
+                  See our Erdkinder (Adolescent) programme →
+                </Link>
+              </div>
+              <div className="hidden sm:block text-slate-700">|</div>
+              <div>
+                Coming from Pre-Primary?{" "}
+                <Link href="/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum" className="text-[#58A5F3] hover:underline font-semibold">
+                  See our Nursery, PP1, PP2 programme →
+                </Link>
+              </div>
             </div>
           </div>
         </Container>

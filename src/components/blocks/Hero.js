@@ -326,6 +326,7 @@ function HeroPane({
           alt=""
           fill
           priority={priority}
+          fetchPriority={priority ? "high" : undefined}
           className="object-cover object-center -z-[1]"
           sizes="100vw"
         />

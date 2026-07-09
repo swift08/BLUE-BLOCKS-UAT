@@ -1,9 +1,12 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import RichTextContent from "@/components/ui/RichTextContent";
 
+/**
+ * Accordion — pure CSS transition (no framer-motion)
+ * Uses grid-template-rows: 0fr -> 1fr for smooth height animations.
+ */
 export default function Accordion({
   items = [],
   defaultOpenIndex = 0,
@@ -45,7 +48,7 @@ export default function Accordion({
         return (
           <div
             key={item?.id || `${q}-${index}`}
-            className={`rounded-2xl transition-colors ${
+            className={`rounded-2xl transition-colors duration-200 ${
               open ? openItemClassName : closedItemClassName
             } ${itemClassName}`}
           >
@@ -57,27 +60,23 @@ export default function Accordion({
               suppressHydrationWarning
             >
               <RichTextContent as="span" value={q} className="bb-text font-semibold text-slate-900" />
-              <span className={`text-xl text-slate-500 ${iconClassName}`}>{open ? "×" : "+"}</span>
+              <span className={`text-xl text-slate-500 transition-transform duration-200 ${iconClassName} ${open ? "rotate-45" : ""}`}>{"+"}</span>
             </button>
 
-            <AnimatePresence initial={false}>
-              {open ? (
-                <motion.div
-                  key="content"
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.25, ease: "easeOut" }}
-                  className="overflow-hidden"
-                >
-                  <RichTextContent
-                    as="div"
-                    value={a}
-                    className={`px-5 sm:px-7 pb-5 bb-text text-slate-600 ${contentClassName}`}
-                  />
-                </motion.div>
-              ) : null}
-            </AnimatePresence>
+            {/* CLS-safe height animation with CSS grid-template-rows */}
+            <div
+              className={`grid transition-[grid-template-rows] duration-200 ease-out ${
+                open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+              }`}
+            >
+              <div className="overflow-hidden">
+                <RichTextContent
+                  as="div"
+                  value={a}
+                  className={`px-5 sm:px-7 pb-5 bb-text text-slate-600 ${contentClassName}`}
+                />
+              </div>
+            </div>
           </div>
         );
       })}

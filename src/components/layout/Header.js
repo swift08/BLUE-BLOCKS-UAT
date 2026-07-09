@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
 import siteData from "@/data/site";
-import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { normalizeSiteHref } from "@/lib/links";
 
@@ -293,59 +292,57 @@ export default function Header({ variant = "dark" }) {
           </button>
         </Container>
 
-        {/* ? MOBILE FULL-VIEWPORT DRAWER (scrollable) */}
-        <AnimatePresence>
-          {menuOpen ? (
-            <motion.div
-              className="fixed inset-0 z-[60] md:hidden bg-black/35 h-[100vh]"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setMenuOpen(false)}
-            >
-              <motion.div
-                className="fixed inset-0 bg-[#141c2f] h-[100vh]"
-                initial={{ x: "100%" }}
-                animate={{ x: 0 }}
-                exit={{ x: "100%" }}
-                transition={{ duration: 0.22, ease: "easeOut" }}
-                onClick={(e) => e.stopPropagation()}
-              >
-                {/* Keep header space so it doesn't go under your fixed header */}
-                <div className="h-[90vh] w-full pt-[72px]">
-                  {/* Scroll container */}
-                  <div className="h-full ">
-                    <div className="h-full mx-3 my-3 rounded-2xl bg-[#273C75] text-white shadow-[0_18px_50px_rgba(0,0,0,0.35)]">
-                      <div className="h-full px-5 py-6 pb-10">
-                        <MobileNav
-                          nav={navItems || []}
-                          megaByLabel={megaByLabel}
-                          pathname={pathname}
-                          isActiveHref={isActiveHref}
-                          openKey={mobileOpenKey}
-                          setOpenKey={setMobileOpenKey}
-                          socials={socials}
-                          onNavigate={() => setMenuOpen(false)}
-                        />
-                      </div>
-                    </div>
-                  </div>
+        {/* MOBILE FULL-VIEWPORT DRAWER — pure CSS slide-in (no framer-motion) */}
+        {/* Backdrop */}
+        <div
+          aria-hidden="true"
+          onClick={() => setMenuOpen(false)}
+          className={[
+            "fixed inset-0 z-[60] md:hidden bg-black/35 h-[100vh]",
+            "transition-opacity duration-200",
+            menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
+          ].join(" ")}
+        />
+        {/* Drawer panel */}
+        <div
+          className={[
+            "fixed inset-0 z-[61] bg-[#141c2f] h-[100vh] md:hidden",
+            "transition-transform duration-[220ms] ease-out",
+            menuOpen ? "translate-x-0" : "translate-x-full",
+          ].join(" ")}
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Keep header space so it doesn't go under the fixed header */}
+          <div className="h-[90vh] w-full pt-[72px]">
+            <div className="h-full">
+              <div className="h-full mx-3 my-3 rounded-2xl bg-[#273C75] text-white shadow-[0_18px_50px_rgba(0,0,0,0.35)]">
+                <div className="h-full px-5 py-6 pb-10">
+                  <MobileNav
+                    nav={navItems || []}
+                    megaByLabel={megaByLabel}
+                    pathname={pathname}
+                    isActiveHref={isActiveHref}
+                    openKey={mobileOpenKey}
+                    setOpenKey={setMobileOpenKey}
+                    socials={socials}
+                    onNavigate={() => setMenuOpen(false)}
+                  />
                 </div>
+              </div>
+            </div>
+          </div>
 
-                {/* Close button (optional, nicer UX) */}
-                <button
-                  type="button"
-                  onClick={() => setMenuOpen(false)}
-                  suppressHydrationWarning
-                  className="absolute top-5 right-5 grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white hover:bg-white/15"
-                  aria-label="Close menu"
-                >
-                  ?
-                </button>
-              </motion.div>
-            </motion.div>
-          ) : null}
-        </AnimatePresence>
+          {/* Close button */}
+          <button
+            type="button"
+            onClick={() => setMenuOpen(false)}
+            suppressHydrationWarning
+            className="absolute top-5 right-5 grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white hover:bg-white/15"
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
+        </div>
       </header>
     </div>
   );
@@ -355,6 +352,7 @@ export default function Header({ variant = "dark" }) {
 
 function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className = "" }) {
   const [open, setOpen] = useState(false);
+  const timeoutRef = useRef(null);
 
   const items = mega.items || [];
   const viewAll = mega.viewAll;
@@ -368,11 +366,36 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
       : "text-[#0F52BA] border-b border-[#0F52BA]"
     : "";
 
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+    setOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = setTimeout(() => {
+      setOpen(false);
+    }, 300);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div
       className="flex h-full items-center"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <button
         type="button"
@@ -383,108 +406,118 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
         <span className="text-lg">{"\u25BE"}</span>
       </button>
 
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 8 }}
-            transition={{ duration: 0.18, ease: "easeOut" }}
-            className="absolute left-1/2 top-full z-[60] mt-0 w-[min(1152px,calc(100vw-2rem))] -translate-x-1/2 rounded-2xl border border-slate-100 bg-white shadow-[0_24px_60px_rgba(15,23,42,0.16)]"
-          >
-            <div className="grid grid-cols-[4fr_2fr] gap-0">
-              {/* LEFT */}
-              <div>
-                <div className="mb-2 p-5 pb-0 flex items-center justify-between gap-4">
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                    
-                    {viewAll?.href ? (
-                      <Link
-                        href={normalizeHref(viewAll.href)}
-                        className="text-xs font-medium text-[#0E4AA2] hover:underline"
-                      >
-                        {viewAll.label || "View All"} <span aria-hidden>{"\u2192"}</span>
-                      </Link>
-                    ) : null}
-                  </p>
-                </div>
+      {/* Mega-menu panel — pure CSS fade+slide (no framer-motion) */}
+      <div
+        role="region"
+        aria-label={`${mega.label || "Menu"} submenu`}
+        className={[
+          "absolute left-1/2 top-full z-[60] mt-0 w-[min(1152px,calc(100vw-2rem))] -translate-x-1/2 before:content-[''] before:absolute before:bottom-full before:left-0 before:right-0 before:h-12 before:bg-transparent",
+          "rounded-2xl border border-slate-100 bg-white shadow-[0_24px_60px_rgba(15,23,42,0.16)]",
+          "transition-all duration-[180ms] ease-out origin-top",
+          open
+            ? "opacity-100 translate-y-0 pointer-events-auto visible"
+            : "opacity-0 -translate-y-2 pointer-events-none invisible",
+        ].join(" ")}
+      >
+        <div className="grid grid-cols-[4fr_2fr] gap-0">
+          {/* LEFT */}
+          <div>
+            <div className="mb-2 p-5 pb-0 flex items-center justify-between gap-4">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                
+                {viewAll?.href ? (
+                  <Link
+                    href={normalizeHref(viewAll.href)}
+                    className="text-xs font-medium text-[#0E4AA2] hover:underline"
+                  >
+                    {viewAll.label || "View All"} <span aria-hidden>{"\u2192"}</span>
+                  </Link>
+                ) : null}
+              </p>
+            </div>
 
-                <div className="grid grid-cols-2 border-t border-slate-100">
-                  {items.map((program, idx) => (
-                    <Link
-                      key={`${program.href || program.title || "item"}|${idx}`}
-                      href={normalizeHref(program.href)}
-                      className="flex gap-3 p-5 sm:p-6 hover:bg-slate-50 border-r border-slate-100 last:border-r-0"
-                    >
-                      <div className="relative h-16 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-slate-200">
-                        {program?.image ? (
-                          <Image src={program.image} alt={program.title || ""} fill className="object-cover" />
-                        ) : (
-                          <span className="flex h-full w-full items-center justify-center text-xs text-slate-500">
-                            img
-                          </span>
-                        )}
-                      </div>
-
-                      <div className="space-y-1">
-                        <div className="text-sm font-semibold text-slate-900">{program?.title}</div>
-                        <p className="line-clamp-2 text-xs text-slate-600">{program?.description}</p>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* RIGHT */}
-              <div className="flex justify-between gap-4 p-5 sm:p-6 border-l border-slate-100">
-                {ctaCard ? <div className="flex flex-col justify-between space-y-2 bg-[#F3E3CF] rounded-2xl p-5 w-full">
-                  <div>
-                    <p className="text-[1.2rem] mb-4 font-semibold text-slate-900">
-                      {ctaCard.title}
-                    </p>
-                    <p className="text-[0.75rem] text-slate-600">{ctaCard.text}</p>
+            <div className="grid grid-cols-2 border-t border-slate-100">
+              {items.map((program, idx) => (
+                <Link
+                  key={`${program.href || program.title || "item"}|${idx}`}
+                  href={normalizeHref(program.href)}
+                  className="flex gap-3 p-5 sm:p-6 hover:bg-slate-50 border-r border-slate-100 last:border-r-0"
+                >
+                  <div className="relative h-16 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-slate-200">
+                    {program?.image ? (
+                      <Image
+                        src={program.image}
+                        alt={program.title || ""}
+                        fill
+                        className="object-cover"
+                        sizes="80px"
+                      />
+                    ) : (
+                      <span className="flex h-full w-full items-center justify-center text-xs text-slate-500">
+                        img
+                      </span>
+                    )}
                   </div>
 
-                  {ctaCard?.button?.href ? (
-                    <Link
-                      href={normalizeHref(ctaCard?.button?.href)}
-                      className="inline-flex w-full items-center justify-center rounded-full bg-[#0F52BA] px-4 py-3 text-xs font-medium text-white hover:bg-[#0D47A1]"
-                    >
-                      {ctaCard?.button?.label}
-                    </Link>
-                  ) : null}
-                </div> : null}
-
-                <div className="mt-2 flex flex-col gap-2">
-                  {(socials || []).map((s, idx) => {
-                    const href = normalizeHref(s.href);
-                    if (!isValidLinkHref(href)) return null;
-
-                    return (
-                      <Link
-                        key={`${s.label || "social"}|${idx}`}
-                        href={href}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#000000]/5 text-xs font-semibold text-slate-900 shadow-sm hover:bg-slate-50"
-                        aria-label={s.label}
-                      >
-                        <Image
-                          src={s.icon}
-                          alt={(s.label || "").slice(0, 2)}
-                          width={34}
-                          height={34}
-                          className="object-contain"
-                        />
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
+                  <div className="space-y-1">
+                    <div className="text-sm font-semibold text-slate-900">{program?.title}</div>
+                    <p className="line-clamp-2 text-xs text-slate-600">{program?.description}</p>
+                  </div>
+                </Link>
+              ))}
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+
+          {/* RIGHT */}
+          <div className="flex justify-between gap-4 p-5 sm:p-6 border-l border-slate-100">
+            {ctaCard ? (
+              <div className="flex flex-col justify-between space-y-2 bg-[#F3E3CF] rounded-2xl p-5 w-full">
+                <div>
+                  <p className="text-[1.2rem] mb-4 font-semibold text-slate-900">
+                    {ctaCard.title}
+                  </p>
+                  <p className="text-[0.75rem] text-slate-600">{ctaCard.text}</p>
+                </div>
+
+                {ctaCard?.button?.href ? (
+                  <Link
+                    href={normalizeHref(ctaCard?.button?.href)}
+                    className="inline-flex w-full items-center justify-center rounded-full bg-[#0F52BA] px-4 py-3 text-xs font-medium text-white hover:bg-[#0D47A1]"
+                  >
+                    {ctaCard?.button?.label}
+                  </Link>
+                ) : null}
+              </div>
+            ) : null}
+
+            <div className="mt-2 flex flex-col gap-2">
+              {(socials || []).map((s, idx) => {
+                const href = normalizeHref(s.href);
+                if (!isValidLinkHref(href)) return null;
+
+                return (
+                  <Link
+                    key={`${s.label || "social"}|${idx}`}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#000000]/5 text-xs font-semibold text-slate-900 shadow-sm hover:bg-slate-50"
+                    aria-label={s.label}
+                  >
+                    <Image
+                      src={s.icon}
+                      alt={(s.label || "").slice(0, 2)}
+                      width={34}
+                      height={34}
+                      className="object-contain"
+                    />
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -524,76 +557,74 @@ function MobileNav({
                 <span className="text-lg">{isOpen ? "-" : "+"}</span>
               </button>
 
-              <AnimatePresence initial={false}>
-                {isOpen ? (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.18, ease: "easeOut" }}
-                    className="overflow-hidden border-t border-white/10"
-                  >
-                    <div className="px-4 py-3 space-y-3">
-                      {/* View all */}
-                      {mega?.viewAll?.href ? (
-                        <Link
-                          href={normalizeHref(mega?.viewAll?.href)}
-                          onClick={onNavigate}
-                          className="block rounded-lg bg-white/10 px-4 py-3 text-sm font-medium hover:bg-white/15"
-                        >
-                          {mega.viewAll.label || "View All"} <span aria-hidden>{"\u2192"}</span>
-                        </Link>
-                      ) : null}
+              {/* Mobile accordion — CSS grid-rows transition (no framer-motion) */}
+              <div
+                className={[
+                  "grid transition-[grid-template-rows] duration-[180ms] ease-out border-t border-white/10",
+                  isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
+                ].join(" ")}
+              >
+                <div className="overflow-hidden">
+                  <div className="px-4 py-3 space-y-3">
+                    {/* View all */}
+                    {mega?.viewAll?.href ? (
+                      <Link
+                        href={normalizeHref(mega?.viewAll?.href)}
+                        onClick={onNavigate}
+                        className="block rounded-lg bg-white/10 px-4 py-3 text-sm font-medium hover:bg-white/15"
+                      >
+                        {mega.viewAll.label || "View All"} <span aria-hidden>{"\u2192"}</span>
+                      </Link>
+                    ) : null}
 
-                      {/* Mega items */}
-                      <div className="space-y-2">
-                        {(mega.items || []).map((m, i) => {
-                          const mhref = normalizeHref(m?.href);
-                          if (!isValidLinkHref(mhref)) return null;
+                    {/* Mega items */}
+                    <div className="space-y-2">
+                      {(mega.items || []).map((m, i) => {
+                        const mhref = normalizeHref(m?.href);
+                        if (!isValidLinkHref(mhref)) return null;
 
-                          return (
-                            <Link
-                              key={`${mhref}|${i}`}
-                              href={mhref}
-                              onClick={onNavigate}
-                              className="flex items-center gap-3 rounded-xl bg-white/5 px-3 py-3 hover:bg-white/10"
-                            >
-                              <div className="relative h-12 w-14 overflow-hidden rounded-lg bg-white/10">
-                                {m?.image ? (
-                                  <Image
-                                    src={m?.image}
-                                    alt={m?.title || ""}
-                                    fill
-                                    className="object-cover"
-                                    sizes="56px"
-                                  />
-                                ) : null}
-                              </div>
-                              <div>
-                                <div className="text-sm font-semibold">{m?.title}</div>
-                                {m?.description ? (
-                                  <div className="text-xs text-white/65 line-clamp-2">{m?.description}</div>
-                                ) : null}
-                              </div>
-                            </Link>
-                          );
-                        })}
-                      </div>
-
-                      {/* CTA */}
-                      {mega?.ctaCard?.button?.href ? (
-                        <Link
-                          href={normalizeHref(mega?.ctaCard?.button?.href)}
-                          onClick={onNavigate}
-                          className="mt-2 block rounded-xl bg-[#0F52BA] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#0D47A1]"
-                        >
-                          {mega?.ctaCard?.button?.label}
-                        </Link>
-                      ) : null}
+                        return (
+                          <Link
+                            key={`${mhref}|${i}`}
+                            href={mhref}
+                            onClick={onNavigate}
+                            className="flex items-center gap-3 rounded-xl bg-white/5 px-3 py-3 hover:bg-white/10"
+                          >
+                            <div className="relative h-12 w-14 overflow-hidden rounded-lg bg-white/10">
+                              {m?.image ? (
+                                <Image
+                                  src={m?.image}
+                                  alt={m?.title || ""}
+                                  fill
+                                  className="object-cover"
+                                  sizes="56px"
+                                />
+                              ) : null}
+                            </div>
+                            <div>
+                              <div className="text-sm font-semibold">{m?.title}</div>
+                              {m?.description ? (
+                                <div className="text-xs text-white/65 line-clamp-2">{m?.description}</div>
+                              ) : null}
+                            </div>
+                          </Link>
+                        );
+                      })}
                     </div>
-                  </motion.div>
-                ) : null}
-              </AnimatePresence>
+
+                    {/* CTA */}
+                    {mega?.ctaCard?.button?.href ? (
+                      <Link
+                        href={normalizeHref(mega?.ctaCard?.button?.href)}
+                        onClick={onNavigate}
+                        className="mt-2 block rounded-xl bg-[#0F52BA] px-4 py-3 text-center text-sm font-semibold text-white hover:bg-[#0D47A1]"
+                      >
+                        {mega?.ctaCard?.button?.label}
+                      </Link>
+                    ) : null}
+                  </div>
+                </div>
+              </div>
             </div>
           );
         }

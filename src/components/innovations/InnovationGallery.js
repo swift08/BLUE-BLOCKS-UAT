@@ -8,9 +8,9 @@ import Lightbox from "yet-another-react-lightbox";
 import Video from "yet-another-react-lightbox/plugins/video";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 
-// ✅ IMPORTANT: make sure these CSS imports exist somewhere globally OR here (only once)
-// import "yet-another-react-lightbox/styles.css";
-// import "yet-another-react-lightbox/plugins/thumbnails.css";
+// Lightbox CSS is scoped here so it only loads when a gallery is rendered
+import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 /* ------------------------- helpers ------------------------- */
 

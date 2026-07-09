@@ -2,8 +2,8 @@
    The Google Fonts @import has been intentionally removed to prevent
    a duplicate render-blocking network request. */
 
-@import "yet-another-react-lightbox/styles.css";
-@import "yet-another-react-lightbox/plugins/thumbnails.css";
+/* Lightbox CSS is imported directly in InnovationGallery.js (component-scoped)
+   to avoid loading it on every page. */
 
 @import "tailwindcss";
 
@@ -140,6 +140,14 @@ html {
 .animate-bb-float-delayed {
   animation: bb-float 6s ease-in-out infinite;
   animation-delay: 3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-bb-float,
+  .animate-bb-float-delayed,
+  .animate-bb-spin {
+    animation: none;
+  }
 }
 
 /* =====================================================
@@ -458,7 +466,7 @@ html {
 }
 
 .bb-card-text {
-  font-size: var(----bb-body-size);
+  font-size: var(--bb-body-size);
   line-height: var(--bb-card-text-line);
   color: var(--bb-card-text-color);
 }
@@ -596,40 +604,6 @@ html {
   background: rgba(255,255,255,0.92);
 }
 
-/* HERO TYPOGRAPHY (global, consistent) */
-.bb-hero-title {
-  /* use your existing CSS variables system */
-  font-size: var(--bb-hero-title-size, 3rem);
-  line-height: var(--bb-hero-title-line, 1.05);
-  font-weight: var(--bb-hero-title-weight, 600);
-  letter-spacing: var(--bb-hero-title-track, -0.02em);
-  color: var(--bb-hero-title-color, #fff);
-  white-space: pre-line; /* supports \n titles */
-}
-
-.bb-hero-subtitle {
-  font-size: var(--bb-hero-subtitle-size, 1.125rem);
-  line-height: var(--bb-hero-subtitle-line, 1.4);
-  font-weight: var(--bb-hero-subtitle-weight, 400);
-  color: var(--bb-hero-subtitle-color, rgba(255, 255, 255, 0.9));
-  max-width: var(--bb-hero-subtitle-max, 52rem);
-}
-
-.bb-hero-note {
-  font-size: var(--bb-hero-note-size, 1rem);
-  line-height: var(--bb-hero-note-line, 1.6);
-  color: var(--bb-hero-note-color, rgba(255, 255, 255, 0.85));
-  max-width: var(--bb-hero-note-max, 56rem);
-}
-
-/* CTA ROW (keeps spacing consistent everywhere) */
-.bb-hero-ctaRow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 8px;
-}
-
 /* ===== Read More Clamp (global) ===== */
 .bb-clamp {
   position: relative;
@@ -650,6 +624,12 @@ html {
   will-change: max-height;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .bb-readmore-wrap {
+    transition: none;
+  }
+}
+
 /* Button style (kept simple + consistent) */
 .bb-readmore-btn {
   margin-top: 0.5rem;
@@ -668,3 +648,23 @@ html {
 }
 
 .bb-readmore-btn:hover { opacity: 1; }
+
+/* =====================================================
+   WHATSAPP FLOAT — Pure CSS bounce (replaces framer-motion)
+   Respects prefers-reduced-motion for accessibility.
+===================================================== */
+
+@keyframes wa-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.wa-float {
+  animation: wa-bounce 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-float {
+    animation: none;
+  }
+}

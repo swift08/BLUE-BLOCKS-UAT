@@ -91,6 +91,7 @@ const ImpactCollageSplit = dynamic(() => import("@/components/blocks/ImpactColla
 const FounderVisionSplit = dynamic(() => import("@/components/blocks/FounderVisionSplit"), { ssr: true });
 const LegalDocument = dynamic(() => import("@/components/blocks/LegalDocument"), { ssr: true });
 const PageNavButtons = dynamic(() => import("@/components/ui/PageNavButtons"), { ssr: true });
+const AnnouncementSection = dynamic(() => import("@/components/blocks/AnnouncementSection"), { ssr: true });
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Renderer
@@ -250,6 +251,8 @@ export default function SectionRenderer({ sections = [] }) {
             return <PageHero key={key} {...props} />;
           case "ctaBanner":
             return <CtaBanner key={key} {...props} />;
+          case "announcementSection":
+            return <AnnouncementSection key={key} {...props} />;
           default:
             return null;
         }

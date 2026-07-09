@@ -59,7 +59,6 @@ export default function SectionNav({ items }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [JSON.stringify(NAV_ITEMS.map(i => i.id))]);
 
-  /* ── Smooth scroll on click ──────────────────────────────────────── */
   const scrollTo = useCallback((id) => {
     const el = document.getElementById(id);
     if (!el) return;
@@ -73,6 +72,11 @@ export default function SectionNav({ items }) {
     const top = window.scrollY + el.getBoundingClientRect().top - offset;
 
     window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+
+    if (typeof window !== "undefined") {
+      window.history.pushState(null, "", `#${id}`);
+    }
+
     setTimeout(() => { isClickScrolling.current = false; }, 900);
   }, []);
 

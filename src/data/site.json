@@ -564,6 +564,23 @@
           }
         },
         {
+          "type": "announcementSection",
+          "props": {
+            "title": "Elementary Farm Visit",
+            "badge": "Upcoming Event",
+            "date": "July 18, 2026",
+            "details": [
+              { "icon": "🌅", "label": "Departure", "value": "9:00 AM from school" },
+              { "icon": "🏡", "label": "Return", "value": "2:30 PM" },
+              { "icon": "🚌", "label": "Transport", "value": "School Buses" }
+            ],
+            "messages": [
+              "Guides and children will be engaging in interesting and fun activities. All of you are welcome to come, observe, support, and learn.",
+              "Please let us know if you're joining — we need a headcount to coordinate with the transport team for extra seating."
+            ]
+          }
+        },
+        {
           "type": "insights",
           "props": {
             "title": "LIFE AT BLUE BLOCKS",
@@ -3568,6 +3585,69 @@
               "variant": "card",
               "bg": "#F3E3CF",
               "contentCenter": true
+            }
+          },
+          {
+            "type": "discoverMoreGrid",
+            "props": {
+              "title": "MONTESSORI PRE-PRIMARY (SELF-INTERPRETIVE ENVIRONMENT)",
+              "base": "/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum",
+              "items": [
+                {
+                  "title": "What Is Taught",
+                  "description": "Subjects, activities, how learning works",
+                  "href": "/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum#curriculum",
+                  "bgColor": "bg-[#FFF2F2]",
+                  "accentColor": "text-[#E27685]",
+                  "borderColor": "border-[#E27685]/30",
+                  "hoverBorder": "hover:border-[#E27685]/60",
+                  "icon": "book"
+                },
+                {
+                  "title": "A Typical Day",
+                  "description": "Schedule, work cycle, three-year programme",
+                  "href": "/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum#day",
+                  "bgColor": "bg-[#FFFBF2]",
+                  "accentColor": "text-[#E6A04B]",
+                  "borderColor": "border-[#E6A04B]/30",
+                  "hoverBorder": "hover:border-[#E6A04B]/60",
+                  "icon": "home"
+                },
+                {
+                  "title": "What Your Child Gains",
+                  "description": "Skills parents notice",
+                  "href": "/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum#development",
+                  "bgColor": "bg-[#F3F8FF]",
+                  "accentColor": "text-[#58A5F3]",
+                  "borderColor": "border-[#58A5F3]/30",
+                  "hoverBorder": "hover:border-[#58A5F3]/60",
+                  "icon": "lightbulb"
+                },
+                {
+                  "title": "Meet Our Guides",
+                  "description": "Qualifications",
+                  "href": "/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum#guides",
+                  "bgColor": "bg-[#F3FAF5]",
+                  "accentColor": "text-[#76C289]",
+                  "borderColor": "border-[#76C289]/30",
+                  "hoverBorder": "hover:border-[#76C289]/60",
+                  "icon": "users"
+                },
+                {
+                  "title": "Parent Questions",
+                  "description": "Common questions answered",
+                  "href": "/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum#faq",
+                  "bgColor": "bg-[#F7F4FB]",
+                  "accentColor": "text-[#AA8CE6]",
+                  "borderColor": "border-[#AA8CE6]/30",
+                  "hoverBorder": "hover:border-[#AA8CE6]/60",
+                  "icon": "question"
+                }
+              ],
+              "cta": {
+                "label": "Discover More",
+                "href": "/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum"
+              }
             }
           },
           {
