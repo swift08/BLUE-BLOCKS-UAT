@@ -160,16 +160,16 @@ export default function DiscoverMoreGrid({
                 >
                   {item.icon}
                 </div>
-                <Link
+                <a
                   href={item.href}
                   className="text-lg font-bold text-[#1a1a1a] leading-tight mt-2 after:absolute after:inset-0 focus:outline-none"
                 >
                   {item.title}
-                </Link>
+                </a>
               </div>
               <div className="flex items-center justify-between mt-4">
                 <p className="text-sm text-slate-500 leading-snug">{item.description}</p>
-                <Link
+                <a
                   href={base}
                   className={[
                     "relative z-10 flex-shrink-0 ml-2 w-6 h-6 rounded-full flex items-center justify-center",
@@ -183,14 +183,14 @@ export default function DiscoverMoreGrid({
                   <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
           ))}
         </div>
 
         <div className="flex justify-center mt-12">
-          <Link
+          <a
             href={displayCtaHref}
             className="inline-flex items-center gap-2 bg-[#0A4BCE] text-white px-8 py-3.5 rounded-full font-semibold text-base shadow-md hover:bg-[#0840B0] transition-colors"
           >
@@ -198,7 +198,7 @@ export default function DiscoverMoreGrid({
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
             </svg>
-          </Link>
+          </a>
         </div>
       </Container>
     </section>
