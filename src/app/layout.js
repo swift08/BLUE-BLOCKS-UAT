@@ -94,7 +94,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <JsonLd id="jsonld-website" data={website} />
         <JsonLd id="jsonld-next-level" data={nextLevelSchema} />
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-KYX146E33J"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-1064646284"
           strategy="lazyOnload"
         />
         <Script id="gtag-init" strategy="lazyOnload">
@@ -104,7 +104,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             window.gtag = gtag;
             gtag('js', new Date());
 
-            gtag('config', 'G-KYX146E33J');
             gtag('config', 'AW-1064646284');
           `}
         </Script>
