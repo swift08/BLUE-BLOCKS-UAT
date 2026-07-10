@@ -244,7 +244,7 @@ function HeroCarousel({
                   aria-label={`Go to slide ${idx + 1}`}
                   aria-current={activeIndex === idx ? "true" : undefined}
                   className={[
-                    "h-2.5 rounded-full transition-all",
+                    "relative h-2.5 rounded-full transition-all before:absolute before:-inset-4 before:content-['']",
                     activeIndex === idx ? "w-8 bg-white" : "w-2.5 bg-white/60 hover:bg-white/80",
                   ].join(" ")}
                   suppressHydrationWarning

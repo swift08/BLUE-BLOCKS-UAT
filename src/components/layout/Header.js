@@ -191,7 +191,7 @@ export default function Header({ variant = "dark" }) {
     >
       {/* Announcement Bar */}
       {!isAnnouncementClosed && (
-        <div className="bg-[#D97B58] text-white text-xs sm:text-sm relative overflow-hidden">
+        <div className="bg-[#B74F2A] text-white text-xs sm:text-sm relative overflow-hidden">
           <Container className="py-2">
             <div className="flex items-center gap-3">
               <div className="flex-1 overflow-hidden">
