@@ -62,7 +62,7 @@ export const metadata = {
       "Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad offering continuous developmental education from 15 months to 18 years. Innovation labs, student patents, CubeSat engineering, and Cambridge IGCSE integration.",
     images: [
       {
-        url: "https://blueblocks.in/images/og-homepage.jpg",
+        url: "https://blueblocks.in/images/og-homepage.webp",
         width: 1200,
         height: 630,
         alt: "Blue Blocks Montessori School campus in Hyderabad",
@@ -77,7 +77,7 @@ export const metadata = {
     title: "Blue Blocks | AMI Montessori School, Hyderabad (Ages 1-18)",
     description:
       "AMI-certified Montessori from toddler to adolescence. Innovation labs, CubeSat engineering, student patents, Cambridge IGCSE.",
-    images: ["https://blueblocks.in/images/og-homepage.jpg"],
+    images: ["https://blueblocks.in/images/og-homepage.webp"],
   },
 
   // Geo meta tags (go under "other")

@@ -385,6 +385,61 @@
           }
         },
         {
+          "type": "announcementSection",
+          "props": {
+            "announcements": [
+              {
+                "title": "Supporting the Child Together",
+                "subtitle": "An exclusive workshop",
+                "badge": "Caregivers & Drivers",
+                "date": "July 11, 2026",
+                "image": "/annoucement/WhatsApp Image 2026-07-10 at 4.08.17 PM.webp",
+                "details": [
+                  { "icon": "⏰", "label": "Time", "value": "10:00 AM - 11:00 AM" },
+                  { "icon": "📍", "label": "Venue", "value": "Blueblocks, Gachibowli" },
+                  { "icon": "🗣️", "label": "Language", "value": "Telugu and Hindi" }
+                ],
+                "messages": [
+                  "An exclusive workshop for our Nannies and Driver partners supporting the child.",
+                  "Caregivers / Nannies: Language, Independence, Toilet Training, Activities with Children.",
+                  "Driver Partners: Language, Independence."
+                ]
+              },
+              {
+                "title": "Grandparents’ Workshop",
+                "subtitle": "The Gift of Resilience",
+                "badge": "Special Workshop",
+                "date": "July 11, 2026",
+                "image": "/annoucement/ann.webp",
+                "details": [
+                  { "icon": "⏰", "label": "Time", "value": "10:00 AM - 11:30 AM" },
+                  { "icon": "📍", "label": "Venue", "value": "Blueblocks, Gachibowli (Ground Floor)" },
+                  { "icon": "🗣️", "label": "Language", "value": "Telugu • Hindi • English" }
+                ],
+                "messages": [
+                  "Dear Parents, we warmly invite your child’s grandparents to join us for a special Grandparents’ Workshop - ✨ The Gift of Resilience.",
+                  "We request you to kindly register on behalf of your child’s grandparents. Google Form Link: https://forms.gle/gGECT93spQbaS97J9",
+                  "Note: This session is designed exclusively for Grandparents, and children will not be accommodated during the session. We look forward to welcoming them for this meaningful gathering!"
+                ]
+              },
+              {
+                "title": "Elementary Farm Visit",
+                "badge": "Upcoming Event",
+                "date": "July 18, 2026",
+                "details": [
+                  { "icon": "🌅", "label": "Departure", "value": "9:00 AM from school" },
+                  { "icon": "🏡", "label": "Return", "value": "2:30 PM" },
+                  { "icon": "🚌", "label": "Transport", "value": "School Buses" }
+                ],
+                "messages": [
+                  "Guides and children will be engaging in interesting and fun activities. All of you are welcome to come, observe, support, and learn.",
+                  "Please let us know if you're joining — we need a headcount to coordinate with the transport team for extra seating."
+                ]
+              }
+            ]
+          }
+        },
+        {
           "type": "featureGrid",
           "props": {
             "headline": "EDUCATION FOR LIFE",
@@ -560,23 +615,6 @@
                 "height": "60",
                 "anchorHref": "https://www.business-standard.com/content/press-releases-ani/blue-blocks-montessori-school-india-s-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond-126042500829_1.html"
               }
-            ]
-          }
-        },
-        {
-          "type": "announcementSection",
-          "props": {
-            "title": "Elementary Farm Visit",
-            "badge": "Upcoming Event",
-            "date": "July 18, 2026",
-            "details": [
-              { "icon": "🌅", "label": "Departure", "value": "9:00 AM from school" },
-              { "icon": "🏡", "label": "Return", "value": "2:30 PM" },
-              { "icon": "🚌", "label": "Transport", "value": "School Buses" }
-            ],
-            "messages": [
-              "Guides and children will be engaging in interesting and fun activities. All of you are welcome to come, observe, support, and learn.",
-              "Please let us know if you're joining — we need a headcount to coordinate with the transport team for extra seating."
             ]
           }
         },
