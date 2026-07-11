@@ -6,7 +6,9 @@ const nextConfig = {
   output: "export",
   trailingSlash: true,
   poweredByHeader: false,
-  devIndicators: false,
+  devIndicators: {
+    appIsrStatus: false,
+  },
 
   // Static export requires unoptimized images (no server-side processing).
   // Images are pre-compressed at source via scripts/compress-gallery.js.
