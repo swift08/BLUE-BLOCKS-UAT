@@ -8,10 +8,9 @@
  *  - Excluded: draft, redirect, and 404 routes.
  *  - Priority tiers:
  *      1.0  Homepage
- *      0.9  Core conversion pages (programs, admissions, contact)
- *      0.8  Content pages (about, research, campus, innovation, etc.)
- *      0.7  Sub-pages (individual programs, innovation details, publications)
- *      0.6  Utility / legal pages
+ *      0.8  Core conversion and main content pages (about, admissions, programs, campus, etc.)
+ *      0.7  Sub-pages, articles, and publications
+ *      0.6  Legal, utility, and markdown files
  *  - changefreq:
  *      weekly   – Homepage, blog index
  *      monthly  – Core + content pages
@@ -95,7 +94,7 @@ function getStaticRoutes(dir, base = "", routes = []) {
 function getPriorityAndFreq(route) {
   if (route === "/") return { changefreq: "weekly", priority: "1.0" };
   if (["/programs", "/admissions", "/contact-us"].includes(route)) {
-    return { changefreq: "monthly", priority: "0.9" };
+    return { changefreq: "monthly", priority: "0.8" };
   }
   if (route.startsWith("/privacy-policy") || route.startsWith("/terms")) {
     return { changefreq: "yearly", priority: "0.6" };
@@ -126,7 +125,7 @@ function getRoutes({ researchOutputs = [], blogPosts = [] }) {
       : raw.includes("munira-hussain")
       ? "munira-hussain"
       : raw.replace(/^\/+|\/+$/g, "").split("/").pop();
-    return { route: `/about-us/founders/${slug}`, changefreq: "monthly", priority: "0.8" };
+    return { route: `/about-us/founders/${slug}`, changefreq: "monthly", priority: "0.7" };
   });
 
   // Program detail pages
@@ -150,7 +149,7 @@ function getRoutes({ researchOutputs = [], blogPosts = [] }) {
   const publicationMdRoutes = researchOutputs.map((item) => ({
     route: `/publications/${item.slug}/${item.slug}.md`,
     changefreq: "monthly",
-    priority: "0.5",
+    priority: "0.6",
   }));
 
   // Blog posts

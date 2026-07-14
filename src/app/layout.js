@@ -2,7 +2,6 @@
 import Script from "next/script";
 import HeaderShell from "@/components/layout/HeaderShell";
 import Footer from "@/components/layout/Footer";
-import NavigationLoader from "@/components/ui/NavigationLoader";
 import HashScrollFix from "@/components/ui/HashScrollFix";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import siteData from "@/data/site";
@@ -112,7 +111,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
         <HeaderShell />
-        <NavigationLoader minMs={450} />
         <HashScrollFix extraGap={12} />
         <main>{children}</main>
         <Footer />

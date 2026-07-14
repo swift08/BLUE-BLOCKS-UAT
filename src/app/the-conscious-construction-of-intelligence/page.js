@@ -1,4 +1,4 @@
-﻿import siteData from "@/data/site";
+import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import { withPaperAuthorMeta } from "@/lib/papers";
@@ -13,7 +13,7 @@ export const metadata = {
     siteData?.pages?.theConsciousConstructionOfIntelligence?.seo?.description ||
     "Developmental Architecture of the Children's House.",
   alternates: {
-    canonical: "/the-conscious-construction-of-intelligence/",
+    canonical: "https://blueblocks.in/the-conscious-construction-of-intelligence/",
   },
 };
 
