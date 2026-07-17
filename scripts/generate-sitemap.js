@@ -93,7 +93,6 @@ function getStaticRoutes(dir, base = "", routes = []) {
 
 function getPriorityAndFreq(route) {
   if (route === "/") return { changefreq: "weekly", priority: "1.0" };
-
   // Core conversion & high-value pages
   const highPriority = [
     "/admissions",
