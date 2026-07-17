@@ -79,5 +79,27 @@ export default function HashScrollFix({ extraGap = 12 }) {
     return () => window.removeEventListener("hashchange", onHashChange);
   }, [extraGap]);
 
+  // on initial page load, check if there is a hash or a ?guide= query parameter and scroll to it (handles direct landings)
+  useEffect(() => {
+    let target = window.location.hash;
+
+    if (!target && typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const guide = params.get("guide");
+      if (guide) {
+        target = guide;
+      }
+    }
+
+    if (!target) return;
+
+    // wait for dynamic elements to hydrate and render
+    const timer = setTimeout(() => {
+      scrollToHashTarget(target, extraGap);
+    }, 450);
+
+    return () => clearTimeout(timer);
+  }, [extraGap]);
+
   return null;
 }

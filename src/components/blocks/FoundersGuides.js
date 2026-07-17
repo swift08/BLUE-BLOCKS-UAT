@@ -1,7 +1,7 @@
 // src/components/blocks/FoundersGuides.js
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import EmblaCarousel from "../ui/carousel/EmblaCarousel";
@@ -110,13 +110,54 @@ function FounderCard({
   readMoreHref = "/",
   modal,
 }) {
+  const slug = useMemo(() => {
+    if (!readMoreHref || readMoreHref === "/" || readMoreHref === "/about-us/") {
+      return name ? name.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") : "";
+    }
+    const parts = readMoreHref.split("/");
+    const lastPart = parts.filter(Boolean).pop();
+    return lastPart || "";
+  }, [readMoreHref, name]);
+
+  const [modalOpen, setModalOpen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const guide = params.get("guide");
+      if (guide && guide === slug) {
+        const timer = setTimeout(() => {
+          setModalOpen(true);
+        }, 500);
+        return () => clearTimeout(timer);
+      }
+    }
+  }, [slug]);
+
+  const handleReadMoreClick = (e) => {
+    e.preventDefault();
+    if (typeof window !== "undefined") {
+      const newUrl = `${window.location.origin}${window.location.pathname}?guide=${slug}`;
+      window.history.pushState({ path: newUrl }, "", newUrl);
+    }
+    setModalOpen(true);
+  };
+
+  const handleOpenChange = (open) => {
+    setModalOpen(open);
+    if (!open && typeof window !== "undefined") {
+      const newUrl = `${window.location.origin}${window.location.pathname}`;
+      window.history.pushState({ path: newUrl }, "", newUrl);
+    }
+  };
+
   const normalizedReadMoreHref = normalizeSiteHref(readMoreHref);
   const hasModal = Boolean(modal);
   const hasDedicatedPage = normalizedReadMoreHref.startsWith("/about-us/founders/");
   const shouldOpenModal = hasModal && !hasDedicatedPage;
 
   return (
-    <div className="h-full rounded-[26px] border-2 border-slate-900 bg-white p-6 sm:p-7 flex flex-col">
+    <div id={slug} className="h-full rounded-[26px] border-2 border-slate-900 bg-white p-6 sm:p-7 flex flex-col scroll-mt-24">
       <div className="relative overflow-hidden rounded-[22px] border border-slate-200 bg-white">
         {image ? (
           <Image
@@ -161,10 +202,22 @@ function FounderCard({
 
       <div className="mt-auto pt-5 flex justify-end">
         {shouldOpenModal ? (
-          <FounderDetailsModalTrigger
-            person={{ name, roleLabel, image, imageAlt, bio, tagline }}
-            modal={modal}
-          />
+          <>
+            <Link
+              href={normalizedReadMoreHref}
+              onClick={handleReadMoreClick}
+              className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition"
+            >
+              Read More <span aria-hidden="true">→</span>
+            </Link>
+            <FounderDetailsModalTrigger
+              person={{ name, roleLabel, image, imageAlt, bio, tagline }}
+              modal={modal}
+              open={modalOpen}
+              onOpenChange={handleOpenChange}
+              trigger={null}
+            />
+          </>
         ) : (
           <Link
             href={normalizedReadMoreHref}
@@ -178,7 +231,7 @@ function FounderCard({
   );
 }
 
-function FounderDetailsModalTrigger({ person, modal }) {
+function FounderDetailsModalTrigger({ person, modal, open, onOpenChange, trigger }) {
   const title = modal?.title || person?.name || "Details";
   const subtitle = person?.roleLabel || "";
   const content = Array.isArray(modal?.content) ? modal.content : [];
@@ -195,18 +248,24 @@ function FounderDetailsModalTrigger({ person, modal }) {
       }));
   }, [modal?.social]);
 
+  const defaultTrigger = (
+    <button
+      type="button"
+      className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition"
+    >
+      Read More <span aria-hidden="true">→</span>
+    </button>
+  );
+
+  const resolvedTrigger = trigger === undefined ? defaultTrigger : trigger;
+
   return (
     <AppModal
       title={title}
       subtitle={subtitle}
-      trigger={
-        <button
-          type="button"
-          className="inline-flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700 transition"
-        >
-          Read More <span aria-hidden="true">→</span>
-        </button>
-      }
+      trigger={resolvedTrigger}
+      open={open}
+      onOpenChange={onOpenChange}
       maxWidthClass="max-w-6xl"
     >
       <div className="grid gap-6 md:grid-cols-12">

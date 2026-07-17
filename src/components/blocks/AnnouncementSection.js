@@ -173,10 +173,9 @@ export default function AnnouncementSection({
           )}
 
           {/* ── Main card ── */}
+          {/* ── Main card ── */}
           <div
-            className={`rounded-3xl border overflow-hidden transition-all duration-150 ease-out ${
-              isAnimating ? "opacity-0 scale-[0.98]" : "opacity-100 scale-100"
-            }`}
+            className="rounded-3xl border overflow-hidden"
             style={{
               background:
                 "linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.75) 100%)",
@@ -195,150 +194,162 @@ export default function AnnouncementSection({
               }}
             />
 
-            <div className="p-8 sm:p-12">
-              <div
-                className={`grid grid-cols-1 ${
-                  hasImage ? "lg:grid-cols-12 gap-8 lg:gap-12" : "w-full"
-                } items-center`}
-              >
-                {/* ── Text/Details Panel ── */}
-                <div className={hasImage ? "lg:col-span-7" : "w-full"}>
-                  {/* Top badge / Date row */}
-                  <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
-                    <div className="flex items-center gap-3">
-                      {/* Pulsing live dot */}
-                      <span className="relative flex h-3 w-3">
-                        <span
-                          className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
-                          style={{ background: "#F59E0B" }}
-                        />
-                        <span
-                          className="relative inline-flex rounded-full h-3 w-3"
-                          style={{ background: "#D97706" }}
-                        />
-                      </span>
-                      <span
-                        className="text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1 rounded-full border"
-                        style={{
-                          color: "#B45309",
-                          borderColor: "rgba(217,119,6,0.2)",
-                          background: "rgba(251,191,36,0.08)",
-                        }}
-                      >
-                        {activeAnnouncement?.badge || badge}
-                      </span>
-                    </div>
+            <div className="p-8 sm:p-12 grid grid-cols-1 grid-rows-1">
+              {sortedList.map((ann, idx) => {
+                const isActive = currentSlide === idx;
+                const annHasImage = Boolean(ann?.image);
 
-                    {/* Date chip */}
-                    <div
-                      className="flex items-center gap-2 text-sm font-semibold px-4 py-1.5 rounded-full border"
-                      style={{
-                        color: "#64748B",
-                        borderColor: "rgba(15, 23, 42, 0.08)",
-                        background: "rgba(15, 23, 42, 0.03)",
-                      }}
-                    >
-                      <span>📅</span>
-                      <span>{activeAnnouncement?.date || date}</span>
-                    </div>
-                  </div>
-
-                  {/* Title */}
-                  <h2
-                    className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight mb-2"
-                    style={{
-                      color: "#131313",
-                      letterSpacing: "-0.02em",
-                    }}
+                return (
+                  <div
+                    key={idx}
+                    className={`col-start-1 row-start-1 transition-all duration-500 ease-out grid grid-cols-1 ${
+                      annHasImage ? "lg:grid-cols-12 gap-8 lg:gap-12" : "w-full"
+                    } items-center ${
+                      isActive
+                        ? "opacity-100 scale-100 pointer-events-auto z-10"
+                        : "opacity-0 scale-[0.98] pointer-events-none z-0"
+                    }`}
                   >
-                    {activeAnnouncement?.title || title}
-                  </h2>
+                    {/* ── Text/Details Panel ── */}
+                    <div className={annHasImage ? "lg:col-span-7" : "w-full"}>
+                      {/* Top badge / Date row */}
+                      <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
+                        <div className="flex items-center gap-3">
+                          {/* Pulsing live dot */}
+                          <span className="relative flex h-3 w-3">
+                            <span
+                              className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-75"
+                              style={{ background: "#F59E0B" }}
+                            />
+                            <span
+                              className="relative inline-flex rounded-full h-3 w-3"
+                              style={{ background: "#D97706" }}
+                            />
+                          </span>
+                          <span
+                            className="text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1 rounded-full border"
+                            style={{
+                              color: "#B45309",
+                              borderColor: "rgba(217,119,6,0.2)",
+                              background: "rgba(251,191,36,0.08)",
+                            }}
+                          >
+                            {ann?.badge || badge}
+                          </span>
+                        </div>
 
-                  {/* Subtitle if present */}
-                  {activeAnnouncement?.subtitle && (
-                    <h3
-                      className="text-xl sm:text-2xl font-bold tracking-tight mb-4 text-amber-700"
-                      style={{ letterSpacing: "-0.01em" }}
-                    >
-                      {activeAnnouncement.subtitle}
-                    </h3>
-                  )}
-
-                  {/* Sub-label */}
-                  <p className="text-sm font-medium mb-8 text-slate-500">
-                    An invitation for guides, parents & staff
-                  </p>
-
-                  {/* ── Detail chips ── */}
-                  {(activeAnnouncement?.details || details).length > 0 && (
-                    <div className="flex flex-wrap gap-3 mb-8">
-                      {(activeAnnouncement?.details || details).map((d, idx) => (
+                        {/* Date chip */}
                         <div
-                          key={idx}
-                          className="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl border"
+                          className="flex items-center gap-2 text-sm font-semibold px-4 py-1.5 rounded-full border"
                           style={{
+                            color: "#64748B",
+                            borderColor: "rgba(15, 23, 42, 0.08)",
                             background: "rgba(15, 23, 42, 0.03)",
-                            borderColor: "rgba(15, 23, 42, 0.06)",
                           }}
                         >
-                          <span className="text-lg">{d.icon}</span>
-                          <div>
-                            <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
-                              {d.label}
-                            </div>
-                            <div className="text-sm font-semibold text-slate-800">
-                              {d.value}
-                            </div>
-                          </div>
+                          <span>📅</span>
+                          <span>{ann?.date || date}</span>
                         </div>
-                      ))}
-                    </div>
-                  )}
+                      </div>
 
-                  {/* Divider */}
-                  <div
-                    className="mb-8"
-                    style={{
-                      height: "1px",
-                      background:
-                        "linear-gradient(90deg, transparent, rgba(15, 23, 42, 0.08), transparent)",
-                    }}
-                  />
+                      {/* Title */}
+                      <h2
+                        className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight mb-2"
+                        style={{
+                          color: "#131313",
+                          letterSpacing: "-0.02em",
+                        }}
+                      >
+                        {ann?.title || title}
+                      </h2>
 
-                  {/* ── Message paragraphs ── */}
-                  <div className="space-y-4">
-                    {(activeAnnouncement?.messages || messages).map((msg, idx) => (
-                      <p key={idx} className="text-base leading-relaxed text-slate-600 font-medium">
-                        {formatMessageText(msg)}
+                      {/* Subtitle if present */}
+                      {ann?.subtitle && (
+                        <h3
+                          className="text-xl sm:text-2xl font-bold tracking-tight mb-4 text-amber-700"
+                          style={{ letterSpacing: "-0.01em" }}
+                        >
+                          {ann.subtitle}
+                        </h3>
+                      )}
+
+                      {/* Sub-label */}
+                      <p className="text-sm font-medium mb-8 text-slate-500">
+                        An invitation for guides, parents & staff
                       </p>
-                    ))}
-                  </div>
-                </div>
 
-                {/* ── Image Panel ── */}
-                {hasImage && (
-                  <div className="lg:col-span-5 flex flex-col justify-center items-center mt-6 lg:mt-0">
-                    <div
-                      className="relative w-full max-w-[360px] aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-md group/img cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
-                      onClick={() => setModalImage(activeAnnouncement.image)}
-                    >
-                      <Image
-                        src={activeAnnouncement.image}
-                        alt={activeAnnouncement.title}
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 400px"
-                        className="object-cover transition-transform duration-500 group-hover/img:scale-105"
+                      {/* ── Detail chips ── */}
+                      {(ann?.details || details).length > 0 && (
+                        <div className="flex flex-wrap gap-3 mb-8">
+                          {(ann?.details || details).map((d, dIdx) => (
+                            <div
+                              key={dIdx}
+                              className="flex items-center gap-2.5 px-4 py-2.5 rounded-2xl border"
+                              style={{
+                                background: "rgba(15, 23, 42, 0.03)",
+                                borderColor: "rgba(15, 23, 42, 0.06)",
+                              }}
+                            >
+                              <span className="text-lg">{d.icon}</span>
+                              <div>
+                                <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
+                                  {d.label}
+                                </div>
+                                <div className="text-sm font-semibold text-slate-800">
+                                  {d.value}
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Divider */}
+                      <div
+                        className="mb-8"
+                        style={{
+                          height: "1px",
+                          background:
+                            "linear-gradient(90deg, transparent, rgba(15, 23, 42, 0.08), transparent)",
+                        }}
                       />
-                      {/* Hover zoom overlay */}
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <span className="bg-black/80 text-xs text-white font-medium px-4 py-2 rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
-                          🔍 Click to View Full Poster
-                        </span>
+
+                      {/* ── Message paragraphs ── */}
+                      <div className="space-y-4">
+                        {(ann?.messages || messages).map((msg, mIdx) => (
+                          <p key={mIdx} className="text-base leading-relaxed text-slate-600 font-medium">
+                            {formatMessageText(msg)}
+                          </p>
+                        ))}
                       </div>
                     </div>
+
+                    {/* ── Image Panel ── */}
+                    {annHasImage && (
+                      <div className="lg:col-span-5 flex flex-col justify-center items-center mt-6 lg:mt-0">
+                        <div
+                          className="relative w-full max-w-[360px] aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-md group/img cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                          onClick={() => setModalImage(ann.image)}
+                        >
+                          <Image
+                            src={ann.image}
+                            alt={ann.title}
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 400px"
+                            className="object-cover transition-transform duration-500 group-hover/img:scale-105"
+                          />
+                          {/* Hover zoom overlay */}
+                          <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span className="bg-black/80 text-xs text-white font-medium px-4 py-2 rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
+                              🔍 Click to View Full Poster
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
+                );
+              })}
             </div>
           </div>
 

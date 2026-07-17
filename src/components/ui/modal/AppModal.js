@@ -21,10 +21,12 @@ export default function AppModal({
   children,
   footer,
   maxWidthClass = "max-w-6xl",
+  open,
+  onOpenChange,
 }) {
   return (
-    <Dialog.Root>
-      <Dialog.Trigger asChild>{trigger}</Dialog.Trigger>
+    <Dialog.Root open={open} onOpenChange={onOpenChange}>
+      {trigger ? <Dialog.Trigger asChild>{trigger}</Dialog.Trigger> : null}
 
       <Dialog.Portal>
         <Dialog.Overlay className="fixed inset-0 z-50 bg-black/40" />

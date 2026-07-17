@@ -93,13 +93,37 @@ function getStaticRoutes(dir, base = "", routes = []) {
 
 function getPriorityAndFreq(route) {
   if (route === "/") return { changefreq: "weekly", priority: "1.0" };
-  if (["/programs", "/admissions", "/contact-us"].includes(route)) {
+
+  // Core conversion & high-value pages
+  const highPriority = [
+    "/admissions",
+    "/programs",
+    "/contact-us",
+    "/about-us",
+    "/careers",
+    "/campus",
+    "/research-institute",
+    "/montessori-system",
+    "/ami-training",
+    "/innovation",
+    "/parents",
+  ];
+  if (highPriority.includes(route)) {
     return { changefreq: "monthly", priority: "0.8" };
   }
+
+  // Legal / utility pages
   if (route.startsWith("/privacy-policy") || route.startsWith("/terms")) {
-    return { changefreq: "yearly", priority: "0.6" };
+    return { changefreq: "yearly", priority: "0.5" };
   }
-  return { changefreq: "monthly", priority: "0.8" };
+
+  // Blog posts and publications
+  if (route.startsWith("/blog/") || route.startsWith("/publications/")) {
+    return { changefreq: "monthly", priority: "0.7" };
+  }
+
+  // Everything else: sub-pages, articles, FAQ, videos, etc.
+  return { changefreq: "monthly", priority: "0.7" };
 }
 
 function getRoutes({ researchOutputs = [], blogPosts = [] }) {

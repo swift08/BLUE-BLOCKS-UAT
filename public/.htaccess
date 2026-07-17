@@ -176,9 +176,14 @@ RewriteRule ^programs/nursery-school/programs/?$ https://blueblocks.in/programs/
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^founders/pavan-goyal/?$ https://blueblocks.in/about-us/founders/pavan-goyal/ [R=301,L,NE]
 
-# All /team/* URLs -> /about-us/ (deleted team-member pages + stale team image URLs).
-# The !-f / !-d guard keeps real team images under /team/ serving (200); only
-# non-existent team URLs redirect. Covers every current AND future team 404 in one rule.
+# Specific team-member slug redirects to /about-us/?guide=slug.
+# Covers legacy URLs like /team/aishwarya-tejaswiraj/ -> /about-us/?guide=aishwarya-tejaswiraj
+RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^team/([^/]+)/?$ https://blueblocks.in/about-us/?guide=$1 [R=301,L,NE]
+
+# Chained/nested /team/* fallbacks (deleted sub-paths or malformed legacy crawl attempts) -> /about-us/
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

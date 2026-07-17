@@ -37,6 +37,8 @@ const PositionsOpen = dynamic(() => import("@/components/blocks/PositionsOpen"),
 // Admissions
 const AdmissionsIntro = dynamic(() => import("@/components/blocks/AdmissionsIntro"), { ssr: true });
 const AdmissionsJourney = dynamic(() => import("@/components/blocks/AdmissionsJourney"), { ssr: true });
+const AdmissionsTabJourney = dynamic(() => import("@/components/blocks/AdmissionsTabJourney"), { ssr: true });
+const AdmissionsGuidelines = dynamic(() => import("@/components/blocks/AdmissionsGuidelines"), { ssr: true });
 
 // Parents
 const ParentsBooks = dynamic(() => import("@/components/parents/ParentsBooks"), { ssr: true });
@@ -83,6 +85,9 @@ const SystemOverview = dynamic(() => import("@/components/blocks/SystemOverview"
 
 // Misc
 const CareersSection = dynamic(() => import("@/components/blocks/CareersSection"), { ssr: true });
+const CareersHero = dynamic(() => import("@/components/blocks/CareersHero"), { ssr: true });
+const OpenPositions = dynamic(() => import("@/components/blocks/OpenPositions"), { ssr: true });
+const WhyBlueBlocksCareers = dynamic(() => import("@/components/blocks/WhyBlueBlocksCareers"), { ssr: true });
 const SimpleImageSection = dynamic(() => import("@/components/blocks/StaticImageBanner"), { ssr: true });
 const CenteredTextBlock = dynamic(() => import("@/components/blocks/CenteredTextBlock"), { ssr: true });
 const OutcomesPills = dynamic(() => import("@/components/blocks/OutcomesPills"), { ssr: true });
@@ -131,6 +136,12 @@ export default function SectionRenderer({ sections = [] }) {
 
           case "careersSection":
             return <CareersSection key={key} {...section.props} />;
+          case "careersHero":
+            return <CareersHero key={key} {...props} />;
+          case "openPositions":
+            return <OpenPositions key={key} {...props} />;
+          case "whyBlueBlocksCareers":
+            return <WhyBlueBlocksCareers key={key} {...props} />;
 
           // About Us — Montessori For Success
           case "montessoriForSuccess":
@@ -221,6 +232,10 @@ export default function SectionRenderer({ sections = [] }) {
             return <AdmissionsIntro key={key} {...props} />;
           case "admissionsJourney":
             return <AdmissionsJourney key={key} {...props} />;
+          case "admissionsTabJourney":
+            return <AdmissionsTabJourney key={key} {...props} />;
+          case "admissionsGuidelines":
+            return <AdmissionsGuidelines key={key} {...props} />;
 
           // Contact
           case "contactDetails":

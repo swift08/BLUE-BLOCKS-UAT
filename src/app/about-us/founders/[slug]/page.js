@@ -1,6 +1,7 @@
-﻿import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import siteData from "@/data/site";
 import FounderProfilePage from "@/components/blocks/FounderProfilePage";
+import JsonLd from "@/components/seo/JsonLd";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -47,10 +48,11 @@ export async function generateMetadata({ params }) {
     title: `${founder.name} | Founder | Blue Blocks`,
     description:
       founder.bio ||
-      `Founder profile for ${founder.name} at Blue Blocks.`,
+      `Founder profile for ${founder.name} at Blue Blocks Montessori School, Hyderabad.`,
     alternates: {
-      canonical: `/about-us/founders/${slug}/`,
+      canonical: `https://blueblocks.in/about-us/founders/${slug}/`,
     },
+    robots: { index: true, follow: true },
   };
 }
 
@@ -59,6 +61,25 @@ export default async function FounderRoutePage({ params }) {
   const founder = getFounderBySlug(slug);
   if (!founder) notFound();
 
-  return <FounderProfilePage founder={founder} />;
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": founder.name,
+    "jobTitle": founder.role || "Co-founder",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Blue Blocks Montessori School",
+      "url": "https://blueblocks.in"
+    },
+    "url": `https://blueblocks.in/about-us/founders/${slug}/`,
+    "description": founder.bio || ""
+  };
+
+  return (
+    <>
+      <JsonLd id={`founder-${slug}-jsonld`} data={personSchema} />
+      <FounderProfilePage founder={founder} />
+    </>
+  );
 }
 

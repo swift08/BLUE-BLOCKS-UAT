@@ -36,6 +36,21 @@ const nextConfig = {
     // babel-plugin-react-compiler is already installed as a devDependency.
     reactCompiler: true,
   },
+
+  async redirects() {
+    return [
+      {
+        source: "/team/:slug([a-zA-Z0-9_-]+)/",
+        destination: "/about-us/?guide=:slug",
+        permanent: true,
+      },
+      {
+        source: "/team/:slug([a-zA-Z0-9_-]+)",
+        destination: "/about-us/?guide=:slug",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 const withBA = withBundleAnalyzer({

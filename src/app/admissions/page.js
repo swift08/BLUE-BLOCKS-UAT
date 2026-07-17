@@ -5,8 +5,9 @@ import PageJsonLd from "@/components/seo/PageJsonLd";
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: "Admissions Workflow & Entry Windows | Blue Blocks Montessori",
-  description: "Apply to Blue Blocks Montessori School. Explore our parents onboarding journey, developmental orientation, admission interview processes, and entry guidelines.",
+  title: "Montessori School Admissions Hyderabad | Blue Blocks",
+  description:
+    "Montessori school admissions in Hyderabad at Blue Blocks. AMI-standard pedagogy, ages 15 months to 18 years, Cambridge IGCSE integration.",
   alternates: { canonical: "https://blueblocks.in/admissions/" },
 };
 
@@ -21,4 +22,3 @@ export default function AdmissionsPage() {
     </>
   );
 }
-

@@ -1,13 +1,13 @@
-﻿import siteData from "@/data/site";
+import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: "Careers at Blue Blocks Montessori | Open Roles in Hyderabad",
+  title: "Careers at Blue Blocks Montessori | Jobs in Hyderabad",
   description:
-    "Join Blue Blocks Montessori in Hyderabad. View open roles for AMI-certified guides, educators, innovation lab leads, and operations staff across our Gachibowli and Tellapur campuses.",
+    "Careers at Blue Blocks Montessori School Hyderabad. Open roles for AMI Montessori guides, Cambridge IGCSE Facilitators, and mission-aligned professionals across our Gachibowli and Tellapur campuses.",
   alternates: { canonical: "https://blueblocks.in/careers/" },
   robots: { index: true, follow: true },
 };

@@ -42,9 +42,13 @@ export default function AdmissionsIntro({
 
             {Array.isArray(text) && text.length ? (
               <div className="bb-text mt-5">
-                {text.map((p, i) => (
-                  <p key={i}>{p}</p>
-                ))}
+                {text.map((p, i) =>
+                  i === 0 ? (
+                    <p key={i} className="font-semibold text-slate-800 text-justify">{p}</p>
+                  ) : (
+                    <p key={i} className="text-justify">{p}</p>
+                  )
+                )}
               </div>
             ) : null}
           </div>

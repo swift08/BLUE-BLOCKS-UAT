@@ -395,9 +395,21 @@
                 "date": "July 11, 2026",
                 "image": "/annoucement/WhatsApp Image 2026-07-10 at 4.08.17 PM.webp",
                 "details": [
-                  { "icon": "⏰", "label": "Time", "value": "10:00 AM - 11:00 AM" },
-                  { "icon": "📍", "label": "Venue", "value": "Blueblocks, Gachibowli" },
-                  { "icon": "🗣️", "label": "Language", "value": "Telugu and Hindi" }
+                  {
+                    "icon": "⏰",
+                    "label": "Time",
+                    "value": "10:00 AM - 11:00 AM"
+                  },
+                  {
+                    "icon": "📍",
+                    "label": "Venue",
+                    "value": "Blueblocks, Gachibowli"
+                  },
+                  {
+                    "icon": "🗣️",
+                    "label": "Language",
+                    "value": "Telugu and Hindi"
+                  }
                 ],
                 "messages": [
                   "An exclusive workshop for our Nannies and Driver partners supporting the child.",
@@ -412,9 +424,21 @@
                 "date": "July 11, 2026",
                 "image": "/annoucement/ann.webp",
                 "details": [
-                  { "icon": "⏰", "label": "Time", "value": "10:00 AM - 11:30 AM" },
-                  { "icon": "📍", "label": "Venue", "value": "Blueblocks, Gachibowli (Ground Floor)" },
-                  { "icon": "🗣️", "label": "Language", "value": "Telugu • Hindi • English" }
+                  {
+                    "icon": "⏰",
+                    "label": "Time",
+                    "value": "10:00 AM - 11:30 AM"
+                  },
+                  {
+                    "icon": "📍",
+                    "label": "Venue",
+                    "value": "Blueblocks, Gachibowli (Ground Floor)"
+                  },
+                  {
+                    "icon": "🗣️",
+                    "label": "Language",
+                    "value": "Telugu • Hindi • English"
+                  }
                 ],
                 "messages": [
                   "Dear Parents, we warmly invite your child’s grandparents to join us for a special Grandparents’ Workshop - ✨ The Gift of Resilience.",
@@ -427,9 +451,21 @@
                 "badge": "Upcoming Event",
                 "date": "July 18, 2026",
                 "details": [
-                  { "icon": "🌅", "label": "Departure", "value": "9:00 AM from school" },
-                  { "icon": "🏡", "label": "Return", "value": "2:30 PM" },
-                  { "icon": "🚌", "label": "Transport", "value": "School Buses" }
+                  {
+                    "icon": "🌅",
+                    "label": "Departure",
+                    "value": "9:00 AM from school"
+                  },
+                  {
+                    "icon": "🏡",
+                    "label": "Return",
+                    "value": "2:30 PM"
+                  },
+                  {
+                    "icon": "🚌",
+                    "label": "Transport",
+                    "value": "School Buses"
+                  }
                 ],
                 "messages": [
                   "Guides and children will be engaging in interesting and fun activities. All of you are welcome to come, observe, support, and learn.",
@@ -443,9 +479,21 @@
                 "date": "July 25, 2026",
                 "image": "/annoucement/WhatsApp Image 2026-07-10 at 4.06.52 PM.webp",
                 "details": [
-                  { "icon": "💻", "label": "Orientation", "value": "Online (FREE)" },
-                  { "icon": "⏰", "label": "Time", "value": "5:00 PM – 6:00 PM (IST)" },
-                  { "icon": "📍", "label": "Venue", "value": "Online via Zoom" }
+                  {
+                    "icon": "💻",
+                    "label": "Orientation",
+                    "value": "Online (FREE)"
+                  },
+                  {
+                    "icon": "⏰",
+                    "label": "Time",
+                    "value": "5:00 PM – 6:00 PM (IST)"
+                  },
+                  {
+                    "icon": "📍",
+                    "label": "Venue",
+                    "value": "Online via Zoom"
+                  }
                 ],
                 "messages": [
                   "Looking for a career change? Passionate about working with children?",
@@ -791,7 +839,7 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         }
       ]
     },
@@ -2914,11 +2962,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "About Us",
-          "url": "#/about-us/"
+          "url": "https://blueblocks.in/about-us/"
         }
       ]
     },
@@ -3278,11 +3326,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Academics",
-          "url": "#/programs/"
+          "url": "https://blueblocks.in/programs/"
         }
       ],
       "schema": [
@@ -3290,10 +3338,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Academics",
-          "url": "#/programs/",
+          "url": "https://blueblocks.in/programs/",
           "description": "A Scientifically Mapped Journey from Infancy to Adolescence (0â€“16 Years)",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -3304,13 +3352,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/academics/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Academics",
-              "item": "#/programs/"
+              "item": "https://blueblocks.in/programs/"
             }
           ]
         }
@@ -5154,15 +5202,15 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Programs",
-          "url": "#/programs/"
+          "url": "https://blueblocks.in/programs/"
         },
         {
           "name": "{{title}}",
-          "url": "#/programs/{slug}"
+          "url": "https://blueblocks.in/programs/{slug}"
         }
       ],
       "schema": [
@@ -5171,9 +5219,9 @@
           "@type": "WebPage",
           "name": "Adolescent Programme (Ages 12-18)",
           "description": "Montessori Adolescent â€” developing conscience, character, capability. Social Newborn, Valorization, Education for Peace.",
-          "url": "#/programs/secondary-school",
+          "url": "https://blueblocks.in/programs/secondary-school",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           },
           "about": [
             {
@@ -5202,19 +5250,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/programs/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Programs",
-              "item": "#/programs/"
+              "item": "https://blueblocks.in/programs/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Adolescent",
-              "item": "#/programs/secondary-school"
+              "item": "https://blueblocks.in/programs/secondary-school"
             }
           ]
         },
@@ -5324,12 +5372,13 @@
           "type": "admissionsIntro",
           "props": {
             "eyebrow": "ADMISSIONS",
-            "title": "A Partnership, Not Just A Placement.",
-            "subtitle": "Why We Are Selective",
+            "title": "Montessori School Admissions\nin Hyderabad",
             "text": [
-              "At Blue Blocks, we do not admit a student; we admit a family. Education is not a transaction where you pay fees and we deliver a product. It is a 15-year collaboration.",
-              "Because we do not operate like a factory (no bells, no ranks, no rows), we need to ensure you are ready for a different way of life. We invest significant time upfront to find 'Conscious Parents' who are ready to trust the child, even when it looks messy.",
-              "Our admissions process is designed to ensure that every child, family, and educator grows together â€” intentionally and authentically."
+              "A Partnership, Not Just a Placement.",
+              "At Blue Blocks, we do not admit a student; we admit a family. Education is not a service where you enrol and we take over. It is a 16-year collaboration.",
+              "Blue Blocks is a Montessori school in Hyderabad, working to the gold-standard pedagogy set by the Association Montessori Internationale (AMI). We serve children from 15 months to 18 years, with Cambridge IGCSE integration for our adolescent program. We hold our admissions to the Association Montessori Internationale (AMI) student-to-teacher ratios, which is why every stage of this process exists.",
+              "Because we do not operate like a factory (no bells, no ranks, no rows), we need to ensure you are ready for a different way of life. We invest significant time upfront to find “Conscious Parents” who are ready to trust the child, even when it looks messy.",
+              "Our admissions process is designed to ensure that every child, family, and educator grows together, intentionally and authentically."
             ],
             "sideHeadline": {
               "line1": "Hands. Heart.",
@@ -5341,60 +5390,93 @@
           }
         },
         {
-          "type": "admissionsJourney",
+          "type": "admissionsTabJourney",
           "props": {
             "eyebrow": "THE PROCESS",
             "title": "Our Admissions\nJourney",
-            "items": [
-              {
-                "icon": "/icon/journey-discovery.svg",
-                "title": "The Discovery Workshop",
-                "text": [
-                  "3 Hours (In-Person). Don't just tour. Work.",
-                  "The Tactile Test: Standard school tours are passive walking. Ours is active working. You cannot understand Montessori by looking at it; you must feel it.",
-                  "The 'Adult' Work Cycle: You will handle the materialsâ€”feeling the weight of the Binomial Cube or the texture of the Touch Boards. You will see how a simple wooden tool isolates a complex mathematical concept.",
-                  "Observation: We teach you the difference between 'watching' (passive) and 'observing' (scientific). You will leave understanding how your child learns, not just where they sit."
+            "tracks": {
+              "toddler": {
+                "title": "The Toddler & Pre-School Path",
+                "description": "For families with children between 15 months and 6 years. We meet you where your child is: attentive to the sensory habits, the obsessions, the everyday rhythm your child already lives inside.",
+                "steps": [
+                  {
+                    "title": "Enquiry",
+                    "text": "Start with a form or a phone call. We will talk about your child and what you are looking for."
+                  },
+                  {
+                    "title": "Orientation & Discovery Workshop",
+                    "text": "An in-person session. Not a tour, a working session. You handle the Montessori materials, feel the weight of a Binomial Cube, and learn the difference between watching and observing. If it is useful, we can schedule a classroom observation, and you can pick up the admission form while you are here."
+                  },
+                  {
+                    "title": "Meeting Your Child",
+                    "text": "We spend some time with your child to understand where they are. Not a test, an observation. We watch for sensory habits, focus, and the small daily things that tell us who your child is. Once we have met them, you will fill out and submit the admission form."
+                  },
+                  {
+                    "title": "The Family Conversation with Nidhi Vora, Director of Admissions",
+                    "text": "A one-on-one discussion. This is the safe space for hard questions, for us to talk about the small habits you may need to change at home so the environment can work for your child."
+                  },
+                  {
+                    "title": "The Alliance with Pavan Goyal, Co-founder",
+                    "text": "A conversation at our Tellapur campus. You will meet Pavan Goyal, Co-founder and Principal Investigator of the Blue Blocks Micro Research Institute. Pavan holds all four AMI Montessori diplomas (birth through eighteen years) and serves as a Trustee of the Indian Montessori Foundation. He co-founded Blue Blocks in 2009. This is the 16-year commitment conversation, made in person."
+                  },
+                  {
+                    "title": "Welcome to Blue Blocks",
+                    "text": "Your child joins the Blue Blocks family."
+                  }
                 ]
               },
-              {
-                "icon": "/icon/journey-observe.svg",
-                "title": "The Child's Narrative",
-                "text": [
-                  "We don't want data. We want the story.",
-                  "Beyond the Form: Vaccination records tell us nothing about who your child is. We ask for the details that matter.",
-                  "Sensory Habits: Does your child cover their ears at loud noises? Do they touch everything they walk past? Do they observe for 20 minutes before joining a game?",
-                  "The Obsessions: What captures their attention for hours? Is it water? Stacking? Insects?",
-                  "The Welcome: By the time your child walks in, the Guide (teacher) already knows them. There is no 'adjustment period'â€”only a continuation of home."
-                ]
-              },
-              {
-                "icon": "/icon/journey-interact.svg",
-                "title": "The Honest Talk",
-                "text": [
-                  "2-Hour Discussion. The safe space for hard questions.",
-                  "Deconstructing Fear: We tackle the elephant in the room. 'Will they survive in the real world without exams?'' 'What if they just play all day?'",
-                  "The Parent Shift: We discuss the habits you might need to break. (Example: The urge to correct a child instantly when they spill water, rather than letting them clean it up).",
-                  "Freedom vs. License: We clarify the difference. Your child will have freedom, but they will not have license to be destructive. You need to know the boundary before you sign."
-                ]
-              },
-              {
-                "icon": "/icon/journey-onboard.svg",
-                "title": "The Alliance",
-                "text": [
-                  "1-Hour Founder Meeting. The 15-Year Commitment",
-                  "The Custodians: You are not meeting a sales rep. You are meeting the people who built the environment.",
-                  "The Long View: We look at the trajectory from Age 3 to Age 16. We are not preparing your child for 'First Grade.' We are preparing them for adulthood.",
-                  "The Pact: We agree that when (not if) challenges arise, we communicate with transparency. No blame. Just solutions."
+              "elementary": {
+                "title": "The Elementary & Erdkinder Path",
+                "description": "For families with children entering Class 1 through Class 10. Older children have more of themselves to show us, and the assessment takes longer because we are looking at how they learn, not just where they are.",
+                "steps": [
+                  {
+                    "title": "Enquiry",
+                    "text": "Start with a form or a phone call. We will talk about your child and what you are looking for."
+                  },
+                  {
+                    "title": "Campus Visit & Parent Orientation",
+                    "text": "Come see the Tellapur campus for yourself — the labs, the classrooms, the spaces your child will actually work in. You will also sit in on a Parent Orientation Session where children present their own work. This is what a Montessori adolescent programme actually looks like when children have been trusted for years."
+                  },
+                  {
+                    "title": "Multi-Day Assessment",
+                    "text": "This step takes two to five days. We want a real sense of how your child learns, not a snapshot. Older children carry patterns of thinking, working, and asking that only surface across time. Once we have observed those, you submit the admission form."
+                  },
+                  {
+                    "title": "The Family Conversation with Nidhi Vora, Director of Admissions",
+                    "text": "Real conversation about readiness, freedom versus license, and how a Cambridge IGCSE-integrated Montessori environment differs from what you may have known. Space for every question you have not felt able to ask elsewhere."
+                  },
+                  {
+                    "title": "The Alliance with Pavan Goyal, Co-founder",
+                    "text": "A final in-person conversation at Tellapur. You will meet Pavan Goyal, Co-founder and Principal Investigator of the Blue Blocks Micro Research Institute. Pavan holds all four AMI Montessori diplomas (birth through eighteen years) and serves as a Trustee of the Indian Montessori Foundation. He co-founded Blue Blocks in 2009. This is where the long view — Class 1 through Erdkinder to Cambridge IGCSE — is discussed openly, before anything is decided."
+                  },
+                  {
+                    "title": "Welcome to Blue Blocks",
+                    "text": "Your child joins the Blue Blocks family."
+                  }
                 ]
               }
-            ]
+            }
+          }
+        },
+        {
+          "type": "CenteredTextBlock",
+          "props": {
+            "eyebrow": "IS MONTESSORI RIGHT FOR YOUR FAMILY?",
+            "title": "Is Montessori Right for Your Family?",
+            "textParts": [
+              "Montessori isn’t a teaching method you bolt onto a regular school. It’s a completely different relationship between your child, the environment, and the adults around them.",
+              "If you’re weighing us against a traditional CBSE or ICSE preschool, or a standard daycare, here’s the honest answer: Montessori asks more of you as a parent, not less. That’s exactly why we build in a campus visit and a real orientation before anyone signs anything, so you can decide if that trade-off is right for your family."
+            ],
+            "sectionBg": "bg-white",
+            "align": "left",
+            "maxWidth": "72rem"
           }
         },
         {
           "type": "ctaBanner",
           "props": {
             "title": "READY TO START THE CONVERSATION?",
-            "text": "Our admissions process is high-touch and our ratios are strictly low (AMI Standard). Seats are limited and filled on a first-aligned, first-served basis.",
+            "text": "Our admissions process is high-touch and is limited and filled on a first-aligned, first-served basis.",
             "cta": {
               "label": "BEGIN YOUR JOURNEY",
               "href": "/contact-us"
@@ -5402,27 +5484,127 @@
             "align": "center",
             "theme": "dark"
           }
+        },
+        {
+          "type": "admissionsGuidelines",
+          "props": {
+            "eyebrow": "ENTRY WINDOWS",
+            "title": "Admissions Guidelines & Entry Windows",
+            "campuses": [
+              {
+                "campus": "Campus 1",
+                "title": "Gachibowli Campus — Infant & Pre-Primary Admissions",
+                "subtitle": "Serving children aged 15 months to 6 years. Ideally suited for parents located in Gachibowli, Madhapur, Hitec City, and surrounding IT corridor neighbourhoods.",
+                "rows": [
+                  {
+                    "programme": "Toddler Community",
+                    "age": "1.5 – 3 Years"
+                  },
+                  {
+                    "programme": "Pre-Primary Montessori",
+                    "age": "3 – 6 Years"
+                  }
+                ]
+              },
+              {
+                "campus": "Campus 2",
+                "title": "Tellapur Campus — Elementary & Secondary Admissions",
+                "subtitle": "Serving the complete Montessori continuum, including Primary (Class 1 to 6) and Secondary (Class 7 to 10), integrated with the Cambridge IGCSE framework.",
+                "rows": [
+                  {
+                    "programme": "Elementary Primary School",
+                    "age": "Class 1 – 6"
+                  },
+                  {
+                    "programme": "Secondary School & Erdkinder",
+                    "age": "Class 7 – 10 (Cambridge IGCSE)"
+                  }
+                ]
+              }
+            ],
+            "notes": [
+              {
+                "icon": "ami",
+                "label": "AMI Standards",
+                "text": "Blue Blocks strictly maintains Association Montessori Internationale (AMI) student-to-teacher ratios. To safeguard the prepared environment, seats are capped and filled based on alignment and application date."
+              },
+              {
+                "icon": "parent",
+                "label": "Parental Involvement",
+                "text": "We require all prospective parents to attend our Discovery Workshop and onboarding sessions. This ensures parent-school synchronization on freedom, self-discipline, and independent education."
+              },
+              {
+                "icon": "training",
+                "label": "Teacher Training Alignment",
+                "text": "Our guides are continuously trained under rigorous AMI standards. Prospective educators seeking certifications can visit our AMI Training page."
+              }
+            ]
+          }
         }
       ],
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Admissions",
-          "url": "#/admissions/"
+          "url": "https://blueblocks.in/admissions/"
         }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
+          "@type": "School",
+          "name": "Blue Blocks Montessori School",
+          "url": "https://blueblocks.in",
+          "logo": "https://blueblocks.in/icon/logo.svg",
+          "description": "Montessori school in Hyderabad, held to the gold-standard pedagogy of Association Montessori Internationale (AMI). Serving children from 15 months to 18 years, with Cambridge IGCSE integration for adolescents.",
+          "address": [
+            {
+              "@type": "PostalAddress",
+              "name": "Gachibowli Campus",
+              "addressLocality": "Hyderabad",
+              "addressRegion": "Telangana",
+              "addressCountry": "IN"
+            },
+            {
+              "@type": "PostalAddress",
+              "name": "Tellapur Campus",
+              "addressLocality": "Hyderabad",
+              "addressRegion": "Telangana",
+              "addressCountry": "IN"
+            }
+          ],
+          "telephone": "+91-9000955050",
+          "email": "info@blueblocks.in",
+          "founder": {
+            "@type": "Person",
+            "name": "Pavan Goyal",
+            "jobTitle": "Co-founder and Principal Investigator",
+            "sameAs": "https://orcid.org/0009-0009-8840-8505",
+            "description": "Holder of all four AMI Montessori diplomas; Trustee of the Indian Montessori Foundation"
+          },
+          "foundingDate": "2009",
+          "educationalCredentialAwarded": [
+            "AMI Montessori pedagogy",
+            "Cambridge IGCSE"
+          ],
+          "sameAs": [
+            "https://www.instagram.com/blueblocksmontessorischool/",
+            "https://www.facebook.com/blueblockspreschool",
+            "https://www.youtube.com/channel/UCnJ6uX3B-uwAg63PgTK0LhQ",
+            "https://www.linkedin.com/school/blue-blocks-montessori-school"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
           "@type": "WebPage",
-          "name": "Admissions",
+          "name": "Montessori School Admissions Hyderabad | Blue Blocks",
           "url": "https://blueblocks.in/admissions/",
-          "description": "At Blue Blocks, we do not admit a student; we admit a family. Education is not a transaction where you pay fees and we deliver a product. It is a 15-year collab",
+          "description": "Montessori school admissions in Hyderabad at Blue Blocks. AMI-standard pedagogy, ages 15 months to 18 years, Cambridge IGCSE integration.",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -5440,68 +5622,6 @@
               "position": 2,
               "name": "Admissions",
               "item": "https://blueblocks.in/admissions/"
-            }
-          ]
-        },
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "What is the admissions process at Blue Blocks Montessori?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Admission begins with a parent enquiry, followed by a parent orientation workshop, a campus visit and observation, and a meeting with our pedagogical team. We admit families, not just students - because Montessori only works when home and school share the same understanding of the child."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What is the right age to enrol my child?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We accept children from 15 months (Toddler Community) through to 18 years (Adolescent Programme / Cambridge IGCSE). The earlier the start, the deeper the benefit of the absorbent mind, but we welcome admissions across all four planes of development."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do you require prior Montessori experience?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. We welcome students at all entry points. Children new to Montessori often adapt quickly because the approach aligns with the natural drive for meaningful, self-directed work. We provide transition support and observe each student's adjustment carefully."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is Blue Blocks AMI certified?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Blue Blocks is one of the few schools in India offering AMI-certified Montessori across all four planes of development (0-3, 3-6, 6-12, 12-18). Our founder Pavan Goyal holds all four AMI Diplomas - the complete Montessori continuum."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Do you follow Cambridge IGCSE?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes. Our Elementary and Adolescent programmes are integrated with Cambridge International curriculum, including Cambridge Primary and Cambridge IGCSE. Students transition seamlessly from Montessori work-cycles to Cambridge examinations."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What documents are required for admission?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "We require a completed enquiry form, a copy of the child's birth certificate, recent photographs, vaccination records, and prior school records (if applicable). The detailed checklist is shared after the initial parent orientation."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How can I book a campus visit?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "You can book a campus visit through the contact form on our website, by calling +91 9000955050, or by writing to info@blueblocks.in. Visits include observation of a working classroom and a meeting with the pedagogical team."
-              }
             }
           ]
         }
@@ -5610,35 +5730,16 @@
               }
             ]
           }
-        },
-        {
-          "type": "positionsOpen",
-          "props": {
-            "sectionId": "careers",
-            "eyebrow": "Careers with BlueBlocks",
-            "heading": "Positions open",
-            "intro": "At Blue Blocks, education is not a job â€” itâ€™s a responsibility. We are a community of educators, mentors, and lifelong learners committed to honoring childhood and supporting human development with intention.",
-            "jobs": [
-              {
-                "title": "Montessori Guide â€“ Primary (3â€“6 Years)",
-                "text": "Support children during their most formative years by guiding independence, curiosity, and foundational skills in a prepared Montessori environment.",
-                "apply": {
-                  "label": "Apply Now â†—",
-                  "href": "/contact-us#careers"
-                }
-              }
-            ]
-          }
         }
       ],
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Contact",
-          "url": "#/contact-us/"
+          "url": "https://blueblocks.in/contact-us/"
         }
       ],
       "schema": [
@@ -5646,10 +5747,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Contact",
-          "url": "#/contact-us/",
+          "url": "https://blueblocks.in/contact-us/",
           "description": "At Blue Blocks, education is not a job â€” itâ€™s a responsibility. We are a community of educators, mentors, and lifelong learners committed to honoring childhood ",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -5660,13 +5761,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/contact-us/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Contact",
-              "item": "#/contact-us/"
+              "item": "https://blueblocks.in/contact-us/"
             }
           ]
         },
@@ -5760,93 +5861,63 @@
     "careers": {
       "sections": [
         {
-          "type": "pageHero",
+          "type": "careersHero",
           "props": {
-            "title": "Careers",
-            "breadcrumb": [
-              {
-                "label": "Home",
-                "href": "/"
-              },
-              {
-                "label": "Careers"
-              }
+            "eyebrow": "CAREERS",
+            "title": "Education Is Not a Job,",
+            "subtitle": "It’s a Responsibility.",
+            "text": [
+              "Montessori trained educators get a rare chance most teachers never get: to actually change what schooling looks like, instead of just working inside the system that already exists. At Blue Blocks, you won’t be handed a classroom to manage. You’ll be trusted with something bigger, honoring a childhood.",
+              "Blue Blocks is a Montessori school in Hyderabad, held to the gold-standard pedagogy of Association Montessori Internationale (AMI), serving children from 15 months to 18 years with Cambridge IGCSE integration.",
+              "We’re a community of educators, subject facilitators, mentors, administrators, support staff, and lifelong learners across our Gachibowli and Tellapur, Hyderabad campuses. What we care about most is supporting human development with real intention, not just getting through a curriculum."
             ],
-            "bg": {
-              "base": "#F3E3CF",
-              "leftArc": "/ui/arc-left.webp",
-              "rightArc": "/ui/arc-right.webp"
-            }
+            "ctaLabel": "See Open Roles Below",
+            "ctaHref": "#open-roles"
           }
         },
         {
-          "type": "careersSection",
+          "type": "openPositions",
           "props": {
-            "bg": "#FFFFFF",
-            "maxWidth": "max-w-6xl",
-            "topCard": {
-              "bg": "#F3E3CF",
-              "radius": "rounded-[18px]",
-              "padding": "p-8 sm:p-10",
-              "title": "Career with Blue Blocks",
-              "text": [
-                "Montessori trained educators have the unique opportunity to change the education system for the better. They can reform the thinking and perception of what should be the ideal schooling environment.",
-                "Montessori Directress: Looking for AMI Certified individuals to be directresses of the Self-Interpretive Environments (3â€“6 year Primary environment).",
-                "Elementary Directress: Looking for AMI Certified individuals to work with the 6â€“12 year old children in the elementary environment.",
-                "Assistants: Graduates in any field with good command over language and keen interest in working with children."
-              ],
-              "image": {
-                "src": "/careers/building.webp",
-                "alt": "Blue Blocks campus building"
+            "eyebrow": "OPEN POSITIONS",
+            "title": "Open Positions",
+            "jobs": [
+              {
+                "title": "Montessori Elementary Guide (Ages 6 to 12), AMI Certified",
+                "org": "Blue Blocks Montessori School",
+                "location": "Hyderabad",
+                "type": "Full-Time",
+                "description": "Do you love the energy of an elementary classroom, the kind where the questions never really stop? We’re looking for an AMI certified Elementary Guide to join a Montessori community where kids get to explore, question, discover, and grow through Cosmic Education. If you’re AMI certified in the 6 to 12 Elementary track, we’d genuinely love to talk.",
+                "email": "sandhya@blueblocks.in",
+                "phone": "9611566283",
+                "applyLabel": "Send Your Resume"
+              },
+              {
+                "title": "English Facilitator, Cambridge IGCSE (Grades 7 to 10)",
+                "org": "Blue Blocks Montessori School",
+                "location": "Tellapur, Hyderabad",
+                "type": "Full-Time",
+                "description": "We’re looking for an English Facilitator who genuinely loves language, literature, and real conversations with adolescents. If nurturing critical thinking, creativity, and confident communication is what got you into teaching in the first place, and you enjoy working closely with both adolescents and fellow educators, we’d love to hear from you.",
+                "email": "sandhya@blueblocks.in",
+                "applyLabel": "Send Your Resume"
               }
-            },
-            "eligibilityCard": {
-              "bg": "#EAF4FF",
-              "radius": "rounded-[18px]",
-              "padding": "p-8 sm:p-10",
-              "title": "Eligibility Criteria",
-              "items": [
-                {
-                  "icon": "hand",
-                  "iconImage": "/icon/icon-e-hand.webp",
-                  "label": "Motivated to work with Children"
-                },
-                {
-                  "icon": "book",
-                  "iconImage": "/icon/icon-book.webp",
-                  "label": "Open to learning."
-                },
-                {
-                  "icon": "heart",
-                  "iconImage": "/icon/icon-soft-heart.webp",
-                  "label": "Pleasant personality and soft demeanour"
-                },
-                {
-                  "icon": "brain",
-                  "iconImage": "/icon/icon-brain.webp",
-                  "label": "Good logical and analytical skills"
-                },
-                {
-                  "icon": "chat",
-                  "iconImage": "/icon/icon-chat.webp",
-                  "label": "Good communication skills"
-                },
-                {
-                  "icon": "desktop",
-                  "iconImage": "/icon/icon-desktop.webp",
-                  "label": "Basic computer skills"
-                },
-                {
-                  "icon": "age",
-                  "iconImage": "/icon/icon-age.webp",
-                  "label": "Age 20 years and above"
-                },
-                {
-                  "icon": "cap",
-                  "iconImage": "/icon/icon-cap.webp",
-                  "label": "Graduate in any stream"
-                }
-              ]
+            ],
+            "openApplicationNote": "Not seeing your role listed? You can still send us your resume and CV — with relevant work samples and portfolios (if any) — to <a href=\"mailto:info@blueblocks.in\" style=\"color:#2C2F8F;font-weight:600;\">info@blueblocks.in</a>, with a short note about what you are looking for."
+          }
+        },
+        {
+          "type": "whyBlueBlocksCareers",
+          "props": {
+            "eyebrow": "WHY BLUE BLOCKS",
+            "title": "Why Educators Choose Blue Blocks",
+            "text": [
+              "If you’re weighing a Montessori teaching job here against a role at a traditional CBSE or ICSE school, here’s the honest answer: Montessori asks more of you as an educator, not less. You won’t get handed a fixed syllabus and a bell schedule.",
+              "You will be trusted to observe, adapt, and grow alongside every child in your room, backed by AMI standards that actually makes the right kind of teaching possible. At our school we treat Montessori as a scientific discipline. Our founder holds all four Montessori AMI Diplomas (0-18) and our internal culture is one where continuing to learn is expected of everyone, at every level."
+            ],
+            "readyCta": {
+              "title": "Ready to Be Part of a Different Kind of Classroom?",
+              "subtitle": "Send in Your Complete Applications Now",
+              "label": "Apply via Email",
+              "href": "mailto:sandhya@blueblocks.in"
             }
           }
         }
@@ -5854,22 +5925,22 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Careers",
-          "url": "#/careers/"
+          "url": "https://blueblocks.in/careers/"
         }
       ],
       "schema": [
         {
           "@context": "https://schema.org",
           "@type": "WebPage",
-          "name": "Careers",
-          "url": "#/careers/",
-          "description": "Learn more about Blue Blocks.",
+          "name": "Careers at Blue Blocks Montessori | Jobs in Hyderabad",
+          "url": "https://blueblocks.in/careers/",
+          "description": "Careers at Blue Blocks Montessori School Hyderabad. Open roles for AMI Montessori guides, Cambridge IGCSE Facilitators, and mission-aligned professionals.",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -5880,15 +5951,59 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Careers",
-              "item": "#/careers/"
+              "item": "https://blueblocks.in/careers/"
             }
           ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "Montessori Elementary Guide (Ages 6 to 12), AMI Certified",
+          "datePosted": "2026-07-01",
+          "employmentType": "FULL_TIME",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Blue Blocks Montessori School",
+            "sameAs": "https://blueblocks.in"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Hyderabad",
+              "addressRegion": "Telangana",
+              "addressCountry": "IN"
+            }
+          },
+          "description": "AMI certified Elementary Guide to join a Montessori community where kids get to explore, question, discover, and grow through Cosmic Education."
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "JobPosting",
+          "title": "English Facilitator, Cambridge IGCSE (Grades 7 to 10)",
+          "datePosted": "2026-07-01",
+          "employmentType": "FULL_TIME",
+          "hiringOrganization": {
+            "@type": "Organization",
+            "name": "Blue Blocks Montessori School",
+            "sameAs": "https://blueblocks.in"
+          },
+          "jobLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Hyderabad",
+              "addressRegion": "Telangana",
+              "addressCountry": "IN"
+            }
+          },
+          "description": "English Facilitator who genuinely loves language, literature, and real conversations with adolescents for our Tellapur campus Cambridge IGCSE programme."
         }
       ]
     },
@@ -6234,11 +6349,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Micro Research Institute",
-          "url": "#/research-institute/"
+          "url": "https://blueblocks.in/research-institute/"
         }
       ],
       "schema": [
@@ -6246,10 +6361,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Micro Research Institute",
-          "url": "#/research-institute/",
+          "url": "https://blueblocks.in/research-institute/",
           "description": "Advancing the Science of Innovation Development in Childhood and Adolescence",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -6260,13 +6375,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/research-institute/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Micro Research Institute",
-              "item": "#/research-institute/"
+              "item": "https://blueblocks.in/research-institute/"
             }
           ]
         }
@@ -6473,11 +6588,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "For Parents",
-          "url": "#/parents/"
+          "url": "https://blueblocks.in/parents/"
         }
       ],
       "schema": [
@@ -6485,10 +6600,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "For Parents",
-          "url": "#/parents/",
+          "url": "https://blueblocks.in/parents/",
           "description": "Explore recommended books that deepen your understanding of Montessori philosophy, child psychology, and developmental stages from early childhood...",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -6499,13 +6614,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/parents/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "For Parents",
-              "item": "#/parents/"
+              "item": "https://blueblocks.in/parents/"
             }
           ]
         }
@@ -6878,11 +6993,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Innovation",
-          "url": "#/innovation/"
+          "url": "https://blueblocks.in/innovation/"
         }
       ],
       "schema": [
@@ -6890,10 +7005,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Innovation",
-          "url": "#/innovation/",
+          "url": "https://blueblocks.in/innovation/",
           "description": "Innovation is not a subject. It is a biological stage of development. We don't just teach technology; we nurture the 'First Principles' thinking that created it",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -6904,13 +7019,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/innovation/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Innovation",
-              "item": "#/innovation/"
+              "item": "https://blueblocks.in/innovation/"
             }
           ]
         }
@@ -9220,15 +9335,15 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Innovation",
-          "url": "#/innovation/"
+          "url": "https://blueblocks.in/innovation/"
         },
         {
           "name": "{{title}}",
-          "url": "#/innovation/{slug}"
+          "url": "https://blueblocks.in/innovation/{slug}"
         }
       ],
       "schema": [
@@ -9236,10 +9351,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Innovation Detail",
-          "url": "#/innovation/{slug}",
+          "url": "https://blueblocks.in/innovation/{slug}",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -9250,19 +9365,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/innovation/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Innovation",
-              "item": "#/innovation/"
+              "item": "https://blueblocks.in/innovation/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "{{title}}",
-              "item": "#/innovation/{slug}"
+              "item": "https://blueblocks.in/innovation/{slug}"
             }
           ]
         }
@@ -9480,11 +9595,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Montessori System",
-          "url": "#/montessori-system/"
+          "url": "https://blueblocks.in/montessori-system/"
         }
       ],
       "schema": [
@@ -9492,10 +9607,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Montessori System",
-          "url": "#/montessori-system/",
+          "url": "https://blueblocks.in/montessori-system/",
           "description": "Maria Montessori was a visionary who disabused the traditional methods of education for being too constrictive and non child friendly. In her lifelong work with",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -9506,13 +9621,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/montessori-system/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Montessori System",
-              "item": "#/montessori-system/"
+              "item": "https://blueblocks.in/montessori-system/"
             }
           ]
         }
@@ -9774,11 +9889,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Campus",
-          "url": "#/campus/"
+          "url": "https://blueblocks.in/campus/"
         }
       ],
       "schema": [
@@ -9786,10 +9901,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Campus",
-          "url": "#/campus/",
+          "url": "https://blueblocks.in/campus/",
           "description": "Blue Blocks campuses are designed as calm, spacious, and purpose-led learning environments where children feel safe to explore, move, and grow with independence",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -9800,13 +9915,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/campus/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Campus",
-              "item": "#/campus/"
+              "item": "https://blueblocks.in/campus/"
             }
           ]
         }
@@ -9928,11 +10043,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Videos",
-          "url": "#/videos/"
+          "url": "https://blueblocks.in/videos/"
         }
       ],
       "schema": [
@@ -9940,10 +10055,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Videos",
-          "url": "#/videos/",
+          "url": "https://blueblocks.in/videos/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -9954,13 +10069,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/videos/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Videos",
-              "item": "#/videos/"
+              "item": "https://blueblocks.in/videos/"
             }
           ]
         }
@@ -10211,11 +10326,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "FAQ",
-          "url": "#/faq/"
+          "url": "https://blueblocks.in/faq/"
         }
       ],
       "schema": [
@@ -10223,10 +10338,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "FAQ",
-          "url": "#/faq/",
+          "url": "https://blueblocks.in/faq/",
           "description": "Learn more about Blue Blocks.",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -10237,13 +10352,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/faq/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "FAQ",
-              "item": "#/faq/"
+              "item": "https://blueblocks.in/faq/"
             }
           ]
         }
@@ -10427,11 +10542,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Privacy Policy",
-          "url": "#/privacy-policy/"
+          "url": "https://blueblocks.in/privacy-policy/"
         }
       ],
       "schema": [
@@ -10439,10 +10554,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Privacy Policy",
-          "url": "#/privacy-policy/",
+          "url": "https://blueblocks.in/privacy-policy/",
           "description": "Blue Blocks (<b>â€œBlue Blocksâ€, â€œweâ€, â€œourâ€, â€œusâ€</b>) respects your privacy and is committed to protecting the personal information you share with us.",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -10453,13 +10568,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/privacy-policy/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Privacy Policy",
-              "item": "#/privacy-policy/"
+              "item": "https://blueblocks.in/privacy-policy/"
             }
           ]
         }
@@ -10659,11 +10774,11 @@
       "breadcrumbs": [
         {
           "name": "Home",
-          "url": "#/"
+          "url": "https://blueblocks.in/"
         },
         {
           "name": "Terms of Use",
-          "url": "#/terms/"
+          "url": "https://blueblocks.in/terms/"
         }
       ],
       "schema": [
@@ -10671,10 +10786,10 @@
           "@context": "https://schema.org",
           "@type": "WebPage",
           "name": "Terms of Use",
-          "url": "#/terms/",
+          "url": "https://blueblocks.in/terms/",
           "description": "Welcome to the Blue Blocks website (<b>â€œWebsiteâ€</b>). These Terms of Use (<b>â€œTermsâ€</b>) govern your access and use of this Website and its content.",
           "isPartOf": {
-            "@id": "##website"
+            "@id": "https://blueblocks.in/#website"
           }
         },
         {
@@ -10685,13 +10800,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "#/"
+              "item": "https://blueblocks.in/terms/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Terms of Use",
-              "item": "#/terms/"
+              "item": "https://blueblocks.in/terms/"
             }
           ]
         }

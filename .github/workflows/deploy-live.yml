@@ -17,12 +17,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: "npm"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Next.js (Static Export)
         run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://blueblocks.in
 
       - name: Verify export output
         run: |
@@ -32,7 +35,8 @@ jobs:
             echo "ERROR: out/ is missing. Check next.config output='export' and remove unsupported server-only routes."
             exit 1
           fi
-          ls -la out
+          echo "Total HTML files:"
+          find out -name "*.html" | wc -l
           find out -maxdepth 2 -name "index.html" -print
 
       - name: Deploy to cPanel via FTPS (LIVE)
@@ -45,3 +49,7 @@ jobs:
           port: 21
           local-dir: out/
           server-dir: ./
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**

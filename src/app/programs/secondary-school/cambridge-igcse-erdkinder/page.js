@@ -19,6 +19,7 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+  robots: { index: true, follow: true },
 };
 
 export default function CambridgeIgcseErdkinderPage() {

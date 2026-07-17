@@ -43,7 +43,11 @@ http://www.blueblocks.in/*    https://blueblocks.in/:splat  301!
 /founders/munira-hussain                              /about-us/founders/munira-hussain/        301!
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Legacy slug redirects
-# ─────────────────────────────────────────────────────────────────────────────
 /toddler-developmental-architecture                   /neuropsychiatry-of-toddler-plane/        301!
 /toddler-developmental-architecture/                  /neuropsychiatry-of-toddler-plane/        301!
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Legacy team profile redirects to Guide cards
+# ─────────────────────────────────────────────────────────────────────────────
+/team/:slug                                           /about-us/?guide=:slug                    301!
+/team/*                                               /about-us/                                301!

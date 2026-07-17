@@ -1,31 +1,91 @@
-﻿import Container from "@/components/layout/Container";
+import Container from "@/components/layout/Container";
 
-export default function LocationsGrid({ bg = "#F3E3CF", locations = [] }) {
+export default function LocationsGrid({ bg = "#F8F7F4", locations = [] }) {
   return (
     <section className="w-full" style={{ backgroundColor: bg }}>
-      <Container className="py-12 sm:py-14">
-        <div className="grid gap-10 lg:grid-cols-2">
+      <Container className="py-14 sm:py-16">
+        {/* Section label */}
+        <div className="flex items-center gap-4 mb-10">
+          <div
+            className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0"
+            style={{ backgroundColor: "#2C2F8F" }}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </div>
+          <div>
+            <div className="text-xs font-bold tracking-widest uppercase text-slate-400">Our Campuses</div>
+            <div className="text-lg font-semibold text-slate-900">Find Us in Hyderabad</div>
+          </div>
+        </div>
+
+        <div className="grid gap-8 lg:grid-cols-2">
           {locations.map((loc, idx) => (
-            <div key={idx} className="space-y-4">
-              <div className="flex items-start gap-2">
-                <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-slate-800/70" />
+            <div
+              key={idx}
+              className="group rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300"
+              style={{ backgroundColor: "#fff" }}
+            >
+              {/* Campus header card */}
+              <div
+                className="px-6 py-5 flex items-start gap-4"
+                style={{
+                  background: idx === 0
+                    ? "linear-gradient(135deg, #F3E3CF 0%, #f0d9ba 100%)"
+                    : "linear-gradient(135deg, #E7E8FF 0%, #d6d8ff 100%)",
+                }}
+              >
+                {/* Number badge */}
+                <div
+                  className="w-10 h-10 rounded-2xl flex items-center justify-center shrink-0 text-sm font-bold"
+                  style={{
+                    backgroundColor: idx === 0 ? "#2C2F8F" : "#0f1f3d",
+                    color: "#fff",
+                  }}
+                >
+                  {idx + 1}
+                </div>
+
                 <div>
-                  <div className="text-sm sm:text-base font-semibold text-slate-900">{loc?.title}</div>
-                  <div className="mt-1 text-[11px] sm:text-xs text-slate-600/80 leading-snug">{loc?.address}</div>
+                  <div className="font-bold text-slate-900 text-[15px] leading-snug">
+                    {loc?.title}
+                  </div>
+                  <div className="flex items-start gap-1.5 mt-1.5">
+                    <svg
+                      className="shrink-0 mt-0.5"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#64748b"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden
+                    >
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span className="text-xs text-slate-500 leading-snug">{loc?.address}</span>
+                  </div>
                 </div>
               </div>
 
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              {/* Map embed */}
+              <div className="relative overflow-hidden" style={{ height: 280 }}>
                 {loc?.mapEmbedUrl ? (
                   <iframe
                     src={getMapIframeSrc(loc?.mapEmbedUrl)}
-                    className="w-full h-[260px] lg:h-[420px]"
+                    className="w-full h-full"
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title={loc?.title || "Campus map"}
+                    style={{ border: 0 }}
                   />
                 ) : (
-                  <div className="flex h-[260px] lg:h-[420px] items-center justify-center bg-slate-50 p-6 text-center text-sm text-slate-600">
+                  <div className="flex h-full items-center justify-center bg-slate-50 text-sm text-slate-400">
                     Map unavailable
                   </div>
                 )}
