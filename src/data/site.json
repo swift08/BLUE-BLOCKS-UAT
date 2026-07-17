@@ -880,7 +880,7 @@
             "title": "The 2009 Origin",
             "paragraphs": [
               "It started with a simple observation: Hyderabad needed an environment that trusted the child completely. In 2009, Pavan Goyal and Munira Hussain founded Blue Blocks with a small group of students and a rigid commitment to pure AMI (Association Montessori Internationale) standards.",
-              "We didn't start with grand buildings. We started with the materials. Over the last 15 years, that single classroom has grown into a campus housing innovation labs and a thriving adolescent community. But our core remains unchanged: we observe the child to understand their needs, just as Dr. Maria Montessori did."
+              "We didn't start with grand buildings. We started with the materials. Over the last 17 years, that single classroom has grown into a campus housing innovation labs and a thriving adolescent community. But our core remains unchanged: we observe the child to understand their needs, just as Dr. Maria Montessori did."
             ],
             "readMore": {
               "enabled": false,
@@ -913,7 +913,7 @@
               {
                 "year": "2024",
                 "colorClass": "text-sky-300",
-                "text": "The Expansion Launched the Elementary (6-12) environment. While other schools added desks and exams, we added a library and a garden, committing to the 'Cosmic Education' curriculum."
+                "text": "The Tellapur Campus Established our primary-through-adolescent continuum in a custom biophilic environment, integrating Cambridge IGCSE with on-campus space and drone innovation programs."
               }
             ]
           }
@@ -972,7 +972,7 @@
               {
                 "icon": "/icon/leaf.svg",
                 "title": "Applied Montessori",
-                "text": "We believe Montessori principals apply to the future as much as the past. Our campus includes specialized spaces like the Space Lab and Drone Centre, where students apply their natural focus to real-world engineering."
+                "text": "We believe Montessori principles apply to the future as much as the past. Our campus includes specialized spaces like the Space Lab and Drone Centre, where students apply their natural focus to real-world engineering."
               }
             ]
           }
@@ -2737,7 +2737,7 @@
               {
                 "image": "/achievements/sbb1.webp",
                 "imageAlt": "Mission SBB-1",
-                "title": "Mission SBB-1 (Authorized by ISRO/IN-SPACe",
+                "title": "Mission SBB-1 (Authorized by ISRO/IN-SPACe)",
                 "text": "A payload designed and engineered by our adolescents received IN-SPACe authorization for launch with ISRO, demonstrating that Montessori students can operate within high-stakes technical and regulatory frameworks.",
                 "href": "/research/sbb-1",
                 "bg": "#78C4E5"
@@ -2772,17 +2772,17 @@
               },
               {
                 "left": "Engineering",
-                "right": "Innovation Labs\n(Partnered with IIIT Hyderabad)",
+                "right": "Innovation Labs\n(Partnered with IIT Hyderabad)",
                 "bg": "#E3EBDD"
               },
               {
                 "left": "Data-Backed Care",
-                "right": "The Micro Research Institute\n(15 Years of Longitudinal Data)",
+                "right": "The Micro Research Institute\n(17-Year Longitudinal Data)",
                 "bg": "#DCE9EA"
               },
               {
                 "left": "Stability",
-                "right": "The Continuum\n(One Campus: 0â€“16 Years)",
+                "right": "The Continuum\n(One Campus: 0â€“18 Years)",
                 "bg": "#E7E4E1"
               }
             ]
@@ -2844,7 +2844,7 @@
                 "image": "/achievements/patents.webp",
                 "imageAlt": "17-year longitudinal dataset",
                 "title": "17-Year Longitudinal Dataset",
-                "text": "Continuous observational research on child development since 2009 across 847 cumulative students within authentic Montessori environments. The dataset informs every pedagogical decision at Blue Blocks.",
+                "text": "Continuous observational research on child development since 2009 across 1,047 children within authentic Montessori environments. The dataset informs every pedagogical decision at Blue Blocks.",
                 "bg": "#F7E28D"
               },
               {
@@ -2856,9 +2856,9 @@
               },
               {
                 "image": "/achievements/sbb1.webp",
-                "imageAlt": "IMF Trusteeship",
-                "title": "IMF (Institutional) Trusteeship",
-                "text": "The Blue Blocks Research Institute Foundation operates under formal trusteeship to fund longitudinal child-development research, observation protocols, and AMI-aligned innovation pedagogy.",
+                "imageAlt": "Indian Montessori Foundation Trusteeship",
+                "title": "Indian Montessori Foundation Trusteeship",
+                "text": "Pavan Goyal serves as Trustee of the Indian Montessori Foundation, funding longitudinal child-development research, observation protocols, and AMI-aligned innovation pedagogy.",
                 "bg": "#F6A894"
               }
             ]

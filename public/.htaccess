@@ -369,3 +369,15 @@ ErrorDocument 404 /404/index.html
     ExpiresByType font/ttf "access plus 1 year"
     ExpiresByType font/otf "access plus 1 year"
 </IfModule>
+
+# --------------------------------------------------
+# 6) HTML Caching Override (Prevent Stale Cache)
+# --------------------------------------------------
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "public, max-age=0, must-revalidate"
+        Header set Pragma "no-cache"
+        ExpiresActive Off
+    </FilesMatch>
+</IfModule>
+

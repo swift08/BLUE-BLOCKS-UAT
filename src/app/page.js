@@ -147,7 +147,7 @@ const structuredData = {
     "foundingDate": "2009",
     "numberOfStudents": {
       "@type": "QuantitativeValue",
-      "value": 847,
+      "value": 1047,
       "unitText": "cumulative students since founding"
     },
     "founder": [
@@ -278,7 +278,7 @@ const structuredData = {
         "@type": "ResearchOrganization",
         "@id": "https://blueblocks.in/#microresearch",
         "name": "Blue Blocks Micro Research Institute",
-        "description": "The research arm of Blue Blocks Montessori School. Conducts longitudinal observational research on child development across a 15-year dataset of 847 children within authentic Montessori environments.",
+        "description": "The research arm of Blue Blocks Montessori School. Conducts longitudinal observational research on child development across a 17-year dataset of 1,047 children within authentic Montessori environments.",
         "parentOrganization": {
           "@id": "https://blueblocks.in/#organization"
         },

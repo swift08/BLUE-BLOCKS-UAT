@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
     title: "Blog Article | Blue Blocks",
     description: "Embedded Blue Blocks blog article view.",
     robots: {
-      index: false,
+      index: true,
       follow: true,
     },
     alternates: {

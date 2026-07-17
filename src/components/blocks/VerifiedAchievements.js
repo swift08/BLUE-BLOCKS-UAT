@@ -84,14 +84,16 @@ function AchievementCard({
       </div>
 
       {/* CTA */}
-      <div className="mt-4 flex justify-end">
-        <a
-          href={href}
-          className="inline-flex items-center gap-2 font-semibold tracking-wide text-slate-900/80 hover:text-slate-900"
-        >
-          READ MORE <span aria-hidden="true">→</span>
-        </a>
-      </div>
+      {href && href !== "#" ? (
+        <div className="mt-4 flex justify-end">
+          <a
+            href={href}
+            className="inline-flex items-center gap-2 font-semibold tracking-wide text-slate-900/80 hover:text-slate-900"
+          >
+            READ MORE <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      ) : null}
     </div>
   );
 }

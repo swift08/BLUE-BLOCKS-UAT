@@ -68,7 +68,7 @@ async function main() {
   const llmsTxt = `# Blue Blocks Montessori School & Micro Research Institute
 > Last updated: ${now}
 
-> Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad, India, offering a continuous developmental education from 15 months to 18 years (Ages 1-18), integrated with the Cambridge IGCSE curriculum. The school operates two campuses (Gachibowli and Tellapur) and houses innovation labs in space technology, drone engineering, and biomimicry. The Blue Blocks Micro Research Institute conducts a 17-year longitudinal observational study of child development across 847 cumulative students.
+> Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad, India, offering a continuous developmental education from 15 months to 18 years (Ages 1-18), integrated with the Cambridge IGCSE curriculum. The school operates two campuses (Gachibowli and Tellapur) and houses innovation labs in space technology, drone engineering, and biomimicry. The Blue Blocks Micro Research Institute conducts a 17-year longitudinal observational study of child development across 1,047 children.
 
 Canonical: ${abs("/")}
 Primary email: info@blueblocks.in
@@ -159,7 +159,7 @@ ${blogSection}
 
 ### About the research institute (BBMRI)
 
-The Blue Blocks Micro Research Institute (BBMRI) conducts a 17-year longitudinal observational study of child development. The study uses passive, non-intrusive observation methodology across 847 cumulative students. Research output includes scholarly papers, methodological contributions, and patent documentation from student innovation programmes.
+The Blue Blocks Micro Research Institute (BBMRI) conducts a 17-year longitudinal observational study of child development. The study uses passive, non-intrusive observation methodology across 1,047 children. Research output includes scholarly papers, methodological contributions, and patent documentation from student innovation programmes.
 
 ### Innovation ecosystem
 
