@@ -18,12 +18,6 @@ RUN npm run build
 # Stage 2: Serve application using lightweight Nginx
 FROM nginx:alpine AS runner
 
-# Remove default nginx configuration
-RUN rm /etc/nginx/conf.d/default.conf
-
-# Copy custom nginx configuration
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
 # Copy static export files from builder stage
 COPY --from=builder /app/out /usr/share/nginx/html
 
