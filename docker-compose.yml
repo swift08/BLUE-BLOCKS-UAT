@@ -6,4 +6,4 @@ services:
     container_name: blueblocks-web
     restart: always
     ports:
-      - "127.0.0.1:3018:80"
+      - "127.0.0.1:3018:8080"

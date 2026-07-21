@@ -15,13 +15,13 @@ COPY . .
 # Build the Next.js static export
 RUN npm run build
 
-# Stage 2: Serve application using lightweight Nginx
-FROM nginx:alpine AS runner
+# Stage 2: Serve application using lightweight unprivileged Nginx
+FROM nginxinc/nginx-unprivileged:alpine AS runner
 
 # Copy static export files from builder stage
 COPY --from=builder /app/out /usr/share/nginx/html
 
-# Expose HTTP port
-EXPOSE 80
+# Expose HTTP port (unprivileged port 8080)
+EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
