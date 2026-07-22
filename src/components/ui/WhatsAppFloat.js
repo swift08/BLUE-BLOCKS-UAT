@@ -1,7 +1,6 @@
 "use client";
 
-// No framer-motion — uses pure CSS animation for zero bundle cost.
-// The bounce effect is identical visually but saves ~150KB gzipped.
+import { useState, useEffect } from "react";
 
 function normalizePhone(phone = "") {
   return String(phone).replace(/[\D]/g, "");
@@ -14,14 +13,13 @@ function isMobileDevice() {
   );
 }
 
-function buildWaLink({ phone, text }) {
+function buildWaLink({ phone, text, isMobile }) {
   const p = normalizePhone(phone);
   if (!p) return null;
 
   const encodedText = text ? encodeURIComponent(text) : "";
-  const mobile = isMobileDevice();
 
-  if (mobile) {
+  if (isMobile) {
     return encodedText
       ? `https://wa.me/${p}?text=${encodedText}`
       : `https://wa.me/${p}`;
@@ -61,6 +59,12 @@ function reportWhatsappConversion(url) {
 }
 
 export default function WhatsAppFloat({ config }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(isMobileDevice());
+  }, []);
+
   const enabled = Boolean(config?.enabled);
   const phone = config?.phone || "";
   const message = config?.message || "";
@@ -71,7 +75,7 @@ export default function WhatsAppFloat({ config }) {
 
   if (!enabled) return null;
 
-  const href = buildWaLink({ phone, text: message });
+  const href = buildWaLink({ phone, text: message, isMobile });
   if (!href) return null;
 
   const handleClick = (event) => {
