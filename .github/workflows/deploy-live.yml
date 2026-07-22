@@ -1,4 +1,4 @@
-name: Deploy to blueblocks.in (LIVE)
+name: Deploy Docker to Server (LIVE)
 
 on:
   push:
@@ -6,50 +6,21 @@ on:
       - live
 
 jobs:
-  build-and-deploy:
+  deploy:
+    name: Deploy via SSH
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: SSH into Server and Deploy Docker Container
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          node-version: 22
-          cache: "npm"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build Next.js (Static Export)
-        run: npm run build
-        env:
-          NEXT_PUBLIC_SITE_URL: https://blueblocks.in
-
-      - name: Verify export output
-        run: |
-          echo "PWD: $(pwd)"
-          ls -la
-          if [ ! -d "out" ]; then
-            echo "ERROR: out/ is missing. Check next.config output='export' and remove unsupported server-only routes."
-            exit 1
-          fi
-          echo "Total HTML files:"
-          find out -name "*.html" | wc -l
-          find out -maxdepth 2 -name "index.html" -print
-
-      - name: Deploy to cPanel via FTPS (LIVE)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        with:
-          server: ${{ secrets.CPANEL_LIVE_FTP_SERVER }}
-          username: ${{ secrets.CPANEL_LIVE_FTP_USERNAME }}
-          password: ${{ secrets.CPANEL_LIVE_FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: out/
-          server-dir: ./
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: ${{ secrets.SERVER_PASSWORD }}
+          port: ${{ secrets.SERVER_SSH_PORT || '22' }}
+          script: |
+            cd ${{ secrets.SERVER_PATH }}
+            git pull origin live
+            docker compose up -d --build
+            docker image prune -f
