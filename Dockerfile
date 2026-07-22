@@ -18,6 +18,9 @@ RUN npm run build
 # Stage 2: Serve application using lightweight unprivileged Nginx
 FROM nginxinc/nginx-unprivileged:alpine AS runner
 
+# Copy custom Nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Copy static export files from builder stage
 COPY --from=builder /app/out /usr/share/nginx/html
 
