@@ -15,7 +15,7 @@ export const metadata = {
   },
 };
 
-const BLOG_URL = process.env.NEXT_PUBLIC_WORDPRESS_URL || "https://wp.blueblocks.in/blog/";
+const BLOG_URL = process.env.NEXT_PUBLIC_WORDPRESS_URL || "https://wp.blueblocks.in/";
 
 export default function BlogPage() {
   return (
