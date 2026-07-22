@@ -5708,6 +5708,11 @@
                   "placeholder": "Contact Number"
                 },
                 {
+                  "name": "age_of_the_child",
+                  "type": "text",
+                  "placeholder": "Age of the Child"
+                },
+                {
                   "name": "message",
                   "type": "textarea",
                   "placeholder": "Message",
@@ -5905,7 +5910,7 @@
                 "applyLabel": "Send Your Resume"
               }
             ],
-            "openApplicationNote": "Not seeing your role listed? You can still send us your resume and CV — with relevant work samples and portfolios (if any) — to <a href=\"mailto:info@blueblocks.in\" style=\"color:#2C2F8F;font-weight:600;\">info@blueblocks.in</a>, with a short note about what you are looking for."
+            "openApplicationNote": "Not seeing your role listed? You can still send us your resume and CV — with relevant work samples and portfolios (if any) — to <a href=\"mailto:sandhya@blueblocks.in\" style=\"color:#2C2F8F;font-weight:600;\">sandhya@blueblocks.in</a>, with a short note about what you are looking for."
           }
         },
         {

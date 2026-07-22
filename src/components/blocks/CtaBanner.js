@@ -72,20 +72,32 @@ export default function CtaBanner({
               ) : null}
             </div>
 
-            {/* IMAGE */}
+            {/* PLACEHOLDER FOR IMAGE (to reserve space in flex layout) */}
             {image && !isCenter ? (
-              <div className="relative hidden md:block sm:w-[86px] md:w-[666px] h-auto">
-                <Image
-                  src={image}
-                  alt={imageAlt || ""}
-                  width={Number(imageWidth) || 566}
-                  height={Number(imageHeight) || 506}
-                  style={{ width: "auto", height: "auto" }}
-                  className={`object-contain rounded-xl absolute ${imagePositionTopRight}`}
-                />
-              </div>
+              <div className="hidden md:block w-[30%] shrink-0" aria-hidden="true" />
             ) : null}
           </div>
+
+          {/* ACTUAL IMAGE (absolutely positioned relative to .bb-cta, bottom-aligned and clipped) */}
+          {image && !isCenter ? (
+            <div
+              className="absolute bottom-0 right-0 overflow-hidden pointer-events-none hidden md:block rounded-br-[1.5rem]"
+              style={{
+                top: "-300px", // Allow top to overflow
+                width: "340px", // Reduced from 420px
+                maxWidth: "30%", // Reduced from 35%
+              }}
+            >
+              <Image
+                src={image}
+                alt={imageAlt || ""}
+                width={Number(imageWidth) || 566}
+                height={Number(imageHeight) || 506}
+                style={{ width: "100%", height: "auto" }}
+                className="absolute bottom-0 right-0 object-contain object-bottom"
+              />
+            </div>
+          ) : null}
         </div>
       </Container>
     </section>

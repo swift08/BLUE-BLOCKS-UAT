@@ -5588,6 +5588,11 @@
                   "placeholder": "Contact Number"
                 },
                 {
+                  "name": "age_of_the_child",
+                  "type": "text",
+                  "placeholder": "Age of the Child"
+                },
+                {
                   "name": "message",
                   "type": "textarea",
                   "placeholder": "Message",
