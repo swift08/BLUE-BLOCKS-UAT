@@ -27,13 +27,15 @@ export async function generateMetadata({ params }) {
 
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
-  const liveUrl = `https://blueblocks.in/blog/${slug}/`;
+  const canonicalUrl = `https://blueblocks.in/blog/${slug}/`;
+  const wpBaseUrl = process.env.NEXT_PUBLIC_WORDPRESS_URL || "https://wp.blueblocks.in/blog/";
+  const embedUrl = `${wpBaseUrl.replace(/\/$/, "")}/${slug}/`;
 
   return (
     <main className="pt-28 sm:pt-32">
       <BlogEmbedFrame
-        src={liveUrl}
-        fallbackHref={liveUrl}
+        src={embedUrl}
+        fallbackHref={canonicalUrl}
         title={`Blue Blocks Blog Article: ${slug}`}
       />
     </main>

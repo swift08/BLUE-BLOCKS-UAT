@@ -216,7 +216,9 @@ export default function BlogEmbedFrame({ src, title, fallbackHref }) {
     const onMessage = (event) => {
       const iframeWindow = iframeRef.current?.contentWindow;
       if (!iframeWindow || event.source !== iframeWindow) return;
-      if (event.origin !== window.location.origin) return;
+      const isSameOrigin = event.origin === window.location.origin;
+      const isAllowedSubdomain = event.origin.endsWith("blueblocks.in");
+      if (!isSameOrigin && !isAllowedSubdomain) return;
 
       const data = event.data;
       if (!data || data.type !== HEIGHT_MESSAGE_TYPE) return;
