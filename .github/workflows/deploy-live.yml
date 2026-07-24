@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - live
+  workflow_dispatch:
 
 jobs:
   build-and-deploy-cpanel:
@@ -41,25 +42,10 @@ jobs:
 
       - name: Deploy to cPanel via FTP (LIVE)
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        continue-on-error: true
         with:
           server: ${{ secrets.CPANEL_LIVE_FTP_SERVER }}
           username: ${{ secrets.CPANEL_LIVE_FTP_USERNAME }}
           password: ${{ secrets.CPANEL_LIVE_FTP_PASSWORD }}
-          local-dir: out/
-          server-dir: ./
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-
-      - name: Deploy to cPanel via FTP (Standard)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        continue-on-error: true
-        with:
-          server: ${{ secrets.CPANEL_FTP_SERVER }}
-          username: ${{ secrets.CPANEL_FTP_USERNAME }}
-          password: ${{ secrets.CPANEL_FTP_PASSWORD }}
           local-dir: out/
           server-dir: ./
           exclude: |
