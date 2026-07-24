@@ -41,12 +41,8 @@ export default function AnnouncementSection({
       ? announcements
       : [{ title, badge, date, details, messages }];
 
-  // Sort announcements date-wise (ascending)
-  const sortedList = [...list].sort((a, b) => {
-    const dateA = new Date(a.date);
-    const dateB = new Date(b.date);
-    return dateA - dateB;
-  });
+  // Use announcements in configured order
+  const sortedList = list;
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
