@@ -9,6 +9,7 @@ on:
 jobs:
   build-and-deploy-cpanel:
     runs-on: ubuntu-latest
+    continue-on-error: true
 
     steps:
       - name: Checkout repo
@@ -52,3 +53,20 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+
+  deploy-ssh-docker:
+    name: Deploy via SSH Docker
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: SSH into Server and Deploy Docker Container
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST || secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ${{ secrets.SERVER_PATH }}
+            git pull origin live
+            docker compose up -d --build
+            docker image prune -f
