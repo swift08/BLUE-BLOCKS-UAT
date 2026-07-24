@@ -40,6 +40,50 @@ jobs:
           find out -name "*.html" | wc -l
           find out -maxdepth 2 -name "index.html" -print
 
+      - name: Deploy to cPanel via FTP (LIVE - public_html/blueblocks.in/ )
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        continue-on-error: true
+        with:
+          server: ${{ secrets.CPANEL_LIVE_FTP_SERVER }}
+          username: ${{ secrets.CPANEL_LIVE_FTP_USERNAME }}
+          password: ${{ secrets.CPANEL_LIVE_FTP_PASSWORD }}
+          local-dir: out/
+          server-dir: public_html/blueblocks.in/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+
+      - name: Deploy to cPanel via FTPS (LIVE - public_html/blueblocks.in/ )
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        continue-on-error: true
+        with:
+          server: ${{ secrets.CPANEL_LIVE_FTP_SERVER }}
+          username: ${{ secrets.CPANEL_LIVE_FTP_USERNAME }}
+          password: ${{ secrets.CPANEL_LIVE_FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: out/
+          server-dir: public_html/blueblocks.in/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+
+      - name: Deploy to cPanel via FTP (Standard - public_html/blueblocks.in/ )
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        continue-on-error: true
+        with:
+          server: ${{ secrets.CPANEL_FTP_SERVER }}
+          username: ${{ secrets.CPANEL_FTP_USERNAME }}
+          password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+          local-dir: out/
+          server-dir: public_html/blueblocks.in/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+
       - name: Deploy to cPanel via FTP (LIVE - ./ )
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         continue-on-error: true
@@ -97,5 +141,6 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+
 
 
