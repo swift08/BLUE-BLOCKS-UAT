@@ -53,22 +53,3 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-
-  deploy-ssh-docker:
-    name: Deploy via SSH Docker
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: SSH into Server and Deploy Docker Container
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.DEPLOY_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          password: ${{ secrets.SERVER_PASSWORD }}
-          port: ${{ secrets.SERVER_SSH_PORT || '22' }}
-          script: |
-            cd ${{ secrets.SERVER_PATH }}
-            git pull origin live
-            docker compose up -d --build
-            docker image prune -f
