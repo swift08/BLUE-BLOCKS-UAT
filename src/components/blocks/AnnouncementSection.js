@@ -29,9 +29,9 @@ const formatMessageText = (text) => {
 export default function AnnouncementSection({
   announcements = [],
   // Fallbacks for original props for backward-compatibility
-  title = "Elementary Farm Visit",
-  badge = "Upcoming Event",
-  date = "July 18, 2026",
+  title = "Build a Career That Shapes the Future",
+  badge = "Teacher Training",
+  date = "July 25, 2026",
   details = [],
   messages = [],
 }) {
