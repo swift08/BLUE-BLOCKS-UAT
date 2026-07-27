@@ -45,40 +45,9 @@ export const PAPER_SERIES = [
   },
 ];
 
-export const BLOG_POSTS = [
-  {
-    slug: "helicopter-parenting-and-the-independence-gap",
-    title: "Helicopter Parenting and the Independence Gap",
-    excerpt:
-      "Why over-assistance can delay executive function and what constructive independence looks like at home.",
-    category: "Parenting",
-    publishedDate: "To be updated",
-  },
-  {
-    slug: "the-huge-gap-between-marks-and-learning",
-    title: "The Huge Gap Between Marks and Learning",
-    excerpt:
-      "A practical guide to separating assessment scores from durable understanding and capability.",
-    category: "Learning Science",
-    publishedDate: "To be updated",
-  },
-  {
-    slug: "why-octagonal-classrooms-support-focus",
-    title: "Why Octagonal Classrooms Support Focus",
-    excerpt:
-      "How geometry, acoustics, and movement pathways can reduce cognitive overhead in early learning spaces.",
-    category: "Campus Design",
-    publishedDate: "To be updated",
-  },
-  {
-    slug: "cubsat-mission-how-students-build-real-systems",
-    title: "CubeSat Mission: How Students Build Real Systems",
-    excerpt:
-      "From prepared environments to applied systems engineering in adolescent innovation programs.",
-    category: "Innovation",
-    publishedDate: "To be updated",
-  },
-];
+// BLOG_POSTS removed: blog content now comes live from the headless
+// WordPress REST API at build time. See src/lib/wordpress.js (single source
+// of truth used by the blog pages, sitemap, and llms.txt generation).
 
 export const RESEARCH_PUBLICATIONS = [
   {

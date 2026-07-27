@@ -242,9 +242,19 @@ async function main() {
   const researchOutputs = Array.isArray(publishingModule.RESEARCH_OUTPUTS)
     ? publishingModule.RESEARCH_OUTPUTS
     : [];
-  const blogPosts = Array.isArray(publishingModule.BLOG_POSTS)
-    ? publishingModule.BLOG_POSTS
-    : [];
+
+  // Blog posts come from the live headless WordPress (single source of truth),
+  // so the sitemap never lists stale/404 slugs. Fails soft to an empty list.
+  const wordpressPath = path.join(process.cwd(), "src", "lib", "wordpress.js");
+  let blogPosts = [];
+  try {
+    const wp = await import(pathToFileURL(wordpressPath).href);
+    blogPosts = await wp.getPostSlugs();
+  } catch (err) {
+    console.warn(
+      `  ! Could not load blog slugs from WordPress: ${err?.message || err}`
+    );
+  }
 
   const entries = getRoutes({ researchOutputs, blogPosts });
   const xml = buildXml(entries);

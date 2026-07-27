@@ -22,9 +22,21 @@ async function main() {
   const publishingPath = path.join(process.cwd(), "src", "data", "publishing.js");
   const pub = await import(pathToFileURL(publishingPath).href);
 
-  const blogPosts = Array.isArray(pub.BLOG_POSTS) ? pub.BLOG_POSTS : [];
   const paperSeries = Array.isArray(pub.PAPER_SERIES) ? pub.PAPER_SERIES : [];
   const researchOutputs = Array.isArray(pub.RESEARCH_OUTPUTS) ? pub.RESEARCH_OUTPUTS : [];
+
+  // Blog posts come from the live headless WordPress (single source of truth),
+  // so llms.txt never lists stale/404 slugs. Fails soft to an empty list.
+  const wordpressPath = path.join(process.cwd(), "src", "lib", "wordpress.js");
+  let blogPosts = [];
+  try {
+    const wp = await import(pathToFileURL(wordpressPath).href);
+    blogPosts = await wp.getAllPosts();
+  } catch (err) {
+    console.warn(
+      `  ! Could not load blog posts from WordPress: ${err?.message || err}`
+    );
+  }
 
   const now = new Date().toISOString();
 
