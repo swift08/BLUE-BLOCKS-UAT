@@ -57,7 +57,7 @@ const STYLE_ID = "bb-blog-embed-overrides";
 const TOKEN_STYLE_ID = "bb-blog-embed-tokens";
 const HEIGHT_MESSAGE_TYPE = "bb-blog-embed-height";
 const MIN_FRAME_HEIGHT = 640;
-const DEFAULT_FRAME_HEIGHT = 1200;
+const DEFAULT_FRAME_HEIGHT = 2600;
 
 async function loadOverrideCss() {
   try {
