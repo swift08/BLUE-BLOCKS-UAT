@@ -10,25 +10,34 @@ const RAW_BASE =
   process.env.NEXT_PUBLIC_WORDPRESS_URL || "https://wp.blueblocks.in";
 
 export const WP_BASE = RAW_BASE.replace(/\/+$/, "");
-const API = `${WP_BASE}/wp-json/wp/v2`;
+export const API = `${WP_BASE}/wp-json/wp/v2`;
 const FETCH_TIMEOUT_MS = 20000;
+const BUILD_FETCH_VERSION = Date.now().toString(36);
+
+function withBuildCacheBust(url) {
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}_bb_build=${BUILD_FETCH_VERSION}`;
+}
 
 async function wpFetch(url) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+  const requestUrl = withBuildCacheBust(url);
   try {
-    const res = await fetch(url, {
+    const res = await fetch(requestUrl, {
       headers: { Accept: "application/json" },
       signal: controller.signal,
       cache: "force-cache",
     });
     if (!res.ok) {
-      console.warn(`[wordpress] HTTP ${res.status} for ${url}`);
+      console.warn(`[wordpress] HTTP ${res.status} for ${requestUrl}`);
       return null;
     }
     return await res.json();
   } catch (err) {
-    console.warn(`[wordpress] fetch failed for ${url}: ${err?.message || err}`);
+    console.warn(
+      `[wordpress] fetch failed for ${requestUrl}: ${err?.message || err}`
+    );
     return null;
   } finally {
     clearTimeout(timer);
@@ -64,9 +73,30 @@ export function stripHtml(input = "") {
     .trim();
 }
 
+function pickContentImage(post) {
+  const html = post?.content?.rendered || "";
+  const img = html.match(/<img\b[^>]*>/i)?.[0];
+  if (!img) return null;
+
+  const getAttr = (name) =>
+    img.match(new RegExp(`${name}=["']([^"']+)["']`, "i"))?.[1] || "";
+  const src = getAttr("src");
+  if (!src) return null;
+
+  return {
+    url: src,
+    cardUrl: src,
+    alt: decodeEntities(getAttr("alt")),
+    width: Number(getAttr("width")) || null,
+    height: Number(getAttr("height")) || null,
+  };
+}
+
 function pickFeatured(post) {
   const media = post?._embedded?.["wp:featuredmedia"]?.[0];
-  if (!media || media.code || !media.source_url) return null;
+  if (!media || media.code || !media.source_url) {
+    return pickContentImage(post);
+  }
   const details = media.media_details || {};
   const sizes = details.sizes || {};
   const card = sizes.medium_large || sizes.large || sizes.medium || null;
@@ -105,7 +135,7 @@ function pickAuthor(post) {
   return author?.name ? decodeEntities(author.name) : null;
 }
 
-function normalizePost(post) {
+export function normalizePost(post) {
   if (!post || !post.slug) return null;
   return {
     id: post.id,
@@ -119,6 +149,29 @@ function normalizePost(post) {
     categories: pickCategories(post),
     tags: pickTags(post),
     author: pickAuthor(post),
+  };
+}
+
+export function normalizeTag(tag) {
+  if (!tag || !tag.name || !tag.slug) return null;
+  return {
+    id: tag.id,
+    name: decodeEntities(tag.name || ""),
+    slug: tag.slug,
+    count: tag.count || 0,
+    link: tag.link || `${WP_BASE}/tag/${tag.slug}/`,
+  };
+}
+
+export function normalizeCategory(category) {
+  if (!category || !category.name || !category.slug) return null;
+  return {
+    id: category.id,
+    name: decodeEntities(category.name || ""),
+    slug: category.slug,
+    count: category.count || 0,
+    parent: category.parent || 0,
+    link: category.link || `${WP_BASE}/category/${category.slug}/`,
   };
 }
 
@@ -137,15 +190,16 @@ export async function getPopularTags(limit = 10) {
     `${API}/tags?per_page=${limit}&orderby=count&order=desc`
   );
   if (!Array.isArray(data)) return [];
-  return data
-    .map((tag) => ({
-      id: tag.id,
-      name: decodeEntities(tag.name || ""),
-      slug: tag.slug,
-      count: tag.count || 0,
-      link: tag.link || `${WP_BASE}/tag/${tag.slug}/`,
-    }))
-    .filter((tag) => tag.name && tag.slug);
+  return data.map(normalizeTag).filter(Boolean);
+}
+
+/** Current WordPress categories for the blog tab bar. */
+export async function getBlogCategories() {
+  const data = await wpFetch(
+    `${API}/categories?per_page=100&orderby=name&order=asc&hide_empty=true`
+  );
+  if (!Array.isArray(data)) return [];
+  return data.map(normalizeCategory).filter(Boolean);
 }
 
 /** Single post by slug, or null if not found. */

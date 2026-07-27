@@ -1,4 +1,4 @@
-import { getAllPosts, getPopularTags } from "@/lib/wordpress";
+import { getAllPosts, getBlogCategories, getPopularTags } from "@/lib/wordpress";
 import BlogIndexClient from "./BlogIndexClient";
 
 export const dynamic = "force-static";
@@ -12,14 +12,19 @@ export const metadata = {
 };
 
 export default async function BlogPage() {
-  const [posts, popularTags] = await Promise.all([
+  const [posts, popularTags, categories] = await Promise.all([
     getAllPosts(),
     getPopularTags(),
+    getBlogCategories(),
   ]);
 
   return (
     <main className="pt-24 sm:pt-28">
-      <BlogIndexClient posts={posts} popularTags={popularTags} />
+      <BlogIndexClient
+        posts={posts}
+        popularTags={popularTags}
+        categories={categories}
+      />
     </main>
   );
 }

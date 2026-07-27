@@ -2,6 +2,12 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import {
+  API as WP_API,
+  normalizeCategory,
+  normalizePost,
+  normalizeTag,
+} from "@/lib/wordpress";
 
 const DEFAULT_PER_PAGE = 8;
 const PER_PAGE_OPTIONS = [4, 6, 8, 12];
@@ -11,6 +17,70 @@ const SORT_OPTIONS = [
   { value: "modified_desc", label: "Recently updated" },
   { value: "modified_asc", label: "Least recently updated" },
 ];
+const SAME_ORIGIN_API = "/wp-json/wp/v2";
+
+async function fetchWordPressJson(path) {
+  const cacheBust = `_bb_live=${Date.now()}`;
+  const separator = path.includes("?") ? "&" : "?";
+  const pathWithBust = `${path}${separator}${cacheBust}`;
+  const candidates = [`${SAME_ORIGIN_API}${pathWithBust}`, `${WP_API}${pathWithBust}`];
+  let lastError = null;
+
+  for (const url of candidates) {
+    try {
+      const response = await fetch(url, {
+        headers: { Accept: "application/json" },
+        cache: "no-store",
+      });
+      if (!response.ok) {
+        lastError = new Error(`HTTP ${response.status}`);
+        continue;
+      }
+      return await response.json();
+    } catch (error) {
+      lastError = error;
+    }
+  }
+
+  throw lastError || new Error("Unable to fetch WordPress data");
+}
+
+async function fetchLiveBlogData() {
+  const [postsData, tagsData, categoriesData] = await Promise.all([
+    fetchWordPressJson("/posts?per_page=100&_embed=1&orderby=date&order=desc"),
+    fetchWordPressJson("/tags?per_page=10&orderby=count&order=desc"),
+    fetchWordPressJson(
+      "/categories?per_page=100&orderby=name&order=asc&hide_empty=true"
+    ),
+  ]);
+
+  return {
+    posts: Array.isArray(postsData)
+      ? postsData.map(normalizePost).filter(Boolean)
+      : [],
+    tags: Array.isArray(tagsData)
+      ? tagsData.map(normalizeTag).filter(Boolean)
+      : [],
+    categories: Array.isArray(categoriesData)
+      ? categoriesData.map(normalizeCategory).filter(Boolean)
+      : [],
+  };
+}
+
+async function fetchPostBySlug(slug) {
+  const data = await fetchWordPressJson(
+    `/posts?slug=${encodeURIComponent(slug)}&_embed=1`
+  );
+  if (!Array.isArray(data) || data.length === 0) return null;
+  return normalizePost(data[0]);
+}
+
+function getRouteBlogSlug() {
+  if (typeof window === "undefined") return null;
+  const path = window.location.pathname.replace(/\/+$/, "");
+  const match = path.match(/^\/blog\/([^/]+)$/);
+  return match ? decodeURIComponent(match[1]) : null;
+}
 
 function getPrimaryCategory(post) {
   return post.categories?.[0]?.name || "News";
@@ -108,36 +178,196 @@ function derivePopularTags(posts) {
   return sortByCount(Array.from(counts.values())).slice(0, 10);
 }
 
-export default function BlogIndexClient({ posts, popularTags = [] }) {
+function deriveCategories(posts) {
+  const counts = new Map();
+  posts.forEach((post) => {
+    post.categories?.forEach((category) => {
+      if (!category?.name) return;
+      const current = counts.get(category.name);
+      counts.set(category.name, {
+        ...category,
+        count: (current?.count || 0) + 1,
+      });
+    });
+  });
+  return sortByCount(Array.from(counts.values()));
+}
+
+function BlogPostArticle({ error, loading, post }) {
+  if (loading && !post) {
+    return (
+      <section className="bg-[#f6f9fd] px-4 py-16 sm:px-6">
+        <div className="mx-auto max-w-3xl rounded-lg border border-slate-200 bg-white p-8 text-slate-600">
+          Loading article...
+        </div>
+      </section>
+    );
+  }
+
+  if (error || !post) {
+    return (
+      <section className="bg-[#f6f9fd] px-4 py-16 sm:px-6">
+        <div className="mx-auto max-w-3xl rounded-lg border border-slate-200 bg-white p-8">
+          <p className="text-slate-600">This article could not be loaded.</p>
+          <Link
+            href="/blog/"
+            className="mt-4 inline-flex text-sm font-medium text-[#053f77] hover:underline"
+          >
+            Back to all articles
+          </Link>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <article>
+      <header className="relative bg-[#0b2f57]">
+        {post.featured ? (
+          <div className="absolute inset-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={post.featured.url}
+              alt=""
+              width={post.featured.width || undefined}
+              height={post.featured.height || undefined}
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-[#05233f]/70" />
+          </div>
+        ) : null}
+
+        <div className="relative mx-auto flex min-h-[420px] max-w-5xl flex-col justify-end px-4 pb-12 pt-20 sm:px-6 sm:pb-16">
+          <Link
+            href="/blog/"
+            className="mb-8 inline-flex w-fit items-center gap-1 rounded-full bg-white/12 px-4 py-2 text-sm font-medium text-white ring-1 ring-white/25 transition hover:bg-white/18"
+          >
+            <span aria-hidden>&larr;</span> All articles
+          </Link>
+
+          {post.categories[0] ? (
+            <span className="w-fit rounded-sm bg-[#12a9a4] px-3 py-1.5 text-xs font-bold uppercase leading-none text-white">
+              {post.categories[0].name}
+            </span>
+          ) : null}
+
+          <h1 className="mt-4 max-w-4xl text-3xl font-semibold leading-tight text-white sm:text-5xl">
+            {post.title}
+          </h1>
+
+          <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-white/80">
+            {post.author ? <span>By {post.author}</span> : null}
+            {post.author && post.date ? <span aria-hidden>|</span> : null}
+            {post.date ? (
+              <time dateTime={post.date}>{formatDate(post.date)}</time>
+            ) : null}
+          </div>
+        </div>
+      </header>
+
+      <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
+        <div
+          className="blog-content"
+          dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+        />
+
+        <div className="mt-12 border-t border-slate-200 pt-6">
+          <Link
+            href="/blog/"
+            className="inline-flex items-center gap-1 text-sm font-medium text-[#0f52ba] hover:underline"
+          >
+            <span aria-hidden>&larr;</span> Back to all articles
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+export default function BlogIndexClient({
+  posts,
+  popularTags = [],
+  categories: initialCategories = [],
+}) {
+  const [livePosts, setLivePosts] = useState(posts);
+  const [liveTags, setLiveTags] = useState(popularTags);
+  const [liveCategories, setLiveCategories] = useState(initialCategories);
   const [activeCategory, setActiveCategory] = useState("All");
   const [activeTopic, setActiveTopic] = useState(null);
   const [perPage, setPerPage] = useState(DEFAULT_PER_PAGE);
   const [sortKey, setSortKey] = useState("date_desc");
   const [page, setPage] = useState(1);
   const [now, setNow] = useState(null);
+  const [routeSlug, setRouteSlug] = useState(null);
+  const [routePost, setRoutePost] = useState(null);
+  const [routeLoading, setRouteLoading] = useState(false);
+  const [routeError, setRouteError] = useState(null);
 
   useEffect(() => {
     setNow(new Date());
+    setRouteSlug(getRouteBlogSlug());
   }, []);
 
-  const categories = useMemo(() => {
-    const counts = new Map();
-    posts.forEach((post) => {
-      post.categories?.forEach((category) => {
-        if (category?.name) counts.set(category.name, (counts.get(category.name) || 0) + 1);
-      });
-    });
-    return [
-      { name: "All", count: posts.length },
-      ...sortByCount(Array.from(counts, ([name, count]) => ({ name, count }))),
-    ];
-  }, [posts]);
+  useEffect(() => {
+    let cancelled = false;
+
+    async function refreshFromWordPress() {
+      try {
+        const fresh = await fetchLiveBlogData();
+        if (cancelled) return;
+        if (fresh.posts.length) setLivePosts(fresh.posts);
+        if (fresh.tags.length) setLiveTags(fresh.tags);
+        if (fresh.categories.length) setLiveCategories(fresh.categories);
+      } catch (error) {
+        if (!cancelled) console.warn("[blog] live WordPress refresh failed", error);
+      }
+    }
+
+    refreshFromWordPress();
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!routeSlug) return undefined;
+    let cancelled = false;
+
+    async function loadRoutePost() {
+      setRouteLoading(true);
+      setRouteError(null);
+      try {
+        const post = await fetchPostBySlug(routeSlug);
+        if (cancelled) return;
+        setRoutePost(post);
+        if (!post) setRouteError(new Error("Article not found"));
+      } catch (error) {
+        if (!cancelled) setRouteError(error);
+      } finally {
+        if (!cancelled) setRouteLoading(false);
+      }
+    }
+
+    loadRoutePost();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [routeSlug]);
+
+  const categoryTabs = useMemo(() => {
+    const categoryList = liveCategories.length
+      ? liveCategories
+      : deriveCategories(livePosts);
+    return [{ name: "All", count: livePosts.length }, ...categoryList];
+  }, [liveCategories, livePosts]);
 
   const filteredPosts = useMemo(() => {
     const categoryPosts =
       activeCategory === "All"
-        ? posts
-        : posts.filter((post) =>
+        ? livePosts
+        : livePosts.filter((post) =>
             post.categories?.some((category) => category.name === activeCategory)
           );
     const topicPosts = activeTopic
@@ -146,14 +376,24 @@ export default function BlogIndexClient({ posts, popularTags = [] }) {
         )
       : categoryPosts;
     return sortPosts(topicPosts, sortKey);
-  }, [activeCategory, activeTopic, posts, sortKey]);
+  }, [activeCategory, activeTopic, livePosts, sortKey]);
 
   const totalPages = Math.max(1, Math.ceil(filteredPosts.length / perPage));
   const currentPage = Math.min(page, totalPages);
   const firstIndex = (currentPage - 1) * perPage;
   const visiblePosts = filteredPosts.slice(firstIndex, firstIndex + perPage);
-  const topicTags = popularTags.length ? popularTags : derivePopularTags(posts);
-  const latestPosts = sortPosts(posts, "date_desc").slice(0, 4);
+  const topicTags = liveTags.length ? liveTags : derivePopularTags(livePosts);
+  const latestPosts = sortPosts(livePosts, "date_desc").slice(0, 4);
+  const routeFallbackPost = routeSlug
+    ? livePosts.find((post) => post.slug === routeSlug)
+    : null;
+  const activeRoutePost = routePost || routeFallbackPost;
+
+  useEffect(() => {
+    if (routeSlug && activeRoutePost?.title) {
+      document.title = `${activeRoutePost.title} | Blue Blocks Montessori School`;
+    }
+  }, [activeRoutePost?.title, routeSlug]);
 
   function selectCategory(category) {
     setActiveCategory(category);
@@ -177,12 +417,22 @@ export default function BlogIndexClient({ posts, popularTags = [] }) {
     setPage(1);
   }
 
+  if (routeSlug) {
+    return (
+      <BlogPostArticle
+        error={routeError}
+        loading={routeLoading && !activeRoutePost}
+        post={activeRoutePost}
+      />
+    );
+  }
+
   return (
     <section className="bg-[#f6f9fd] py-8 sm:py-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="-mx-4 overflow-x-auto px-4 pb-3">
           <div className="flex min-w-max gap-2">
-            {categories.map((category) => {
+            {categoryTabs.map((category) => {
               const isActive = activeCategory === category.name;
               return (
                 <button

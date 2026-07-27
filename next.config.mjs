@@ -51,6 +51,15 @@ const nextConfig = {
       },
     ];
   },
+
+  async rewrites() {
+    return [
+      {
+        source: "/wp-json/:path*",
+        destination: "https://wp.blueblocks.in/wp-json/:path*",
+      },
+    ];
+  },
 };
 
 const withBA = withBundleAnalyzer({
