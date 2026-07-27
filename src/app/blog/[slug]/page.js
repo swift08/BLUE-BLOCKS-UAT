@@ -59,58 +59,65 @@ export default async function BlogPostPage({ params }) {
   if (!post) notFound();
 
   return (
-    <main className="pt-28 sm:pt-32">
-      <article className="mx-auto max-w-3xl px-4 sm:px-6 py-10 sm:py-14">
-        <Link
-          href="/blog/"
-          className="inline-flex items-center gap-1 text-sm font-medium text-[#0f52ba] hover:underline"
-        >
-          <span aria-hidden>←</span> All articles
-        </Link>
-
-        <header className="mt-6">
-          {post.categories[0] ? (
-            <span className="inline-block rounded-full bg-[#0f52ba]/10 px-3 py-1 text-xs font-medium text-[#0f52ba]">
-              {post.categories[0].name}
-            </span>
+    <main className="pt-24 sm:pt-28">
+      <article>
+        <header className="relative bg-[#0b2f57]">
+          {post.featured ? (
+            <div className="absolute inset-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={post.featured.url}
+                alt=""
+                width={post.featured.width || undefined}
+                height={post.featured.height || undefined}
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-[#05233f]/70" />
+            </div>
           ) : null}
-          <h1 className="mt-3 text-3xl sm:text-4xl font-semibold leading-tight text-slate-900">
-            {post.title}
-          </h1>
-          <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-500">
-            {post.author ? <span>By {post.author}</span> : null}
-            {post.author && post.date ? <span aria-hidden>•</span> : null}
-            {post.date ? (
-              <time dateTime={post.date}>{formatDate(post.date)}</time>
+
+          <div className="relative mx-auto flex min-h-[420px] max-w-5xl flex-col justify-end px-4 pb-12 pt-20 sm:px-6 sm:pb-16">
+            <Link
+              href="/blog/"
+              className="mb-8 inline-flex w-fit items-center gap-1 rounded-full bg-white/12 px-4 py-2 text-sm font-medium text-white ring-1 ring-white/25 transition hover:bg-white/18"
+            >
+              <span aria-hidden>&larr;</span> All articles
+            </Link>
+
+            {post.categories[0] ? (
+              <span className="w-fit rounded-sm bg-[#12a9a4] px-3 py-1.5 text-xs font-bold uppercase leading-none text-white">
+                {post.categories[0].name}
+              </span>
             ) : null}
+
+            <h1 className="mt-4 max-w-4xl text-3xl font-semibold leading-tight text-white sm:text-5xl">
+              {post.title}
+            </h1>
+
+            <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-white/80">
+              {post.author ? <span>By {post.author}</span> : null}
+              {post.author && post.date ? <span aria-hidden>|</span> : null}
+              {post.date ? (
+                <time dateTime={post.date}>{formatDate(post.date)}</time>
+              ) : null}
+            </div>
           </div>
         </header>
 
-        {post.featured ? (
-          <figure className="mt-8 overflow-hidden rounded-2xl bg-slate-100">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={post.featured.url}
-              alt={post.featured.alt}
-              width={post.featured.width || undefined}
-              height={post.featured.height || undefined}
-              className="h-auto w-full object-cover"
-            />
-          </figure>
-        ) : null}
+        <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
+          <div
+            className="blog-content"
+            dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+          />
 
-        <div
-          className="blog-content mt-8"
-          dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-        />
-
-        <div className="mt-12 border-t border-slate-200 pt-6">
-          <Link
-            href="/blog/"
-            className="inline-flex items-center gap-1 text-sm font-medium text-[#0f52ba] hover:underline"
-          >
-            <span aria-hidden>←</span> Back to all articles
-          </Link>
+          <div className="mt-12 border-t border-slate-200 pt-6">
+            <Link
+              href="/blog/"
+              className="inline-flex items-center gap-1 text-sm font-medium text-[#0f52ba] hover:underline"
+            >
+              <span aria-hidden>&larr;</span> Back to all articles
+            </Link>
+          </div>
         </div>
       </article>
     </main>

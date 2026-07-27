@@ -87,6 +87,19 @@ function pickCategories(post) {
     .map((term) => ({ name: decodeEntities(term.name), slug: term.slug }));
 }
 
+function pickTags(post) {
+  const groups = post?._embedded?.["wp:term"] || [];
+  return groups
+    .flat()
+    .filter((term) => term && term.taxonomy === "post_tag")
+    .map((term) => ({
+      name: decodeEntities(term.name),
+      slug: term.slug,
+      count: term.count || 0,
+      link: term.link || `${WP_BASE}/tag/${term.slug}/`,
+    }));
+}
+
 function pickAuthor(post) {
   const author = post?._embedded?.author?.[0];
   return author?.name ? decodeEntities(author.name) : null;
@@ -104,6 +117,7 @@ function normalizePost(post) {
     modified: post.modified || post.date || null,
     featured: pickFeatured(post),
     categories: pickCategories(post),
+    tags: pickTags(post),
     author: pickAuthor(post),
   };
 }
@@ -115,6 +129,23 @@ export async function getAllPosts() {
   );
   if (!Array.isArray(data)) return [];
   return data.map(normalizePost).filter(Boolean);
+}
+
+/** Top WordPress tags used by the live blog sidebar's Popular Topics list. */
+export async function getPopularTags(limit = 10) {
+  const data = await wpFetch(
+    `${API}/tags?per_page=${limit}&orderby=count&order=desc`
+  );
+  if (!Array.isArray(data)) return [];
+  return data
+    .map((tag) => ({
+      id: tag.id,
+      name: decodeEntities(tag.name || ""),
+      slug: tag.slug,
+      count: tag.count || 0,
+      link: tag.link || `${WP_BASE}/tag/${tag.slug}/`,
+    }))
+    .filter((tag) => tag.name && tag.slug);
 }
 
 /** Single post by slug, or null if not found. */
