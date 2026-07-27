@@ -18,6 +18,7 @@ const SORT_OPTIONS = [
   { value: "modified_asc", label: "Least recently updated" },
 ];
 const SAME_ORIGIN_API = "/wp-json/wp/v2";
+const LIVE_REFRESH_MS = 30000;
 
 async function fetchWordPressJson(path) {
   const cacheBust = `_bb_live=${Date.now()}`;
@@ -161,6 +162,18 @@ function sortPosts(posts, sortKey) {
     if (sortKey === "modified_asc") return getTime(a.modified) - getTime(b.modified);
     return getTime(b.date) - getTime(a.date);
   });
+}
+
+function getPostsSignature(posts) {
+  return posts
+    .map((post) => `${post.slug}:${post.modified || post.date || ""}`)
+    .join("|");
+}
+
+function getTermsSignature(items) {
+  return items
+    .map((item) => `${item.slug}:${item.name}:${item.count || 0}`)
+    .join("|");
 }
 
 function derivePopularTags(posts) {
@@ -315,18 +328,47 @@ export default function BlogIndexClient({
       try {
         const fresh = await fetchLiveBlogData();
         if (cancelled) return;
-        if (fresh.posts.length) setLivePosts(fresh.posts);
-        if (fresh.tags.length) setLiveTags(fresh.tags);
-        if (fresh.categories.length) setLiveCategories(fresh.categories);
+        if (fresh.posts.length) {
+          setLivePosts((current) =>
+            getPostsSignature(current) === getPostsSignature(fresh.posts)
+              ? current
+              : fresh.posts
+          );
+        }
+        if (fresh.tags.length) {
+          setLiveTags((current) =>
+            getTermsSignature(current) === getTermsSignature(fresh.tags)
+              ? current
+              : fresh.tags
+          );
+        }
+        if (fresh.categories.length) {
+          setLiveCategories((current) =>
+            getTermsSignature(current) === getTermsSignature(fresh.categories)
+              ? current
+              : fresh.categories
+          );
+        }
       } catch (error) {
         if (!cancelled) console.warn("[blog] live WordPress refresh failed", error);
       }
     }
 
     refreshFromWordPress();
+    const timer = window.setInterval(refreshFromWordPress, LIVE_REFRESH_MS);
+
+    function refreshWhenVisible() {
+      if (!document.hidden) refreshFromWordPress();
+    }
+
+    window.addEventListener("focus", refreshFromWordPress);
+    document.addEventListener("visibilitychange", refreshWhenVisible);
 
     return () => {
       cancelled = true;
+      window.clearInterval(timer);
+      window.removeEventListener("focus", refreshFromWordPress);
+      document.removeEventListener("visibilitychange", refreshWhenVisible);
     };
   }, []);
 
@@ -350,9 +392,20 @@ export default function BlogIndexClient({
     }
 
     loadRoutePost();
+    const timer = window.setInterval(loadRoutePost, LIVE_REFRESH_MS);
+
+    function refreshWhenVisible() {
+      if (!document.hidden) loadRoutePost();
+    }
+
+    window.addEventListener("focus", loadRoutePost);
+    document.addEventListener("visibilitychange", refreshWhenVisible);
 
     return () => {
       cancelled = true;
+      window.clearInterval(timer);
+      window.removeEventListener("focus", loadRoutePost);
+      document.removeEventListener("visibilitychange", refreshWhenVisible);
     };
   }, [routeSlug]);
 

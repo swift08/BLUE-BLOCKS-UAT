@@ -1,5 +1,5 @@
 # Blue Blocks Montessori School & Micro Research Institute
-> Last updated: 2026-07-27T19:36:04.850Z
+> Last updated: 2026-07-27T20:00:53.443Z
 
 > Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad, India, offering a continuous developmental education from 15 months to 18 years (Ages 1-18), integrated with the Cambridge IGCSE curriculum. The school operates two campuses (Gachibowli and Tellapur) and houses innovation labs in space technology, drone engineering, and biomimicry. The Blue Blocks Micro Research Institute conducts a 17-year longitudinal observational study of child development across 1,047 children.
 
@@ -63,7 +63,6 @@ Founded: 2009
 
 ## Blog
 
-- [Test](https://blueblocks.in/blog/test/): Test What this asks of parents You do not need a Montessori classroom to practice the art of stepping back. You need only the willingness to leave a small silence unfilled once or twice a day. Ask your child a real question. Not a test question, not a routine one, a real one. And then […]
 - [How to Teach Your Toddler to Eat by Themselves: The Montessori Way](https://blueblocks.in/blog/how-to-teach-your-toddler-to-eat-by-themselves/): Your child is three years old, and you are still holding the spoon. You have tried letting her feed herself. Half the food ended up on the floor. So you went back to helping. This piece is about how to teach your toddler to eat by themselves, and why the environment matters more than the […]
 - [My Toddler Eats One Day and Not the Next: Why This Is Normal, What to Watch For](https://blueblocks.in/blog/my-toddler-eats-one-day-and-not-the-next/): Your toddler ate almost nothing at lunch. You felt it in your chest before you finished clearing the plate. You wonder if she is unwell, or bored with the food, or whether something happened at school you do not know about. Yesterday she ate everything. Today she ate two bites. Nothing else has changed. If […]
 - [Teaching Children to Think Before Answering: What Montessori Calls the Art of Stepping Back](https://blueblocks.in/blog/teaching-children-to-think-before-answering/): Teaching children to think before answering is one of the quieter skills a school can build, and one of the hardest for parents to protect at home. Most days, we do the opposite by accident. A child pauses at a question, and we fill the pause for her. We prompt, we suggest, we soften, […]

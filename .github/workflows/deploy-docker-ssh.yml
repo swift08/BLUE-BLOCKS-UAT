@@ -5,6 +5,9 @@ on:
     branches:
       - live
   workflow_dispatch:
+  repository_dispatch:
+    types:
+      - wordpress_content_changed
 
 jobs:
   deploy-ssh-docker:
