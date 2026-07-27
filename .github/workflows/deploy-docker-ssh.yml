@@ -20,8 +20,12 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_SSH_PORT || '22' }}
+          script_stop: true
           script: |
             cd ${{ secrets.SERVER_PATH }}
-            git pull origin live
+            git config remote.origin.url https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/nsbweb/blueblocks.git
+            git fetch origin live
+            git reset --hard origin/live
             docker compose up -d --build
             docker image prune -f
+
