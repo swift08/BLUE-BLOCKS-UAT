@@ -5,335 +5,559 @@
           http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://blueblocks.in/about-us/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/admissions/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/adolescent-social-newborn-paper/</loc>
+<<<<<<< HEAD
     <lastmod>2026-06-01T16:46:24Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/ami-training/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/annoucement-centre/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/blog/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T19:28:39Z</lastmod>
+=======
+    <lastmod>2026-07-22T17:47:29Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/campus/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/careers/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/contact-us/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/drone/</loc>
+<<<<<<< HEAD
     <lastmod>2026-06-01T16:46:24Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/faq/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/governance/ethics/</loc>
+<<<<<<< HEAD
     <lastmod>2026-06-01T16:46:24Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/governance/our-standards/</loc>
+<<<<<<< HEAD
     <lastmod>2026-06-01T16:46:24Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/innovation/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/montessori-system/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/neuropsychiatry-of-toddler-plane/</loc>
+<<<<<<< HEAD
     <lastmod>2026-06-01T16:46:24Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/papers/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/parents/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/privacy-policy/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/programs/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/programs/playgroup/montessori-toddler/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/programs/primary-school-elementary/class-1-to-6/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/programs/secondary-school/cambridge-igcse-erdkinder/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/research-institute/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/sitemap/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/terms/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/the-architecture-of-the-universe/</loc>
+<<<<<<< HEAD
     <lastmod>2026-06-01T16:46:24Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/the-conscious-construction-of-intelligence/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:32Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/videos/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T09:08:33Z</lastmod>
+=======
+    <lastmod>2026-07-21T18:03:24Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/about-us/founders/pavan-goyal/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/about-us/founders/munira-hussain/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/programs/playgroup/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/programs/nursery-school/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/programs/primary-school-elementary/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/programs/secondary-school/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/innovation/innovation-lab/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/innovation/drone-lab/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/innovation/biomimicry-hive/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/innovation/space-lab/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/innovation/cubesat-mission/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/inspace-authorization-cubesat-mission/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/longitudinal-innovation-development-0-18/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/research-briefs-series/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/methodological-contributions-observation-protocols/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/drone-patent-series-2019/</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/inspace-authorization-cubesat-mission/inspace-authorization-cubesat-mission.md</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/longitudinal-innovation-development-0-18/longitudinal-innovation-development-0-18.md</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/research-briefs-series/research-briefs-series.md</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/methodological-contributions-observation-protocols/methodological-contributions-observation-protocols.md</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://blueblocks.in/publications/drone-patent-series-2019/drone-patent-series-2019.md</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://blueblocks.in/blog/how-to-teach-your-toddler-to-eat-by-themselves/</loc>
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <loc>https://blueblocks.in/blog/helicopter-parenting-and-the-independence-gap/</loc>
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://blueblocks.in/blog/my-toddler-eats-one-day-and-not-the-next/</loc>
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <loc>https://blueblocks.in/blog/the-huge-gap-between-marks-and-learning/</loc>
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://blueblocks.in/blog/teaching-children-to-think-before-answering/</loc>
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <loc>https://blueblocks.in/blog/why-octagonal-classrooms-support-focus/</loc>
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://blueblocks.in/blog/when-children-teach-adults/</loc>
     <lastmod>2026-07-27T11:04:58Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -546,6 +770,10 @@
   <url>
     <loc>https://blueblocks.in/blog/5-ways-to-avoid-common-parenting-mistakes/</loc>
     <lastmod>2026-07-27T11:04:58Z</lastmod>
+=======
+    <loc>https://blueblocks.in/blog/cubsat-mission-how-students-build-real-systems/</loc>
+    <lastmod>2026-07-24T09:51:09Z</lastmod>
+>>>>>>> fd2275d (Forward preview query params to blog embed frame and add Nginx fallback for dynamic blog previews)
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
