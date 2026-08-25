@@ -223,14 +223,13 @@ export default function Header({ variant = "dark" }) {
       <header className="bg-transparent">
         <Container className="py-4 flex items-center justify-between relative">
           {/* Logo */}
-          <Link href="/">
+          <Link href="/" className="relative flex items-center">
             <Image
               src={site.logo || "/icon/logo.svg"}
               alt={site.name || "Logo"}
               width={82}
               height={67}
-              style={{ width: "auto", height: "auto" }}
-              className="object-contain"
+              className="h-14 w-auto object-contain"
               priority
             />
           </Link>
