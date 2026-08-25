@@ -7,7 +7,7 @@
 // crashing the whole-site build.
 
 const RAW_BASE =
-  process.env.NEXT_PUBLIC_WORDPRESS_URL || "https://blueblocks.in/blog";
+  process.env.NEXT_PUBLIC_WORDPRESS_URL || "https://wp.blueblocks.in";
 
 export const WP_BASE = RAW_BASE.replace(/\/+$/, "");
 export const API = `${WP_BASE}/wp-json/wp/v2`;
