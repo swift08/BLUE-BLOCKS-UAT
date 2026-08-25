@@ -7,6 +7,9 @@ export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
+  if (!posts || posts.length === 0) {
+    return [{ slug: "welcome" }];
+  }
   return posts.map((post) => ({ slug: post.slug }));
 }
 
