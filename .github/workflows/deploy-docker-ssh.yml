@@ -23,6 +23,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_SSH_PORT || '22' }}
+          command_timeout: 30m
           script_stop: true
           script: |
             cd ${{ secrets.SERVER_PATH }}

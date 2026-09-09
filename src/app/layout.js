@@ -8,18 +8,21 @@ import siteData from "@/data/site";
 import JsonLd from "@/components/seo/JsonLd";
 import normalizeJsonLd from "@/lib/seo/normalizeJsonLd";
 import { buildNextLevelSchema } from "@/lib/seo/nextLevelSchemas";
-import { Poppins } from "next/font/google";
+import localFont from "next/font/local";
 import "@/styles/global.css";
 import GoogleConversions from "@/components/GoogleConversions";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+// Self-hosted so Docker/CI builds do not depend on fonts.google.com
+const poppins = localFont({
+  src: [
+    { path: "../fonts/poppins-latin-400-normal.woff2", weight: "400", style: "normal" },
+    { path: "../fonts/poppins-latin-500-normal.woff2", weight: "500", style: "normal" },
+    { path: "../fonts/poppins-latin-600-normal.woff2", weight: "600", style: "normal" },
+    { path: "../fonts/poppins-latin-700-normal.woff2", weight: "700", style: "normal" },
+  ],
   display: "swap",
   preload: true,
-  // Reduces CLS by adjusting the fallback font metrics to closely match Poppins,
-  // preventing a visible layout shift when the custom font loads.
-  adjustFontFallback: true,
+  adjustFontFallback: "Arial",
   variable: "--font-poppins",
 });
 
@@ -61,8 +64,6 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://ssl.google-analytics.com" />
-        {/* fonts.gstatic pre-negotiation (font file CDN) */}
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={`min-h-screen bg-white text-slate-900 ${poppins.className}`}>
         {/* Google Tag Manager (noscript) */}
