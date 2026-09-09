@@ -80,6 +80,16 @@ function ContactIcon({ type }) {
   }
 }
 
+function getAutoComplete(field) {
+  if (field?.autoComplete) return field.autoComplete;
+  const name = String(field?.name || "").toLowerCase();
+  const type = String(field?.type || "").toLowerCase();
+  if (type === "email" || name.includes("email")) return "email";
+  if (name === "name" || name === "full_name" || name === "fullname") return "name";
+  if (name.includes("phone") || name.includes("tel") || type === "tel") return "tel";
+  return undefined;
+}
+
 function getIconType(item) {
   const src = String(item?.icon || "").toLowerCase();
   const label = String(item?.label || "").toLowerCase();
@@ -176,6 +186,14 @@ export default function ContactDetails({ eyebrow, heading, items = [], form }) {
           pageName: hubspot.pageName,
         },
       });
+
+      if (typeof window !== "undefined" && typeof window.oaiq === "function") {
+        window.oaiq(
+          "measure",
+          "lead_created",
+          { type: "customer_action" }
+        );
+      }
 
       setStatus({ type: "success", msg: form?.successMessage || "Thanks! We'll get back to you shortly." });
       setValues(initialValues);
@@ -347,6 +365,7 @@ export default function ContactDetails({ eyebrow, heading, items = [], form }) {
                         }}
                         style={baseInputStyle}
                         required={Boolean(f.required)}
+                        autoComplete={getAutoComplete(f) || "off"}
                         className={placeholderClass}
                       />
                       {hasError ? (
@@ -372,7 +391,7 @@ export default function ContactDetails({ eyebrow, heading, items = [], form }) {
                       }}
                       style={baseInputStyle}
                       required={Boolean(f.required)}
-                      autoComplete={f.autoComplete || undefined}
+                      autoComplete={getAutoComplete(f)}
                       className={placeholderClass}
                     />
                     {hasError ? (
