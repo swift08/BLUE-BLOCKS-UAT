@@ -9,8 +9,16 @@ COPY package.json ./
 # Install dependencies
 RUN npm install
 
-# Copy source code
+# Copy source code (must include real Git LFS files — run `git lfs pull` on the host before build)
 COPY . .
+
+# Fail the build early if catalogue videos are still LFS pointer stubs
+RUN for f in /app/public/videos/catalogue/*.mp4; do \
+      if [ -f "$f" ] && head -c 20 "$f" | grep -q "version https://git-lfs"; then \
+        echo "ERROR: $f is a Git LFS pointer, not a real video. Run: git lfs pull" >&2; \
+        exit 1; \
+      fi; \
+    done
 
 # Build the Next.js static export
 RUN npm run build
