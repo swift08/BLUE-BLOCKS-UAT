@@ -14,8 +14,11 @@ COPY . .
 
 # Fail the build early if catalogue videos are still LFS pointer stubs
 RUN for f in /app/public/videos/catalogue/*.mp4; do \
-      if [ -f "$f" ] && head -c 20 "$f" | grep -q "version https://git-lfs"; then \
-        echo "ERROR: $f is a Git LFS pointer, not a real video. Run: git lfs pull" >&2; \
+      if [ ! -f "$f" ]; then echo "ERROR: missing $f" >&2; exit 1; fi; \
+      size=$(wc -c < "$f" | tr -d ' '); \
+      if [ "$size" -lt 1000000 ]; then \
+        echo "ERROR: $f is only ${size} bytes (Git LFS pointer?). Run: git lfs pull" >&2; \
+        head -c 200 "$f" >&2 || true; \
         exit 1; \
       fi; \
     done
