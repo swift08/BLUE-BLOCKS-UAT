@@ -122,29 +122,6 @@ export default function Header({ variant = "dark" }) {
         });
       }
 
-      const hasCatalogue = whatWeDo.items.some((it) => {
-        const href = normalizeHref(it.href).replace(/\/+$/, "");
-        return href === "/video-catalogue";
-      });
-      if (!hasCatalogue) {
-        const videosIndex = whatWeDo.items.findIndex(
-          (it) => normalizeHref(it.href) === "/videos/"
-        );
-        const catalogueItem = {
-          id: "video-catalogue",
-          title: "Video Catalogue",
-          href: "/video-catalogue/",
-          description:
-            "Watch Blue Blocks Montessori School in Hyderabad. A scroll through the full 0 to 18 Montessori journey.",
-          image: "/video-catalogue/hero.webp",
-          video: "/videos/catalogue/pony-tail-girl.mp4",
-        };
-        if (videosIndex >= 0) {
-          whatWeDo.items.splice(videosIndex + 1, 0, catalogueItem);
-        } else {
-          whatWeDo.items.push(catalogueItem);
-        }
-      }
     }
 
     const programs = mm.programs

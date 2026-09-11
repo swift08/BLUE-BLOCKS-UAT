@@ -106,7 +106,6 @@ function getPriorityAndFreq(route) {
     "/ami-training",
     "/innovation",
     "/parents",
-    "/video-catalogue",
   ];
   if (highPriority.includes(route)) {
     return { changefreq: "monthly", priority: "0.8" };

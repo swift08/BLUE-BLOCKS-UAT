@@ -30,7 +30,6 @@ const sitemapGroups = [
       { label: "Contact Us", href: "/contact-us" },
       { label: "FAQs", href: "/faq" },
       { label: "Videos", href: "/videos/" },
-      { label: "Video Catalogue", href: "/video-catalogue/" },
       { label: "Careers", href: "/careers" },
       { label: "AMI Training", href: "/ami-training" },
       { label: "Announcement Centre", href: "/annoucement-centre" },

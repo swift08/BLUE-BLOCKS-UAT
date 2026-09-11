@@ -99,7 +99,6 @@ Founded: 2009
 - [Careers](${abs("/careers/")}): Open roles for AMI guides, educators, innovation lab leads, and operations staff.
 - [Contact](${abs("/contact-us/")}): Both campus addresses, phone, email, and enquiry form.
 - [FAQ](${abs("/faq/")}): Common questions about Montessori, admissions, and Cambridge IGCSE integration.
-- [Video Catalogue](${abs("/video-catalogue/")}): Watch Blue Blocks Montessori School in Hyderabad. A scroll through the full 0 to 18 Montessori journey, programs, labs, farm, teachers, and a day in the life of a child.
 - [Blog](${abs("/blog/")}): Articles on Montessori, parenting, innovation pedagogy.
 
 ## Programs

@@ -30,26 +30,6 @@ jobs:
             git config remote.origin.url https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/nsbweb/blueblocks.git
             git fetch origin live
             git reset --hard origin/live
-            # Catalogue videos are stored in Git LFS — pull real MP4s before Docker build
-            if ! command -v git-lfs >/dev/null 2>&1; then
-              curl -fsSL https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-amd64-v3.5.1.tar.gz -o /tmp/git-lfs.tgz
-              tar -xzf /tmp/git-lfs.tgz -C /tmp
-              sudo /tmp/git-lfs-3.5.1/install.sh || /tmp/git-lfs-3.5.1/install.sh
-            fi
-            git lfs install --local
-            git config lfs.url "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/nsbweb/blueblocks.git/info/lfs"
-            git lfs pull
-            echo "Verifying catalogue videos are real files (not LFS pointers)..."
-            for f in public/videos/catalogue/*.mp4; do
-              size=$(wc -c < "$f" | tr -d ' ')
-              echo "  $f => ${size} bytes"
-              if [ "$size" -lt 1000000 ]; then
-                echo "ERROR: $f is only ${size} bytes — LFS pull failed" >&2
-                head -c 200 "$f" >&2 || true
-                exit 1
-              fi
-            done
             docker compose build --no-cache
             docker compose up -d
             docker image prune -f
-
