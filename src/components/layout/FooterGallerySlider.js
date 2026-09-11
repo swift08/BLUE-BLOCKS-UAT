@@ -29,12 +29,13 @@ export default function FooterGallerySlider({ slides }) {
               className="relative shrink-0"
               style={{ width: cardW || "100%" }}
             >
-              <div className="relative h-[14.5rem] sm:h-[18rem] lg:h-[32rem] w-full">
+              <div className="relative h-[14.5rem] sm:h-[18rem] lg:h-[32rem] w-full overflow-hidden">
                 <Image
                   src={item.src}
                   alt={item.alt || "Footer gallery"}
-                  fill
-                  className="object-cover"
+                  width={1200}
+                  height={800}
+                  className="absolute inset-0 h-full w-full object-cover"
                   sizes="(min-width: 1024px) 55vw, 100vw"
                 />
               </div>

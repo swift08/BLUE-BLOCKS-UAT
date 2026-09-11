@@ -83,16 +83,18 @@ export default function ImageText({
                   <Image
                     src={imageUrl}
                     alt={title || ""}
-                    fill
-                    className={imgFitClass}
+                    width={1600}
+                    height={1000}
+                    className={`absolute inset-0 h-full w-full ${imgFitClass}`}
                     sizes="(min-width: 768px) 40vw, 100vw"
                   />
                 ) : (
                   <Image
                     src={imageUrl}
                     alt={title || ""}
-                    fill
-                    className={imgFitClass}
+                    width={1600}
+                    height={1000}
+                    className={`absolute inset-0 h-full w-full ${imgFitClass}`}
                     sizes="(min-width: 768px) 50vw, 100vw"
                   />
                 )}

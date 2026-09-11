@@ -65,9 +65,9 @@ export default function FeatureGrid({
                   <Image
                     src={it.icon}
                     alt={it.title || ""}
-                    fill
-                    className="object-contain"
-                    sizes="100px"
+                    width={100}
+                    height={100}
+                    className="h-full w-full object-contain"
                   />
                 </div>
               ) : null}

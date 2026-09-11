@@ -36,9 +36,9 @@ export default function Footer() {
                       <Image
                         src="/icon/logo.svg"
                         alt={siteData.site.name || "Blue Blocks"}
-                        className="object-contain p-1"
-                        fill
-                        sizes="48px"
+                        width={48}
+                        height={40}
+                        className="h-full w-full object-contain p-1"
                       />
                     </div>
 
@@ -145,8 +145,8 @@ function SocialButton({ item }) {
       className="flex h-12 items-center justify-between rounded-[0.9rem] bg-[#2a2a2a] px-4 text-[0.875rem] text-white/80 hover:bg-[#303030] transition"
     >
       <span className="flex items-center gap-3">
-        <span className="relative h-5 w-5">
-          <Image src={item.icon} alt="" fill className="object-contain" sizes="20px" />
+        <span className="relative inline-flex h-5 w-5 shrink-0 items-center justify-center">
+          <Image src={item.icon} alt="" width={20} height={20} className="object-contain" />
         </span>
         {item.label}
       </span>

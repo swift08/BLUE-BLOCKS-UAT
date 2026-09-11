@@ -804,3 +804,63 @@ html {
   padding: 0.5rem 0.75rem;
   text-align: left;
 }
+
+/* =====================================================
+   Video Catalogue — snap scrolling + player controls
+===================================================== */
+
+html.bb-catalogue-snap {
+  scroll-snap-type: y mandatory;
+}
+
+html.bb-catalogue-snap .bb-catalogue-snap {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Let the footer become a valid snap target so the last section
+   does not keep yanking scroll back when users try to leave. */
+html.bb-catalogue-snap footer {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+@media (min-width: 1024px) {
+  html.bb-catalogue-snap .bb-catalogue-snap {
+    scroll-snap-stop: normal;
+  }
+}
+
+.bb-catalogue-scrub {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+  outline: none;
+}
+
+.bb-catalogue-scrub::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.bb-catalogue-scrub::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: 0;
+  border-radius: 999px;
+  background: #fff;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.bb-catalogue-snap {
+    scroll-snap-type: none;
+  }
+}

@@ -330,9 +330,10 @@ export default function AnnouncementSection({
                           <Image
                             src={ann.image}
                             alt={ann.title}
-                            fill
+                            width={800}
+                            height={1000}
                             sizes="(max-width: 1024px) 100vw, 400px"
-                            className="object-cover transition-transform duration-500 group-hover/img:scale-105"
+                            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover/img:scale-105"
                           />
                           {/* Hover zoom overlay */}
                           <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center">

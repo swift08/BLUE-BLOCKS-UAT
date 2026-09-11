@@ -324,10 +324,11 @@ function HeroPane({
         <Image
           src={bgImageUrl}
           alt=""
-          fill
+          width={1920}
+          height={1080}
           priority={priority}
           fetchPriority={priority ? "high" : undefined}
-          className="object-cover object-center -z-[1]"
+          className="absolute inset-0 -z-[1] h-full w-full object-cover object-center"
           sizes="100vw"
         />
       ) : null}

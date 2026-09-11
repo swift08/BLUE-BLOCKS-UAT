@@ -78,6 +78,14 @@
           "image": "/programs/thumb-secondary.webp"
         },
         {
+          "id": "video-catalogue",
+          "title": "Video Catalogue",
+          "href": "/video-catalogue/",
+          "description": "Watch Blue Blocks Montessori School in Hyderabad. A scroll through the full 0 to 18 Montessori journey.",
+          "image": "/video-catalogue/hero.webp",
+          "video": "/videos/catalogue/pony-tail-girl.mp4"
+        },
+        {
           "id": "Micro Research Institute",
           "title": "Micro Research Institute",
           "href": "https://research.blueblocks.in/",

@@ -121,6 +121,30 @@ export default function Header({ variant = "dark" }) {
           image: "/programs/thumb-primary.webp",
         });
       }
+
+      const hasCatalogue = whatWeDo.items.some((it) => {
+        const href = normalizeHref(it.href).replace(/\/+$/, "");
+        return href === "/video-catalogue";
+      });
+      if (!hasCatalogue) {
+        const videosIndex = whatWeDo.items.findIndex(
+          (it) => normalizeHref(it.href) === "/videos/"
+        );
+        const catalogueItem = {
+          id: "video-catalogue",
+          title: "Video Catalogue",
+          href: "/video-catalogue/",
+          description:
+            "Watch Blue Blocks Montessori School in Hyderabad. A scroll through the full 0 to 18 Montessori journey.",
+          image: "/video-catalogue/hero.webp",
+          video: "/videos/catalogue/pony-tail-girl.mp4",
+        };
+        if (videosIndex >= 0) {
+          whatWeDo.items.splice(videosIndex + 1, 0, catalogueItem);
+        } else {
+          whatWeDo.items.push(catalogueItem);
+        }
+      }
     }
 
     const programs = mm.programs
@@ -185,8 +209,10 @@ export default function Header({ variant = "dark" }) {
   return (
     <div
       id="site-header"
-      className={`fixed top-0 left-0 right-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? "bg-white shadow-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 w-full z-[80] transition-colors duration-300 ${
+        scrolled || menuOpen
+          ? "bg-white shadow-sm"
+          : "bg-white/95 backdrop-blur-md md:bg-transparent md:backdrop-blur-none"
       }`}
     >
       {/* Announcement Bar */}
@@ -221,15 +247,15 @@ export default function Header({ variant = "dark" }) {
 
       {/* Main Header */}
       <header className="bg-transparent">
-        <Container className="py-4 flex items-center justify-between relative">
+        <Container className="py-3 sm:py-4 flex items-center justify-between relative">
           {/* Logo */}
-          <Link href="/" className="relative flex items-center">
+          <Link href="/" className="relative z-[90] flex items-center">
             <Image
               src={site.logo || "/icon/logo.svg"}
               alt={site.name || "Logo"}
               width={82}
               height={67}
-              className="h-14 w-auto object-contain"
+              className="h-12 w-auto object-contain sm:h-14"
               priority
             />
           </Link>
@@ -279,71 +305,89 @@ export default function Header({ variant = "dark" }) {
             })}
           </nav>
 
-          {/* Mobile Toggle */}
+          {/* Mobile hamburger — always high-contrast */}
           <button
-            className={`md:hidden ${isLight ? "text-white" : "text-[#131313]"}`}
+            type="button"
+            className="relative z-[90] md:hidden inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#141c2f] text-white shadow-md ring-1 ring-black/10"
             onClick={toggleMenu}
             suppressHydrationWarning
-            aria-label="Toggle menu"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
+            aria-controls="mobile-nav-drawer"
           >
-            {menuOpen ? "\u2715" : "\u2630"}
+            {menuOpen ? <CloseIcon /> : <HamburgerIcon />}
           </button>
         </Container>
 
-        {/* MOBILE FULL-VIEWPORT DRAWER — pure CSS slide-in (no framer-motion) */}
-        {/* Backdrop */}
+        {/* MOBILE FULL-VIEWPORT DRAWER — starts below sticky header so hamburger stays usable */}
         <div
-          aria-hidden="true"
+          aria-hidden={!menuOpen}
           onClick={() => setMenuOpen(false)}
           className={[
-            "fixed inset-0 z-[60] md:hidden bg-black/35 h-[100vh]",
+            "fixed inset-x-0 bottom-0 top-[64px] z-[85] md:hidden bg-black/40",
             "transition-opacity duration-200",
             menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
           ].join(" ")}
         />
-        {/* Drawer panel */}
         <div
+          id="mobile-nav-drawer"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile navigation"
           className={[
-            "fixed inset-0 z-[61] bg-[#141c2f] h-[100vh] md:hidden",
+            "fixed inset-x-0 bottom-0 top-[64px] z-[86] bg-[#141c2f] md:hidden",
             "transition-transform duration-[220ms] ease-out",
-            menuOpen ? "translate-x-0" : "translate-x-full",
+            menuOpen ? "translate-x-0 pointer-events-auto" : "translate-x-full pointer-events-none",
           ].join(" ")}
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Keep header space so it doesn't go under the fixed header */}
-          <div className="h-[90vh] w-full pt-[72px]">
-            <div className="h-full">
-              <div className="h-full mx-3 my-3 rounded-2xl bg-[#273C75] text-white shadow-[0_18px_50px_rgba(0,0,0,0.35)]">
-                <div className="h-full px-5 py-6 pb-10">
-                  <MobileNav
-                    nav={navItems || []}
-                    megaByLabel={megaByLabel}
-                    pathname={pathname}
-                    isActiveHref={isActiveHref}
-                    openKey={mobileOpenKey}
-                    setOpenKey={setMobileOpenKey}
-                    socials={socials}
-                    onNavigate={() => setMenuOpen(false)}
-                  />
-                </div>
+          <div className="flex h-full w-full flex-col">
+            <div className="m-3 flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl bg-[#273C75] text-white shadow-[0_18px_50px_rgba(0,0,0,0.35)]">
+              <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-5 py-6 pb-10">
+                <MobileNav
+                  nav={navItems || []}
+                  megaByLabel={megaByLabel}
+                  pathname={pathname}
+                  isActiveHref={isActiveHref}
+                  openKey={mobileOpenKey}
+                  setOpenKey={setMobileOpenKey}
+                  socials={socials}
+                  onNavigate={() => setMenuOpen(false)}
+                />
               </div>
             </div>
           </div>
-
-          {/* Close button */}
-          <button
-            type="button"
-            onClick={() => setMenuOpen(false)}
-            suppressHydrationWarning
-            className="absolute top-5 right-5 grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white hover:bg-white/15"
-            aria-label="Close menu"
-          >
-            ✕
-          </button>
         </div>
       </header>
     </div>
+  );
+}
+
+/* ---------- Mobile menu icons ---------- */
+
+function HamburgerIcon() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M4 7h16M4 12h16M4 17h16"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M6 6l12 12M18 6L6 18"
+        stroke="currentColor"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+    </svg>
   );
 }
 
@@ -443,13 +487,24 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                   className="flex gap-3 p-5 sm:p-6 hover:bg-slate-50 border-r border-slate-100 last:border-r-0"
                 >
                   <div className="relative h-16 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-slate-200">
-                    {program?.image ? (
+                    {program?.video ? (
+                      <video
+                        src={program.video}
+                        className="absolute inset-0 h-full w-full object-cover"
+                        muted
+                        loop
+                        playsInline
+                        autoPlay
+                        preload="metadata"
+                        aria-hidden="true"
+                      />
+                    ) : program?.image ? (
                       <Image
                         src={program.image}
                         alt={program.title || ""}
-                        fill
-                        className="object-cover"
-                        sizes="80px"
+                        width={80}
+                        height={64}
+                        className="h-full w-full object-cover"
                       />
                     ) : (
                       <span className="flex h-full w-full items-center justify-center text-xs text-slate-500">
@@ -590,13 +645,24 @@ function MobileNav({
                             className="flex items-center gap-3 rounded-xl bg-white/5 px-3 py-3 hover:bg-white/10"
                           >
                             <div className="relative h-12 w-14 overflow-hidden rounded-lg bg-white/10">
-                              {m?.image ? (
+                              {m?.video ? (
+                                <video
+                                  src={m.video}
+                                  className="absolute inset-0 h-full w-full object-cover"
+                                  muted
+                                  loop
+                                  playsInline
+                                  autoPlay
+                                  preload="metadata"
+                                  aria-hidden="true"
+                                />
+                              ) : m?.image ? (
                                 <Image
                                   src={m?.image}
                                   alt={m?.title || ""}
-                                  fill
-                                  className="object-cover"
-                                  sizes="56px"
+                                  width={56}
+                                  height={48}
+                                  className="h-full w-full object-cover"
                                 />
                               ) : null}
                             </div>
