@@ -35,6 +35,7 @@ export default function FooterGallerySlider({ slides }) {
                   alt={item.alt || "Footer gallery"}
                   width={1200}
                   height={800}
+                  style={{ aspectRatio: "1200 / 800" }}
                   className="absolute inset-0 h-full w-full object-cover"
                   sizes="(min-width: 1024px) 55vw, 100vw"
                 />

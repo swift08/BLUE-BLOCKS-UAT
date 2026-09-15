@@ -6,6 +6,50 @@
    to avoid loading it on every page. */
 
 @import "tailwindcss";
+@import "./video-catalog.css";
+
+/* =====================================================
+   EXPLICIT DIMENSIONS & ASPECT-RATIO FOR ALL IMAGES (CLS FIX)
+   Lighthouse Audit: "Lazy-loaded images should have explicit dimensions"
+===================================================== */
+
+/* Ensure all images and lazy-loaded images have defined aspect ratios */
+img {
+  max-width: 100%;
+}
+
+img[width][height] {
+  aspect-ratio: auto;
+}
+
+/* Ensure next/image with fill or lazy loading specifies an aspect-ratio */
+img[data-nimg="fill"] {
+  aspect-ratio: 16 / 9;
+}
+
+/* Fallback aspect-ratio for any image missing width/height */
+img:not([width]):not([height]),
+img[loading="lazy"]:not([width]):not([height]) {
+  aspect-ratio: 16 / 9;
+}
+
+/* Aspect ratio inheritances for common utility wrappers */
+.aspect-square > img,
+.aspect-square img[data-nimg="fill"] {
+  aspect-ratio: 1 / 1 !important;
+}
+
+.aspect-\[4\/3\] > img,
+.aspect-\[4\/3\] img[data-nimg="fill"] {
+  aspect-ratio: 4 / 3 !important;
+}
+
+.aspect-video > img,
+.aspect-video img[data-nimg="fill"],
+.aspect-\[16\/9\] > img,
+.aspect-\[16\/9\] img[data-nimg="fill"] {
+  aspect-ratio: 16 / 9 !important;
+}
 
 /* =====================================================
    DESIGN TOKENS (Single Source of Truth)

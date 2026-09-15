@@ -261,6 +261,8 @@ export default function InnovationGallery({
                     src={thumbSrc}
                     alt={it.alt || ""}
                     fill
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                    style={{ aspectRatio: "1 / 1" }}
                     className="object-cover"
                   />
                 ) : (

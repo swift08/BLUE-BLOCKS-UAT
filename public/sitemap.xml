@@ -161,7 +161,7 @@
   </url>
   <url>
     <loc>https://blueblocks.in/sitemap/</loc>
-    <lastmod>2026-09-11T09:25:05Z</lastmod>
+    <lastmod>2026-09-13T06:20:35Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -180,6 +180,12 @@
   <url>
     <loc>https://blueblocks.in/the-conscious-construction-of-intelligence/</loc>
     <lastmod>2026-09-09T17:43:11Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://blueblocks.in/video-catalog/</loc>
+    <lastmod>2026-09-13T06:20:27Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

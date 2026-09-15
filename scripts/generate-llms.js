@@ -100,6 +100,7 @@ Founded: 2009
 - [Contact](${abs("/contact-us/")}): Both campus addresses, phone, email, and enquiry form.
 - [FAQ](${abs("/faq/")}): Common questions about Montessori, admissions, and Cambridge IGCSE integration.
 - [Blog](${abs("/blog/")}): Articles on Montessori, parenting, innovation pedagogy.
+- [Video Catalog](${abs("/video-catalog/")}): Cinematic classroom, farm, drone lab, and community videos.
 
 ## Programs
 

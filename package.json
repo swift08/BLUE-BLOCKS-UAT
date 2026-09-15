@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/generate-sitemap.js && node scripts/generate-llms.js",
+    "prebuild": "node scripts/sync-video-catalog-media.js && node scripts/generate-sitemap.js && node scripts/generate-llms.js",
     "build": "next build",
     "start": "next start",
     "export": "next build",

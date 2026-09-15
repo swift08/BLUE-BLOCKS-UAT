@@ -101,6 +101,9 @@ export default function Header({ variant = "dark" }) {
     if (whatWeDo) {
       const hasAmi = whatWeDo.items.some((it) => normalizeHref(it.href) === "/ami-training/");
       const hasCareers = whatWeDo.items.some((it) => normalizeHref(it.href) === "/careers/");
+      const hasVideoCatalog = whatWeDo.items.some(
+        (it) => normalizeHref(it.href) === "/video-catalog/"
+      );
 
       if (!hasAmi) {
         whatWeDo.items.push({
@@ -119,6 +122,16 @@ export default function Header({ variant = "dark" }) {
           href: "/careers/",
           description: "Open roles for educators, researchers, and mission-aligned professionals.",
           image: "/programs/thumb-primary.webp",
+        });
+      }
+
+      if (!hasVideoCatalog) {
+        whatWeDo.items.push({
+          id: "video-catalog",
+          title: "Video Catalog",
+          href: "/video-catalog/",
+          description: "A cinematic journey through classrooms, labs, farm days, and community life.",
+          image: "/programs/thumb-secondary.webp",
         });
       }
 
@@ -461,9 +474,10 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                 <Link
                   key={`${program.href || program.title || "item"}|${idx}`}
                   href={normalizeHref(program.href)}
+                  prefetch={false}
                   className="flex gap-3 p-5 sm:p-6 hover:bg-slate-50 border-r border-slate-100 last:border-r-0"
                 >
-                  <div className="relative h-16 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-slate-200">
+                  <div className="relative h-16 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-slate-200 aspect-[80/64]">
                     {program?.video ? (
                       <video
                         src={program.video}
@@ -481,6 +495,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                         alt={program.title || ""}
                         width={80}
                         height={64}
+                        style={{ width: "100%", height: "auto", aspectRatio: "80 / 64" }}
                         className="h-full w-full object-cover"
                       />
                     ) : (
@@ -540,6 +555,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                       alt={(s.label || "").slice(0, 2)}
                       width={34}
                       height={34}
+                      style={{ aspectRatio: "1 / 1" }}
                       className="object-contain"
                     />
                   </Link>
@@ -618,10 +634,11 @@ function MobileNav({
                           <Link
                             key={`${mhref}|${i}`}
                             href={mhref}
+                            prefetch={false}
                             onClick={onNavigate}
                             className="flex items-center gap-3 rounded-xl bg-white/5 px-3 py-3 hover:bg-white/10"
                           >
-                            <div className="relative h-12 w-14 overflow-hidden rounded-lg bg-white/10">
+                            <div className="relative h-12 w-14 overflow-hidden rounded-lg bg-white/10 aspect-[56/48]">
                               {m?.video ? (
                                 <video
                                   src={m.video}
@@ -639,6 +656,7 @@ function MobileNav({
                                   alt={m?.title || ""}
                                   width={56}
                                   height={48}
+                                  style={{ width: "100%", height: "auto", aspectRatio: "56 / 48" }}
                                   className="h-full w-full object-cover"
                                 />
                               ) : null}
@@ -718,7 +736,14 @@ function MobileNav({
                   className="flex h-12 items-center justify-center rounded-xl bg-white/5 hover:bg-white/10"
                   aria-label={s.label}
                 >
-                  <Image src={s.icon} alt="" width={22} height={22} className="object-contain" />
+                  <Image
+                    src={s.icon}
+                    alt=""
+                    width={22}
+                    height={22}
+                    style={{ aspectRatio: "1 / 1" }}
+                    className="object-contain"
+                  />
                 </a>
               );
             })}

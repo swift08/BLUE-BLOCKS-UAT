@@ -38,6 +38,7 @@ export default function Footer() {
                         alt={siteData.site.name || "Blue Blocks"}
                         width={48}
                         height={40}
+                        style={{ aspectRatio: "48 / 40" }}
                         className="h-full w-full object-contain p-1"
                       />
                     </div>
@@ -146,7 +147,14 @@ function SocialButton({ item }) {
     >
       <span className="flex items-center gap-3">
         <span className="relative inline-flex h-5 w-5 shrink-0 items-center justify-center">
-          <Image src={item.icon} alt="" width={20} height={20} className="object-contain" />
+          <Image
+            src={item.icon}
+            alt=""
+            width={20}
+            height={20}
+            style={{ aspectRatio: "1 / 1" }}
+            className="object-contain"
+          />
         </span>
         {item.label}
       </span>
