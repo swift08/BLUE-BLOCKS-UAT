@@ -9,10 +9,8 @@ import GrowthBlocks from "@/components/video-catalog/GrowthBlocks";
 import {
   CATALOG_CHAPTERS,
   CATALOG_SECTIONS,
-  CATALOG_HERO_VIDEO,
-  CATALOG_HERO_POSTER,
-  CATALOG_CTA_VIDEO,
-  CATALOG_CTA_POSTER,
+  CATALOG_HERO_YOUTUBE_ID,
+  CATALOG_CTA_YOUTUBE_ID,
 } from "@/data/video-catalog";
 
 export default function VideoCatalogExperience({ phone }) {
@@ -21,7 +19,7 @@ export default function VideoCatalogExperience({ phone }) {
       <ScrollProgress chapters={CATALOG_CHAPTERS} />
       <MemoryTrail />
       <GrowthBlocks />
-      <Hero videoSrc={CATALOG_HERO_VIDEO} poster={CATALOG_HERO_POSTER} />
+      <Hero youtubeId={CATALOG_HERO_YOUTUBE_ID} />
 
       <section id="journey" className="relative pt-24 pb-8 text-center">
         <div className="container relative mx-auto max-w-4xl px-6">
@@ -46,11 +44,7 @@ export default function VideoCatalogExperience({ phone }) {
         <Chapter key={section.id} {...section} />
       ))}
 
-      <CTASection
-        videoSrc={CATALOG_CTA_VIDEO}
-        poster={CATALOG_CTA_POSTER}
-        phone={phone}
-      />
+      <CTASection youtubeId={CATALOG_CTA_YOUTUBE_ID} phone={phone} />
     </div>
   );
 }

@@ -1,89 +1,22 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { audioStore } from "./audio-store";
+import YoutubeBackground from "./YoutubeBackground";
 
-export default function CTASection({ videoSrc, poster, phone = "+91 9000955053" }) {
-  const videoRef = useRef(null);
-  const [isUnmuted, setIsUnmuted] = useState(false);
-  const id = "cta-video";
+export default function CTASection({ youtubeId, phone = "+91 9000955053" }) {
   const telHref = `tel:${String(phone).replace(/\s+/g, "")}`;
-
-  useEffect(() => {
-    const unsubscribe = audioStore.subscribe((state) => {
-      if (state.activeVideoId !== id) {
-        setIsUnmuted(false);
-        if (videoRef.current) videoRef.current.muted = true;
-      }
-    });
-    return () => unsubscribe();
-  }, []);
-
-  const toggleSound = () => {
-    const newMuteState = !isUnmuted;
-    setIsUnmuted(newMuteState);
-    if (videoRef.current) videoRef.current.muted = !newMuteState;
-    if (newMuteState) {
-      audioStore.unlockSound(id);
-    } else {
-      audioStore.lockSound();
-    }
-  };
 
   return (
     <section id="visit" className="relative overflow-hidden py-12 md:py-16">
       <div className="absolute inset-0 z-0">
-        <video
-          ref={videoRef}
-          src={videoSrc}
-          poster={poster}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="none"
-          className="h-full w-full object-cover opacity-20 grayscale"
+        <YoutubeBackground
+          youtubeId={youtubeId}
+          id="cta-video"
+          className="relative h-full w-full opacity-20 grayscale"
+          soundButtonClassName="absolute right-10 bottom-10 z-20 flex h-10 w-10 items-center justify-center rounded-full glass-strong shadow-2xl transition-all hover:scale-110 active:scale-95"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-vc-background via-vc-background/80 to-deep-blue/40" />
-
-        <button
-          type="button"
-          onClick={toggleSound}
-          aria-label={isUnmuted ? "Mute background video" : "Unmute background video"}
-          className="absolute right-10 bottom-10 z-20 flex h-10 w-10 items-center justify-center rounded-full glass-strong shadow-2xl transition-all hover:scale-110 active:scale-95"
-        >
-          {isUnmuted ? (
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              className="h-5 w-5 text-sky-blue"
-            >
-              <path
-                d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          ) : (
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              className="h-5 w-5 text-white/40"
-            >
-              <path
-                d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          )}
-        </button>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-vc-background via-vc-background/80 to-deep-blue/40" />
       </div>
 
       <div className="container relative z-10 mx-auto max-w-5xl px-6">

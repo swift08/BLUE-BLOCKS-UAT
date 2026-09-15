@@ -1,11 +1,5 @@
 /** Video Catalog content, media paths, and page-level JSON-LD. */
 
-const VIDEO_BASE = "/video-catalog/videos";
-
-export function catalogVideo(filename) {
-  return `${VIDEO_BASE}/${encodeURIComponent(filename)}`;
-}
-
 const POSTERS = {
   hero: "/video-catalog/hero.webp",
   primary: "/programs/thumb-nursery.webp",
@@ -306,10 +300,8 @@ export const CATALOG_SECTIONS = [
   },
 ];
 
-export const CATALOG_HERO_VIDEO = catalogVideo("Pony Tail Girl.webm");
-export const CATALOG_HERO_POSTER = POSTERS.hero;
-export const CATALOG_CTA_VIDEO = catalogVideo("Safe Transport.webm");
-export const CATALOG_CTA_POSTER = POSTERS.transport;
+export const CATALOG_HERO_YOUTUBE_ID = "p6BAibbW5uQ";
+export const CATALOG_CTA_YOUTUBE_ID = "9Ks-0WYOiNk";
 
 export const CATALOG_SCHEMA = {
   "@context": "https://schema.org",

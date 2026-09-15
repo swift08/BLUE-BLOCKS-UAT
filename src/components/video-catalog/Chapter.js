@@ -355,9 +355,11 @@ export default function Chapter({
                       <Image
                         src={poster}
                         alt={imageAlt || title}
-                        fill
+                        width={360}
+                        height={640}
                         sizes="360px"
-                        className="object-cover"
+                        style={{ aspectRatio: "9 / 16" }}
+                        className="absolute inset-0 h-full w-full object-cover"
                       />
                     ) : null}
                     <div ref={ytContainerRef} className="pointer-events-none absolute inset-0 h-full w-full" />

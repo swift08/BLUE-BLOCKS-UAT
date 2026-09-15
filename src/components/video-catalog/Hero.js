@@ -1,91 +1,22 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { audioStore } from "./audio-store";
 import FloatingBlocks from "./FloatingBlocks";
+import YoutubeBackground from "./YoutubeBackground";
 
-export default function Hero({ videoSrc, poster }) {
-  const videoRef = useRef(null);
-  const [isUnmuted, setIsUnmuted] = useState(false);
-  const id = "hero-video";
-
-  useEffect(() => {
-    const unsubscribe = audioStore.subscribe((state) => {
-      if (state.activeVideoId !== id) {
-        setIsUnmuted(false);
-        if (videoRef.current) videoRef.current.muted = true;
-      }
-    });
-    return () => unsubscribe();
-  }, []);
-
-  const toggleSound = () => {
-    const newMuteState = !isUnmuted;
-    setIsUnmuted(newMuteState);
-    if (videoRef.current) videoRef.current.muted = !newMuteState;
-    if (newMuteState) {
-      audioStore.unlockSound(id);
-    } else {
-      audioStore.lockSound();
-    }
-  };
-
+export default function Hero({ youtubeId }) {
   return (
     <section
       id="top"
       className="relative flex min-h-dvh items-center justify-center overflow-hidden bg-cosmic"
     >
       <div className="absolute inset-0 z-0">
-        <video
-          ref={videoRef}
-          src={videoSrc}
-          poster={poster}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="h-full w-full object-cover opacity-20 grayscale"
+        <YoutubeBackground
+          youtubeId={youtubeId}
+          id="hero-video"
+          className="relative h-full w-full opacity-20 grayscale"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-deep-blue/80 via-deep-blue/40 to-vc-background" />
-
-        <button
-          type="button"
-          onClick={toggleSound}
-          aria-label={isUnmuted ? "Mute hero video" : "Unmute hero video"}
-          className="absolute right-10 bottom-10 z-20 flex h-12 w-12 items-center justify-center rounded-full glass-strong shadow-2xl transition-all hover:scale-110 active:scale-95"
-        >
-          {isUnmuted ? (
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              className="h-6 w-6 text-sky-blue"
-            >
-              <path
-                d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          ) : (
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              className="h-6 w-6 text-white/40"
-            >
-              <path
-                d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          )}
-        </button>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-deep-blue/80 via-deep-blue/40 to-vc-background" />
       </div>
 
       <div className="pointer-events-none absolute -top-40 left-1/4 h-[40rem] w-[40rem] rounded-full bg-lilac/20 blur-[150px] animate-pulse-glow" />
@@ -97,7 +28,6 @@ export default function Hero({ videoSrc, poster }) {
       <FloatingBlocks />
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 text-center">
-
         <h1 className="text-balance font-display text-5xl font-black leading-[0.95] tracking-tighter md:text-7xl lg:text-8xl">
           {"A child's journey".split(" ").map((word, i) => (
             <motion.span
