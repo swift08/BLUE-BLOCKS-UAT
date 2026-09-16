@@ -131,7 +131,7 @@ export default function Header({ variant = "dark" }) {
           title: "Video Catalog",
           href: "/video-catalog/",
           description: "A cinematic journey through classrooms, labs, farm days, and community life.",
-          image: "/programs/thumb-secondary.webp",
+          video: "/video-catalog/videos/Pony Tail Girl.webm",
         });
       }
 
