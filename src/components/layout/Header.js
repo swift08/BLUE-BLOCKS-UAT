@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
-import siteData from "@/data/site";
+import siteData from "@/data/header-site";
 import { usePathname } from "next/navigation";
 import { normalizeSiteHref } from "@/lib/links";
 
@@ -131,7 +131,7 @@ export default function Header({ variant = "dark" }) {
           title: "Video Catalog",
           href: "/video-catalog/",
           description: "A cinematic journey through classrooms, labs, farm days, and community life.",
-          video: "/video-catalog/videos/Pony Tail Girl.webm",
+          image: "/programs/thumb-secondary.webp",
         });
       }
 

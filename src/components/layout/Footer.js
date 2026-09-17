@@ -104,11 +104,11 @@ export default function Footer() {
             <div>{"\u00A9"} 2026 Blue Blocks Montessori School</div>
 
             <div className="flex items-center gap-2 lg:justify-end">
-              <Link className="underline-offset-4 hover:underline" href="/sitemap">Sitemap</Link>
+              <Link className="underline-offset-4 hover:underline" href="/sitemap/">Sitemap</Link>
               <span className="text-white/25">{"\u00B7"}</span>
-              <Link className="underline-offset-4 hover:underline" href="/privacy-policy">Privacy Policy</Link>
+              <Link className="underline-offset-4 hover:underline" href="/privacy-policy/">Privacy Policy</Link>
               <span className="text-white/25">{"\u00B7"}</span>
-              <Link className="underline-offset-4 hover:underline" href="/terms">Terms of Use</Link>
+              <Link className="underline-offset-4 hover:underline" href="/terms/">Terms of Use</Link>
             </div>
           </div>
         </div>

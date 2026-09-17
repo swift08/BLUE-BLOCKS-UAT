@@ -14,13 +14,13 @@ export default function CTASection({ youtubeId, phone = "+91 9000955053" }) {
           youtubeId={youtubeId}
           id="cta-video"
           className="relative h-full w-full opacity-20 grayscale"
-          soundButtonClassName="absolute right-10 bottom-10 z-20 flex h-10 w-10 items-center justify-center rounded-full glass-strong shadow-2xl transition-all hover:scale-110 active:scale-95"
+          soundButtonClassName="absolute right-4 bottom-4 z-20 flex h-10 w-10 items-center justify-center rounded-full glass-strong shadow-2xl transition-all hover:scale-110 active:scale-95 sm:right-10 sm:bottom-10"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-vc-background via-vc-background/80 to-deep-blue/40" />
       </div>
 
-      <div className="container relative z-10 mx-auto max-w-5xl px-6">
-        <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
+      <div className="container relative z-10 mx-auto max-w-5xl px-5 sm:px-6">
+        <div className="grid gap-10 sm:gap-16 lg:grid-cols-2 lg:items-center">
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -28,24 +28,24 @@ export default function CTASection({ youtubeId, phone = "+91 9000955053" }) {
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             className="text-left"
           >
-            <span className="mb-8 inline-block rounded-full glass-strong px-6 py-2 text-[10px] font-bold uppercase tracking-[0.4em] text-sky-blue/90 shadow-xl">
+            <span className="mb-5 inline-block rounded-full glass-strong px-4 py-2 text-[10px] font-bold uppercase tracking-[0.3em] text-sky-blue/90 shadow-xl sm:mb-8 sm:px-6 sm:tracking-[0.4em]">
               Admissions
             </span>
-            <h2 className="text-balance font-display text-5xl font-black leading-[0.95] tracking-tighter text-white md:text-7xl">
+            <h2 className="text-balance font-display text-4xl font-black leading-[0.95] tracking-tighter text-white sm:text-5xl md:text-7xl">
               Ready to <br />
               <span className="bg-gradient-to-r from-sky-blue to-warm bg-clip-text text-transparent">
                 visit?
               </span>
             </h2>
-            <p className="mt-8 max-w-lg text-lg font-medium leading-relaxed text-vc-foreground/60 md:text-xl">
+            <p className="mt-6 max-w-lg text-base font-medium leading-relaxed text-vc-foreground/60 sm:mt-8 sm:text-lg md:text-xl">
               Every video you just watched has a next step. Our admissions process starts with a
               Discovery Workshop.
             </p>
 
-            <div className="mt-12 flex flex-col gap-5 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-4 sm:mt-12 sm:flex-row sm:gap-5">
               <Link
                 href="/admissions/"
-                className="group relative overflow-hidden rounded-full bg-sky-blue px-8 py-4 text-center text-sm font-black uppercase tracking-widest text-deep-blue shadow-block transition-all hover:scale-105"
+                className="group relative overflow-hidden rounded-full bg-sky-blue px-5 py-3.5 text-center text-[11px] font-black uppercase leading-snug tracking-widest text-deep-blue shadow-block transition-all hover:scale-105 sm:px-8 sm:py-4 sm:text-sm"
               >
                 <div className="absolute inset-0 translate-y-full bg-white opacity-20 transition-transform group-hover:translate-y-0" />
                 <span className="relative">REGISTER FOR THE ADMISSION WORKSHOP →</span>
@@ -54,7 +54,7 @@ export default function CTASection({ youtubeId, phone = "+91 9000955053" }) {
                 href="https://wa.me/919000955053"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full glass-strong px-8 py-4 text-center text-sm font-black uppercase tracking-widest text-white transition-all hover:scale-105 hover:bg-white/10"
+                className="rounded-full glass-strong px-5 py-3.5 text-center text-[11px] font-black uppercase tracking-widest text-white transition-all hover:scale-105 hover:bg-white/10 sm:px-8 sm:py-4 sm:text-sm"
               >
                 WhatsApp Us
               </a>

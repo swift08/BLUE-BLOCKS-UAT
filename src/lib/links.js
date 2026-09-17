@@ -49,15 +49,44 @@ function normalizePath(pathname = "") {
   return PATH_REDIRECTS.get(lower) || withLead;
 }
 
+function isFilePath(pathname = "") {
+  const last = String(pathname).split("/").filter(Boolean).pop() || "";
+  return /\.[a-z0-9]+$/i.test(last);
+}
+
+function withTrailingSlash(pathname = "") {
+  if (!pathname || pathname === "/") return "/";
+  if (pathname.startsWith("/wp-json") || pathname.startsWith("/api/")) {
+    return pathname;
+  }
+  if (isFilePath(pathname)) return pathname;
+  return pathname.endsWith("/") ? pathname : `${pathname}/`;
+}
+
+function normalizeInternalPathname(pathname = "") {
+  return withTrailingSlash(normalizePath(pathname));
+}
+
+function splitRelativeHref(raw = "") {
+  const hashIdx = raw.indexOf("#");
+  const hash = hashIdx >= 0 ? raw.slice(hashIdx) : "";
+  const withoutHash = hashIdx >= 0 ? raw.slice(0, hashIdx) : raw;
+  const queryIdx = withoutHash.indexOf("?");
+  const search = queryIdx >= 0 ? withoutHash.slice(queryIdx) : "";
+  const pathname = queryIdx >= 0 ? withoutHash.slice(0, queryIdx) : withoutHash;
+  return { pathname, search, hash };
+}
+
 export function normalizeSiteHref(href = "") {
   const raw = String(href || "").trim();
   if (!raw) return "";
 
-  if (
-    raw.startsWith("#") ||
-    raw.startsWith("mailto:") ||
-    raw.startsWith("tel:")
-  ) {
+  if (raw.startsWith("#") || raw.startsWith("//")) {
+    return raw;
+  }
+
+  // mailto:, tel:, javascript:, sms:, etc.
+  if (/^[a-z][a-z0-9+.-]*:/i.test(raw) && !/^https?:\/\//i.test(raw)) {
     return raw;
   }
 
@@ -68,12 +97,13 @@ export function normalizeSiteHref(href = "") {
       const host = String(url.hostname || "").toLowerCase();
       if (!SITE_HOSTS.has(host)) return raw;
 
-      url.pathname = normalizePath(url.pathname);
+      url.pathname = normalizeInternalPathname(url.pathname);
       return url.toString();
     } catch {
       return raw;
     }
   }
 
-  return normalizePath(raw);
+  const { pathname, search, hash } = splitRelativeHref(raw);
+  return `${normalizeInternalPathname(pathname)}${search}${hash}`;
 }

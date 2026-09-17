@@ -55,7 +55,7 @@ export default function NotFound() {
               ← Back to Home
             </Link>
             <Link
-              href="/contact-us"
+              href="/contact-us/"
               className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-500 hover:text-slate-900"
             >
               Contact Us
@@ -90,11 +90,11 @@ export default function NotFound() {
         {/* Sitemap link */}
         <p className="mt-10 text-center text-sm text-slate-400">
           Can&apos;t find what you&apos;re looking for?{" "}
-          <Link href="/sitemap" className="underline hover:text-slate-600 transition">
+          <Link href="/sitemap/" className="underline hover:text-slate-600 transition">
             Browse the full sitemap
           </Link>
           {" "}or{" "}
-          <Link href="/contact-us" className="underline hover:text-slate-600 transition">
+          <Link href="/contact-us/" className="underline hover:text-slate-600 transition">
             get in touch with us
           </Link>
           .

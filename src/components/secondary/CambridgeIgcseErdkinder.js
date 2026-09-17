@@ -931,7 +931,7 @@ export default function CambridgeIgcseErdkinder() {
                 Schedule a visit to see our labs, meet our mentors, and learn what your child could build.
               </p>
               <div className="flex flex-wrap justify-center gap-4 mt-2">
-                <Link href="/admissions" className="bb-btn bb-btn--inverse">
+                <Link href="/admissions/" className="bb-btn bb-btn--inverse">
                   Schedule a Campus Visit{" "}
                   <span className="ml-2" aria-hidden="true">
                     →
@@ -947,7 +947,7 @@ export default function CambridgeIgcseErdkinder() {
               </div>
               <div className="text-slate-400 text-xs mt-6">
                 Coming from Elementary?{" "}
-                <Link href="/programs/primary-school-elementary/class-1-to-6" className="text-[#58A5F3] hover:underline font-semibold">
+                <Link href="/programs/primary-school-elementary/class-1-to-6/" className="text-[#58A5F3] hover:underline font-semibold">
                   See our Elementary programme →
                 </Link>
               </div>

@@ -358,7 +358,7 @@ export default function PlaygroupProgram() {
           {/* Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-24">
             <Link
-              href="/admissions"
+              href="/admissions/"
               className="bg-[#1F3B82] hover:bg-[#15295c] transition-colors text-white text-sm font-semibold px-8 py-3.5 rounded-full shadow-lg"
             >
               BOOK A FREE OBSERVATION
@@ -881,7 +881,7 @@ export default function PlaygroupProgram() {
               </p>
               <div className="flex flex-wrap justify-center gap-4 mt-2">
                 <Link
-                  href="/admissions"
+                  href="/admissions/"
                   className="bg-white hover:bg-slate-100 text-slate-900 text-sm font-semibold px-8 py-3.5 rounded-full shadow-md transition-colors"
                 >
                   Book a Free Observation →
@@ -889,7 +889,7 @@ export default function PlaygroupProgram() {
               </div>
               <div className="mt-6 text-slate-400 text-xs">
                 Ready for Nursery?{" "}
-                <Link href="/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum" className="text-[#58A5F3] hover:underline font-semibold">
+                <Link href="/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum/" className="text-[#58A5F3] hover:underline font-semibold">
                   See our Pre-Primary Montessori programme →
                 </Link>
               </div>

@@ -1070,7 +1070,7 @@
                 "image": "/team/pavan-goyal-founder.webp",
                 "imageAlt": "Pavan Goyal",
                 "bio": "Pavan holds the rare complete AMI Diploma (0-18). He bridges the gap between Montessori philosophy and future-ready innovation, ensuring that Blue Blocks remains a place where the 'Scientific Method' is a way of life.",
-                "readMoreHref": "/founders/pavan-goyal",
+                "readMoreHref": "/about-us/founders/pavan-goyal/",
                 "modal": {
                   "title": "Founderâ€™s Note",
                   "content": [
@@ -1102,7 +1102,7 @@
                 "image": "/team/munira.webp",
                 "imageAlt": "Munira Hussain",
                 "bio": "Munira is the 'Protector of the Environment.' With strict AMI certification, she ensures that every classroomâ€”from the Infant Community to the High Schoolâ€”remains a psychological sanctuary for the child, protecting the intimacy of the work cycle.",
-                "readMoreHref": "/founders/munira-hussain",
+                "readMoreHref": "/about-us/founders/munira-hussain/",
                 "modal": {
                   "title": "Founderâ€™s Note",
                   "content": [
@@ -1162,7 +1162,7 @@
                 "imageAlt": "Badugu Suneetha Gnanavalli",
                 "tagline": "Moving from the textbook to the test tube.",
                 "bio": "M.Sc. Chemistry | 7 years | Experiential lab learning.",
-                "readMoreHref": "/team/suneetha",
+                "readMoreHref": "/about-us/?guide=suneetha",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1203,7 +1203,7 @@
                 "imageAlt": "Sravani Ponnala",
                 "tagline": "Cultivating the â€œMathematical Mindâ€ through order and precision.",
                 "bio": "B.Tech (IT) | AMI Certified (MTRT) | 4 years.",
-                "readMoreHref": "/team/sravani-ponnala",
+                "readMoreHref": "/about-us/?guide=sravani-ponnala",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1244,7 +1244,7 @@
                 "imageAlt": "Sree Divya",
                 "tagline": "Applying the laws of biology to human development.",
                 "bio": "B.Tech (Biotech) | AMI Certified (MTRT) | 12 years.",
-                "readMoreHref": "/team/sree-divya",
+                "readMoreHref": "/about-us/?guide=sree-divya",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1285,7 +1285,7 @@
                 "imageAlt": "Narmada Gattu",
                 "tagline": "Curating the environment with the precision of design.",
                 "bio": "Dip. Fashion Design | AMI Certified (MTRT) | 3 years.",
-                "readMoreHref": "/team/narmada-gattu",
+                "readMoreHref": "/about-us/?guide=narmada-gattu",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1326,7 +1326,7 @@
                 "imageAlt": "Syeda Saleha Nishat",
                 "tagline": "Balancing the equation between effort and independence.",
                 "bio": "B.Com | AMI Certified (MTRT) | 2 years.",
-                "readMoreHref": "/team/syeda-saleha-nishat",
+                "readMoreHref": "/about-us/?guide=syeda-saleha-nishat",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1367,7 +1367,7 @@
                 "imageAlt": "Ramya Devi Yedla",
                 "tagline": "Designing the environment for the cognitive mind.",
                 "bio": "MCA | Graphic Design | AMI Certified (MTRT) | 12 years tenure.",
-                "readMoreHref": "/team/ramya-devi-yedla",
+                "readMoreHref": "/about-us/?guide=ramya-devi-yedla",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1408,7 +1408,7 @@
                 "imageAlt": "Afsha Ameet Jassani",
                 "tagline": "Building the internal architecture of language.",
                 "bio": "British Council Cert | AMI Certified (MTRT) | 8 years.",
-                "readMoreHref": "/team/afsha-ameet-jassani",
+                "readMoreHref": "/about-us/?guide=afsha-ameet-jassani",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1449,7 +1449,7 @@
                 "imageAlt": "Konda Sai Nishkala",
                 "tagline": "Structuring the child's world through precise taxonomy.",
                 "bio": "AMI Certified (MTRT) | 5 years | Classification & nomenclature.",
-                "readMoreHref": "/team/konda-sai-nishkala",
+                "readMoreHref": "/about-us/?guide=konda-sai-nishkala",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1490,7 +1490,7 @@
                 "imageAlt": "Kriti Khare",
                 "tagline": "Connection as the prerequisite for cognition.",
                 "bio": "NTT (BEA) | 15 years | Psychological safety in math.",
-                "readMoreHref": "/team/kriti-khare",
+                "readMoreHref": "/about-us/?guide=kriti-khare",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1531,7 +1531,7 @@
                 "imageAlt": "Barsha Mishra",
                 "tagline": "Bridging cultural heritage with the discipline of the environment.",
                 "bio": "NTT (BEA) | Hindi Specialist | 15+ years context.",
-                "readMoreHref": "/team/barsha-mishra",
+                "readMoreHref": "/about-us/?guide=barsha-mishra",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1572,7 +1572,7 @@
                 "imageAlt": "Protiti Mookherjee",
                 "tagline": "Cultivating cognitive focus through the discipline of movement.",
                 "bio": "MA (Lit/Dance) | UNESCO CID | 23 years.",
-                "readMoreHref": "/team/protiti-mookherjee",
+                "readMoreHref": "/about-us/?guide=protiti-mookherjee",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1613,7 +1613,7 @@
                 "imageAlt": "R. Shanmuga Priya",
                 "tagline": "Applying operational precision to the construction of the reasoning mind.",
                 "bio": "MBA | AMI Elementary Diploma | 12 years tenure.",
-                "readMoreHref": "/team/r-shanmuga-priya",
+                "readMoreHref": "/about-us/?guide=r-shanmuga-priya",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1654,7 +1654,7 @@
                 "imageAlt": "Sri Satya Sai Kiranmayi R",
                 "tagline": "Moving from rote memorization to scientific deduction.",
                 "bio": "M.Sc. & M.Phil (Chemistry) | AMI Elem. Assistant | 11 years.",
-                "readMoreHref": "/team/sri-satya-sai-kiranmayi-r",
+                "readMoreHref": "/about-us/?guide=sri-satya-sai-kiranmayi-r",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1695,7 +1695,7 @@
                 "imageAlt": "Poulomi Bose",
                 "tagline": "Fusing linguistic rigor with psychological insight.",
                 "bio": "Dip. Psychotherapy | AMI Adolescent | TESOL/TEFL.",
-                "readMoreHref": "/team/poulomi-bose",
+                "readMoreHref": "/about-us/?guide=poulomi-bose",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1736,7 +1736,7 @@
                 "imageAlt": "J H Dasan Perumallapalli",
                 "tagline": "Aligning physical discipline with the prepared environment.",
                 "bio": "M.P.Ed | PG Dip (Yoga) | Montessori Sports Certified.",
-                "readMoreHref": "/team/j-h-dasan-perumallapalli",
+                "readMoreHref": "/about-us/?guide=j-h-dasan-perumallapalli",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1777,7 +1777,7 @@
                 "imageAlt": "Shibani Patel",
                 "tagline": "Structuring the micro-society through mathematical order.",
                 "bio": "B.Ed (Social Studies) | AMI Certified (MTRT) | 9 years.",
-                "readMoreHref": "/team/shibani-patel",
+                "readMoreHref": "/about-us/?guide=shibani-patel",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1818,7 +1818,7 @@
                 "imageAlt": "Satya Sree Ansuri",
                 "tagline": "Engineering the internal order of the mind.",
                 "bio": "D.Arch.E | AMI Certified (MTRT) | 12 years.",
-                "readMoreHref": "/team/satya-sree-ansuri",
+                "readMoreHref": "/about-us/?guide=satya-sree-ansuri",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1859,7 +1859,7 @@
                 "imageAlt": "Dr. Shobha Ediga",
                 "tagline": "Bringing doctoral-level rigor to the adolescent mind.",
                 "bio": "Ph.D. Plant Sciences | Gold Medalist (Biochem) | AMI 6â€“12 Orientation.",
-                "readMoreHref": "/team/dr-shobha-ediga",
+                "readMoreHref": "/about-us/?guide=dr-shobha-ediga",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1900,7 +1900,7 @@
                 "imageAlt": "Shailaja Pagadala",
                 "tagline": "Rooting the study of language in the laws of nature.",
                 "bio": "B.Ed (Bio/Telugu) | AMI 6â€“12 Orientation | 4 years.",
-                "readMoreHref": "/team/shailaja-pagadala",
+                "readMoreHref": "/about-us/?guide=shailaja-pagadala",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1941,7 +1941,7 @@
                 "imageAlt": "Zabin Veerani",
                 "tagline": "Constructing confidence through the discipline of observation.",
                 "bio": "Masters (Accounting) | AMI Primary | AMI 0â€“3 Assistant.",
-                "readMoreHref": "/team/zabin-veerani",
+                "readMoreHref": "/about-us/?guide=zabin-veerani",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -1982,7 +1982,7 @@
                 "imageAlt": "Kiranmayee Gorthi",
                 "tagline": "The prepared adult as the primary instrument of the environment.",
                 "bio": "AMI A to I (MIB) | MBA (HR) | 10 years.",
-                "readMoreHref": "/team/kiranmayee-gorthi",
+                "readMoreHref": "/about-us/?guide=kiranmayee-gorthi",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2023,7 +2023,7 @@
                 "imageAlt": "Gandepalli Sree Theja",
                 "tagline": "Replacing rote memorization with visual logic.",
                 "bio": "M.Tech (Medical Nanotech) | AMI (Medha) | Ex-TCS.",
-                "readMoreHref": "/team/gandepalli-sree-theja",
+                "readMoreHref": "/about-us/?guide=gandepalli-sree-theja",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2064,7 +2064,7 @@
                 "imageAlt": "Badri Shruthi",
                 "tagline": "Decoding the logic of early language and development.",
                 "bio": "B.Tech (IT) | PG Data Science | AMI Certified (MTRT).",
-                "readMoreHref": "/team/badri-shruthi",
+                "readMoreHref": "/about-us/?guide=badri-shruthi",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2105,7 +2105,7 @@
                 "imageAlt": "Ranjan Kumar",
                 "tagline": "Grounding abstract physics in concrete construction.",
                 "bio": "B.Tech (Aeronautical) | 3 years tenure | Prototyping mentor.",
-                "readMoreHref": "/team/ranjan-kumar",
+                "readMoreHref": "/about-us/?guide=ranjan-kumar",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2146,7 +2146,7 @@
                 "imageAlt": "Mridula Chunduri",
                 "tagline": "Igniting cosmic inquiry through the art of narrative.",
                 "bio": "AMI Diploma (MTRT) | PG Journalism | 8 years tenure.",
-                "readMoreHref": "/team/mridula-chunduri",
+                "readMoreHref": "/about-us/?guide=mridula-chunduri",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2187,7 +2187,7 @@
                 "imageAlt": "Sandhya Rao M",
                 "tagline": "Fusing physiological systems with the laws of nature.",
                 "bio": "M.PT | Biomimicry Specialist | AMI (Medha) | 6 years tenure.",
-                "readMoreHref": "/team/sandhya-rao-m",
+                "readMoreHref": "/about-us/?guide=sandhya-rao-m",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2228,7 +2228,7 @@
                 "imageAlt": "Fizza Fallah",
                 "tagline": "Demystifying abstraction through concrete experience.",
                 "bio": "BBA | AMI Certified (MTRT) | 5 years.",
-                "readMoreHref": "/team/fizza-fallah",
+                "readMoreHref": "/about-us/?guide=fizza-fallah",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2269,7 +2269,7 @@
                 "imageAlt": "Siddiqua Rabiha",
                 "tagline": "From physical nutrition to the nourishment of the mind.",
                 "bio": "B.Sc. (Nutrition) | AMI Certified (MTRT) | 2025 graduate.",
-                "readMoreHref": "/team/siddiqua-rabiha",
+                "readMoreHref": "/about-us/?guide=siddiqua-rabiha",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2310,7 +2310,7 @@
                 "imageAlt": "Afrin Syed",
                 "tagline": "Cultivating community through the spiritual preparation of the adult.",
                 "bio": "AMI Primary (MTRT) | 1.8 years tenure | Preparation of the adult.",
-                "readMoreHref": "/team/afrin-syed",
+                "readMoreHref": "/about-us/?guide=afrin-syed",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2351,7 +2351,7 @@
                 "imageAlt": "Bharrgavi Bandreddi",
                 "tagline": "Constructing the childâ€™s understanding of civilization and structure.",
                 "bio": "B.Tech (Civil) | AMI Diploma (Supraja/Navadisha) | 5 years tenure.",
-                "readMoreHref": "/team/bharrgavi-bandreddi",
+                "readMoreHref": "/about-us/?guide=bharrgavi-bandreddi",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2392,7 +2392,7 @@
                 "imageAlt": "Chandini Priya Allu",
                 "tagline": "Constructing the self through the dignity of choice.",
                 "bio": "MBA (Finance) | AMI A to I (MIB) | 10 years tenure.",
-                "readMoreHref": "/team/chandini-priya-allu",
+                "readMoreHref": "/about-us/?guide=chandini-priya-allu",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2433,7 +2433,7 @@
                 "imageAlt": "Anurag C J",
                 "tagline": "Cultivating the aesthetic mind through tactile expression.",
                 "bio": "MFA (Painting) | BFA (Painting) | 2 years tenure.",
-                "readMoreHref": "/team/anurag-c-j",
+                "readMoreHref": "/about-us/?guide=anurag-c-j",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2474,7 +2474,7 @@
                 "imageAlt": "Anisha Kandukuri",
                 "tagline": "Extending the prepared environment beyond the classroom walls.",
                 "bio": "AMI Primary Diploma (MIB) | Dip. E.C.C.Ed | 10 years tenure.",
-                "readMoreHref": "/team/anisha-kandukuri",
+                "readMoreHref": "/about-us/?guide=anisha-kandukuri",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2515,7 +2515,7 @@
                 "imageAlt": "Aishwarya Tejaswiraj",
                 "tagline": "Visualizing the abstract through the lens of narrative.",
                 "bio": "MBA (Media Mgmt) | AMI (MMTI) | Ex-Creative Producer.",
-                "readMoreHref": "/team/aishwarya-tejaswiraj",
+                "readMoreHref": "/about-us/?guide=aishwarya-tejaswiraj",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2556,7 +2556,7 @@
                 "imageAlt": "Telugu Someshwari Devi",
                 "tagline": "Facilitating independence through psychological support.",
                 "bio": "AMI Core Principles (MTRT) | 1 year tenure | Student support.",
-                "readMoreHref": "/team/telugu-someshwari-devi",
+                "readMoreHref": "/about-us/?guide=telugu-someshwari-devi",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2597,7 +2597,7 @@
                 "imageAlt": "Nidhi Vora",
                 "tagline": "Transforming parental anxiety into trust through deep empathy.",
                 "bio": "AMI Primary Diploma (MTRT) | B.Com | 9 years tenure.",
-                "readMoreHref": "/team/nidhi-vora",
+                "readMoreHref": "/about-us/?guide=nidhi-vora",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -2638,7 +2638,7 @@
                 "imageAlt": "Vanga Praveena Reddy",
                 "tagline": "Decoding the syntax of language through the logic of experience.",
                 "bio": "M.Sc. (Computer Science) | AMI (Medha) | 8+ years tenure.",
-                "readMoreHref": "/team/vanga-praveena-reddy",
+                "readMoreHref": "/about-us/?guide=vanga-praveena-reddy",
                 "modal": {
                   "title": "Profile",
                   "content": [
@@ -3356,7 +3356,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://blueblocks.in/academics/"
+              "item": "https://blueblocks.in/"
             },
             {
               "@type": "ListItem",
@@ -6027,7 +6027,7 @@
             "description": "Blue Blocks Micro Research Institute conducts rigorous longitudinal research on how children develop innovative thinking capacities from birth through age 18. Our work bridges developmental psychology, Montessori pedagogy, and innovation science to answer a fundamental question: How does the capacity for original thought emerge, develop, and flourish across childhood?",
             "link": {
               "label": "Read more",
-              "href": "/research/about"
+              "href": "/research-institute/"
             },
             "points": [
               "Cognitive architecture of innovation across developmental stages (0â€“3, 3â€“6, 6â€“12, 12â€“18)",
@@ -7872,34 +7872,28 @@
               "videoLoop": false,
               "items": [
                 {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-01.webp"
+                  "type": "image",
+                  "src": "/innovation/innovators-voice-01.webp"
                 },
                 {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-02.webp"
+                  "type": "image",
+                  "src": "/innovation/innovators-voice-02.webp"
                 },
                 {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-03.webp"
+                  "type": "image",
+                  "src": "/innovation/innovators-voice-03.webp"
                 },
                 {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-04.webp"
+                  "type": "image",
+                  "src": "/innovation/innovators-voice-04.webp"
                 },
                 {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-05.webp"
+                  "type": "image",
+                  "src": "/innovation/innovators-voice-05.webp"
                 },
                 {
-                  "type": "video",
-                  "src": "/videos/demo.mp4",
-                  "poster": "/innovation/innovators-voice-06.webp"
+                  "type": "image",
+                  "src": "/innovation/innovators-voice-06.webp"
                 }
               ]
             }
@@ -10018,14 +10012,12 @@
             "videoLoop": false,
             "items": [
               {
-                "type": "video",
-                "src": "/videos/demo.mp4",
-                "poster": "/innovation/innovators-voice-01.webp"
+                "type": "image",
+                "src": "/innovation/innovators-voice-01.webp"
               },
               {
-                "type": "video",
-                "src": "/videos/demo.mp4",
-                "poster": "/innovation/innovators-voice-02.webp"
+                "type": "image",
+                "src": "/innovation/innovators-voice-02.webp"
               }
             ]
           }

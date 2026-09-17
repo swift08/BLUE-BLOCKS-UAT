@@ -119,15 +119,15 @@ export default function AmiTrainingPage() {
 
             {/* Quick Links Group */}
             <div className="mt-8 flex flex-wrap gap-4 text-xs font-semibold text-amber-600">
-              <Link href="/about-us" className="hover:text-amber-700 underline">
+              <Link href="/about-us/" className="hover:text-amber-700 underline">
                 Meet our Founders & Credentials
               </Link>
               <span className="text-slate-300">•</span>
-              <Link href="/montessori-system" className="hover:text-amber-700 underline">
+              <Link href="/montessori-system/" className="hover:text-amber-700 underline">
                 Explore the Montessori System
               </Link>
               <span className="text-slate-300">•</span>
-              <Link href="/admissions" className="hover:text-amber-700 underline">
+              <Link href="/admissions/" className="hover:text-amber-700 underline">
                 Student Admissions details
               </Link>
             </div>
@@ -281,7 +281,7 @@ export default function AmiTrainingPage() {
                 Get in touch with our training coordinators for detailed brochures, fees, and application timelines.
               </p>
               <Link
-                href="/contact-us"
+                href="/contact-us/"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 font-semibold text-sm text-white transition-colors cursor-pointer"
               >
                 Contact Training Coordinators

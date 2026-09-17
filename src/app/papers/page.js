@@ -108,7 +108,7 @@ export default function PapersHubPage() {
                   </svg>
                 </a>
                 <Link
-                  href="/montessori-system"
+                  href="/montessori-system/"
                   className="inline-flex items-center border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 px-4 py-2.5 rounded-xl transition-colors"
                 >
                   Our Pedagogical System
@@ -171,13 +171,13 @@ export default function PapersHubPage() {
               </p>
               <div className="flex flex-wrap justify-center gap-4 text-xs font-semibold">
                 <Link
-                  href="/admissions"
+                  href="/admissions/"
                   className="bg-slate-900 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl transition-colors"
                 >
                   Admissions Process
                 </Link>
                 <Link
-                  href="/contact-us"
+                  href="/contact-us/"
                   className="border border-slate-200 bg-white hover:bg-slate-50 text-slate-700 px-5 py-2.5 rounded-xl transition-colors"
                 >
                   Contact Enquiry

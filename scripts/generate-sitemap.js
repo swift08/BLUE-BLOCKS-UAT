@@ -71,6 +71,8 @@ function getLastmod(route) {
 // Route definitions
 // ---------------------------------------------------------------------------
 
+const SITEMAP_EXCLUDED_ROUTES = new Set(["/drone", "/video-catalogue"]);
+
 function getStaticRoutes(dir, base = "", routes = []) {
   const items = fs.readdirSync(dir);
   for (const item of items) {
@@ -85,6 +87,7 @@ function getStaticRoutes(dir, base = "", routes = []) {
     } else if (item === "page.js") {
       const route = base || "/";
       if (route === "/_not-found") continue;
+      if (SITEMAP_EXCLUDED_ROUTES.has(route)) continue;
       routes.push(route);
     }
   }
@@ -197,6 +200,7 @@ function getRoutes({ researchOutputs = [], blogPosts = [] }) {
 
   const seen = new Set();
   return all.filter(({ route }) => {
+    if (SITEMAP_EXCLUDED_ROUTES.has(route)) return false;
     if (seen.has(route)) return false;
     seen.add(route);
     return true;

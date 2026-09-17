@@ -114,6 +114,13 @@ function FounderCard({
     if (!readMoreHref || readMoreHref === "/" || readMoreHref === "/about-us/") {
       return name ? name.toLowerCase().trim().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") : "";
     }
+    try {
+      const url = new URL(readMoreHref, "https://blueblocks.in");
+      const guide = url.searchParams.get("guide");
+      if (guide) return guide;
+    } catch {
+      // fall through to path-segment parsing
+    }
     const parts = readMoreHref.split("/");
     const lastPart = parts.filter(Boolean).pop();
     return lastPart || "";

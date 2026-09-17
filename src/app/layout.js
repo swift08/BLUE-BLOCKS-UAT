@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
         {/* OpenAI Ads Pixel — official Ads Manager snippet (debug:true while testing) */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"9sY4TiPwiYhBH1QGBhzEkw",debug:true});`,
+            __html: `!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"9sY4TiPwiYhBH1QGBhzEkw",debug:false});`,
           }}
         />
         {/* DNS + TCP pre-negotiation for third-party domains.

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import siteData from "@/data/site";
+import siteData from "@/data/footer-newsletter-site";
 
 function isEmail(v = "") {
   const s = String(v || "").trim();

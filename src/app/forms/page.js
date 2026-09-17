@@ -25,7 +25,7 @@ export default function FormsSelectionPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <Link href="/forms/food-foundations-reflection" className="bb-card bg-white hover:border-[#1f3b82] hover:shadow-xl transition-all cursor-pointer group flex flex-col items-center text-center p-8 border-2 border-transparent">
+          <Link href="/forms/food-foundations-reflection/" className="bb-card bg-white hover:border-[#1f3b82] hover:shadow-xl transition-all cursor-pointer group flex flex-col items-center text-center p-8 border-2 border-transparent">
             <div className="w-16 h-16 bg-[#1f3b82]/10 text-[#1f3b82] rounded-full flex items-center justify-center mb-6 group-hover:bg-[#1f3b82] group-hover:text-white transition-colors">
               <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -36,7 +36,7 @@ export default function FormsSelectionPage() {
             <span className="text-[#1f3b82] font-medium group-hover:underline">Start Full Reflection &rarr;</span>
           </Link>
 
-          <Link href="/forms/Foodfoundations" className="bb-card bg-white hover:border-green-600 hover:shadow-xl transition-all cursor-pointer group flex flex-col items-center text-center p-8 border-2 border-transparent">
+          <Link href="/forms/Foodfoundations/" className="bb-card bg-white hover:border-green-600 hover:shadow-xl transition-all cursor-pointer group flex flex-col items-center text-center p-8 border-2 border-transparent">
             <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
               <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />

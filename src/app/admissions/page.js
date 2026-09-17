@@ -81,7 +81,7 @@ export default function AdmissionsPage() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/campus" className="hover:text-amber-700 underline">
+                    <Link href="/campus/" className="hover:text-amber-700 underline">
                       Tour Gachibowli Campus
                     </Link>
                   </li>
@@ -109,7 +109,7 @@ export default function AdmissionsPage() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/campus" className="hover:text-amber-700 underline">
+                    <Link href="/campus/" className="hover:text-amber-700 underline">
                       Tour Tellapur Campus
                     </Link>
                   </li>

@@ -181,11 +181,11 @@ const faqs = [
     renderA: (
       <>
         Children move on to our{" "}
-        <Link href="/programs/primary-school-elementary/class-1-to-6" className="text-[#0A4BCE] hover:underline font-semibold">
+        <Link href="/programs/primary-school-elementary/class-1-to-6/" className="text-[#0A4BCE] hover:underline font-semibold">
           Elementary programme
         </Link>{" "}
         for ages 6 to 12, the same school, the same community, the next stage of an unbroken Montessori journey. The full pathway continues to the{" "}
-        <Link href="/programs/secondary-school/cambridge-igcse-erdkinder" className="text-[#0A4BCE] hover:underline font-semibold">
+        <Link href="/programs/secondary-school/cambridge-igcse-erdkinder/" className="text-[#0A4BCE] hover:underline font-semibold">
           Erdkinder programme
         </Link>{" "}
         at Grade 7 (ages 12–16), where children take Cambridge Lower Secondary and Cambridge IGCSE.
@@ -828,7 +828,7 @@ export default function NurseryCurriculum() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
               <Link
-                href="/contact"
+                href="/contact/"
                 className="bg-[#0A4BCE] hover:bg-[#0840B0] transition-colors text-white font-semibold px-8 py-4 rounded-full w-full sm:w-auto"
               >
                 Book a Free Observation →

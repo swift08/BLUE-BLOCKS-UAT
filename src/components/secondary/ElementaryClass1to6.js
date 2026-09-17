@@ -232,7 +232,7 @@ const faqs = [
       <>
         At 12, children transition to the Erdkinder programme (ages 12–16, Grade 7 to Grade 10) at Blue Blocks. Cambridge Lower Secondary in Grades 7–8, Cambridge IGCSE in Grades 9–10. Same school, same community, globally recognised qualifications.{" "}
         <Link
-          href="/programs/secondary-school/cambridge-igcse-erdkinder"
+          href="/programs/secondary-school/cambridge-igcse-erdkinder/"
           className="text-[#0A4BCE] hover:underline font-semibold"
         >
           Learn more about Erdkinder →
@@ -372,7 +372,7 @@ export default function ElementaryClass1to6() {
 
           <div className="flex flex-col sm:flex-row gap-4 mb-24">
             <Link
-              href="/campus"
+              href="/campus/"
               className="bg-[#0A4BCE] hover:bg-[#0840B0] transition-colors text-white text-sm font-semibold px-8 py-3.5 rounded-full shadow-lg"
             >
               BOOK AN OBSERVATION VISIT
@@ -751,7 +751,7 @@ export default function ElementaryClass1to6() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
               <Link
-                href="/campus"
+                href="/campus/"
                 className="bg-[#0A4BCE] hover:bg-[#0840B0] transition-colors text-white font-semibold px-8 py-4 rounded-full w-full sm:w-auto"
               >
                 Book an Observation Visit →
@@ -766,14 +766,14 @@ export default function ElementaryClass1to6() {
             <div className="mt-12 text-slate-500 text-xs flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-6">
               <div>
                 Transitioning to Secondary?{" "}
-                <Link href="/programs/secondary-school/cambridge-igcse-erdkinder" className="text-[#58A5F3] hover:underline font-semibold">
+                <Link href="/programs/secondary-school/cambridge-igcse-erdkinder/" className="text-[#58A5F3] hover:underline font-semibold">
                   See our Erdkinder (Adolescent) programme →
                 </Link>
               </div>
               <div className="hidden sm:block text-slate-700">|</div>
               <div>
                 Coming from Pre-Primary?{" "}
-                <Link href="/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum" className="text-[#58A5F3] hover:underline font-semibold">
+                <Link href="/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum/" className="text-[#58A5F3] hover:underline font-semibold">
                   See our Nursery, PP1, PP2 programme →
                 </Link>
               </div>

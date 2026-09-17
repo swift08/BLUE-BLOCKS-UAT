@@ -21,19 +21,12 @@ export default function VideoCatalogExperience({ phone }) {
       <GrowthBlocks />
       <Hero youtubeId={CATALOG_HERO_YOUTUBE_ID} />
 
-      <section id="journey" className="relative pt-24 pb-8 text-center">
-        <div className="container relative mx-auto max-w-4xl px-6">
-          <div className="mb-4 inline-flex items-center gap-3">
-            <div className="h-px w-8 bg-sky-blue/40" />
-            <span className="text-xs font-bold uppercase tracking-[0.4em] text-sky-blue/80">
-              Videos Begin
-            </span>
-            <div className="h-px w-8 bg-sky-blue/40" />
-          </div>
-          <h2 className="font-display text-4xl font-black tracking-tight text-white md:text-6xl">
+      <section id="journey" className="relative px-1 pt-14 pb-6 text-center sm:pt-20 sm:pb-8 md:pt-24">
+        <div className="container relative mx-auto max-w-4xl px-5 sm:px-6">
+          <h2 className="font-display text-3xl font-black tracking-tight text-white sm:text-4xl md:text-6xl">
             The Journey
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg font-medium leading-relaxed text-vc-foreground/70 md:text-xl">
+          <p className="mx-auto mt-4 max-w-2xl text-base font-medium leading-relaxed text-vc-foreground/70 sm:mt-6 sm:text-lg md:text-xl">
             Every step of a child&apos;s time at Blue Blocks, from the first day in a Toddler room to
             the last year of the Erdkinder program.
           </p>

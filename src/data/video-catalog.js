@@ -40,12 +40,8 @@ export const CATALOG_SECTIONS = [
     title: "From First Steps to Future Innovators",
     subtitle: "Sixteen years of Montessori at Blue Blocks.",
     intro:
-      "A child stacks the Pink Tower. Years later, the same child builds a CubeSat. This is Blue Blocks Montessori School in Hyderabad, from ages 15 months to 18 years, across our Gachibowli and Tellapur campuses.",
-    pointers: [
-      "AMI, the gold-standard Montessori method, taught the way Maria Montessori intended",
-      "Two campuses across Hyderabad",
-      "The full 0-18 arc, under one continuous method",
-    ],
+      "Montessori is often associated with the early years. At Blue Blocks, we’ve extended its principles and pedagogy to 16 years, allowing Montessori to grow and evolve with the child.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "p6BAibbW5uQ",
     poster: POSTERS.hero,
@@ -60,12 +56,8 @@ export const CATALOG_SECTIONS = [
     title: "Our Vision, In Their Words",
     subtitle: "Pavan Goyal and Munira Hussain, Visionaries.",
     intro:
-      "A school where a child begins in infancy and grows with us through adolescence. Blue Blocks is not just a school. It is a complete developmental journey, held together by the same pedagogy at every age.",
-    pointers: [
-      "Pavan Goyal, Founder : World’s First with all four AMI diplomas, IMF Trustee",
-      "Munira Hussain, Co-founder : AMI Auxiliary Trainer, Director of Pedagogy",
-      "Founded in 2009, now serving ages 15 months to 18 years",
-    ],
+      "At Blue Blocks, we envision education as a journey that evolves with the child — carrying Montessori principles from the early years into adolescence, while nurturing curiosity, independence, and innovation.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "jGFfGPb6IOI",
     poster: POSTERS.founders,
@@ -81,12 +73,8 @@ export const CATALOG_SECTIONS = [
     title: "The Toddler Environment",
     subtitle: "Ages 15 months to 3 years, at our Gachibowli campus.",
     intro:
-      "A prepared environment designed for the child who has just begun to move, speak, and choose. Shelves at the right height. Materials that invite. Guides who observe. Every detail respects the toddler's own pace.",
-    pointers: [
-      "AMI certified guides trained in the earliest years",
-      "Everyday tasks: Pouring, Buttoning, Tidying , at the centre of daily schedule",
-      "Language, movement, and independence, gently supported",
-    ],
+      "A prepared space honoring a toddler’s own pace for language, movement, and independence. AMI-certified guides gently support everyday tasks like pouring, buttoning, and tidying. Materials and shelves are perfectly sized to invite curiosity and choice.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "7IleqbWfCB8",
     poster: POSTERS.discovery,
@@ -101,12 +89,8 @@ export const CATALOG_SECTIONS = [
     title: "The Primary Classroom",
     subtitle: "Ages 3 to 6, at both Tellapur and Gachibowli campuses.",
     intro:
-      "The Montessori foundation years. Children work with real materials that make numbers, letters, and ideas physical. They touch what they learn. Mixed-age classrooms, guided by trained Montessori educators. Language, math, science, and culture, all discoverable by hand.",
-    pointers: [
-      "AMI certified guides in every classroom",
-      "Mixed-age communities of 3, 4, 5, and 6 year olds",
-      "A long, unbroken window each morning for children to focus deeply",
-    ],
+      "Mixed-age communities enjoy long, unbroken mornings to focus deeply on their work. Children use real materials to make numbers, letters, and ideas physical and discoverable by hand. Guides lead foundational explorations in language, math, science, and culture.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "i-eF_JXngW0",
     poster: POSTERS.primaryEnv,
@@ -122,12 +106,8 @@ export const CATALOG_SECTIONS = [
     title: "The Elementary Programme",
     subtitle: "Ages 6 to 12, at our Tellapur campus.",
     intro:
-      "Where a child's ideas start becoming real work. Elementary at Blue Blocks brings biomimicry lessons drawn from nature, an early introduction to our Innovation Programme, and mentor-led enrichment in art, karate, Bharatanatyam, sports, and science. Hands begin to build.",
-    pointers: [
-      "Biomimicry lessons and hands-on learning from nature",
-      "Introduction to the Innovation Programme; children start building their own ideas",
-      "Enrichment: karate, Bharatanatyam, art, sports, science",
-    ],
+      "Children turn ideas into real work through hands-on learning and biomimicry lessons drawn from nature. Early introductions to the Innovation Programme empower young minds to start building. Mentor-led enrichments span art, karate, Bharatanatyam, sports, and science.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "HXYcMNdnOfE",
     poster: POSTERS.elementary,
@@ -140,14 +120,11 @@ export const CATALOG_SECTIONS = [
     index: "06",
     eyebrow: "VIDEO 6",
     title: "The Erdkinder Programme",
-    subtitle: "Ages 12 to 18, our adolescent program. Education for real life.",
+    subtitle:
+      "Ages 12 to 18, our adolescent program at our Tellapur campus. Education for real life.",
     intro:
-      "In adolescence, Cambridge learning goes beyond classrooms. Our Adolescent Program at Blue Blocks connects academics with real-world responsibility, preparing young adults for life with purpose and independence.",
-    pointers: [
-      "Cambridge IGCSE integration",
-      "Farm work, enterprises, and real responsibility",
-      "Collaborative projects and student-led presentations",
-    ],
+      "Cambridge IGCSE integration connects rigorous academics with real-world responsibility. Students engage in farm work, enterprises, collaborative projects, and student-led presentations. We prepare young adults for a life driven by purpose and independence.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "3nyW_x8UP6o",
     poster: POSTERS.erdkinder,
@@ -163,12 +140,8 @@ export const CATALOG_SECTIONS = [
     title: "Safe Transport",
     subtitle: "Every journey matters.",
     intro:
-      "Trained women attenders in every bus. Seat belts on every seat. Safe boarding, safe drop-off, and clear communication with parents. Our school transport is designed to give parents complete peace of mind, every single day.",
-    pointers: [
-      "Trained women attenders on every route",
-      "Seat belts on every seat",
-      "Safe boarding and drop-off protocols",
-    ],
+      "Our transport system is designed to give parents complete peace of mind every single day. We ensure strict safety with seat belts and secure boarding and drop-off protocols. Trained women attenders safely accompany children on every single route.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "9Ks-0WYOiNk",
     poster: POSTERS.transport,
@@ -183,12 +156,8 @@ export const CATALOG_SECTIONS = [
     title: "The Innovation Programme",
     subtitle: "Where children design, prototype, and build.",
     intro:
-      "Innovation at Blue Blocks is not a subject. It is an experience. From drones to 3D printing to our space lab, children learn to imagine, design, and create the future. Real work, real prototypes, real projects.",
-    pointers: [
-      "Drones designed and flown by students",
-      "3D printing across programmes",
-      "Our own space lab, with student-built CubeSats",
-    ],
+      "Innovation here is an experience of real work, real prototypes, and real projects. Students imagine and create the future using drones, 3D printing, and our applied research campus facilities. Watch our innovators design everything from flight mechanics to student-built CubeSats.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "NGYrDPjiKYk",
     poster: POSTERS.drone,
@@ -204,12 +173,8 @@ export const CATALOG_SECTIONS = [
     title: "A Day at Our Farm",
     subtitle: "Nature as teacher.",
     intro:
-      "Our dedicated farm connects children with the earth. Feeding animals. Planting seeds. Harvesting what they grew. Children learn responsibility, patience, and the quiet joy of working with living things.",
-    pointers: [
-      "Dedicated farm for hands-on learning",
-      "Animal care and seed-to-harvest cycles",
-      "Central to both Elementary and Erdkinder programs",
-    ],
+      "Our dedicated farm centralizes hands-on learning for both Elementary and Erdkinder programs. Children experience the complete seed-to-harvest cycle and learn the quiet joy of animal care. Working with living things cultivates deep responsibility and patience.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "Nf-6JT3bWnM",
     poster: POSTERS.farm,
@@ -224,12 +189,8 @@ export const CATALOG_SECTIONS = [
     title: "A Day in the Life",
     subtitle: "One morning through a child's eyes.",
     intro:
-      "Arrival. Choosing work. Preparing a snack. Group activity. Outdoor play. Story circle. A Montessori day is filled with choice, focus, and joy. Every moment quietly builds confidence and independence.",
-    pointers: [
-      "Follows a single 3 to 6 year old through her morning",
-      "A long, focused day of choosing and growing",
-      "Independence and joy woven into the routine",
-    ],
+      "Follow a 3 to 6-year-old through a long, focused morning of choosing and growing. Experience a Montessori routine seamlessly woven with group activities, outdoor play, and story circles. Every moment is thoughtfully designed to quietly build confidence, independence, and joy.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "4g06zmTsQgw",
     poster: POSTERS.primary,
@@ -245,11 +206,8 @@ export const CATALOG_SECTIONS = [
     title: "Guides, Not Teachers",
     subtitle: "100% AMI certified. The world’s highest bar for a Montessori educator.",
     intro:
-      "Every guide at Blue Blocks is certified by Association Montessori Internationale, the global body that keeps Montessori authentic. Founded by Dr. Maria Montessori in 1929, world’s best Montessori schools all holthis certification. It is why the classroom looks the way it does.",
-    pointers: [
-      "100% AMI-certified guides across all ages",
-      "Continuous professional training aligned to AMI standards",
-    ],
+      "Every guide across all ages undergoes continuous professional training aligned to strict AMI standards. We maintain the global authenticity established by Dr. Maria Montessori in 1929. This unparalleled certification is the defining reason our classrooms look and function the way they do.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "idoXmaOnN-o",
     poster: POSTERS.teachers,
@@ -264,12 +222,8 @@ export const CATALOG_SECTIONS = [
     title: "Parents in the Room",
     subtitle: "When parents and school pull in the same direction, children thrive.",
     intro:
-      "Education works best when school and home work together. Workshops for parents, grandparents, and nannies. Our events like Explore Montessori and Drone & Art Expo day. Families as active partners in every child's growth, across the full 16-year journey.",
-    pointers: [
-      "Workshops for parents, grandparents, and nannies",
-      "Explore Montessori, our annual themed school event.",
-      "Ongoing home-school communication",
-    ],
+      "We foster ongoing home-school communication and view families as active partners across the 16-year journey. Engage in dedicated workshops designed for parents, grandparents, and nannies. Join our community for vibrant annual events like Explore Montessori and Drone & Art Expo day.",
+    pointers: [],
     videoSrc: null,
     youtubeId: "XbkRkM_Z05A",
     poster: POSTERS.parents,
@@ -285,12 +239,8 @@ export const CATALOG_SECTIONS = [
     title: "Begin Your Journey",
     subtitle: "Simple, welcoming admissions.",
     intro:
-      "Your journey with Blue Blocks begins with an insightful Admission Workshop. Meet the school, meet the guides, and see the environment before anything is decided.",
-    pointers: [
-      "Start with an Admission Workshop and school tour",
-      "Meet the founders, the guides in person",
-      "WhatsApp 9000955053 to register",
-    ],
+      "Start your family's journey by registering for an insightful Discovery Workshop and school tour. Meet the founders and the guides in person to explore our environment before deciding. Reach out via WhatsApp at 9000955053 to register and take the next step.",
+    pointers: [],
     videoSrc: null,
     image: POSTERS.admissions,
     poster: POSTERS.admissions,
@@ -315,7 +265,7 @@ export const CATALOG_SCHEMA = {
       position: 1,
       name: "Blue Blocks Montessori — From First Steps to Future Innovators (Hero)",
       description:
-        "Blue Blocks Montessori School in Hyderabad, from ages 15 months to 18 years, across Gachibowli and Tellapur campuses.",
+        "Montessori is often associated with the early years. At Blue Blocks, we’ve extended its principles and pedagogy to 16 years, allowing Montessori to grow and evolve with the child.",
       thumbnailUrl: "https://blueblocks.in/video-catalog/hero.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/p6BAibbW5uQ",
@@ -331,7 +281,7 @@ export const CATALOG_SCHEMA = {
       position: 2,
       name: "Our Vision, In Their Words — Blue Blocks Co-founders",
       description:
-        "Pavan Goyal and Munira Hussain, Co-founders of Blue Blocks Montessori School, on the complete 0 to 18 journey.",
+        "At Blue Blocks, we envision education as a journey that evolves with the child — carrying Montessori principles from the early years into adolescence, while nurturing curiosity, independence, and innovation.",
       thumbnailUrl: "https://blueblocks.in/about-us/hero.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/jGFfGPb6IOI",
@@ -347,7 +297,7 @@ export const CATALOG_SCHEMA = {
       position: 3,
       name: "The Toddler Environment at Blue Blocks",
       description:
-        "AMI-guided Montessori Toddler programme at Blue Blocks, for ages 15 months to 3 years, Gachibowli campus.",
+        "A prepared space honoring a toddler’s own pace for language, movement, and independence. AMI-certified guides gently support everyday tasks like pouring, buttoning, and tidying. Materials and shelves are perfectly sized to invite curiosity and choice.",
       thumbnailUrl: "https://blueblocks.in/programs/playgroup/image-01.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/7IleqbWfCB8",
@@ -363,7 +313,7 @@ export const CATALOG_SCHEMA = {
       position: 4,
       name: "The Primary Classroom at Blue Blocks",
       description:
-        "Blue Blocks Primary Montessori programme for ages 3 to 6, mixed-age classrooms with AMI-certified guides.",
+        "Mixed-age communities enjoy long, unbroken mornings to focus deeply on their work. Children use real materials to make numbers, letters, and ideas physical and discoverable by hand. Guides lead foundational explorations in language, math, science, and culture.",
       thumbnailUrl: "https://blueblocks.in/programs/thumb-primary.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/i-eF_JXngW0",
@@ -379,7 +329,7 @@ export const CATALOG_SCHEMA = {
       position: 5,
       name: "The Elementary Programme at Blue Blocks",
       description:
-        "Blue Blocks Elementary Montessori programme for ages 6 to 12, Tellapur campus, with Cosmic Education, the Great Lessons, and mentor-led enrichment.",
+        "Children turn ideas into real work through hands-on learning and biomimicry lessons drawn from nature. Early introductions to the Innovation Programme empower young minds to start building. Mentor-led enrichments span art, karate, Bharatanatyam, sports, and science.",
       thumbnailUrl: "https://blueblocks.in/programs/thumb-primary.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/HXYcMNdnOfE",
@@ -395,7 +345,7 @@ export const CATALOG_SCHEMA = {
       position: 6,
       name: "The Erdkinder Programme at Blue Blocks",
       description:
-        "Blue Blocks Erdkinder Montessori adolescent programme for ages 12 to 18, Cambridge IGCSE integrated.",
+        "Cambridge IGCSE integration connects rigorous academics with real-world responsibility. Students engage in farm work, enterprises, collaborative projects, and student-led presentations. We prepare young adults for a life driven by purpose and independence.",
       thumbnailUrl: "https://blueblocks.in/programs/thumb-secondary.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/3nyW_x8UP6o",
@@ -411,7 +361,7 @@ export const CATALOG_SCHEMA = {
       position: 7,
       name: "Safe Transport at Blue Blocks",
       description:
-        "Blue Blocks school transport with trained women attenders, seat belts, and safe boarding protocols.",
+        "Our transport system is designed to give parents complete peace of mind every single day. We ensure strict safety with seat belts and secure boarding and drop-off protocols. Trained women attenders safely accompany children on every single route.",
       thumbnailUrl: "https://blueblocks.in/campus/campus4-min.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/9Ks-0WYOiNk",
@@ -427,7 +377,7 @@ export const CATALOG_SCHEMA = {
       position: 8,
       name: "The Innovation Programme at Blue Blocks",
       description:
-        "Innovation Programme at Blue Blocks — drones, 3D printing, and a student-run space lab.",
+        "Innovation here is an experience of real work, real prototypes, and real projects. Students imagine and create the future using drones, 3D printing, and our applied research campus facilities. Watch our innovators design everything from flight mechanics to student-built CubeSats.",
       thumbnailUrl: "https://blueblocks.in/innovation/innov_hero.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/NGYrDPjiKYk",
@@ -443,7 +393,7 @@ export const CATALOG_SCHEMA = {
       position: 9,
       name: "A Day at Our Farm — Blue Blocks",
       description:
-        "Blue Blocks dedicated farm, where children feed animals, plant seeds, and harvest. Nature as teacher.",
+        "Our dedicated farm centralizes hands-on learning for both Elementary and Erdkinder programs. Children experience the complete seed-to-harvest cycle and learn the quiet joy of animal care. Working with living things cultivates deep responsibility and patience.",
       thumbnailUrl: "https://blueblocks.in/campus/campus1-min.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/Nf-6JT3bWnM",
@@ -459,7 +409,7 @@ export const CATALOG_SCHEMA = {
       position: 10,
       name: "A Day in the Life of a Montessori Child (3 to 6) at Blue Blocks",
       description:
-        "One morning through the eyes of a 3 to 6 year old Montessori child at Blue Blocks.",
+        "Follow a 3 to 6-year-old through a long, focused morning of choosing and growing. Experience a Montessori routine seamlessly woven with group activities, outdoor play, and story circles. Every moment is thoughtfully designed to quietly build confidence, independence, and joy.",
       thumbnailUrl: "https://blueblocks.in/programs/thumb-nursery.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/4g06zmTsQgw",
@@ -475,7 +425,7 @@ export const CATALOG_SCHEMA = {
       position: 11,
       name: "Guides, Not Teachers — AMI-Certified Educators at Blue Blocks",
       description:
-        "100% AMI-certified Montessori guides at Blue Blocks Montessori School.",
+        "Every guide across all ages undergoes continuous professional training aligned to strict AMI standards. We maintain the global authenticity established by Dr. Maria Montessori in 1929. This unparalleled certification is the defining reason our classrooms look and function the way they do.",
       thumbnailUrl: "https://blueblocks.in/careers/building.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/idoXmaOnN-o",
@@ -491,7 +441,7 @@ export const CATALOG_SCHEMA = {
       position: 12,
       name: "Parent Engagement at Blue Blocks",
       description:
-        "Workshops for parents, grandparents, and nannies. The annual Explore Montessori event. Home-school partnership across 16 years.",
+        "We foster ongoing home-school communication and view families as active partners across the 16-year journey. Engage in dedicated workshops designed for parents, grandparents, and nannies. Join our community for vibrant annual events like Explore Montessori and Drone & Art Expo day.",
       thumbnailUrl: "https://blueblocks.in/home-01/kids-being-part-sunday-school.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://www.youtube.com/shorts/XbkRkM_Z05A",
@@ -507,7 +457,7 @@ export const CATALOG_SCHEMA = {
       position: 13,
       name: "Begin Your Journey — Blue Blocks Admissions",
       description:
-        "Blue Blocks admissions begin with a welcoming Admission Workshop. WhatsApp 9000955053 to register.",
+        "Start your family's journey by registering for an insightful Discovery Workshop and school tour. Meet the founders and the guides in person to explore our environment before deciding. Reach out via WhatsApp at 9000955053 to register and take the next step.",
       thumbnailUrl: "https://blueblocks.in/video-catalog/admissions.webp",
       uploadDate: "2026-04-24",
       contentUrl: "https://blueblocks.in/admissions/",
