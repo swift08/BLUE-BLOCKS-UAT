@@ -17,10 +17,6 @@ export const metadata = {
   robots: { index: true, follow: true },
   alternates: {
     canonical: "https://blueblocks.in/about-us/",
-    languages: {
-      "en-in": "https://blueblocks.in/about-us/",
-      "x-default": "https://blueblocks.in/about-us/",
-    },
   },
   openGraph: {
     type: "website",

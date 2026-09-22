@@ -171,9 +171,10 @@ function getRoutes({ researchOutputs = [], blogPosts = [] }) {
     priority: "0.7",
   }));
 
-  // Research publications markdown views
+  // Research publications markdown views (App Router dirs under trailingSlash:
+  // emit "...md/" so sitemap matches the 200/canonical URL, not the 301 bare ".md").
   const publicationMdRoutes = researchOutputs.map((item) => ({
-    route: `/publications/${item.slug}/${item.slug}.md`,
+    route: `/publications/${item.slug}/${item.slug}.md/`,
     changefreq: "monthly",
     priority: "0.6",
   }));

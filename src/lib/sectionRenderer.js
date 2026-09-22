@@ -15,6 +15,7 @@ import dynamic from "next/dynamic";
 // ─────────────────────────────────────────────────────────────────────────────
 import Hero from "@/components/blocks/Hero";
 import PageHero from "@/components/blocks/PageHero";
+import RecentBlogs from "@/components/blocks/RecentBlogs";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // DYNAMIC imports — below-the-fold sections (code-split into separate chunks)
@@ -252,6 +253,8 @@ export default function SectionRenderer({ sections = [] }) {
             return <ImageText key={key} {...props} />;
           case "journeyCards":
             return <JourneyCards key={key} {...props} />;
+          case "recentBlogs":
+            return <RecentBlogs key={key} {...props} />;
           case "featureGrid":
             return <FeatureGrid key={key} {...props} />;
           case "insights":

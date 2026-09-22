@@ -1,5 +1,5 @@
 # Blue Blocks Montessori School & Micro Research Institute
-> Last updated: 2026-09-16T05:46:23.981Z
+> Last updated: 2026-09-22T16:40:39.145Z
 
 > Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad, India, offering a continuous developmental education from 15 months to 18 years (Ages 1-18), integrated with the Cambridge IGCSE curriculum. The school operates two campuses (Gachibowli and Tellapur) and houses innovation labs in space technology, drone engineering, and biomimicry. The Blue Blocks Micro Research Institute conducts a 17-year longitudinal observational study of child development across 1,047 children.
 
@@ -64,6 +64,7 @@ Founded: 2009
 
 ## Blog
 
+- [How to Keep Children Connected to Nature: Six Small Habits at Home](https://blueblocks.in/blog/how-to-keep-children-connected-to-nature/): Our recent pilot study of 81 children found something that most parents already sense but rarely see confirmed. When children are given a piece of paper and asked to draw a place where life can exist, 77.5 percent draw nature. Trees, the sun, water, animals, and sky, in that order. This piece answers a different […]
 - [What Do Children Draw When Asked About Life? Trees and the Sun](https://blueblocks.in/blog/what-do-children-draw-when-asked-about-life/): Some research findings surprise us. Others confirm what most parents already sense but have never had the numbers to say out loud. This one is the second kind. What do children draw when a prompt does not tell them what to draw? When we asked eighty-one children at Blue Blocks Montessori School to draw a […]
 - [How to Stop Force Feeding Your Toddler (and What to Do Instead)](https://blueblocks.in/blog/how-to-stop-force-feeding-your-toddler/): How to stop force feeding your toddler is one of the most common questions we hear from parents at Blue Blocks, and the answer is not what most parents expect. If you have ever chased your toddler around the room with a spoon, bribed her with a screen to finish her plate, or negotiated one […]
 - [How to Create a Positive Mealtime Environment for Your Child](https://blueblocks.in/blog/how-to-create-a-positive-mealtime-environment/): Dinner in your house. The television is on in the corner. Your phone sits next to your plate. Your toddler is pushing rice around. You have said “one more bite” three times already. Your partner is scrolling. No one is looking at each other. This is what most mealtimes look like in most homes. And […]

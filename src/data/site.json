@@ -385,6 +385,16 @@
           }
         },
         {
+          "type": "recentBlogs",
+          "props": {
+            "title": "Recent Articles & Insights",
+            "eyebrow": "FROM OUR JOURNAL",
+            "subtitle": "Thoughtful reflections on child development, Montessori education, and self-directed learning from our educators.",
+            "ctaText": "Explore All Articles",
+            "ctaHref": "/blog/"
+          }
+        },
+        {
           "type": "announcementSection",
           "props": {
             "announcements": [
@@ -2783,7 +2793,7 @@
                 "imageAlt": "Patents",
                 "title": "Innovation",
                 "text": "Our students have filed 5 Utility Patents for their own inventionsâ€”evidence that when children are trusted with real problems, they respond with original solutions.",
-                "href": "/research/patents",
+                "href": "/research-institute/",
                 "bg": "#F7E28D"
               },
               {
@@ -2791,7 +2801,7 @@
                 "imageAlt": "Mission SBB-1",
                 "title": "Mission SBB-1 (Authorized by ISRO/IN-SPACe)",
                 "text": "A payload designed and engineered by our adolescents received IN-SPACe authorization for launch with ISRO, demonstrating that Montessori students can operate within high-stakes technical and regulatory frameworks.",
-                "href": "/research/sbb-1",
+                "href": "/research-institute/",
                 "bg": "#78C4E5"
               },
               {
@@ -3484,7 +3494,7 @@
             "text": "Seats are filled on a first-come basis.",
             "cta": {
               "label": "Book Admission Workshop",
-              "href": "/contact"
+              "href": "/contact-us/"
             },
             "image": "/building-image-01.webp",
             "imageAlt": "Campus building",
@@ -3613,7 +3623,7 @@
               "text": "Seats are filled on a first-come basis.",
               "cta": {
                 "label": "Book Admission Workshop",
-                "href": "/contact"
+                "href": "/contact-us/"
               },
               "image": "/building-image-01.webp",
               "imageAlt": "Campus building",
@@ -6891,7 +6901,7 @@
                 "title": "The Bio-Mimicry Hive:",
                 "text": "Where nature becomes mentor â€” and students become custodians. Learning from 3.8 billion years of biological wisdom, students develop regenerative thinking: design that serves life, not just human convenience.",
                 "linkName": "â†’ Explore The Bio-Mimicry Hive",
-                "linkHref": "/innovation/bio-mimicry-hive"
+                "linkHref": "/innovation/biomimicry-hive/"
               },
               {
                 "icon": "/icon/bulb.svg",

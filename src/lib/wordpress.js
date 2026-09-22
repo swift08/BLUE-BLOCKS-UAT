@@ -135,6 +135,17 @@ function pickAuthor(post) {
   return author?.name ? decodeEntities(author.name) : null;
 }
 
+/**
+ * Upgrade legacy HTTP Blue Blocks WordPress URLs to HTTPS.
+ * Scoped to this domain only — does not rewrite xmlns, localhost, or externals.
+ */
+function normalizeWordPressHtml(html = "") {
+  return String(html).replaceAll(
+    "http://blueblocks.in/",
+    "https://blueblocks.in/"
+  );
+}
+
 export function normalizePost(post) {
   if (!post || !post.slug) return null;
   return {
@@ -142,7 +153,7 @@ export function normalizePost(post) {
     slug: post.slug,
     title: decodeEntities(post.title?.rendered || ""),
     excerpt: stripHtml(post.excerpt?.rendered || ""),
-    contentHtml: post.content?.rendered || "",
+    contentHtml: normalizeWordPressHtml(post.content?.rendered || ""),
     date: post.date || null,
     modified: post.modified || post.date || null,
     featured: pickFeatured(post),
@@ -173,6 +184,15 @@ export function normalizeCategory(category) {
     parent: category.parent || 0,
     link: category.link || `${WP_BASE}/category/${category.slug}/`,
   };
+}
+
+/** Top recent posts (with embedded media/terms/author) for homepage and widgets. */
+export async function getRecentPosts(limit = 3) {
+  const data = await wpFetch(
+    `${API}/posts?per_page=${limit}&_embed=1&orderby=date&order=desc`
+  );
+  if (!Array.isArray(data)) return [];
+  return data.map(normalizePost).filter(Boolean);
 }
 
 /** Full post objects (with embedded media/terms/author) for listing + cards. */

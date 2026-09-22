@@ -218,14 +218,11 @@ export function buildNextLevelSchema() {
     "url": `https://${p.where}`
   }));
 
-  // 11. Programmatic Course nodes
-  const courseNodes = subjects.map((sub) => ({
-    "@type": "Course",
-    "@id": `${SITE_URL}/#course-${sub.toLowerCase().replace(/[^a-z]/g, "-")}`,
-    "name": `${sub} Studies`,
-    "description": `Interdisciplinary Montessori study area covering core concepts in ${sub}.`,
-    "provider": { "@id": orgId }
-  }));
+  // 11. Synthetic Course nodes intentionally omitted.
+  // Global Course markup for subject names (e.g. "Mathematics Studies") was
+  // injected on every page via root layout and triggered Semrush Course errors
+  // (missing hasCourseInstance / offers). Legitimate Course schema belongs only
+  // on real course/program pages (ami-training, programs/[slug]).
 
   // 12. Generate 220+ FAQ schemas
   const generatedFaqs = [];
@@ -272,7 +269,6 @@ export function buildNextLevelSchema() {
       ...labNodes,
       ...patentNodes,
       ...pubNodes,
-      ...courseNodes,
       faqPage
     ]
   };

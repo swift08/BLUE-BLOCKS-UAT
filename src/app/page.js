@@ -1,6 +1,7 @@
 import siteData from "@/data/site";
 import SectionRenderer from "@/lib/sectionRenderer";
 import JsonLd from "@/components/seo/JsonLd";
+import { getRecentPosts } from "@/lib/wordpress";
 
 export const dynamic = "force-static";
 
@@ -460,23 +461,50 @@ const HOME_HERO_SLIDES = [
   },
 ];
 
-export default function HomePage() {
+export default async function HomePage() {
   const page = siteData?.pages?.home || {};
   const baseSections = Array.isArray(page?.sections) ? page.sections : [];
-  const sections = baseSections.map((section, idx) => {
-    if (idx !== 0 || section?.type !== "homeHero") return section;
-    return {
-      ...section,
-      props: {
-        ...(section?.props || {}),
-        slides: HOME_HERO_SLIDES,
-        note: "",
-        topSpacing: "home",
-        autoRotate: true,
-        autoRotateMs: 6000,
-      },
-    };
-  });
+  const recentPosts = await getRecentPosts(3);
+
+  const sections = [];
+  for (let idx = 0; idx < baseSections.length; idx++) {
+    const section = baseSections[idx];
+    if (idx === 0 && section?.type === "homeHero") {
+      sections.push({
+        ...section,
+        props: {
+          ...(section?.props || {}),
+          slides: HOME_HERO_SLIDES,
+          note: "",
+          topSpacing: "home",
+          autoRotate: true,
+          autoRotateMs: 6000,
+        },
+      });
+    } else if (section?.type === "recentBlogs") {
+      sections.push({
+        ...section,
+        props: {
+          ...(section?.props || {}),
+          initialPosts: recentPosts,
+        },
+      });
+    } else {
+      sections.push(section);
+      // Fallback: if journeyCards is not immediately followed by recentBlogs, inject it
+      if (
+        section?.type === "journeyCards" &&
+        baseSections[idx + 1]?.type !== "recentBlogs"
+      ) {
+        sections.push({
+          type: "recentBlogs",
+          props: {
+            initialPosts: recentPosts,
+          },
+        });
+      }
+    }
+  }
 
   return (
     <>

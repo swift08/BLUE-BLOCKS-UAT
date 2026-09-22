@@ -828,7 +828,7 @@ export default function NurseryCurriculum() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
               <Link
-                href="/contact/"
+                href="/contact-us/"
                 className="bg-[#0A4BCE] hover:bg-[#0840B0] transition-colors text-white font-semibold px-8 py-4 rounded-full w-full sm:w-auto"
               >
                 Book a Free Observation →
