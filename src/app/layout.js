@@ -11,6 +11,7 @@ import { buildNextLevelSchema } from "@/lib/seo/nextLevelSchemas";
 import localFont from "next/font/local";
 import "@/styles/global.css";
 import GoogleConversions from "@/components/GoogleConversions";
+import SitewideBlogSection from "@/components/blog/SitewideBlogSection";
 
 // Self-hosted so Docker/CI builds do not depend on fonts.google.com
 const poppins = localFont({
@@ -119,7 +120,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <HeaderShell />
         <HashScrollFix extraGap={12} />
-        <main>{children}</main>
+        <main>
+          {children}
+          <SitewideBlogSection />
+        </main>
         <Footer />
         <WhatsAppFloat config={siteData?.whatsapp} />
       </body>

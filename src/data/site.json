@@ -16,8 +16,8 @@
         "href": "/"
       },
       {
-        "label": "What do we do",
-        "href": "/about-us"
+        "label": "About",
+        "href": "/about-us/"
       },
       {
         "label": "Programs",
@@ -28,16 +28,16 @@
         "href": "/innovation"
       },
       {
-        "label": "Blog",
-        "href": "/blog/"
-      },
-      {
-        "label": "Contact",
-        "href": "/contact-us"
+        "label": "Admissions",
+        "href": "/admissions/"
       },
       {
         "label": "Careers",
         "href": "/careers/"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact-us"
       }
     ]
   },

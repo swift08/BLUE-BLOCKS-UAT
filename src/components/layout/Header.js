@@ -152,23 +152,6 @@ export default function Header({ variant = "dark" }) {
         }
       : null;
 
-    if (programs) {
-      const hasAdmissionsItem = programs.items.some(
-        (it) => normalizeHref(it.href) === "/admissions/"
-      );
-      if (!hasAdmissionsItem) {
-        const admissionsItem = {
-          id: "admissions",
-          title: "Admissions",
-          href: "/admissions/",
-          description: "Admissions workflow, entry windows, and parent onboarding journey.",
-          image: "/programs/thumb-secondary.webp",
-        };
-        const insertAt = Math.min(4, programs.items.length);
-        programs.items.splice(insertAt, 0, admissionsItem);
-      }
-    }
-
     const innovations = mm.innovations
       ? { ...mm.innovations, items: Array.isArray(mm.innovations.items) ? [...mm.innovations.items] : [] }
       : null;
@@ -182,7 +165,7 @@ export default function Header({ variant = "dark" }) {
           const href = normalizeHref(item?.href);
           let label = item?.label || "";
 
-          if (label === "What do we do") label = "What We Do";
+          if (label === "What do we do" || label === "Who We Are") label = "About";
           if (href === "/about-us") return { ...item, label, href: "/about-us/" };
           return { ...item, label, href };
         })

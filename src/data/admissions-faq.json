@@ -1,0 +1,222 @@
+{
+  "process": {
+    "category": "About the Admissions Process",
+    "items": [
+      {
+        "question": "What makes the Blue Blocks admissions process thorough?",
+        "answer": "Our admissions process is designed to build a genuine partnership before your child's first day. It includes a parent orientation workshop and a family conversation covering your home environment and parenting approach. Children spend most of their day at home, so alignment between school and home is what makes Montessori work."
+      },
+      {
+        "question": "What happens at the parent orientation workshop?",
+        "answer": "The workshop covers Montessori philosophy, how learning happens in our environments, and your role at home in supporting your child's development. It runs on Saturdays and is open to both parents. When families understand the why, the partnership is far stronger."
+      },
+      {
+        "question": "What is discussed in the family conversation?",
+        "answer": "We discuss your child's home environment, movement opportunities, language exposure, food habits, toilet learning, sleep routines, and daily responsibilities. This allows us to build a consistent developmental framework between school and home before your child joins."
+      },
+      {
+        "question": "Can both parents attend the admission workshop?",
+        "answer": "Yes, and we encourage it. Montessori works best when both adults in the home understand the approach. Attending together gives your family a shared foundation from the start."
+      },
+      {
+        "question": "What should I bring to the admission workshop?",
+        "answer": "Nothing except your questions. The workshop is an experience, you will handle Montessori materials, observe the environment, and understand what a typical morning looks like. No paperwork required at this stage."
+      },
+      {
+        "question": "Is there a waiting list?",
+        "answer": "Seats are limited and filled on a first-aligned, first-served basis. We do not hold a seat until the admissions process is complete. If you are considering Blue Blocks, beginning the process early is advisable, particularly for the Nursery and Pre-Primary environments."
+      },
+      {
+        "question": "Do parents need to be involved in the child's learning?",
+        "answer": "Yes. Every child goes through a Settlement Period when they join, and parents are central to it. We invite parents to stay on campus until the child is ready to separate, on the child's timeline. For some children this takes three days; for others, three weeks."
+      }
+    ]
+  },
+  "programmes": {
+    "category": "About Blue Blocks and Our Programmes",
+    "items": [
+      {
+        "question": "At what age can my child join Blue Blocks?",
+        "answer": "Children can join from 15 months. The Nursery programme runs from 15 months to 2.5 years. Pre-Primary (PP1, PP2) begins at 2.5 years. The Primary programme begins at 6, and Secondary School at 12."
+      },
+      {
+        "question": "Do you accept mid-year admissions?",
+        "answer": "For Nursery and Pre-Primary, and Primary admissions are age-based. If your child turns 2.5 during the year, they are welcome to join at that point. For Secondary School, admissions follow the Cambridge academic calendar and are processed at the start of the academic year."
+      },
+      {
+        "question": "Are both campuses open for admissions?",
+        "answer": "Yes. The Gachibowli campus serves children from 15 months to 6 years. The Tellapur campus serves children from 2.5 years through to 16 years and houses the full school, including all innovation laboratories. Enquiries for both campuses follow the same admissions process."
+      },
+      {
+        "question": "Who teaches at Blue Blocks?",
+        "answer": "All Lead Guides hold the AMI Montessori diploma for their age group, awarded by the Association Montessori Internationale. In Secondary School, mentors bring professional expertise from their fields alongside Montessori adolescent training."
+      },
+      {
+        "question": "Is Blue Blocks affiliated with any board?",
+        "answer": "Blue Blocks is affiliated with Cambridge International for Grades 7 through 10, covering Cambridge Lower Secondary and Cambridge IGCSE. Across all levels from birth to 16, the school follows AMI Montessori guidelines."
+      },
+      {
+        "question": "Will my child be prepared for mainstream school or board exams if they transfer?",
+        "answer": "Yes. Blue Blocks children consistently meet or exceed the requirements of all major boards in India. Parents regularly hear from receiving schools that their child is the only one who can work independently for a sustained period, which is what three to six years of Montessori builds."
+      },
+      {
+        "question": "My child has attended a conventional preschool. Will they struggle to adjust?",
+        "answer": "Most children adjust within two to three weeks. Children from conventional preschools may initially wait to be told what to do. Our guides are experienced in supporting this transition, and the environment does the rest."
+      },
+      {
+        "question": "How is progress reported to parents?",
+        "answer": "There are no grades or report cards. Parents receive specific observations at pickup daily, structured parent-guide conferences each term, and booked observation slots to watch their child at work in the environment."
+      },
+      {
+        "question": "Do you provide transport?",
+        "answer": "Yes, we provide transport."
+      },
+      {
+        "question": "Are diapers used at school?",
+        "answer": "No. All children at Blue Blocks are off diapers. Parents are guided through toilet readiness during the family conversation with our admissions team before joining."
+      }
+    ]
+  },
+  "schema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes the Blue Blocks admissions process thorough?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our admissions process is designed to build a genuine partnership before your child's first day. It includes a parent orientation workshop and a family conversation covering your home environment and parenting approach. Children spend most of their day at home, so alignment between school and home is what makes Montessori work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens at the parent orientation workshop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The workshop covers Montessori philosophy, how learning happens in our environments, and your role at home in supporting your child's development. It runs on Saturdays and is open to both parents. When families understand the why, the partnership is far stronger."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is discussed in the family conversation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We discuss your child's home environment, movement opportunities, language exposure, food habits, toilet learning, sleep routines, and daily responsibilities. This allows us to build a consistent developmental framework between school and home before your child joins."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can both parents attend the admission workshop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, and we encourage it. Montessori works best when both adults in the home understand the approach. Attending together gives your family a shared foundation from the start."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I bring to the admission workshop?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nothing except your questions. The workshop is an experience, you will handle Montessori materials, observe the environment, and understand what a typical morning looks like. No paperwork required at this stage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a waiting list?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Seats are limited and filled on a first-aligned, first-served basis. We do not hold a seat until the admissions process is complete. If you are considering Blue Blocks, beginning the process early is advisable, particularly for the Nursery and Pre-Primary environments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do parents need to be involved in the child's learning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every child goes through a Settlement Period when they join, and parents are central to it. We invite parents to stay on campus until the child is ready to separate, on the child's timeline. For some children this takes three days; for others, three weeks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "At what age can my child join Blue Blocks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Children can join from 15 months. The Nursery programme runs from 15 months to 2.5 years. Pre-Primary (PP1, PP2) begins at 2.5 years. The Primary programme begins at 6, and Secondary School at 12."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept mid-year admissions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For Nursery and Pre-Primary, and Primary admissions are age-based. If your child turns 2.5 during the year, they are welcome to join at that point. For Secondary School, admissions follow the Cambridge academic calendar and are processed at the start of the academic year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are both campuses open for admissions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Gachibowli campus serves children from 15 months to 6 years. The Tellapur campus serves children from 2.5 years through to 16 years and houses the full school, including all innovation laboratories. Enquiries for both campuses follow the same admissions process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who teaches at Blue Blocks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All Lead Guides hold the AMI Montessori diploma for their age group, awarded by the Association Montessori Internationale. In Secondary School, mentors bring professional expertise from their fields alongside Montessori adolescent training."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Blue Blocks affiliated with any board?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Blue Blocks is affiliated with Cambridge International for Grades 7 through 10, covering Cambridge Lower Secondary and Cambridge IGCSE. Across all levels from birth to 16, the school follows AMI Montessori guidelines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my child be prepared for mainstream school or board exams if they transfer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Blue Blocks children consistently meet or exceed the requirements of all major boards in India. Parents regularly hear from receiving schools that their child is the only one who can work independently for a sustained period, which is what three to six years of Montessori builds."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My child has attended a conventional preschool. Will they struggle to adjust?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most children adjust within two to three weeks. Children from conventional preschools may initially wait to be told what to do. Our guides are experienced in supporting this transition, and the environment does the rest."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is progress reported to parents?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are no grades or report cards. Parents receive specific observations at pickup daily, structured parent-guide conferences each term, and booked observation slots to watch their child at work in the environment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide transport?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide transport."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are diapers used at school?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. All children at Blue Blocks are off diapers. Parents are guided through toilet readiness during the family conversation with our admissions team before joining."
+        }
+      }
+    ]
+  }
+}

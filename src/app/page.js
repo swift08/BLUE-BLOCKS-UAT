@@ -482,27 +482,9 @@ export default async function HomePage() {
         },
       });
     } else if (section?.type === "recentBlogs") {
-      sections.push({
-        ...section,
-        props: {
-          ...(section?.props || {}),
-          initialPosts: recentPosts,
-        },
-      });
+      // Replaced sitewide by SitewideBlogSection in RootLayout
     } else {
       sections.push(section);
-      // Fallback: if journeyCards is not immediately followed by recentBlogs, inject it
-      if (
-        section?.type === "journeyCards" &&
-        baseSections[idx + 1]?.type !== "recentBlogs"
-      ) {
-        sections.push({
-          type: "recentBlogs",
-          props: {
-            initialPosts: recentPosts,
-          },
-        });
-      }
     }
   }
 

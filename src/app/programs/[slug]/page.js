@@ -1,7 +1,9 @@
 import siteData from "@/data/site";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
+import Container from "@/components/layout/Container";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -174,7 +176,6 @@ function buildProgramSchema(slug) {
 
   return [breadcrumbSchema, courseSchema];
 }
-
 export default async function ProgramPage({ params }) {
   const { slug } = await params;
   const map = getProgramsMap();
@@ -192,6 +193,32 @@ export default async function ProgramPage({ params }) {
     <>
       <PageJsonLd baseId={`programs-${slug}`} schema={schema} />
       <SectionRenderer sections={sections} />
+
+      {/* Reciprocal Admissions Link */}
+      <section className="py-14 bg-[#2C2F8F] text-white">
+        <Container>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#F3E3CF] mb-1.5 block">
+                ADMISSIONS OPEN
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+                Ready to Begin Your Admissions Journey?
+              </h3>
+              <p className="mt-2 text-white/80 text-sm max-w-xl">
+                Explore our structured admission process, Saturday parent orientation workshops, and campus entry windows.
+              </p>
+            </div>
+            <Link
+              href="/admissions/"
+              className="shrink-0 px-6 py-3.5 rounded-full bg-white text-[#2C2F8F] font-bold text-sm hover:bg-[#F3E3CF] transition-colors shadow-lg shadow-black/10 inline-flex items-center gap-2"
+            >
+              <span>View Admissions Process & Guidelines</span>
+              <span aria-hidden>→</span>
+            </Link>
+          </div>
+        </Container>
+      </section>
     </>
   );
 }
