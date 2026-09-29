@@ -18,7 +18,7 @@ export function buildNextLevelSchema() {
         url: `${SITE_URL}/`,
         name: SITE_NAME,
         description:
-          "AMI-certified Montessori school in Hyderabad. Ages 15 months–18 years, Cambridge IGCSE, innovation labs, and Blue Blocks Micro Research Institute.",
+          "AMI-certified Montessori school in Hyderabad. Ages 15 months-18 years, Cambridge IGCSE, innovation labs, and Blue Blocks Micro Research Institute.",
         inLanguage: "en-IN",
         publisher: { "@id": ORG },
       },

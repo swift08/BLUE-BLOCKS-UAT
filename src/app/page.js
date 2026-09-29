@@ -9,7 +9,7 @@ export const metadata = {
   // metadataBase is inherited from layout.js (always production).
 
   // <title>...</title>
-  title: "Blue Blocks Montessori School Hyderabad | AMI Montessori 15 Months–18 Years",
+  title: "Blue Blocks Montessori School Hyderabad | AMI Montessori 15 Months-18 Years",
 
   // <meta name="description" ... />
   description:
@@ -58,7 +58,7 @@ export const metadata = {
     url: "https://blueblocks.in/",
     locale: "en_IN",
     siteName: "Blue Blocks Montessori School",
-    title: "Blue Blocks Montessori School Hyderabad | AMI Montessori 15 Months–18 Years",
+    title: "Blue Blocks Montessori School Hyderabad | AMI Montessori 15 Months-18 Years",
     description:
       "Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad offering continuous developmental education from 15 months to 18 years. Innovation labs, student patents, CubeSat engineering, and Cambridge IGCSE integration.",
     images: [
