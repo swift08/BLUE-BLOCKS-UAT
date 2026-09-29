@@ -9,7 +9,7 @@ export const metadata = {
   // metadataBase is inherited from layout.js (always production).
 
   // <title>...</title>
-  title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1-18) | Hyderabad homepage",
+  title: "Blue Blocks Montessori School Hyderabad | AMI Montessori 15 Months–18 Years",
 
   // <meta name="description" ... />
   description:
@@ -58,7 +58,7 @@ export const metadata = {
     url: "https://blueblocks.in/",
     locale: "en_IN",
     siteName: "Blue Blocks Montessori School",
-    title: "Blue Blocks Montessori School | AMI-Certified Education (Ages 1-18) | Hyderabad",
+    title: "Blue Blocks Montessori School Hyderabad | AMI Montessori 15 Months–18 Years",
     description:
       "Blue Blocks is an AMI-certified Montessori school and micro-research institute in Hyderabad offering continuous developmental education from 15 months to 18 years. Innovation labs, student patents, CubeSat engineering, and Cambridge IGCSE integration.",
     images: [
@@ -108,15 +108,7 @@ const structuredData = {
     "publisher": {
       "@id": "https://blueblocks.in/#organization"
     },
-    "inLanguage": "en-IN",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://blueblocks.in/search?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
+    "inLanguage": "en-IN"
   },
 
 

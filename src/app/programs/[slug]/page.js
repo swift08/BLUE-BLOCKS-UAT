@@ -20,11 +20,30 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const meta = PROGRAM_META[slug] || {};
+  const canonical = `https://blueblocks.in/programs/${slug}/`;
   return {
     title: meta.title,
     description: meta.description,
-    alternates: {
-      canonical: `https://blueblocks.in/programs/${slug}/`,
+    robots: { index: true, follow: true },
+    alternates: { canonical },
+    openGraph: {
+      type: "website",
+      url: canonical,
+      title: meta.title,
+      description: meta.description,
+      images: [
+        {
+          url: "https://blueblocks.in/images/og-homepage.webp",
+          width: 1200,
+          height: 630,
+          alt: meta.title || "Blue Blocks Montessori program",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
     },
   };
 }

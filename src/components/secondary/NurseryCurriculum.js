@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import SectionNav from "@/components/secondary/SectionNav";
+import FaqItem from "@/components/secondary/FaqItem";
 import Container from "@/components/layout/Container";
 import Link from "next/link";
 import Image from "next/image";
@@ -225,44 +225,6 @@ function SectionHeading({ eyebrow, title, subtitle }) {
         <p className="mt-4 text-base text-slate-600 leading-relaxed max-w-4xl text-justify sm:text-left">
           {subtitle}
         </p>
-      )}
-    </div>
-  );
-}
-
-function LocalFaqItem({ q, a, renderA }) {
-  const [open, setOpen] = useState(false);
-  return (
-    <div className="border border-slate-200 rounded-[20px] overflow-hidden bg-white shadow-sm transition-all duration-200 hover:border-slate-300">
-      <h3>
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left font-bold text-slate-900 hover:bg-slate-50 transition-colors focus:outline-none"
-          aria-expanded={open}
-        >
-          <span className="text-base sm:text-lg leading-snug">{q}</span>
-          <span
-            className="flex-shrink-0 w-7 h-7 rounded-full bg-[#EAF4FF] flex items-center justify-center transition-transform duration-200"
-            style={{ transform: open ? "rotate(45deg)" : "rotate(0deg)" }}
-            aria-hidden="true"
-          >
-            <svg
-              className="w-4 h-4 text-[#1f3b82]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2.5}
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-            </svg>
-          </span>
-        </button>
-      </h3>
-      {open && (
-        <div className="px-6 pb-6 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-5">
-          <p>{renderA || a}</p>
-        </div>
       )}
     </div>
   );
@@ -758,7 +720,7 @@ export default function NurseryCurriculum() {
 
           <div className="max-w-3xl mx-auto space-y-4">
             {faqs.map((faq, idx) => (
-              <LocalFaqItem key={idx} q={faq.q} a={faq.a} renderA={faq.renderA} />
+              <FaqItem key={idx} q={faq.q} a={faq.renderA || faq.a} />
             ))}
           </div>
         </Container>

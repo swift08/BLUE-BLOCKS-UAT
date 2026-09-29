@@ -33,7 +33,7 @@ const sitemapGroups = [
       { label: "Video Catalog", href: "/video-catalog/" },
       { label: "Careers", href: "/careers/" },
       { label: "AMI Training", href: "/ami-montessori-training/" },
-      { label: "Announcement Centre", href: "/annoucement-centre/" },
+      { label: "Announcement Centre", href: "/announcement-centre/" },
       { label: "Parents", href: "/parents/" },
       { label: "The Micro Research Institute", href: "https://mri2.vercel.app/" },
       { label: "Montessori System", href: "/montessori-system/" },

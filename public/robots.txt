@@ -76,6 +76,11 @@ User-agent: DuckAssistBot
 Allow: /
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Sitemap
+# Sitemap + AI content maps
 # ─────────────────────────────────────────────────────────────────────────────
 Sitemap: https://blueblocks.in/sitemap.xml
+# llms.txt — https://blueblocks.in/llms.txt
+# llms-full.txt — https://blueblocks.in/llms-full.txt
+Allow: /llms.txt
+Allow: /llms-full.txt
+Allow: /sitemap.xml

@@ -32,7 +32,7 @@ export default function FaqItem({ q, a }) {
       </button>
       {open && (
         <div className="px-6 pb-5 text-sm text-[#334155] leading-relaxed border-t border-slate-100 pt-4">
-          {a}
+          {typeof a === "string" || typeof a === "number" ? <p>{a}</p> : a}
         </div>
       )}
     </div>

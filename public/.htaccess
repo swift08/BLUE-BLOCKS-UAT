@@ -102,7 +102,16 @@ RewriteRule ^index\.(shtml|html?)$ https://blueblocks.in/ [R=301,L,NC,NE]
 
 # Section 1 - Old .shtml pages from previous site
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
-RewriteRule ^amitraining\.shtml/?$ https://blueblocks.in/ami-training/ [R=301,L,NE]
+RewriteRule ^amitraining\.shtml/?$ https://blueblocks.in/ami-montessori-training/ [R=301,L,NE]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
+RewriteRule ^ami-training/?$ https://blueblocks.in/ami-montessori-training/ [R=301,L,NE]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
+RewriteRule ^video-catalogue/?$ https://blueblocks.in/video-catalog/ [R=301,L,NE]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
+RewriteRule ^annoucement-centre/?$ https://blueblocks.in/announcement-centre/ [R=301,L,NE]
 
 RewriteCond %{HTTP_HOST} ^(www\.)?blueblocks\.in$ [NC]
 RewriteRule ^our-programs\.shtml/?$ https://blueblocks.in/programs/ [R=301,L,NE]

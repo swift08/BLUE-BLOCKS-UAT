@@ -6,7 +6,6 @@ import HashScrollFix from "@/components/ui/HashScrollFix";
 import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import siteData from "@/data/site";
 import JsonLd from "@/components/seo/JsonLd";
-import normalizeJsonLd from "@/lib/seo/normalizeJsonLd";
 import { buildNextLevelSchema } from "@/lib/seo/nextLevelSchemas";
 import localFont from "next/font/local";
 import "@/styles/global.css";
@@ -51,10 +50,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Global / site-wide schema from site.json
-  const org = normalizeJsonLd(siteData?.site?.schema?.organization);
-  const website = normalizeJsonLd(siteData?.site?.schema?.website);
-  const nextLevelSchema = buildNextLevelSchema();
+  const globalSchema = buildNextLevelSchema();
 
   return (
     <html lang="en-IN" data-scroll-behavior="smooth">
@@ -71,6 +67,7 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://ssl.google-analytics.com" />
+        <link rel="alternate" type="text/plain" href="https://blueblocks.in/llms.txt" title="llms.txt" />
       </head>
       <body className={`min-h-screen bg-white text-slate-900 ${poppins.className}`}>
         {/* Google Tag Manager (noscript) */}
@@ -96,10 +93,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }}
         />
         {/* End Google Tag Manager */}
-        {/* Global JSON-LD (visible in view-source) */}
-        <JsonLd id="jsonld-organization" data={org} />
-        <JsonLd id="jsonld-website" data={website} />
-        <JsonLd id="jsonld-next-level" data={nextLevelSchema} />
+        {/* Global entity JSON-LD (School + WebSite + founders + campuses) */}
+        <JsonLd id="jsonld-global" data={globalSchema} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-1064646284"
           strategy="lazyOnload"

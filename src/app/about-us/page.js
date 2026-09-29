@@ -33,7 +33,7 @@ export const metadata = {
       },
     ],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: { card: "summary_large_image", title: "About Blue Blocks | AMI Montessori Since 2009" },
 };
 
 export const dynamic = "force-static";

@@ -11,7 +11,6 @@ const nextConfig = {
   },
 
   // Static export requires unoptimized images (no server-side processing).
-  // Images are pre-compressed at source via scripts/compress-gallery.js.
   images: {
     unoptimized: true,
   },
@@ -44,6 +43,36 @@ const nextConfig = {
       {
         source: "/team/:slug([a-zA-Z0-9_-]+)",
         destination: "/about-us/?guide=:slug",
+        permanent: true,
+      },
+      {
+        source: "/ami-training",
+        destination: "/ami-montessori-training/",
+        permanent: true,
+      },
+      {
+        source: "/ami-training/",
+        destination: "/ami-montessori-training/",
+        permanent: true,
+      },
+      {
+        source: "/video-catalogue",
+        destination: "/video-catalog/",
+        permanent: true,
+      },
+      {
+        source: "/video-catalogue/",
+        destination: "/video-catalog/",
+        permanent: true,
+      },
+      {
+        source: "/annoucement-centre",
+        destination: "/announcement-centre/",
+        permanent: true,
+      },
+      {
+        source: "/annoucement-centre/",
+        destination: "/announcement-centre/",
         permanent: true,
       },
     ];

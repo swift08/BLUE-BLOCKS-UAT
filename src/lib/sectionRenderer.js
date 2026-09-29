@@ -181,7 +181,7 @@ export default function SectionRenderer({ sections = [] }) {
 
           // Innovation
           case "innovationMediaHero":
-            return <Hero key={key} {...props} />;
+            return <Hero key={key} {...props} headingLevel="h2" />;
           case "innovationAgeCards":
             return <InnovationAgeCards key={key} {...props} />;
           case "innovationLogoStrip":

@@ -6,8 +6,31 @@ export const dynamic = "force-static";
 
 export const metadata = {
   title: "Contact Us | Blue Blocks Tellapur & Gachibowli Campuses",
-  description: "Contact Blue Blocks Montessori School. Find phone numbers, WhatsApp links, and physical addresses for our Tellapur and Gachibowli school campuses in Hyderabad.",
+  description:
+    "Contact Blue Blocks Montessori School. Find phone numbers, WhatsApp links, and physical addresses for our Tellapur and Gachibowli school campuses in Hyderabad.",
+  robots: { index: true, follow: true },
   alternates: { canonical: "https://blueblocks.in/contact-us/" },
+  openGraph: {
+    type: "website",
+    url: "https://blueblocks.in/contact-us/",
+    title: "Contact Us | Blue Blocks Tellapur & Gachibowli Campuses",
+    description:
+      "Contact Blue Blocks Montessori School. Find phone numbers, WhatsApp links, and physical addresses for our Tellapur and Gachibowli school campuses in Hyderabad.",
+    images: [
+      {
+        url: "https://blueblocks.in/images/og-homepage.webp",
+        width: 1200,
+        height: 630,
+        alt: "Contact Blue Blocks Montessori School Hyderabad",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Blue Blocks Tellapur & Gachibowli",
+    description:
+      "Phone, WhatsApp, and campus addresses for Blue Blocks Montessori in Hyderabad.",
+  },
 };
 
 export default function ContactPage() {

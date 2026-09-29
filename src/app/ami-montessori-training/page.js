@@ -1,13 +1,22 @@
 import Link from "next/link";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import Container from "@/components/layout/Container";
-import AmiStickyNav from "@/components/ami/AmiStickyNav";
+import StickyPillsNav from "@/components/ui/StickyPillsNav";
 import AmiDiplomasTable from "@/components/ami/AmiDiplomasTable";
 import AmiEligibilityTable from "@/components/ami/AmiEligibilityTable";
 import AmiTrainingCentres from "@/components/ami/AmiTrainingCentres";
 import AmiFAQ from "@/components/ami/AmiFAQ";
 import { AMI_FAQ_CATEGORIES } from "@/data/ami-faq-data";
 import AmiCTA from "@/components/ami/AmiCTA";
+
+const AMI_NAV = [
+  { label: "What Is AMI", href: "#what-is-ami", id: "what-is-ami" },
+  { label: "The Diplomas", href: "#diplomas", id: "diplomas" },
+  { label: "Training Centres", href: "#centres", id: "centres" },
+  { label: "Sponsorship", href: "#sponsorship", id: "sponsorship" },
+  { label: "FAQ", href: "#faq", id: "faq" },
+  { label: "Contact", href: "#contact", id: "contact" },
+];
 
 export const dynamic = "force-static";
 
@@ -255,7 +264,11 @@ export default function AmiMontessoriTrainingPage() {
       </section>
 
       {/* Sticky Anchor Navigation Bar */}
-      <AmiStickyNav />
+      <StickyPillsNav
+        items={AMI_NAV}
+        ariaLabel="AMI Training page section navigation"
+        defaultActive="what-is-ami"
+      />
 
       {/* SECTION 2 — What Is the AMI Diploma? */}
       <section id="what-is-ami" className="py-14 sm:py-18 bg-white scroll-mt-36 sm:scroll-mt-44 border-b border-slate-100">

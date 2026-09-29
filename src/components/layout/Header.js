@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Container from "./Container";
 import Link from "next/link";
 import Image from "next/image";
-import siteData from "@/data/header-site";
+import siteData from "@/data/site";
 import { usePathname } from "next/navigation";
 import { normalizeSiteHref } from "@/lib/links";
 

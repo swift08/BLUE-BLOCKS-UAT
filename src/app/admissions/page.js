@@ -1,12 +1,20 @@
 import siteData from "@/data/site";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import PageHero from "@/components/blocks/PageHero";
-import AdmissionsStickyNav from "@/components/admissions/AdmissionsStickyNav";
+import StickyPillsNav from "@/components/ui/StickyPillsNav";
 import AdmissionsProcess from "@/components/admissions/AdmissionsProcess";
 import AdmissionsFAQ from "@/components/admissions/AdmissionsFAQ";
 import faqData from "@/data/admissions-faq.json";
 import ProgramsAndCampuses from "@/components/admissions/ProgramsAndCampuses";
 import AdmissionsContact from "@/components/admissions/AdmissionsContact";
+
+const ADMISSIONS_NAV = [
+  { label: "Our Process", href: "#process", id: "process" },
+  { label: "Admission Guidelines", href: "#guidelines", id: "guidelines" },
+  { label: "FAQ", href: "#faq", id: "faq" },
+  { label: "Campus", href: "#campus", id: "campus" },
+  { label: "Contact", href: "#contact", id: "contact" },
+];
 
 export const dynamic = "force-static";
 
@@ -43,6 +51,12 @@ export const metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Montessori School Admissions Hyderabad | Blue Blocks",
+    description:
+      "Two structured pathways for Toddler/Pre-Primary and Elementary/Adolescent. Saturday workshops. Book your place.",
+  },
 };
 
 export default function AdmissionsPage() {
@@ -73,7 +87,11 @@ export default function AdmissionsPage() {
       />
 
       {/* Sticky Navigation Bar — 5 buttons */}
-      <AdmissionsStickyNav />
+      <StickyPillsNav
+        items={ADMISSIONS_NAV}
+        ariaLabel="Admissions page section navigation"
+        defaultActive="process"
+      />
 
       {/* #process — Admission Process (Desktop 2 side-by-side columns, Mobile 2 tabs) */}
       <AdmissionsProcess />

@@ -39,6 +39,10 @@ const PATH_REDIRECTS = new Map([
   ["/toddler-developmental-architecture/", "/neuropsychiatry-of-toddler-plane/"],
   ["/ami-training", "/ami-montessori-training/"],
   ["/ami-training/", "/ami-montessori-training/"],
+  ["/video-catalogue", "/video-catalog/"],
+  ["/video-catalogue/", "/video-catalog/"],
+  ["/annoucement-centre", "/announcement-centre/"],
+  ["/annoucement-centre/", "/announcement-centre/"],
 ]);
 
 function normalizePath(pathname = "") {

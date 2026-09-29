@@ -38,6 +38,12 @@ export const metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Campuses & Infrastructure | Gachibowli & Tellapur | Blue Blocks",
+    description:
+      "Tour Gachibowli and Tellapur campuses — biophilic design, octagonal rooms, and innovation labs.",
+  },
 };
 
 export default function CampusPage() {

@@ -3,15 +3,6 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import Container from "@/components/layout/Container";
 
-const NAV_ITEMS = [
-  { label: "What Is AMI", href: "#what-is-ami", id: "what-is-ami" },
-  { label: "The Diplomas", href: "#diplomas", id: "diplomas" },
-  { label: "Training Centres", href: "#centres", id: "centres" },
-  { label: "Sponsorship", href: "#sponsorship", id: "sponsorship" },
-  { label: "FAQ", href: "#faq", id: "faq" },
-  { label: "Contact", href: "#contact", id: "contact" },
-];
-
 function getHeaderHeight() {
   if (typeof document === "undefined") return 80;
   const el =
@@ -19,8 +10,13 @@ function getHeaderHeight() {
   return el ? Math.ceil(el.getBoundingClientRect().height) : 80;
 }
 
-export default function AmiStickyNav() {
-  const [activeSection, setActiveSection] = useState("what-is-ami");
+export default function StickyPillsNav({
+  items = [],
+  ariaLabel = "Section navigation",
+  defaultActive,
+}) {
+  const initial = defaultActive || items[0]?.id || "";
+  const [activeSection, setActiveSection] = useState(initial);
   const [headerH, setHeaderH] = useState(80);
   const navRef = useRef(null);
   const isClickingRef = useRef(false);
@@ -32,7 +28,6 @@ export default function AmiStickyNav() {
     };
 
     updateHeaderHeight();
-
     window.addEventListener("resize", updateHeaderHeight, { passive: true });
     window.addEventListener("scroll", updateHeaderHeight, { passive: true });
 
@@ -60,15 +55,12 @@ export default function AmiStickyNav() {
       const navH = navRef.current?.offsetHeight || 50;
       const scrollPos = window.scrollY + headerH + navH + 80;
 
-      for (let i = NAV_ITEMS.length - 1; i >= 0; i--) {
-        const item = NAV_ITEMS[i];
+      for (let i = items.length - 1; i >= 0; i--) {
+        const item = items[i];
         const el = document.getElementById(item.id);
-        if (el) {
-          const top = el.offsetTop;
-          if (scrollPos >= top) {
-            setActiveSection(item.id);
-            break;
-          }
+        if (el && scrollPos >= el.offsetTop) {
+          setActiveSection(item.id);
+          break;
         }
       }
     };
@@ -76,7 +68,7 @@ export default function AmiStickyNav() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [headerH]);
+  }, [headerH, items]);
 
   const handleClick = useCallback(
     (e, item) => {
@@ -88,15 +80,13 @@ export default function AmiStickyNav() {
       isClickingRef.current = true;
 
       const navH = navRef.current?.offsetHeight || 50;
-      const totalOffset = headerH + navH + 16;
       const y =
-        target.getBoundingClientRect().top + window.pageYOffset - totalOffset;
+        target.getBoundingClientRect().top +
+        window.pageYOffset -
+        (headerH + navH + 16);
 
       window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
-
-      if (typeof window !== "undefined") {
-        window.history.pushState(null, "", item.href);
-      }
+      window.history.pushState(null, "", item.href);
 
       setTimeout(() => {
         isClickingRef.current = false;
@@ -109,15 +99,14 @@ export default function AmiStickyNav() {
     <div
       ref={navRef}
       role="navigation"
-      aria-label="AMI Training page section navigation"
+      aria-label={ariaLabel}
       className="sticky left-0 right-0 w-full z-[70] bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-[0_4px_20px_rgba(0,0,0,0.06)] transition-all duration-150"
       style={{ top: `${headerH}px` }}
     >
       <Container className="relative">
         <div className="flex items-center justify-start md:justify-center overflow-x-auto no-scrollbar py-2.5 sm:py-3 gap-2 sm:gap-3 pr-6 md:pr-0">
-          {NAV_ITEMS.map((item) => {
+          {items.map((item) => {
             const isActive = activeSection === item.id;
-
             return (
               <a
                 key={item.href}
@@ -134,7 +123,6 @@ export default function AmiStickyNav() {
             );
           })}
         </div>
-        {/* Right fade indicator for mobile horizontal scroll */}
         <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent md:hidden" />
       </Container>
     </div>

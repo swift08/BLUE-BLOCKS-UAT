@@ -11,9 +11,32 @@ export const dynamic = "force-static";
 
 export const metadata = {
   title: "Frequently Asked Questions | Blue Blocks Montessori",
-  description: "Find answers to common parent questions about admissions, Montessori methods, Cambridge integration, and campus facilities.",
+  description:
+    "Find answers to common parent questions about admissions, Montessori methods, Cambridge integration, and campus facilities.",
+  robots: { index: true, follow: true },
   alternates: {
     canonical: "https://blueblocks.in/faq/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://blueblocks.in/faq/",
+    title: "Frequently Asked Questions | Blue Blocks Montessori",
+    description:
+      "Answers about admissions, Montessori methods, Cambridge integration, and campus facilities.",
+    images: [
+      {
+        url: "https://blueblocks.in/images/og-homepage.webp",
+        width: 1200,
+        height: 630,
+        alt: "Blue Blocks Montessori FAQ",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ | Blue Blocks Montessori",
+    description:
+      "Admissions, Montessori methods, Cambridge integration, and campus questions answered.",
   },
 };
 

@@ -2,19 +2,11 @@
  * generate-sitemap.js — Builds public/sitemap.xml at prebuild time.
  *
  * Rules:
- *  - lastmod reflects the actual mtime of the source file, not build time.
- *  - Routes are deduplicated and sorted by priority.
- *  - Excluded: text/asset files (/llms.txt, /llms-full.txt, /sitemap.xml).
- *  - Excluded: draft, redirect, and 404 routes.
- *  - Priority tiers:
- *      1.0  Homepage
- *      0.8  Core conversion and main content pages (about, admissions, programs, campus, etc.)
- *      0.7  Sub-pages, articles, and publications
- *      0.6  Legal, utility, and markdown files
- *  - changefreq:
- *      weekly   – Homepage, blog index
- *      monthly  – Core + content pages
- *      yearly   – Legal, privacy, terms
+ *  - lastmod = source file mtime (not build time).
+ *  - Deduplicated, sorted by priority then path.
+ *  - Alias/redirect routes excluded (canonicals only).
+ *  - Every real indexable page included (forms noindex skipped).
+ *  - Blog slugs from live WordPress (soft-fail).
  */
 
 const fs = require("fs");
@@ -25,64 +17,45 @@ const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL || "https://blueblocks.in"
 ).replace(/\/$/, "");
 
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
 function absoluteUrl(route = "/") {
   const cleanRoute = route.startsWith("/") ? route : `/${route}`;
-  // Enforce trailing slash if it doesn't end with one and has no file extension
   if (!cleanRoute.endsWith("/") && !path.extname(cleanRoute)) {
     return `${SITE_URL}${cleanRoute}/`;
   }
   return `${SITE_URL}${cleanRoute}`;
 }
 
-/**
- * Get the last-modified time for a route by checking its page.js source file.
- * Falls back to the mtime of site.json (data-driven pages) then site.json
- * itself, and finally the current build time as last resort.
- */
 function getLastmod(route) {
-  // Map route → source file candidates (most-specific first)
   const candidates = [
-    // e.g. /about-us → src/app/about-us/page.js
     path.join(process.cwd(), "src", "app", ...route.split("/").filter(Boolean), "page.js"),
-    // Data-driven pages share site.json mtime
     path.join(process.cwd(), "src", "data", "site.json"),
-    // Publishing data (blog posts, research)
     path.join(process.cwd(), "src", "data", "publishing.js"),
   ];
-
   for (const candidate of candidates) {
     try {
-      const stat = fs.statSync(candidate);
-      return stat.mtime.toISOString().split(".")[0] + "Z";
+      return fs.statSync(candidate).mtime.toISOString().split(".")[0] + "Z";
     } catch {
-      // file doesn't exist — try next
+      /* try next */
     }
   }
-
-  // Absolute fallback
   return new Date().toISOString().split(".")[0] + "Z";
 }
 
-// ---------------------------------------------------------------------------
-// Route definitions
-// ---------------------------------------------------------------------------
-
-const SITEMAP_EXCLUDED_ROUTES = new Set(["/drone", "/video-catalogue"]);
+/** Redirect/alias URLs — keep live for indexing via re-export, but sitemap lists canonical only. */
+const SITEMAP_EXCLUDED_ROUTES = new Set([
+  "/drone",
+  "/video-catalogue",
+  "/ami-training",
+  "/annoucement-centre",
+]);
 
 function getStaticRoutes(dir, base = "", routes = []) {
-  const items = fs.readdirSync(dir);
-  for (const item of items) {
+  for (const item of fs.readdirSync(dir)) {
     const fullPath = path.join(dir, item);
     const stat = fs.statSync(fullPath);
     if (stat.isDirectory()) {
-      // Skip dynamic route folders starting with '['
       if (item.startsWith("[")) continue;
-      // Skip forms index and subpages completely (they are noindexed)
-      if (item === "forms") continue;
+      if (item === "forms") continue; // noindex
       getStaticRoutes(fullPath, `${base}/${item}`, routes);
     } else if (item === "page.js") {
       const route = base || "/";
@@ -96,90 +69,98 @@ function getStaticRoutes(dir, base = "", routes = []) {
 
 function getPriorityAndFreq(route) {
   if (route === "/") return { changefreq: "weekly", priority: "1.0" };
-  // Core conversion & high-value pages
-  const highPriority = [
+
+  const p09 = [
     "/admissions",
     "/programs",
     "/contact-us",
     "/about-us",
-    "/careers",
     "/campus",
+    "/ami-montessori-training",
+  ];
+  if (p09.includes(route) || route.startsWith("/programs/")) {
+    return { changefreq: "weekly", priority: "0.9" };
+  }
+
+  const p08 = [
+    "/careers",
     "/research-institute",
     "/montessori-system",
-    "/ami-montessori-training",
     "/innovation",
     "/parents",
+    "/faq",
+    "/video-catalog",
+    "/announcement-centre",
+    "/papers",
+    "/publications",
   ];
-  if (highPriority.includes(route)) {
+  if (p08.includes(route) || route.startsWith("/innovation/")) {
     return { changefreq: "monthly", priority: "0.8" };
   }
 
-  // Legal / utility pages
   if (route.startsWith("/privacy-policy") || route.startsWith("/terms")) {
-    return { changefreq: "yearly", priority: "0.5" };
+    return { changefreq: "yearly", priority: "0.4" };
   }
 
-  // Blog posts and publications
-  if (route.startsWith("/blog/") || route.startsWith("/publications/")) {
+  if (route.startsWith("/blog/")) {
+    return { changefreq: "weekly", priority: "0.7" };
+  }
+
+  if (route.startsWith("/publications/")) {
     return { changefreq: "monthly", priority: "0.7" };
   }
 
-  // Everything else: sub-pages, articles, FAQ, videos, etc.
-  return { changefreq: "monthly", priority: "0.7" };
+  if (route.startsWith("/governance") || route === "/sitemap") {
+    return { changefreq: "yearly", priority: "0.5" };
+  }
+
+  return { changefreq: "monthly", priority: "0.6" };
 }
 
 function getRoutes({ researchOutputs = [], blogPosts = [] }) {
-  const appDir = path.join(process.cwd(), "src", "app");
-  const staticRoutesList = getStaticRoutes(appDir);
+  const staticRoutes = getStaticRoutes(path.join(process.cwd(), "src", "app")).map(
+    (route) => ({ route, ...getPriorityAndFreq(route) })
+  );
 
-  const staticRoutes = staticRoutesList.map((route) => {
-    const config = getPriorityAndFreq(route);
-    return { route, ...config };
-  });
-
-  // Dynamic routes from data
-
-  // Founders (under about-us/founders/[slug])
   const aboutUsSection = (siteData?.pages?.aboutUs?.sections || []).find(
     (item) => item?.type === "foundersGuides"
   );
-  const founders = Array.isArray(aboutUsSection?.props?.items) ? aboutUsSection.props.items.slice(0, 2) : [];
+  const founders = Array.isArray(aboutUsSection?.props?.items)
+    ? aboutUsSection.props.items.slice(0, 2)
+    : [];
   const founderRoutes = founders.map((founder) => {
     const raw = String(founder?.readMoreHref || founder?.name || "").trim().toLowerCase();
     const slug = raw.includes("pavan-goyal")
       ? "pavan-goyal"
       : raw.includes("munira-hussain")
-      ? "munira-hussain"
-      : raw.replace(/^\/+|\/+$/g, "").split("/").pop();
+        ? "munira-hussain"
+        : raw.replace(/^\/+|\/+$/g, "").split("/").pop();
     return { route: `/about-us/founders/${slug}`, changefreq: "monthly", priority: "0.7" };
   });
 
-  // Program detail pages
   const programDetails = Object.keys(siteData?.pages?.programDetails || {})
     .filter((key) => !["breadcrumbs", "schema", "toddlerDetail"].includes(key))
-    .map((slug) => ({ route: `/programs/${slug}`, changefreq: "monthly", priority: "0.7" }));
+    .map((slug) => ({ route: `/programs/${slug}`, ...getPriorityAndFreq(`/programs/${slug}`) }));
 
-  // Innovation detail pages
   const innovationDetails = Object.keys(siteData?.pages?.innovationDetail || {})
     .filter((key) => !["breadcrumbs", "schema"].includes(key))
-    .map((slug) => ({ route: `/innovation/${slug}`, changefreq: "monthly", priority: "0.7" }));
+    .map((slug) => ({
+      route: `/innovation/${slug}`,
+      ...getPriorityAndFreq(`/innovation/${slug}`),
+    }));
 
-  // Research publications
   const publicationRoutes = researchOutputs.map((item) => ({
     route: `/publications/${item.slug}`,
     changefreq: "monthly",
     priority: "0.7",
   }));
 
-  // Research publications markdown views (App Router dirs under trailingSlash:
-  // emit "...md/" so sitemap matches the 200/canonical URL, not the 301 bare ".md").
   const publicationMdRoutes = researchOutputs.map((item) => ({
     route: `/publications/${item.slug}/${item.slug}.md/`,
     changefreq: "monthly",
-    priority: "0.6",
+    priority: "0.5",
   }));
 
-  // Blog posts
   const blogRoutes = blogPosts
     .filter((p) => p.slug)
     .map((p) => ({
@@ -188,7 +169,6 @@ function getRoutes({ researchOutputs = [], blogPosts = [] }) {
       priority: "0.7",
     }));
 
-  // Combine all, deduplicate by route
   const all = [
     ...staticRoutes,
     ...founderRoutes,
@@ -200,17 +180,18 @@ function getRoutes({ researchOutputs = [], blogPosts = [] }) {
   ];
 
   const seen = new Set();
-  return all.filter(({ route }) => {
-    if (SITEMAP_EXCLUDED_ROUTES.has(route)) return false;
-    if (seen.has(route)) return false;
-    seen.add(route);
-    return true;
-  });
+  return all
+    .filter(({ route }) => {
+      if (SITEMAP_EXCLUDED_ROUTES.has(route)) return false;
+      if (seen.has(route)) return false;
+      seen.add(route);
+      return true;
+    })
+    .sort((a, b) => {
+      const pd = Number(b.priority) - Number(a.priority);
+      return pd !== 0 ? pd : a.route.localeCompare(b.route);
+    });
 }
-
-// ---------------------------------------------------------------------------
-// XML builder
-// ---------------------------------------------------------------------------
 
 function buildXml(entries) {
   const urls = entries
@@ -234,40 +215,27 @@ function buildXml(entries) {
 </urlset>`;
 }
 
-// ---------------------------------------------------------------------------
-// Main
-// ---------------------------------------------------------------------------
-
 async function main() {
   const { pathToFileURL } = require("url");
 
   const publishingPath = path.join(process.cwd(), "src", "data", "publishing.js");
   const publishingModule = await import(pathToFileURL(publishingPath).href);
-
   const researchOutputs = Array.isArray(publishingModule.RESEARCH_OUTPUTS)
     ? publishingModule.RESEARCH_OUTPUTS
     : [];
 
-  // Blog posts come from the live headless WordPress (single source of truth),
-  // so the sitemap never lists stale/404 slugs. Fails soft to an empty list.
   const wordpressPath = path.join(process.cwd(), "src", "lib", "wordpress.js");
   let blogPosts = [];
   try {
     const wp = await import(pathToFileURL(wordpressPath).href);
     blogPosts = await wp.getPostSlugs();
   } catch (err) {
-    console.warn(
-      `  ! Could not load blog slugs from WordPress: ${err?.message || err}`
-    );
+    console.warn(`  ! Could not load blog slugs from WordPress: ${err?.message || err}`);
   }
 
   const entries = getRoutes({ researchOutputs, blogPosts });
-  const xml = buildXml(entries);
-
-  const outputPath = path.join(process.cwd(), "public", "sitemap.xml");
-  fs.writeFileSync(outputPath, xml, "utf8");
-
-  console.log(`✓ sitemap.xml generated (${entries.length} URLs) → ${outputPath}`);
+  fs.writeFileSync(path.join(process.cwd(), "public", "sitemap.xml"), buildXml(entries), "utf8");
+  console.log(`✓ sitemap.xml generated (${entries.length} URLs) → public/sitemap.xml`);
   console.log(`  Base URL: ${SITE_URL}`);
 }
 

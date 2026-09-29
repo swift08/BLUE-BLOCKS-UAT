@@ -27,13 +27,13 @@ export default function Hero({
   slides = [],
   autoRotate = false,
   autoRotateMs = 8000,
+  headingLevel = "h1",
 }) {
   const hasSlides = Array.isArray(slides) && slides.length > 0;
 
   if (hasSlides) {
     return (
       <HeroCarousel
-        slides={slides}
         title={title}
         subtitle={subtitle}
         note={note}
@@ -49,6 +49,7 @@ export default function Hero({
         className={className}
         autoRotate={autoRotate}
         autoRotateMs={autoRotateMs}
+        slides={slides}
       />
     );
   }
@@ -68,6 +69,7 @@ export default function Hero({
       showArcs={showArcs}
       topSpacing={topSpacing}
       className={className}
+      headingLevel={headingLevel}
       priority
     />
   );
