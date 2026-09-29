@@ -99,7 +99,9 @@ export default function Header({ variant = "dark" }) {
       : null;
 
     if (whatWeDo) {
-      const hasAmi = whatWeDo.items.some((it) => normalizeHref(it.href) === "/ami-training/");
+      const hasAmi = whatWeDo.items.some(
+        (it) => normalizeHref(it.href) === "/ami-montessori-training/"
+      );
       const hasCareers = whatWeDo.items.some((it) => normalizeHref(it.href) === "/careers/");
       const hasVideoCatalog = whatWeDo.items.some(
         (it) => normalizeHref(it.href) === "/video-catalog/"
@@ -107,9 +109,9 @@ export default function Header({ variant = "dark" }) {
 
       if (!hasAmi) {
         whatWeDo.items.push({
-          id: "ami-training",
+          id: "ami-montessori-training",
           title: "AMI Training",
-          href: "/ami-training/",
+          href: "/ami-montessori-training/",
           description: "AMI-aligned training pathway for guides and educational leaders.",
           image: "/programs/thumb-secondary.webp",
         });
@@ -151,6 +153,21 @@ export default function Header({ variant = "dark" }) {
             : mm.programs.ctaCard,
         }
       : null;
+
+    if (programs) {
+      const hasAmi = programs.items.some(
+        (it) => normalizeHref(it.href) === "/ami-montessori-training/"
+      );
+      if (!hasAmi) {
+        programs.items.push({
+          id: "ami-montessori-training",
+          title: "AMI Teacher Training",
+          href: "/ami-montessori-training/",
+          description: "Internationally recognised AMI diploma courses and certification across India.",
+          image: "/programs/thumb-ami.jpg",
+        });
+      }
+    }
 
     const innovations = mm.innovations
       ? { ...mm.innovations, items: Array.isArray(mm.innovations.items) ? [...mm.innovations.items] : [] }
@@ -453,47 +470,70 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
             </div>
 
             <div className="grid grid-cols-2 border-t border-slate-100">
-              {items.map((program, idx) => (
-                <Link
-                  key={`${program.href || program.title || "item"}|${idx}`}
-                  href={normalizeHref(program.href)}
-                  prefetch={false}
-                  className="flex gap-3 p-5 sm:p-6 hover:bg-slate-50 border-r border-slate-100 last:border-r-0"
-                >
-                  <div className="relative h-16 w-20 flex-shrink-0 overflow-hidden rounded-xl bg-slate-200 aspect-[80/64]">
-                    {program?.video ? (
-                      <video
-                        src={program.video}
-                        className="absolute inset-0 h-full w-full object-cover"
-                        muted
-                        loop
-                        playsInline
-                        autoPlay
-                        preload="metadata"
-                        aria-hidden="true"
-                      />
-                    ) : program?.image ? (
-                      <Image
-                        src={program.image}
-                        alt={program.title || ""}
-                        width={80}
-                        height={64}
-                        style={{ width: "100%", height: "auto", aspectRatio: "80 / 64" }}
-                        className="h-full w-full object-cover"
-                      />
-                    ) : (
-                      <span className="flex h-full w-full items-center justify-center text-xs text-slate-500">
-                        img
-                      </span>
-                    )}
-                  </div>
+              {items.map((program, idx) => {
+                const isSpanTwo = idx === 4 && items.length === 5;
+                return (
+                  <Link
+                    key={`${program.href || program.title || "item"}|${idx}`}
+                    href={normalizeHref(program.href)}
+                    prefetch={false}
+                    className={`flex items-center gap-3.5 p-4 sm:p-5 hover:bg-slate-50 transition-colors ${
+                      isSpanTwo
+                        ? "col-span-2 border-t border-slate-100 bg-amber-50/30 hover:bg-amber-50/60"
+                        : idx % 2 === 0
+                        ? "border-r border-b border-slate-100"
+                        : "border-b border-slate-100"
+                    }`}
+                  >
+                    <div className="relative h-14 w-18 sm:h-16 sm:w-20 flex-shrink-0 overflow-hidden rounded-xl bg-slate-200 aspect-[80/64]">
+                      {program?.video ? (
+                        <video
+                          src={program.video}
+                          className="absolute inset-0 h-full w-full object-cover"
+                          muted
+                          loop
+                          playsInline
+                          autoPlay
+                          preload="metadata"
+                          aria-hidden="true"
+                        />
+                      ) : program?.image ? (
+                        <Image
+                          src={program.image}
+                          alt={program.title || ""}
+                          width={80}
+                          height={64}
+                          style={{ width: "100%", height: "auto", aspectRatio: "80 / 64" }}
+                          className="h-full w-full object-cover"
+                        />
+                      ) : (
+                        <span className="flex h-full w-full items-center justify-center text-xs text-slate-500">
+                          img
+                        </span>
+                      )}
+                    </div>
 
-                  <div className="space-y-1">
-                    <div className="text-sm font-semibold text-slate-900">{program?.title}</div>
-                    <p className="line-clamp-2 text-xs text-slate-600">{program?.description}</p>
-                  </div>
-                </Link>
-              ))}
+                    <div className="space-y-1 flex-1">
+                      <div className="text-sm font-semibold text-slate-900 flex items-center gap-2">
+                        <span>{program?.title}</span>
+                        {isSpanTwo && (
+                          <span className="px-2 py-0.5 text-[9px] uppercase font-bold tracking-wider rounded-full bg-[#2C2F8F] text-white">
+                            Teacher Training
+                          </span>
+                        )}
+                      </div>
+                      <p className="line-clamp-2 text-xs text-slate-600">{program?.description}</p>
+                    </div>
+
+                    {isSpanTwo && (
+                      <div className="hidden sm:inline-flex items-center gap-1 shrink-0 px-3 py-1.5 rounded-full bg-white border border-amber-200/80 text-xs font-bold text-[#2C2F8F] shadow-sm">
+                        <span>Explore Diplomas</span>
+                        <span aria-hidden>→</span>
+                      </div>
+                    )}
+                  </Link>
+                );
+              })}
             </div>
           </div>
 

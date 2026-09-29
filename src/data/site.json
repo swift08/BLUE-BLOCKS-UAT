@@ -128,6 +128,13 @@
           "href": "/programs/secondary-school",
           "description": "Teen years guided through real-life projects, leadership, and Cambridge learning.",
           "image": "/programs/thumb-secondary.webp"
+        },
+        {
+          "id": "ami-montessori-training",
+          "title": "AMI Teacher Training",
+          "href": "/ami-montessori-training/",
+          "description": "Internationally recognised AMI diploma courses and certification across India.",
+          "image": "/programs/thumb-ami.jpg"
         }
       ],
       "ctaCard": {

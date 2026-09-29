@@ -33,7 +33,6 @@ const CtaBanner = dynamic(() => import("@/components/blocks/CtaBanner"), { ssr: 
 // Contact / Careers
 const ContactDetails = dynamic(() => import("@/components/blocks/ContactDetails"), { ssr: true });
 const LocationsGrid = dynamic(() => import("@/components/blocks/LocationsGrid"), { ssr: true });
-const PositionsOpen = dynamic(() => import("@/components/blocks/PositionsOpen"), { ssr: true });
 
 // Admissions
 const AdmissionsIntro = dynamic(() => import("@/components/blocks/AdmissionsIntro"), { ssr: true });
@@ -243,8 +242,6 @@ export default function SectionRenderer({ sections = [] }) {
             return <ContactDetails key={key} {...props} />;
           case "locationsGrid":
             return <LocationsGrid key={key} {...props} />;
-          case "positionsOpen":
-            return <PositionsOpen key={key} {...props} />;
 
           // Home
           case "homeHero":

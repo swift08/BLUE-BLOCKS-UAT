@@ -106,7 +106,7 @@ function getPriorityAndFreq(route) {
     "/campus",
     "/research-institute",
     "/montessori-system",
-    "/ami-training",
+    "/ami-montessori-training",
     "/innovation",
     "/parents",
   ];

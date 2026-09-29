@@ -12,9 +12,7 @@ export const metadata = {
 
 export default function ContactPage() {
   const page = siteData?.pages?.contact || {};
-  const baseSections = Array.isArray(page?.sections)
-    ? page.sections.filter((section) => section?.type !== "positionsOpen")
-    : [];
+  const baseSections = Array.isArray(page?.sections) ? page.sections : [];
 
   const hasCareersCta = baseSections.some(
     (section) => section?.type === "ctaBanner" && section?.props?.cta?.href === "/careers/"

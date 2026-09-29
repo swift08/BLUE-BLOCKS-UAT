@@ -31,9 +31,6 @@ const nextConfig = {
       "yet-another-react-lightbox",
     ],
 
-    // React Compiler — automatically memoizes components and hooks,
-    // eliminating the need for manual useMemo/useCallback in many places.
-    // babel-plugin-react-compiler is already installed as a devDependency.
     reactCompiler: false,
   },
 
