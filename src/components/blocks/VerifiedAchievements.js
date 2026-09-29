@@ -34,7 +34,7 @@ export default function VerifiedAchievements({
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((card, idx) => (
             <AchievementCard
-              key={card?.href || card?.title || idx}
+              key={`${card?.title || "item"}-${idx}`}
               {...card}
             />
           ))}

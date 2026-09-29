@@ -59,10 +59,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en-IN" data-scroll-behavior="smooth">
       <head>
-        {/* OpenAI Ads Pixel — official Ads Manager snippet (debug:true while testing) */}
+        {/* OpenAI Ads Pixel — production only (CORB noise on localhost) */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"9sY4TiPwiYhBH1QGBhzEkw",debug:false});`,
+            __html: `!function(w,d,s,u){var h=w.location&&w.location.hostname;if(h!=="blueblocks.in"&&h!=="www.blueblocks.in"){w.oaiq=function(){};return}if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f);oaiq("init",{pixelId:"9sY4TiPwiYhBH1QGBhzEkw",debug:false})}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");`,
           }}
         />
         {/* DNS + TCP pre-negotiation for third-party domains.

@@ -32,6 +32,10 @@
         "href": "/admissions/"
       },
       {
+        "label": "Blog",
+        "href": "/blog/"
+      },
+      {
         "label": "Careers",
         "href": "/careers/"
       },

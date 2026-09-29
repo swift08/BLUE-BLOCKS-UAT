@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import Container from "@/components/layout/Container";
 import AmiStickyNav from "@/components/ami/AmiStickyNav";
@@ -199,135 +198,57 @@ export default function AmiMontessoriTrainingPage() {
       <PageJsonLd baseId="ami-montessori-training" schema={fullSchema} />
 
       {/* SECTION 1 — Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#FBF7F2] via-[#F3E3CF]/40 to-[#FAF6F0] pt-44 sm:pt-48 md:pt-52 pb-14 sm:pb-20 border-b border-amber-200/50">
-        {/* Decorative background subtle glow elements */}
-        <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-amber-200/30 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-indigo-100/40 blur-3xl pointer-events-none" />
-
+      <section className="relative bg-[#FAF6F0] pt-36 sm:pt-40 md:pt-44 pb-8 sm:pb-10 border-b border-amber-200/60">
         <Container>
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-            {/* Left Content Column (7 cols) */}
-            <div className="lg:col-span-7 space-y-6 text-left">
-              {/* Eyebrow badge + breadcrumb */}
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[#2C2F8F]/10 text-[#2C2F8F] border border-[#2C2F8F]/20">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2C2F8F] animate-pulse" />
-                  AMI Gold Standard • India Directory
-                </span>
-                <nav
-                  aria-label="Breadcrumb"
-                  className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 font-medium"
-                >
-                  <Link href="/" className="hover:text-slate-900 transition-colors">
-                    Home
-                  </Link>
-                  <span>/</span>
-                  <Link href="/about-us/" className="hover:text-slate-900 transition-colors">
-                    What We Do
-                  </Link>
-                  <span>/</span>
-                  <span className="text-[#2C2F8F] font-semibold">AMI Training</span>
-                </nav>
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto] gap-5 lg:gap-12 lg:items-end">
+            <div className="min-w-0">
+              <nav
+                aria-label="Breadcrumb"
+                className="flex flex-wrap items-center gap-2 text-xs text-slate-500 font-medium"
+              >
+                <Link href="/" className="hover:text-slate-900 transition-colors">
+                  Home
+                </Link>
+                <span>/</span>
+                <Link href="/about-us/" className="hover:text-slate-900 transition-colors">
+                  What We Do
+                </Link>
+                <span>/</span>
+                <span className="text-[#2C2F8F] font-semibold">AMI Training</span>
+              </nav>
 
-              {/* Exact H1 */}
-              <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+              <p className="mt-3 text-[11px] font-bold uppercase tracking-widest text-[#2C2F8F]">
+                AMI Gold Standard · India Directory
+              </p>
+
+              <h1 className="mt-2 text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight max-w-4xl">
                 AMI Montessori Teacher Training in India
               </h1>
 
-              {/* Exact Paragraph 1 */}
-              <p className="text-base sm:text-lg md:text-xl text-slate-800 leading-relaxed font-normal">
+              <p className="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed max-w-4xl">
                 The AMI diploma is the internationally recognised standard for Montessori teacher training. This page covers every diploma available in India, all seven AMI-affiliated training centres, eligibility, duration, and what an AMI qualification means for your career.
               </p>
 
-              {/* Founder Continuum Card with Exact Paragraph 2 */}
-              <div className="p-4 sm:p-6 rounded-2xl bg-white/90 backdrop-blur-sm border border-amber-200/80 shadow-md shadow-amber-900/5 space-y-3">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#B74F2A]">
-                    THE 0–18 CONTINUUM
-                  </span>
-                  <div className="flex items-center gap-1 text-[11px] font-bold text-[#2C2F8F]">
-                    <span className="px-2 py-0.5 rounded bg-indigo-50 border border-indigo-100">0–3</span>
-                    <span className="text-slate-300">•</span>
-                    <span className="px-2 py-0.5 rounded bg-indigo-50 border border-indigo-100">3–6</span>
-                    <span className="text-slate-300">•</span>
-                    <span className="px-2 py-0.5 rounded bg-indigo-50 border border-indigo-100">6–12</span>
-                    <span className="text-slate-300">•</span>
-                    <span className="px-2 py-0.5 rounded bg-indigo-50 border border-indigo-100">12–18</span>
-                  </div>
-                </div>
-
-                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Blue Blocks Montessori School in Hyderabad is guided by AMI principles across all levels from birth to 18. Our founder Pavan Goyal holds all four AMI diplomas; 0–3, 3–6, 6–12, and 12–18; one of the few educators globally to have completed the full continuum.
-                </p>
-              </div>
-
-              {/* Exact CTA Button + Secondary Anchor */}
-              <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-                <a
-                  href="#contact"
-                  className="w-full sm:w-auto px-8 py-3.5 sm:py-4 rounded-full bg-[#2C2F8F] text-white font-bold text-sm sm:text-base hover:bg-[#1e2060] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-xl shadow-[#2C2F8F]/25 inline-flex items-center justify-center gap-2 text-center"
-                >
-                  <span>Enquire About Training</span>
-                  <span aria-hidden>→</span>
-                </a>
-                <a
-                  href="#centres"
-                  className="w-full sm:w-auto px-6 py-3.5 sm:py-4 rounded-full bg-white text-slate-700 font-semibold text-sm sm:text-base border border-slate-200 hover:bg-slate-50 transition-colors shadow-sm inline-flex items-center justify-center text-center"
-                >
-                  View 7 Training Centres
-                </a>
-              </div>
+              <p className="mt-3 text-sm text-slate-600 leading-relaxed max-w-4xl">
+                <span className="font-semibold text-slate-800">0–18 continuum:</span>{" "}
+                Blue Blocks is guided by AMI principles from birth to 18. Founder Pavan Goyal holds all four AMI diplomas (0–3, 3–6, 6–12, 12–18).
+              </p>
             </div>
 
-            {/* Right Media Column (5 cols) */}
-            <div className="lg:col-span-5 relative mt-4 lg:mt-0">
-              {/* Outer decorative glow and border */}
-              <div className="relative mx-auto max-w-md lg:max-w-none rounded-3xl p-2 bg-gradient-to-tr from-amber-200 via-white to-indigo-100 shadow-2xl shadow-slate-900/10">
-                <div className="relative rounded-[22px] overflow-hidden bg-slate-900 aspect-[4/3] sm:aspect-[4/3]">
-                  <Image
-                    src="/images/ami-teacher-training-hero.jpg"
-                    alt="Authentic AMI Montessori Teacher Training Environment with Trainee and Materials"
-                    fill
-                    priority
-                    sizes="(max-width: 768px) 100vw, 500px"
-                    className="object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
-                  />
-
-                  {/* Top-left planes badge */}
-                  <div className="absolute top-3.5 left-3.5 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-slate-200/80 shadow-md flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-[#2C2F8F]" />
-                    <span className="text-[11px] font-bold text-slate-800 tracking-wide uppercase">
-                      4 Planes (0–18)
-                    </span>
-                  </div>
-
-                  {/* Top-right authentic badge overlay */}
-                  <div className="absolute top-3.5 right-3.5 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-slate-200/80 shadow-md flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                    <span className="text-[11px] font-bold text-slate-800 tracking-wide uppercase">
-                      AMI Accredited
-                    </span>
-                  </div>
-
-                  {/* Bottom glassmorphic info bar */}
-                  <div className="absolute inset-x-3 bottom-3 p-3.5 rounded-xl bg-slate-950/85 backdrop-blur-md border border-white/20 text-white shadow-lg">
-                    <div className="flex items-center justify-between text-xs">
-                      <div>
-                        <p className="font-bold text-white tracking-tight">
-                          Association Montessori Internationale
-                        </p>
-                        <p className="text-[11px] text-amber-200/90 font-medium">
-                          Founded 1929 by Dr. Maria Montessori
-                        </p>
-                      </div>
-                      <span className="text-[10px] px-2.5 py-1 rounded bg-white/20 uppercase font-semibold tracking-wider whitespace-nowrap ml-2">
-                        110+ Countries
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="flex flex-col sm:flex-row lg:flex-col gap-2.5 w-full lg:w-60">
+              <a
+                href="#contact"
+                className="inline-flex w-full lg:w-auto items-center justify-center gap-1.5 px-5 py-2.5 rounded-full bg-[#2C2F8F] text-white text-sm font-bold hover:bg-[#1e2060] transition-colors"
+              >
+                Enquire About Training
+                <span aria-hidden>→</span>
+              </a>
+              <a
+                href="#centres"
+                className="inline-flex w-full lg:w-auto items-center justify-center px-5 py-2.5 rounded-full bg-white text-slate-700 text-sm font-semibold border border-slate-200 hover:bg-slate-50 transition-colors"
+              >
+                View 7 Training Centres
+              </a>
             </div>
           </div>
         </Container>

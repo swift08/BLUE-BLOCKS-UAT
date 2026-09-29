@@ -18,6 +18,48 @@ img {
   max-width: 100%;
 }
 
+/* Sitewide mobile safety — clip horizontal overflow without changing desktop layouts */
+html {
+  overflow-x: clip;
+}
+body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+main {
+  overflow-x: clip;
+  max-width: 100%;
+}
+video,
+iframe,
+embed,
+object {
+  max-width: 100%;
+}
+
+/* Hide scrollbars on intentional horizontal scrapers (sticky navs, chips) */
+.no-scrollbar,
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar,
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Phone-only tokens — md+ keeps existing desktop values */
+@media (max-width: 639px) {
+  :root {
+    --bb-container-pad: 14px;
+    --bb-card-pad: 20px;
+    --bb-section-pad-y: clamp(32px, 7vw, 48px);
+    --bb-title-size: clamp(24px, 6.5vw, 32px);
+    --bb-subtitle-size: clamp(16px, 4vw, 20px);
+    --bb-body-size: 14px;
+  }
+}
+
 img[width][height] {
   aspect-ratio: auto;
 }
