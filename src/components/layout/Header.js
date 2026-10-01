@@ -516,18 +516,13 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                     <div className="space-y-1 flex-1">
                       <div className="text-sm font-semibold text-slate-900 flex items-center gap-2">
                         <span>{program?.title}</span>
-                        {isSpanTwo && (
-                          <span className="px-2 py-0.5 text-[9px] uppercase font-bold tracking-wider rounded-full bg-[#2C2F8F] text-white">
-                            Teacher Training
-                          </span>
-                        )}
                       </div>
                       <p className="line-clamp-2 text-xs text-slate-600">{program?.description}</p>
                     </div>
 
                     {isSpanTwo && (
                       <div className="hidden sm:inline-flex items-center gap-1 shrink-0 px-3 py-1.5 rounded-full bg-white border border-amber-200/80 text-xs font-bold text-[#2C2F8F] shadow-sm">
-                        <span>Explore Diplomas</span>
+                        <span>Explore</span>
                         <span aria-hidden>→</span>
                       </div>
                     )}

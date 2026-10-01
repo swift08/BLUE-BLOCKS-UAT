@@ -125,6 +125,7 @@ export default function SitewideBlogSection({ customStaticPosts }) {
 
   // Normalize pathname to find matching static blogs
   const cleanPath = pathname.replace(/\/+$/, "") || "/";
+  const hideJournal = cleanPath === "/montessori-system";
   const staticPair =
     customStaticPosts ||
     PAGE_STATIC_BLOGS[cleanPath] ||
@@ -133,6 +134,7 @@ export default function SitewideBlogSection({ customStaticPosts }) {
 
   // Auto-populate Cards 3 and 4 from the two most recent posts published on blueblocks.in/blog/
   useEffect(() => {
+    if (hideJournal) return;
     let active = true;
 
     async function fetchRecentPosts() {
@@ -173,7 +175,9 @@ export default function SitewideBlogSection({ customStaticPosts }) {
     return () => {
       active = false;
     };
-  }, []);
+  }, [hideJournal]);
+
+  if (hideJournal) return null;
 
   // Four blog post cards: Cards 1 & 2 (Static), Cards 3 & 4 (Dynamic)
   const cards = [

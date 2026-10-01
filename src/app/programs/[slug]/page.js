@@ -208,9 +208,33 @@ export default async function ProgramPage({ params }) {
   const generated = buildProgramSchema(slug);
   const schema = [...ownSchema, ...generated];
 
+  const showMontessoriReciprocal = [
+    "playgroup",
+    "nursery-school",
+    "primary-school-elementary",
+    "secondary-school",
+  ].includes(slug);
+
   return (
     <>
       <PageJsonLd baseId={`programs-${slug}`} schema={schema} />
+
+      {showMontessoriReciprocal ? (
+        <section className="bg-[#EEF7FD] border-b border-slate-200">
+          <Container className="py-4 sm:py-5">
+            <p className="text-sm sm:text-base text-slate-700 text-center">
+              New to Montessori? Understand the method first.{" "}
+              <Link
+                href="/montessori-system/"
+                className="text-[#2C2F8F] font-semibold underline underline-offset-2 hover:text-[#1e2060]"
+              >
+                What Is Montessori Education
+              </Link>
+            </p>
+          </Container>
+        </section>
+      ) : null}
+
       <SectionRenderer sections={sections} />
 
       {/* Reciprocal Admissions Link */}

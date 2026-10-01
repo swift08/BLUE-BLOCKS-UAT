@@ -56,7 +56,7 @@
         {
           "id": "montessori",
           "title": "Montessori",
-          "href": "/montessori-system",
+          "href": "/montessori-system/",
           "description": "Hands-on Montessori method building focus, creativity, discipline, and lifelong skills.",
           "image": "/programs/thumb-nursery.webp"
         },
@@ -157,6 +157,13 @@
         "href": "/innovation"
       },
       "items": [
+        {
+          "id": "montessori-system",
+          "title": "What Is Montessori Education?",
+          "href": "/montessori-system/",
+          "description": "AMI Montessori method, four planes of development, glossary, and how Blue Blocks practises authentic Montessori.",
+          "image": "/programs/thumb-nursery.webp"
+        },
         {
           "id": "innovation-lab",
           "title": "Innovation Lab",

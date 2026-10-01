@@ -1,13 +1,11 @@
-import siteData from "@/data/site";
-import SectionRenderer from "@/lib/sectionRenderer";
-import PageJsonLd from "@/components/seo/PageJsonLd";
+import MontessoriSystemContent from "@/components/montessori-system/MontessoriSystemContent";
 
 export const dynamic = "force-static";
 
 export const metadata = {
-  title: "Authentic Montessori Education System | Blue Blocks",
+  title: "What Is Montessori Education? | Blue Blocks",
   description:
-    "Learn about AMI-aligned Montessori pedagogy, child-centered classrooms, planes of development, and the child's psychological development.",
+    "Dr Maria Montessori was a physician and a scientist. Through rigorous observation of children, she discovered that traditional education, built on instruction and forced compliance, obstructs natural human development. She did not invent a teaching method; she discovered the exact environmental conditions under which children naturally teach themselves.",
   robots: { index: true, follow: true },
   alternates: {
     canonical: "https://blueblocks.in/montessori-system/",
@@ -15,35 +13,26 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://blueblocks.in/montessori-system/",
-    title: "Authentic Montessori Education System | Blue Blocks",
+    title: "What Is Montessori Education? | Blue Blocks",
     description:
-      "AMI-aligned Montessori pedagogy, planes of development, and child-centered classrooms at Blue Blocks.",
+      "Dr Maria Montessori was a physician and a scientist. Through rigorous observation of children, she discovered that traditional education, built on instruction and forced compliance, obstructs natural human development.",
     images: [
       {
         url: "https://blueblocks.in/images/og-homepage.webp",
         width: 1200,
         height: 630,
-        alt: "Blue Blocks authentic Montessori education system",
+        alt: "Montessori classroom at Blue Blocks School Hyderabad",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Authentic Montessori Education System | Blue Blocks",
+    title: "What Is Montessori Education? | Blue Blocks",
     description:
-      "AMI pedagogy, planes of development, and prepared environments explained.",
+      "Dr Maria Montessori was a physician and a scientist. Through rigorous observation of children, she discovered the exact environmental conditions under which children naturally teach themselves.",
   },
 };
 
 export default function MontessoriSystemPage() {
-  const page = siteData?.pages?.montessoriSystem || {};
-  const sections = Array.isArray(page?.sections) ? page.sections : [];
-
-  return (
-    <>
-      <PageJsonLd baseId="montessori-system" schema={page?.schema} />
-      <SectionRenderer sections={sections} />
-    </>
-  );
+  return <MontessoriSystemContent />;
 }
-

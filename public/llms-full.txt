@@ -1,6 +1,6 @@
 # Blue Blocks Montessori School & Micro Research Institute
 > Official AI-readable summary for Blue Blocks (Hyderabad, India).
-> Last updated: 2026-09-29
+> Last updated: 2026-10-01
 > Canonical site: https://blueblocks.in/
 > Full dataset: https://blueblocks.in/llms-full.txt
 > Sitemap: https://blueblocks.in/sitemap.xml
