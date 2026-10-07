@@ -1,9 +1,30 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
-import mmtiPoster from "@/assets/annoucement/WhatsApp Image 2026-10-07 at 2.28.42 PM.jpeg";
-import rtiPoster from "@/assets/annoucement/WhatsApp Image 2026-10-07 at 2.28.42 PM (1).jpeg";
+import mmtiPoster from "@/assets/annoucement/mmti-elementary-diploma.webp";
+import rtiPoster from "@/assets/annoucement/rti-elementary-diploma.webp";
 
 const POSTED = "06-10-2026";
+
+function PosterButton({ poster, alt, onOpen }) {
+  return (
+    <button
+      type="button"
+      onClick={() => onOpen(poster)}
+      className="block w-full cursor-zoom-in text-left"
+      aria-label={`Open full poster: ${alt}`}
+    >
+      <Image
+        src={poster}
+        alt={alt}
+        className="w-full h-auto object-cover"
+        sizes="(min-width: 768px) 220px, 100vw"
+      />
+    </button>
+  );
+}
 
 function ExpandArrow() {
   return (
@@ -23,6 +44,17 @@ function ExpandArrow() {
 }
 
 export default function AmiAnnouncements() {
+  const [openPoster, setOpenPoster] = useState(null);
+
+  useEffect(() => {
+    if (!openPoster) return;
+    const onKey = (event) => {
+      if (event.key === "Escape") setOpenPoster(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [openPoster]);
+
   return (
     <section
       id="announcements"
@@ -41,11 +73,10 @@ export default function AmiAnnouncements() {
           <div className="mt-8 space-y-6">
             <article className="rounded-2xl border border-slate-200 bg-slate-50/60 overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-[220px_minmax(0,1fr)]">
-                <Image
-                  src={mmtiPoster}
+                <PosterButton
+                  poster={mmtiPoster}
                   alt="Poster for the 5th AMI Montessori Elementary Diploma Course by Medha Montessori Training Institute"
-                  className="w-full h-auto object-cover"
-                  sizes="(min-width: 768px) 220px, 100vw"
+                  onOpen={setOpenPoster}
                 />
                 <div className="p-5 sm:p-6">
                   <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug">
@@ -115,11 +146,10 @@ export default function AmiAnnouncements() {
 
             <article className="rounded-2xl border border-slate-200 bg-slate-50/60 overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-[220px_minmax(0,1fr)]">
-                <Image
-                  src={rtiPoster}
+                <PosterButton
+                  poster={rtiPoster}
                   alt="Poster for the AMI Elementary Diploma conducted by Sir Ratan Tata Institute"
-                  className="w-full h-auto object-cover"
-                  sizes="(min-width: 768px) 220px, 100vw"
+                  onOpen={setOpenPoster}
                 />
                 <div className="p-5 sm:p-6">
                   <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 leading-snug">
@@ -174,6 +204,34 @@ export default function AmiAnnouncements() {
           </div>
         </div>
       </Container>
+
+      {openPoster && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90 cursor-zoom-out"
+          onClick={() => setOpenPoster(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Full poster"
+        >
+          <button
+            type="button"
+            className="absolute top-4 right-4 bg-black/60 text-white rounded-full p-2.5 border border-white/10"
+            onClick={() => setOpenPoster(null)}
+            aria-label="Close poster"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={openPoster.src}
+            alt=""
+            className="max-w-full max-h-[90vh] object-contain"
+            onClick={(event) => event.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   );
 }
