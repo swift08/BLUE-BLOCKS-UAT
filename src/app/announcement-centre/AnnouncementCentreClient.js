@@ -58,6 +58,9 @@ export default function AnnouncementCentreClient({ announcements = [] }) {
     if (normalized.includes("special") || normalized.includes("workshop")) {
       return "bg-amber-50 text-amber-700 border border-amber-200";
     }
+    if (normalized.includes("annual") || normalized.includes("explore")) {
+      return "bg-emerald-50 text-emerald-700 border border-emerald-200";
+    }
     return "bg-blue-50 text-blue-700 border border-blue-200";
   };
 
@@ -199,8 +202,13 @@ export default function AnnouncementCentreClient({ announcements = [] }) {
                         {item.title}
                       </h3>
                       {item.subtitle && (
-                        <p className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-6">
+                        <p className={`text-sm font-semibold text-slate-500 uppercase tracking-wider ${item.invitation ? "mb-2" : "mb-6"}`}>
                           {item.subtitle}
+                        </p>
+                      )}
+                      {item.invitation && (
+                        <p className="text-xs font-medium text-slate-500 mb-6">
+                          {item.invitation}
                         </p>
                       )}
 

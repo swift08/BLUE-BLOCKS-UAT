@@ -417,6 +417,33 @@
           "props": {
             "announcements": [
               {
+                "title": "Explore Montessori 2026",
+                "subtitle": "Biomimicry Park",
+                "badge": "Annual Event",
+                "date": "28 November 2026",
+                "invitation": "An invitation for families, educators & science collaborators",
+                "image": "/annoucement/0441d9cb-0c60-4c02-b4b6-ed0415e77897.png",
+                "details": [
+                  {
+                    "icon": "⏰",
+                    "label": "Time",
+                    "value": "9:00 AM – 12:30 PM"
+                  },
+                  {
+                    "icon": "📍",
+                    "label": "Venue",
+                    "value": "Blue Blocks Montessori School, Tellapur, Hyderabad"
+                  }
+                ],
+                "messages": [
+                  "Nature solved it first. What can we learn from it?",
+                  "Join us for Explore Montessori, our annual event, as we explore this year’s theme: Biomimicry Park. Discover how observing nature can inspire ideas and solutions to human problems.",
+                  "Explore 100 student-led research papers, discoveries and nature-inspired models. Meet the children and parents behind the work, follow their questions and discover what they learned along the way.",
+                  "Save the date and join us with your family for a morning of curiosity and discovery.",
+                  "Scan the QR code on the poster for directions."
+                ]
+              },
+              {
                 "title": "Build a Career That Shapes the Future",
                 "subtitle": "AMI Montessori Teacher Training Programme",
                 "badge": "Teacher Training",
