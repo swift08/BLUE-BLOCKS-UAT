@@ -5,13 +5,14 @@ import Image from "next/image";
 import Container from "@/components/layout/Container";
 
 const formatMessageText = (text) => {
+  if (typeof text !== "string") return text;
   const urlRegex = /(https?:\/\/[^\s]+)/g;
   const parts = text.split(urlRegex);
   return parts.map((part, i) => {
     if (part.match(urlRegex)) {
       return (
         <a
-          key={i}
+          key={`link-${i}`}
           href={part}
           target="_blank"
           rel="noopener noreferrer"
@@ -19,6 +20,23 @@ const formatMessageText = (text) => {
         >
           {part}
         </a>
+      );
+    }
+    if (part.includes("**")) {
+      const boldParts = part.split(/(\*\*[^*]+\*\*)/g);
+      return (
+        <span key={`sub-${i}`}>
+          {boldParts.map((sub, j) => {
+            if (sub.startsWith("**") && sub.endsWith("**")) {
+              return (
+                <strong key={`b-${j}`} className="font-bold text-slate-900">
+                  {sub.slice(2, -2)}
+                </strong>
+              );
+            }
+            return sub;
+          })}
+        </span>
       );
     }
     return part;
@@ -215,28 +233,73 @@ export default function AnnouncementCentreClient({ announcements = [] }) {
                       {/* Details Pills */}
                       {item.details && item.details.length > 0 && (
                         <div className="flex flex-wrap gap-2.5 mb-6">
-                          {item.details.map((d, index) => (
-                            <div
-                              key={index}
-                              className="inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200/60 rounded-xl px-3 py-1.5 text-xs text-slate-700 font-medium"
-                            >
-                              <span aria-hidden="true" className="text-sm">{d.icon}</span>
-                              <span className="text-slate-400 mr-0.5">{d.label}:</span>
-                              <span>{d.value}</span>
-                            </div>
-                          ))}
+                          {item.details.map((d, index) => {
+                            const linkUrl = d?.link || d?.href;
+                            const isClickable = Boolean(linkUrl);
+                            const ChipTag = isClickable ? "a" : "div";
+                            const linkProps = isClickable
+                              ? {
+                                  href: linkUrl,
+                                  target: "_blank",
+                                  rel: "noopener noreferrer",
+                                  title: `Open ${d.label} in Google Maps`,
+                                }
+                              : {};
+
+                            return (
+                              <ChipTag
+                                key={index}
+                                {...linkProps}
+                                className={`inline-flex items-center gap-1.5 bg-slate-50 border border-slate-200/60 rounded-xl px-3 py-1.5 text-xs text-slate-700 font-medium transition-all duration-200 ${
+                                  isClickable
+                                    ? "cursor-pointer hover:border-amber-400 hover:bg-amber-50/70 hover:shadow-sm"
+                                    : ""
+                                }`}
+                              >
+                                <span aria-hidden="true" className="text-sm">{d.icon}</span>
+                                <span className="text-slate-400 mr-0.5">{d.label}:</span>
+                                <span className={isClickable ? "text-slate-900 font-semibold underline decoration-amber-400/60 underline-offset-2" : ""}>
+                                  {d.value}
+                                </span>
+                                {isClickable && (
+                                  <svg
+                                    className="w-2.5 h-2.5 text-amber-600 inline ml-0.5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2.5"
+                                    viewBox="0 0 24 24"
+                                    aria-hidden="true"
+                                  >
+                                    <path
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                                    />
+                                  </svg>
+                                )}
+                              </ChipTag>
+                            );
+                          })}
                         </div>
                       )}
 
                       {/* Description / Bullet Messages */}
                       <div className="space-y-3.5 text-sm text-slate-600 leading-relaxed mb-8 flex-grow">
                         {item.messages &&
-                          item.messages.map((msg, index) => (
-                            <div key={index} className="flex gap-2">
-                              <span className="text-amber-500 font-semibold">•</span>
-                              <p className="flex-1">{formatMessageText(msg)}</p>
-                            </div>
-                          ))}
+                          item.messages.map((msg, index) => {
+                            const isBoldBig =
+                              typeof msg === "string" &&
+                              msg.trim().toLowerCase().startsWith("nature solved it first");
+
+                            return (
+                              <div key={index} className="flex gap-2">
+                                <span className={`text-amber-500 font-semibold ${isBoldBig ? "text-base sm:text-lg" : ""}`}>•</span>
+                                <p className={`flex-1 ${isBoldBig ? "text-base sm:text-lg font-bold text-slate-900 leading-snug tracking-tight" : ""}`}>
+                                  {formatMessageText(msg)}
+                                </p>
+                              </div>
+                            );
+                          })}
                       </div>
 
                       {/* CTA Button */}

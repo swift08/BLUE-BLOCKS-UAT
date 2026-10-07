@@ -432,7 +432,8 @@
                   {
                     "icon": "📍",
                     "label": "Venue",
-                    "value": "Blue Blocks Montessori School, Tellapur, Hyderabad"
+                    "value": "Blue Blocks Montessori School, Tellapur, Hyderabad",
+                    "link": "https://maps.app.goo.gl/1VSdFbTfUf7MzZyU7"
                   }
                 ],
                 "messages": [

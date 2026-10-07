@@ -6,13 +6,14 @@ import Container from "@/components/layout/Container";
 
 // Helper function to detect and format links inside messages
 const formatMessageText = (text) => {
+  if (typeof text !== "string") return text;
   const urlRegex = /(https?:\/\/[^\s]+)/g;
   const parts = text.split(urlRegex);
   return parts.map((part, i) => {
     if (part.match(urlRegex)) {
       return (
         <a
-          key={i}
+          key={`link-${i}`}
           href={part}
           target="_blank"
           rel="noopener noreferrer"
@@ -20,6 +21,23 @@ const formatMessageText = (text) => {
         >
           {part}
         </a>
+      );
+    }
+    if (part.includes("**")) {
+      const boldParts = part.split(/(\*\*[^*]+\*\*)/g);
+      return (
+        <span key={`sub-${i}`}>
+          {boldParts.map((sub, j) => {
+            if (sub.startsWith("**") && sub.endsWith("**")) {
+              return (
+                <strong key={`b-${j}`} className="font-bold text-slate-900">
+                  {sub.slice(2, -2)}
+                </strong>
+              );
+            }
+            return sub;
+          })}
+        </span>
       );
     }
     return part;
@@ -277,26 +295,73 @@ export default function AnnouncementSection({
                       {/* ── Detail chips ── */}
                       {(ann?.details || details).length > 0 && (
                         <div className="flex flex-wrap gap-2 mb-3.5">
-                          {(ann?.details || details).map((d, dIdx) => (
-                            <div
-                              key={dIdx}
-                              className="flex items-center gap-2 px-3 py-1.5 rounded-xl border"
-                              style={{
-                                background: "rgba(15, 23, 42, 0.03)",
-                                borderColor: "rgba(15, 23, 42, 0.06)",
-                              }}
-                            >
-                              <span className="text-base">{d.icon}</span>
-                              <div>
-                                <div className="text-[9px] font-bold uppercase tracking-wider text-slate-500">
-                                  {d.label}
+                          {(ann?.details || details).map((d, dIdx) => {
+                            const linkUrl = d?.link || d?.href;
+                            const isClickable = Boolean(linkUrl);
+                            const ChipTag = isClickable ? "a" : "div";
+                            const linkProps = isClickable
+                              ? {
+                                  href: linkUrl,
+                                  target: "_blank",
+                                  rel: "noopener noreferrer",
+                                  title: `Open ${d.label} in Google Maps`,
+                                }
+                              : {};
+
+                            return (
+                              <ChipTag
+                                key={dIdx}
+                                {...linkProps}
+                                className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border transition-all duration-200 group/chip ${
+                                  isClickable
+                                    ? "cursor-pointer hover:border-amber-400 hover:bg-amber-50/70 hover:shadow-sm"
+                                    : ""
+                                }`}
+                                style={{
+                                  background: "rgba(15, 23, 42, 0.03)",
+                                  borderColor: "rgba(15, 23, 42, 0.06)",
+                                }}
+                              >
+                                <span
+                                  className={`text-base ${
+                                    isClickable ? "group-hover/chip:scale-110 transition-transform" : ""
+                                  }`}
+                                >
+                                  {d.icon}
+                                </span>
+                                <div>
+                                  <div className="text-[9px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1">
+                                    <span>{d.label}</span>
+                                    {isClickable && (
+                                      <svg
+                                        className="w-2.5 h-2.5 text-amber-600 inline opacity-75 group-hover/chip:opacity-100 transition-opacity"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2.5"
+                                        viewBox="0 0 24 24"
+                                        aria-hidden="true"
+                                      >
+                                        <path
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"
+                                          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                                        />
+                                      </svg>
+                                    )}
+                                  </div>
+                                  <div
+                                    className={`text-xs sm:text-sm font-semibold text-slate-800 ${
+                                      isClickable
+                                        ? "group-hover/chip:text-amber-800 underline decoration-amber-400/60 underline-offset-2"
+                                        : ""
+                                    }`}
+                                  >
+                                    {d.value}
+                                  </div>
                                 </div>
-                                <div className="text-xs sm:text-sm font-semibold text-slate-800">
-                                  {d.value}
-                                </div>
-                              </div>
-                            </div>
-                          ))}
+                              </ChipTag>
+                            );
+                          })}
                         </div>
                       )}
 
@@ -312,11 +377,24 @@ export default function AnnouncementSection({
 
                       {/* ── Message paragraphs ── */}
                       <div className="space-y-2">
-                        {(ann?.messages || messages).map((msg, mIdx) => (
-                          <p key={mIdx} className="text-xs sm:text-sm leading-relaxed text-slate-600 font-normal">
-                            {formatMessageText(msg)}
-                          </p>
-                        ))}
+                        {(ann?.messages || messages).map((msg, mIdx) => {
+                          const isBoldBig =
+                            typeof msg === "string" &&
+                            msg.trim().toLowerCase().startsWith("nature solved it first");
+
+                          return (
+                            <p
+                              key={mIdx}
+                              className={
+                                isBoldBig
+                                  ? "text-base sm:text-lg font-bold text-slate-900 leading-snug tracking-tight pt-0.5"
+                                  : "text-xs sm:text-sm leading-relaxed text-slate-600 font-normal"
+                              }
+                            >
+                              {formatMessageText(msg)}
+                            </p>
+                          );
+                        })}
                       </div>
                     </div>
 
