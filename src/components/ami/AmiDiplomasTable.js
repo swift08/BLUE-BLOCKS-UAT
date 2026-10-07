@@ -17,13 +17,13 @@ const DIPLOMAS_DATA = [
   {
     diploma: "AMI Elementary Diploma",
     ageGroup: "6–12 years",
-    environment: "Primary School",
+    environment: "Primary (Grade 1–6)",
     href: "/programs/primary-school-elementary/",
   },
   {
     diploma: "AMI Adolescent Orientation",
     ageGroup: "12–18 years",
-    environment: "Secondary School",
+    environment: "Secondary (High School)",
     href: "/programs/secondary-school/",
   },
 ];

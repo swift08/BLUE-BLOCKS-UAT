@@ -5,9 +5,9 @@ import Image from "next/image";
 import Container from "@/components/layout/Container";
 
 const CITIES = [
+  { id: "hyderabad", label: "Hyderabad", x: 38.2, y: 66.4, align: "right" },
   { id: "chandigarh", label: "Chandigarh", x: 29.4, y: 23.0, align: "right" },
   { id: "mumbai", label: "Mumbai", x: 18.6, y: 63.5, align: "left" },
-  { id: "hyderabad", label: "Hyderabad", x: 38.2, y: 66.4, align: "right" },
   { id: "kolkata", label: "Kolkata", x: 68.0, y: 50.6, align: "right" },
   { id: "bengaluru", label: "Bengaluru", x: 32.0, y: 81.0, align: "left" },
   { id: "chennai", label: "Chennai", x: 40.8, y: 81.3, align: "right" },
@@ -310,13 +310,12 @@ export default function AmiTrainingCentres() {
                 </span>
                 <div>
                   <h3 className="text-base sm:text-lg font-bold text-slate-900">
-                    {currentCentre.displayName || currentCentre.name}
+                    {currentCentre.city}
                   </h3>
-                  {currentCentre.subtitle && (
-                    <p className="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">
-                      {currentCentre.subtitle}
-                    </p>
-                  )}
+                  <p className="text-xs sm:text-sm text-slate-600 font-medium mt-0.5">
+                    {currentCentre.displayName || currentCentre.name}
+                    {currentCentre.subtitle ? ` ${currentCentre.subtitle}` : ""}
+                  </p>
                 </div>
               </div>
               <span className="text-xs text-slate-500 font-semibold uppercase tracking-wider hidden sm:inline">

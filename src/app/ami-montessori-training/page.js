@@ -5,14 +5,16 @@ import StickyPillsNav from "@/components/ui/StickyPillsNav";
 import AmiDiplomasTable from "@/components/ami/AmiDiplomasTable";
 import AmiEligibilityTable from "@/components/ami/AmiEligibilityTable";
 import AmiTrainingCentres from "@/components/ami/AmiTrainingCentres";
+import AmiAnnouncements from "@/components/ami/AmiAnnouncements";
 import AmiFAQ from "@/components/ami/AmiFAQ";
 import { AMI_FAQ_CATEGORIES } from "@/data/ami-faq-data";
 import AmiCTA from "@/components/ami/AmiCTA";
 
 const AMI_NAV = [
+  { label: "Training Centres", href: "#centres", id: "centres" },
+  { label: "Announcements", href: "#announcements", id: "announcements" },
   { label: "What Is AMI", href: "#what-is-ami", id: "what-is-ami" },
   { label: "The Diplomas", href: "#diplomas", id: "diplomas" },
-  { label: "Training Centres", href: "#centres", id: "centres" },
   { label: "Sponsorship", href: "#sponsorship", id: "sponsorship" },
   { label: "FAQ", href: "#faq", id: "faq" },
   { label: "Contact", href: "#contact", id: "contact" },
@@ -267,8 +269,13 @@ export default function AmiMontessoriTrainingPage() {
       <StickyPillsNav
         items={AMI_NAV}
         ariaLabel="AMI Training page section navigation"
-        defaultActive="what-is-ami"
+        defaultActive="centres"
       />
+
+      {/* Training centres first */}
+      <AmiTrainingCentres />
+
+      <AmiAnnouncements />
 
       {/* SECTION 2 — What Is the AMI Diploma? */}
       <section id="what-is-ami" className="py-14 sm:py-18 bg-white scroll-mt-36 sm:scroll-mt-44 border-b border-slate-100">
@@ -279,7 +286,7 @@ export default function AmiMontessoriTrainingPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base sm:text-lg text-slate-700 leading-relaxed">
               <p>
-                The AMI diploma is issued by the Association Montessori Internationale — the organisation founded by Dr Maria Montessori in 1929 to protect the integrity of her method. It is the only Montessori teacher qualification issued directly under the authority of the organisation Montessori herself created.
+                The AMI diploma is issued by the Association Montessori Internationale — the organisation founded by Dr Maria Montessori in 1929 to protect the integrity of her method. In 2029, AMI celebrates 100 years of thriving existence. It is the only Montessori teacher qualification issued directly under the authority of the organisation Montessori herself created.
               </p>
               <p>
                 An AMI diploma is not a certificate course. It is a rigorous professional qualification spanning nine to twenty-two months of full-time study. Training covers child developmental science, observation methodology, hands-on material mastery, and supervised classroom practice. It is recognised by Montessori schools in over 110 countries.
@@ -399,22 +406,22 @@ export default function AmiMontessoriTrainingPage() {
                       04 • Field Work
                     </span>
                     <span className="text-xs font-medium text-sky-800">
-                      Live Environments
+                      Teaching Practice
                     </span>
                   </div>
 
                   <h3 className="text-xl font-bold text-slate-900 tracking-tight">
-                    Classroom Observation
+                    Classroom Observation &amp; Field Work
                   </h3>
 
                   <p className="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed">
-                    Verified passive observation hours in accredited AMI Montessori environments. Trainees observe real children working in prepared environments and record what they see systematically.
+                    Teaching practice is classroom observation and field work. Trainees complete verified observation hours in accredited AMI Montessori environments, watching real children work in prepared environments and recording what they see systematically.
                   </p>
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-sky-800">
                   <span className="w-1.5 h-1.5 rounded-full bg-sky-600" />
-                  <span>Verified observation hours in accredited AMI classrooms</span>
+                  <span>Classroom observation and field work in accredited AMI classrooms</span>
                 </div>
               </div>
             </div>
@@ -424,9 +431,6 @@ export default function AmiMontessoriTrainingPage() {
 
       {/* SECTION 5 — Eligibility */}
       <AmiEligibilityTable />
-
-      {/* SECTION 6 — Training Centres */}
-      <AmiTrainingCentres />
 
       {/* SECTION 7 — AMI vs Non-AMI */}
       <section className="py-14 sm:py-18 bg-white border-b border-slate-100">
@@ -486,7 +490,7 @@ export default function AmiMontessoriTrainingPage() {
                   Observation in a Live AMI Environment
                 </h3>
                 <p className="mt-2 text-base text-slate-700 leading-relaxed">
-                  Prospective trainees and current trainees completing observation hours are welcome to apply for observation sessions at Blue Blocks. Our environments cover the full 0–18 continuum — Infant and Toddler, Pre-Primary, Primary, and Secondary, giving trainees access to every age-level environment in one school.
+                  Prospective trainees and current trainees completing observation hours are welcome to apply for observation sessions at Blue Blocks. Our environments cover the full 0–18 continuum — Infant and Toddler, Pre-Primary, Primary (Grade 1–6), and Secondary (High School), giving trainees access to every age-level environment in one school.
                 </p>
               </div>
 
@@ -512,44 +516,27 @@ export default function AmiMontessoriTrainingPage() {
       <section id="sponsorship" className="py-16 sm:py-20 bg-slate-50/70 scroll-mt-36 sm:scroll-mt-44 border-b border-slate-200">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-[#2C2F8F] block mb-2">
-                  BLUE BLOCKS SCHOLARSHIP & SPONSORSHIP
-                </span>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  Sponsorship
-                </h2>
-              </div>
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-900 border border-amber-200 w-fit">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
-                Under Preparation
-              </span>
-            </div>
+            <span className="text-xs font-bold uppercase tracking-widest text-[#2C2F8F] block mb-2">
+              BLUE BLOCKS SCHOLARSHIP & SPONSORSHIP
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Sponsorship
+            </h2>
 
-            <div className="rounded-3xl bg-white border border-slate-200/90 p-8 sm:p-10 shadow-sm relative overflow-hidden">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-200 flex items-center justify-center text-amber-800 shrink-0">
-                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
-                    Working on this. Will add here soon.
-                  </p>
-                  <p className="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed">
-                    Formal guidelines and application criteria for candidate guide sponsorship are currently in development. If you are an aspiring guide or diploma applicant seeking sponsorship support, please consult our team via the{" "}
-                    <Link
-                      href="/careers/"
-                      className="text-[#2C2F8F] font-semibold underline underline-offset-2 hover:text-[#1e2060] transition-colors"
-                    >
-                      Careers page
-                    </Link>{" "}
-                    or connect directly with our training coordinator below.
-                  </p>
-                </div>
-              </div>
+            <div className="mt-6 rounded-3xl bg-white border border-slate-200/90 p-8 sm:p-10 shadow-sm">
+              <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+                Blue Blocks sponsors selected guides through AMI diploma training. Sponsorship is offered to candidates joining the school&apos;s team who are committed to completing the relevant diploma.
+              </p>
+              <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
+                Enquire through our{" "}
+                <Link
+                  href="/careers/"
+                  className="text-[#2C2F8F] font-semibold underline underline-offset-2 hover:text-[#1e2060] transition-colors"
+                >
+                  Careers page
+                </Link>
+                , or connect with the training coordinator in the contact section below.
+              </p>
             </div>
           </div>
         </Container>
