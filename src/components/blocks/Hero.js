@@ -370,9 +370,15 @@ function HeroPane({
           </HeadingTag>
 
           {subtitle ? (
-            <p className={align === "center" ? "bb-hero-subtitle bb-hero-subtitle--center" : "bb-hero-subtitle"}>
-              {subtitle}
-            </p>
+            <div className={align === "center" ? "bb-hero-subtitle bb-hero-subtitle--center" : "bb-hero-subtitle"}>
+              {String(subtitle)
+                .split("\n")
+                .map((line, idx) => (
+                  <p key={idx} className={idx > 0 ? "mt-1.5 text-xs sm:text-sm font-medium tracking-wide text-white/85" : ""}>
+                    {line}
+                  </p>
+                ))}
+            </div>
           ) : null}
 
           {note ? <p className="bb-hero-note">{note}</p> : null}

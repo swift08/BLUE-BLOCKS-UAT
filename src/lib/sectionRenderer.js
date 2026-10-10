@@ -32,6 +32,14 @@ const RecognizedBy = dynamic(() => import("@/components/blocks/RecognizedBy"), {
 const FAQAccordion = dynamic(() => import("@/components/blocks/FAQAccordion"), { ssr: true });
 const CtaBanner = dynamic(() => import("@/components/blocks/CtaBanner"), { ssr: true });
 
+// Homepage Redesign Sections (Brief)
+const TwoColumnEventsAndFeatured = dynamic(() => import("@/components/home/TwoColumnEventsAndFeatured"), { ssr: true });
+const PhilosophyStrip = dynamic(() => import("@/components/home/PhilosophyStrip"), { ssr: true });
+const FourProgrammes = dynamic(() => import("@/components/home/FourProgrammes"), { ssr: true });
+const AchievementsStrip = dynamic(() => import("@/components/home/AchievementsStrip"), { ssr: true });
+const HomeFAQ = dynamic(() => import("@/components/home/HomeFAQ"), { ssr: true });
+const AdmissionsCtaBand = dynamic(() => import("@/components/home/AdmissionsCtaBand"), { ssr: true });
+
 // Contact / Careers
 const ContactDetails = dynamic(() => import("@/components/blocks/ContactDetails"), { ssr: true });
 const LocationsGrid = dynamic(() => import("@/components/blocks/LocationsGrid"), { ssr: true });
@@ -267,6 +275,18 @@ export default function SectionRenderer({ sections = [] }) {
             return <RecognizedBy key={key} {...props} />;
           case "faq":
             return <FAQAccordion key={key} {...props} />;
+          case "twoColumnEventsAndFeatured":
+            return <TwoColumnEventsAndFeatured key={key} {...props} />;
+          case "philosophyStrip":
+            return <PhilosophyStrip key={key} {...props} />;
+          case "fourProgrammes":
+            return <FourProgrammes key={key} {...props} />;
+          case "achievementsStrip":
+            return <AchievementsStrip key={key} {...props} />;
+          case "homeFAQ":
+            return <HomeFAQ key={key} {...props} />;
+          case "admissionsCtaBand":
+            return <AdmissionsCtaBand key={key} {...props} />;
 
           // Common
           case "pageHero":

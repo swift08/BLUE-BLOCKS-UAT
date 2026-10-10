@@ -395,11 +395,11 @@ const structuredData = {
 const HOME_HERO_SLIDES = [
   {
     id: "home-hero-1",
-    title: "The Child,\nUnderstood",
+    title: "Where Curiosity Becomes a Lifelong Habit",
     subtitle:
-      "We don't teach. We observe. Then we build the precise environment your child needs to construct themselves.",
-    primaryCta: { label: "Explore Our Programmes", href: "/programs/" },
-    secondaryCta: { label: "Visit the Campus", href: "/campus/" },
+      "Montessori education for ages 15 months – 16 years · Hyderabad\nAMI-aligned · Cambridge accredited · Research-backed",
+    primaryCta: { label: "Apply for Admissions", href: "/admissions/" },
+    secondaryCta: { label: "Explore Our Programmes", href: "/programs/" },
     bgImageUrl: "/home/homepage-banner-01.webp",
     align: "left",
     overlay: "dark",

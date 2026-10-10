@@ -129,12 +129,7 @@ export default function MediaMentions({
       <Container>
         <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between pb-8 sm:pb-10">
           <div>
-            <div className="inline-flex items-center gap-1.5 rounded-full bg-[#EBF2FE] px-3 py-1 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0F52BA]">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#0F52BA] animate-pulse" />
-              Press & Coverage
-            </div>
-
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-neutral-900 mt-2.5">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-neutral-900">
               {title}
             </h2>
 

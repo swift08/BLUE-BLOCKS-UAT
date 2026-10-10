@@ -75,6 +75,56 @@ const nextConfig = {
         destination: "/announcement-centre/",
         permanent: true,
       },
+      {
+        source: "/parents",
+        destination: "/announcement-centre/",
+        permanent: true,
+      },
+      {
+        source: "/parents/:path*",
+        destination: "/announcement-centre/",
+        permanent: true,
+      },
+      {
+        source: "/videos",
+        destination: "/video-catalog/",
+        permanent: true,
+      },
+      {
+        source: "/videos/",
+        destination: "/video-catalog/",
+        permanent: true,
+      },
+      {
+        source: "/papers",
+        destination: "/research-institute/",
+        permanent: true,
+      },
+      {
+        source: "/papers/:path*",
+        destination: "/research-institute/",
+        permanent: true,
+      },
+      {
+        source: "/publications",
+        destination: "/research-institute/",
+        permanent: true,
+      },
+      {
+        source: "/publications/:path*",
+        destination: "/research-institute/",
+        permanent: true,
+      },
+      {
+        source: "/innovation/cubesat-mission",
+        destination: "/achievements/",
+        permanent: true,
+      },
+      {
+        source: "/innovation/cubesat-mission/",
+        destination: "/achievements/",
+        permanent: true,
+      },
     ];
   },
 

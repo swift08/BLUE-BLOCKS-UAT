@@ -239,8 +239,8 @@
         "href": "/about-us"
       },
       {
-        "label": "The Micro Research Institute",
-        "href": "https://research.blueblocks.in/"
+        "label": "Research Institute",
+        "href": "/research-institute/"
       },
       {
         "label": "Blog",
@@ -257,6 +257,10 @@
       {
         "label": "Newsroom",
         "href": "/newsroom/"
+      },
+      {
+        "label": "Achievements",
+        "href": "/achievements/"
       }
     ],
     "programs": [
@@ -336,16 +340,16 @@
         {
           "type": "homeHero",
           "props": {
-            "title": "THE CHILD, UNDERSTOOD",
-            "subtitle": "Authentic Montessori. The 0–16 Continuum. Education designed for the human spirit.",
-            "note": "At Blue Blocks, we do not view children as empty vessels to be filled. We view them as complete human beings unfolding. While most schools rush to 'teach,' we take the time to observe. By understanding your child's natural development—without interference or pressure—we create the precise environment they need to construct themselves.",
+            "title": "Where Curiosity Becomes a Lifelong Habit",
+            "subtitle": "Montessori education for ages 15 months – 16 years · Hyderabad",
+            "note": "AMI-aligned · Cambridge accredited · Research-backed",
             "primaryCta": {
-              "label": "Explore Our Programs",
-              "href": "/programs"
+              "label": "Apply for Admissions",
+              "href": "/admissions/"
             },
             "secondaryCta": {
-              "label": "Visit the Campus",
-              "href": "/campus"
+              "label": "Explore Our Programmes",
+              "href": "/programs/"
             },
             "bgImageUrl": "/home/homepage-banner-01.webp"
           }
@@ -354,416 +358,25 @@
           "type": "trustBar"
         },
         {
-          "type": "imageText",
-          "props": {
-            "title": "OBSERVATION OVER INSTRUCTION",
-            "text": [
-              "We do not view children as vessels to be filled. We view them as phenomena to be observed.",
-              "While others race to finish a curriculum, we apply scientific rigor to the child’s education, not as a series of tests, but as a carefully guided construction of the human being.",
-              "A child’s growth cannot be rushed, manufactured, or standardized. It must be understood. Through prepared environments, purposeful routines, and educators trained to observe before they intervene, we help children develop independence, emotional balance, and the confidence to learn deeply, not just for school, but for life."
-            ],
-            "imageUrl": "/home-01/kids-being-part-sunday-school.webp"
-          }
-        },
-        {
-          "type": "journeyCards",
-          "props": {
-            "title": "A DISRUPTION-FREE JOURNEY",
-            "cards": [
-              {
-                "tag": "15 Mo – 3Y",
-                "title": "Nido & Toddler",
-                "cta": {
-                  "label": "Explore this Community",
-                  "href": "/programs/playgroup"
-                },
-                "tone": "peach"
-              },
-              {
-                "tag": "3 – 6Y",
-                "title": "Children’s House",
-                "cta": {
-                  "label": "Explore this Community",
-                  "href": "/programs/nursery-school"
-                },
-                "tone": "yellow"
-              },
-              {
-                "tag": "6 – 12Y",
-                "title": "Elementary",
-                "cta": {
-                  "label": "Explore this Community",
-                  "href": "/programs/primary-school-elementary"
-                },
-                "tone": "sky"
-              },
-              {
-                "tag": "12 – 18Y",
-                "title": "Adolescent",
-                "cta": {
-                  "label": "Explore this Community",
-                  "href": "/programs/secondary-school"
-                },
-                "tone": "navy"
-              }
-            ]
-          }
-        },
-        {
-          "type": "recentBlogs",
-          "props": {
-            "title": "Recent Articles & Insights",
-            "eyebrow": "FROM OUR JOURNAL",
-            "subtitle": "Thoughtful reflections on child development, Montessori education, and self-directed learning from our educators.",
-            "ctaText": "Explore All Articles",
-            "ctaHref": "/blog/"
-          }
-        },
-        {
-          "type": "announcementSection",
-          "props": {
-            "announcements": [
-              {
-                "title": "Explore Montessori 2026",
-                "subtitle": "Biomimicry Park",
-                "badge": "Annual Event",
-                "date": "28 November 2026",
-                "invitation": "An invitation for families, educators & science collaborators",
-                "image": "/annoucement/0441d9cb-0c60-4c02-b4b6-ed0415e77897.png",
-                "details": [
-                  {
-                    "icon": "⏰",
-                    "label": "Time",
-                    "value": "9:00 AM – 12:30 PM"
-                  },
-                  {
-                    "icon": "📍",
-                    "label": "Venue",
-                    "value": "Blue Blocks Montessori School, Tellapur, Hyderabad",
-                    "link": "https://maps.app.goo.gl/1VSdFbTfUf7MzZyU7"
-                  }
-                ],
-                "messages": [
-                  "Nature solved it first. What can we learn from it?",
-                  "Join us for Explore Montessori, our annual event, as we explore this year’s theme: Biomimicry Park. Discover how observing nature can inspire ideas and solutions to human problems.",
-                  "Explore 100 student-led research papers, discoveries and nature-inspired models. Meet the children and parents behind the work, follow their questions and discover what they learned along the way.",
-                  "Save the date and join us with your family for a morning of curiosity and discovery.",
-                  "Scan the QR code on the poster for directions."
-                ]
-              },
-              {
-                "title": "Build a Career That Shapes the Future",
-                "subtitle": "AMI Montessori Teacher Training Programme",
-                "badge": "Teacher Training",
-                "date": "July 25, 2026",
-                "image": "/annoucement/WhatsApp Image 2026-07-10 at 4.06.52 PM.webp",
-                "details": [
-                  {
-                    "icon": "💻",
-                    "label": "Orientation",
-                    "value": "Online (FREE)"
-                  },
-                  {
-                    "icon": "⏰",
-                    "label": "Time",
-                    "value": "5:00 PM – 6:00 PM (IST)"
-                  },
-                  {
-                    "icon": "📍",
-                    "label": "Venue",
-                    "value": "Online via Zoom"
-                  }
-                ],
-                "messages": [
-                  "Looking for a career change? Passionate about working with children?",
-                  "Explore the internationally recognized AMI Montessori Teacher Training Programme and discover how Montessori education can become a meaningful and fulfilling career.",
-                  "An initiative by Blue Blocks Montessori School.",
-                  "🔗 Registration Form: https://forms.gle/bGRW3BFnixmkzCEh9",
-                  "Zoom Details: https://us06web.zoom.us/j/87583580035?pwd=oABUayMzYb1HbrNGI73FTBBXnyfAgT.1",
-                  "Meeting ID: 875 8358 0035 | Passcode: 148941",
-                  "📞 For more information and queries: +91 9154160971 (Call/WhatsApp)"
-                ]
-              },
-              {
-                "title": "Supporting the Child Together",
-                "subtitle": "An exclusive workshop",
-                "badge": "Caregivers & Drivers",
-                "date": "July 11, 2026",
-                "image": "/annoucement/WhatsApp Image 2026-07-10 at 4.08.17 PM.webp",
-                "details": [
-                  {
-                    "icon": "⏰",
-                    "label": "Time",
-                    "value": "10:00 AM - 11:00 AM"
-                  },
-                  {
-                    "icon": "📍",
-                    "label": "Venue",
-                    "value": "Blueblocks, Gachibowli"
-                  },
-                  {
-                    "icon": "🗣️",
-                    "label": "Language",
-                    "value": "Telugu and Hindi"
-                  }
-                ],
-                "messages": [
-                  "An exclusive workshop for our Nannies and Driver partners supporting the child.",
-                  "Caregivers / Nannies: Language, Independence, Toilet Training, Activities with Children.",
-                  "Driver Partners: Language, Independence."
-                ]
-              },
-              {
-                "title": "Grandparents’ Workshop",
-                "subtitle": "The Gift of Resilience",
-                "badge": "Special Workshop",
-                "date": "July 11, 2026",
-                "image": "/annoucement/ann.webp",
-                "details": [
-                  {
-                    "icon": "⏰",
-                    "label": "Time",
-                    "value": "10:00 AM - 11:30 AM"
-                  },
-                  {
-                    "icon": "📍",
-                    "label": "Venue",
-                    "value": "Blueblocks, Gachibowli (Ground Floor)"
-                  },
-                  {
-                    "icon": "🗣️",
-                    "label": "Language",
-                    "value": "Telugu • Hindi • English"
-                  }
-                ],
-                "messages": [
-                  "Dear Parents, we warmly invite your child’s grandparents to join us for a special Grandparents’ Workshop - ✨ The Gift of Resilience.",
-                  "We request you to kindly register on behalf of your child’s grandparents. Google Form Link: https://forms.gle/gGECT93spQbaS97J9",
-                  "Note: This session is designed exclusively for Grandparents, and children will not be accommodated during the session. We look forward to welcoming them for this meaningful gathering!"
-                ]
-              },
-              {
-                "title": "Elementary Farm Visit",
-                "badge": "Upcoming Event",
-                "date": "July 18, 2026",
-                "details": [
-                  {
-                    "icon": "🌅",
-                    "label": "Departure",
-                    "value": "9:00 AM from school"
-                  },
-                  {
-                    "icon": "🏡",
-                    "label": "Return",
-                    "value": "2:30 PM"
-                  },
-                  {
-                    "icon": "🚌",
-                    "label": "Transport",
-                    "value": "School Buses"
-                  }
-                ],
-                "messages": [
-                  "Guides and children will be engaging in interesting and fun activities. All of you are welcome to come, observe, support, and learn.",
-                  "Please let us know if you're joining — we need a headcount to coordinate with the transport team for extra seating."
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "type": "featureGrid",
-          "props": {
-            "headline": "EDUCATION FOR LIFE",
-            "subText": "We do not follow trends. We follow the child.",
-            "items": [
-              {
-                "tag": "",
-                "title": "The Continuum",
-                "icon": "/icon/icon-capa.svg",
-                "text": "A seamless journey from Infancy (15 Months) to Adolescence (16 Years). No jarring transitions between 'Primary' and 'High School'—just one continuous arc of growth."
-              },
-              {
-                "tag": "",
-                "title": "Interdisciplinary Minds",
-                "icon": "/icon/icon-synaptic-fusion.svg",
-                "text": "We don't teach subjects in silos. Biology meets History; Math meets Art. It creates “System Thinkers” for 2050."
-              },
-              {
-                "tag": "",
-                "title": "The Prepared Adult",
-                "icon": "/icon/icon-AMI.svg",
-                "text": "Our Guides are AMI-Trained observers. Their job is not to 'command' the room, but to remove obstacles so your child can conquer it themselves."
-              },
-              {
-                "tag": "",
-                "title": "Scientific Observation",
-                "icon": "/icon/icon-documented.svg",
-                "text": "We don't guess. We observe. Our unique internal research helps us tailor the environment to your child's specific needs, ensuring no one falls through the cracks."
-              }
-            ]
-          }
-        },
-        {
-          "type": "AreasofDevelopment",
-          "props": {
-            "bg": "#F3E3CF",
-            "eyebrow": "Awarded the Best Pre-school in Hyderabad by",
-            "title": "TIMES OF INDIA for Nine consecutive years",
-            "description": "",
-            "headerAlign": "center",
-            "cols": {
-              "base": 1,
-              "sm": 2,
-              "lg": 2
-            },
-            "maxWidth": "max-w-6xl",
-            "gap": "gap-6",
-            "cardBg": "#273C75",
-            "cardRadius": "rounded-[18px]",
-            "cardPadding": "px-3 py-3",
-            "cardMinHeight": 290,
-            "imageSize": "100%",
-            "items": [
-              {
-                "icon": "",
-                "image": "/home-01/awards-01-min.webp",
-                "title": "",
-                "text": "Blue Blocks ranked top in the West Zone School Category"
-              },
-              {
-                "icon": "",
-                "image": "/home-01/awards-02-min.webp",
-                "title": "",
-                "text": "Awarded with the Outstanding Innovation School in the Full School Category"
-              }
-            ]
-          }
-        },
-        {
           "type": "mediaMentions"
         },
         {
-          "type": "insights",
-          "props": {
-            "title": "LIFE AT BLUE BLOCKS",
-            "subtitle": "Stories of independence, innovation, and community.",
-            "hasCTA": false,
-            "cols": {
-              "base": 1,
-              "sm": 3,
-              "md": 3
-            },
-            "items": [
-              {
-                "tone": "sky",
-                "pill": "The Philosophy",
-                "pillSec": "The Guide",
-                "title": "Lining the Nest",
-                "meta": "The definitive guide to the First Plane of Development (0-6). A handbook for parents navigating the “Absorbent Mind.”",
-                "readMore": {
-                  "enabled": true,
-                  "labelMore": "Read More",
-                  "labelLess": "Read Less",
-                  "paragraphs": [
-                    "Montessori at ages <b>0–6</b> is about building independence through the prepared environment.",
-                    "This guide explains how the <b>Absorbent Mind</b> works—and what it means for routines, language, and emotional safety at home.",
-                    "Use it as a practical reference for daily decisions: what to help with, what to step back from, and how to observe before intervening."
-                  ]
-                }
-              },
-              {
-                "tone": "peach",
-                "pill": "The Student Innovation",
-                "pillSec": "The Outcome",
-                "title": "The Unscripted Learner",
-                "meta": "Witness how our adolescents (Ages 12-16) are solving real-world agricultural problems—not because we told them to, but because they chose to.",
-                "readMore": {
-                  "enabled": true,
-                  "labelMore": "Read More",
-                  "labelLess": "Read Less",
-                  "paragraphs": [
-                    "At Blue Blocks, innovation is not a project—it’s a habit built over years.",
-                    "Our adolescents work through real constraints: <b>materials, time, feedback loops</b>, and measurable outcomes.",
-                    "The result is confidence that comes from ownership: they design, test, fail, iterate, and ship."
-                  ]
-                }
-              },
-              {
-                "tone": "yellow",
-                "pill": "From the Director",
-                "pillSec": "The Insight",
-                "title": "Why We Wait",
-                "meta": "In Montessori, the hardest thing for an adult to do is nothing. Why pausing before helping builds your child's confidence.",
-                "readMore": {
-                  "enabled": true,
-                  "labelMore": "Read More",
-                  "labelLess": "Read Less",
-                  "paragraphs": [
-                    "The pause is not neglect—it’s respect for the child’s process.",
-                    "When we wait, we give space for <b>problem-solving</b>, persistence, and self-correction to emerge naturally.",
-                    "Over time, this builds a child’s internal voice: “I can try again. I can figure this out.”"
-                  ]
-                }
-              }
-            ]
-          }
+          "type": "twoColumnEventsAndFeatured"
         },
         {
-          "type": "imageText",
-          "props": {
-            "title": "WHERE ENVIRONMENT IS THE EDUCATOR",
-            "text": [
-              "A building can be designed for control, or it can be designed for growth. At Blue Blocks, every corridor, classroom, and open space serves a single purpose: the child.",
-              "Our campus is a prepared environment — conceived through Montessori principles — where the architecture itself supports independence, exploration, and a deep sense of belonging.",
-              "Children thrive when their surroundings are built for their scale, their needs, and their natural impulse to move, build, and make meaning. This is not a place children come to. It is a place children grow in."
-            ],
-            "imageUrl": "/home-01/buildings-001.webp",
-            "align": "left",
-            "imageSide": "right"
-          }
+          "type": "philosophyStrip"
         },
         {
-          "type": "faq",
-          "props": {
-            "bg": "#F3E3CF",
-            "defaultOpenIndex": 0,
-            "panelMaxWidth": "none",
-            "title": "COMMUNITY QUESTIONS",
-            "subtitle": "",
-            "items": [
-              {
-                "q": "Why do you mix ages in one classroom?",
-                "a": "Because real life is not segregated by birth year. In a mixed-age community, younger children learn by watching, and older children master concepts by teaching. This builds deep social intelligence."
-              },
-              {
-                "q": "How do you handle the 'Real World'?",
-                "a": "The 'Real World' rewards those who can think, adapt, and solve problems independently. By prioritizing executive function over rote memorization, we prepare children to lead, not just follow."
-              },
-              {
-                "q": "What is your 'Research' approach?",
-                "a": "We believe education should be a science, not an assumption. Our internal observation team studies how children learn best, allowing us to constantly improve our environments. We don't experiment on children; we learn from them."
-              }
-            ]
-          }
+          "type": "fourProgrammes"
         },
         {
-          "type": "ctaBanner",
-          "props": {
-            "title": "Experience Learning\nthe Blue Blocks Way.",
-            "text": "Seats are filled on a first-come basis.",
-            "cta": {
-              "label": "Book Admission Workshop",
-              "href": "/contact-us"
-            },
-            "image": "/building-image-01.webp",
-            "imageAlt": "Campus building",
-            "imageWidth": "566",
-            "imageHeight": "506",
-            "customTopSpacing": "sm:pt-70",
-            "align": "left",
-            "theme": "dark"
-          }
+          "type": "achievementsStrip"
+        },
+        {
+          "type": "homeFAQ"
+        },
+        {
+          "type": "admissionsCtaBand"
         }
       ],
       "breadcrumbs": [

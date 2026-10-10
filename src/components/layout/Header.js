@@ -177,6 +177,38 @@ export default function Header({ variant = "dark" }) {
     if (whatWeDo?.label) map[whatWeDo.label] = whatWeDo;
     if (innovations?.label) map[innovations.label] = innovations;
 
+    map["Admissions"] = {
+      label: "Admissions",
+      items: [
+        {
+          id: "apply-now",
+          title: "Apply Now",
+          href: "/admissions/#contact",
+          description: "Begin your application and register for admissions.",
+          image: "/home/homepage-banner-01.webp",
+        },
+        {
+          id: "admissions-process",
+          title: "Admissions Process",
+          href: "/admissions/#process",
+          description: "Step-by-step admissions journey from enquiry to enrolment.",
+          image: "/home-01/kids-being-part-sunday-school.webp",
+        },
+        {
+          id: "admissions-faqs",
+          title: "FAQs",
+          href: "/admissions/#faq",
+          description: "Frequently asked questions about admissions and criteria.",
+          image: "/annoucement/0441d9cb-0c60-4c02-b4b6-ed0415e77897.webp",
+        },
+      ],
+      ctaCard: {
+        title: "Book a School Visit",
+        description: "Experience our Montessori environments firsthand.",
+        button: { label: "Book a Visit", href: "/admissions/#contact" },
+      },
+    };
+
     const nav = Array.isArray(site?.nav)
       ? site.nav.map((item) => {
           const href = normalizeHref(item?.href);
@@ -295,6 +327,26 @@ export default function Header({ variant = "dark" }) {
             })}
           </nav>
 
+          {/* Desktop Persistent Actions (Page 22) */}
+          <div className="hidden xl:flex items-center gap-2.5">
+            <Link
+              href="/contact-us/"
+              className={`text-xs font-semibold px-3.5 py-1.5 rounded-full border transition ${
+                isLight
+                  ? "border-white/50 text-white hover:bg-white hover:text-neutral-900"
+                  : "border-neutral-300 text-neutral-800 hover:border-neutral-900"
+              }`}
+            >
+              Contact Us
+            </Link>
+            <Link
+              href="/admissions/"
+              className="text-xs font-semibold px-4 py-1.5 rounded-full bg-[#0F52BA] text-white hover:bg-[#0D47A1] shadow-sm transition"
+            >
+              Enquire Now
+            </Link>
+          </div>
+
           {/* Mobile hamburger — always high-contrast */}
           <button
             type="button"
@@ -349,6 +401,22 @@ export default function Header({ variant = "dark" }) {
           </div>
         </div>
       </header>
+
+      {/* Mobile Sticky Action Bar (Page 22) */}
+      <div className="fixed bottom-0 left-0 right-0 z-[75] md:hidden bg-white/95 backdrop-blur-md border-t border-neutral-200/90 px-4 py-2.5 shadow-[0_-4px_16px_rgba(0,0,0,0.06)] flex items-center justify-between gap-3">
+        <Link
+          href="/contact-us/"
+          className="flex-1 text-center py-2 px-3 rounded-full border border-neutral-300 text-xs font-semibold text-neutral-800 hover:bg-neutral-50 transition"
+        >
+          Contact Us
+        </Link>
+        <Link
+          href="/admissions/"
+          className="flex-1 text-center py-2 px-3 rounded-full bg-[#0F52BA] text-xs font-semibold text-white hover:bg-[#0D47A1] shadow-sm transition"
+        >
+          Enquire Now
+        </Link>
+      </div>
     </div>
   );
 }
