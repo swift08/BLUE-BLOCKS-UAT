@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 
@@ -47,6 +47,17 @@ export default function AnnouncementCentreClient({ announcements = [] }) {
   const [selectedBadge, setSelectedBadge] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [modalImage, setModalImage] = useState(null);
+
+  useEffect(() => {
+    const slug = window.location.hash.replace(/^#/, "");
+    if (!slug) return;
+    setSelectedBadge("All");
+    setSearchQuery("");
+    const timer = window.setTimeout(() => {
+      document.getElementById(slug)?.scrollIntoView({ block: "start" });
+    }, 50);
+    return () => window.clearTimeout(timer);
+  }, []);
 
   // Extract unique badges for filtering
   const categories = useMemo(() => {
@@ -178,8 +189,9 @@ export default function AnnouncementCentreClient({ announcements = [] }) {
                 const cta = getCTAButton(item.messages);
                 return (
                   <div
-                    key={idx}
-                    className="bg-white rounded-3xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group"
+                    id={item.slug || undefined}
+                    key={item.slug || idx}
+                    className="scroll-mt-28 bg-white rounded-3xl border border-slate-200/80 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col group"
                   >
                     {/* Visual poster/image if present */}
                     {item.image && (

@@ -67,7 +67,7 @@ export default function PublicationsGrid({ title, subtitle, items = [] }) {
       ];
 
   return (
-    <section className="bg-white">
+    <section id="publications" className="bg-white scroll-mt-28">
       <Container className="py-16 sm:py-20">
         {/* Header */}
         <div className="text-center">
@@ -78,9 +78,12 @@ export default function PublicationsGrid({ title, subtitle, items = [] }) {
           {subtitle ? (
             <p className="mt-4 max-w-4xl mx-auto text-[0.95rem] sm:text-[1.05rem] leading-relaxed text-slate-600">
               {subtitle}{" "}
-              <span className="uppercase font-medium tracking-wide text-[#1F3B82] underline underline-offset-4 cursor-pointer">
-                Read more
-              </span>
+              <a
+                href="https://research.blueblocks.in/"
+                className="font-medium text-[#1F3B82] underline underline-offset-4"
+              >
+                research.blueblocks.in
+              </a>
             </p>
           ) : null}
         </div>

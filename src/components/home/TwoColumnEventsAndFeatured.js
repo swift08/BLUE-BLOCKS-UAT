@@ -67,19 +67,19 @@ const RESEARCH_CARDS = [
     title: "Longitudinal Observation of Executive Function in Montessori",
     author: "Pavan Goyal et al.",
     journal: "Journal of Montessori Research · 2025",
-    href: "/research-institute/#publications",
+    href: "https://research.blueblocks.in/",
   },
   {
     title: "Adolescent Valorization Through Autonomous Aerospace Engineering",
     author: "Munira Hussain et al.",
     journal: "AMI Scientific Papers · 2026",
-    href: "/research-institute/#publications",
+    href: "https://research.blueblocks.in/",
   },
   {
     title: "Sensorial Foundations of Abstract Mathematical Cognition",
     author: "Blue Blocks Research Team et al.",
     journal: "Cognitive Development Studies · 2024",
-    href: "/research-institute/#publications",
+    href: "https://research.blueblocks.in/",
   },
 ];
 
@@ -341,7 +341,7 @@ export default function TwoColumnEventsAndFeatured() {
                   Recent Research
                 </h3>
                 <Link
-                  href="/research-institute/#publications"
+                  href="https://research.blueblocks.in/"
                   className="text-xs font-semibold text-neutral-600 hover:text-[#0F52BA] transition"
                 >
                   All Publications →

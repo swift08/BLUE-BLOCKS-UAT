@@ -1,4 +1,5 @@
 import siteData from "@/data/site";
+import { PAPER_SERIES, RESEARCH_OUTPUTS } from "@/data/publishing";
 import SectionRenderer from "@/lib/sectionRenderer";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 
@@ -35,13 +36,50 @@ export const metadata = {
   },
 };
 
+const publications = [
+  ...PAPER_SERIES.map((item) => ({
+    name: item.title,
+    url: `https://blueblocks.in/${item.slug}/`,
+  })),
+  ...RESEARCH_OUTPUTS.map((item) => ({
+    name: item.title,
+    url: `https://blueblocks.in${item.pageUrl || `/publications/${item.slug}/`}`,
+  })),
+];
+
 export default function ResearchInstitutePage() {
   const page = siteData?.pages?.researchInstitute || {};
   const sections = Array.isArray(page?.sections) ? page.sections : [];
+  const schema = [
+    ...(Array.isArray(page.schema) ? page.schema : []),
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "@id": "https://blueblocks.in/research-institute/#publications",
+      name: "Blue Blocks Micro Research Institute publications",
+      itemListElement: publications.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "ScholarlyArticle",
+          name: item.name,
+          url: item.url,
+          publisher: { "@id": "https://blueblocks.in/#microresearch" },
+        },
+      })),
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "Blue Blocks Research",
+      url: "https://research.blueblocks.in/",
+      publisher: { "@id": "https://blueblocks.in/#organization" },
+    },
+  ];
 
   return (
     <>
-      <PageJsonLd baseId="research-institute" schema={page?.schema} />
+      <PageJsonLd baseId="research-institute" schema={schema} />
       <SectionRenderer sections={sections} />
     </>
   );

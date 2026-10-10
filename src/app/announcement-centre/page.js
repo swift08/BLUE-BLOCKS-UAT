@@ -79,16 +79,73 @@ const pageSchema = [
   },
 ];
 
+const ANCHORED_EVENTS = [
+  {
+    slug: "ami-orientation-parents",
+    badge: "Orientation",
+    date: "This month",
+    title: "AMI Orientation for Parents",
+    messages: ["10:00 AM – 12:30 PM. An introduction to AMI practice for families."],
+  },
+  {
+    slug: "cubesat-payload-testing",
+    badge: "Space Lab",
+    date: "This month",
+    title: "Student CubeSat Mission Payload Testing",
+    messages: ["02:00 PM – 04:00 PM. Payload checks with the adolescent space cohort."],
+  },
+  {
+    slug: "admissions-open-day",
+    badge: "Admissions",
+    date: "This month",
+    title: "Admissions Open Day & Campus Walkthrough",
+    messages: ["10:30 AM – 01:00 PM. Walk the prepared environments and meet the guides."],
+  },
+];
+
+function slugify(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 export default function AnnouncementCentrePage() {
   const homeSections = siteData?.pages?.home?.sections || [];
   const announcementSection = homeSections.find(
     (section) => section?.type === "announcementSection"
   );
-  const announcements = announcementSection?.props?.announcements || [];
+  const fromSite = (announcementSection?.props?.announcements || []).map((item) => ({
+    ...item,
+    slug: item.slug || slugify(item.title),
+  }));
+  const seen = new Set(fromSite.map((item) => item.slug));
+  const announcements = [
+    ...ANCHORED_EVENTS.filter((item) => !seen.has(item.slug)),
+    ...fromSite,
+  ];
+
+  const schema = [
+    ...pageSchema,
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "@id": "https://blueblocks.in/announcement-centre/#events",
+      name: "School announcements",
+      numberOfItems: announcements.length,
+      itemListElement: announcements.map((event, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: event.title,
+        url: `https://blueblocks.in/announcement-centre/#${event.slug}`,
+        description: Array.isArray(event.messages) ? event.messages[0] : undefined,
+      })),
+    },
+  ];
 
   return (
     <>
-      <PageJsonLd baseId="announcement-centre" schema={pageSchema} />
+      <PageJsonLd baseId="announcement-centre" schema={schema} />
 
       <PageHero
         title="Announcement Centre"

@@ -109,7 +109,7 @@ export default async function PublicationDetailPage({ params }) {
         title={item.title}
         breadcrumb={[
           { label: "Home", href: "/" },
-          { label: "Publications", href: "/research-institute/" },
+          { label: "Publications", href: "https://research.blueblocks.in/" },
           { label: item.title },
         ]}
         bg={{

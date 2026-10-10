@@ -86,142 +86,143 @@ export default function Header({ variant = "dark" }) {
 
   const { megaByLabel, navItems } = useMemo(() => {
     const mm = siteData?.megaMenu || {};
-    const map = {};
+    const uniqueByHref = (items) => {
+      const seen = new Set();
+      return items.filter((it) => {
+        const href = normalizeHref(it?.href);
+        if (!href || seen.has(href)) return false;
+        seen.add(href);
+        return true;
+      });
+    };
 
-    const whatWeDo = mm.whatDoWeDo
-      ? {
-          ...mm.whatDoWeDo,
-          label: "What We Do",
-          items: Array.isArray(mm.whatDoWeDo.items)
-            ? [...mm.whatDoWeDo.items]
-            : [],
-        }
-      : null;
+    const aboutSource = Array.isArray(mm.whatDoWeDo?.items) ? mm.whatDoWeDo.items : [];
+    const programSource = Array.isArray(mm.programs?.items) ? mm.programs.items : [];
+    const innovationSource = Array.isArray(mm.innovations?.items) ? mm.innovations.items : [];
 
-    if (whatWeDo) {
-      const hasAmi = whatWeDo.items.some(
-        (it) => normalizeHref(it.href) === "/ami-montessori-training/"
-      );
-      const hasCareers = whatWeDo.items.some((it) => normalizeHref(it.href) === "/careers/");
-      const hasVideoCatalog = whatWeDo.items.some(
-        (it) => normalizeHref(it.href) === "/video-catalog/"
-      );
-
-      if (!hasAmi) {
-        whatWeDo.items.push({
-          id: "ami-montessori-training",
-          title: "AMI Training",
-          href: "/ami-montessori-training/",
-          description: "AMI-aligned training pathway for guides and educational leaders.",
-          image: "/programs/thumb-secondary.webp",
-        });
-      }
-
-      if (!hasCareers) {
-        whatWeDo.items.push({
-          id: "careers",
-          title: "Careers",
-          href: "/careers/",
-          description: "Open roles for educators, researchers, and mission-aligned professionals.",
-          image: "/programs/thumb-primary.webp",
-        });
-      }
-
-      if (!hasVideoCatalog) {
-        whatWeDo.items.push({
-          id: "video-catalog",
-          title: "Video Catalog",
-          href: "/video-catalog/",
-          description: "A cinematic journey through classrooms, labs, farm days, and community life.",
-          image: "/programs/thumb-secondary.webp",
-        });
-      }
-
-    }
-
-    const programs = mm.programs
-      ? {
-          ...mm.programs,
-          items: Array.isArray(mm.programs.items) ? [...mm.programs.items] : [],
-          ctaCard: mm.programs.ctaCard
-            ? {
-                ...mm.programs.ctaCard,
-                button: mm.programs.ctaCard.button
-                  ? { ...mm.programs.ctaCard.button, label: "Admissions", href: "/admissions/" }
-                  : undefined,
-              }
-            : mm.programs.ctaCard,
-        }
-      : null;
-
-    if (programs) {
-      const hasAmi = programs.items.some(
-        (it) => normalizeHref(it.href) === "/ami-montessori-training/"
-      );
-      if (!hasAmi) {
-        programs.items.push({
-          id: "ami-montessori-training",
-          title: "AMI Teacher Training",
-          href: "/ami-montessori-training/",
-          description: "Internationally recognised AMI diploma courses and certification across India.",
-          image: "/programs/thumb-ami.jpg",
-        });
-      }
-    }
-
-    const innovations = mm.innovations
-      ? { ...mm.innovations, items: Array.isArray(mm.innovations.items) ? [...mm.innovations.items] : [] }
-      : null;
-
-    if (programs?.label) map[programs.label] = programs;
-    if (whatWeDo?.label) map[whatWeDo.label] = whatWeDo;
-    if (innovations?.label) map[innovations.label] = innovations;
-
-    map["Admissions"] = {
-      label: "Admissions",
-      items: [
-        {
-          id: "apply-now",
-          title: "Apply Now",
-          href: "/admissions/#contact",
-          description: "Begin your application and register for admissions.",
-          image: "/home/homepage-banner-01.webp",
+    const map = {
+      "About Us": {
+        label: "About Us",
+        viewAll: { label: "About Us", href: "/about-us/" },
+        items: uniqueByHref([
+          ...aboutSource
+            .filter((it) => {
+              const href = normalizeHref(it.href);
+              return (
+                href !== "/montessori-system/" &&
+                href !== "/ami-montessori-training/" &&
+                !href.startsWith("http")
+              );
+            })
+            .map((it) =>
+              normalizeHref(it.href) === "/videos/"
+                ? { ...it, title: "Video Catalog", href: "/video-catalog/" }
+                : it
+            ),
+          {
+            id: "careers",
+            title: "Careers",
+            href: "/careers/",
+            description: "Open roles for educators, researchers, and mission-aligned professionals.",
+            image: "/programs/thumb-primary.webp",
+          },
+        ]),
+        ctaCard: mm.whatDoWeDo?.ctaCard,
+      },
+      Academics: {
+        label: "Academics",
+        viewAll: mm.programs?.viewAll || { label: "Our Programs", href: "/programs/" },
+        items: uniqueByHref([
+          ...programSource,
+          {
+            id: "montessori-system",
+            title: "Montessori System",
+            href: "/montessori-system/",
+            description: "AMI Montessori method, four planes of development, and how Blue Blocks practises it.",
+            image: "/programs/thumb-nursery.webp",
+          },
+        ]),
+        ctaCard: mm.programs?.ctaCard,
+      },
+      "Innovation & Research": {
+        label: "Innovation & Research",
+        viewAll: { label: "Our Innovation", href: "/innovation/" },
+        items: uniqueByHref([
+          ...innovationSource.filter((it) => normalizeHref(it.href) !== "/montessori-system/"),
+          {
+            id: "research-institute",
+            title: "Research Institute",
+            href: "https://research.blueblocks.in/",
+            description: "Publications and the longitudinal child-development study.",
+            image: "/programs/thumb-primary.webp",
+          },
+          {
+            id: "achievements",
+            title: "Achievements",
+            href: "/achievements/",
+            description: "Patents, CubeSat, and Agentic AI stories.",
+            image: "/achievements/sbb1.webp",
+          },
+          {
+            id: "newsroom",
+            title: "Newsroom",
+            href: "/newsroom/",
+            description: "Press mentions with headline, outlet, date, and link.",
+            image: "/programs/thumb-secondary.webp",
+          },
+        ]),
+        ctaCard: mm.innovations?.ctaCard,
+      },
+      Community: {
+        label: "Community",
+        viewAll: { label: "Announcement Centre", href: "/announcement-centre/" },
+        items: [
+          {
+            id: "announcement-centre",
+            title: "Announcement Centre",
+            href: "/announcement-centre/",
+            description: "Events, workshops, and school updates.",
+            image: "/annoucement/0441d9cb-0c60-4c02-b4b6-ed0415e77897.webp",
+          },
+          {
+            id: "explore-montessori",
+            title: "Explore Montessori",
+            href: "/explore-montessori/",
+            description: "Year-by-year look at Montessori at Blue Blocks.",
+            image: "/programs/thumb-nursery.webp",
+          },
+          {
+            id: "blog",
+            title: "Blog",
+            href: "/blog/",
+            description: "Notes on learning, development, and campus life.",
+            image: "/home-01/kids-being-part-sunday-school.webp",
+          },
+          {
+            id: "contact",
+            title: "Contact",
+            href: "/contact-us/",
+            description: "Call, write, or visit the Hyderabad campuses.",
+            image: "/programs/thumb-playgroup.webp",
+          },
+        ],
+        ctaCard: {
+          title: "Visit the campus",
+          text: "See a prepared environment before you decide.",
+          button: { label: "Contact", href: "/contact-us/" },
         },
-        {
-          id: "admissions-process",
-          title: "Admissions Process",
-          href: "/admissions/#process",
-          description: "Step-by-step admissions journey from enquiry to enrolment.",
-          image: "/home-01/kids-being-part-sunday-school.webp",
-        },
-        {
-          id: "admissions-faqs",
-          title: "FAQs",
-          href: "/admissions/#faq",
-          description: "Frequently asked questions about admissions and criteria.",
-          image: "/annoucement/0441d9cb-0c60-4c02-b4b6-ed0415e77897.webp",
-        },
-      ],
-      ctaCard: {
-        title: "Book a School Visit",
-        description: "Experience our Montessori environments firsthand.",
-        button: { label: "Book a Visit", href: "/admissions/#contact" },
       },
     };
 
-    const nav = Array.isArray(site?.nav)
-      ? site.nav.map((item) => {
-          const href = normalizeHref(item?.href);
-          let label = item?.label || "";
-
-          if (label === "What do we do" || label === "Who We Are") label = "About";
-          if (href === "/about-us") return { ...item, label, href: "/about-us/" };
-          return { ...item, label, href };
-        })
-      : [];
+    const nav = [
+      { label: "About Us", href: "/about-us/" },
+      { label: "Academics", href: "/programs/" },
+      { label: "Innovation & Research", href: "/innovation/" },
+      { label: "Community", href: "/announcement-centre/" },
+      { label: "Admissions", href: "/admissions/", cta: true },
+    ];
 
     return { megaByLabel: map, navItems: nav };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const socials = siteData.footer.socials || [];
@@ -287,12 +288,24 @@ export default function Header({ variant = "dark" }) {
             {(navItems || []).map((item, i) => {
               const key = `${item.href || "nohref"}|${item.label || "nolabel"}|${i}`;
               const label = item.label || "";
+              if (item.cta) {
+                return (
+                  <Link
+                    key={key}
+                    href={normalizeHref(item.href)}
+                    className="rounded-full bg-[#0F52BA] px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-[#0D47A1]"
+                  >
+                    {label}
+                  </Link>
+                );
+              }
               const mega = megaByLabel[label];
 
               // Mega entries (desktop)
               if (mega) {
                 const active =
-                  isActiveHref(item.href) || (label === "Programs" ? pathname.startsWith("/programs") : false);
+                  isActiveHref(item.href) ||
+                  (label === "Academics" && pathname.startsWith("/programs"));
 
                 return (
                   <ProgramsMegaMenu
@@ -338,12 +351,6 @@ export default function Header({ variant = "dark" }) {
               }`}
             >
               Contact Us
-            </Link>
-            <Link
-              href="/admissions/"
-              className="text-xs font-semibold px-4 py-1.5 rounded-full bg-[#0F52BA] text-white hover:bg-[#0D47A1] shadow-sm transition"
-            >
-              Enquire Now
             </Link>
           </div>
 
@@ -669,8 +676,20 @@ function MobileNav({
 }) {
   return (
     <div className="space-y-2 h-full overflow-y-auto overscroll-contain">
-      {(nav || []).map((item, idx) => {
+        {(nav || []).map((item, idx) => {
         const label = item?.label || "";
+        if (item?.cta) {
+          return (
+            <Link
+              key={`${label}|${idx}`}
+              href={normalizeHref(item.href)}
+              onClick={onNavigate}
+              className="block rounded-full bg-white px-4 py-3 text-center text-sm font-semibold text-[#0F52BA]"
+            >
+              {label}
+            </Link>
+          );
+        }
         const mega = megaByLabel?.[label];
         const key = `${label}|${idx}`;
         const href = normalizeHref(item?.href);

@@ -97,7 +97,7 @@ export default function PapersHubPage() {
               </p>
               <div className="flex flex-wrap gap-4 text-xs font-semibold">
                 <a
-                  href="https://mri2.vercel.app/"
+                  href="https://research.blueblocks.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 bg-slate-900 hover:bg-slate-800 text-white px-4 py-2.5 rounded-xl transition-colors cursor-pointer"

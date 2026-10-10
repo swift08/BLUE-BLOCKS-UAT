@@ -124,7 +124,7 @@ export function buildNextLevelSchema() {
             "@type": "ResearchOrganization",
             "@id": `${SITE_URL}/#microresearch`,
             name: "Blue Blocks Micro Research Institute",
-            url: `${SITE_URL}/research-institute/`,
+            url: "https://research.blueblocks.in/",
             description:
               "17-year longitudinal observational study of child development across 1,047 children in authentic Montessori environments.",
             parentOrganization: { "@id": ORG },

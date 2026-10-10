@@ -19,7 +19,7 @@ const POPULAR_PAGES = [
   { label: "Admissions", href: "/admissions", desc: "Admission process & entry windows" },
   { label: "Innovation Labs", href: "/innovation", desc: "Drone, Space, Biomimicry & more" },
   { label: "About Us", href: "/about-us", desc: "Our founders, story & mission" },
-  { label: "Research Institute", href: "/research-institute", desc: "17-year longitudinal study" },
+  { label: "Research Institute", href: "https://research.blueblocks.in/", desc: "17-year longitudinal study" },
   { label: "Contact Us", href: "/contact-us", desc: "Both campuses — Gachibowli & Tellapur" },
   { label: "Campus", href: "/campus", desc: "Octagonal classrooms & biophilic design" },
   { label: "FAQ", href: "/faq", desc: "Common questions answered" },

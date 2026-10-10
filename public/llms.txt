@@ -46,17 +46,18 @@ Blue Blocks is an AMI Montessori school in Hyderabad offering continuous educati
 - [Campus](https://blueblocks.in/campus/)
 - [Montessori System](https://blueblocks.in/montessori-system/)
 - [Innovation](https://blueblocks.in/innovation/)
-- [Research Institute](https://blueblocks.in/research-institute/)
+- [Research Institute](https://research.blueblocks.in/)
 - [AMI Montessori Training](https://blueblocks.in/ami-montessori-training/)
-- [Parents](https://blueblocks.in/parents/)
+- [Announcement Centre](https://blueblocks.in/announcement-centre/)
+- [Achievements](https://blueblocks.in/achievements/)
+- [Newsroom](https://blueblocks.in/newsroom/)
+- [Explore Montessori](https://blueblocks.in/explore-montessori/)
+- [Explore Montessori 2026](https://blueblocks.in/explore-montessori/2026/)
 - [FAQ](https://blueblocks.in/faq/)
 - [Careers](https://blueblocks.in/careers/)
 - [Contact](https://blueblocks.in/contact-us/)
-- [Announcement Centre](https://blueblocks.in/announcement-centre/)
 - [Video Catalog](https://blueblocks.in/video-catalog/)
 - [Blog](https://blueblocks.in/blog/)
-- [Papers](https://blueblocks.in/papers/)
-- [Publications](https://blueblocks.in/publications/)
 
 ## Programs
 
@@ -71,11 +72,11 @@ Blue Blocks is an AMI Montessori school in Hyderabad offering continuous educati
 - [Drone Lab](https://blueblocks.in/innovation/drone-lab/) — student drone R&D; patent filings
 - [Space Lab](https://blueblocks.in/innovation/space-lab/) — CubeSat / aerospace
 - [Biomimicry Hive](https://blueblocks.in/innovation/biomimicry-hive/) — IIT Hyderabad co-designed
-- [CubeSat Mission](https://blueblocks.in/innovation/cubesat-mission/) — IN-SPACe-authorised student payload
+- [Achievements](https://blueblocks.in/achievements/) — patents, CubeSat, and agentic AI
 
 ## Research
 
-- [Research Institute](https://blueblocks.in/research-institute/) — BBMRI mission, methods, ethics
+- [Research Institute](https://research.blueblocks.in/) — BBMRI mission, methods, ethics
 - [Governance — Ethics](https://blueblocks.in/governance/ethics/)
 - [Governance — Standards](https://blueblocks.in/governance/our-standards/)
 
@@ -152,3 +153,29 @@ Blue Blocks is an AMI Montessori school in Hyderabad offering continuous educati
 - [Privacy policy](https://blueblocks.in/privacy-policy/)
 - [Terms](https://blueblocks.in/terms/)
 - [HTML sitemap](https://blueblocks.in/sitemap/)
+- [llms.txt](https://blueblocks.in/llms.txt)
+
+## Additional pages
+
+- [Papers](https://blueblocks.in/papers/)
+- [Parents](https://blueblocks.in/parents/)
+- [Videos](https://blueblocks.in/videos/)
+- [On-site Research Institute](https://blueblocks.in/research-institute/)
+- [CubeSat Mission](https://blueblocks.in/innovation/cubesat-mission/)
+- [Montessori Toddler (Playgroup detail)](https://blueblocks.in/programs/playgroup/montessori-toddler/)
+- [PP1–PP2 / LKG–UKG curriculum](https://blueblocks.in/programs/nursery-school/pp1-pp2-lkg-ukg-curriculum/)
+- [Elementary Class 1 to 6](https://blueblocks.in/programs/primary-school-elementary/class-1-to-6/)
+- [Cambridge IGCSE & Erdkinder](https://blueblocks.in/programs/secondary-school/cambridge-igcse-erdkinder/)
+- [Forms](https://blueblocks.in/forms/)
+- [Food Foundations form](https://blueblocks.in/forms/Foodfoundations/)
+- [AMI Training (alias)](https://blueblocks.in/ami-training/)
+- [Announcement Centre (alias)](https://blueblocks.in/annoucement-centre/)
+- [Video Catalogue (alias)](https://blueblocks.in/video-catalogue/)
+
+## Publication markdown
+
+- [IN-SPACe authorization markdown](https://blueblocks.in/publications/inspace-authorization-cubesat-mission/inspace-authorization-cubesat-mission.md/)
+- [Longitudinal innovation markdown](https://blueblocks.in/publications/longitudinal-innovation-development-0-18/longitudinal-innovation-development-0-18.md/)
+- [Observation protocols markdown](https://blueblocks.in/publications/methodological-contributions-observation-protocols/methodological-contributions-observation-protocols.md/)
+- [Research briefs markdown](https://blueblocks.in/publications/research-briefs-series/research-briefs-series.md/)
+- [Drone patent series markdown](https://blueblocks.in/publications/drone-patent-series-2019/drone-patent-series-2019.md/)

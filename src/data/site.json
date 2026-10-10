@@ -240,7 +240,7 @@
       },
       {
         "label": "Research Institute",
-        "href": "/research-institute/"
+        "href": "https://research.blueblocks.in/"
       },
       {
         "label": "Blog",
@@ -261,6 +261,18 @@
       {
         "label": "Achievements",
         "href": "/achievements/"
+      },
+      {
+        "label": "Explore Montessori",
+        "href": "/explore-montessori/"
+      },
+      {
+        "label": "Explore Montessori 2026",
+        "href": "/explore-montessori/2026/"
+      },
+      {
+        "label": "Announcement Centre",
+        "href": "/announcement-centre/"
       }
     ],
     "programs": [
@@ -2326,7 +2338,7 @@
                 "imageAlt": "Patents",
                 "title": "Innovation",
                 "text": "Our students have filed 5 Utility Patents for their own inventions—evidence that when children are trusted with real problems, they respond with original solutions.",
-                "href": "/research-institute/",
+                "href": "https://research.blueblocks.in/",
                 "bg": "#F7E28D"
               },
               {
@@ -2334,7 +2346,7 @@
                 "imageAlt": "Mission SBB-1",
                 "title": "Mission SBB-1 (Authorized by ISRO/IN-SPACe)",
                 "text": "A payload designed and engineered by our adolescents received IN-SPACe authorization for launch with ISRO, demonstrating that Montessori students can operate within high-stakes technical and regulatory frameworks.",
-                "href": "/research-institute/",
+                "href": "https://research.blueblocks.in/",
                 "bg": "#78C4E5"
               },
               {
@@ -5570,7 +5582,7 @@
             "description": "Blue Blocks Micro Research Institute conducts rigorous longitudinal research on how children develop innovative thinking capacities from birth through age 18. Our work bridges developmental psychology, Montessori pedagogy, and innovation science to answer a fundamental question: How does the capacity for original thought emerge, develop, and flourish across childhood?",
             "link": {
               "label": "Read more",
-              "href": "/research-institute/"
+              "href": "https://research.blueblocks.in/"
             },
             "points": [
               "Cognitive architecture of innovation across developmental stages (0–3, 3–6, 6–12, 12–18)",

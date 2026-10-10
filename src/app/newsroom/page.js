@@ -45,26 +45,56 @@ export const metadata = {
   },
 };
 
+const MONTH = {
+  january: "01",
+  february: "02",
+  march: "03",
+  april: "04",
+  may: "05",
+  june: "06",
+  july: "07",
+  august: "08",
+  september: "09",
+  october: "10",
+  november: "11",
+  december: "12",
+};
+
+function datePublished(date) {
+  const [month, year] = String(date || "").toLowerCase().split(/\s+/);
+  return MONTH[month] && /^\d{4}$/.test(year) ? `${year}-${MONTH[month]}` : undefined;
+}
+
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
+      "@type": "CollectionPage",
       "@id": "https://blueblocks.in/newsroom/#webpage",
       url: "https://blueblocks.in/newsroom/",
       name: "Blue Blocks Newsroom & Media Mentions",
       description:
         "Official press coverage of Blue Blocks Montessori School across national and global news outlets.",
-      isPartOf: {
-        "@type": "WebSite",
-        "@id": "https://blueblocks.in/#website",
-        name: "Blue Blocks Montessori School",
-        url: "https://blueblocks.in/",
-      },
+      inLanguage: "en-IN",
+      isPartOf: { "@id": "https://blueblocks.in/#website" },
+      about: { "@id": "https://blueblocks.in/#organization" },
+      publisher: { "@id": "https://blueblocks.in/#organization" },
+      mainEntity: { "@id": "https://blueblocks.in/newsroom/#mentions" },
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://blueblocks.in/newsroom/#breadcrumb",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://blueblocks.in/" },
+        { "@type": "ListItem", position: 2, name: "Newsroom", item: "https://blueblocks.in/newsroom/" },
+      ],
     },
     {
       "@type": "ItemList",
+      "@id": "https://blueblocks.in/newsroom/#mentions",
       name: "Press Mentions and Media Coverage",
+      itemListOrder: "https://schema.org/ItemListOrderDescending",
+      numberOfItems: PRESS_MENTIONS.length,
       itemListElement: PRESS_MENTIONS.map((item, index) => ({
         "@type": "ListItem",
         position: index + 1,
@@ -72,11 +102,14 @@ const structuredData = {
           "@type": "NewsArticle",
           headline: item.headline,
           url: item.articleUrl,
+          datePublished: datePublished(item.date),
+          articleSection: item.category,
+          description: item.summary,
+          about: { "@id": "https://blueblocks.in/#organization" },
           publisher: {
             "@type": "Organization",
             name: item.outlet,
           },
-          description: item.summary,
         },
       })),
     },

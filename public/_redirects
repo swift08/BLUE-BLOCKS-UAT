@@ -51,3 +51,19 @@ http://www.blueblocks.in/*    https://blueblocks.in/:splat  301!
 # ─────────────────────────────────────────────────────────────────────────────
 /team/:slug                                           /about-us/?guide=:slug                    301!
 /team/*                                               /about-us/                                301!
+/ami-training                                         /ami-montessori-training/                 301!
+/ami-training/                                        /ami-montessori-training/                 301!
+/video-catalogue                                      /video-catalog/                           301!
+/video-catalogue/                                     /video-catalog/                           301!
+/videos                                               /video-catalog/                           301!
+/videos/                                              /video-catalog/                           301!
+/annoucement-centre                                   /announcement-centre/                     301!
+/annoucement-centre/                                  /announcement-centre/                     301!
+/parents                                              /announcement-centre/                     301!
+/parents/*                                            /announcement-centre/                     301!
+/papers                                               /research-institute/                      301!
+/papers/*                                             /research-institute/                      301!
+/publications                                         /research-institute/                      301!
+/publications/*                                       /research-institute/                      301!
+/innovation/cubesat-mission                           /achievements/                            301!
+/innovation/cubesat-mission/                          /achievements/                            301!

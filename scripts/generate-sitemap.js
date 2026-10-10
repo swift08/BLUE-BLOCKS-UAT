@@ -93,8 +93,11 @@ function getPriorityAndFreq(route) {
     "/announcement-centre",
     "/papers",
     "/publications",
+    "/achievements",
+    "/newsroom",
+    "/explore-montessori",
   ];
-  if (p08.includes(route) || route.startsWith("/innovation/")) {
+  if (p08.includes(route) || route.startsWith("/innovation/") || route.startsWith("/explore-montessori/")) {
     return { changefreq: "monthly", priority: "0.8" };
   }
 
