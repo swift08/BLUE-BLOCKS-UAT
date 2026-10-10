@@ -471,6 +471,7 @@ export default async function HomePage() {
           topSpacing: "home",
           autoRotate: true,
           autoRotateMs: 6000,
+          showWoodpecker: true,
         },
       });
     } else if (section?.type === "recentBlogs") {

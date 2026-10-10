@@ -1,6 +1,6 @@
 # Blue Blocks Montessori School & Micro Research Institute
 > Official AI-readable summary for Blue Blocks (Hyderabad, India).
-> Last updated: 2026-10-01
+> Last updated: 2026-10-10
 > Canonical site: https://blueblocks.in/
 > Full dataset: https://blueblocks.in/llms-full.txt
 > Sitemap: https://blueblocks.in/sitemap.xml
@@ -96,6 +96,8 @@ Blue Blocks is an AMI Montessori school in Hyderabad offering continuous educati
 
 ## Blog
 
+- [Biomimicry for Children: Inside the Park Where Families Became Researchers](https://blueblocks.in/blog/biomimicry-for-children/): Biomimicry for children starts with a sentence most people get wrong. Drawing a leaf on a building is not biomimicry. Studying how a leaf manages sunlight, heat and water, and using those principles to design a more effi
+- [How to Find North with the Saptarishi: A Night-Sky Activity for Families](https://blueblocks.in/blog/how-to-find-north-with-the-saptarishi/): On any clear night in India, seven bright stars in the shape of a ladle sit high in the northern sky. In Indian tradition, they are known as the Saptarishi (the seven stars). In Western astronomy, they are called Ursa Ma
 - [How to Keep Children Connected to Nature: Six Small Habits at Home](https://blueblocks.in/blog/how-to-keep-children-connected-to-nature/): Our recent pilot study of 81 children found something that most parents already sense but rarely see confirmed. When children are given a piece of paper and asked to draw a place where life can exist, 77.5 percent draw n
 - [What Do Children Draw When Asked About Life? Trees and the Sun](https://blueblocks.in/blog/what-do-children-draw-when-asked-about-life/): Some research findings surprise us. Others confirm what most parents already sense but have never had the numbers to say out loud. This one is the second kind. What do children draw when a prompt does not tell them what 
 - [How to Stop Force Feeding Your Toddler (and What to Do Instead)](https://blueblocks.in/blog/how-to-stop-force-feeding-your-toddler/): How to stop force feeding your toddler is one of the most common questions we hear from parents at Blue Blocks, and the answer is not what most parents expect. If you have ever chased your toddler around the room with a 

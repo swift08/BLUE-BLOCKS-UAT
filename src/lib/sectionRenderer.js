@@ -16,12 +16,14 @@ import dynamic from "next/dynamic";
 import Hero from "@/components/blocks/Hero";
 import PageHero from "@/components/blocks/PageHero";
 import RecentBlogs from "@/components/blocks/RecentBlogs";
+import TrustBar from "@/components/blocks/TrustBar";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // DYNAMIC imports — below-the-fold sections (code-split into separate chunks)
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Home page sections
+const MediaMentions = dynamic(() => import("@/components/blocks/MediaMentions"), { ssr: true });
 const ImageText = dynamic(() => import("@/components/blocks/ImageText"), { ssr: true });
 const JourneyCards = dynamic(() => import("@/components/blocks/JourneyCards"), { ssr: true });
 const FeatureGrid = dynamic(() => import("@/components/blocks/FeatureGrid"), { ssr: true });
@@ -246,6 +248,11 @@ export default function SectionRenderer({ sections = [] }) {
           // Home
           case "homeHero":
             return <Hero key={key} {...props} />;
+          case "trustBar":
+            return <TrustBar key={key} {...props} />;
+          case "mediaMentions":
+          case "pressRow":
+            return <MediaMentions key={key} {...props} />;
           case "imageText":
             return <ImageText key={key} {...props} />;
           case "journeyCards":

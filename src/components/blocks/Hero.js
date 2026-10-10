@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { resolveBg } from "@/lib/ui";
 import { normalizeSiteHref } from "@/lib/links";
+import WoodpeckerFlight from "@/components/home/WoodpeckerFlight";
 
 export default function Hero({
   title,
@@ -28,6 +29,7 @@ export default function Hero({
   autoRotate = false,
   autoRotateMs = 8000,
   headingLevel = "h1",
+  showWoodpecker = false,
 }) {
   const hasSlides = Array.isArray(slides) && slides.length > 0;
 
@@ -50,6 +52,7 @@ export default function Hero({
         autoRotate={autoRotate}
         autoRotateMs={autoRotateMs}
         slides={slides}
+        showWoodpecker={showWoodpecker}
       />
     );
   }
@@ -92,6 +95,7 @@ function HeroCarousel({
   className,
   autoRotate,
   autoRotateMs,
+  showWoodpecker = false,
 }) {
   const scrollerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -266,6 +270,7 @@ function HeroCarousel({
           </Container>
         </div>
       ) : null}
+      {showWoodpecker ? <WoodpeckerFlight /> : null}
     </section>
   );
 }

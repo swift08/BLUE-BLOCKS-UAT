@@ -253,6 +253,10 @@
       {
         "label": "Careers",
         "href": "/careers"
+      },
+      {
+        "label": "Newsroom",
+        "href": "/newsroom/"
       }
     ],
     "programs": [
@@ -345,6 +349,9 @@
             },
             "bgImageUrl": "/home/homepage-banner-01.webp"
           }
+        },
+        {
+          "type": "trustBar"
         },
         {
           "type": "imageText",
@@ -634,114 +641,7 @@
           }
         },
         {
-          "type": "innovationLogoStrip",
-          "props": {
-            "sectionBg": "",
-            "sectionClass": "",
-            "sectionTitleClass": "text-[1.5rem] sm:text-base md:text-[2.8rem] text-[#4F4F4F] font-medium text-center pb-16",
-            "text": "Media Mentions",
-            "logoWrapClass": "flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6 sm:gap-10",
-            "logos": [
-              {
-                "src": "/icon/media/new/news-arena-india.webp",
-                "alt": "News Arena India",
-                "width": "200",
-                "height": "60",
-                "anchorHref": "https://newsarenaindia.com/states/in-a-first-students-build-cubesat-for-isro-launch/66962"
-              },
-              {
-                "src": "/icon/media/new/the-hans-india.webp",
-                "alt": "The Hans India",
-                "width": "217",
-                "height": "37",
-                "anchorHref": "https://www.thehansindia.com/amp/hans/young-hans/hyderabad-school-students-build-cubesat-payload-for-upcoming-isro-launch-1037907"
-              },
-              {
-                "src": "/icon/media/new/the-siasat-daily.webp",
-                "alt": "The Siasat Daily",
-                "width": "200",
-                "height": "60",
-                "anchorHref": "https://www.siasat.com/from-classroom-to-cosmos-hyderabad-students-cubesat-set-for-isro-launch-3323433/amp/"
-              },
-              {
-                "src": "/icon/media/new/new-indian-express.webp",
-                "alt": "The New Indian Express",
-                "width": "200",
-                "height": "60",
-                "anchorHref": "https://www.newindianexpress.com/states/telangana/2026/Jan/09/hyderabad-students-cubesat-headed-to-space"
-              },
-              {
-                "src": "/icon/media/new/telangana-today.webp",
-                "alt": "Telangana Today",
-                "width": "200",
-                "height": "60",
-                "anchorHref": "https://telanganatoday.com/hyderabad-school-students-make-history-with-cubesat-on-isros-pslv-c62"
-              },
-              {
-                "src": "/icon/media/new/india-today.webp",
-                "alt": "India Today",
-                "width": "142",
-                "height": "77",
-                "anchorHref": "https://www.indiatoday.in/amp/technology/video/blue-blocks-co-founder-munira-hussain-students-cubesat-set-for-isro-launch-ytvd-2848900-2026-01-08"
-              },
-              {
-                "src": "/icon/media/new/newsmeter.webp",
-                "alt": "Indiatoday",
-                "width": "200",
-                "height": "60",
-                "anchorHref": "https://newsmeter.in/education/isros-jan-12-launch-to-carry-cubesat-payload-built-by-hyderabad-students-from-blue-blocks-761096"
-              },
-              {
-                "src": "/icon/media/new/hyderabad-mail.webp",
-                "alt": "Hyderabad Mail",
-                "width": "200",
-                "height": "60",
-                "anchorHref": "https://hyderabadmail.com/hyderabad-students-cubesat-isro-pslv-c62-launch/"
-              },
-              {
-                "src": "/icon/media/new/the-federal-telangana.webp",
-                "alt": "The Federal Telangana",
-                "width": "200",
-                "height": "60",
-                "anchorHref": "https://telangana.thefederal.com/category/news/hyderabad-innovation-cubesat-set-to-travel-to-space-with-isros-pslv-c62-224592"
-              },
-              {
-                "src": "/icon/media/new/ndtv.webp",
-                "alt": "NDTV",
-                "width": "313",
-                "height": "65",
-                "anchorHref": "https://www.ndtv.com/india-news/17-hyderabad-students-build-payload-for-upcoming-isro-launch-10569889/amp/1"
-              },
-              {
-                "src": "/icon/media/new/edexlive.webp",
-                "alt": "EdexLive",
-                "width": "200",
-                "height": "60",
-                "anchorHref": "https://www.edexlive.com/news/hyderabad-students-cubesat-headed-to-space"
-              },
-              {
-                "src": "src/assets/Big-news-network.webp",
-                "alt": "Big News Network",
-                "width": "106",
-                "height": "60",
-                "anchorHref": "https://www.bignewsnetwork.com/news/279077506/blue-blocks-montessori-school-india-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond"
-              },
-              {
-                "src": "src/assets/ANI news.webp",
-                "alt": "ANI News",
-                "width": "120",
-                "height": "60",
-                "anchorHref": "https://www.aninews.in/news/business/blue-blocks-montessori-school-indias-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond20260425190508/"
-              },
-              {
-                "src": "src/assets/business-standard-logo-2.webp",
-                "alt": "Business Standard",
-                "width": "180",
-                "height": "60",
-                "anchorHref": "https://www.business-standard.com/content/press-releases-ani/blue-blocks-montessori-school-india-s-only-school-at-the-30th-ami-montessori-congress-presents-alongside-dr-gabor-mate-and-dr-adele-diamond-126042500829_1.html"
-              }
-            ]
-          }
+          "type": "mediaMentions"
         },
         {
           "type": "insights",
@@ -805,32 +705,6 @@
                     "Over time, this builds a child’s internal voice: “I can try again. I can figure this out.”"
                   ]
                 }
-              }
-            ]
-          }
-        },
-        {
-          "type": "recognizedBy",
-          "props": {
-            "title": "RECOGNIZED STANDARDS",
-            "items": [
-              {
-                "title": "EXAMIWORKS",
-                "icon": "/icon/IIT_Hyderabad_Insignia-color.svg",
-                "width": "125",
-                "height": "138"
-              },
-              {
-                "title": "CAMBRIDGE",
-                "icon": "/icon/cambridge-color.webp",
-                "width": "433",
-                "height": "74"
-              },
-              {
-                "title": "AMI",
-                "icon": "/icon/AMI-color.webp",
-                "width": "158",
-                "height": "121"
               }
             ]
           }
@@ -2855,7 +2729,7 @@
                 "imageAlt": "Recognized on the world stage",
                 "title": "Recognized on the World Stage.",
                 "text": "Our pedagogy has been invited to the world’s most prestigious forums.",
-                "href": "/newsroom/recognitions",
+                "href": "/newsroom/",
                 "bg": "#F6A894"
               }
             ]

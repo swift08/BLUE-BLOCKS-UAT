@@ -16,6 +16,8 @@ const localAssets = {
   "/src/assets/business-standard-logo-2.webp": businessStandard,
 };
 
+import MediaMentions from "@/components/blocks/MediaMentions";
+
 function stripTypographySizing(className = "") {
   // remove common Tailwind typography sizing that breaks global consistency
   return className
@@ -34,6 +36,7 @@ export default function InnovationLogoStrip({
   // ✅ Standard prop (token | class | hex)
   sectionBg = "bg-[#F8E5C7]",
   anchorHref,
+  pressRow = false,
 
   // kept (non-breaking)
   sectionClass = "",
@@ -43,6 +46,10 @@ export default function InnovationLogoStrip({
   text,
   logos = [],
 }) {
+  if (pressRow || text === "Media Mentions") {
+    return <MediaMentions logos={Array.isArray(logos) && logos.length ? logos : undefined} />;
+  }
+
   const resolvedSection = resolveBg(sectionBg);
 
   // allow color/alignment/padding from legacy prop, but strip typography sizing
