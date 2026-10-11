@@ -7,6 +7,16 @@ export default function WoodpeckerFlight() {
     <div className="bb-nature pointer-events-none absolute inset-0 z-[15] overflow-hidden" aria-hidden="true">
       <style>{`
         .bb-nature .bb-piece { opacity: 0; }
+        .bb-nature .bb-piece svg {
+          overflow: visible;
+          filter:
+            saturate(1.4)
+            contrast(1.2)
+            drop-shadow(0 0 1px #fff)
+            drop-shadow(0 0 2px #fff)
+            drop-shadow(0 0 3px rgba(255,255,255,.9))
+            drop-shadow(0 2px 3px rgba(0,0,0,.55));
+        }
         .bb-sky { top: 15%; animation: bb-parade 7s linear forwards; }
         .bb-fly { width: 78px; animation-delay: 1.4s; }
         .bb-bee { width: 68px; animation-delay: 2.5s; }

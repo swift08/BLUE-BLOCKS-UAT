@@ -83,27 +83,6 @@ const RESEARCH_CARDS = [
   },
 ];
 
-const JOURNAL_POSTS = [
-  {
-    title: "Biomimicry for Children: Nature as the Primary Classroom",
-    image: "/home-01/kids-being-part-sunday-school.webp",
-    date: "September 28, 2026",
-    href: "/blog/biomimicry-for-children/",
-  },
-  {
-    title: "How to Keep Children Connected to Nature in an Urban Setting",
-    image: "/home-01/awards-01-min.webp",
-    date: "September 15, 2026",
-    href: "/blog/how-to-keep-children-connected-to-nature/",
-  },
-  {
-    title: "How to Find North with the Saptarishi: Astronomical Observation",
-    image: "/home-01/awards-02-min.webp",
-    date: "August 20, 2026",
-    href: "/blog/how-to-find-north-with-the-saptarishi/",
-  },
-];
-
 export default function TwoColumnEventsAndFeatured() {
   const [currentDate, setCurrentDate] = useState(() => new Date());
   const [selectedDayEvents, setSelectedDayEvents] = useState(null);
@@ -397,60 +376,6 @@ export default function TwoColumnEventsAndFeatured() {
               </div>
             </div>
 
-          </div>
-        </div>
-
-        {/* BELOW THE TWO-COLUMN SECTION: From Our Journal (Full-Width) */}
-        <div className="mt-14 sm:mt-18 pt-12 border-t border-neutral-200">
-          <div className="flex items-center justify-between pb-6">
-            <div>
-              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-neutral-900">
-                From Our Journal
-              </h3>
-            </div>
-            <Link
-              href="/blog/"
-              className="text-xs sm:text-sm font-semibold text-neutral-800 hover:text-[#0F52BA] transition"
-            >
-              View All Posts →
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            {JOURNAL_POSTS.map((post, idx) => (
-              <article
-                key={idx}
-                className="group flex flex-col justify-between rounded-2xl border border-neutral-200/90 bg-white overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-              >
-                <div>
-                  <div className="relative aspect-video w-full overflow-hidden bg-neutral-100">
-                    <Image
-                      src={post.image}
-                      alt={post.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, 33vw"
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <span className="text-xs text-neutral-400">{post.date}</span>
-                    <h4 className="font-serif text-sm sm:text-base font-semibold text-neutral-900 mt-1.5 leading-snug line-clamp-2">
-                      {post.title}
-                    </h4>
-                  </div>
-                </div>
-
-                <div className="px-5 pb-5 pt-0">
-                  <Link
-                    href={post.href}
-                    className="inline-flex items-center gap-1 text-xs font-semibold text-neutral-800 hover:text-[#0F52BA] transition"
-                  >
-                    <span>Read</span>
-                    <span aria-hidden="true">→</span>
-                  </Link>
-                </div>
-              </article>
-            ))}
           </div>
         </div>
       </Container>

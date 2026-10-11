@@ -179,16 +179,16 @@ export default function SitewideBlogSection({ customStaticPosts }) {
 
   if (hideJournal) return null;
 
-  // Four blog post cards: Cards 1 & 2 (Static), Cards 3 & 4 (Dynamic)
+  // Recent posts lead. Static cards stay after them.
   const cards = [
-    { ...staticPair[0], isDynamic: false, cardType: "Static" },
-    { ...staticPair[1], isDynamic: false, cardType: "Static" },
     { ...dynamicPosts[0], isDynamic: true, cardType: "Latest" },
     { ...dynamicPosts[1], isDynamic: true, cardType: "Latest" },
-  ];
+    { ...staticPair[0], isDynamic: false, cardType: "Static" },
+    { ...staticPair[1], isDynamic: false, cardType: "Static" },
+  ].filter((post) => post?.title);
 
   return (
-    <section className="py-16 sm:py-20 bg-[#FAF9F5] border-t border-slate-200/60">
+    <section className="bg-[#FAF9F5] border-t border-slate-200/60 py-16 pb-28 sm:py-20 md:pb-20">
       <Container>
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-12 pb-6 border-b border-slate-200/60">
