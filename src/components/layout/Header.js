@@ -173,7 +173,7 @@ export default function Header({ variant = "dark" }) {
         ]),
         years: [
           { title: "Explore Montessori", href: "/explore-montessori/" },
-          { title: "2026", href: "/explore-montessori/2026/" },
+          { title: "Explore Montessori 2026", href: "/explore-montessori/2026/" },
         ],
         ctaCard: mm.innovations?.ctaCard,
       },
@@ -464,24 +464,37 @@ function CloseIcon() {
 /* ---------- PROGRAMS MEGA MENU (DESKTOP ONLY) ---------- */
 
 function YearMenu({ years }) {
+  const [heading, ...subs] = years;
   return (
-    <details className="col-span-2 border-t border-slate-100 p-4">
-      <summary className="flex cursor-pointer list-none items-center gap-1 text-sm font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
-        Explore Montessori
-        <span className="text-lg">{"\u25BE"}</span>
-      </summary>
-      <div className="mt-2 flex flex-col">
-        {years.map((item) => (
+    <div className="col-span-2 border-t border-slate-100 bg-[#F7F3EC] p-4 sm:p-5">
+      <Link href={normalizeHref(heading.href)} className="flex items-center gap-3.5">
+        <div className="relative h-14 w-20 shrink-0 overflow-hidden rounded-xl bg-slate-200">
+          <Image
+            src="/programs/thumb-nursery.webp"
+            alt=""
+            width={80}
+            height={64}
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="min-w-0 flex-1">
+          <div className="text-sm font-semibold text-slate-900">{heading.title}</div>
+          <p className="text-xs text-slate-600">Year-by-year look at Montessori at Blue Blocks.</p>
+        </div>
+      </Link>
+      <div className="mt-2 flex flex-col pl-[5.75rem]">
+        {subs.map((item) => (
           <Link
             key={item.href}
             href={normalizeHref(item.href)}
-            className="rounded-lg px-3 py-2 text-sm text-slate-900 hover:bg-slate-50"
+            className="flex items-center gap-2 py-1.5 text-sm font-medium text-[#0F52BA] hover:underline"
           >
+            <span aria-hidden className="text-slate-400">{"\u21B3"}</span>
             {item.title}
           </Link>
         ))}
       </div>
-    </details>
+    </div>
   );
 }
 
@@ -803,24 +816,28 @@ function MobileNav({
                         );
                       })}
                       {mega.years?.length ? (
-                        <details className="rounded-xl bg-white/5 px-3 py-3">
-                          <summary className="flex cursor-pointer items-center gap-1 text-sm font-semibold">
-                            Explore Montessori
-                            <span>{"\u25BE"}</span>
-                          </summary>
-                          <div className="mt-2 flex flex-col">
-                            {mega.years.map((item) => (
+                        <div className="rounded-xl bg-white/10 px-3 py-3">
+                          <Link
+                            href={normalizeHref(mega.years[0].href)}
+                            onClick={onNavigate}
+                            className="block text-sm font-semibold"
+                          >
+                            {mega.years[0].title}
+                          </Link>
+                          <div className="mt-1 flex flex-col pl-3">
+                            {mega.years.slice(1).map((item) => (
                               <Link
                                 key={item.href}
                                 href={normalizeHref(item.href)}
                                 onClick={onNavigate}
-                                className="rounded-lg px-3 py-2 text-sm hover:bg-white/10"
+                                className="flex items-center gap-2 py-1.5 text-sm text-white/80 hover:text-white"
                               >
+                                <span aria-hidden>{"\u21B3"}</span>
                                 {item.title}
                               </Link>
                             ))}
                           </div>
-                        </details>
+                        </div>
                       ) : null}
                     </div>
 

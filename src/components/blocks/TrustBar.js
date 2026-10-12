@@ -19,29 +19,23 @@ const CHIPS = [
     hideLabel: true,
   },
   {
-    label: "IN-SPACe Partner",
+    label: "IN-SPACe",
     src: "/icon/inspace.webp",
     alt: "IN-SPACe",
     wide: true,
+    hideLabel: true,
   },
 ];
 
 export default function TrustBar() {
   return (
-    <section aria-label="Credentials" className="bg-[#F9F9F9]">
-      <ul className="mx-auto grid max-w-6xl grid-cols-2 md:flex">
-        {CHIPS.map((chip, index) => (
-          <li
-            key={chip.label}
-            className={[
-              "flex items-center justify-center gap-2.5 px-4 py-3 md:flex-1",
-              index % 2 === 0 ? "border-r border-black/10 md:border-r-0" : "",
-              index > 0 ? "md:border-l md:border-black/10" : "",
-            ].join(" ")}
-          >
+    <section aria-label="Credentials" className="border-y border-[#0F52BA]/10 bg-white">
+      <ul className="mx-auto grid max-w-6xl grid-cols-2 items-center justify-items-center gap-y-4 px-6 py-5 md:grid-cols-4">
+        {CHIPS.map((chip) => (
+          <li key={chip.label} className="flex items-center gap-3">
             <ChipMark chip={chip} />
             {chip.hideLabel ? null : (
-              <span className="text-[13px] leading-tight text-slate-800">{chip.label}</span>
+              <span className="text-sm font-medium tracking-tight text-slate-900">{chip.label}</span>
             )}
           </li>
         ))}
@@ -60,8 +54,8 @@ function ChipMark({ chip }) {
         height={32}
         className={
           chip.wide
-            ? "h-8 w-auto max-w-[8rem] object-contain"
-            : "h-8 w-auto max-w-[5.5rem] object-contain"
+            ? "h-10 w-auto max-w-[9rem] object-contain"
+            : "h-10 w-auto max-w-[6.5rem] object-contain"
         }
       />
     );
