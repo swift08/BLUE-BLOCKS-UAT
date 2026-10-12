@@ -171,6 +171,10 @@ export default function Header({ variant = "dark" }) {
             image: "/programs/thumb-secondary.webp",
           },
         ]),
+        years: [
+          { title: "Explore Montessori", href: "/explore-montessori/" },
+          { title: "2026", href: "/explore-montessori/2026/" },
+        ],
         ctaCard: mm.innovations?.ctaCard,
       },
       Community: {
@@ -305,7 +309,8 @@ export default function Header({ variant = "dark" }) {
               if (mega) {
                 const active =
                   isActiveHref(item.href) ||
-                  (label === "Academics" && pathname.startsWith("/programs"));
+                  (label === "Academics" && pathname.startsWith("/programs")) ||
+                  (label === "Innovation & Research" && pathname.startsWith("/explore-montessori"));
 
                 return (
                   <ProgramsMegaMenu
@@ -458,6 +463,28 @@ function CloseIcon() {
 
 /* ---------- PROGRAMS MEGA MENU (DESKTOP ONLY) ---------- */
 
+function YearMenu({ years }) {
+  return (
+    <details className="col-span-2 border-t border-slate-100 p-4">
+      <summary className="flex cursor-pointer list-none items-center gap-1 text-sm font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+        Explore Montessori
+        <span className="text-lg">{"\u25BE"}</span>
+      </summary>
+      <div className="mt-2 flex flex-col">
+        {years.map((item) => (
+          <Link
+            key={item.href}
+            href={normalizeHref(item.href)}
+            className="rounded-lg px-3 py-2 text-sm text-slate-900 hover:bg-slate-50"
+          >
+            {item.title}
+          </Link>
+        ))}
+      </div>
+    </details>
+  );
+}
+
 function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className = "" }) {
   const [open, setOpen] = useState(false);
   const timeoutRef = useRef(null);
@@ -604,6 +631,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                   </Link>
                 );
               })}
+              {mega.years?.length ? <YearMenu years={mega.years} /> : null}
             </div>
           </div>
 
@@ -694,7 +722,6 @@ function MobileNav({
         const key = `${label}|${idx}`;
         const href = normalizeHref(item?.href);
 
-        // Mega groups (accordion)
         if (mega) {
           const isOpen = openKey === key;
 
@@ -775,6 +802,26 @@ function MobileNav({
                           </Link>
                         );
                       })}
+                      {mega.years?.length ? (
+                        <details className="rounded-xl bg-white/5 px-3 py-3">
+                          <summary className="flex cursor-pointer items-center gap-1 text-sm font-semibold">
+                            Explore Montessori
+                            <span>{"\u25BE"}</span>
+                          </summary>
+                          <div className="mt-2 flex flex-col">
+                            {mega.years.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={normalizeHref(item.href)}
+                                onClick={onNavigate}
+                                className="rounded-lg px-3 py-2 text-sm hover:bg-white/10"
+                              >
+                                {item.title}
+                              </Link>
+                            ))}
+                          </div>
+                        </details>
+                      ) : null}
                     </div>
 
                     {/* CTA */}

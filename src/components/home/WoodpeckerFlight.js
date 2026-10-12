@@ -1,6 +1,6 @@
 "use client";
 
-/** One intro pass. Ground rises first, then flyers cross in a line. Nothing repeats. */
+/** One intro pass. Flyers cross the upper hero, then leave. Nothing repeats. */
 
 export default function WoodpeckerFlight() {
   return (
@@ -21,19 +21,6 @@ export default function WoodpeckerFlight() {
         .bb-fly { width: 78px; animation-delay: 1.4s; }
         .bb-bee { width: 68px; animation-delay: 2.5s; }
         .bb-wp { width: 128px; animation-delay: 3.6s; }
-        .bb-ground {
-          bottom: 13%;
-          transform-origin: 50% 100%;
-          animation: bb-rise 10s ease-out forwards;
-        }
-        .bb-plant { width: 84px; }
-        .bb-plant-l { left: 6%; animation-delay: 0.15s; }
-        .bb-worm { width: 72px; }
-        .bb-worm-l { left: 16%; animation-delay: 0.4s; }
-        .bb-bug { left: 26%; width: 42px; animation-delay: 0.65s; }
-        .bb-mush { left: 64%; width: 64px; animation-delay: 0.9s; }
-        .bb-worm-r { left: 74%; animation-delay: 1.15s; }
-        .bb-plant-r { left: 84%; width: 74px; animation-delay: 1.4s; }
         .bb-wp-wing, .bb-wp-wing-far, .bb-bee-wing, .bb-fly-wing {
           transform-box: fill-box;
           transform-origin: center;
@@ -51,12 +38,6 @@ export default function WoodpeckerFlight() {
           70% { opacity: 1; transform: translateY(8px) rotate(7deg); }
           100% { opacity: 0; left: -24%; transform: translateY(0) rotate(4deg); }
         }
-        @keyframes bb-rise {
-          0% { opacity: 0; transform: translateY(28px) scale(0.82); }
-          10% { opacity: 1; transform: translateY(0) scale(1); }
-          82% { opacity: 1; transform: translateY(0) scale(1); }
-          100% { opacity: 0; transform: translateY(12px) scale(0.96); }
-        }
         @keyframes bb-flap {
           0%, 100% { transform: rotate(24deg); }
           50% { transform: rotate(-28deg); }
@@ -69,12 +50,6 @@ export default function WoodpeckerFlight() {
           .bb-sky { top: 11%; }
           .bb-wp { width: 88px; }
           .bb-bee, .bb-fly { width: 48px; }
-          .bb-ground { bottom: 20%; }
-          .bb-plant { width: 56px; }
-          .bb-plant-r { width: 50px; }
-          .bb-mush { width: 44px; }
-          .bb-worm { width: 52px; }
-          .bb-bug { width: 32px; }
         }
         @media (prefers-reduced-motion: reduce) {
           .bb-nature .bb-piece { animation: none; opacity: 0; }
@@ -88,24 +63,6 @@ export default function WoodpeckerFlight() {
       </div>
       <div className="bb-piece bb-sky bb-wp absolute">
         <WoodpeckerSvg />
-      </div>
-      <div className="bb-piece bb-ground bb-plant bb-plant-l absolute">
-        <PlantSvg />
-      </div>
-      <div className="bb-piece bb-ground bb-worm bb-worm-l absolute">
-        <WormSvg />
-      </div>
-      <div className="bb-piece bb-ground bb-bug absolute">
-        <LadybugSvg />
-      </div>
-      <div className="bb-piece bb-ground bb-mush absolute">
-        <MushroomSvg />
-      </div>
-      <div className="bb-piece bb-ground bb-worm bb-worm-r absolute">
-        <WormSvg />
-      </div>
-      <div className="bb-piece bb-ground bb-plant bb-plant-r absolute">
-        <PlantSvg flower />
       </div>
     </div>
   );
@@ -166,60 +123,6 @@ function ButterflySvg() {
       </g>
       <ellipse cx="45" cy="36" rx="4" ry="16" fill="#2a241e" />
       <circle cx="45" cy="16" r="4" fill="#2a241e" />
-    </svg>
-  );
-}
-
-function PlantSvg({ flower = false }) {
-  return (
-    <svg viewBox="0 0 70 90" className="block h-auto w-full" aria-hidden="true">
-      <path d="M34 88 C34 60 36 40 34 28" stroke="#3d6b3a" strokeWidth="3" fill="none" />
-      <path d="M34 58 C18 50 12 36 20 30 C28 40 34 48 34 58 Z" fill="#4e8a48" />
-      <path d="M34 48 C50 40 58 28 50 22 C42 32 36 40 34 48 Z" fill="#3d7a3e" />
-      {flower ? (
-        <g>
-          <circle cx="28" cy="18" r="5" fill="#e7b3c8" />
-          <circle cx="38" cy="16" r="5" fill="#e7b3c8" />
-          <circle cx="33" cy="24" r="5" fill="#e7b3c8" />
-          <circle cx="33" cy="18" r="3" fill="#e2c15a" />
-        </g>
-      ) : (
-        <ellipse cx="34" cy="22" rx="8" ry="5" fill="#2f6a38" />
-      )}
-    </svg>
-  );
-}
-
-function MushroomSvg() {
-  return (
-    <svg viewBox="0 0 60 50" className="block h-auto w-full" aria-hidden="true">
-      <path d="M24 46 C24 32 28 28 30 28 C32 28 36 32 36 46 Z" fill="#f3e6d4" />
-      <path d="M6 28 C10 10 50 10 54 28 Z" fill="#c4473a" />
-      <circle cx="20" cy="20" r="2.2" fill="#f6f1e8" />
-      <circle cx="32" cy="16" r="2.6" fill="#f6f1e8" />
-      <circle cx="42" cy="22" r="1.8" fill="#f6f1e8" />
-    </svg>
-  );
-}
-
-function WormSvg() {
-  return (
-    <svg viewBox="0 0 80 24" className="block h-auto w-full" aria-hidden="true">
-      <path d="M4 14 C16 4 28 22 40 12 C52 2 64 20 76 10" stroke="#c47b8a" strokeWidth="6" fill="none" strokeLinecap="round" />
-      <circle cx="10" cy="12" r="1.2" fill="#2a241e" />
-    </svg>
-  );
-}
-
-function LadybugSvg() {
-  return (
-    <svg viewBox="0 0 40 32" className="block h-auto w-full" aria-hidden="true">
-      <ellipse cx="22" cy="18" rx="14" ry="10" fill="#c4473a" />
-      <path d="M22 8 v20" stroke="#1c1916" strokeWidth="1.4" />
-      <circle cx="16" cy="16" r="1.6" fill="#1c1916" />
-      <circle cx="28" cy="15" r="1.6" fill="#1c1916" />
-      <circle cx="24" cy="22" r="1.4" fill="#1c1916" />
-      <circle cx="8" cy="16" r="5" fill="#1c1916" />
     </svg>
   );
 }
