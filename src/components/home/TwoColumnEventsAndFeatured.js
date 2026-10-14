@@ -40,9 +40,9 @@ const FEATURED_CARDS = [
     tag: "Blog",
     tagColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
     image: "/home-01/kids-being-part-sunday-school.webp",
-    headline: "How Montessori Shapes a Child’s Executive Function",
-    date: "October 2026",
-    href: "/blog/",
+    headline: "Biomimicry for Children: Inside the Park Where Families Became Researchers",
+    date: "7 October 2026",
+    href: "/blog/biomimicry-for-children/",
   },
   {
     tag: "In the News",
