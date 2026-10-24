@@ -18,8 +18,8 @@ const PROGRAMMES = [
     href: "/programs/nursery-school/",
   },
   {
-    age: "Ages 6 – 9 Years",
-    title: "Lower Elementary",
+    age: "Ages 6 – 12 Years",
+    title: "Primary School (Class 1-6)",
     body: "Research, collaboration, and abstract thinking introduced through hands-on Montessori materials.",
     image: "/home-01/awards-01-min.webp",
     href: "/programs/primary-school-elementary/",
