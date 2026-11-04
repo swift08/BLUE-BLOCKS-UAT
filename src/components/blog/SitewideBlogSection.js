@@ -125,7 +125,8 @@ export default function SitewideBlogSection({ customStaticPosts }) {
 
   // Normalize pathname to find matching static blogs
   const cleanPath = pathname.replace(/\/+$/, "") || "/";
-  const hideJournal = cleanPath === "/montessori-system";
+  const hideJournal =
+    cleanPath === "/montessori-system" || cleanPath === "/Biomimicry-Park/register";
   const staticPair =
     customStaticPosts ||
     PAGE_STATIC_BLOGS[cleanPath] ||

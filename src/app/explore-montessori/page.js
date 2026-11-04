@@ -13,7 +13,7 @@ export const metadata = {
 
 const EDITIONS = [
   {
-    href: "/explore-montessori/2026/",
+    href: "/Biomimicry-Park/",
     title: "2026 — Biomimicry Park",
     theme: "Theme: Biophilia & Biomimicry",
   },
@@ -112,7 +112,7 @@ export default function ExploreMontessoriPage() {
             <p className="text-lg sm:text-xl">Every child here started with a question.</p>
             <p className="mt-2 text-lg sm:text-xl">Come in and see where it led.</p>
             <Link
-              href="/explore-montessori/2026/"
+              href="/Biomimicry-Park/"
               className="mt-6 inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#0F52BA]"
             >
               See This Year&apos;s Edition →
