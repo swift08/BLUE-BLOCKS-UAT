@@ -104,11 +104,11 @@ function HeroCarousel({
     () =>
       slides.map((slide) => ({
         ...slide,
-        title: slide?.title || title,
-        subtitle: slide?.subtitle || subtitle,
-        note: slide?.note || note,
-        primaryCta: slide?.primaryCta || primaryCta,
-        secondaryCta: slide?.secondaryCta || secondaryCta,
+        title: slide?.title ?? title,
+        subtitle: slide?.subtitle ?? subtitle,
+        note: slide?.note ?? note,
+        primaryCta: slide?.primaryCta ?? primaryCta,
+        secondaryCta: slide?.secondaryCta ?? secondaryCta,
         bgImageUrl: slide?.bgImageUrl || bgImageUrl,
         sectionBg: slide?.sectionBg || sectionBg,
         align: slide?.align || align,
@@ -362,12 +362,14 @@ function HeroPane({
             </span>
           ) : null}
 
-          <HeadingTag className={[
-            align === "center" ? "bb-hero-title bb-hero-title--center" : "bb-hero-title",
-            tag ? "mt-5" : "",
-          ].join(" ")}>
-            {renderMultiline(title)}
-          </HeadingTag>
+          {title ? (
+            <HeadingTag className={[
+              align === "center" ? "bb-hero-title bb-hero-title--center" : "bb-hero-title",
+              tag ? "mt-5" : "",
+            ].join(" ")}>
+              {renderMultiline(title)}
+            </HeadingTag>
+          ) : null}
 
           {subtitle ? (
             <div className={align === "center" ? "bb-hero-subtitle bb-hero-subtitle--center" : "bb-hero-subtitle"}>
@@ -383,24 +385,26 @@ function HeroPane({
 
           {note ? <p className="bb-hero-note">{note}</p> : null}
 
-          <div
-            className={[
-              "mt-7 flex gap-3",
-              align === "center" ? "flex-col sm:flex-row justify-center" : "flex-col sm:flex-row",
-            ].join(" ")}
-          >
-            {primaryCta?.href ? (
-              <Link href={normalizeSiteHref(primaryCta.href)} className="bb-hero-cta bb-hero-cta--primary">
-                {primaryCta.label}
-              </Link>
-            ) : null}
+          {primaryCta?.href || secondaryCta?.href ? (
+            <div
+              className={[
+                "mt-7 flex gap-3",
+                align === "center" ? "flex-col sm:flex-row justify-center" : "flex-col sm:flex-row",
+              ].join(" ")}
+            >
+              {primaryCta?.href ? (
+                <Link href={normalizeSiteHref(primaryCta.href)} className="bb-hero-cta bb-hero-cta--primary">
+                  {primaryCta.label}
+                </Link>
+              ) : null}
 
-            {secondaryCta?.href ? (
-              <Link href={normalizeSiteHref(secondaryCta.href)} className="bb-hero-cta bb-hero-cta--secondary">
-                {secondaryCta.label}
-              </Link>
-            ) : null}
-          </div>
+              {secondaryCta?.href ? (
+                <Link href={normalizeSiteHref(secondaryCta.href)} className="bb-hero-cta bb-hero-cta--secondary">
+                  {secondaryCta.label}
+                </Link>
+              ) : null}
+            </div>
+          ) : null}
         </div>
       </Container>
     </div>

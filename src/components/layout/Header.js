@@ -111,14 +111,11 @@ export default function Header({ variant = "dark" }) {
               return (
                 href !== "/montessori-system/" &&
                 href !== "/ami-montessori-training/" &&
+                href !== "/videos/" &&
+                href !== "/video-catalog/" &&
                 !href.startsWith("http")
               );
-            })
-            .map((it) =>
-              normalizeHref(it.href) === "/videos/"
-                ? { ...it, title: "Video Catalog", href: "/video-catalog/" }
-                : it
-            ),
+            }),
           {
             id: "careers",
             title: "Careers",

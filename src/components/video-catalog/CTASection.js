@@ -43,13 +43,15 @@ export default function CTASection({ youtubeId, phone = "+91 9000955053" }) {
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:mt-12 sm:flex-row sm:gap-5">
-              <Link
-                href="/admissions/"
+              <a
+                href="https://forms.gle/KUC3zUiWb5zcSKM1A"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative overflow-hidden rounded-full bg-sky-blue px-5 py-3.5 text-center text-[11px] font-black uppercase leading-snug tracking-widest text-deep-blue shadow-block transition-all hover:scale-105 sm:px-8 sm:py-4 sm:text-sm"
               >
                 <div className="absolute inset-0 translate-y-full bg-white opacity-20 transition-transform group-hover:translate-y-0" />
-                <span className="relative">REGISTER FOR THE ADMISSION WORKSHOP →</span>
-              </Link>
+                <span className="relative">Register here →</span>
+              </a>
               <a
                 href="https://wa.me/919000955053"
                 target="_blank"

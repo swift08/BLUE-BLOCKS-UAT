@@ -451,6 +451,17 @@ const HOME_HERO_SLIDES = [
     overlay: "dark",
     topSpacing: "home",
   },
+  {
+    id: "home-hero-6",
+    title: "",
+    subtitle: "",
+    primaryCta: null,
+    secondaryCta: null,
+    bgImageUrl: "/explore-montessori/biomimicry-park/hero.png",
+    align: "left",
+    overlay: "dark",
+    topSpacing: "home",
+  },
 ];
 
 export default async function HomePage() {
