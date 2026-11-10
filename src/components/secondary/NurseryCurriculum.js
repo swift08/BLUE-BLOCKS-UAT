@@ -59,7 +59,7 @@ const highlights = [
 ];
 
 const fiveAreas = [
-  { area: "Everyday Life", what: "Independence, self-discipline, coordinated movement through real daily tasks." },
+  { area: "Practical Life", what: "Independence, self-discipline, coordinated movement through real daily tasks." },
   { area: "Sensorial", what: "Ordered mind, clear perception, the groundwork for logical thought and mathematics." },
   { area: "Mathematics", what: "Concrete-to-abstract number sense, from 1 to 1,000 held in the hand." },
   { area: "Language", what: "Writing before reading; the 'explosion into reading' unfolds naturally." },
@@ -153,7 +153,7 @@ const faqs = [
   },
   {
     q: "What does my child actually learn in Nursery, PP1, and PP2?",
-    a: "Five areas of learning. Everyday life skills like dressing, food preparation, and caring for the classroom. Careful observation, learning to sort by size, shape, colour, sound, and texture. Mathematics, from counting to fractions, all taught through hands-on materials. Reading and writing, built from sounds and letters up to whole words and grammar. And science and the world, countries, plants, animals, simple experiments, and an understanding of time."
+    a: "Five areas of learning. Practical life skills like dressing, food preparation, and caring for the classroom. Careful observation, learning to sort by size, shape, colour, sound, and texture. Mathematics, from counting to fractions, all taught through hands-on materials. Reading and writing, built from sounds and letters up to whole words and grammar. And science and the world, countries, plants, animals, simple experiments, and an understanding of time."
   },
   {
     q: "How is a Montessori preschool different from a regular preschool or playschool?",
@@ -389,10 +389,10 @@ export default function NurseryCurriculum() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {/* Everyday Life Table */}
+            {/* Practical Life Table */}
             <div className="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm">
               <div className="bg-slate-50 px-6 py-4 border-b border-slate-200">
-                <h3 className="font-bold text-slate-900 text-lg">Everyday Life & Independence</h3>
+                <h3 className="font-bold text-slate-900 text-lg">Practical Life & Independence</h3>
               </div>
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse">

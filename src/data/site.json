@@ -84,7 +84,7 @@
         {
           "id": "Micro Research Institute",
           "title": "Micro Research Institute",
-          "href": "https://research.blueblocks.in/",
+          "href": "/research-institute/",
           "description": "Watch real moments from classrooms, campus life, children, and educators.",
           "image": "/programs/thumb-secondary.webp"
         }
@@ -238,10 +238,10 @@
         "label": "About Us",
         "href": "/about-us"
       },
-      {
-        "label": "Research Institute",
-        "href": "https://research.blueblocks.in/"
-      },
+        {
+          "label": "Micro Research Institute",
+          "href": "/research-institute/"
+        },
       {
         "label": "Blog",
         "href": "/blog/"
@@ -5369,7 +5369,7 @@
                 "Friday"
               ],
               "opens": "08:30",
-              "closes": "16:30"
+              "closes": "13:30"
             }
           ],
           "hasMap": "https://maps.google.com/?cid=2096929938310545200",
@@ -5412,7 +5412,7 @@
                 "Friday"
               ],
               "opens": "08:30",
-              "closes": "16:30"
+              "closes": "15:30"
             }
           ],
           "areaServed": "Hyderabad",
@@ -5581,7 +5581,7 @@
             "subtitle": "Advancing the Science of Innovation Development in Childhood and Adolescence",
             "description": "Blue Blocks Micro Research Institute conducts rigorous longitudinal research on how children develop innovative thinking capacities from birth through age 18. Our work bridges developmental psychology, Montessori pedagogy, and innovation science to answer a fundamental question: How does the capacity for original thought emerge, develop, and flourish across childhood?",
             "link": {
-              "label": "Read more",
+              "label": "Visit Micro Research Website",
               "href": "https://research.blueblocks.in/"
             },
             "points": [
@@ -9783,6 +9783,10 @@
                     "heading": "Nursery & Pri-primary (PP1, PP2)",
                     "items": [
                       {
+                        "q": "What are the timings for SI / Pre-Primary?",
+                        "a": "Gachibowli: 8:30 am to 1:30 pm. Tellapur: 9:00 am to 2:00 pm."
+                      },
+                      {
                         "q": "What is different from a traditional pre-school?",
                         "a": "Montessori learning is based on children learning through the five senses, at their own pace, using hands-on materials rather than textbooks."
                       },
@@ -9802,7 +9806,7 @@
                     "items": [
                       {
                         "q": "What are the timings of the school?",
-                        "a": "8.30 am to 3.30 pm."
+                        "a": "Elementary (Primary School, Grades 1–6): 8:30 am to 3:30 pm."
                       },
                       {
                         "q": "Up to what grade do you offer?",
@@ -9821,6 +9825,10 @@
                   {
                     "heading": "Grades 7 – 10",
                     "items": [
+                      {
+                        "q": "What are the timings for Erdkinder / Secondary School?",
+                        "a": "Erdkinder (Secondary / High School, Grades 7–10): 8:30 am to 3:30 pm."
+                      },
                       {
                         "q": "What is Erd Kinder?",
                         "a": "Erd Kinder is the Montessori adolescent program for ages 12 to 18, based on a farm school concept where children learn academics while managing their own ecosystem."

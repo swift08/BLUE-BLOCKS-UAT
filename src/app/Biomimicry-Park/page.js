@@ -69,16 +69,16 @@ export default function BiomimicryParkPage() {
               priority
               className="h-auto w-full"
             />
-            <div className="absolute bottom-[20%] right-[16%] flex max-w-[48%] flex-wrap items-center justify-end gap-2 sm:gap-3 md:bottom-[22%] md:right-[18%]">
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-3 sm:justify-end sm:pr-[4%] lg:pr-[8%]">
               <a
                 href="#about"
-                className="inline-flex items-center rounded-full bg-[#1A5336] px-3 py-1.5 text-[0.65rem] font-semibold text-white transition hover:bg-[#143f29] sm:px-4 sm:py-2 sm:text-xs md:px-5 md:py-2.5 md:text-sm"
+                className="inline-flex items-center rounded-full bg-[#1A5336] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#143f29]"
               >
                 Explore Montessori 2026 →
               </a>
               <Link
                 href="/Biomimicry-Park/register/"
-                className="inline-flex items-center rounded-full border border-[#1A5336] bg-white px-3 py-1.5 text-[0.65rem] font-semibold text-[#1A5336] transition hover:bg-[#1A5336]/5 sm:px-4 sm:py-2 sm:text-xs md:px-5 md:py-2.5 md:text-sm"
+                className="inline-flex items-center rounded-full border border-[#1A5336] bg-white px-5 py-2.5 text-sm font-semibold text-[#1A5336] transition hover:bg-[#1A5336]/5"
               >
                 Register to Visit →
               </Link>

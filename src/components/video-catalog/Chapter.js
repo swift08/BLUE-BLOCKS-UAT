@@ -368,16 +368,10 @@ export default function Chapter({
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           className="mb-6 max-w-4xl sm:mb-8"
         >
-          <div className="mb-4 flex items-center gap-3 sm:mb-6 sm:gap-6">
+          <div className="mb-4 sm:mb-6">
             <span className="block-3d flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-sky-blue font-display text-base font-bold text-deep-blue shadow-lg sm:h-14 sm:w-14 sm:rounded-2xl sm:text-xl">
               {index}
             </span>
-            <div className="flex min-w-0 items-center gap-3">
-              <div className="hidden h-px w-8 bg-sky-blue/40 sm:block" />
-              <span className="text-[11px] font-semibold uppercase tracking-[0.25em] text-sky-blue/70 sm:text-sm sm:tracking-[0.4em]">
-                {eyebrow}
-              </span>
-            </div>
           </div>
           <h2 className="text-balance font-display text-[1.65rem] font-extrabold leading-[1.1] tracking-tight sm:text-3xl md:text-5xl md:leading-[1.05]">
             {title}

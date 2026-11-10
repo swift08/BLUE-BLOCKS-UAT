@@ -5,6 +5,7 @@ const CHIPS = [
     label: "As seen in Times of India",
     src: "/icon/toi.png",
     alt: "Times of India",
+    hideLabel: true,
   },
   {
     label: "AMI-Trained Lead Guides",

@@ -151,8 +151,8 @@ export default function Header({ variant = "dark" }) {
           ...innovationSource.filter((it) => normalizeHref(it.href) !== "/montessori-system/"),
           {
             id: "research-institute",
-            title: "Research Institute",
-            href: "https://research.blueblocks.in/",
+            title: "Micro Research Institute",
+            href: "/research-institute/",
             description: "Publications and the longitudinal child-development study.",
             image: "/programs/thumb-primary.webp",
           },
@@ -224,6 +224,7 @@ export default function Header({ variant = "dark" }) {
       { label: "Innovation & Research", href: "/innovation/" },
       { label: "Community", href: "/announcement-centre/" },
       { label: "Admissions", href: "/admissions/", cta: true },
+      { label: "Watch", href: "/video-catalog/", cta: true, icon: "video" },
     ];
 
     return { megaByLabel: map, navItems: nav };
@@ -293,12 +294,18 @@ export default function Header({ variant = "dark" }) {
               const key = `${item.href || "nohref"}|${item.label || "nolabel"}|${i}`;
               const label = item.label || "";
               if (item.cta) {
+                const isWatch = item.icon === "video";
                 return (
                   <Link
                     key={key}
                     href={normalizeHref(item.href)}
-                    className="rounded-full bg-[#0F52BA] px-4 py-2 text-xs font-semibold text-white shadow-sm hover:bg-[#0D47A1]"
+                    className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-semibold shadow-sm ${
+                      isWatch
+                        ? "bg-[#141c2f] text-white hover:bg-[#0f1524]"
+                        : "bg-[#0F52BA] text-white hover:bg-[#0D47A1]"
+                    }`}
                   >
+                    {isWatch ? <VideoPlayIcon className="h-3.5 w-3.5" /> : null}
                     {label}
                   </Link>
                 );
@@ -446,6 +453,28 @@ function HamburgerIcon() {
         strokeWidth="2.2"
         strokeLinecap="round"
       />
+    </svg>
+  );
+}
+
+function VideoPlayIcon({ className = "h-4 w-4" }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <rect
+        x="2.5"
+        y="4.5"
+        width="19"
+        height="15"
+        rx="2.5"
+        stroke="currentColor"
+        strokeWidth="1.8"
+      />
+      <path d="M10 9.2v5.6L15.2 12 10 9.2z" fill="currentColor" />
     </svg>
   );
 }
@@ -722,13 +751,19 @@ function MobileNav({
         {(nav || []).map((item, idx) => {
         const label = item?.label || "";
         if (item?.cta) {
+          const isWatch = item.icon === "video";
           return (
             <Link
               key={`${label}|${idx}`}
               href={normalizeHref(item.href)}
               onClick={onNavigate}
-              className="block rounded-full bg-white px-4 py-3 text-center text-sm font-semibold text-[#0F52BA]"
+              className={`flex items-center justify-center gap-2 rounded-full px-4 py-3 text-center text-sm font-semibold ${
+                isWatch
+                  ? "bg-[#141c2f] text-white ring-1 ring-white/20"
+                  : "bg-white text-[#0F52BA]"
+              }`}
             >
+              {isWatch ? <VideoPlayIcon className="h-4 w-4" /> : null}
               {label}
             </Link>
           );

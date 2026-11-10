@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Container from "@/components/layout/Container";
 
 export default function ResearchHero({
@@ -56,15 +55,7 @@ export default function ResearchHero({
 
               {description ? (
                 <p className="mt-4 text-sm sm:text-base text-slate-600 leading-relaxed">
-                  {description}{" "}
-                  {link?.href ? (
-                    <Link
-                      href={link.href}
-                      className="text-[#2F6FED] font-regular hover:underline underline-offset-4"
-                    >
-                      {link.label || "Read more"}
-                    </Link>
-                  ) : null}
+                  {description}
                 </p>
               ) : null}
 
@@ -82,6 +73,18 @@ export default function ResearchHero({
                     </li>
                   ))}
                 </ul>
+              ) : null}
+
+              {link?.href ? (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 inline-flex items-center gap-2 bg-[#0F52BA] px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#0D47A1]"
+                >
+                  {link.label || "Visit Micro Research Website"}
+                  <span aria-hidden>{"\u2197"}</span>
+                </a>
               ) : null}
             </div>
           </div>

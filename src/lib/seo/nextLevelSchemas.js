@@ -70,7 +70,7 @@ export function buildNextLevelSchema() {
           "@type": "OpeningHoursSpecification",
           dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           opens: "08:30",
-          closes: "16:30",
+          closes: "15:30",
         },
         areaServed: {
           "@type": "City",
