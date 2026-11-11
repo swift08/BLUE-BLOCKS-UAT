@@ -7,101 +7,67 @@ import { usePathname } from "next/navigation";
 import Container from "@/components/layout/Container";
 import { normalizePost } from "@/lib/wordpress";
 
-// Curated static blog configurations per page pathname
-const PAGE_STATIC_BLOGS = {
-  "/admissions": [
-    {
-      id: "static-admissions-1",
-      title: "Is Montessori Right for Your Family?",
-      category: "Montessori Philosophy",
-      date: "Sep 2026",
-      featured: {
-        url: "/programs/thumb-nursery.webp",
-        cardUrl: "/programs/thumb-nursery.webp",
-        alt: "Is Montessori Right for Your Family?",
-      },
-      url: "https://blueblocks.in/blog/is-montessori-right-for-your-family/",
-      excerpt:
-        "Montessori isn’t a teaching method bolted onto a regular school. Discover how child-directed learning and the prepared environment fit your family.",
-    },
-    {
-      id: "static-admissions-2",
-      title: "Montessori vs Traditional Education: What the Research Shows",
-      category: "Research & Pedagogy",
-      date: "Aug 2026",
-      featured: {
-        url: "/programs/thumb-primary.webp",
-        cardUrl: "/programs/thumb-primary.webp",
-        alt: "Montessori vs Traditional research",
-      },
-      url: "https://blueblocks.in/blog/montessori-vs-traditional-education-research/",
-      excerpt:
-        "An evidence-based comparison between AMI Montessori environments and conventional school models, focusing on executive function and autonomy.",
-    },
-  ],
-  default: [
-    {
-      id: "static-default-1",
-      title: "Is Montessori Right for Your Family?",
-      category: "Montessori Philosophy",
-      date: "Sep 2026",
-      featured: {
-        url: "/programs/thumb-nursery.webp",
-        cardUrl: "/programs/thumb-nursery.webp",
-        alt: "Is Montessori Right for Your Family?",
-      },
-      url: "https://blueblocks.in/blog/is-montessori-right-for-your-family/",
-      excerpt:
-        "A practical guide for parents evaluating Montessori education, developmental independence, and home-school alignment.",
-    },
-    {
-      id: "static-default-2",
-      title: "Montessori vs Traditional Education: What the Research Shows",
-      category: "Research & Pedagogy",
-      date: "Aug 2026",
-      featured: {
-        url: "/programs/thumb-primary.webp",
-        cardUrl: "/programs/thumb-primary.webp",
-        alt: "Montessori vs Traditional research",
-      },
-      url: "https://blueblocks.in/blog/montessori-vs-traditional-education-research/",
-      excerpt:
-        "Understanding how self-directed work and multi-age classrooms build lifelong focus, critical thinking, and intrinsic motivation.",
-    },
-  ],
-};
-
-// Fallback dynamic posts in case WordPress API is slow or offline
-const INITIAL_DYNAMIC_FALLBACK = [
+// Fallback if WordPress is slow/offline — keep in sync with latest posts
+const INITIAL_POSTS = [
   {
-    id: 924,
-    title: "How to Keep Children Connected to Nature: Six Small Habits at Home",
-    slug: "how-to-keep-children-connected-to-nature",
-    date: "2026-09-17T09:11:33",
-    url: "https://blueblocks.in/blog/how-to-keep-children-connected-to-nature/",
-    categories: [{ name: "Parenting", slug: "parenting" }],
+    id: 961,
+    title: "How to Tell Authentic Montessori School from a Montessori Sign",
+    slug: "how-to-tell-authentic-montessori-school",
+    date: "2026-10-16T09:21:50",
+    url: "https://blueblocks.in/blog/how-to-tell-authentic-montessori-school/",
+    categories: [{ name: "Education", slug: "education" }],
     featured: {
-      url: "/programs/thumb-playgroup.webp",
-      cardUrl: "/programs/thumb-playgroup.webp",
-      alt: "How to Keep Children Connected to Nature",
+      url: "https://blueblocks.in/blog/wp-content/uploads/2026/10/DSC09806-scaled.jpg",
+      cardUrl: "https://blueblocks.in/blog/wp-content/uploads/2026/10/DSC09806-scaled.jpg",
+      alt: "How to Tell Authentic Montessori School from a Montessori Sign",
     },
     excerpt:
-      "Simple, daily habits parents can introduce at home to foster a deep connection to nature and sensorial learning.",
+      "Maria Montessori built her method to be given away. In 1929, she founded the Association Montessori Internationale (AMI) to protect its integrity through training.",
   },
   {
-    id: 913,
-    title: "What Do Children Draw When Asked About Life? Trees and the Sun",
-    slug: "what-do-children-draw-when-asked-about-life",
-    date: "2026-09-09T10:42:39",
-    url: "https://blueblocks.in/blog/what-do-children-draw-when-asked-about-life/",
-    categories: [{ name: "Child Development", slug: "child-development" }],
+    id: 955,
+    title: "Is Montessori Right for Your Family? What the Research Actually Says",
+    slug: "is-montessori-right-for-your-family",
+    date: "2026-10-15T10:41:37",
+    url: "https://blueblocks.in/blog/is-montessori-right-for-your-family/",
+    categories: [{ name: "Education", slug: "education" }],
     featured: {
-      url: "/programs/thumb-secondary.webp",
-      cardUrl: "/programs/thumb-secondary.webp",
-      alt: "What Do Children Draw When Asked About Life",
+      url: "https://blueblocks.in/blog/wp-content/uploads/2026/10/DSC01500-scaled.jpg",
+      cardUrl: "https://blueblocks.in/blog/wp-content/uploads/2026/10/DSC01500-scaled.jpg",
+      alt: "Is Montessori Right for Your Family?",
     },
     excerpt:
-      "Observations from our art and cosmic education environments on how children perceive the living world.",
+      "Most parents who ask whether Montessori is right for their family want an honest answer grounded in evidence, not marketing.",
+  },
+  {
+    id: 943,
+    title: "Biomimicry for Children: Inside the Park Where Families Became Researchers",
+    slug: "biomimicry-for-children",
+    date: "2026-10-07T11:09:05",
+    url: "https://blueblocks.in/blog/biomimicry-for-children/",
+    categories: [{ name: "Education", slug: "education" }],
+    featured: {
+      url: "https://blueblocks.in/blog/wp-content/uploads/2026/10/pexels-sarah-richardson-3190527-4811700-scaled.jpg",
+      cardUrl: "https://blueblocks.in/blog/wp-content/uploads/2026/10/pexels-sarah-richardson-3190527-4811700-scaled.jpg",
+      alt: "Biomimicry for Children",
+    },
+    excerpt:
+      "Biomimicry for children starts with a sentence most people get wrong. Drawing a leaf on a building is not biomimicry.",
+  },
+  {
+    id: 931,
+    title: "How to Find North with the Saptarishi: A Night-Sky Activity for Families",
+    slug: "how-to-find-north-with-the-saptarishi",
+    date: "2026-10-01T10:13:15",
+    url: "https://blueblocks.in/blog/how-to-find-north-with-the-saptarishi/",
+    categories: [{ name: "Montessori", slug: "montessori" }],
+    featured: {
+      url: "https://blueblocks.in/blog/wp-content/uploads/2026/10/Gemini_Generated_Image_un7vpvun7vpvun7v-e1790838302485.png",
+      cardUrl: "https://blueblocks.in/blog/wp-content/uploads/2026/10/Gemini_Generated_Image_un7vpvun7vpvun7v-e1790838302485.png",
+      alt: "How to Find North with the Saptarishi",
+    },
+    excerpt:
+      "On any clear night in India, seven bright stars in the shape of a ladle sit high in the northern sky — a night-sky activity for families.",
   },
 ];
 
@@ -119,39 +85,33 @@ function formatDate(iso) {
   }
 }
 
-export default function SitewideBlogSection({ customStaticPosts }) {
+export default function SitewideBlogSection() {
   const pathname = usePathname() || "";
-  const [dynamicPosts, setDynamicPosts] = useState(INITIAL_DYNAMIC_FALLBACK);
+  const [posts, setPosts] = useState(INITIAL_POSTS);
 
-  // Normalize pathname to find matching static blogs
   const cleanPath = pathname.replace(/\/+$/, "") || "/";
   const hideJournal =
     cleanPath === "/montessori-system" || cleanPath === "/Biomimicry-Park/register";
-  const staticPair =
-    customStaticPosts ||
-    PAGE_STATIC_BLOGS[cleanPath] ||
-    PAGE_STATIC_BLOGS[cleanPath.startsWith("/admissions") ? "/admissions" : "default"] ||
-    PAGE_STATIC_BLOGS.default;
 
-  // Auto-populate Cards 3 and 4 from the two most recent posts published on blueblocks.in/blog/
   useEffect(() => {
     if (hideJournal) return;
     let active = true;
 
     async function fetchRecentPosts() {
       try {
-        const cacheBust = `_bb_ts=${Date.now()}`;
         const res = await fetch(
-          `https://blueblocks.in/blog/wp-json/wp/v2/posts?per_page=2&_embed=1&orderby=date&order=desc&${cacheBust}`,
+          `https://blueblocks.in/blog/wp-json/wp/v2/posts?per_page=4&_embed=1&orderby=date&order=desc&_bb_ts=${Date.now()}`,
           { headers: { Accept: "application/json" } }
         );
         if (!res.ok) return;
         const data = await res.json();
         if (!active || !Array.isArray(data) || data.length === 0) return;
 
-        const normalized = data.map(normalizePost).filter(Boolean);
-        if (normalized.length > 0) {
-          const formatted = normalized.slice(0, 2).map((post) => ({
+        const formatted = data
+          .map(normalizePost)
+          .filter(Boolean)
+          .slice(0, 4)
+          .map((post) => ({
             id: post.id,
             title: post.title,
             slug: post.slug,
@@ -165,8 +125,8 @@ export default function SitewideBlogSection({ customStaticPosts }) {
             },
             excerpt: post.excerpt || "",
           }));
-          setDynamicPosts(formatted);
-        }
+
+        if (formatted.length > 0) setPosts(formatted);
       } catch {
         // Soft fail: keep fallback
       }
@@ -180,18 +140,9 @@ export default function SitewideBlogSection({ customStaticPosts }) {
 
   if (hideJournal) return null;
 
-  // Recent posts lead. Static cards stay after them.
-  const cards = [
-    { ...dynamicPosts[0], isDynamic: true, cardType: "Latest" },
-    { ...dynamicPosts[1], isDynamic: true, cardType: "Latest" },
-    { ...staticPair[0], isDynamic: false, cardType: "Static" },
-    { ...staticPair[1], isDynamic: false, cardType: "Static" },
-  ].filter((post) => post?.title);
-
   return (
     <section className="bg-[#FAF9F5] border-t border-slate-200/60 py-16 pb-28 sm:py-20 md:pb-20">
       <Container>
-        {/* Section Header */}
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-12 pb-6 border-b border-slate-200/60">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-[#B74F2A] mb-2 block">
@@ -210,28 +161,24 @@ export default function SitewideBlogSection({ customStaticPosts }) {
           </Link>
         </div>
 
-        {/* 4 Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {cards.map((post, idx) => {
-            const category =
-              post?.category ||
-              post?.categories?.[0]?.name ||
-              "Montessori";
+          {posts.map((post, idx) => {
+            const category = post?.categories?.[0]?.name || "Montessori";
             const imageUrl =
               post?.featured?.cardUrl ||
               post?.featured?.url ||
               "/programs/thumb-secondary.webp";
-            const postHref = post?.url || (post?.slug ? `/blog/${post.slug}/` : "/blog/");
+            const postHref =
+              post?.url || (post?.slug ? `/blog/${post.slug}/` : "/blog/");
 
             return (
               <a
                 key={post.id || idx}
                 href={postHref}
-                target={post.url?.startsWith("http") ? "_blank" : undefined}
-                rel={post.url?.startsWith("http") ? "noopener noreferrer" : undefined}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/70 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                {/* Featured Image */}
                 <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
                   <Image
                     src={imageUrl}
@@ -240,7 +187,6 @@ export default function SitewideBlogSection({ customStaticPosts }) {
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
-                  {/* Category pill */}
                   <div className="absolute top-3 left-3">
                     <span className="inline-block px-2.5 py-1 rounded-full text-[11px] font-bold bg-white/90 backdrop-blur-sm text-[#2C2F8F] shadow-sm">
                       {category}
@@ -248,12 +194,11 @@ export default function SitewideBlogSection({ customStaticPosts }) {
                   </div>
                 </div>
 
-                {/* Card Content */}
                 <div className="p-5 flex flex-col flex-1">
                   <div className="text-xs text-slate-400 font-medium mb-2">
                     {formatDate(post.date)}
                   </div>
-                  <h3 className="font-bold text-slate-900 text-base leading-snug group-hover:text-[#2C2F8F] transition-colors line-clamp-2 mb-2">
+                  <h3 className="font-bold text-slate-900 text-base leading-snug group-hover:text-[#2C2F8F] transition-colors line-clamp-3 mb-2">
                     {post.title}
                   </h3>
                   {post.excerpt && (

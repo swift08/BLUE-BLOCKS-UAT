@@ -235,9 +235,12 @@ Submitted: ${new Date().toLocaleString()}
 
     try {
       const payload = new FormData();
-      payload.append("access_key", "d51706c9-c8f1-4081-956d-254aa31caf8e");
+      // Biomimicry Park register only — web3forms key for the target inbox
+      payload.append("access_key", "507f7b1f-70f3-42f3-a435-530083fc4473");
       payload.append("subject", `Biomimicry Park Registration — ${formData.fullName}`);
       payload.append("from_name", formData.fullName);
+      payload.append("name", formData.fullName);
+      payload.append("email", formData.email);
       payload.append("replyto", formData.email);
       payload.append("message", messageBody);
 

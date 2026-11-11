@@ -183,6 +183,18 @@ export default function AdmissionsProcess() {
             </div>
           </div>
         </div>
+
+        <div className="mt-10 flex justify-center sm:mt-12">
+          <a
+            href="https://forms.gle/KUC3zUiWb5zcSKM1A"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex overflow-hidden rounded-full bg-[#5BA8E8] px-6 py-3.5 text-center text-[11px] font-black uppercase leading-snug tracking-widest text-[#1B2A6B] shadow-[0_12px_40px_-8px_rgba(91,168,232,0.65)] transition-all hover:scale-105 sm:px-8 sm:py-4 sm:text-sm"
+          >
+            <span className="absolute inset-0 translate-y-full bg-white opacity-20 transition-transform group-hover:translate-y-0" />
+            <span className="relative">Register for Admissions Workshop →</span>
+          </a>
+        </div>
       </Container>
     </section>
   );
