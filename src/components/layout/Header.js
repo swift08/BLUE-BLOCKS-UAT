@@ -231,7 +231,12 @@ export default function Header({ variant = "dark" }) {
 
   const toggleMenu = () => setMenuOpen((v) => !v);
 
+  const showMobileActionBar = !String(pathname || "")
+    .replace(/\/$/, "")
+    .endsWith("/Biomimicry-Park/register");
+
   return (
+    <>
     <div
       id="site-header"
       className={`fixed top-0 left-0 right-0 w-full z-[80] transition-colors duration-300 ${
@@ -417,9 +422,10 @@ export default function Header({ variant = "dark" }) {
           </div>
         </div>
       </header>
+    </div>
 
-      {/* Mobile Sticky Action Bar (Page 22) — hide on Biomimicry register (keeps form chrome clean) */}
-      {!String(pathname || "").replace(/\/$/, "").endsWith("/Biomimicry-Park/register") ? (
+      {/* Outside #site-header: backdrop-filter there traps position:fixed descendants */}
+      {showMobileActionBar ? (
         <div className="fixed bottom-0 left-0 right-0 z-[75] md:hidden bg-white/95 backdrop-blur-md border-t border-neutral-200/90 px-4 py-2.5 shadow-[0_-4px_16px_rgba(0,0,0,0.06)] flex items-center justify-between gap-3">
           <Link
             href="/contact-us/"
@@ -435,7 +441,7 @@ export default function Header({ variant = "dark" }) {
           </Link>
         </div>
       ) : null}
-    </div>
+    </>
   );
 }
 

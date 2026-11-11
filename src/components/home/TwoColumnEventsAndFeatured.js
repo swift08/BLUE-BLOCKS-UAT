@@ -4,36 +4,7 @@ import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
-
-const SAMPLE_EVENTS = [
-  {
-    day: 8,
-    monthOffset: 0,
-    title: "AMI Orientation for Parents",
-    time: "10:00 AM – 12:30 PM",
-    slug: "ami-orientation-parents",
-    category: "Orientation",
-    dotColor: "#0F52BA",
-  },
-  {
-    day: 16,
-    monthOffset: 0,
-    title: "Student CubeSat Mission Payload Testing",
-    time: "02:00 PM – 04:00 PM",
-    slug: "cubesat-payload-testing",
-    category: "Space Lab",
-    dotColor: "#E67E22",
-  },
-  {
-    day: 24,
-    monthOffset: 0,
-    title: "Admissions Open Day & Campus Walkthrough",
-    time: "10:30 AM – 01:00 PM",
-    slug: "admissions-open-day",
-    category: "Admissions",
-    dotColor: "#27AE60",
-  },
-];
+import { eventsOnDate } from "@/data/school-events";
 
 const FEATURED_CARDS = [
   {
@@ -110,17 +81,18 @@ export default function TwoColumnEventsAndFeatured() {
     setSelectedDayEvents(null);
   };
 
+  const monthIndex = currentDate.getMonth();
+
   const daysArray = useMemo(() => {
     const arr = [];
     for (let i = 0; i < firstDayIndex; i++) {
       arr.push(null);
     }
     for (let d = 1; d <= daysInMonth; d++) {
-      const events = SAMPLE_EVENTS.filter((e) => e.day === d && e.monthOffset === 0);
-      arr.push({ day: d, events });
+      arr.push({ day: d, events: eventsOnDate(year, monthIndex, d) });
     }
     return arr;
-  }, [firstDayIndex, daysInMonth]);
+  }, [firstDayIndex, daysInMonth, year, monthIndex]);
 
   return (
     <section aria-label="Events, Featured Updates and Research" className="bg-[#FAF9F6] py-14 sm:py-20 border-t border-neutral-200">

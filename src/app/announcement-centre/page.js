@@ -1,4 +1,5 @@
 import siteData from "@/data/site";
+import { schoolEventsAsAnnouncements } from "@/data/school-events";
 import PageHero from "@/components/blocks/PageHero";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import AnnouncementCentreClient from "./AnnouncementCentreClient";
@@ -79,30 +80,6 @@ const pageSchema = [
   },
 ];
 
-const ANCHORED_EVENTS = [
-  {
-    slug: "ami-orientation-parents",
-    badge: "Orientation",
-    date: "This month",
-    title: "AMI Orientation for Parents",
-    messages: ["10:00 AM – 12:30 PM. An introduction to AMI practice for families."],
-  },
-  {
-    slug: "cubesat-payload-testing",
-    badge: "Space Lab",
-    date: "This month",
-    title: "Student CubeSat Mission Payload Testing",
-    messages: ["02:00 PM – 04:00 PM. Payload checks with the adolescent space cohort."],
-  },
-  {
-    slug: "admissions-open-day",
-    badge: "Admissions",
-    date: "This month",
-    title: "Admissions Open Day & Campus Walkthrough",
-    messages: ["10:30 AM – 01:00 PM. Walk the prepared environments and meet the guides."],
-  },
-];
-
 function slugify(value) {
   return String(value || "")
     .toLowerCase()
@@ -119,10 +96,11 @@ export default function AnnouncementCentrePage() {
     ...item,
     slug: item.slug || slugify(item.title),
   }));
-  const seen = new Set(fromSite.map((item) => item.slug));
+  const calendarEvents = schoolEventsAsAnnouncements();
+  const seen = new Set(calendarEvents.map((item) => item.slug));
   const announcements = [
-    ...ANCHORED_EVENTS.filter((item) => !seen.has(item.slug)),
-    ...fromSite,
+    ...calendarEvents,
+    ...fromSite.filter((item) => !seen.has(item.slug)),
   ];
 
   const schema = [

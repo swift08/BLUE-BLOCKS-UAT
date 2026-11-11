@@ -78,6 +78,15 @@ export default function AnnouncementCentreClient({ announcements = [] }) {
   // Color mappings for badges
   const getBadgeStyle = (badge) => {
     const normalized = (badge || "").toLowerCase();
+    if (normalized.includes("holiday")) {
+      return "bg-rose-50 text-rose-700 border border-rose-200";
+    }
+    if (normalized.includes("farm")) {
+      return "bg-emerald-50 text-emerald-700 border border-emerald-200";
+    }
+    if (normalized.includes("working saturday")) {
+      return "bg-violet-50 text-violet-700 border border-violet-200";
+    }
     if (normalized.includes("teacher")) {
       return "bg-indigo-50 text-indigo-700 border border-indigo-200";
     }
