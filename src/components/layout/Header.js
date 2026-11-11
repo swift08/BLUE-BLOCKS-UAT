@@ -499,29 +499,30 @@ function CloseIcon() {
 
 function YearMenu({ years }) {
   const [heading, ...subs] = years;
+  // Single grid cell — sits under Achievements (right column) after Newsroom fills left
   return (
-    <div className="col-span-2 border-t border-slate-100 bg-[#F7F3EC] p-4 sm:p-5">
-      <Link href={normalizeHref(heading.href)} className="flex items-center gap-3.5">
-        <div className="relative h-14 w-20 shrink-0 overflow-hidden rounded-xl bg-slate-200">
+    <div className="border-b border-slate-100 bg-[#F7F3EC] p-3 sm:p-3.5">
+      <Link href={normalizeHref(heading.href)} className="flex items-center gap-2.5">
+        <div className="relative h-11 w-14 sm:h-12 sm:w-16 shrink-0 overflow-hidden rounded-lg bg-slate-200">
           <Image
             src="/programs/thumb-nursery.webp"
             alt=""
-            width={80}
-            height={64}
+            width={64}
+            height={48}
             className="h-full w-full object-cover"
           />
         </div>
         <div className="min-w-0 flex-1">
-          <div className="text-sm font-semibold text-slate-900">{heading.title}</div>
-          <p className="text-xs text-slate-600">Year-by-year look at Montessori at Blue Blocks.</p>
+          <div className="text-[13px] font-semibold text-slate-900">{heading.title}</div>
+          <p className="text-[11px] leading-snug text-slate-600">Year-by-year look at Montessori at Blue Blocks.</p>
         </div>
       </Link>
-      <div className="mt-2 flex flex-col pl-[5.75rem]">
+      <div className="mt-1.5 flex flex-col pl-[4.25rem] sm:pl-[4.75rem]">
         {subs.map((item) => (
           <Link
             key={item.href}
             href={normalizeHref(item.href)}
-            className="flex items-center gap-2 py-1.5 text-sm font-medium text-[#0F52BA] hover:underline"
+            className="flex items-center gap-1.5 py-1 text-[12px] font-medium text-[#0F52BA] hover:underline"
           >
             <span aria-hidden className="text-slate-400">{"\u21B3"}</span>
             {item.title}
@@ -593,8 +594,8 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
         role="region"
         aria-label={`${mega.label || "Menu"} submenu`}
         className={[
-          "absolute left-1/2 top-full z-[60] mt-0 w-[min(1152px,calc(100vw-2rem))] -translate-x-1/2 before:content-[''] before:absolute before:bottom-full before:left-0 before:right-0 before:h-12 before:bg-transparent",
-          "rounded-2xl border border-slate-100 bg-white shadow-[0_24px_60px_rgba(15,23,42,0.16)]",
+          "absolute left-1/2 top-full z-[60] mt-0 w-[min(920px,calc(100vw-2rem))] -translate-x-1/2 before:content-[''] before:absolute before:bottom-full before:left-0 before:right-0 before:h-10 before:bg-transparent",
+          "rounded-xl border border-slate-100 bg-white shadow-[0_16px_40px_rgba(15,23,42,0.14)]",
           "transition-all duration-[180ms] ease-out origin-top",
           open
             ? "opacity-100 translate-y-0 pointer-events-auto visible"
@@ -604,13 +605,13 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
         <div className="grid grid-cols-[4fr_2fr] gap-0">
           {/* LEFT */}
           <div>
-            <div className="mb-2 p-5 pb-0 flex items-center justify-between gap-4">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+            <div className="mb-1 px-3.5 pt-3 pb-0 flex items-center justify-between gap-3">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500">
                 
                 {viewAll?.href ? (
                   <Link
                     href={normalizeHref(viewAll.href)}
-                    className="text-xs font-medium text-[#0E4AA2] hover:underline"
+                    className="text-[11px] font-medium text-[#0E4AA2] hover:underline"
                   >
                     {viewAll.label || "View All"} <span aria-hidden>{"\u2192"}</span>
                   </Link>
@@ -626,7 +627,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                     key={`${program.href || program.title || "item"}|${idx}`}
                     href={normalizeHref(program.href)}
                     prefetch={false}
-                    className={`flex items-center gap-3.5 p-4 sm:p-5 hover:bg-slate-50 transition-colors ${
+                    className={`flex items-center gap-2.5 p-3 sm:p-3.5 hover:bg-slate-50 transition-colors ${
                       isSpanTwo
                         ? "col-span-2 border-t border-slate-100 bg-amber-50/30 hover:bg-amber-50/60"
                         : idx % 2 === 0
@@ -634,7 +635,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                         : "border-b border-slate-100"
                     }`}
                   >
-                    <div className="relative h-14 w-18 sm:h-16 sm:w-20 flex-shrink-0 overflow-hidden rounded-xl bg-slate-200 aspect-[80/64]">
+                    <div className="relative h-11 w-14 sm:h-12 sm:w-16 flex-shrink-0 overflow-hidden rounded-lg bg-slate-200 aspect-[80/64]">
                       {program?.video ? (
                         <video
                           src={program.video}
@@ -650,27 +651,27 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                         <Image
                           src={program.image}
                           alt={program.title || ""}
-                          width={80}
-                          height={64}
+                          width={64}
+                          height={48}
                           style={{ width: "100%", height: "auto", aspectRatio: "80 / 64" }}
                           className="h-full w-full object-cover"
                         />
                       ) : (
-                        <span className="flex h-full w-full items-center justify-center text-xs text-slate-500">
+                        <span className="flex h-full w-full items-center justify-center text-[10px] text-slate-500">
                           img
                         </span>
                       )}
                     </div>
 
-                    <div className="space-y-1 flex-1">
-                      <div className="text-sm font-semibold text-slate-900 flex items-center gap-2">
+                    <div className="space-y-0.5 flex-1 min-w-0">
+                      <div className="text-[13px] font-semibold text-slate-900 flex items-center gap-2">
                         <span>{program?.title}</span>
                       </div>
-                      <p className="line-clamp-2 text-xs text-slate-600">{program?.description}</p>
+                      <p className="line-clamp-2 text-[11px] leading-snug text-slate-600">{program?.description}</p>
                     </div>
 
                     {isSpanTwo && (
-                      <div className="hidden sm:inline-flex items-center gap-1 shrink-0 px-3 py-1.5 rounded-full bg-white border border-amber-200/80 text-xs font-bold text-[#2C2F8F] shadow-sm">
+                      <div className="hidden sm:inline-flex items-center gap-1 shrink-0 px-2.5 py-1 rounded-full bg-white border border-amber-200/80 text-[11px] font-bold text-[#2C2F8F] shadow-sm">
                         <span>Explore</span>
                         <span aria-hidden>→</span>
                       </div>
@@ -683,20 +684,20 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
           </div>
 
           {/* RIGHT */}
-          <div className="flex justify-between gap-4 p-5 sm:p-6 border-l border-slate-100">
+          <div className="flex justify-between gap-3 p-3.5 sm:p-4 border-l border-slate-100">
             {ctaCard ? (
-              <div className="flex flex-col justify-between space-y-2 bg-[#F3E3CF] rounded-2xl p-5 w-full">
+              <div className="flex flex-col justify-between space-y-2 bg-[#F3E3CF] rounded-xl p-3.5 w-full">
                 <div>
-                  <p className="text-[1.2rem] mb-4 font-semibold text-slate-900">
+                  <p className="text-base mb-2 font-semibold text-slate-900 leading-snug">
                     {ctaCard.title}
                   </p>
-                  <p className="text-[0.75rem] text-slate-600">{ctaCard.text}</p>
+                  <p className="text-[11px] leading-snug text-slate-600">{ctaCard.text}</p>
                 </div>
 
                 {ctaCard?.button?.href ? (
                   <Link
                     href={normalizeHref(ctaCard?.button?.href)}
-                    className="inline-flex w-full items-center justify-center rounded-full bg-[#0F52BA] px-4 py-3 text-xs font-medium text-white hover:bg-[#0D47A1]"
+                    className="inline-flex w-full items-center justify-center rounded-full bg-[#0F52BA] px-3 py-2 text-[11px] font-medium text-white hover:bg-[#0D47A1]"
                   >
                     {ctaCard?.button?.label}
                   </Link>
@@ -704,7 +705,7 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
               </div>
             ) : null}
 
-            <div className="mt-2 flex flex-col gap-2">
+            <div className="mt-1 flex flex-col gap-1.5">
               {(socials || []).map((s, idx) => {
                 const href = normalizeHref(s.href);
                 if (!isValidLinkHref(href)) return null;
@@ -715,14 +716,14 @@ function ProgramsMegaMenu({ mega, socials, isLight, isActive = false, className 
                     href={href}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex h-20 w-20 items-center justify-center rounded-2xl bg-[#000000]/5 text-xs font-semibold text-slate-900 shadow-sm hover:bg-slate-50"
+                    className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#000000]/5 text-xs font-semibold text-slate-900 shadow-sm hover:bg-slate-50"
                     aria-label={s.label}
                   >
                     <Image
                       src={s.icon}
                       alt={(s.label || "").slice(0, 2)}
-                      width={34}
-                      height={34}
+                      width={26}
+                      height={26}
                       style={{ aspectRatio: "1 / 1" }}
                       className="object-contain"
                     />
