@@ -423,22 +423,6 @@ export default function ElementaryClass1to6() {
         </Container>
       </section>
 
-      {/* ── PARENT QUOTE STRIP ────────────────────────────────────────── */}
-      <section className="bg-white py-16 border-y border-slate-100">
-        <Container className="text-center">
-          <p className="bb-eyebrow mb-4">PARENT VOICES</p>
-          <InputNeededBadge suppressHydrationWarning>
-            INPUT NEEDED — 1–2 short quotes from current Elementary parents.
-          </InputNeededBadge>
-          <div className="mt-10 flex items-center justify-center gap-2 text-sm text-[#0A4BCE] font-semibold">
-            <span>Informed by published research from the Blue Blocks Micro Research Institute.</span>
-            <a href="https://research.blueblocks.in/publications" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              Explore →
-            </a>
-          </div>
-        </Container>
-      </section>
-
       {/* Sticky Navigation Bar */}
       <SectionNav items={navItems} />
 

@@ -18,7 +18,8 @@ const EDITIONS = [
     theme: "Theme: Biophilia & Biomimicry",
   },
   {
-    href: "/explore-montessori/2025/",
+    // ponytail: no public 2025 page yet — restore href when /explore-montessori/2025/ ships
+    href: null,
     title: "2025 — Innovision 2050",
     theme: "Theme: Innovative Vision for 2050",
   },
@@ -88,16 +89,21 @@ export default function ExploreMontessoriPage() {
 
             <div className="space-y-4">
               <h2 className="font-serif text-2xl font-semibold text-slate-900">Editions</h2>
-              <p>(One card per year, newest first)</p>
               <ul className="grid gap-4 sm:grid-cols-2">
                 {EDITIONS.map((edition) => (
-                  <li key={edition.href}>
+                  <li key={edition.title}>
                     <article className="flex h-full flex-col rounded-2xl border border-neutral-200 p-5">
                       <h3 className="text-lg font-semibold text-slate-900">{edition.title}</h3>
                       <p className="mt-2 text-slate-600">{edition.theme}</p>
-                      <Link href={edition.href} className="mt-4 text-sm font-semibold text-[#0F52BA]">
-                        Explore →
-                      </Link>
+                      {edition.href ? (
+                        <Link href={edition.href} className="mt-4 text-sm font-semibold text-[#0F52BA]">
+                          Explore →
+                        </Link>
+                      ) : (
+                        <span className="mt-4 text-sm font-semibold text-slate-400 cursor-default select-none">
+                          Explore →
+                        </span>
+                      )}
                     </article>
                   </li>
                 ))}

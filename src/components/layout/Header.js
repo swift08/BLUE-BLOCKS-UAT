@@ -168,10 +168,6 @@ export default function Header({ variant = "dark" }) {
             image: "/programs/thumb-secondary.webp",
           },
         ]),
-        years: [
-          { title: "Explore Montessori", href: "/explore-montessori/" },
-          { title: "Explore Montessori 2026", href: "/explore-montessori/2026/" },
-        ],
         ctaCard: mm.innovations?.ctaCard,
       },
       Community: {
@@ -184,13 +180,6 @@ export default function Header({ variant = "dark" }) {
             href: "/announcement-centre/",
             description: "Events, workshops, and school updates.",
             image: "/annoucement/0441d9cb-0c60-4c02-b4b6-ed0415e77897.webp",
-          },
-          {
-            id: "explore-montessori",
-            title: "Explore Montessori",
-            href: "/explore-montessori/",
-            description: "Year-by-year look at Montessori at Blue Blocks.",
-            image: "/programs/thumb-nursery.webp",
           },
           {
             id: "blog",
@@ -206,6 +195,10 @@ export default function Header({ variant = "dark" }) {
             description: "Call, write, or visit the Hyderabad campuses.",
             image: "/programs/thumb-playgroup.webp",
           },
+        ],
+        years: [
+          { title: "Explore Montessori", href: "/explore-montessori/" },
+          { title: "Explore Montessori 2026", href: "/explore-montessori/2026/" },
         ],
         ctaCard: {
           title: "Visit the campus",
@@ -319,7 +312,7 @@ export default function Header({ variant = "dark" }) {
                 const active =
                   isActiveHref(item.href) ||
                   (label === "Academics" && pathname.startsWith("/programs")) ||
-                  (label === "Innovation & Research" && pathname.startsWith("/explore-montessori"));
+                  (label === "Community" && pathname.startsWith("/explore-montessori"));
 
                 return (
                   <ProgramsMegaMenu

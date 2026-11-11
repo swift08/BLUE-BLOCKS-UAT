@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "@/components/layout/Container";
 import PageJsonLd from "@/components/seo/PageJsonLd";
 import FaqList from "./FaqList";
@@ -260,11 +261,12 @@ export default function ExploreMontessori2026Page() {
                     Free entry · External visitors must register and receive confirmation
                   </p>
                 </div>
-                <p className="text-xs tracking-wide text-white/70">
-                  Registration form
-                  <br />
-                  opening soon
-                </p>
+                <Link
+                  href="/Biomimicry-Park/register/"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#1A5336]"
+                >
+                  Register here →
+                </Link>
               </div>
             </section>
 

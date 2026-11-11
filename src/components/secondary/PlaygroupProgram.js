@@ -357,12 +357,14 @@ export default function PlaygroupProgram() {
 
           {/* Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-24">
-            <Link
-              href="/admissions/"
+            <a
+              href="https://forms.gle/KUC3zUiWb5zcSKM1A"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#1F3B82] hover:bg-[#15295c] transition-colors text-white text-sm font-semibold px-8 py-3.5 rounded-full shadow-lg"
             >
-              BOOK A FREE OBSERVATION
-            </Link>
+              Register for admission workshop
+            </a>
             <button
               type="button"
               suppressHydrationWarning

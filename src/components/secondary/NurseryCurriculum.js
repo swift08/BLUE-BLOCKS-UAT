@@ -273,6 +273,14 @@ export default function NurseryCurriculum() {
               <p className="text-lg text-slate-600 leading-relaxed text-justify sm:text-left">
                 Blue Blocks runs a Montessori preschool in Hyderabad for children aged 2.5 to 6, the Nursery, PP1, and PP2 years. The programme spans five areas of learning across a three-year continuous cycle in a mixed-age classroom, guided by AMI-certified diploma-holders. There are no worksheets, no bells, and no whole-class lessons. Each child chooses their own work, repeats it as often as they need, and moves on when ready. Children write before they read, count with hands before they see numerals, and build independence through real tasks like dressing themselves, preparing food, caring for the classroom.
               </p>
+              <a
+                href="https://forms.gle/KUC3zUiWb5zcSKM1A"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="self-start bg-[#1F3B82] hover:bg-[#15295c] transition-colors text-white text-sm font-semibold px-8 py-3.5 rounded-full shadow-lg"
+              >
+                Register for admission workshop
+              </a>
             </div>
 
             {/* Hero Image */}
